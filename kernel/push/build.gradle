@@ -1,0 +1,41 @@
+apply from: rootProject.file("library.gradle")
+apply plugin: 'com.huawei.agconnect'
+
+android {
+
+    defaultConfig {
+
+        manifestPlaceholders = [
+                huawei_appId: appKey.huawei_appId,
+                huawei_cpId : appKey.huawei_cpId,
+                vivo_appId: appKey.vivo_appId,
+                vivo_appKey: appKey.vivo_appKey,
+                vivo_appSecret: appKey.vivo_appSecret,
+        ]
+
+        buildConfigField "String", "xiaomi_appId", "\"${appKey.xiaomi_appId}\" "
+        buildConfigField "String", "xiaomi_appKey", "\"${appKey.xiaomi_appKey}\""
+
+        buildConfigField "String", "oppo_appId", "\"${appKey.oppo_appId}\""
+        buildConfigField "String", "oppo_appKey", "\"${appKey.oppo_appKey}\""
+        buildConfigField "String", "oppo_appSecret", "\"${appKey.oppo_appSecret}\""
+
+    }
+
+}
+
+
+dependencies {
+
+    implementation deps.tog_kernel_runtime
+    implementation deps.tog_kernel_base
+    implementation deps.tog_kernel_network
+    implementation deps.tog_lib_ioc
+    implementation deps.huawei_agconnent
+    implementation deps.huawei_hms_push
+    implementation files('libs/MiPush_SDK_Client_3_8_5.jar')
+    implementation files('libs/com.heytap.msp.2.1.aar')
+    implementation files('libs/vivo_pushsdk_v3.0.0.0_480.aar')
+    implementation 'me.leolin:ShortcutBadger:1.1.22@aar'
+
+}

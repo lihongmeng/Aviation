@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--抽屉界面-->
+  <dimen name="fragment_profile_drawer_avatar_width">96dp</dimen>
+  <dimen name="fragment_profile_drawer_avatar_height">96dp</dimen>
+  <dimen name="fragment_profile_drawer_avatar_margin_top">16dp</dimen>
+
+  <dimen name="fragment_profile_drawer_nick_name_margin_top">16dp</dimen>
+  <dimen name="fragment_profile_drawer_nick_name_text_size">14sp</dimen>
+
+  <dimen name="fragment_profile_drawer_item_margin_top">16dp</dimen>
+  <dimen name="fragment_profile_drawer_item_height">48dp</dimen>
+  <dimen name="fragment_profile_drawer_item_padding_left">16dp</dimen>
+  <dimen name="fragment_profile_drawer_item_padding_right">16dp</dimen>
+  <dimen name="fragment_profile_drawer_item_text_size">14sp</dimen>
+
+  <!--个人资料编辑-->
+  <dimen name="fragment_profile_avatar_side">96dp</dimen>
+  <dimen name="fragment_profile_avatar_margin_top">16dp</dimen>
+
+  <dimen name="fragment_profile_modify_avatar_text_size">14sp</dimen>
+  <dimen name="fragment_profile_modify_avatar_margin_top">8dp</dimen>
+  <dimen name="fragment_profile_modify_description_text_padding_left">10dp</dimen>
+
+  <!--个人介绍界面-->
+  <dimen name="fragment_modify_description_radius">4dp</dimen>
+  <dimen name="fragment_modify_description_margin_top">8dp</dimen>
+  <dimen name="fragment_modify_description_margin_left">16dp</dimen>
+  <dimen name="fragment_modify_description_margin_right">16dp</dimen>
+  <dimen name="fragment_modify_description_padding">8dp</dimen>
+
+  <dimen name="fragment_modify_description_description_height">120dp</dimen>
+  <dimen name="fragment_modify_description_description_text_size">14sp</dimen>
+
+  <dimen name="fragment_modify_description_counter_text_size">14sp</dimen>
+  <dimen name="fragment_modify_description_counter_margin_top">4dp</dimen>
+
+  <!--取消账户界面-->
+  <dimen name="fragment_cancel_account_radius">8dp</dimen>
+
+  <dimen name="fragment_cancel_account_web_view_margin_top">8dp</dimen>
+  <dimen name="fragment_cancel_account_web_view_margin_bottom">8dp</dimen>
+
+  <dimen name="fragment_cancel_account_confirm_text_size">14sp</dimen>
+  <dimen name="fragment_cancel_account_confirm_height">48dp</dimen>
+  <dimen name="fragment_cancel_account_confirm_margin_left">16dp</dimen>
+  <dimen name="fragment_cancel_account_confirm_margin_right">4dp</dimen>
+  <dimen name="fragment_cancel_account_confirm_margin_bottom">8dp</dimen>
+  <dimen name="fragment_cancel_account_confirm_stroke_width">1dp</dimen>
+
+  <dimen name="fragment_cancel_account_cancel_margin_right">16dp</dimen>
+  <dimen name="fragment_cancel_account_cancel_margin_left">4dp</dimen>
+
+  <!--我的界面-->
+  <dimen name="fragment_me_tab_layout_height">44dp</dimen>
+
+  <!--PGC 界面-->
+  <dimen name="fragment_pgc_toolbar_visible_min_distance">16dp</dimen>
+  <dimen name="fragment_ugc_tab_height">42dp</dimen>
+  <!--动态适配器-->
+  <dimen name="adapter_moment_container_padding_top">8dp</dimen>
+  <dimen name="adapter_moment_container_padding_bottom">8dp</dimen>
+
+  <dimen name="adapter_moment_avatar_side">50dp</dimen>
+  <dimen name="adapter_moment_avatar_margin_left">12dp</dimen>
+
+  <dimen name="adapter_moment_name_margin_left">12dp</dimen>
+  <dimen name="adapter_moment_name_margin_right">12dp</dimen>
+  <dimen name="adapter_moment_name_text_size">16sp</dimen>
+
+  <dimen name="adapter_moment_created_at_text_size">12sp</dimen>
+
+  <dimen name="adapter_moment_video_margin_top">6dp</dimen>
+  <dimen name="adapter_moment_video_margin_bottom">6dp</dimen>
+
+  <dimen name="adapter_moment_operation_container_margin_top">6dp</dimen>
+  <dimen name="adapter_moment_operation_container_margin_left">12dp</dimen>
+  <dimen name="adapter_moment_operation_container_margin_right">12dp</dimen>
+
+  <dimen name="adapter_moment_operation_image_size">24dp</dimen>
+  <dimen name="adapter_moment_operation_text_size">12sp</dimen>
+  <dimen name="adapter_moment_operation_text_margin_left">4dp</dimen>
+
+  <!--收藏界面-->
+  <dimen name="fragment_favorite_recycler_view_item_vertical_gap">12dp</dimen>
+  <dimen name="fragment_favorite_recycler_view_item_horizontal_gap">12dp</dimen>
+
+  <dimen name="fragment_favorite_cover_radius">8dp</dimen>
+
+
+  <!--弹窗-->
+  <dimen name="dialog_radius">16dp</dimen>
+
+  <!--简单取消视图-->
+  <dimen name="simple_cancel_item_view_text_size">14sp</dimen>
+  <dimen name="simple_cancel_item_view_height">48dp</dimen>
+  <dimen name="simple_cancel_item_view_radius">8dp</dimen>
+
+  <!--性别视图-->
+  <dimen name="gender_item_view_radius">@dimen/dialog_radius</dimen>
+  <dimen name="gender_item_view_padding">24dp</dimen>
+  <dimen name="gender_item_view_gender_image_side">48dp</dimen>
+  <dimen name="gender_item_view_gender_image_margin">64dp</dimen>
+  <dimen name="gender_item_view_gender_text_margin_top">8dp</dimen>
+  <dimen name="gender_item_view_gender_text_text_size">14sp</dimen>
+
+  <!--顶部取消确定视图-->
+  <dimen name="top_cancel_sure_height">48dp</dimen>
+  <dimen name="top_cancel_sure_padding">16dp</dimen>
+  <dimen name="top_cancel_sure_radius">@dimen/dialog_radius</dimen>
+  <dimen name="top_cancel_sure_title_text_size">16sp</dimen>
+  <dimen name="top_cancel_sure_operation_text_size">16sp</dimen>
+  <dimen name="top_cancel_sure_operation_padding">8dp</dimen>
+
+  <!--性别弹窗-->
+  <dimen name="gender_dialog_margin_bottom">16dp</dimen>
+
+  <!--隐私范围弹窗-->
+  <dimen name="privacy_range_title_height">32dp</dimen>
+  <dimen name="privacy_range_title_text_size">14sp</dimen>
+  <dimen name="privacy_range_title_padding">16dp</dimen>
+
+  <dimen name="privacy_range_item_height">48dp</dimen>
+  <dimen name="privacy_range_item_radius">@dimen/dialog_radius</dimen>
+  <dimen name="privacy_range_item_padding">16dp</dimen>
+  <dimen name="privacy_range_item_text_text_size">14sp</dimen>
+  <dimen name="privacy_range_item_image_side">24dp</dimen>
+
+  <dimen name="privacy_range_diver_height">1px</dimen>
+
+  <!--日期弹窗-->
+  <dimen name="date_picker_item_text_size">18sp</dimen>
+  <dimen name="date_picker_item_space">20dp</dimen>
+  <dimen name="date_picker_item_between_space">40dp</dimen>
+
+  <!--弹窗-->
+</resources>

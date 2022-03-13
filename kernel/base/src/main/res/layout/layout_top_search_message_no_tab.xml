@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:background="@color/color_ffffff"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top_bar_search_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_30DP"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/DIMEN_9DP"
+            android:layout_marginLeft="@dimen/DIMEN_14DP"
+            android:layout_marginBottom="@dimen/DIMEN_8DP"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            android:background="@drawable/feed_search_drawable"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/messageLayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.jxntv.widget.GVideoImageView
+                android:layout_width="@dimen/DIMEN_17DP"
+                android:layout_height="@dimen/DIMEN_17DP"
+                android:layout_marginLeft="@dimen/DIMEN_14DP"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_search_search_grey" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/search"
+                android:layout_marginLeft="@dimen/DIMEN_12DP"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_13" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_8DP"
+            android:background="@color/color_ffffff"
+            app:layout_constraintTop_toBottomOf="@id/top_bar_search_layout" />
+
+        <com.jxntv.base.view.HomeMessageLayout
+            android:id="@+id/messageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/top_bar_search_layout"
+            app:layout_constraintTop_toTopOf="@id/top_bar_search_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

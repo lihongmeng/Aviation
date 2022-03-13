@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+  <data>
+    <variable
+        name="category"
+        type="com.jxntv.pptv.ui.more.CategoryDataBinding"
+        />
+    <import type="android.view.View" />
+  </data>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:background="@android:color/white"
+        app:elevation="0dp"
+        >
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:adapter="@{category.yearAdapter}"
+          app:layoutManager="@{category.yearLayoutManager}"
+          app:layout_scrollFlags="scroll"
+          />
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/height_driver"
+          android:background="@color/c_line01"
+          android:layout_marginStart="@dimen/fragment_more_divider_padding"
+          />
+    </com.google.android.material.appbar.AppBarLayout>
+</layout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/circle_nav_graph"
+    app:startDestination="@id/circleFragment">
+
+    <!--圈子详情页-->
+    <fragment
+        android:id="@+id/circleDetailFragment"
+        android:name="com.jxntv.circle.fragment.CircleDetailFragment"
+        android:label="CircleDetailFragment" />
+
+</navigation>

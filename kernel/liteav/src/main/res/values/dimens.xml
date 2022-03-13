@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="liteav_dp_10">10dp</dimen>
+  <dimen name="liteav_dp_12">12dp</dimen>
+  <dimen name="liteav_dp_20">20dp</dimen>
+  <dimen name="liteav_sp_12">12sp</dimen>
+  <dimen name="liteav_sp_17">17sp</dimen>
+
+  <!-- MEDIA CONTROLLER -->
+  <dimen name="media_controller_text_size">14sp</dimen>
+  <dimen name="media_controller_seekbar_width">32dip</dimen>
+  <dimen name="media_controller_seekbar_height">32dip</dimen>
+  <dimen name="media_controller_top_margin">80dip</dimen>
+  <dimen name="media_controller_bottom_margin">12dip</dimen>
+  <dimen name="media_controller_view_height">48dip</dimen>
+  <dimen name="media_controller_button_height">52dip</dimen>
+  <dimen name="media_controller_button_width">71dip</dimen>
+
+  <dimen name="media_controller_resolution_text_height">44dp</dimen>
+  <dimen name="media_controller_resolution_text_width">300dp</dimen>
+  <dimen name="media_panel_width">330dp</dimen>
+
+  <dimen name="live_btn_size">35dp</dimen>
+
+
+  <!-- 挂件相关 -->
+  <dimen name="feed_pendant_height">42dp</dimen>
+  <dimen name="feed_pendant_width">178.5dp</dimen>
+  <dimen name="feed_pendant_margin_right">12dp</dimen>
+  <dimen name="feed_pendant_margin_bottom">12dp</dimen>
+
+  <dimen name="feed_pendant_title_height">33dp</dimen>
+  <dimen name="feed_pendant_title_width">99dp</dimen>
+
+  <dimen name="feed_pendant_title_margin_left">8dp</dimen>
+  <dimen name="feed_pendant_title_margin_right">8dp</dimen>
+
+  <dimen name="feed_pendant_img_height">34dp</dimen>
+  <dimen name="feed_pendant_img_width">59.5dp</dimen>
+  <dimen name="feed_pendant_img_margin_right">4dp</dimen>
+
+  <dimen name="feed_pendant_img_corner">4dp</dimen>
+  <dimen name="feed_pendant_video_img_size">25dp</dimen>
+  <dimen name="feed_pendant_video_img_margin_right">21dp</dimen>
+  <dimen name="pendant_item_width">99dp</dimen>
+  <dimen name="pendant_dimen_size">12dp</dimen>
+
+  <!-- 音波动画相关 -->
+  <dimen name="feed_sound_wave_interval">3dp</dimen>
+  <dimen name="feed_sound_wave_size">2dp</dimen>
+  <dimen name="feed_sound_wave_margin">12dp</dimen>
+  <dimen name="feed_sound_wave_height">18dp</dimen>
+  <dimen name="feed_sound_wave_width">27dp</dimen>
+
+</resources>

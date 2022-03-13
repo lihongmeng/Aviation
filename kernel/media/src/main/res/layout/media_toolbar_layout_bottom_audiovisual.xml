@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="toolBind"
+            type="com.jxntv.media.databind.MediaToolBarDataBind" />
+
+        <variable
+            name="videoObservable"
+            type="com.jxntv.base.model.video.VideoObservable" />
+
+        <variable
+            name="authorObservable"
+            type="com.jxntv.base.model.video.AuthorObservable" />
+
+        <import type="android.view.View" />
+
+        <import type="com.jxntv.base.utils.StringUtils" />
+
+        <import type="android.text.TextUtils"/>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/feed_layout_margin"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:layout_marginBottom="@dimen/DIMEN_15DP"
+        android:onClick="@{(view)->toolBind.onItemClick(view)}">
+
+        <!--头像-->
+        <com.jxntv.base.view.MediaImageView
+            android:id="@+id/toolbar_person_img"
+            android:layout_width="@dimen/DIMEN_32DP"
+            android:layout_height="@dimen/DIMEN_32DP"
+            android:onClick="@{(view)->toolBind.onPGCClick(view)}"
+            android:visibility="@{toolBind.showDate ? View.GONE : View.VISIBLE}"
+            app:circleCrop="@{true}"
+            app:imageData="@{authorObservable.avatar}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:placeholder='@{@drawable/ic_default_avatar}' />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/header_authentication"
+            android:layout_width="@dimen/DIMEN_13DP"
+            android:layout_height="@dimen/DIMEN_13DP"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/icon_header_authentication"
+            android:visibility="@{authorObservable.isAuthentication?View.VISIBLE:View.GONE}"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_person_img"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:visibility="visible" />
+
+        <com.jxntv.widget.GVideoConstraintLayout
+            android:id="@+id/layout_name"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_31DP"
+            android:onClick="@{(view)->toolBind.onPGCClick(view)}"
+            android:layout_marginLeft="@dimen/media_tool_bar_person_img_margin"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_person_img"
+            app:layout_constraintStart_toEndOf="@id/toolbar_person_img"
+            app:layout_constraintTop_toTopOf="@id/toolbar_person_img">
+
+            <!--名称-->
+            <com.jxntv.widget.GVideoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="@{authorObservable.name}"
+                android:textColor="@{toolBind.getAuthorNameColor}"
+                android:textSize="@dimen/sp_13"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:visibility="@{!toolBind.showDate&amp;&amp;TextUtils.isEmpty(toolBind.getAuthorSourceText) ? View.VISIBLE : View.GONE}"
+                tools:visibility="gone"
+                tools:text="1231" />
+
+            <!--名称-->
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/toolbar_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="@{authorObservable.name}"
+                android:textColor="@{toolBind.getAuthorNameColor}"
+                android:textSize="@dimen/DIMEN_13DP"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="@{toolBind.showDate||TextUtils.isEmpty(toolBind.getAuthorSourceText)? View.GONE : View.VISIBLE}"
+                tools:text="1231" />
+
+            <!--认证信息或作者简介 -->
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/toolbar_sources_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/media_tool_bar_attention_right_min_margin"
+                android:maxLength="50"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:singleLine="true"
+                android:text="@{toolBind.getAuthorSourceText}"
+                android:textColor="@{toolBind.getAuthorSourceColor}"
+                android:textSize="@dimen/DIMEN_12DP"
+                android:visibility="@{toolBind.showDate||TextUtils.isEmpty(toolBind.getAuthorSourceText)? View.GONE : View.VISIBLE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="作者简介"
+                tools:visibility="visible" />
+
+        </com.jxntv.widget.GVideoConstraintLayout>
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/toolbar_favorite_img"
+            style="@style/feed_comment_img"
+            android:onClick="@{(view)->toolBind.onFavoriteClick(view)}"
+            android:src="@{videoObservable.isFavor ? @drawable/media_toolbar_favorite_checked : @drawable/media_toolbar_favorite_unchecked}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/toolbar_favorite_num_text"
+            tools:src="@drawable/media_toolbar_favorite_checked" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/toolbar_favorite_num_text"
+            style="@style/feed_comment_text"
+            android:text="@{videoObservable.favorText}"
+            android:onClick="@{(view)->toolBind.onFavoriteClick(view)}"
+            android:layout_marginEnd="@dimen/DIMEN_15DP"
+            app:corner_radius="@dimen/DIMEN_6DP"
+            app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_favorite_img"
+            app:layout_constraintEnd_toStartOf="@id/toolbar_chat_img"
+            tools:text="44" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/toolbar_chat_img"
+            style="@style/feed_comment_img"
+            android:onClick="@{(view)->toolBind.onCommentClick(view)}"
+            android:src="@{toolBind.getCommentItem}"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_favorite_img"
+            app:layout_constraintEnd_toStartOf="@id/toolbar_comment_num_text"
+            app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img"
+            tools:src="@drawable/ic_common_comment" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/toolbar_comment_num_text"
+            style="@style/feed_comment_text"
+            android:onClick="@{(view)->toolBind.onCommentClick(view)}"
+            android:text="@{videoObservable.commentText}"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_chat_img"
+            app:layout_constraintTop_toTopOf="@id/toolbar_chat_img"
+            app:layout_constraintEnd_toStartOf="@id/toolbar_more_img"
+            tools:text="12" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/toolbar_more_img"
+            android:layout_width="@dimen/DIMEN_50DP"
+            android:layout_height="@dimen/DIMEN_36DP"
+            android:layout_marginLeft="@dimen/DIMEN_36DP"
+            android:onClick="@{(view)->toolBind.onMoreClick(view)}"
+            android:scaleType="center"
+            android:src="@{toolBind.getShareItem}"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_favorite_img"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img"
+            tools:src="@drawable/media_toolbar_share" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

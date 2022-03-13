@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feed_label_background_drawable">
+
+    <com.jxntv.widget.GVideoImageView
+        android:id="@+id/label_img"
+        android:layout_width="@dimen/feed_label_item_img_size"
+        android:layout_height="@dimen/feed_label_item_img_size"/>
+
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/label_text"
+        android:layout_width="@dimen/feed_label_item_text_width"
+        android:layout_height="@dimen/feed_label_item_text_height"
+        android:textColor="@color/feed_label_text_color"
+        android:textSize="@dimen/feed_tab_text_size"/>
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+apply plugin: "com.android.application"
+apply plugin: 'com.sensorsdata.analytics.android'
+
+android {
+    compileSdkVersion buildVersions.compileSdkVersion
+    buildToolsVersion buildVersions.buildToolsVersion
+
+    defaultConfig {
+        applicationId buildVersions.applicationId
+        minSdkVersion buildVersions.minSdkVersion
+        targetSdkVersion buildVersions.targetSdkVersion
+        versionCode buildVersions.versionCode
+        versionName buildVersions.versionName
+
+        multiDexEnabled true
+        flavorDimensions "channel"
+
+        ndk.abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        // 如果使用模拟器测试，使用以下架构配置
+        // ndk.abiFilters 'armeabi-v7a'
+
+        buildConfigField "String", "app_scheme", "\"${appKey.app_scheme}\" "
+
+    }
+
+    signingConfigs {
+        myConfig {
+            storeFile file("../app/jinshipin.jks")
+            storePassword "jinshipin@2020.#"
+            keyAlias "jin"
+            keyPassword "jinshipin@2020.#"
+        }
+        android {
+            keyAlias 'android.keystore'
+            keyPassword 'liaolinxia'
+            storeFile file('android.keystore')
+            storePassword 'liaolinxia'
+        }
+    }
+
+    packagingOptions {
+        pickFirst 'META-INF/rxjava.properties'
+        pickFirst 'META-INF/beans.xml'
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            signingConfig signingConfigs.android
+        }
+        release {
+            debuggable false
+            signingConfig signingConfigs.android
+            // minifyEnabled true
+            // shrinkResources true
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+
+    /* 添加渠道号相关逻辑 */
+    android.productFlavors.configure {
+        jinshipin {}
+        Test {}
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+
+
+    applicationVariants.all { variant ->
+
+        def versionName = variant.versionName
+        def applicationId = variant.applicationId
+        def flavorName = variant.name
+
+        variant.outputs.all {
+//            outputFileName = applicationId + "_v${versionName}_${releaseTime()}_" + flavorName + '.apk'
+            outputFileName = "v${versionName}_" + flavorName + '.apk'
+        }
+    }
+
+}
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation deps.tog_lib_ioc
+    implementation deps.tog_kernel_base
+    implementation deps.tog_kernel_stat
+    implementation deps.tog_feature_account
+    implementation deps.tog_feature_circle
+    implementation deps.tog_feature_video
+    implementation deps.tog_feature_home
+    implementation deps.tog_feature_webview
+    implementation deps.tog_feature_feed
+    implementation deps.tog_feature_search
+    implementation deps.tog_feature_share
+    implementation deps.tog_feature_test
+    implementation deps.tog_feature_record
+    implementation deps.tog_feature_live
+    implementation deps.tog_feature_watch_tv
+    implementation deps.tog_kernel_push
+    implementation deps.tog_tuikit_chat
+    implementation deps.multidex
+    implementation deps.okhttpLogging
+    implementation deps.bugly_crash
+    implementation deps.bugly_ndk_crash
+
+}

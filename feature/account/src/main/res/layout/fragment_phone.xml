@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.account.ui.phone.PhoneViewModel" />
+
+        <variable
+            name="binding"
+            type="com.jxntv.account.ui.phone.PhoneDataBinding" />
+
+        <import type="com.jxntv.ArrayHelper" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/all_layout_background"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/top_blank"
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <!--返回按钮-->
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/image_view_back"
+            style="@style/FragmentPhoneStyle.Back"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/DIMEN_0DP"
+            app:layout_goneMarginTop="@dimen/DIMEN_45DP"
+            android:onClick="@{(v)->viewModel.back(v)}"
+            app:layout_constraintTop_toBottomOf="@id/top_blank"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <!--左对齐辅助线-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_line_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/margin_all_account_large" />
+
+        <!--右对齐辅助线-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_line_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/margin_all_account_large" />
+
+        <!--标题-->
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/DIMEN_80DP"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@{binding.title,default=手机号登陆}"
+            android:textColor="@color/color_212229"
+            android:textSize="@dimen/sp_27"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_left"
+            app:layout_goneMarginTop="@dimen/DIMEN_45DP" />
+
+        <!--城市电话编码-->
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_country_code"
+            style="@style/FragmentPhoneStyle.CountryCode"
+            android:onClick="@{(view)->viewModel.selectCountryCode(view)}"
+            android:text="@={binding.countryCode,default=`+86`}"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_text_phone_number"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_left"
+            app:layout_constraintTop_toTopOf="@+id/edit_text_phone_number" />
+
+        <!--手机号输入框-->
+        <com.jxntv.widget.GVideoClearableEditText
+            android:id="@+id/edit_text_phone_number"
+            style="@style/FragmentPhoneStyle.PhoneNumber"
+            android:hint="@string/fragment_phone_phone_number_hint"
+            android:text="@={binding.phoneNumber}"
+            app:layout_constraintLeft_toRightOf="@id/text_view_country_code"
+            app:layout_constraintRight_toRightOf="@id/guide_line_right"
+            app:layout_constraintTop_toBottomOf="@id/text_view_title" />
+
+        <!--输入框底部线-->
+        <View
+            android:id="@+id/view_driver"
+            style="@style/FragmentPhoneStyle.Driver"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_left"
+            app:layout_constraintRight_toRightOf="@id/guide_line_right"
+            app:layout_constraintTop_toBottomOf="@id/edit_text_phone_number" />
+
+        <!--下一步按钮-->
+        <com.jxntv.widget.GVideoButton
+            android:id="@+id/button_next"
+            style="@style/FragmentPhoneStyle.Next"
+            android:background="@{binding.enableNext?@drawable/all_c_gradual01_button_state_enable_background:@drawable/all_c_gradual01_button_state_disable_background}"
+            android:textColor="@{binding.enableNext?@color/t_color05:@color/t_color03}"
+            android:onClick="@{(view)->viewModel.startLoginCodeFragment(view)}"
+            android:text="@string/fragment_phone_next"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_left"
+            app:layout_constraintRight_toRightOf="@id/guide_line_right"
+            app:layout_constraintTop_toBottomOf="@id/view_driver" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingRight="@dimen/DIMEN_3DP"
+            android:checked="@{binding.isCheck}"
+            android:onClick="@{(view)->binding.onCheckClick(view)}"
+            android:button="@drawable/selector_check_green"
+            app:layout_constraintRight_toLeftOf="@id/text_view_login_for_agreement"
+            app:layout_constraintTop_toTopOf="@id/text_view_login_for_agreement"
+            app:layout_constraintBottom_toBottomOf="@id/text_view_login_for_agreement" />
+
+        <View
+            android:layout_width="@dimen/DIMEN_10DP"
+            android:layout_height="0dp"
+            android:onClick="@{(view)->binding.onCheckClick(view)}"
+            app:layout_constraintRight_toLeftOf="@id/checkbox"
+            app:layout_constraintTop_toTopOf="@id/checkbox"
+            app:layout_constraintBottom_toBottomOf="@id/checkbox" />
+
+        <!--登录即代表已同意-->
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_login_for_agreement"
+            style="@style/FragmentPhoneStyle.LoginForAgreement"
+            android:paddingTop="@dimen/DIMEN_5DP"
+            android:paddingBottom="@dimen/DIMEN_5DP"
+            android:text="@string/fragment_phone_login_for_agreement"
+            android:onClick="@{(view)->binding.onCheckClick(view)}"
+            android:visibility="@{binding.tipVisibility}"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_left"
+            app:layout_constraintRight_toLeftOf="@+id/text_view_user_contract"
+            app:layout_constraintTop_toBottomOf="@id/button_next" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_user_contract"
+            style="@style/FragmentPhoneStyle.UserContract"
+            android:onClick="@{(v)->viewModel.showUserAgreement(v)}"
+            android:paddingTop="@dimen/DIMEN_5DP"
+            android:paddingBottom="@dimen/DIMEN_5DP"
+            android:text="@string/fragment_phone_user_contract"
+            android:visibility="@{binding.tipVisibility}"
+            app:layout_constraintBottom_toBottomOf="@id/text_view_login_for_agreement"
+            app:layout_constraintLeft_toRightOf="@id/text_view_login_for_agreement"
+            app:layout_constraintRight_toLeftOf="@+id/text_view_and"
+            app:layout_constraintTop_toTopOf="@id/text_view_login_for_agreement" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_and"
+            style="@style/FragmentPhoneStyle.And"
+            android:text="@string/fragment_phone_and"
+            android:paddingTop="@dimen/DIMEN_5DP"
+            android:paddingBottom="@dimen/DIMEN_5DP"
+            android:visibility="@{binding.tipVisibility}"
+            app:layout_constraintLeft_toRightOf="@id/text_view_user_contract"
+            app:layout_constraintRight_toLeftOf="@+id/text_view_privacy_policy"
+            app:layout_constraintTop_toBottomOf="@id/button_next" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_privacy_policy"
+            style="@style/FragmentPhoneStyle.UserContract"
+            android:onClick="@{(v)->viewModel.showPrivacyPolicy(v)}"
+            android:text="@string/fragment_phone_privacy_policy"
+            android:paddingTop="@dimen/DIMEN_5DP"
+            android:paddingBottom="@dimen/DIMEN_5DP"
+            android:visibility="@{binding.tipVisibility}"
+            app:layout_constraintTop_toTopOf="@id/text_view_login_for_agreement"
+            app:layout_constraintLeft_toRightOf="@id/text_view_and"
+            app:layout_constraintRight_toRightOf="@id/guide_line_right"
+            app:layout_constraintTop_toBottomOf="@id/button_next"
+            app:layout_constraintBottom_toBottomOf="@id/text_view_login_for_agreement" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

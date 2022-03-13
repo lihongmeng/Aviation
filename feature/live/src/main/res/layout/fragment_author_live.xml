@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.live.ui.author.AuthorLiveViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:background="@color/color_3a3a4d_25">
+
+        <com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/color_ffffff" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/audience_background_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:background="@drawable/icon_sound_micro_connect_bg" />
+
+        <com.jxntv.widget.GvideoRConstraintLayout
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/bottom_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_50DP"
+                android:background="@color/color_000000_50"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/comment"
+                android:layout_width="@dimen/DIMEN_211DP"
+                android:layout_height="@dimen/DIMEN_33DP"
+                android:layout_marginStart="@dimen/DIMEN_10DP"
+                android:background="@drawable/shape_solid_80000000_corners_200dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:onClick="@{v-> viewModel.onCommentClicked(v)}"
+                android:paddingLeft="@dimen/DIMEN_13DP"
+                android:singleLine="true"
+                android:text="想对主播说点什么？"
+                android:textColor="@color/color_ffffff"
+                app:layout_constraintBottom_toBottomOf="@id/bottom_bg"
+                app:layout_constraintLeft_toLeftOf="@id/bottom_bg"
+                app:layout_constraintTop_toTopOf="@id/bottom_bg" />
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/switch_camera"
+                android:layout_width="@dimen/DIMEN_50DP"
+                android:layout_height="@dimen/DIMEN_50DP"
+                android:onClick="@{(v)->viewModel.onChangeCameraClicked(v)}"
+                android:scaleType="center"
+                android:src="@drawable/ic_camera_switch"
+                app:layout_constraintBottom_toBottomOf="@id/bottom_bg"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/bottom_bg" />
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/micro_connect"
+                android:layout_width="@dimen/DIMEN_50DP"
+                android:layout_height="@dimen/DIMEN_50DP"
+                android:layout_marginRight="@dimen/DIMEN_10DP"
+                android:onClick="@{(v)->viewModel.onMicroConnectClicked(v)}"
+                android:scaleType="center"
+                android:src="@drawable/icon_micro_connect"
+                app:layout_constraintBottom_toBottomOf="@id/bottom_bg"
+                app:layout_constraintRight_toLeftOf="@id/switch_camera"
+                app:layout_constraintTop_toTopOf="@id/bottom_bg" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/micro_connect_apply_count"
+                android:layout_width="@dimen/DIMEN_18DP"
+                android:layout_height="@dimen/DIMEN_18DP"
+                android:textSize="@dimen/sp_10"
+                tools:text="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:visibility="@{viewModel.applyAnchorCountVisibility ? View.VISIBLE : View.GONE}"
+                android:text="@{viewModel.applyAnchorCountString}"
+                android:layout_marginTop="@dimen/DIMEN_5DP"
+                android:gravity="center"
+                android:textColor="@color/color_ffffff"
+                android:background="@drawable/shape_soild_e4344e_coners_200dp"
+                app:layout_constraintTop_toTopOf="@id/micro_connect"
+                app:layout_constraintRight_toRightOf="@id/micro_connect" />
+
+            <FrameLayout
+                android:id="@+id/sound_audience_list"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_130DP"
+                android:layout_marginTop="@dimen/DIMEN_250DP"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <include layout="@layout/sound_micro_connect_audience_layout" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/video_audience_list"
+                android:layout_width="@dimen/DIMEN_58DP"
+                android:layout_height="@dimen/DIMEN_398DP"
+                android:layout_marginEnd="@dimen/DIMEN_10DP"
+                android:layout_marginBottom="@dimen/DIMEN_13DP"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@id/bottom_bg"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <include layout="@layout/video_micro_connect_audience_layout" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="bottom"
+                app:layout_goneMarginTop="@dimen/DIMEN_270DP"
+                app:layout_constraintTop_toBottomOf="@id/sound_audience_list"
+                app:layout_constraintBottom_toTopOf="@id/bottom_bg"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/video_audience_list">
+
+                <com.jxntv.widget.GVideoRecyclerView
+                    android:id="@+id/recycler_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/DIMEN_10DP"
+                    app:adapter="@{viewModel.liveChatAdapter}"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            </LinearLayout>
+
+            <com.jxntv.widget.GvideoRConstraintLayout
+                android:id="@+id/c_title_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/DIMEN_14DP"
+                android:layout_marginTop="@dimen/DIMEN_29DP"
+                app:corner_radius="@dimen/DIMEN_18DP"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/share"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.jxntv.widget.GVideoImageView
+                    android:id="@+id/back"
+                    android:layout_width="@dimen/DIMEN_27DP"
+                    android:background="@drawable/shape_solid_80000000_corners_200dp"
+                    android:layout_height="@dimen/DIMEN_27DP"
+                    android:src="@drawable/ic_back_white_78_78"
+                    android:onClick="@{(v)->viewModel.onExitClicked()}" />
+
+                <View
+                    android:id="@+id/top_room_info_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/DIMEN_27DP"
+                    android:layout_marginStart="@dimen/DIMEN_9DP"
+                    android:background="@drawable/shape_solid_80000000_corners_200dp"
+                    app:layout_constraintLeft_toRightOf="@id/back"
+                    app:layout_constraintRight_toRightOf="@id/title" />
+
+                <com.jxntv.widget.GVideoRTextView
+                    android:id="@+id/live_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_5DP"
+                    android:background="@drawable/shape_soild_e4344e_coners_200dp"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/DIMEN_7DP"
+                    android:paddingTop="@dimen/DIMEN_1DP"
+                    android:paddingEnd="@dimen/DIMEN_7DP"
+                    android:paddingBottom="@dimen/DIMEN_1DP"
+                    android:text="@string/live"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_13"
+                    app:background_normal="@color/color_fb294e"
+                    app:corner_radius="@dimen/DIMEN_12DP"
+                    app:layout_constraintBottom_toBottomOf="@id/top_room_info_bg"
+                    app:layout_constraintLeft_toLeftOf="@id/top_room_info_bg"
+                    app:layout_constraintLeft_toRightOf="@id/back"
+                    app:layout_constraintTop_toTopOf="@id/top_room_info_bg" />
+
+                <com.jxntv.widget.GVideoRTextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/DIMEN_7DP"
+                    android:paddingRight="@dimen/DIMEN_8DP"
+                    tools:text="张三的直播····"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16"
+                    app:layout_constraintBaseline_toBaselineOf="@id/live_tag"
+                    app:layout_constraintLeft_toRightOf="@id/live_tag" />
+
+            </com.jxntv.widget.GvideoRConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/header_name_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_47DP"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:id="@+id/sound_live_ripple_bg"
+                    android:layout_width="@dimen/DIMEN_247DP"
+                    android:layout_height="@dimen/DIMEN_247DP"
+                    android:background="@drawable/layer_list_sound_live_header_ripple"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="visible" />
+
+                <com.jxntv.widget.GVideoRImageView
+                    android:id="@+id/sound_live_anchor_header"
+                    android:layout_width="@dimen/DIMEN_94DP"
+                    android:layout_height="@dimen/DIMEN_94DP"
+                    app:corner_radius="@dimen/DIMEN_93DP"
+                    app:layout_constraintBottom_toBottomOf="@id/sound_live_ripple_bg"
+                    app:layout_constraintLeft_toLeftOf="@id/sound_live_ripple_bg"
+                    app:layout_constraintRight_toRightOf="@id/sound_live_ripple_bg"
+                    app:layout_constraintTop_toTopOf="@id/sound_live_ripple_bg"
+                    tools:visibility="visible" />
+
+                <com.jxntv.widget.GVideoTextView
+                    android:id="@+id/sound_live_anchor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_18DP"
+                    android:layout_marginTop="@dimen/DIMEN_84DP"
+                    android:background="@drawable/shape_solid_f0b54c_corners_200dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/DIMEN_4DP"
+                    android:paddingRight="@dimen/DIMEN_4DP"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_12"
+                    app:layout_constraintLeft_toLeftOf="@id/sound_live_anchor_header"
+                    app:layout_constraintRight_toRightOf="@id/sound_live_anchor_header"
+                    app:layout_constraintTop_toTopOf="@id/sound_live_anchor_header"
+                    tools:text="主播 胡剑云" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/share"
+                android:layout_width="@dimen/DIMEN_27DP"
+                android:layout_height="@dimen/DIMEN_27DP"
+                android:layout_marginEnd="@dimen/DIMEN_16DP"
+                android:onClick="@{v-> viewModel.shareClicked(v)}"
+                android:src="@drawable/icon_share_live"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/c_title_layout"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/c_title_layout" />
+
+            <com.jxntv.widget.GVideoRecyclerView
+                android:id="@+id/audience_avatar_recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_24DP"
+                android:layout_marginEnd="@dimen/DIMEN_5DP"
+                android:maxWidth="@dimen/DIMEN_80DP"
+                app:adapter="@{viewModel.audienceAvatarAdapter}"
+                app:layout_constraintBottom_toBottomOf="@id/audience_count"
+                app:layout_constraintRight_toLeftOf="@id/audience_count"
+                app:layout_constraintTop_toBottomOf="@id/c_title_layout"
+                app:layout_constraintTop_toTopOf="@id/audience_count" />
+
+            <com.jxntv.widget.GVideoRTextView
+                android:id="@+id/audience_count"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_24DP"
+                android:layout_marginTop="@dimen/DIMEN_7DP"
+                android:layout_marginEnd="@dimen/DIMEN_12DP"
+                android:paddingStart="@dimen/DIMEN_6DP"
+                android:paddingTop="@dimen/DIMEN_4DP"
+                android:paddingEnd="@dimen/DIMEN_6DP"
+                android:paddingBottom="@dimen/DIMEN_4DP"
+                android:text="@{viewModel.mCurrentAudienceString}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12"
+                app:background_normal="@color/color_3a3a4d_25"
+                app:corner_radius="@dimen/DIMEN_24DP"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/c_title_layout"
+                tools:text="1322人" />
+
+        </com.jxntv.widget.GvideoRConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

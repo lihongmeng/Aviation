@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="videoBind"
+            type="com.jxntv.media.databind.MediaVideoDataBind" />
+
+        <variable
+            name="feedModel"
+            type="com.jxntv.media.model.MediaModel" />
+
+        <import type="android.view.View" />
+
+        <import type="android.text.TextUtils" />
+
+    </data>
+
+    <com.jxntv.widget.GVideoLinearLayout
+        android:orientation="vertical"
+        style="@style/feed_layout_margin"
+        android:onClick="@{(view)->videoBind.onItemClick(view)}">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/title"
+            style="@style/feed_title_style"
+            android:text="@{feedModel.qaTitle}"
+            android:visibility="@{TextUtils.isEmpty(feedModel.qaTitle)?View.GONE:View.VISIBLE,default=gone}" />
+
+        <com.jxntv.widget.FoldTextView
+            android:id="@+id/video_top_title"
+            style="@style/TextStyle.DefaultSpacing_lsm_1_4"
+            android:layout_marginBottom="@dimen/DIMEN_9DP"
+            android:text="@{feedModel.contentThanTitle}"
+            android:visibility="@{feedModel.showInsideVideoTitle()||TextUtils.isEmpty(feedModel.contentThanTitle)?View.GONE:View.VISIBLE}"
+            app:contentTextColor="@color/color_333333"
+            app:force_pack="true"
+            app:showMaxLine="3"
+            app:tipClickable="false"
+            app:tipColor="@color/c_4189FF" />
+
+        <include
+            android:id="@+id/feed_layout_qa"
+            layout="@layout/view_question_message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_10DP"
+            app:feedModel="@{feedModel}" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/player_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="@dimen/r_r01"
+            app:cardElevation="@dimen/DIMEN_0DP">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.jxntv.android.liteav.GVideoView
+                    android:id="@+id/player_view"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintDimensionRatio="h,16:9" />
+
+                <com.jxntv.base.view.MediaImageView
+                    android:id="@+id/video_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:onClick="@{(view)->videoBind.dealMediaClick(view, feedModel)}"
+                    app:imageData="@{feedModel.coverUrl}"
+                    app:layout_constraintTop_toTopOf="@id/player_view"
+                    app:layout_constraintDimensionRatio="h,16:9"
+                    app:placeholder="@{@drawable/media_default_cover_bg}"
+                    app:play_in_recycler="true"
+                    app:roundedCorners="@{@dimen/r_r01}" />
+
+                <View
+                    android:id="@+id/title_mask"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/feed_title_back_cover"
+                    android:visibility="@{feedModel.showInsideVideoTitle()?View.VISIBLE:View.GONE}"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/media_big_img_title_margin_left"
+                    android:layout_marginTop="@dimen/media_big_img_title_margin_top"
+                    android:layout_marginRight="@dimen/media_big_img_title_margin_left"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.jxntv.widget.GVideoTextView
+                        android:id="@+id/video_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="2"
+                        android:text="@{feedModel.title}"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_15"
+                        android:translationZ="2px"
+                        android:visibility="@{feedModel.showInsideVideoTitle()?View.VISIBLE:View.GONE}"
+                        tools:text="这是一个title这是一个title这是一个title这是一个title这是一个title这是一个title这是一个title" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_live_tag"
+                        style="@style/live_tag_layout_no_width_no_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/video_title"
+                        android:gravity="center_horizontal"
+                        android:paddingStart="@dimen/DIMEN_5DP"
+                        android:paddingEnd="@dimen/DIMEN_5DP"
+                        android:visibility="@{feedModel.liveMedia ? View.VISIBLE : View.GONE}">
+
+                        <com.jxntv.widget.WaveIndicatorView
+                            android:layout_width="@dimen/DIMEN_14DP"
+                            android:layout_height="@dimen/DIMEN_10DP"
+                            android:layout_gravity="center_vertical"
+                            android:visibility="@{feedModel.isLivingTag ? View.VISIBLE : View.GONE}"
+                            app:indicator_color="@color/color_ffffff"
+                            app:indicator_count="3"
+                            app:indicator_spacing="@dimen/DIMEN_2DP"
+                            app:indicator_width="@dimen/DIMEN_2D5P" />
+
+                        <com.jxntv.widget.GVideoTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:includeFontPadding="false"
+                            android:singleLine="true"
+                            android:text="@{feedModel.liveBroadcastStatusStr}"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_11"
+                            tools:text="直播" />
+
+                    </LinearLayout>
+
+                    <com.jxntv.base.view.LiveStartTimeView
+                        android:id="@+id/live_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/layout_live_tag"
+                        android:layout_alignBottom="@id/layout_live_tag"
+                        android:layout_toRightOf="@id/layout_live_tag"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <com.jxntv.widget.GVideoLinearLayout
+                    android:id="@+id/layout_enter_live_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/feed_live_bottom_back_cover"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/DIMEN_15DP"
+                    android:paddingBottom="@dimen/DIMEN_15DP"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:visibility="visible">
+
+                    <com.jxntv.widget.WaveIndicatorView
+                        android:layout_width="@dimen/DIMEN_14DP"
+                        android:layout_height="@dimen/DIMEN_12DP"
+                        android:layout_gravity="bottom"
+                        android:layout_marginEnd="@dimen/DIMEN_3DP"
+                        android:layout_marginBottom="@dimen/DIMEN_3DP"
+                        android:visibility="@{feedModel.isLivingTag ? View.VISIBLE : View.GONE}"
+                        app:indicator_color="@color/white"
+                        app:indicator_count="3"
+                        app:indicator_spacing="@dimen/DIMEN_2DP"
+                        app:indicator_width="@dimen/DIMEN_2D5P" />
+
+                    <com.jxntv.widget.GVideoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:outlineProvider="none"
+                        android:text="@string/enter_live_room"
+                        android:textColor="@color/t_color05"
+                        android:textSize="@dimen/t_font07" />
+
+                </com.jxntv.widget.GVideoLinearLayout>
+
+                <com.jxntv.base.view.MediaImageView
+                    android:id="@+id/video_big_img"
+                    android:layout_width="@dimen/media_big_img_video_img_size"
+                    android:layout_height="@dimen/media_big_img_video_img_size"
+                    android:onClick="@{(view)->videoBind.dealMediaClick(view, feedModel)}"
+                    android:src="@drawable/media_video_img_big"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:tag="@{feedModel.liveMedia}"
+                    android:visibility="@{feedModel.liveMedia ? View.GONE : View.VISIBLE}"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </com.jxntv.widget.GVideoLinearLayout>
+</layout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="detailBind"
+            type="com.jxntv.search.databinding.SearchResultDataBinding" />
+
+        <variable
+            name="detailModel"
+            type="com.jxntv.search.model.SearchDetailModel" />
+
+        <import type="android.view.View" />
+
+        <import type="android.text.TextUtils" />
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/feed_layout_margin"
+        android:id="@+id/root_layout"
+        android:onClick="@{view->detailBind.onProgramClick(view, detailModel)}">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/content_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_28DP"
+            android:gravity="bottom"
+            android:includeFontPadding="false"
+            android:text="@string/tab_programmes"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_13"
+            android:visibility="@{detailModel.showTag?View.VISIBLE:View.GONE}" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/cover_img"
+            android:layout_width="@dimen/DIMEN_77DP"
+            android:layout_height="@dimen/DIMEN_77DP"
+            android:layout_marginTop="@dimen/DIMEN_13DP"
+            app:layout_goneMarginTop="@dimen/DIMEN_0DP"
+            app:imageData="@{detailModel.coverUrl}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/content_tag"
+            app:placeholder="@{@drawable/media_default_cover_bg}"
+            app:roundedCorners="@{@dimen/r_r01}" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:layout_width="@dimen/DIMEN_29DP"
+            android:layout_height="@dimen/DIMEN_29DP"
+            android:src="@drawable/ic_play_white_bg_black"
+            app:layout_constraintBottom_toBottomOf="@id/cover_img"
+            app:layout_constraintLeft_toLeftOf="@id/cover_img"
+            app:layout_constraintRight_toRightOf="@id/cover_img"
+            app:layout_constraintTop_toTopOf="@id/cover_img" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_17DP"
+            android:maxLines="1"
+            android:text="@{detailModel.title}"
+            android:textColor="@color/color_e4344e"
+            android:textSize="@dimen/sp_17"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/one_img_source"
+            app:layout_constraintStart_toEndOf="@+id/cover_img"
+            app:layout_constraintTop_toTopOf="@id/cover_img"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="金牌调解" />
+
+        <com.jxntv.widget.GVideoRLinearLayout
+            android:layout_width="@dimen/DIMEN_62DP"
+            android:layout_height="@dimen/DIMEN_23DP"
+            android:layout_marginBottom="@dimen/DIMEN_10DP"
+            android:gravity="center"
+            app:background_normal="@color/color_e4344e"
+            app:corner_radius="@dimen/DIMEN_12DP"
+            app:layout_constraintBottom_toBottomOf="@id/cover_img"
+            app:layout_constraintStart_toStartOf="@id/title">
+
+            <com.jxntv.widget.GVideoImageView
+                android:layout_width="@dimen/DIMEN_15DP"
+                android:layout_height="@dimen/DIMEN_15DP"
+                android:src="@drawable/ic_play_white" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/DIMEN_3DP"
+                android:text="@string/play"
+                android:textColor="@color/color_ffffff" />
+
+        </com.jxntv.widget.GVideoRLinearLayout>
+
+        <com.jxntv.widget.GVideoRecyclerView
+            android:id="@+id/program_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            app:layout_constraintTop_toBottomOf="@id/cover_img" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/DIMEN_13DP"
+            android:layout_marginBottom="@dimen/DIMEN_13DP"
+            android:background="@color/c_line02"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/program_list" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

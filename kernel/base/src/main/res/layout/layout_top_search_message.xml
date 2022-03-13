@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_tab_container"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_tab_chiness_red_home"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top_bar_search_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_30DP"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/DIMEN_9DP"
+            android:layout_marginStart="@dimen/DIMEN_14DP"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            android:background="@drawable/feed_search_drawable"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/messageLayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/search"
+                android:layout_width="@dimen/DIMEN_17DP"
+                android:layout_height="@dimen/DIMEN_17DP"
+                android:layout_marginStart="@dimen/DIMEN_14DP"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_search_search_grey" />
+
+
+            <com.jxntv.widget.GVideoBanner
+                android:id="@+id/top_search_banner"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/DIMEN_12DP"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/scan"
+                android:layout_width="@dimen/DIMEN_17DP"
+                android:layout_height="@dimen/DIMEN_17DP"
+                android:layout_marginEnd="@dimen/DIMEN_10DP"
+                android:src="@drawable/icon_search_scan_grey" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/search_space"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_8DP"
+            android:background="@color/color_ffffff"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/top_bar_search_layout" />
+
+        <com.jxntv.base.view.tab.GVideoSmartTabLayout
+            android:id="@+id/gvideo_tabs"
+            style="@style/TabLayoutDefaultStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="@dimen/DIMEN_10DP"
+            app:stl_indicatorWidth="@dimen/DIMEN_23DP"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_bar_search_layout"
+            app:stl_defaultTabTextHorizontalPadding="10dp" />
+
+        <com.jxntv.base.view.HomeMessageLayout
+            android:id="@+id/messageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/top_bar_search_layout"
+            app:layout_constraintTop_toTopOf="@id/top_bar_search_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

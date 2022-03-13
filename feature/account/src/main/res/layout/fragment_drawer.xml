@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.account.ui.drawer.DrawerViewModel" />
+
+        <variable
+            name="user"
+            type="com.jxntv.account.model.UserObservable" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/all_layout_background"
+        android:fillViewport="true">
+
+        <com.jxntv.widget.GVideoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <!--头像和名称-->
+            <com.jxntv.widget.GVideoLinearLayout
+                style="@style/FragmentDrawer.AvatarContainer"
+                android:orientation="vertical"
+                android:onClick="@{(v)->viewModel.navigateToProfile(v)}">
+
+                <com.jxntv.widget.GVideoConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.jxntv.widget.GVideoImageView
+                        android:id="@+id/image_view_avatar"
+                        android:layout_width="@dimen/DIMEN_92DP"
+                        android:layout_height="@dimen/DIMEN_92DP"
+                        app:circleCrop="@{true}"
+                        app:placeholder="@{@drawable/ic_default_avatar}"
+                        app:imageData="@{user.avatarUrl}"
+                        tools:src="@drawable/ic_launcher" />
+
+                    <com.jxntv.widget.GVideoImageView
+                        android:layout_width="@dimen/DIMEN_29DP"
+                        android:layout_height="@dimen/DIMEN_29DP"
+                        android:src="@drawable/icon_header_authentication"
+                        android:visibility="@{user.isAuthentication?View.VISIBLE:View.GONE}"
+                        app:layout_constraintEnd_toEndOf="@id/image_view_avatar"
+                        app:layout_constraintBottom_toBottomOf="@id/image_view_avatar" />
+
+                </com.jxntv.widget.GVideoConstraintLayout>
+
+                <com.jxntv.widget.GVideoTextView
+                    android:id="@+id/text_view_nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_15"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_212229"
+                    android:layout_marginTop="@dimen/DIMEN_10DP"
+                    android:text="@{user.hasLoggedIn ? user.nickname : @string/all_un_login}"
+                    tools:text="张三" />
+            </com.jxntv.widget.GVideoLinearLayout>
+
+<!--            <com.jxntv.widget.GVideoCellView-->
+<!--                style="@style/FragmentDrawer.NotificationCell"-->
+<!--                android:onClick="@{(v)->viewModel.navigateToMessageAndNotification(v)}"-->
+<!--                app:cvLeftIcon="@drawable/ic_message"-->
+<!--                app:cvLeftText="@string/fragment_profile_drawer_message_and_notification"-->
+<!--                app:cvShowLeftIconPoint="@{viewModel.hasUnreadMessageNotification}" />-->
+
+            <com.jxntv.widget.GVideoCellView
+                style="@style/FragmentDrawer.Cell"
+                android:onClick="@{(v)->viewModel.navigateToAccountAndSecurity(v)}"
+                app:cvLeftIcon="@drawable/ic_security"
+                app:cvLeftText="@string/fragment_profile_drawer_account_and_security" />
+
+            <com.jxntv.widget.GVideoCellView
+                style="@style/FragmentDrawer.Cell"
+                android:onClick="@{(v)->viewModel.navigateToGeneralSetting(v)}"
+                app:cvLeftIcon="@drawable/ic_setting"
+                app:cvLeftText="@string/fragment_profile_drawer_general_setting" />
+
+            <com.jxntv.widget.GVideoCellView
+                style="@style/FragmentDrawer.Cell"
+                android:onClick="@{(v)->viewModel.navigateToFeedbackAndHelp(v)}"
+                app:cvLeftIcon="@drawable/ic_feedback"
+                app:cvLeftText="@string/fragment_profile_drawer_feedback_and_help" />
+
+            <com.jxntv.widget.GVideoCellView
+                style="@style/FragmentDrawer.Cell"
+                android:onClick="@{(v)->viewModel.showAppQrCode(v)}"
+                app:cvLeftIcon="@drawable/invite_friend"
+                app:cvLeftText="@string/invite_friend" />
+
+            <com.jxntv.widget.GVideoCellView
+                style="@style/FragmentDrawer.Cell"
+                android:onClick="@{(v)->viewModel.navigateToAbout(v)}"
+                app:cvLeftIcon="@drawable/ic_about"
+                app:cvLeftText="@string/fragment_profile_drawer_about_gvideo" />
+
+            <com.jxntv.widget.GVideoCellView
+                style="@style/FragmentDrawer.Cell"
+                android:onClick="@{(v)->viewModel.mark(v)}"
+                app:cvLeftIcon="@drawable/ic_like"
+                app:cvLeftText="@string/mark_for_us"
+                android:visibility="@{viewModel.switchEnvironmentVisibility}" />
+
+            <com.jxntv.widget.GVideoCellView
+                style="@style/FragmentDrawer.Cell"
+                android:onClick="@{(v)->viewModel.navigateToSettleIn(v)}"
+                app:cvLeftIcon="@drawable/ic_settle_in"
+                app:cvLeftText="@string/fragment_profile_drawer_settle_in"
+                app:cvShowBottomDriver="true"
+                android:visibility="@{viewModel.switchEnvironmentVisibility}" />
+
+            <com.jxntv.widget.GVideoCellView
+                android:id="@+id/cell_view_clear_cache"
+                style="@style/FragmentDrawer.Cell"
+                android:onClick="@{(v)->viewModel.clearCache(v)}"
+                app:cvAddRightIcon="true"
+                app:cvAddRightText="true"
+                app:cvLeftIcon="@drawable/ic_clean_cache"
+                app:cvLeftText="@string/fragment_profile_drawer_clear_cache"
+                app:cvRightIcon="@drawable/ic_loading"
+                app:cvRightText="@{viewModel.cacheSize}"
+                app:cvShowRightIcon="false" />
+
+            <com.jxntv.widget.GVideoCellView
+                style="@style/FragmentDrawer.Cell"
+                android:onClick="@{(v)->viewModel.switchEnvironment(v)}"
+                android:visibility="@{viewModel.switchEnvironmentVisibility}"
+                app:cvAddLeftIcon="false"
+                app:cvLeftText="@string/all_account_test_entry" />
+
+        </com.jxntv.widget.GVideoLinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

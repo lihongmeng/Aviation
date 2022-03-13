@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/root"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/DIMEN_15DP"
+        android:paddingRight="@dimen/DIMEN_15DP"
+        android:layout_height="@dimen/DIMEN_60DP">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_18DP"
+            android:textSize="@dimen/sp_13"
+            android:singleLine="true"
+            android:ellipsize="end"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:textColor="@color/color_333333" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_11"
+            android:singleLine="true"
+            android:ellipsize="end"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/week"
+            tools:textColor="@color/color_333333" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

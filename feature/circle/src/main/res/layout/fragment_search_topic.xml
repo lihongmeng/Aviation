@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.circle.viewmodel.SearchTopicViewModel" />
+
+    </data>
+
+    <com.jxntv.widget.GVideoRelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f2f2f2">
+
+        <include
+            android:id="@+id/top_layout"
+            layout="@layout/layout_search_topic_top" />
+
+        <com.jxntv.base.view.GVideoSmartRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_layout"
+            android:layout_marginTop="@dimen/DIMEN_5DP"
+            android:background="@color/color_FFFFFF"
+            app:ksrlv_onLoadMore="@{(v)->viewModel.onLoadMore(v)}"
+            app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}"
+            app:srlEnableFooterFollowWhenNoMoreData="true"
+            app:srlEnableLoadMore="true"
+            app:srlEnableLoadMoreWhenContentNotFull="true"
+            app:srlEnableRefresh="true"
+            app:srlHeaderHeight="75dp">
+
+            <com.jxntv.widget.GVideoRecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/DIMEN_12DP"
+                android:paddingRight="@dimen/DIMEN_12DP"
+                android:scrollbars="none"
+                android:background="@color/color_FFFFFF"
+                app:adapter="@{viewModel.adapter}"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        </com.jxntv.base.view.GVideoSmartRefreshLayout>
+
+    </com.jxntv.widget.GVideoRelativeLayout>
+
+</layout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_60DP"
+        android:paddingLeft="@dimen/DIMEN_17DP"
+        android:paddingRight="@dimen/DIMEN_17DP"
+        android:background="@color/color_FFFFFF">
+
+        <com.jxntv.widget.GVideoRImageView
+            android:id="@+id/cover"
+            android:layout_width="@dimen/DIMEN_31DP"
+            android:layout_height="@dimen/DIMEN_31DP"
+            app:corner_radius="@dimen/DIMEN_4DP"
+            android:scaleType="fitXY"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_17"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/DIMEN_260DP"
+            android:drawablePadding="@dimen/DIMEN_6DP"
+            android:drawableRight="@drawable/icon_circle_text_full"
+            android:textColor="@color/color_333333"
+            tools:text="123456789123456789123456789123456789123456789123456789"
+            android:layout_marginStart="@dimen/DIMEN_10DP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/cover"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_f2f2f2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

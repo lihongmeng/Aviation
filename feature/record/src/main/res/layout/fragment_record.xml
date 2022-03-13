@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <data>
+    <variable
+        name="viewModel"
+        type="com.jxntv.record.recorder.fragment.record.RecordViewModel"
+        />
+    <import type="android.view.View" />
+  </data>
+  <com.jxntv.widget.GVideoConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <SurfaceView
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/camera_cancel"
+        android:layout_width="@dimen/fragment_record_cancel"
+        android:layout_height="@dimen/fragment_record_cancel"
+        android:layout_marginTop="@dimen/fragment_record_cancel_margin_top"
+        android:src="@drawable/icon_delete"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/camera_change"
+        android:layout_width="@dimen/fragment_record_item_width"
+        android:layout_height="@dimen/fragment_record_item_width"
+        android:layout_marginLeft="@dimen/fragment_record_item_margin_landscape"
+        android:src="@drawable/ic_change_camera"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/record_main_button"
+        app:layout_constraintTop_toTopOf="@id/record_main_button"/>
+
+    <ImageView
+        android:id="@+id/upload_file"
+        android:layout_width="@dimen/fragment_record_item_width"
+        android:layout_height="@dimen/fragment_record_item_width"
+        android:layout_marginRight="@dimen/fragment_record_item_margin_landscape"
+        android:src="@drawable/ic_upload_file"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/record_main_button"
+        app:layout_constraintTop_toTopOf="@id/record_main_button"
+        android:onClick="@{v ->viewModel.onChooseItemClick(v)}"/>
+
+    <ImageView
+        android:id="@+id/finish_record_img"
+        android:layout_width="@dimen/fragment_record_finish_img_size"
+        android:layout_height="@dimen/fragment_record_finish_img_size"
+        android:layout_marginRight="@dimen/fragment_record_finish_img__landscape"
+        android:src="@drawable/ic_finish_record"
+        android:scaleType="centerInside"
+        android:background="@drawable/bg_finish_record"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/record_main_button"
+        app:layout_constraintTop_toTopOf="@id/record_main_button"
+        android:visibility="gone"/>
+
+    <TextView
+      android:id="@+id/camera_change_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      app:layout_constraintTop_toBottomOf="@+id/camera_change"
+      app:layout_constraintLeft_toLeftOf="@+id/camera_change"
+      app:layout_constraintRight_toRightOf="@+id/camera_change"
+      android:layout_marginTop="@dimen/fragment_record_item_text_margin_top"
+      android:textColor="@color/t_color05"
+      android:textSize="@dimen/fragment_record_item_text_size"
+      android:text="@string/camera_change_text"/>
+
+    <TextView
+        android:id="@+id/upload_file_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/upload_file"
+        app:layout_constraintLeft_toLeftOf="@+id/upload_file"
+        app:layout_constraintRight_toRightOf="@+id/upload_file"
+        android:layout_marginTop="@dimen/fragment_record_item_text_margin_top"
+        android:textColor="@color/t_color05"
+        android:textSize="@dimen/fragment_record_item_text_size"
+        android:text="@string/upload_file_text" />
+
+    <TextView
+        android:id="@+id/finish_record_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/finish_record_img"
+        app:layout_constraintLeft_toLeftOf="@+id/finish_record_img"
+        app:layout_constraintRight_toRightOf="@+id/finish_record_img"
+        android:layout_marginTop="@dimen/fragment_record_finish_text_margin_top"
+        android:textColor="@color/t_color05"
+        android:textSize="@dimen/fragment_record_item_text_size"
+        android:text="@string/record_finish_text"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/record_main_button_background"
+        android:layout_width="@dimen/fragment_record_main_button_background_size"
+        android:layout_height="@dimen/fragment_record_main_button_background_size"
+        app:layout_constraintBottom_toBottomOf="@+id/record_main_button"
+        app:layout_constraintLeft_toLeftOf="@+id/record_main_button"
+        app:layout_constraintRight_toRightOf="@+id/record_main_button"
+        app:layout_constraintTop_toTopOf="@+id/record_main_button"
+        android:background="@drawable/fragment_record_button_background"
+        android:visibility="invisible"/>
+
+    <com.jxntv.record.recorder.view.VideoRecordProgressView
+        android:id="@+id/record_progress"
+        android:layout_width="@dimen/fragment_record_main_progress_img_size"
+        android:layout_height="@dimen/fragment_record_main_progress_img_size"
+        app:layout_constraintBottom_toBottomOf="@+id/record_main_button"
+        app:layout_constraintLeft_toLeftOf="@+id/record_main_button"
+        app:layout_constraintRight_toRightOf="@+id/record_main_button"
+        app:layout_constraintTop_toTopOf="@+id/record_main_button"/>
+
+    <ImageView
+        android:id="@+id/record_main_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/fragment_record_main_button_margin_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/fragment_record_button"
+        android:onClick="@{()->viewModel.onRecordItemClick()}"/>
+
+    <com.jxntv.record.recorder.view.VideoSignView
+        android:id="@+id/record_sign"
+        android:layout_width="@dimen/fragment_record_sign_img_size"
+        android:layout_height="@dimen/fragment_record_sign_img_size"
+        app:layout_constraintBottom_toBottomOf="@+id/record_main_button"
+        app:layout_constraintLeft_toLeftOf="@+id/record_main_button"
+        app:layout_constraintRight_toRightOf="@+id/record_main_button"
+        app:layout_constraintTop_toTopOf="@+id/record_main_button"
+        android:visibility="invisible"/>
+
+    <com.jxntv.widget.GVideoImageView
+        android:id="@+id/record_delete_img"
+        android:layout_width="@dimen/fragment_record_delete_img_size"
+        android:layout_height="@dimen/fragment_record_delete_img_size"
+        android:background="@drawable/ic_delete_record"
+        android:layout_marginRight="@dimen/fragment_record_delete_img_text_margin"
+        android:layout_marginTop="@dimen/fragment_record_delete_img_top_margin"
+        app:layout_constraintTop_toBottomOf="@id/record_main_button"
+        app:layout_constraintRight_toLeftOf="@id/record_delete_text"
+        app:layout_constraintLeft_toLeftOf="@id/record_main_button"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:onClick="@{()->viewModel.onDeleteItemClick()}"
+        android:visibility="gone"/>
+
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/record_delete_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/record_delete_img"
+        app:layout_constraintBottom_toBottomOf="@id/record_delete_img"
+        app:layout_constraintLeft_toRightOf="@id/record_delete_img"
+        app:layout_constraintRight_toRightOf="@id/record_main_button"
+        android:textSize="@dimen/fragment_record_delete_text_size"
+        android:textColor="@color/record_delete_text_color"
+        android:text="@string/delete_record_text"
+        android:onClick="@{()->viewModel.onDeleteItemClick()}"
+        android:visibility="gone"/>
+
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/record_init_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fragment_record_init_text_top_margin"
+        app:layout_constraintTop_toBottomOf="@id/record_main_button"
+        app:layout_constraintLeft_toLeftOf="@id/record_main_button"
+        app:layout_constraintRight_toRightOf="@id/record_main_button"
+        android:textSize="@dimen/fragment_record_init_text_size"
+        android:textColor="@color/t_color05"
+        android:text="@{@string/record_init_text(viewModel.recordMaxTimeObservable)}"/>
+
+    <View
+        android:id="@+id/record_init_view"
+        android:layout_width="@dimen/fragment_record_init_view_width"
+        android:layout_height="@dimen/fragment_record_init_view_height"
+        android:layout_marginTop="@dimen/fragment_record_init_view_margin_top"
+        app:layout_constraintTop_toBottomOf="@id/record_init_text"
+        app:layout_constraintLeft_toLeftOf="@id/record_init_text"
+        app:layout_constraintRight_toRightOf="@id/record_init_text"
+        android:background="@drawable/bg_record_init_view"/>
+
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/record_main_button"
+        app:layout_constraintLeft_toLeftOf="@+id/record_main_button"
+        app:layout_constraintRight_toRightOf="@+id/record_main_button"
+        android:layout_marginBottom="@dimen/fragment_record_time_margin_bottom"
+        android:textColor="@color/t_color05"
+        android:textSize="@dimen/fragment_record_time_text_size"
+        android:text="@string/record_time_text_default"
+        android:visibility="gone"/>
+
+  </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <com.jxntv.widget.GVideoConstraintLayout
+      style="@style/CenterDialogStyle.Dialog"
+      >
+
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/ensure_dialog_title"
+        style="@style/CenterDialogStyle.EnsureTitle"
+        android:text="@string/video_limit_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ensure_dialog_text"/>
+
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/ensure_dialog_text"
+        style="@style/CenterDialogStyle.EnsureText"
+        android:text="@string/video_limit_text"
+        android:layout_marginTop="@dimen/DIMEN_12DP"
+        app:layout_constraintTop_toBottomOf="@id/ensure_dialog_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ensure_dialog_cancel"/>
+
+    <com.jxntv.widget.GVideoButton
+        android:id="@+id/confirm"
+        android:background="@drawable/center_dialog_button"
+        style="@style/CenterDialogStyle.ConfirmButton"
+        android:layout_width="0dp"
+        android:text="@string/video_limit_ensure"
+        android:layout_marginTop="@dimen/DIMEN_16DP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ensure_dialog_text"
+        />
+
+  </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

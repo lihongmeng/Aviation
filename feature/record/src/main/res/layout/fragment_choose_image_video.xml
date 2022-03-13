@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.jxntv.record.recorder.fragment.choose.ChooseImageVideoViewModel"
+            />
+        <import type="android.view.View" />
+    </data>
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:id="@+id/choose_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/back_choose"
+            android:layout_width="@dimen/fragment_record_cancel"
+            android:layout_height="@dimen/fragment_record_cancel"
+            android:src="@drawable/ic_choose_cancel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fragment_record_cancel"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textStyle="bold"
+            android:textColor="@color/t_color01"
+            android:textSize="@dimen/fragment_choose_title_text_size"
+            android:text="@string/system_file"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <com.jxntv.widget.GVideoRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/back_choose"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/select_num_text" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/select_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fragment_choose_bottom_height"
+            android:layout_marginLeft="@dimen/fragment_choose_bottom_landscape_margin"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/t_color01"
+            android:textSize="@dimen/t_font02"
+            android:text="@string/choose_video_num"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/select_num_time"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fragment_choose_bottom_height"
+            android:layout_marginLeft="@dimen/fragment_choose_bottom_landscape_margin"
+            android:layout_gravity="left|bottom"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/t_color01"
+            android:textSize="@dimen/t_font02"
+            android:text="@string/choose_video_num"
+            app:layout_constraintLeft_toRightOf="@id/select_num_text"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/button_finish"
+            android:layout_width="@dimen/fragment_choose_finish_button_width"
+            android:layout_height="@dimen/fragment_choose_finish_button_height"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/fragment_choose_finish_button_marin_bottom"
+            android:layout_marginRight="@dimen/fragment_choose_bottom_landscape_margin"
+            android:includeFontPadding="false"
+            style="@style/ButtonStyle.state_c_gradual01.t_font01.bold"
+            android:enabled="@{viewModel.enableNext,default=false}"
+            android:gravity="center"
+            android:text="@string/choose_finish"
+            android:textSize="@dimen/t_font06"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <FrameLayout
+            android:id="@+id/empty_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+</layout>

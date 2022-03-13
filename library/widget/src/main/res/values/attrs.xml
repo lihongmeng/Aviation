@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <declare-styleable name="GVideoCellView">
+    <!--左边图标-->
+    <attr name="cvAddLeftIcon" format="boolean" />
+    <attr name="cvShowLeftIcon" format="boolean" />
+    <attr name="cvLeftIconStyle" format="reference" />
+    <attr name="cvLeftIcon" format="reference" />
+    <!--左边图标红点-->
+    <attr name="cvAddLeftIconPoint" format="boolean" />
+    <attr name="cvShowLeftIconPoint" format="boolean" />
+    <attr name="cvLeftIconPointStyle" format="reference" />
+    <!--左边文本-->
+    <attr name="cvAddLeftText" format="boolean" />
+    <attr name="cvShowLeftText" format="boolean" />
+    <attr name="cvLeftTextStyle" format="reference" />
+    <attr name="cvLeftText" format="string" />
+    <!--右边文本-->
+    <attr name="cvAddRightText" format="boolean" />
+    <attr name="cvShowRightText" format="boolean" />
+    <attr name="cvRightTextStyle" format="reference" />
+    <attr name="cvRightText" format="string" />
+    <!--右边上边文本-->
+    <attr name="cvAddRightTopText" format="boolean" />
+    <attr name="cvShowRightTopText" format="boolean" />
+    <attr name="cvRightTopTextStyle" format="reference" />
+    <attr name="cvRightTopText" format="string" />
+    <!--右边下边文本-->
+    <attr name="cvAddRightBottomText" format="boolean" />
+    <attr name="cvShowRightBottomText" format="boolean" />
+    <attr name="cvRightBottomTextStyle" format="reference" />
+    <attr name="cvRightBottomText" format="string" />
+    <!--右边图标-->
+    <attr name="cvAddRightIcon" format="boolean" />
+    <attr name="cvShowRightIcon" format="boolean" />
+    <attr name="cvRightIconStyle" format="reference" />
+    <attr name="cvRightIcon" format="reference" />
+    <!--分割线-->
+    <attr name="cvDriverColor" format="color" />
+    <attr name="cvDriverHeight" format="dimension" />
+    <attr name="cvShowTopDriver" format="boolean" />
+    <attr name="cvTopDriverMarginLeft" format="dimension" />
+    <attr name="cvTopDriverMarginRight" format="dimension" />
+    <attr name="cvShowBottomDriver" format="boolean" />
+    <attr name="cvBottomDriverMarginLeft" format="dimension" />
+    <attr name="cvBottomDriverMarginRight" format="dimension" />
+  </declare-styleable>
+
+  <declare-styleable name="CommonRoundImageView">
+    <attr name="corner" format="dimension" />
+    <attr name="right_top_corner" format="boolean" />
+    <attr name="right_bottom_corner" format="boolean" />
+    <attr name="left_top_corner" format="boolean" />
+    <attr name="left_bottom_corner" format="boolean" />
+  </declare-styleable>
+
+  <!--RecyclerView-->
+  <attr name="adapter" />
+
+  <!--GVideoRefreshLoadMoreView-->
+  <attr name="ksrlv_enableRefresh" />
+  <attr name="ksrlv_onRefresh" />
+  <attr name="ksrlv_enableLoadMore" />
+  <attr name="ksrlv_onLoadMore" />
+
+  <!--CirclePageIndicator-->
+  <declare-styleable name="CirclePageIndicator">
+    <!-- Whether or not the indicators should be centered. -->
+    <attr name="centered" format="boolean" />
+    <!-- Color of the filled circle that represents the current page. -->
+    <attr name="fillColor" format="color" />
+    <!-- Color of the filled circles that represents pages. -->
+    <attr name="pageColor" format="color" />
+    <!-- Orientation of the indicator. -->
+    <attr name="android:orientation"/>
+    <!-- Radius of the circles. This is also the spacing between circles. -->
+    <attr name="radius" format="dimension" />
+    <!-- Whether or not the selected indicator snaps to the circles. -->
+    <attr name="snap" format="boolean" />
+    <!-- Color of the open circles. -->
+    <attr name="strokeColor" format="color" />
+    <!-- Width of the stroke used to draw the circles. -->
+    <attr name="strokeWidth" format="dimension" />
+    <!-- View background -->
+    <attr name="android:background"/>
+  </declare-styleable>
+
+  <declare-styleable name="wave_indicator">
+    <attr name="indicator_width" format="dimension"/>
+    <attr name="indicator_spacing" format="dimension"/>
+    <attr name="indicator_color" format="color"/>
+    <attr name="indicator_count" format="integer"/>
+  </declare-styleable>
+
+  <declare-styleable name="GVideoMaxHeightScrollView">
+    <attr name="maxHeight" format="dimension"/>
+  </declare-styleable>
+
+  <declare-styleable name="GVideoMaxMinHeightRecyclerView">
+    <attr name="max_Height" format="dimension"/>
+    <attr name="min_Height" format="dimension"/>
+  </declare-styleable>
+
+</resources>

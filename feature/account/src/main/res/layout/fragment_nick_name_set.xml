@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.account.ui.nickname.NickNameSetViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f7f7f7">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/DIMEN_44DP"
+            android:layout_height="@dimen/DIMEN_44DP"
+            android:src="@drawable/ic_back_black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_86DP"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/please_improve_personal_info"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_23"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="展示你个性的时候到啦"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <com.jxntv.widget.GVideoRImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/DIMEN_115DP"
+            android:layout_height="@dimen/DIMEN_115DP"
+            android:layout_marginTop="@dimen/DIMEN_58DP"
+            android:onClick="@{v -> viewModel.showAvatarEntryDialog(v)}"
+            app:corner_radius="@dimen/DIMEN_115DP"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:placeholder='@{@drawable/ic_default_avatar}' />
+
+        <com.jxntv.widget.GVideoRTextView
+            android:layout_width="@dimen/DIMEN_84DP"
+            android:layout_height="@dimen/DIMEN_32DP"
+            android:layout_marginTop="@dimen/DIMEN_14DP"
+            android:gravity="center"
+            android:onClick="@{v -> viewModel.showAvatarEntryDialog(v)}"
+            android:text="@string/upload_avatar"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/sp_13"
+            app:background_normal="@color/color_ececec"
+            app:corner_radius="@dimen/DIMEN_16DP"
+            app:layout_constraintLeft_toLeftOf="@id/avatar"
+            app:layout_constraintRight_toRightOf="@id/avatar"
+            app:layout_constraintTop_toBottomOf="@id/avatar"
+            app:text_color_normal="@color/color_7f7f7f" />
+
+        <com.jxntv.widget.GVideoRImageView
+            android:layout_width="@dimen/DIMEN_115DP"
+            android:layout_height="@dimen/DIMEN_115DP"
+            android:layout_marginTop="@dimen/DIMEN_58DP"
+            app:corner_radius="@dimen/DIMEN_60DP"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            tools:src="@drawable/ic_default_avatar" />
+
+
+        <com.jxntv.widget.GVideoImageView
+            android:layout_width="@dimen/DIMEN_31DP"
+            android:layout_height="@dimen/DIMEN_31DP"
+            android:onClick="@{v -> viewModel.randomSetDefaultAvatar()}"
+            android:src="@drawable/ic_change_circle"
+            app:layout_constraintBottom_toBottomOf="@id/avatar"
+            app:layout_constraintEnd_toEndOf="@id/avatar" />
+
+        <com.jxntv.widget.GVideoEditText
+            android:id="@+id/edit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_48DP"
+            android:layout_marginLeft="@dimen/DIMEN_31DP"
+            android:layout_marginTop="@dimen/DIMEN_92DP"
+            android:layout_marginRight="@dimen/DIMEN_31DP"
+            android:background="@drawable/shape_soild_ffffff_corners_24dp"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/DIMEN_21DP"
+            android:paddingEnd="@dimen/DIMEN_42DP"
+            android:gravity="center_vertical"
+            android:hint="@string/set_nick_name"
+            android:maxLength="12"
+            android:textStyle="bold"
+            android:textColor="@color/color_212229"
+            android:textColorHint="@color/color_cccccc"
+            android:textSize="@dimen/sp_19"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/avatar"
+            tools:text="撒大苏打是大豆飞机爱神的"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/nickname_num"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/color_cccccc"
+            android:layout_marginEnd="@dimen/DIMEN_20DP"
+            app:layout_constraintBottom_toBottomOf="@id/edit"
+            app:layout_constraintTop_toTopOf="@id/edit"
+            app:layout_constraintEnd_toEndOf="@id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="0/12"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:layout_width="@dimen/DIMEN_174DP"
+            android:layout_height="@dimen/DIMEN_42DP"
+            android:layout_marginTop="@dimen/DIMEN_72DP"
+            android:background="@{viewModel.confirmEnable?@drawable/shape_soild_e4344e_coners_200dp:@drawable/shape_soild_e4344e_50_coners_200dp}"
+            android:enabled="@{viewModel.confirmEnable}"
+            android:gravity="center"
+            android:onClick="@{v -> viewModel.onConfirmClick(v)}"
+            android:text="@string/discover_the_excitement_around_you"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

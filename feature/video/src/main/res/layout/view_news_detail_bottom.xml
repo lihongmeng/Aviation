@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.jxntv.android.video.ui.news.NewsDetailViewModel" />
+
+        <variable
+            name="videoObservable"
+            type="com.jxntv.base.model.video.VideoObservable" />
+
+        <import type="android.view.View"/>
+
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:visibility="@{videoObservable==null?View.GONE:View.VISIBLE}"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:paddingStart="@dimen/DIMEN_12DP"
+        android:paddingEnd="@dimen/DIMEN_12DP">
+
+        <com.jxntv.widget.GVideoRTextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_34DP"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/DIMEN_10DP"
+            android:text="@string/input_content"
+            android:textColor="@color/c_A1A4B3"
+            android:layout_marginEnd="@dimen/DIMEN_10DP"
+            app:background_normal="@color/c_f7f8fc"
+            app:corner_radius="@dimen/DIMEN_17DP"
+            android:onClick="@{v-> viewModel.onclickShowCommentDialog(v)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/comment"
+            />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/share"
+            android:layout_width="@dimen/DIMEN_33DP"
+            android:layout_height="@dimen/DIMEN_33DP"
+            android:padding="@dimen/DIMEN_5DP"
+            android:src="@drawable/ic_news_share"
+            android:visibility="gone"
+            android:onClick="@{v->viewModel.onShareClick(v)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/like"
+            android:layout_width="@dimen/DIMEN_33DP"
+            android:layout_height="@dimen/DIMEN_33DP"
+            android:layout_marginEnd="@dimen/DIMEN_5DP"
+            android:padding="@dimen/DIMEN_5DP"
+            android:onClick="@{v->viewModel.onLikeClicked(v)}"
+            android:src="@{videoObservable.isFavor?@drawable/ic_news_like_red:@drawable/ic_news_like}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/share"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/comment"
+            android:layout_width="@dimen/DIMEN_33DP"
+            android:layout_height="@dimen/DIMEN_33DP"
+            android:padding="@dimen/DIMEN_5DP"
+            android:onClick="@{v->viewModel.onCommentClicked(v)}"
+            android:src="@drawable/ic_common_comment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/comment_text"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/comment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/DIMEN_10DP"
+            android:textSize="@dimen/sp_12"
+            android:onClick="@{v->viewModel.onCommentClicked(v)}"
+            android:text="@{videoObservable.commentText}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/like"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+</layout>

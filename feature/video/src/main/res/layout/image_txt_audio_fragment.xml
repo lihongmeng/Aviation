@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.jxntv.base.view.GVideoSmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.jxntv.widget.GVideoConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.jxntv.widget.GVideoRecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.jxntv.widget.GVideoConstraintLayout>
+
+        </com.jxntv.base.view.GVideoSmartRefreshLayout>
+
+        <include
+            android:id="@+id/input_panel"
+            layout="@layout/comment_input_panel" />
+
+    </LinearLayout>
+
+</layout>

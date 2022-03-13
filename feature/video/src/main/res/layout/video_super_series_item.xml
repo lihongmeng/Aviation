@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.jxntv.android.video.ui.detail.series.SeriesAdapter" />
+
+        <variable
+            name="series"
+            type="com.jxntv.base.model.video.VideoModel" />
+
+        <import type="android.view.View" />
+
+        <import type="android.text.TextUtils" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{(v)->adapter.onItemClick(v, series)}">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/video_dp_10"
+            app:roundedCorners="@{@dimen/video_dp_7}"
+            app:centerCrop="@{true}"
+            app:imageData="@{series.coverUrl}"
+            app:placeholder="@{@drawable/media_default_cover_bg}"
+            app:layout_constraintDimensionRatio="h,16:9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintWidth_percent="0.4" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_default_play"
+            android:visibility="@{TextUtils.isEmpty(series.coverUrl) ? View.VISIBLE : View.GONE}"
+            app:layout_constraintLeft_toLeftOf="@id/image"
+            app:layout_constraintTop_toTopOf="@id/image"
+            app:layout_constraintBottom_toBottomOf="@id/image"
+            app:layout_constraintRight_toRightOf="@id/image" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textSize="@dimen/video_sp_16"
+            android:textColor="@color/color_212229"
+            android:text="@{series.title}"
+            android:layout_marginLeft="@dimen/video_dp_10"
+            android:layout_marginRight="@dimen/video_dp_10"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintBottom_toTopOf="@id/author"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/image"
+            app:layout_constraintTop_toTopOf="@id/image" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/author"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="@dimen/video_sp_12"
+            android:textColor="@color/color_a1a4b3"
+            android:text='@{series.author.name}'
+            android:layout_marginLeft="@dimen/video_dp_10"
+            android:layout_marginRight="@dimen/video_dp_10"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintBottom_toBottomOf="@id/image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

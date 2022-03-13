@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">video</string>
+    <string name="video_network_err_load_more">网络不通畅，内容获取失败</string>
+
+    <string name="video_comment_send_success">发送成功</string>
+    <string name="video_comment_send_failure">发送失败</string>
+    <string name="video_comment_delete_success">删除成功</string>
+    <string name="video_comment_delete_failure">删除失败</string>
+    <string name="video_ad">广告</string>
+
+    <string name="video_super_info_follow">关注</string>
+    <string name="video_super_info_followed">已关注</string>
+
+    <string name="video_more">更多</string>
+    <string name="video_share">分享</string>
+    <string name="video_star">喜欢</string>
+    <string name="video_stared">喜欢</string>
+
+    <string name="video_delete">删除</string>
+    <string name="video_reply">回复</string>
+    <string name="video_report">举报</string>
+    <string name="video_reply_to_prefix">回复 %s：</string>
+
+    <string name="video_comment_hint">发表评论...</string>
+    <string name="video_comment_send_button_text">发送</string>
+    <string name="video_comment_input_max_toast">字数超过了150字限制</string>
+    <string name="video_comment_count">%d万+</string>
+    <string name="video_comment_cant_comment">该资源不可评论</string>
+
+    <string name="live_end">直播已结束</string>
+    <string name="like_success">点赞成功</string>
+
+    <string name="save_image">保存图片</string>
+
+    <string name="transition_image">transition_image</string>
+    <string name="read_web">朗读网页</string>
+    <string name="related_news">相关新闻</string>
+    <string name="input_content">请输入内容...</string>
+    <string name="special">专题</string>
+    <string name="all_comment">全部评论</string>
+    <string name="moment_detail">动态详情</string>
+    <string name="all_answer">全部回答</string>
+    <string name="write_answer">写回答</string>
+
+</resources>

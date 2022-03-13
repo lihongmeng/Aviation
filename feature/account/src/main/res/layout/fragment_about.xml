@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+  <data>
+    <variable
+        name="viewModel"
+        type="com.jxntv.account.ui.about.AboutViewModel"
+        />
+  </data>
+  <com.jxntv.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/c_bg01"
+      android:orientation="vertical"
+      >
+    <com.jxntv.widget.GVideoLinearLayout
+        style="@style/AboutStyle.TopContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+      <com.jxntv.widget.CommonRoundImageView
+          style="@style/AboutStyle.AppIcon"
+          android:src="@drawable/ic_launcher"
+          />
+      <com.jxntv.widget.GVideoTextView
+          style="@style/AboutStyle.Version"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@{viewModel.appVersion}"
+          />
+      <com.jxntv.widget.GVideoTextView
+          style="@style/AboutStyle.Copyright"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/gvideo_copyright"
+          />
+    </com.jxntv.widget.GVideoLinearLayout>
+    <com.jxntv.widget.GVideoCellView
+        style="@style/AboutStyle.Cell"
+        android:onClick="@{(v)->viewModel.showUserProtocol(v)}"
+        app:cvLeftText="@string/user_protocol"
+        app:cvShowBottomDriver="true"
+        />
+    <com.jxntv.widget.GVideoCellView
+        style="@style/AboutStyle.Cell"
+        android:onClick="@{(v)->viewModel.showPrivacyPolicy(v)}"
+        app:cvLeftText="@string/privacy_policy"
+        app:cvShowBottomDriver="true"
+        />
+
+    <!--<com.jxntv.widget.GVideoCellView-->
+    <!--    style="@style/AboutStyle.Cell"-->
+    <!--    android:onClick="@{(v)->viewModel.showAppQrCode(v)}"-->
+    <!--    app:cvLeftText="@string/download_qr_code"-->
+    <!--    />-->
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+  </com.jxntv.widget.GVideoLinearLayout>
+</layout>

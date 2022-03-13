@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_solid_ffffff_corners_top_8dp"
+        android:layout_gravity="bottom">
+
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/cancel_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_apply"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingTop="@dimen/DIMEN_12DP"
+            android:paddingRight="@dimen/DIMEN_15DP"
+            android:paddingLeft="@dimen/DIMEN_15DP"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/color_7f7f7f" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="已提交连麦申请，请等待主播同意…"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_17"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cancel_request" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/add_join_reason"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_42DP"
+            android:layout_marginLeft="@dimen/DIMEN_19DP"
+            android:layout_marginTop="@dimen/DIMEN_19DP"
+            android:layout_marginRight="@dimen/DIMEN_19DP"
+            android:background="@drawable/shape_solid_f7f7f7_corners_200dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/add_join_reason"
+            android:textColor="@color/color_006fbb"
+            android:textSize="@dimen/sp_15"
+            android:visibility="gone"
+            tools:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/status" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/add_join_reason_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_join_reason_tip"
+            android:layout_marginTop="@dimen/DIMEN_7DP"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/color_7f7f7f"
+            android:ellipsize="end"
+            android:paddingBottom="@dimen/DIMEN_39DP"
+            android:singleLine="true"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/add_join_reason" />
+
+        <EditText
+            android:id="@+id/reason"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_70DP"
+            android:layout_marginLeft="@dimen/DIMEN_14DP"
+            android:layout_marginTop="@dimen/DIMEN_7DP"
+            android:layout_marginRight="@dimen/DIMEN_14DP"
+            android:background="@color/color_f7f7f7"
+            android:gravity="start"
+            android:maxLength="200"
+            android:hint="请输入申请理由，最少5个字，仅主播可见"
+            android:paddingLeft="@dimen/DIMEN_8DP"
+            android:paddingTop="@dimen/DIMEN_8DP"
+            android:paddingRight="@dimen/DIMEN_8DP"
+            android:textColorHint="@color/color_cccccc"
+            android:textSize="@dimen/sp_15"
+            android:visibility="gone"
+            tools:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/status" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/reason_text_count"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_25DP"
+            android:background="@color/color_f7f7f7"
+            tools:text="0/200"
+            android:paddingRight="@dimen/DIMEN_8DP"
+            android:visibility="gone"
+            tools:visibility="gone"
+            android:gravity="center_vertical|right"
+            app:layout_constraintLeft_toLeftOf="@id/reason"
+            app:layout_constraintRight_toRightOf="@id/reason"
+            app:layout_constraintTop_toBottomOf="@id/reason" />
+
+        <View
+            android:id="@+id/divider_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1DP"
+            android:visibility="gone"
+            tools:visibility="gone"
+            android:background="@color/color_f2f2f2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reason_text_count"
+            android:layout_marginTop="@dimen/DIMEN_18DP" />
+
+        <View
+            android:id="@+id/divider_vertical"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/DIMEN_42DP"
+            android:visibility="gone"
+            tools:visibility="gone"
+            android:background="@color/color_f2f2f2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider_horizontal" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/color_333333"
+            android:text="@string/cancel"
+            android:textSize="@dimen/sp_17"
+            android:visibility="gone"
+            tools:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/divider_vertical"
+            app:layout_constraintTop_toBottomOf="@id/divider_horizontal" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="@string/submit"
+            android:textSize="@dimen/sp_17"
+            android:visibility="gone"
+            tools:visibility="gone"
+            android:enabled="false"
+            android:textColor="@color/color_f7f7f7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/divider_vertical"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider_horizontal" />
+
+        <View
+            android:id="@+id/status_wait"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_50DP"
+            android:visibility="visible"
+            tools:visibility="visible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/status" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profile_nav_graph"
+    app:startDestination="@id/profileFragment">
+  <!--个人中心界面-->
+  <fragment
+      android:id="@+id/profileFragment"
+      android:name="com.jxntv.account.ui.profile.ProfileFragment"
+      android:label="ProfileFragment">
+    <!--跳转个人头像界面-->
+    <action
+        android:id="@+id/action_profile_to_modify_avatar"
+        app:destination="@id/modifyAvatarFragment" />
+    <!--跳转修改昵称界面-->
+    <action
+        android:id="@+id/action_profile_to_modify_nickname"
+        app:destination="@id/modifyNicknameFragment" />
+    <!--跳转修改个人介绍界面-->
+    <action
+        android:id="@+id/action_profile_to_modify_description"
+        app:destination="@id/modifyDescriptionFragment" />
+  </fragment>
+
+  <!--个人头像界面-->
+  <fragment
+      android:id="@+id/modifyAvatarFragment"
+      android:name="com.jxntv.account.ui.modify.avatar.ModifyAvatarFragment"
+      android:label="ModifyAvatarFragment" />
+
+  <!--修改昵称界面-->
+  <fragment
+      android:id="@+id/modifyNicknameFragment"
+      android:name="com.jxntv.account.ui.modify.nickname.ModifyNicknameFragment"
+      android:label="ModifyNicknameFragment">
+    <argument
+        android:name="nickname"
+        app:argType="string"
+        app:nullable="true" />
+  </fragment>
+
+  <!--修改个人介绍界面-->
+  <fragment
+      android:id="@+id/modifyDescriptionFragment"
+      android:name="com.jxntv.account.ui.modify.description.ModifyDescriptionFragment"
+      android:label="ModifyDescriptionFragment">
+    <argument
+        android:name="description"
+        app:argType="string"
+        app:nullable="true" />
+  </fragment>
+
+  <!--个人头像预览界面-->
+  <fragment
+      android:id="@+id/previewAvatarFragment"
+      android:name="com.jxntv.account.ui.profile.PreviewAvatarFragment"
+      android:label="previewAvatarFragment" >
+    <!--跳转个人头像界面-->
+    <action
+        android:id="@+id/action_profile_to_modify_avatar"
+        app:destination="@id/modifyAvatarFragment" />
+
+  </fragment>
+
+</navigation>

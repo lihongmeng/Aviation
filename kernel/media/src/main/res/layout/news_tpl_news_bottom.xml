@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <data>
+
+        <variable
+            name="feedModel"
+            type="com.jxntv.media.model.MediaModel" />
+
+        <import type="com.jxntv.base.utils.FriendlyStringUtils" />
+
+        <import type="com.jxntv.utils.DateUtils" />
+
+        <import type="android.text.TextUtils" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <com.jxntv.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            android:textColor="@color/color_7f7f7f"
+            android:textSize="@dimen/sp_12"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxWidth="@dimen/DIMEN_170DP"
+            android:text="@{TextUtils.isEmpty(feedModel.source)?feedModel.author.name:feedModel.source}"
+            android:visibility="@{(!TextUtils.isEmpty(feedModel.source)||!TextUtils.isEmpty(feedModel.author.name))?View.VISIBLE:View.GONE}"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="江西新闻联播江西新闻联播江西新闻联播江西新闻联播" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/review_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            android:textColor="@color/color_7f7f7f"
+            android:textSize="@dimen/sp_12"
+            android:text="@{FriendlyStringUtils.friendlyPv(feedModel.pv)}"
+            android:visibility="gone"
+            tools:text="阅读3000" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/create_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_7f7f7f"
+            android:textSize="@dimen/sp_12"
+            android:singleLine="true"
+            android:text="@{DateUtils.friendlyTime(feedModel.createDate)}"
+            tools:text="2021-5-22" />
+
+        <com.jxntv.widget.GVideoRTextView
+            android:id="@+id/news_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/DIMEN_7DP"
+            android:paddingTop="@dimen/DIMEN_1DP"
+            android:paddingEnd="@dimen/DIMEN_7DP"
+            android:paddingBottom="@dimen/DIMEN_1DP"
+            android:singleLine="true"
+            android:textColor="@color/color_FC284D"
+            android:textSize="@dimen/sp_10"
+            app:border_color_normal="@color/color_FC284D"
+            app:border_width_normal="1px"
+            app:corner_radius="@dimen/DIMEN_3DP"
+            android:layout_marginStart="@dimen/DIMEN_14DP"
+            android:layout_marginEnd="@dimen/DIMEN_5DP"
+            android:visibility="@{TextUtils.isEmpty(feedModel.contentLabel)?View.GONE:View.VISIBLE}"
+            android:text="@{feedModel.contentLabel}"
+            tools:text="视频" />
+
+    </com.jxntv.widget.GVideoLinearLayout>
+</layout>

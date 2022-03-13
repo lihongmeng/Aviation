@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--性别-->
+  <style name="GenderDialogItemViewStyle">
+
+  </style>
+
+  <style name="GenderDialogItemViewStyle.Container">
+    <item name="android:paddingTop">30dp</item>
+    <item name="android:paddingBottom">30dp</item>
+    <item name="android:background">@drawable/dialog_item_view_gender_background</item>
+  </style>
+
+  <style name="GenderDialogItemViewStyle.Icon">
+    <item name="android:layout_width">50dp</item>
+    <item name="android:layout_height">50dp</item>
+  </style>
+
+  <style name="GenderDialogItemViewStyle.Text">
+    <item name="android:textColor">@drawable/dialog_item_view_gender_text_color</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:layout_marginTop">4dp</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="GenderDialogItemViewStyle.MaleIcon" parent="GenderDialogItemViewStyle.Icon">
+    <item name="android:src">@drawable/dialog_item_view_gender_male_background</item>
+    <item name="android:layout_marginRight">120dp</item>
+  </style>
+
+  <style name="GenderDialogItemViewStyle.MaleText" parent="GenderDialogItemViewStyle.Text">
+
+  </style>
+
+  <style name="GenderDialogItemViewStyle.FemaleIcon" parent="GenderDialogItemViewStyle.Icon">
+    <item name="android:src">@drawable/dialog_item_view_gender_female_background</item>
+  </style>
+
+  <style name="GenderDialogItemViewStyle.FemaleText" parent="GenderDialogItemViewStyle.Text">
+
+  </style>
+
+  <!--隐私范围-->
+  <style name="PrivacyRangeTileStyle">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">39dp</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">#8A8C99</item>
+    <item name="android:background">#F7F8FC</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:paddingLeft">12dp</item>
+  </style>
+
+  <style name="PrivacyRangeItemStyle">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">55dp</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:paddingLeft">12dp</item>
+    <item name="android:paddingRight">12dp</item>
+    <item name="android:background">@drawable/cell_view_default_background</item>
+  </style>
+
+
+  <style name="PrivacyRangeLastItemStyle" parent="PrivacyRangeItemStyle">
+    <item name="android:background">@drawable/dialog_item_view_privacy_range_last_item_background
+    </item>
+  </style>
+
+  <style name="PrivacyRangeItemTextStyle">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:textColor">#212229</item>
+  </style>
+
+  <style name="PrivacyRangeItemCheckStyle">
+    <item name="android:src">@drawable/ic_check</item>
+    <item name="android:layout_height">28dp</item>
+    <item name="android:layout_width">28dp</item>
+  </style>
+
+  <style name="PrivacyRangeDriverStyle">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1px</item>
+    <item name="android:background">#EBECF0</item>
+  </style>
+
+  <!--顶部取消确定-->
+  <style name="TopCancelSureStyle">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">50dp</item>
+    <item name="android:orientation">horizontal</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:paddingLeft">12dp</item>
+    <item name="android:paddingRight">12dp</item>
+    <item name="android:background">@drawable/dialog_item_view_top_cancel_sure_background</item>
+  </style>
+
+  <style name="TopCancelSureTileStyle">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:textColor">#212229</item>
+    <item name="android:gravity">center</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">middle</item>
+  </style>
+
+  <style name="TopCancelSureCancelStyle">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:paddingLeft">8dp</item>
+    <item name="android:paddingRight">8dp</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textColor">#8A8C99</item>
+  </style>
+
+  <style name="TopCancelSureSureStyle" parent="TopCancelSureCancelStyle">
+    <item name="android:textColor">@drawable/dialog_item_view_top_cancel_sure_sure_text_color</item>
+  </style>
+
+  <!--日期选择-->
+  <style name="DatePickerStyle">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">224dp</item>
+    <item name="android:background">#FFFFFF</item>
+  </style>
+</resources>

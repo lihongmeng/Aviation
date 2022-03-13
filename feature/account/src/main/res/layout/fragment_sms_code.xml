@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.account.ui.sms.LoginCodeViewModel" />
+
+        <variable
+            name="binding"
+            type="com.jxntv.account.ui.sms.SmsCodeDataBinding" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/all_layout_background">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/image_view_back"
+            style="@style/Toolbar.LeftBack"
+            android:onClick="@{(v)->viewModel.back(v)}"
+            android:layout_marginTop="@dimen/DIMEN_30DP"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_line_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/margin_all_account_large" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_line_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/margin_all_account_large" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_title"
+            style="@style/FragmentSmsCode.Title"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_left"
+            app:layout_constraintTop_toBottomOf="@id/image_view_back" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_sms_code_sent"
+            style="@style/FragmentSmsCode.SmsCodeSent"
+            android:text="@{binding.msmCodeSent}"
+            android:layout_marginTop="@dimen/DIMEN_50DP"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_left"
+            app:layout_constraintTop_toBottomOf="@id/text_view_title" />
+
+        <com.jxntv.widget.GVideoEditText
+            android:id="@+id/edit_text_sms_code"
+            style="@style/FragmentSmsCode.SmsCode"
+            android:layout_width="0dp"
+            app:layout_goneMarginTop="@dimen/margin_top_sms_code_sms_code"
+            android:text="@={binding.smsInviteCode}"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_left"
+            app:layout_constraintRight_toLeftOf="@+id/text_obtain_sms_code"
+            app:layout_constraintTop_toBottomOf="@id/text_view_sms_code_sent" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_obtain_sms_code"
+            style="@style/FragmentSmsCode.ObtainSmsCode"
+            android:enabled="@{binding.enableSendSmsCode}"
+            android:onClick="@{(view)->viewModel.sendSmsCode(view)}"
+            android:text="@{binding.sendSmsCode}"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/edit_text_sms_code"
+            app:layout_constraintRight_toRightOf="@id/guide_line_right"
+            app:layout_constraintTop_toTopOf="@id/edit_text_sms_code" />
+
+        <View
+            android:id="@+id/view_driver_sms"
+            style="@style/FragmentSmsCode.Driver"
+            android:layout_width="0dp"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_left"
+            app:layout_constraintRight_toRightOf="@id/guide_line_right"
+            app:layout_constraintTop_toBottomOf="@id/edit_text_sms_code" />
+
+        <com.jxntv.widget.GVideoButton
+            android:id="@+id/button_confirm"
+            style="@style/FragmentSmsCode.Confirm"
+            android:layout_width="0dp"
+            android:enabled="@{binding.enableConfirm}"
+            android:gravity="center"
+            android:onClick="@{(view)->viewModel.confirm(view)}"
+            android:text="@string/fragment_sms_code_login"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_left"
+            app:layout_constraintRight_toRightOf="@id/guide_line_right"
+            app:layout_constraintTop_toBottomOf="@id/view_driver_sms" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

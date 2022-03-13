@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <data>
+    <variable
+        name="layout"
+        type="com.jxntv.base.placeholder.DefaultPlaceholderLayout"
+        />
+  </data>
+  <com.jxntv.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="vertical"
+      >
+    <com.jxntv.widget.GVideoImageView
+        android:id="@+id/network_not_available_image"
+        style="@style/PlaceholderNetworkNotAvailableStyle.Image"
+        android:src="@drawable/ic_network_not_available"
+        />
+    <com.jxntv.widget.GVideoTextView
+        style="@style/PlaceholderStyle.Text"
+        android:text="@string/all_network_not_available"
+        />
+    <com.jxntv.widget.GVideoTextView
+        style="@style/PlaceholderStyle.Button"
+        android:onClick="@{(v)->layout.reload(v)}"
+        android:text="@string/all_click_to_retry"
+        />
+  </com.jxntv.widget.GVideoLinearLayout>
+</layout>

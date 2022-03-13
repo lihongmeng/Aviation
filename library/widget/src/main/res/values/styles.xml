@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--BottomSheetItemDialog-->
+  <style name="BottomSheetItemDialogFirstItemStyle">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/bottom_sheet_item_dialog_item_height</item>
+    <item name="android:gravity">center</item>
+    <item name="android:background">@drawable/bottom_sheet_item_dialog_first_item_background</item>
+    <item name="android:textSize">@dimen/bottom_sheet_item_dialog_item_text_size</item>
+    <item name="android:textColor">@color/bottom_sheet_item_dialog_item_text_color</item>
+  </style>
+
+  <style name="BottomSheetItemDialogMiddleItemStyle" parent="BottomSheetItemDialogFirstItemStyle">
+    <item name="android:background">@drawable/bottom_sheet_item_dialog_middle_item_background</item>
+  </style>
+
+  <style name="BottomSheetItemDialogLastItemStyle" parent="BottomSheetItemDialogFirstItemStyle">
+    <item name="android:background">@drawable/bottom_sheet_item_dialog_last_item_background</item>
+  </style>
+
+  <style name="BottomSheetItemDialogCancelStyle" parent="BottomSheetItemDialogMiddleItemStyle">
+    <item name="android:background">@drawable/bottom_sheet_item_dialog_cancel_background</item>
+  </style>
+
+  <style name="BottomSheetItemDialogOnlyOneItemItemStyle" parent="BottomSheetItemDialogFirstItemStyle">
+    <item name="android:background">
+      @drawable/bottom_sheet_item_dialog_only_one_item_background
+    </item>
+  </style>
+
+  <style name="BottomSheetDialogAnimation">
+    <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+    <item name="android:windowExitAnimation">@anim/slide_down_dialog</item>
+  </style>
+</resources>

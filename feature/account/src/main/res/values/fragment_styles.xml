@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--====================Pgc 页面====================-->
+  <style name="FragmentPgcStyle">
+
+  </style>
+
+  <style name="FragmentPgcStyle.DetailContainer">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/height_fragment_pgc_detail_container</item>
+  </style>
+
+  <style name="FragmentPgcStyle.DetailAvatar" parent="AvatarStyle.X_Large">
+    <item name="android:layout_marginLeft">@dimen/margin_left_fragment_pgc_avatar</item>
+    <item name="android:layout_marginTop">@dimen/margin_top_fragment_pgc_avatar</item>
+  </style>
+
+  <style name="FragmentPgcStyle.DetailAvatar_68dp_68dp">
+    <item name="android:layout_width">@dimen/DIMEN_68DP</item>
+    <item name="android:layout_height">@dimen/DIMEN_68DP</item>
+    <item name="android:layout_marginLeft">@dimen/margin_left_fragment_pgc_avatar</item>
+    <item name="android:layout_marginTop">@dimen/margin_top_fragment_pgc_avatar</item>
+  </style>
+
+  <style name="FragmentPgcStyle.DetailName" parent="TextStyle.t_color05.t_font01.bold">
+    <item name="android:textSize">@dimen/text_size_fragment_pgc_detail_name</item>
+    <item name="android:layout_marginLeft">@dimen/margin_left_fragment_pgc_detail_name</item>
+    <item name="android:layout_marginRight">@dimen/margin_right_fragment_pgc_detail_name</item>
+  </style>
+
+  <style name="FragmentPgcStyle.DetailDescription" parent="TextStyle.t_color05.t_font01">
+    <item name="android:textSize">@dimen/text_size_fragment_pgc_detail_description</item>
+  </style>
+
+  <style name="FragmentPgcStyle.DetailFollow">
+    <item name="android:layout_width">@dimen/width_fragment_pgc_detail_follow</item>
+    <item name="android:layout_height">@dimen/height_fragment_pgc_detail_follow</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textSize">@dimen/sp_13</item>
+    <item name="singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+    <item name="android:textColor">@color/t_color05</item>
+    <item name="android:layout_marginRight">@dimen/margin_right_fragment_pgc_toolbar_follow</item>
+  </style>
+
+  <style name="FragmentPgcStyle.RecyclerView">
+    <item name="android:background">@drawable/fragment_pgc_recycler_view_background</item>
+    <item name="android:layout_marginTop">@dimen/margin_top_fragment_pgc_recycler_view</item>
+  </style>
+
+  <style name="FragmentPgcStyle.ToolBarContainer" parent="Toolbar.Container">
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="FragmentPgcStyle.ToolBarLeftBack" parent="Toolbar.Container">
+
+  </style>
+
+  <style name="FragmentPgcStyle.ToolBarTitle" parent="Toolbar.Title">
+
+  </style>
+
+  <style name="FragmentPgcStyle.ToolBarFollow">
+    <item name="android:layout_width">@dimen/width_fragment_pgc_toolbar_follow</item>
+    <item name="android:layout_height">@dimen/height_fragment_pgc_toolbar_follow</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textSize">@dimen/sp_13</item>
+    <item name="singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+    <item name="android:layout_marginRight">@dimen/margin_right_fragment_pgc_toolbar_follow</item>
+  </style>
+
+  <!-- UGC 页面 -->
+  <style name="FragmentUgcStyle">
+
+  </style>
+  <style name="FragmentUgcStyle.DetailContainer">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@color/white</item>
+  </style>
+
+  <style name="FragmentUgcStyle.DetailTabLayout" parent="TabLayoutDefaultStyle">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">@dimen/DIMEN_42DP</item>
+    <item name="android:background">@color/white</item>
+    <item name="stl_defaultTabTextColor">@drawable/fragment_ugc_tab_layout_default_text_color</item>
+  </style>
+
+  <style name="FragmentUgcStyle.DetailAvatar" parent="AvatarStyle.XX_Large">
+    <item name="android:layout_marginTop">@dimen/margin_top_fragment_ugc_avatar</item>
+
+  </style>
+
+  <style name="FragmentUgcStyle.DetailName" parent="TextStyle.t_color01.t_font01.bold">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+    <item name="android:layout_marginTop">@dimen/DIMEN_6DP</item>
+    <item name="android:textSize">@dimen/sp_19</item>
+    <item name="android:textColor">@color/white</item>
+  </style>
+
+
+  <style name="FragmentUgcStyle.DetailDescription" parent="TextStyle.t_color04.t_font01">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">@dimen/sp_13</item>
+    <item name="android:textColor">@color/color_ffffff_60</item>
+  </style>
+  <style name="FragmentUgcStyle.DetailFollowCount" parent="TextStyle.t_color04.t_font01">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">@dimen/text_size_fragment_ugc_detail_follow_count</item>
+    <item name="android:layout_marginTop">@dimen/DIMEN_14DP</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+  <style name="FragmentUgcStyle.DetailFansCount">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/text_size_fragment_ugc_detail_fans_count</item>
+  </style>
+
+  <style name="FragmentUgcStyle.ToolBarContainer" parent="Toolbar.Container">
+
+  </style>
+
+  <style name="FragmentUgcStyle.ToolBarLeftBack" parent="Toolbar.Container">
+
+  </style>
+
+  <style name="FragmentUgcStyle.ToolBarTitle" parent="Toolbar.Title">
+    <item name="android:ellipsize">end</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="FragmentUgcStyle.ToolBarFollow" parent="TextStyle.t_color05.t_font02">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">@dimen/height_fragment_pgc_toolbar_follow</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_marginRight">@dimen/margin_right_fragment_pgc_toolbar_follow</item>
+  </style>
+
+  <!--====================关注界面====================-->
+  <style name="FragmentFollowStyle">
+
+  </style>
+  <style name="FragmentFollowStyle.Search" parent="AllAccountEditTextStyle.Medium">
+    <item name="android:background">@drawable/fragment_follow_search_background</item>
+    <item name="android:drawableLeft">@drawable/ic_search</item>
+    <item name="android:layout_height">@dimen/height_fragment_follow_search</item>
+    <item name="android:layout_marginTop">@dimen/margin_fragment_follow_search_top_bottom</item>
+    <item name="android:layout_marginBottom">@dimen/margin_fragment_follow_search_top_bottom</item>
+    <item name="android:layout_marginLeft">@dimen/margin_fragment_follow_search_left_right</item>
+    <item name="android:paddingLeft">@dimen/padding_fragment_follow_search</item>
+    <item name="android:paddingRight">@dimen/padding_fragment_follow_search</item>
+  </style>
+  <style name="FragmentFollowStyle.Cancel" parent="TextStyle.t_color05.t_font03.bold">
+    <item name="android:textColor">@color/black</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_height">@dimen/height_fragment_follow_cancel</item>
+    <item name="android:paddingLeft">@dimen/padding_fragment_follow_cancel</item>
+    <item name="android:paddingRight">@dimen/padding_fragment_follow_cancel</item>
+  </style>
+
+
+  <!--====================关于界面====================-->
+  <style name="AboutStyle">
+
+  </style>
+
+  <style name="AboutStyle.TopContainer">
+    <item name="android:paddingTop">@dimen/padding_fragment_about_top_container</item>
+    <item name="android:paddingBottom">@dimen/padding_fragment_about_top_container</item>
+    <item name="android:gravity">center_horizontal</item>
+    <item name="android:background">@color/all_layout_background</item>
+    <item name="android:layout_marginBottom">
+      @dimen/margin_bottom_fragment_about_top_container
+    </item>
+  </style>
+
+  <style name="AboutStyle.AppIcon">
+    <item name="android:layout_width">@dimen/size_fragment_about_app_icon</item>
+    <item name="android:layout_height">@dimen/size_fragment_about_app_icon</item>
+    <item name="corner">@dimen/conner_fragment_about_app_icon</item>
+  </style>
+
+  <style name="AboutStyle.Version" parent="TextStyle.t_color01.t_font02">
+    <item name="android:layout_marginTop">@dimen/margin_top_fragment_about_version</item>
+  </style>
+
+  <style name="AboutStyle.Copyright" parent="TextStyle.t_color01.t_font02">
+    <item name="android:layout_marginTop">@dimen/margin_top_fragment_about_copyright</item>
+  </style>
+
+  <style name="AboutStyle.Cell" parent="CellStyle.Medium.WhiteBackground">
+    <item name="cvAddLeftIcon">false</item>
+    <item name="cvAddRightText">false</item>
+    <item name="cvAddRightTopText">false</item>
+    <item name="cvAddRightBottomText">false</item>
+  </style>
+
+
+  <!--====================手机号界面====================-->
+  <style name="FragmentPhoneStyle">
+
+  </style>
+
+  <style name="FragmentPhoneStyle.Back" parent="Toolbar.LeftBack">
+
+  </style>
+
+  <style name="FragmentPhoneStyle.Title" parent="TextStyle.t_color01.t_font02.bold">
+    <item name="android:layout_marginTop">@dimen/margin_top_phone_title</item>
+    <item name="android:textSize">@dimen/text_size_phone_title</item>
+  </style>
+
+  <style name="FragmentPhoneStyle.CountryCode" parent="TextStyle.t_color01.t_font01">
+
+  </style>
+
+  <style name="FragmentPhoneStyle.Triangle">
+    <item name="android:layout_width">@dimen/size_phone_triangle</item>
+    <item name="android:layout_height">@dimen/size_phone_triangle</item>
+    <item name="android:layout_marginLeft">@dimen/margin_left_phone_triangle</item>
+    <item name="android:src">@drawable/ic_triangle_down</item>
+  </style>
+
+  <style name="FragmentPhoneStyle.PhoneNumber" parent="AllAccountEditTextStyle.Medium">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">@dimen/height_phone_phone_number</item>
+    <item name="android:layout_marginLeft">@dimen/margin_left_phone_phone_number</item>
+    <item name="android:layout_marginTop">@dimen/margin_top_phone_phone_number</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:inputType">phone</item>
+    <item name="android:maxLength">11</item>
+  </style>
+
+  <style name="FragmentPhoneStyle.Driver" parent="AllDriverStyle">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">@dimen/height_phone_driver</item>
+  </style>
+
+  <style name="FragmentPhoneStyle.Next" parent="ButtonStyle.state_c_gradual01.t_font01.bold">
+    <item name="android:layout_marginTop">@dimen/margin_top_phone_next</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">@dimen/height_phone_next</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="FragmentPhoneStyle.LoginForAgreement" parent="TextStyle.t_color03.t_font04">
+    <item name="android:layout_marginTop">@dimen/margin_top_phone_login_for_agreement</item>
+  </style>
+
+  <style name="FragmentPhoneStyle.UserContract" parent="TextStyle.t_color03.t_font04">
+    <item name="android:textColor">@color/color_phone_user_contract</item>
+    <item name="android:layout_marginLeft">@dimen/margin_left_phone_user_contract</item>
+    <item name="android:layout_marginRight">@dimen/margin_right_phone_user_contract</item>
+  </style>
+
+  <style name="FragmentPhoneStyle.And" parent="FragmentPhoneStyle.LoginForAgreement">
+
+  </style>
+
+  <style name="FragmentPhoneStyle.Policy" parent="FragmentPhoneStyle.UserContract">
+
+  </style>
+
+  <!--验证码界面-->
+  <style name="FragmentSmsCode">
+
+  </style>
+
+  <style name="FragmentSmsCode.Title" parent="TextStyle.t_color01.t_font01.bold">
+    <item name="android:layout_marginTop">@dimen/margin_top_sms_code_title</item>
+    <item name="android:textSize">@dimen/text_size_sms_code_title</item>
+  </style>
+
+  <style name="FragmentSmsCode.SmsCodeSent" parent="TextStyle.t_color03.t_font04">
+    <item name="android:layout_marginTop">@dimen/margin_top_sms_code_sms_code_sent</item>
+  </style>
+
+  <style name="FragmentSmsCode.SmsCode" parent="AllAccountEditTextStyle.Medium">
+    <item name="android:layout_height">@dimen/height_sms_code_sms_code</item>
+    <item name="android:gravity">start|center_vertical</item>
+    <item name="android:inputType">number</item>
+    <item name="android:maxLength">6</item>
+  </style>
+
+  <style name="FragmentSmsCode.InviteCode" parent="AllAccountEditTextStyle.Medium">
+    <item name="android:layout_height">@dimen/height_sms_code_sms_code</item>
+    <item name="android:layout_marginTop">@dimen/margin_top_sms_code_sms_code</item>
+    <item name="android:gravity">start|center_vertical</item>
+    <item name="android:inputType">number</item>
+    <item name="android:maxLength">6</item>
+  </style>
+
+  <style name="FragmentSmsCode.ObtainSmsCode">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">@dimen/height_sms_code_obtain_sms_code</item>
+    <item name="android:gravity">center</item>
+    <item name="android:paddingLeft">@dimen/padding_sms_code_obtain_sms_code_horizontal</item>
+    <item name="android:paddingRight">@dimen/padding_sms_code_obtain_sms_code_horizontal</item>
+    <item name="android:paddingTop">@dimen/padding_sms_code_obtain_sms_code_vertical</item>
+    <item name="android:paddingBottom">@dimen/padding_sms_code_obtain_sms_code_vertical</item>
+    <item name="android:textSize">@dimen/t_font03</item>
+    <item name="android:background">@drawable/fragment_sms_code_obtain_sms_code_background</item>
+    <item name="android:textColor">@drawable/fragment_sms_code_obtain_sms_code_text_color</item>
+  </style>
+
+  <style name="FragmentSmsCode.Driver" parent="AllDriverStyle">
+    <item name="android:layout_height">@dimen/height_sms_code_driver</item>
+  </style>
+
+  <style name="FragmentSmsCode.Confirm" parent="ButtonStyle.state_c_gradual01.t_font01.bold">
+    <item name="android:layout_height">@dimen/height_sms_code_confirm</item>
+    <item name="android:layout_marginTop">@dimen/margin_top_sms_code_confirm</item>
+  </style>
+
+  <!--====================账号安全界面====================-->
+  <style name="FragmentAccountSecurityStyle">
+
+  </style>
+
+  <style name="FragmentAccountSecurityStyle.Cell" parent="CellStyle.Medium.WhiteBackground">
+    <item name="android:layout_height">60dp</item>
+    <item name="android:paddingTop">10dp</item>
+    <item name="android:paddingBottom">10dp</item>
+    <!--left icon-->
+    <item name="cvAddLeftIcon">false</item>
+    <!--diver-->
+    <item name="cvShowBottomDriver">true</item>
+  </style>
+
+  <style name="FragmentAccountSecurityStyle.Cell.Phone">
+    <item name="android:layout_marginTop">
+      @dimen/margin_top_fragment_account_security_rebind_phone
+    </item>
+  </style>
+
+  <style name="FragmentAccountSecurityStyle.Logout" parent="TextStyle.t_color01.t_font03">
+    <item name="android:layout_height">@dimen/height_fragment_account_security_logout</item>
+    <item name="android:gravity">center</item>
+    <item name="android:background">@drawable/all_white_c_bg01_background</item>
+  </style>
+
+  <!--====================身份认证界面====================-->
+  <style name="FragmentAuthenticationStyle">
+
+  </style>
+
+  <style name="FragmentAuthenticationStyle.IdCardNumberContainer">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">
+      @dimen/height_fragment_authentication_id_card_number_container
+    </item>
+    <item name="android:orientation">horizontal</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:background">@color/all_layout_background</item>
+    <item name="android:paddingLeft">
+      @dimen/padding_fragment_authentication_default
+    </item>
+    <item name="android:paddingRight">
+      @dimen/padding_fragment_authentication_default
+    </item>
+  </style>
+
+  <style name="FragmentAuthenticationStyle.IdCardNumberLabel" parent="TextStyle.t_color01.t_font03.bold">
+    <item name="android:layout_marginRight">
+      @dimen/margin_fragment_authentication_default
+    </item>
+  </style>
+
+  <style name="FragmentAuthenticationStyle.IdCardNumber" parent="AllAccountEditTextStyle.Medium">
+
+  </style>
+
+  <style name="FragmentAuthenticationStyle.UploadPictureContainer">
+    <item name="android:padding">@dimen/padding_fragment_authentication_default</item>
+    <item name="android:background">@color/all_layout_background</item>
+    <item name="android:layout_marginTop">
+      @dimen/margin_top_fragment_authentication_id_card_number_container
+    </item>
+  </style>
+
+  <style name="FragmentAuthenticationStyle.UploadPictureTitle" parent="TextStyle.t_color01.t_font01.bold">
+
+  </style>
+
+  <style name="FragmentAuthenticationStyle.PictureContainer">
+    <item name="android:background">
+      @drawable/fragment_authentication_picture_container_background
+    </item>
+    <item name="android:layout_marginTop">@dimen/margin_fragment_authentication_default</item>
+  </style>
+
+  <style name="FragmentAuthenticationStyle.PictureExample">
+    <item name="android:layout_width">@dimen/width_fragment_authentication_picture_example</item>
+    <item name="android:layout_height">
+      @dimen/height_fragment_authentication_picture_example
+    </item>
+    <item name="android:layout_marginLeft">
+      @dimen/margin_left_fragment_authentication_picture_example
+    </item>
+  </style>
+
+  <style name="FragmentAuthenticationStyle.PicturePlus" parent="IconStyle.X_Large">
+    <item name="android:src">@drawable/ic_authentication_plus</item>
+    <item name="android:layout_marginRight">
+      @dimen/margin_right_fragment_authentication_picture_plus
+    </item>
+  </style>
+
+  <style name="FragmentAuthenticationStyle.PictureTip" parent="TextStyle.t_color01.t_font04">
+    <item name="android:textColor">@color/fragment_authentication_picture_container_accent</item>
+    <item name="android:layout_marginTop">
+      @dimen/margin_top_fragment_authentication_picture_tip
+    </item>
+  </style>
+
+  <style name="FragmentAuthenticationStyle.PictureReal">
+    <item name="android:layout_width">@dimen/width_fragment_authentication_picture_real</item>
+    <item name="android:layout_height">@dimen/height_fragment_authentication_picture_real</item>
+  </style>
+
+  <style name="FragmentAuthenticationStyle.PictureClear" parent="IconStyle.X_Small">
+    <item name="android:src">@drawable/icon_clear</item>
+  </style>
+
+  <style name="FragmentAuthenticationStyle.Submit" parent="ButtonStyle.state_c_gradual01.t_font01.bold">
+    <item name="android:layout_height">@dimen/height_fragment_authentication_submit</item>
+    <item name="android:layout_marginTop">@dimen/margin_fragment_authentication_default</item>
+  </style>
+
+  <style name="FragmentAuthenticationStyle.Attention" parent="TextStyle.t_color04.t_font04">
+    <item name="android:padding">@dimen/padding_fragment_authentication_default</item>
+    <item name="android:lineSpacingExtra">
+      @dimen/space_extra_fragment_authentication_attention
+    </item>
+  </style>
+
+  <!--====================修改昵称界面====================-->
+  <style name="FragmentModifyNickname">
+
+  </style>
+
+  <style name="FragmentModifyNickname.Nickname" parent="AllAccountEditTextStyle.Medium">
+    <item name="android:layout_height">@dimen/height_fragment_modify_nickname_nickname</item>
+    <item name="android:layout_marginTop">@dimen/margin_fragment_modify_nickname_default</item>
+    <item name="android:layout_marginLeft">@dimen/margin_fragment_modify_nickname_default</item>
+    <item name="android:layout_marginRight">@dimen/margin_fragment_modify_nickname_default</item>
+    <item name="android:background">@drawable/fragment_modify_nickname_nickname_background</item>
+    <item name="android:paddingLeft">@dimen/padding_fragment_modify_nickname_nickname</item>
+    <item name="android:paddingRight">@dimen/padding_fragment_modify_nickname_nickname</item>
+  </style>
+
+  <style name="FragmentModifyNickname.Counter" parent="TextStyle.t_color03.t_font04">
+    <item name="android:layout_marginTop">@dimen/margin_top_fragment_modify_nickname_counter</item>
+    <item name="android:layout_marginRight">
+      @dimen/margin_right_fragment_modify_nickname_counter
+    </item>
+    <item name="android:layout_gravity">end</item>
+  </style>
+
+  <!--====================通用设置界面====================-->
+  <style name="FragmentSettingStyle">
+
+  </style>
+
+  <style name="FragmentSettingStyle.Cell" parent="CellStyle.Medium.WhiteBackground">
+    <item name="cvAddLeftIcon">false</item>
+    <item name="cvAddRightTopText">false</item>
+    <item name="cvAddRightBottomText">false</item>
+    <item name="cvShowBottomDriver">true</item>
+  </style>
+
+  <style name="FragmentSettingStyle.FirstCell" parent="FragmentSettingStyle.Cell">
+    <item name="android:layout_marginTop">@dimen/margin_top_fragment_setting_first_cell</item>
+  </style>
+
+  <!--====================修改头像界面====================-->
+
+  <style name="FragmentModifyAvatarStyle">
+
+  </style>
+
+  <style name="FragmentModifyAvatarStyle.AvatarBackground">
+    <item name="android:layout_height">@dimen/height_fragment_modify_avatar_avatar_background</item>
+    <item name="android:background">@drawable/ic_avatar_background</item>
+  </style>
+
+  <style name="FragmentModifyAvatarStyle.Avatar" parent="AvatarStyle.XX_Large">
+
+
+  </style>
+
+  <style name="FragmentModifyAvatarStyle.OptionalAvatar" parent="TextStyle.t_color01.t_font03.bold">
+    <item name="android:layout_marginLeft">@dimen/margin_fragment_modify_avatar_default</item>
+    <item name="android:layout_marginTop">@dimen/margin_fragment_modify_avatar_default</item>
+  </style>
+
+  <style name="FragmentModifyAvatarStyle.OptionalAvatarList">
+    <item name="android:layout_marginTop">
+      @dimen/margin_fragment_modify_avatar_optional_avatar_list
+    </item>
+    <item name="android:layout_marginBottom">
+      @dimen/margin_fragment_modify_avatar_optional_avatar_list
+    </item>
+    <item name="android:paddingLeft">
+      @dimen/padding_fragment_modify_avatar_optional_avatar_list
+    </item>
+    <item name="android:paddingRight">
+      @dimen/padding_fragment_modify_avatar_optional_avatar_list
+    </item>
+  </style>
+
+  <style name="FragmentModifyAvatarStyle.Submit" parent="ButtonStyle.state_c_gradual01.t_font01.bold">
+    <item name="android:layout_height">@dimen/height_fragment_modify_avatar_submit</item>
+    <item name="android:layout_marginLeft">@dimen/margin_fragment_modify_avatar_default</item>
+    <item name="android:layout_marginRight">@dimen/margin_fragment_modify_avatar_default</item>
+    <item name="android:layout_marginBottom">
+      @dimen/margin_bottom_fragment_modify_avatar_submit
+    </item>
+  </style>
+
+  <!--====================注销界面====================-->
+  <style name="FragmentCancelAccount" />
+
+  <style name="FragmentCancelAccount.Container">
+    <item name="android:paddingLeft">@dimen/padding_fragment_cancel_account_container</item>
+    <item name="android:paddingRight">@dimen/padding_fragment_cancel_account_container</item>
+  </style>
+
+  <style name="FragmentCancelAccount.ImportTipTitle" parent="TextStyle.t_color01.t_font03.bold">
+    <item name="android:layout_marginTop">@dimen/margin_fragment_cancel_account_default</item>
+  </style>
+
+  <style name="FragmentCancelAccount.ImportTip" parent="TextStyle.t_color02.t_font02">
+    <item name="android:layout_marginTop">@dimen/margin_fragment_cancel_account_default</item>
+    <item name="android:lineSpacingExtra">@dimen/spacing_extra_fragment_cancel_account</item>
+  </style>
+
+  <style name="FragmentCancelAccount.RememberTitle" parent="TextStyle.t_color01.t_font03.bold">
+    <item name="android:layout_marginTop">@dimen/margin_fragment_cancel_account_default</item>
+  </style>
+
+  <style name="FragmentCancelAccount.Remember" parent="TextStyle.t_color02.t_font02">
+    <item name="android:layout_marginTop">@dimen/margin_fragment_cancel_account_default</item>
+    <item name="android:lineSpacingExtra">@dimen/spacing_extra_fragment_cancel_account</item>
+  </style>
+
+  <style name="FragmentCancelAccount.CheckAgreement">
+    <item name="android:src">@drawable/ic_cancel_account_un_checked</item>
+    <item name="android:layout_width">@dimen/size_fragment_cancel_account_check_agreement</item>
+    <item name="android:layout_height">@dimen/size_fragment_cancel_account_check_agreement</item>
+    <item name="android:padding">@dimen/padding_fragment_cancel_account_check_agreement</item>
+    <item name="android:layout_marginTop">@dimen/margin_fragment_cancel_account_default</item>
+    <item name="android:layout_marginBottom">@dimen/margin_fragment_cancel_account_default</item>
+  </style>
+
+  <style name="FragmentCancelAccount.AgreementTip" parent="TextStyle.t_color03.t_font04">
+  </style>
+
+  <style name="FragmentCancelAccount.CancelContact" parent="TextStyle.t_color03.t_font04">
+    <item name="android:layout_marginLeft">
+      @dimen/margin_left_fragment_cancel_account_agreement
+    </item>
+    <item name="android:textColor">@color/text_color_fragment_cancel_account_cancel_contract</item>
+  </style>
+
+  <style name="FragmentCancelAccount.Confirm" parent="ButtonStyle.c_bg01.t_font01.bold">
+    <item name="android:layout_height">@dimen/height_fragment_cancel_account_button_operation</item>
+    <item name="android:layout_width">@dimen/width_fragment_cancel_account_confirm</item>
+    <item name="android:layout_marginRight">
+      @dimen/margin_right_fragment_cancel_account_confirm
+    </item>
+    <item name="android:layout_marginBottom">
+      @dimen/margin_button_fragment_cancel_account_button_operation
+    </item>
+    <item name="android:textColor">@drawable/fragment_cancel_account_confirm_text_color</item>
+    <item name="android:background">@drawable/fragment_cancel_account_confirm_background</item>
+  </style>
+
+  <style name="FragmentCancelAccount.Cancel" parent="ButtonStyle.c_gradual01.t_font01.bold">
+    <item name="android:layout_height">@dimen/height_fragment_cancel_account_button_operation</item>
+  </style>
+
+  <style name="FragmentCancelAccount.WebView">
+    <item name="android:layout_marginTop">8dp</item>
+    <item name="android:layout_marginBottom">8dp</item>
+  </style>
+
+</resources>

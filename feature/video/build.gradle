@@ -1,0 +1,12 @@
+apply from: rootProject.file("library.gradle")
+
+dependencies {
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
+  implementation deps.tog_feature_common
+  implementation deps.tog_kernel_base
+  implementation deps.tog_kernel_liteav
+  implementation deps.tog_kernel_stat
+  implementation deps.tog_kernel_media
+  implementation 'androidx.appcompat:appcompat:1.2.0'
+  implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+}

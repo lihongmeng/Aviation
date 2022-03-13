@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <data>
+    <variable
+        name="viewModel"
+        type="com.jxntv.account.ui.modify.nickname.ModifyNicknameViewModel"
+        />
+    <variable
+        name="binding"
+        type="com.jxntv.account.ui.modify.nickname.ModifyNicknameDataBinding"
+        />
+  </data>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/c_bg01"
+      android:orientation="vertical"
+      >
+    <com.jxntv.widget.GVideoClearableEditText
+        android:id="@+id/edit_text_nickname"
+        style="@style/FragmentModifyNickname.Nickname"
+        android:layout_width="match_parent"
+        android:maxLength="@integer/max_nickname_length"
+        android:text="@={binding.nickname}"
+        />
+    <com.jxntv.widget.GVideoTextView
+        style="@style/FragmentModifyNickname.Counter"
+        android:text="@{binding.counter}"
+        android:textColor="@{binding.counterMax ? @color/t_color06 : @color/t_color03}"
+        />
+  </LinearLayout>
+</layout>

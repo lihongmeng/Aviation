@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.account.ui.modify.avatar.ModifyAvatarViewModel" />
+
+        <variable
+            name="user"
+            type="com.jxntv.account.model.UserObservable" />
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/all_layout_background"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_avatar_background"
+            style="@style/FragmentModifyAvatarStyle.AvatarBackground"
+            android:layout_width="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/image_view_avatar"
+            style="@style/FragmentModifyAvatarStyle.Avatar"
+            app:circleCrop="@{true}"
+            app:placeholder="@{@drawable/ic_default_avatar}"
+            app:imageData="@{user.avatarUrl}"
+            app:layout_constraintBottom_toBottomOf="@id/view_avatar_background"
+            app:layout_constraintLeft_toLeftOf="@id/view_avatar_background"
+            app:layout_constraintRight_toRightOf="@id/view_avatar_background"
+            app:layout_constraintTop_toTopOf="@id/view_avatar_background" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_optional_avatar"
+            style="@style/FragmentModifyAvatarStyle.OptionalAvatar"
+            android:text="@string/optional_avatar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_avatar_background" />
+
+        <com.jxntv.widget.GVideoRecyclerView
+            android:id="@+id/recycler_view"
+            style="@style/FragmentModifyAvatarStyle.OptionalAvatarList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:adapter="@{viewModel.adapter}"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/text_view_submit"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_optional_avatar"
+            app:spanCount="3" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_submit"
+            style="@style/FragmentModifyAvatarStyle.Submit"
+            android:layout_width="0dp"
+            android:enabled="@{viewModel.enableSubmit}"
+            android:onClick="@{(v)->viewModel.modifyAvatar(v)}"
+            android:text="@string/submit_avatar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+</layout>

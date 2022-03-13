@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/favorite_detail_nav_graph"
+    app:startDestination="@id/favoriteDetailFragment">
+
+  <!--收藏详情界面-->
+  <fragment
+      android:id="@+id/favoriteDetailFragment"
+      android:name="com.jxntv.account.ui.favortite.detail.FavoriteDetailFragment"
+      android:label="FavoriteDetailFragment">
+    <argument
+      android:name="author"
+      app:argType="com.jxntv.account.model.Author" />
+    <argument
+        android:name="title"
+        app:argType="string" />
+    <argument
+        android:name="favoriteId"
+        app:argType="string" />
+    <argument
+        android:name="displayType"
+        app:argType="integer" />
+  </fragment>
+</navigation>

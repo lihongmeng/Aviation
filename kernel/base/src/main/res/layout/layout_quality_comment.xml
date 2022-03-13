@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f7f7f7"
+        android:paddingLeft="@dimen/DIMEN_5DP"
+        android:paddingTop="@dimen/DIMEN_9DP"
+        android:paddingRight="@dimen/DIMEN_5DP"
+        android:paddingBottom="@dimen/DIMEN_9DP">
+
+        <!--文本内容-->
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_content"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:orientation="vertical"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="确实！胡剑云老师是过来人！确实！胡剑云老师是过来人！确实！胡剑云老师是过来人！确实！胡剑云老师是过来人！确实！胡剑云老师是过来人！确实！胡剑云老师是过来人！确实！胡剑云老师是过来人！确实！胡剑云老师是过来人！" />
+
+        <!--容器-->
+        <com.jxntv.widget.GVideoFrameLayout
+            android:id="@+id/container"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@id/text_content"
+            app:layout_constraintRight_toRightOf="@id/text_content"
+            app:layout_constraintTop_toBottomOf="@id/text_content"
+            android:layout_marginTop="@dimen/DIMEN_4DP" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

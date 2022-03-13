@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="videoModel"
+            type="com.jxntv.base.model.video.VideoModel" />
+
+        <variable
+            name="authorObservable"
+            type="com.jxntv.base.model.video.AuthorObservable" />
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.android.video.ui.vtxt.ImageTxtAudioViewModel" />
+
+        <import type="android.view.View" />
+
+        <import type="android.text.TextUtils"/>
+
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingDefaultResource">
+
+        <com.jxntv.widget.GVideoRImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/DIMEN_35DP"
+            android:layout_height="@dimen/DIMEN_35DP"
+            android:layout_marginStart="@dimen/DIMEN_19DP"
+            android:layout_marginTop="@dimen/DIMEN_14DP"
+            android:onClick="@{(v) -> viewModel.onAvatarClicked(v)}"
+            app:corner_radius="@dimen/DIMEN_18DP"
+            app:placeholder="@{@drawable/ic_default_avatar}"
+            app:imageData="@{videoModel.author.avatar}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--大V标识-->
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/header_authentication"
+            android:layout_width="@dimen/DIMEN_16DP"
+            android:layout_height="@dimen/DIMEN_16DP"
+            android:background="@drawable/icon_header_authentication"
+            android:visibility="@{authorObservable.isAuthentication?View.VISIBLE:View.GONE}"
+            app:layout_constraintBottom_toBottomOf="@id/avatar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="@dimen/DIMEN_43DP"
+            tools:visibility="visible" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_8DP"
+            android:text="@{videoModel.author.name}"
+            android:textColor="@color/color_212229"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@id/description"
+            app:layout_constraintLeft_toRightOf="@id/avatar"
+            app:layout_constraintTop_toTopOf="@id/avatar"
+            tools:text="名称" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_8DP"
+            android:text="@{authorObservable.authenticationIntro}"
+            android:textColor="@color/color_a1a4b3"
+            android:textSize="12sp"
+            android:visibility="@{TextUtils.isEmpty(authorObservable.authenticationIntro)?View.GONE:View.VISIBLE}"
+            app:layout_constraintBottom_toBottomOf="@id/avatar"
+            app:layout_constraintLeft_toRightOf="@id/avatar"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            tools:text="描述" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/follow"
+            android:layout_width="@dimen/DIMEN_56DP"
+            android:layout_height="@dimen/DIMEN_24DP"
+            android:layout_marginStart="@dimen/DIMEN_8DP"
+            android:layout_marginEnd="@dimen/DIMEN_19DP"
+            android:background="@{authorObservable.isFollow?@drawable/icon_already_follow:@drawable/icon_follow}"
+            android:gravity="center"
+            android:onClick="@{(v)-> viewModel.onFollowClicked(v)}"
+            android:visibility="@{authorObservable.self?View.GONE:View.VISIBLE}"
+            app:layout_constraintBottom_toBottomOf="@id/avatar"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/avatar" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

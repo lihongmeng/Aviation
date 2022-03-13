@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.jxntv.record.recorder.fragment.upload.UploadViewModel"
+            />
+    </data>
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/fragment_record_cancel"
+            android:layout_height="@dimen/fragment_record_cancel"
+            android:src="@drawable/ic_back_black"
+            android:onClick="@{v ->viewModel.onPublishBackCancel(v)}"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fragment_record_cancel"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textStyle="bold"
+            android:textColor="@color/t_color01"
+            android:textSize="@dimen/fragment_choose_title_text_size"
+            android:text="@string/upload_video"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <com.jxntv.widget.GVideoEditText
+            android:id="@+id/et_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/video_edit_min_height"
+            android:layout_gravity="center_horizontal"
+            android:gravity="start"
+            android:includeFontPadding="false"
+            android:hint="@string/upload_video_default_text"
+            android:background="@null"
+            android:textColor="@color/t_color01"
+            android:textSize="@dimen/t_font03"
+            android:maxLength="30"
+            android:layout_marginTop="@dimen/video_edit_margin_top"
+            android:layout_marginLeft="@dimen/video_edit_margin_landscape"
+            android:layout_marginRight="@dimen/video_edit_margin_landscape"
+            app:layout_constraintTop_toBottomOf="@id/iv_back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/tv_edit_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/t_color03"
+            android:textSize="@dimen/fragment_choose_title_text_size"
+            android:text="@{viewModel.editTextNum}"
+            android:layout_marginTop="@dimen/video_edit_num_margin_top"
+            android:layout_marginRight="@dimen/video_edit_margin_landscape"
+            app:layout_constraintTop_toBottomOf="@+id/et_edit"
+            app:layout_constraintRight_toRightOf="parent"/>
+        
+        <androidx.cardview.widget.CardView
+            android:id="@+id/player_view_layout"
+            android:layout_width="@dimen/upload_video_width"
+            android:layout_height="@dimen/upload_video_height"
+            app:cardCornerRadius="@dimen/r_r01"
+            android:layout_marginTop="@dimen/upload_video_margin_top"
+            android:layout_marginLeft="@dimen/video_edit_margin_landscape"
+            app:cardElevation="0dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_edit_num"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:onClick="@{v ->viewModel.onPreviewVideoClick(v)}">
+
+            <com.jxntv.base.view.MediaImageView
+                android:id="@+id/player_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.jxntv.base.view.MediaImageView
+                android:id="@+id/video_big_img"
+                android:layout_width="@dimen/upload_video_item_size"
+                android:layout_height="@dimen/upload_video_item_size"
+                android:src="@drawable/ic_upload_video_img"
+                android:layout_gravity="center"/>
+
+            <View
+                android:id="@+id/title_mask"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/upload_back_cover_height"
+                android:background="@drawable/upload_fragment_back_cover"
+                android:layout_gravity="bottom"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <com.jxntv.widget.GVideoImageView
+                android:layout_gravity="bottom"
+                android:layout_width="@dimen/upload_video_change_cover_width"
+                android:layout_height="@dimen/upload_video_change_cover_height"
+                android:layout_marginLeft="@dimen/upload_video_change_cover_margin"
+                android:layout_marginBottom="@dimen/upload_video_change_cover_margin"
+                android:src="@drawable/ic_fragment_change_cover"
+                android:onClick="@{v ->viewModel.onChangeCoverClick(v)}"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/upload_video_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/t_color01"
+            android:textSize="@dimen/t_font03"
+            android:text="@string/upload_video_text"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/upload_video_text_upload_margin"
+            android:layout_marginLeft="@dimen/video_edit_margin_landscape"
+            app:layout_constraintTop_toBottomOf="@+id/player_view_layout"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/upload_video_public"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@{viewModel.isPublic ? @color/t_color06 : @color/t_color03}"
+            android:textSize="@dimen/t_font03"
+            android:text="@string/upload_video_public"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/upload_video_public_private_margin"
+            app:layout_constraintTop_toTopOf="@+id/upload_video_text"
+            app:layout_constraintBottom_toBottomOf="@+id/upload_video_text"
+            app:layout_constraintRight_toLeftOf="@id/upload_video_private"
+            android:onClick="@{v ->viewModel.changeLimit(true, v)}" />
+
+        <View
+            android:layout_width="@dimen/DIMEN_1DP"
+            android:layout_height="@dimen/DIMEN_12DP"
+            android:background="@color/upload_interval_color"
+            android:layout_marginRight="@dimen/upload_video_public_private_half_margin"
+            app:layout_constraintTop_toTopOf="@+id/upload_video_text"
+            app:layout_constraintBottom_toBottomOf="@+id/upload_video_text"
+            app:layout_constraintRight_toLeftOf="@id/upload_video_private"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/upload_video_private"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@{viewModel.isPublic ? @color/t_color03 : @color/t_color06}"
+            android:textSize="@dimen/t_font03"
+            android:text="@string/upload_video_private"
+            android:layout_marginRight="@dimen/video_edit_margin_landscape"
+            app:layout_constraintTop_toTopOf="@+id/upload_video_text"
+            app:layout_constraintBottom_toBottomOf="@+id/upload_video_text"
+            app:layout_constraintRight_toRightOf="parent"
+            android:onClick="@{v ->viewModel.changeLimit(false, v)}"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1DP"
+            android:background="@color/upload_interval_color"
+            android:layout_marginTop="@dimen/upload_video_interval_margin"
+            android:layout_marginLeft="@dimen/video_edit_margin_landscape"
+            android:layout_marginRight="@dimen/video_edit_margin_landscape"
+            app:layout_constraintTop_toBottomOf="@+id/upload_video_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/button_finish"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/upload_button_height"
+            android:layout_marginLeft="@dimen/video_edit_margin_landscape"
+            android:layout_marginRight="@dimen/video_edit_margin_landscape"
+            android:layout_marginBottom="@dimen/upload_button_margin_bottom"
+            android:includeFontPadding="false"
+            style="@style/ButtonStyle.state_c_gradual01.t_font01.bold"
+            android:enabled="@{viewModel.enableNext,default=false}"
+            android:gravity="center"
+            android:text="@string/upload_video_button_text"
+            android:textSize="@dimen/t_font08"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:onClick="@{v ->viewModel.onPublish(v)}"/>
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+</layout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--媒体适配器-->
+  <dimen name="adapter_media_cover_radius">8dp</dimen>
+
+  <dimen name="adapter_one_media_container_vertical_gap">15dp</dimen>
+  <dimen name="adapter_one_media_container_horizontal_gap">0dp</dimen>
+  <dimen name="adapter_one_media_container_top_gap">6dp</dimen>
+  <dimen name="adapter_one_media_container_bottom_gap">6dp</dimen>
+  <dimen name="adapter_one_media_container_left_gap">12dp</dimen>
+  <dimen name="adapter_one_media_container_right_gap">12dp</dimen>
+
+  <dimen name="adapter_two_media_container_vertical_gap">8dp</dimen>
+  <dimen name="adapter_two_media_container_top_gap">6dp</dimen>
+  <dimen name="adapter_two_media_container_bottom_gap">6dp</dimen>
+  <dimen name="adapter_two_media_container_horizontal_gap">8dp</dimen>
+  <dimen name="adapter_two_media_container_left_gap">12dp</dimen>
+  <dimen name="adapter_two_media_container_right_gap">12dp</dimen>
+
+  <!--====================头像适配器====================-->
+  <dimen name="size_adapter_avatar_container">104dp</dimen>
+  <dimen name="width_adapter_avatar_check_stroke">2dp</dimen>
+
+  <!--====================Pgc 适配器====================-->
+  <dimen name="padding_left_adapter_pgc">12dp</dimen>
+  <dimen name="padding_right_adapter_pgc">12dp</dimen>
+  <dimen name="padding_top_adapter_pgc">8dp</dimen>
+  <dimen name="padding_bottom_adapter_pgc">8dp</dimen>
+  <dimen name="height_adapter_pgc_cover">198dp</dimen>
+  <dimen name="margin_top_adapter_pgc_description">10dp</dimen>
+  <dimen name="margin_left_adapter_pgc_description">12dp</dimen>
+  <dimen name="margin_right_adapter_pgc_operation">32dp</dimen>
+  <dimen name="margin_top_adapter_pgc_comment">8dp</dimen>
+  <dimen name="margin_right_adapter_pgc_favorite">6dp</dimen>
+  <dimen name="text_size_adapter_pgc_comment">10sp</dimen>
+  <dimen name="padding_adapter_pgc_comment">2dp</dimen>
+  <dimen name="margin_adapter_pgc_comment_count_guideline">118dp</dimen>
+
+  <!--====================关注适配器====================-->
+  <dimen name="padding_follow_recycler_container_top">8dp</dimen>
+  <dimen name="padding_left_adapter_follow_container">12dp</dimen>
+  <dimen name="padding_right_adapter_follow_container">12dp</dimen>
+  <dimen name="padding_top_adapter_follow_container">10dp</dimen>
+  <dimen name="padding_bottom_adapter_follow_container">10dp</dimen>
+  <dimen name="margin_adapter_follow_name">12dp</dimen>
+  <dimen name="width_adapter_follow_follow">75dp</dimen>
+  <dimen name="height_adapter_follow_follow">30dp</dimen>
+
+  <!--====================收藏适配器====================-->
+  <dimen name="width_adapter_favorite_cover_background">7dp</dimen>
+  <dimen name="height_adapter_favorite_cover_background">72dp</dimen>
+  <dimen name="height_adapter_favorite_vertical_cover_background">170dp</dimen>
+  <dimen name="margin_top_adapter_favorite_cover_background">6dp</dimen>
+  <dimen name="margin_bottom_adapter_favorite_cover_background">6dp</dimen>
+  <dimen name="width_adapter_favorite_cover">164dp</dimen>
+  <dimen name="height_adapter_favorite_cover">164dp</dimen>
+  <dimen name="margin_top_adapter_favorite_cover">8dp</dimen>
+  <dimen name="margin_left_adapter_favorite_cover">12dp</dimen>
+  <dimen name="height_adapter_favorite_short_video_cover">184dp</dimen>
+  <dimen name="text_size_adapter_favorite_group_name">18sp</dimen>
+  <dimen name="padding_top_adapter_favorite_group_name">8dp</dimen>
+  <dimen name="padding_top_adapter_favorite_count">4dp</dimen>
+  <dimen name="margin_right_adapter_favorite_arrow">12dp</dimen>
+  <dimen name="padding_adapter_favorite_default_cover">27dp</dimen>
+  <dimen name="padding_adapter_favorite_vertical_default_cover">60dp</dimen>
+  <dimen name="size_adapter_favorite_play">32dp</dimen>
+
+  <!--====================作品适配器====================-->
+  <dimen name="adapter_composition_media_cover_radius">2dp</dimen>
+  <dimen name="padding_adapter_composition_media_container">4dp</dimen>
+  <dimen name="margin_adapter_composition_media_privacy_tag">6dp</dimen>
+  <!--====================一列媒体适配器====================-->
+  <dimen name="padding_horizontal_adapter_one_column_media_container">12dp</dimen>
+  <dimen name="padding_vertical_adapter_one_column_media_container">8dp</dimen>
+  <dimen name="width_adapter_one_column_media_cover">152dp</dimen>
+  <dimen name="height_adapter_one_column_media_cover">86dp</dimen>
+  <dimen name="margin_left_adapter_one_column_media_description">12dp</dimen>
+  <dimen name="margin_top_adapter_one_column_media_description">10dp</dimen>
+  <dimen name="margin_bottom_adapter_one_column_media_description">5dp</dimen>
+  <dimen name="margin_bottom_adapter_one_column_media_more">7dp</dimen>
+  <dimen name="margin_adapter_one_column_media_vertical_gap">15dp</dimen>
+  <dimen name="margin_adapter_one_column_media_first_row_gap">6dp</dimen>
+
+  <!--====================两列媒体适配器====================-->
+  <dimen name="padding_adapter_two_column_media_container">4dp</dimen>
+  <dimen name="margin_left_adapter_two_column_media_description">10dp</dimen>
+  <dimen name="margin_bottom_adapter_two_column_media_description">8dp</dimen>
+  <dimen name="margin_adapter_two_column_media_avatar">10dp</dimen>
+  <dimen name="margin_adapter_two_column_media_owner_name">6dp</dimen>
+  <dimen name="margin_adapter_two_column_media_owner_more">10dp</dimen>
+  <dimen name="margin_adapter_two_column_media_vertical_gap">8dp</dimen>
+  <dimen name="margin_adapter_two_column_media_first_row_gap">6dp</dimen>
+
+  <!--====================动态适配器====================-->
+  <dimen name="padding_left_adapter_moment_container">12dp</dimen>
+  <dimen name="padding_right_adapter_moment_container">12dp</dimen>
+  <dimen name="padding_top_adapter_moment_container">9dp</dimen>
+  <dimen name="padding_bottom_adapter_moment_container">9dp</dimen>
+  <dimen name="height_adapter_moment_cover">190dp</dimen>
+  <dimen name="margin_top_adapter_moment_description">10dp</dimen>
+  <dimen name="margin_left_adapter_moment_description">12dp</dimen>
+  <dimen name="margin_top_adapter_moment_avatar">8dp</dimen>
+  <dimen name="margin_left_adapter_moment_owner_name">8dp</dimen>
+  <dimen name="margin_right_adapter_moment_operation">16dp</dimen>
+  <dimen name="margin_right_adapter_moment_comment">27dp</dimen>
+  <dimen name="text_size_adapter_moment_comment_count">10sp</dimen>
+  <dimen name="padding_adapter_moment_comment_count">2dp</dimen>
+  <dimen name="margin_adapter_moment_comment_count_guideline">91dp</dimen>
+
+  <!--====================消息通知适配器====================-->
+  <dimen name="padding_horizontal_adapter_message_notification_container">12dp</dimen>
+  <dimen name="padding_vertical_adapter_message_notification_container">10dp</dimen>
+  <dimen name="size_adapter_message_notification_red_dot">@dimen/DIMEN_16DP</dimen>
+  <dimen name="margin_adapter_message_notification_title">12dp</dimen>
+  <dimen name="text_size_adapter_message_notification_content">13dp</dimen>
+  <dimen name="margin_top_adapter_message_notification_content">2dp</dimen>
+
+  <!--====================消息通知详情适配器====================-->
+  <dimen name="margin_top_adapter_message_notification_detail_avatar">@dimen/DIMEN_14DP</dimen>
+  <dimen name="margin_left_adapter_message_notification_detail_avatar">@dimen/DIMEN_14DP</dimen>
+  <dimen name="margin_left_adapter_message_notification_detail_title">@dimen/DIMEN_14DP</dimen>
+  <dimen name="margin_right_adapter_message_notification_detail_title">@dimen/DIMEN_14DP</dimen>
+  <dimen name="margin_top_adapter_message_notification_detail_content">10dp</dimen>
+  <dimen name="margin_top_adapter_message_notification_detail_time">5dp</dimen>
+  <dimen name="margin_top_adapter_message_notification_detail_button_link">8dp</dimen>
+  <dimen name="padding_horizontal_adapter_message_notification_detail_button_link">15dp</dimen>
+  <dimen name="padding_vertical_adapter_message_notification_detail_button_link">4dp</dimen>
+  <dimen name="width_adapter_message_notification_detail_button_link_stroke">1dp</dimen>
+  <dimen name="margin_top_adapter_message_notification_detail_image_link">5dp</dimen>
+  <dimen name="margin_top_adapter_message_notification_detail_image_time">12dp</dimen>
+  <dimen name="margin_top_adapter_message_notification_detail_driver">@dimen/DIMEN_14DP</dimen>
+</resources>

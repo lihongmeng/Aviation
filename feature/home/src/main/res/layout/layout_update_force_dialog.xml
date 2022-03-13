@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.jxntv.widget.GVideoRelativeLayout
+        android:paddingBottom="@dimen/DIMEN_50DP"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <com.jxntv.widget.GvideoRConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_22DP"
+            app:background_normal="@color/color_ffffff"
+            app:corner_radius="@dimen/DIMEN_8DP">
+
+            <com.jxntv.widget.GVideoImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_force_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/DIMEN_19DP"
+                android:layout_marginTop="@dimen/DIMEN_47DP"
+                android:text="Hi,你有新功能待接收"
+                android:textColor="@color/color_4d4c4c"
+                android:textSize="@dimen/sp_17"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_47DP"
+                android:textColor="@color/color_4d4c4c"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/title"
+                app:layout_constraintStart_toEndOf="@id/title"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="(V4.05)" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/content"
+                android:layout_width="@dimen/DIMEN_211DP"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/DIMEN_19DP"
+                android:layout_marginTop="@dimen/DIMEN_16DP"
+                android:layout_marginEnd="@dimen/DIMEN_19DP"
+                android:textColor="@color/color_4c4c4c"
+                android:textSize="@dimen/sp_14"
+                android:lineSpacingMultiplier="1.2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/version"
+                tools:text="更新说明" />
+
+            <ProgressBar
+                android:id="@+id/progress_horizontal"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/DIMEN_4DP"
+                android:layout_marginTop="@dimen/DIMEN_20DP"
+                android:progressDrawable="@drawable/force_progress_background"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/content"
+                tools:visibility="visible"
+                tools:progress="50"/>
+
+            <com.jxntv.widget.GVideoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.jxntv.widget.GVideoRTextView
+                android:id="@+id/confirm"
+                android:layout_width="@dimen/DIMEN_159DP"
+                android:layout_height="@dimen/DIMEN_38DP"
+                android:layout_marginTop="@dimen/DIMEN_24DP"
+                android:layout_marginBottom="@dimen/DIMEN_16DP"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/update_bt_confirm"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/sp_16"
+                app:background_normal="@color/color_e4344e"
+                app:corner_radius="@dimen/DIMEN_19DP"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/progress_horizontal" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/update_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_12DP"
+                android:layout_marginBottom="@dimen/DIMEN_16DP"
+                android:text="正在更新"
+                android:textColor="@color/color_4d4c4c"
+                android:textSize="@dimen/sp_15"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/percent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/progress_horizontal" />
+
+            <TextView
+                android:id="@+id/percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/DIMEN_5DP"
+                android:text="0%"
+                android:textColor="@color/color_e4344e"
+                android:textSize="@dimen/sp_15"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/update_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/update_text"
+                app:layout_constraintTop_toTopOf="@id/update_text"
+                tools:text="25%" />
+
+        </com.jxntv.widget.GvideoRConstraintLayout>
+
+        <com.jxntv.widget.GVideoImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_force_icon"
+            android:layout_centerHorizontal="true"
+            />
+
+    </com.jxntv.widget.GVideoRelativeLayout>
+</layout>

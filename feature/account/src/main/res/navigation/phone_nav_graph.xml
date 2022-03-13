@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/phone_nav_graph"
+    app:startDestination="@id/phoneFragment">
+
+    <!--手机号界面-->
+    <fragment
+        android:id="@+id/phoneFragment"
+        android:name="com.jxntv.account.ui.phone.PhoneFragment"
+        android:label="PhoneFragment">
+
+        <argument
+            android:name="type"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+        <!--跳转短信验证码界面-->
+        <action
+            android:id="@+id/action_phone_to_login_code"
+            app:destination="@+id/loginCodeFragment" />
+
+        <!--跳转国家代码界面-->
+        <action
+            android:id="@+id/action_phone_to_country_code"
+            app:destination="@+id/countryCodeFragment" />
+
+        <!--跳转国家代码界面-->
+        <action
+            android:id="@+id/action_phone_to_account_security"
+            app:destination="@id/accountSecurityFragment" />
+
+        <!--跳转个人中心界面-->
+        <action
+            android:id="@+id/action_phone_to_profile"
+            app:destination="@id/profileFragment" />
+
+        <action
+            android:id="@+id/action_phone_to_nick_name_set"
+            app:destination="@+id/nickNameSetFragment" />
+
+    </fragment>
+
+    <!--个人头像界面-->
+    <fragment
+        android:id="@+id/modifyAvatarFragment"
+        android:name="com.jxntv.account.ui.modify.avatar.ModifyAvatarFragment"
+        android:label="ModifyAvatarFragment" />
+
+    <!--验证码界面-->
+    <fragment
+        android:id="@+id/loginCodeFragment"
+        android:name="com.jxntv.account.ui.sms.LoginCodeFragment"
+        android:label="LoginCodeFragment">
+
+        <argument
+            android:name="phoneNumber"
+            android:defaultValue="``"
+            app:argType="string" />
+
+        <argument
+            android:name="countryCode"
+            android:defaultValue="+86"
+            app:argType="string" />
+
+        <argument
+            android:name="type"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+    </fragment>
+
+    <!--设置昵称页面-->
+    <fragment
+        android:id="@+id/nickNameSetFragment"
+        android:name="com.jxntv.account.ui.nickname.NickNameSetFragment"
+        android:label="NickNameSetFragment">
+
+        <!--跳转个人头像界面-->
+        <action
+            android:id="@+id/action_profile_to_modify_avatar"
+            app:destination="@id/modifyAvatarFragment" />
+
+    </fragment>
+
+    <!--国家代码界面-->
+    <fragment
+        android:id="@+id/countryCodeFragment"
+        android:name="com.jxntv.account.ui.country.CountryCodeFragment"
+        android:label="CountryCodeFragment" />
+
+    <!--  消息详情-->
+    <fragment
+        android:id="@+id/messageNotificationDetailFragment"
+        android:name="com.jxntv.account.ui.notification.detail.MessageNotificationDetailFragment"
+        android:label="MessageNotificationDetailFragment">
+
+        <argument
+            android:name="msgType"
+            app:argType="integer" />
+
+        <argument
+            android:name="title"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>

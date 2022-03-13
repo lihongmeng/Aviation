@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="my_circle">我的社区</string>
+    <string name="find_circle">发现社区</string>
+    <string name="join">加入</string>
+    <string name="already_join">已加入</string>
+    <string name="everyone_is_discussing">大家正在参与讨论 </string>
+    <string name="circle_select">社区选择</string>
+    <string name="admin">管理员</string>
+    <string name="hot">热度</string>
+    <string name="circle_famous">全部成员</string>
+    <string name="kol">KOL</string>
+    <string name="all">全部</string>
+    <string name="hot_chat">热聊</string>
+    <string name="hot_chat_topic">热聊话题</string>
+    <string name="already_exit_this_circle">已退出该社区</string>
+    <string name="exit_failed">退出失败！</string>
+    <string name="search">搜索</string>
+    <string name="search_topic">搜索话题</string>
+    <string name="cancel">取消</string>
+    <string name="exit">退出</string>
+    <string name="topic_detail">话题详情</string>
+    <string name="topic_detail_with_well">#话题详情#</string>
+    <string name="exit_circle_tip">是否确定退出社区？</string>
+    <string name="admin_exit_circle_tip">您是本社区的管理员,不可以退出该社区</string>
+    <string name="uploading_avatar">正在上传头像&#xB7;&#xB7;&#xB7;</string>
+    <string name="upload_success">上传成功</string>
+    <string name="please_input_circle_name">请输入社区名称</string>
+    <string name="please_input_circle_introduction">请输入社区简介</string>
+    <string name="modify_circle_name">修改社区名称</string>
+    <string name="modify_circle_introduction">修改社区简介</string>
+    <string name="complete">完成</string>
+    <string name="modify_failed">修改失败</string>
+    <string name="is_uploading">正在上传</string>
+    <string name="is_loading">正在加载</string>
+    <string name="emotion_confide">情感倾诉</string>
+    <string name="newest">最新</string>
+    <string name="hottest">最热</string>
+    <string name="space_hot_chat">&#160;&#160;&#160;热聊</string>
+    <string name="space_newest">&#160;&#160;&#160;最新</string>
+    <string name="plwase_join_circle_then_talk">请加入社区后再发言</string>
+    <string name="join_circle">加入社区</string>
+    <string name="fans_count">粉丝数</string>
+    <string name="moment_count">动态数</string>
+    <string name="sign">签到</string>
+    <string name="sign_finish">已签到</string>
+    <string name="pair">YES I DO</string>
+    <string name="pair_finish">你的心动我们已收到</string>
+
+    <string name="member">成员</string>
+    <string name="i_know">我知道了</string>
+    <string name="change_string">%s</string>
+    <string name="answered">回答了</string>
+    <string name="ask_question">提问</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.account.ui.profile.ProfileViewModel" />
+
+        <variable
+            name="author"
+            type="com.jxntv.base.model.video.AuthorModel" />
+
+        <import type="android.text.TextUtils"/>
+    </data>
+
+    <com.jxntv.widget.GVideoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <com.jxntv.widget.GVideoPhotoView
+            android:id="@+id/photo_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:transitionName="transition_image" />
+
+        <com.jxntv.widget.GVideoRTextView
+            android:id="@+id/modify_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/DIMEN_35DP"
+            android:paddingStart="@dimen/DIMEN_12DP"
+            android:paddingTop="@dimen/DIMEN_4DP"
+            android:paddingEnd="@dimen/DIMEN_12DP"
+            android:paddingBottom="@dimen/DIMEN_4DP"
+            android:text="@string/update_avatar"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:onClick="@{v->viewModel.modifyAvatar(v)}"
+            app:border_color_normal="@color/white"
+            app:border_width_normal="@dimen/DIMEN_1DP"
+            app:corner_radius="@dimen/DIMEN_20DP" />
+
+    </com.jxntv.widget.GVideoFrameLayout>
+</layout>

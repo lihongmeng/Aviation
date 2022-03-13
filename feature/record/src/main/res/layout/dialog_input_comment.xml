@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.record.recorder.fragment.publish.PublishViewModel" />
+
+    </data>
+
+    <com.jxntv.widget.GvideoRConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/DIMEN_12DP"
+        android:paddingBottom="@dimen/DIMEN_10DP"
+        app:background_normal="@color/white"
+        app:corner_radius_top_left="@dimen/DIMEN_12DP"
+        app:corner_radius_top_right="@dimen/DIMEN_12DP">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/sound_record_icon"
+            android:layout_width="@dimen/DIMEN_40DP"
+            android:layout_height="@dimen/DIMEN_40DP"
+            android:layout_marginStart="@dimen/DIMEN_8DP"
+            android:padding="@dimen/DIMEN_8DP"
+            android:src="@drawable/selector_publish_sound_record"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/pic_icon"
+            android:layout_width="@dimen/DIMEN_40DP"
+            android:layout_height="@dimen/DIMEN_40DP"
+            android:padding="@dimen/DIMEN_8DP"
+            android:src="@drawable/selector_publish_pic"
+            app:layout_constraintLeft_toRightOf="@id/sound_record_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/DIMEN_12DP"
+            android:layout_marginBottom="@dimen/DIMEN_6DP"
+            android:background="@drawable/comment_input_send_background"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/comment_length_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comment_length_count"
+            android:textColor="@color/color_a1a4b3"
+            android:textSize="@dimen/sp_15"
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/send"
+            app:layout_constraintRight_toLeftOf="@id/send"
+            app:layout_constraintTop_toTopOf="@id/send" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_D5P"
+            android:layout_marginTop="@dimen/DIMEN_12DP"
+            android:layout_marginBottom="@dimen/DIMEN_12DP"
+            android:background="@color/c_line01"
+            app:layout_constraintTop_toBottomOf="@id/send" />
+
+        <com.jxntv.widget.GVideoEditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:layout_marginTop="@dimen/DIMEN_15DP"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="start|top"
+            android:hint="@string/publish_comment"
+            android:maxLines="4"
+            android:includeFontPadding="false"
+            android:maxHeight="@dimen/DIMEN_200DP"
+            android:minHeight="@dimen/DIMEN_100DP"
+            android:textColor="@color/t_color01"
+            android:textSize="@dimen/t_font03"
+            app:layout_constraintHeight_max="@dimen/DIMEN_200DP"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            app:layout_constraintWidth_min="@dimen/DIMEN_100DP" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintHeight_min="@dimen/DIMEN_170DP"
+            app:layout_constraintTop_toBottomOf="@id/edittext">
+
+            <com.jxntv.base.view.PublishImageRecyclerView
+                android:id="@+id/image_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/DIMEN_12DP"
+                android:scrollbars="none"
+                android:visibility="visible"
+                app:imageData="@{viewModel.imagePathList}"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.jxntv.android.liteav.GVideoSoundView
+                android:id="@+id/sound_view"
+                android:layout_width="@dimen/DIMEN_260DP"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_12DP"
+                android:layout_marginTop="@dimen/DIMEN_15DP"
+                android:layout_marginRight="@dimen/DIMEN_12DP"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+            <com.jxntv.record.recorder.view.soundrecord.GVideoSoundRecordView
+                android:id="@+id/sound_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:timeTextColor="@color/color_525566"
+                tools:visibility="visible" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.jxntv.widget.GvideoRConstraintLayout>
+
+</layout>

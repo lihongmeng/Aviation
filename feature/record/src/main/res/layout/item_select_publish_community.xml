@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/root"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <!--第一个推荐社区前面的标题-->
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/recommend_community_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_31DP"
+            android:background="@color/color_f2f2f2"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/DIMEN_14DP"
+            android:text="@string/recommend_community"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry"
+            tools:visibility="visible" />
+
+        <!--白色背景-->
+        <View
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_58DP"
+            app:layout_constraintTop_toBottomOf="@id/recommend_community_title"
+            android:background="@color/color_ffffff" />
+
+        <!--社区封面-->
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/cover"
+            android:layout_width="@dimen/DIMEN_29DP"
+            android:layout_height="@dimen/DIMEN_29DP"
+            android:layout_marginStart="@dimen/DIMEN_14DP"
+            app:layout_constraintBottom_toBottomOf="@id/bg"
+            app:layout_constraintStart_toStartOf="@id/bg"
+            app:layout_constraintTop_toTopOf="@id/bg" />
+
+        <!--选择、未选择按钮-->
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/select_selected"
+            android:layout_width="@dimen/DIMEN_52DP"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            android:paddingTop="@dimen/DIMEN_4DP"
+            android:paddingBottom="@dimen/DIMEN_4DP"
+            android:textColor="@color/color_fffff"
+            android:textSize="@dimen/sp_12"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="@id/bg"
+            app:layout_constraintEnd_toEndOf="@id/bg"
+            app:layout_constraintTop_toTopOf="@id/bg"
+            tools:background="@drawable/shape_soild_e4344e_coners_200dp"
+            tools:text="已选择" />
+
+        <!--圈子名称-->
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_10DP"
+            android:layout_marginEnd="@dimen/DIMEN_10DP"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="@id/bg"
+            app:layout_constraintEnd_toStartOf="@id/select_selected"
+            app:layout_constraintStart_toEndOf="@id/cover"
+            app:layout_constraintTop_toTopOf="@id/bg"
+            tools:text="新闻导航新闻导航新闻导航新闻导航新闻导航新闻导航新闻导航新闻导航新闻导航" />
+
+        <!--分割线-->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginStart="@dimen/DIMEN_14DP"
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            app:layout_constraintBottom_toBottomOf="@id/bg" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

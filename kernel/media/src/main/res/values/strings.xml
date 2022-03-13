@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">media</string>
+    <string name="media_is_attention">已关注</string>
+    <string name="media_not_attention">关注</string>
+    <string name="media_comment_no_num">评论</string>
+    <string name="media_comment_num_more">万+</string>
+    <string name="media_create_date">%s发布</string>
+    <string name="enter_live_room">点击观看直播</string>
+</resources>

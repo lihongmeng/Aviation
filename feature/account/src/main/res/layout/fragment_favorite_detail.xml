@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.jxntv.account.ui.favortite.detail.FavoriteDetailViewModel" />
+  </data>
+
+  <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jxntv.base.view.GVideoSmartRefreshLayout
+      android:id="@+id/refresh_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/all_layout_background"
+      app:ksrlv_onLoadMore="@{(v)->viewModel.onLoadMore(v)}"
+      app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}">
+
+      <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:adapter="@{viewModel.adapter}" />
+    </com.jxntv.base.view.GVideoSmartRefreshLayout>
+  </FrameLayout>
+</layout>

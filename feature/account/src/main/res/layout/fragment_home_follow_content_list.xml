@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.account.ui.follow.HomeFollowContentListViewModel" />
+
+    </data>
+
+    <com.jxntv.base.view.GVideoSmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f2f2f2"
+        app:srlEnableLoadMoreWhenContentNotFull="false"
+        app:srlEnableFooterFollowWhenNoMoreData="true"
+        app:ksrlv_onLoadMore="@{(v)->viewModel.onLoadMore(v)}"
+        app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}"
+        app:srlHeaderHeight="75dp">
+
+        <com.jxntv.widget.GVideoConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <FrameLayout
+                android:id="@+id/empty_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_FFFFFF"
+                android:scrollbars="none"
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+        </com.jxntv.widget.GVideoConstraintLayout>
+
+    </com.jxntv.base.view.GVideoSmartRefreshLayout>
+
+</layout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--可清除的 EditText-->
+    <declare-styleable name="GVideoClearableEditText">
+        <attr name="cet_clearIcon" format="reference" />
+        <attr name="cet_clearIconSize" format="reference|dimension" />
+    </declare-styleable>
+
+    <!--ForegroundColorSpan-->
+    <attr name="foregroundColorSpanColor" />
+    <attr name="foregroundColorSpanStart" />
+    <attr name="foregroundColorSpanEnd" />
+
+    <attr name="foregroundColorSpanColors" />
+    <attr name="foregroundColorSpanStarts" />
+    <attr name="foregroundColorSpanEnds" />
+
+
+    <!--ClickableSpan-->
+    <attr name="clickableSpanStart" />
+    <attr name="clickableSpanEnd" />
+    <attr name="clickableSpanColor" />
+
+    <attr name="clickableSpanStarts" />
+    <attr name="clickableSpanEnds" />
+    <attr name="clickableSpanColors" />
+
+    <attr name="clickableSpanListener" />
+
+    <!--          Image          -->
+    <!--强制加载-->
+    <attr name="forceLoad" format="boolean" />
+    <!--数据-->
+    <attr name="imageUrl" format="string" />
+    <attr name="imageData" />
+    <attr name="oriImageData" />
+    <attr name="imageList" />
+    <attr name="updateListResource" />
+    <attr name="test" format="integer"/>
+    <!--图片类型-->
+    <attr name="asDrawable" format="boolean" />
+    <attr name="asBitmap" format="boolean" />
+    <attr name="asGif" format="boolean" />
+    <!--占位符-->
+    <attr name="placeholder" />
+    <attr name="error" />
+    <attr name="fallback" />
+    <!--变换-->
+    <attr name="centerCrop" format="boolean" />
+    <attr name="fitCenter" format="boolean" />
+    <attr name="circleCrop" format="boolean" />
+    <attr name="centerInside" format="boolean" />
+    <attr name="roundedCorners" format="reference" />
+    <attr name="transforms" />
+    <!--过渡-->
+    <attr name="crossFade" format="boolean" />
+    <attr name="transition" />
+    <!--额外信息,用于扩展-->
+    <attr name="extras" />
+
+    <declare-styleable name="FoldTextView">
+        <attr name="showMaxLine" format="integer" />
+        <attr name="tipColor" format="reference|color" />
+        <attr name="tipClickable" format="boolean" />
+        <attr name="contentTextSize" format="dimension" />
+        <attr name="contentTextColor" format="reference|color" />
+        <attr name="contentSpacing" format="float" />
+        <attr name="force_pack" format="boolean" />
+    </declare-styleable>
+
+
+
+</resources>

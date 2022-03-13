@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jxntv.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_38DP"
+    android:layout_marginLeft="@dimen/DIMEN_14DP"
+    android:layout_marginRight="@dimen/DIMEN_14DP"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.jxntv.widget.GVideoImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_14DP"
+        android:src="@drawable/icon_pound" />
+
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/topic_name"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_3DP"
+        android:layout_marginRight="@dimen/DIMEN_5DP"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:textColor="@color/color_333333"
+        android:singleLine="true"
+        android:textSize="@dimen/sp_15"
+        tools:text="12321321321321321232132132132132112321321321321321123213213213213211" />
+
+    <com.jxntv.widget.GVideoImageView
+        android:id="@+id/hot_chat"
+        android:layout_width="@dimen/DIMEN_38DP"
+        android:layout_height="@dimen/DIMEN_38DP"
+        android:scaleType="center"
+        android:src="@drawable/icon_arrow_right_text" />
+
+</com.jxntv.widget.GVideoLinearLayout>

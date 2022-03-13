@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false" >
+
+  <solid android:color="@color/t_color06"/>
+
+  <size android:width="@dimen/fragment_record_main_button_size"
+      android:height="@dimen/fragment_record_main_button_size" />
+</shape>

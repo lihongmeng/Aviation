@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="newest_hottest_window_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/newest_hottest_window_anim_enter</item>
+        <item name="android:windowExitAnimation">@anim/newest_hottest_window_anim_exit</item>
+    </style>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.feed.view.recommend.HomeRecommendViewModel" />
+    </data>
+
+    <com.jxntv.base.view.GVideoSmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadMoreWhenContentNotFull="false"
+        app:srlEnableFooterFollowWhenNoMoreData="true"
+        app:ksrlv_onLoadMore="@{(v)->viewModel.onLoadMore(v)}"
+        app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}"
+        app:srlHeaderHeight="75dp"
+        android:background="@color/color_FFFFFF">
+        
+        <com.jxntv.widget.GVideoConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<!--        <com.jxntv.widget.GVideoCoordinatorLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+            <com.jxntv.widget.GVideoFrameLayout
+                android:id="@+id/empty_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+<!--            <include-->
+<!--                android:id="@+id/header"-->
+<!--                layout="@layout/layout_home_recommend_header" />-->
+
+            <com.jxntv.widget.GVideoRecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_FFFFFF"
+                android:scrollbars="none"
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+        </com.jxntv.widget.GVideoConstraintLayout>
+
+<!--        </com.jxntv.widget.GVideoCoordinatorLayout>-->
+
+    </com.jxntv.base.view.GVideoSmartRefreshLayout>
+
+</layout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <com.jxntv.widget.GVideoLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/feed_slide_layout"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jxntv.widget.GVideoRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_19DP"
+            android:layout_marginEnd="@dimen/DIMEN_19DP" />
+
+        <View
+            android:layout_marginTop="@dimen/DIMEN_19DP"
+            android:background="@color/color_f2f2f2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_10DP"/>
+
+    </com.jxntv.widget.GVideoLinearLayout>
+
+
+</layout>

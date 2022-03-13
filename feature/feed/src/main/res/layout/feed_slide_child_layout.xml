@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <com.jxntv.widget.GVideoConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/feed_slide_child_width"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp">
+
+        <com.jxntv.base.view.MediaImageView
+            android:id="@+id/slide_child_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/feed_slide_img_height"
+            android:background="@drawable/feed_img_background_drawable"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/slide_label"
+            android:layout_width="@dimen/feed_slide_label_text_width"
+            android:layout_height="@dimen/feed_slide_label_text_height"
+            android:layout_marginLeft="@dimen/feed_slide_pendant_margin"
+            android:layout_marginTop="@dimen/feed_slide_pendant_margin"
+            app:layout_constraintLeft_toLeftOf="@+id/slide_child_img"
+            app:layout_constraintTop_toTopOf="@+id/slide_child_img"/>
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/slide_video_img"
+            android:layout_width="@dimen/feed_slide_video_img_size"
+            android:layout_height="@dimen/feed_slide_video_img_size"
+            android:layout_marginRight="@dimen/feed_slide_pendant_margin"
+            android:layout_marginBottom="@dimen/feed_slide_pendant_margin"
+            android:src="@drawable/feed_video_img_small"
+            app:layout_constraintBottom_toBottomOf="@+id/slide_child_img"
+            app:layout_constraintRight_toRightOf="@+id/slide_child_img" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/slide_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="@dimen/feed_slide_text_height"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/feed_slide_title_margin_top"
+            android:textSize="@dimen/feed_slide_title_size"
+            android:textColor="@color/feed_slide_title_text_color"
+            app:layout_constraintTop_toBottomOf="@+id/slide_child_img"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/slide_source"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/feed_slide_source_text_height"
+            android:textSize="@dimen/feed_slide_source_size"
+            android:textColor="@color/feed_slide_source_text_color"
+            android:ellipsize="end"
+            app:layout_constraintWidth_max="@dimen/feed_slide_source_width_max"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slide_title_text"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/slide_ad"
+            android:gravity="center"
+            android:layout_width="@dimen/feed_ad_width"
+            android:layout_height="@dimen/feed_ad_height"
+            android:layout_marginLeft="@dimen/feed_ad_margin_left"
+            android:background="@drawable/feed_ad_background_drawable"
+            android:textColor="@color/feed_ad_text_color"
+            android:textSize="@dimen/feed_ad_text_size"
+            android:text="@string/feed_ad"
+            app:layout_constraintTop_toBottomOf="@id/slide_source"
+            app:layout_constraintLeft_toRightOf="@+id/slide_source" />
+    </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

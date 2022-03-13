@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.account.ui.account.AccountSecurityViewModel" />
+
+        <variable
+            name="user"
+            type="com.jxntv.account.model.UserObservable" />
+    </data>
+
+    <com.jxntv.widget.GVideoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_bg01"
+        android:orientation="vertical">
+
+        <!--换绑手机号-->
+        <com.jxntv.widget.GVideoCellView
+            android:id="@+id/item_rebind_phone"
+            style="@style/FragmentAccountSecurityStyle.Cell.Phone"
+            android:onClick="@{(v)->viewModel.rebindPhoneNumber(v)}"
+            app:cvLeftText="@string/fragment_account_security_rebind_phone"
+            app:cvRightText="@{user.encryptedPhoneNumberWithCountryCode}" />
+
+        <!--实名认证-->
+        <com.jxntv.widget.GVideoCellView
+            android:id="@+id/item_rebind_real_name_authentication"
+            style="@style/FragmentAccountSecurityStyle.Cell"
+            android:layout_below="@id/item_rebind_phone"
+            android:enabled="@{user.canVerifyIdentity}"
+            android:onClick="@{(v)->viewModel.navigationToAuthentication(v)}"
+            android:visibility="@{viewModel.switchEnvironmentVisibility}"
+            app:cvLeftText="@string/fragment_account_security_real_name_authentication"
+            app:cvRightText="@{user.identityVerification}"
+            app:cvShowRightIcon="@{user.canVerifyIdentity}" />
+
+        <!--注销账号-->
+        <com.jxntv.widget.GVideoCellView
+            android:id="@+id/item_cancel_account"
+            style="@style/FragmentAccountSecurityStyle.Cell"
+            android:layout_below="@id/item_rebind_real_name_authentication"
+            android:onClick="@{(v)->viewModel.cancelAccount(v)}"
+            app:cvLeftText="@string/fragment_account_security_cancel_account"
+            app:cvShowBottomDriver="false" />
+
+        <!--退出-->
+        <com.jxntv.widget.GVideoTextView
+            style="@style/FragmentAccountSecurityStyle.Logout"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:onClick="@{(v)->viewModel.logout()}"
+            android:text="@string/fragment_account_security_logout" />
+
+    </com.jxntv.widget.GVideoRelativeLayout>
+
+</layout>

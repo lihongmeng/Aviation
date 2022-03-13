@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+  <data>
+    <variable
+        name="author"
+        type="com.jxntv.account.model.UserAuthorObservable"
+        />
+    <variable
+        name="viewModel"
+        type="com.jxntv.account.ui.me.MeViewModel"
+        />
+    <import type="android.view.View" />
+  </data>
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <com.jxntv.widget.GVideoFrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      />
+    <!--无网时保留更多按钮-->
+    <com.jxntv.base.view.HomeMessageLayout
+        android:id="@+id/image_view_drawer_holder"
+        android:layout_marginTop="@dimen/DIMEN_40DP"
+        android:layout_gravity="right|top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+  <com.jxntv.base.view.GVideoSmartRefreshLayout
+      android:id="@+id/refresh_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:srlEnableLoadMoreWhenContentNotFull="false"
+      app:srlEnableFooterFollowWhenNoMoreData="true"
+      app:ksrlv_enableLoadMore="false"
+      app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}"
+      >
+    <com.jxntv.widget.GVideoCoordinatorLayout
+        android:id="@+id/recycler_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+      <include android:id="@+id/app_bar_layout"
+          app:author="@{author}"
+          layout="@layout/view_content_ugc" />
+
+      <com.jxntv.widget.GVideoViewPager
+          android:id="@+id/view_pager"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+          />
+      <!--侧边栏按钮-->
+      <com.jxntv.widget.GVideoConstraintLayout
+          android:id="@+id/right_drawer"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="top|right"
+          tools:ignore="ContentDescription"
+          app:layout_behavior="com.jxntv.base.behavior.VisibilityAlphaBehavior"
+          app:vabReferenceViewId="@id/app_bar_layout"
+          app:vabVisibleWhenScrollUp="false"
+        >
+
+        <com.jxntv.base.view.HomeMessageLayout
+            android:id="@+id/open_message_layout"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/DIMEN_9DP"
+            app:is_white_icon="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/open_share"
+            android:src="@drawable/ic_common_share_top_white"
+            android:layout_marginEnd="@dimen/DIMEN_1DP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{v->viewModel.onShareClicked(v)}"
+            app:layout_constraintEnd_toStartOf="@id/open_message_layout"
+            app:layout_constraintTop_toTopOf="@id/open_message_layout"
+            app:layout_constraintBottom_toBottomOf="@id/open_message_layout"/>
+
+      </com.jxntv.widget.GVideoConstraintLayout>
+
+      <!--ToolBar-->
+      <com.jxntv.widget.GVideoConstraintLayout
+          android:id="@+id/close_toolbar"
+          style="@style/FragmentUgcStyle.ToolBarContainer"
+          android:layout_gravity="top"
+          android:layout_height="wrap_content"
+          app:layout_behavior="com.jxntv.base.behavior.VisibilityAlphaBehavior"
+          app:vabReferenceViewId="@id/app_bar_layout"
+          app:vabVisibleSubHeight="@dimen/fragment_ugc_tab_height"
+          >
+        <com.jxntv.widget.GVideoTextView
+            style="@style/FragmentUgcStyle.ToolBarTitle"
+            android:text="@{author.name}"
+            android:layout_width="0dp"
+            android:minHeight="@dimen/DIMEN_44DP"
+            app:layout_constraintWidth_percent="0.39"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <!--更多按钮-->
+          <com.jxntv.base.view.HomeMessageLayout
+              android:id="@+id/close_message_layout"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/close_share"
+            android:src="@drawable/ic_common_share_top_black"
+            android:layout_marginEnd="@dimen/DIMEN_1DP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{v->viewModel.onShareClicked(v)}"
+            app:layout_constraintEnd_toStartOf="@id/close_message_layout"
+            app:layout_constraintTop_toTopOf="@id/close_message_layout"
+            app:layout_constraintBottom_toBottomOf="@id/close_message_layout"/>
+
+
+      </com.jxntv.widget.GVideoConstraintLayout>
+    </com.jxntv.widget.GVideoCoordinatorLayout>
+  </com.jxntv.base.view.GVideoSmartRefreshLayout>
+  </FrameLayout>
+</layout>

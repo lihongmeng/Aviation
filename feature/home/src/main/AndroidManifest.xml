@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jxntv.home" >
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <application>
+
+        <activity android:name="com.jxntv.home.HomeActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize"
+            android:resizeableActivity="false"
+            android:maxAspectRatio="2.2"
+            android:minAspectRatio="1.7">
+            <intent-filter>
+                <action android:name="com.jxntv.action.oppo_push"/>
+                <!--接收外部跳转-->
+                <action android:name="android.intent.action.VIEW" />
+                <!--表示该页面可以被隐式调用，必须加上该项-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--如果希望该应用可以通过浏览器的连接启动，则添加该项-->
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="${app_scheme}" />
+                <data android:scheme="${openinstall_appKey}" />
+            </intent-filter>
+
+            <!-- OPPO离线推送的intent action方式必须配置category且不能有data数据 -->
+            <intent-filter>
+                <action android:name="com.jxntv.action.oppo.push" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.jxntv.home.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.jxntv.home.update.DownloadService" />
+
+        <service android:name="com.jxntv.service.AudioLivePlayService" />
+
+        <meta-data
+            android:name="com.openinstall.APP_KEY"
+            android:value="${openinstall_appKey}" />
+    </application>
+</manifest>
+
+
+

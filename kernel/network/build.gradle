@@ -1,0 +1,9 @@
+apply from: rootProject.file("library.gradle")
+
+dependencies {
+  api deps.retrofit
+  api deps.converterGson
+  api deps.adapterRxJava
+  api deps.rxAndroid
+  api deps.tog_lib_utils
+}

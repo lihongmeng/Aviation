@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.watchtv.ui.HomeWatchTvTvListViewModel" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f2f2f2">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_ffffff"
+            android:paddingStart="@dimen/DIMEN_5DP"
+            android:paddingEnd="@dimen/DIMEN_5DP"
+            android:scrollbars="none"
+            tools:listitem="@layout/item_watch_tv_tv" />
+
+        <LinearLayout
+            android:id="@+id/place_holder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_300DP"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <include
+                android:id="@+id/loading"
+                layout="@layout/placeholder_default_loading" />
+
+            <include
+                android:id="@+id/empty"
+                layout="@layout/placeholder_default_empty" />
+
+            <include
+                android:id="@+id/net_error"
+                layout="@layout/placeholder_default_error_no_binding" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>

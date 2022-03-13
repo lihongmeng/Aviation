@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.jxntv.widget.GvideoRConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:background_normal="@color/white"
+        app:corner_radius_top_left="@dimen/DIMEN_12DP"
+        app:corner_radius_top_right="@dimen/DIMEN_12DP">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_120DP"
+            android:layout_marginTop="@dimen/DIMEN_23DP"
+            android:text="标准"
+            android:textColor="@color/c_737373"
+            android:textSize="@dimen/sp_16"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/a_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_16DP"
+            android:text="A"
+            android:textColor="@color/c_737373"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintBottom_toBottomOf="@id/a_right"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/a_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:layout_marginEnd="@dimen/DIMEN_16DP"
+            android:text="A"
+            android:textColor="@color/c_737373"
+            android:textSize="@dimen/sp_22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text" />
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="@dimen/DIMEN_30DP"
+            android:layout_marginStart="@dimen/DIMEN_5DP"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            android:layout_marginEnd="@dimen/DIMEN_5DP"
+            android:progress="35"
+            android:progressDrawable="@drawable/seekbar_layer"
+            android:thumb="@drawable/ic_progress"
+            app:layout_constraintEnd_toStartOf="@id/a_right"
+            app:layout_constraintStart_toEndOf="@id/a_left"
+            app:layout_constraintTop_toTopOf="@id/a_right" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_D5P"
+            android:layout_marginTop="@dimen/DIMEN_30DP"
+            android:background="@color/c_line01"
+            app:layout_constraintTop_toBottomOf="@id/a_right" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_50DP"
+            android:gravity="center"
+            android:text="@string/dialog_cancel"
+            android:textColor="@color/c_737373"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintTop_toBottomOf="@id/line" />
+
+    </com.jxntv.widget.GvideoRConstraintLayout>
+
+</layout>

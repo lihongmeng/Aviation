@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.jxntv.widget.GVideoRLinearLayout
+        android:layout_width="@dimen/DIMEN_269DP"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:background_normal="@color/color_ffffff"
+        app:corner_radius="@dimen/DIMEN_19DP">
+
+        <com.jxntv.widget.GVideoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_29DP"
+            android:text="温馨提示"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_19DP"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:layout_marginEnd="@dimen/DIMEN_19DP"
+            android:gravity="center"
+            android:text="@string/unfollow_chat_tip"
+            android:textColor="@color/color_7f7f7f"
+            android:textSize="@dimen/sp_13" />
+
+        <com.jxntv.widget.GVideoRTextView
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_42DP"
+            android:layout_marginStart="@dimen/DIMEN_36DP"
+            android:layout_marginTop="@dimen/DIMEN_19DP"
+            android:layout_marginEnd="@dimen/DIMEN_36DP"
+            android:gravity="center"
+            android:text="关注并发私信"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/sp_15"
+            app:background_normal="@color/color_e5344e"
+            app:corner_radius="@dimen/DIMEN_21DP" />
+
+        <com.jxntv.widget.GVideoRTextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_4DP"
+            android:padding="@dimen/DIMEN_10DP"
+            android:text="暂时不了"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_13" />
+
+    </com.jxntv.widget.GVideoRLinearLayout>
+</layout>

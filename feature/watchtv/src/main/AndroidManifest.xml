@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.jxntv.watchtv"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        tools:targetApi="q">
+
+        <service android:name="com.liuwei.android.upnpcast.service.NLUpnpCastService" />
+        <service android:name="org.fourthline.cling.android.AndroidUpnpServiceImpl" />
+
+        <activity
+            android:name="com.jxntv.watchtv.ui.WatchTvActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize" />
+
+    </application>
+
+</manifest>

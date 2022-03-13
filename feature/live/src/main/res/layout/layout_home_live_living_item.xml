@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:background="@color/color_ffffff"
+    android:layout_height="wrap_content">
+
+    <com.jxntv.widget.GVideoImageView
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_202DP"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/title_mask"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/feed_title_back_cover"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cover" />
+
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_marginTop="@dimen/DIMEN_7DP"
+        android:layout_marginLeft="@dimen/DIMEN_14DP"
+        android:layout_marginRight="@dimen/DIMEN_14DP"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/sp_15"
+        android:ellipsize="end"
+        app:layout_constraintTop_toTopOf="@id/cover"
+        tools:text="123456789456131234567894561234578" />
+
+    <LinearLayout
+        android:id="@+id/live_type_background"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/DIMEN_15DP"
+        android:layout_marginTop="@dimen/DIMEN_7DP"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/DIMEN_4DP"
+        android:paddingEnd="@dimen/DIMEN_4DP"
+        android:background="@drawable/shape_gradient_f36486_e4344e_180_corners_2dp"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title">
+
+        <com.jxntv.widget.WaveIndicatorView
+            android:id="@+id/wave"
+            android:layout_width="@dimen/DIMEN_13DP"
+            android:layout_height="@dimen/DIMEN_10DP"
+            android:paddingTop="@dimen/DIMEN_2DP"
+            android:paddingBottom="@dimen/DIMEN_2DP"
+            android:visibility="visible"
+            app:indicator_color="@color/white"
+            app:indicator_count="3"
+            app:layout_constraintRight_toLeftOf="@id/live_type"
+            app:indicator_spacing="@dimen/DIMEN_2DP"
+            app:indicator_width="@dimen/DIMEN_2D5P" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/live_type"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_15DP"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/DIMEN_2DP"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/sp_11"
+            android:includeFontPadding="false"
+            tools:text="直播" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/herald_background"
+        android:layout_width="@dimen/DIMEN_92DP"
+        android:layout_height="@dimen/DIMEN_15DP"
+        android:layout_marginLeft="@dimen/DIMEN_4DP"
+        android:background="@drawable/shape_solid_000000_30_corners_2dp"
+        app:layout_constraintLeft_toRightOf="@id/live_type_background"
+        app:layout_constraintTop_toTopOf="@id/live_type_background"
+        app:layout_constraintBottom_toBottomOf="@id/live_type_background" />
+
+    <com.jxntv.widget.GVideoImageView
+        android:id="@+id/herald_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/DIMEN_15DP"
+        android:scaleType="center"
+        android:src="@drawable/icon_herald"
+        android:layout_marginStart="@dimen/DIMEN_4DP"
+        app:layout_constraintLeft_toLeftOf="@id/herald_background"
+        app:layout_constraintTop_toTopOf="@id/herald_background"
+        app:layout_constraintBottom_toBottomOf="@id/herald_background" />
+
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/herald_time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/DIMEN_15DP"
+        android:layout_marginStart="@dimen/DIMEN_5DP"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/sp_11"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toBottomOf="@id/herald_background"
+        app:layout_constraintLeft_toRightOf="@id/herald_icon"
+        app:layout_constraintTop_toTopOf="@id/herald_background"
+        tools:text="08/29 09:00" />
+
+    <View
+        android:id="@+id/herald_time_right"
+        android:layout_width="@dimen/DIMEN_3DP"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="@id/herald_background"
+        app:layout_constraintTop_toTopOf="@id/herald_background"
+        app:layout_constraintBottom_toBottomOf="@id/herald_background"
+        android:background="@drawable/shape_solid_eba647_corners_right_2dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_10DP"
+        app:layout_constraintTop_toBottomOf="@id/cover"
+        android:background="@color/color_ffffff" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

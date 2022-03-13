@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.search.SearchViewModel" />
+
+        <variable
+            name="binding"
+            type="com.jxntv.search.databinding.SearchHistoryDataBinding" />
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/search_history_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/search_history_title_margin_top"
+        android:visibility="invisible">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/search_history_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/search_history_title_height"
+            android:gravity="center_vertical"
+            android:text="@string/search_history"
+            android:layout_marginStart="@dimen/DIMEN_14DP"
+            android:textColor="@color/search_bar_cancel_text_color"
+            android:textSize="@dimen/t_font06"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/search_history_img"
+            android:layout_width="@dimen/search_history_delete_icon_size"
+            android:layout_height="@dimen/search_history_delete_icon_size"
+            android:visibility="gone"
+            android:onClick="@{(v)->viewModel.onHistoryRemoveItemClick(v)}"
+            android:src="@drawable/search_history_delete"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoRecyclerView
+            android:id="@+id/search_flex_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginStart="@dimen/DIMEN_17DP"
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            android:layout_marginTop="@dimen/search_history_list_margin_top"
+            app:layout_constraintTop_toBottomOf="@id/search_history_text" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_50DP"
+            android:layout_marginTop="@dimen/DIMEN_20DP"
+            android:onClick="@{(v)->viewModel.onHistoryRemoveItemClick(v)}"
+            android:text="@string/clear_all_history"
+            android:textColor="#79bcea"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_flex_box" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

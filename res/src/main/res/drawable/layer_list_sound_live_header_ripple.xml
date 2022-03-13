@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+
+        <shape>
+
+            <stroke
+                android:width="1px"
+                android:color="@color/color_ffffff_3" />
+
+            <corners android:radius="1000dp" />
+
+        </shape>
+
+    </item>
+
+    <item
+        android:left="@dimen/DIMEN_20DP"
+        android:top="@dimen/DIMEN_20DP"
+        android:right="@dimen/DIMEN_20DP"
+        android:bottom="@dimen/DIMEN_20DP">
+
+        <shape>
+
+            <stroke
+                android:width="1px"
+                android:color="@color/color_ffffff_5" />
+
+            <corners android:radius="1000dp" />
+
+        </shape>
+
+    </item>
+
+    <item
+        android:left="@dimen/DIMEN_54DP"
+        android:top="@dimen/DIMEN_54DP"
+        android:right="@dimen/DIMEN_54DP"
+        android:bottom="@dimen/DIMEN_54DP">
+
+        <shape>
+
+            <stroke
+                android:width="1px"
+                android:color="@color/color_ffffff_8" />
+
+            <corners android:radius="1000dp" />
+
+        </shape>
+
+    </item>
+
+    <item
+        android:left="@dimen/DIMEN_64DP"
+        android:top="@dimen/DIMEN_64DP"
+        android:right="@dimen/DIMEN_64DP"
+        android:bottom="@dimen/DIMEN_64DP">
+
+        <shape>
+
+            <stroke
+                android:width="1px"
+                android:color="@color/color_ffffff_15" />
+
+            <corners android:radius="1000dp" />
+
+        </shape>
+
+    </item>
+
+    <item
+        android:left="@dimen/DIMEN_74DP"
+        android:top="@dimen/DIMEN_74DP"
+        android:right="@dimen/DIMEN_74DP"
+        android:bottom="@dimen/DIMEN_74DP">
+
+        <shape>
+
+            <stroke
+                android:width="@dimen/DIMEN_3DP"
+                android:color="@color/color_ffffff_30" />
+
+            <corners android:radius="1000dp" />
+
+        </shape>
+
+    </item>
+
+</layer-list>

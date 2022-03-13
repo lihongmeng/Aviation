@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+  <data>
+    <variable
+        name="adapter"
+        type="com.jxntv.pptv.adapter.TagAdapter"
+        />
+
+    <variable
+        name="tag"
+        type="com.jxntv.pptv.model.Tag"
+        />
+
+    <variable
+        name="position"
+        type="androidx.databinding.ObservableInt"
+        />
+    <import type="android.text.TextUtils" />
+    <import type="android.view.View" />
+  </data>
+
+  <com.jxntv.widget.GVideoConstraintLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/adapter_tag_padding"
+      android:onClick="@{v->adapter.onItemRootViewClicked(v, position)}"
+      >
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/adapter_tag_name_height"
+        android:singleLine="true"
+        android:gravity="center"
+        android:text="@{tag.name}"
+        android:textSize="@dimen/t_font02"
+        android:textColor="@{tag.color}"
+        android:background="@{tag.bg}"
+        android:paddingStart="@dimen/adapter_tag_name_padding_start"
+        android:paddingEnd="@dimen/adapter_tag_name_padding_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+  </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

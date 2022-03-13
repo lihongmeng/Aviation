@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jxntv.widget.GVideoRelativeLayout android:layout_width="@dimen/DIMEN_90DP"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/gvtv_view_pager_tab_layout_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/DIMEN_10DP"
+        android:paddingEnd="@dimen/DIMEN_10DP"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        tools:textColor="@color/color_4c4c4c"
+        android:textStyle="bold"
+        tools:text="   热聊"/>
+
+    <View
+        android:id="@+id/v_view_pager_tab_layout_item"
+        android:layout_width="@dimen/DIMEN_25DP"
+        android:layout_height="@dimen/DIMEN_4DP"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_tab_position_view"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</com.jxntv.widget.GVideoRelativeLayout>

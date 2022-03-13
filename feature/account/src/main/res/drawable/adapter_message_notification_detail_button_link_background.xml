@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+  android:shape="rectangle">
+  <solid android:color="@color/adapter_message_notification_detail_button_link_background_color" />
+  <corners android:radius="10000dp" />
+  <stroke
+    android:width="@dimen/width_adapter_message_notification_detail_button_link_stroke"
+    android:color="@color/adapter_message_notification_detail_button_link_stroke_color" />
+</shape>

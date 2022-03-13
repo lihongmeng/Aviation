@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <com.jxntv.widget.GVideoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/DIMEN_10DP"
+        android:textSize="14sp"
+        android:paddingRight="@dimen/DIMEN_10DP"
+        tools:text="42456789" />
+
+</layout>

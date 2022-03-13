@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:background="@color/color_f2f2f2">
+
+        <include
+            android:id="@+id/topBanner"
+            layout="@layout/default_banner_layout"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed" />
+
+        <com.jxntv.feed.view.recommend.widget.HotCircleLayout
+            android:id="@+id/hot_circle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/topBanner"
+            app:layout_goneMarginTop="@dimen/DIMEN_10DP"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

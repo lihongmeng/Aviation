@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--size-->
+  <dimen name="size_all_account_clear_edit_text_icon_medium">20dp</dimen>
+  <!--height-->
+  <dimen name="width_all_account_edit_text_cursor">2dp</dimen>
+  <!--margin-->
+  <dimen name="margin_all_account_medium">16dp</dimen>
+  <dimen name="margin_all_account_large">27dp</dimen>
+  <dimen name="margin_bottom_all_account_dialog">18dp</dimen>
+</resources>

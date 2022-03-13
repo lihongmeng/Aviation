@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="anchor_video_style">
+    <item name="android:layout_width">@dimen/live_video_with</item>
+    <item name="android:layout_height">@dimen/live_video_height</item>
+  </style>
+
+  <style name="anchor_video_loading_style">
+    <item name="android:layout_width">@dimen/DIMEN_50DP</item>
+    <item name="android:layout_height">@dimen/DIMEN_50DP</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:padding">@dimen/DIMEN_12DP</item>
+    <item name="android:visibility">gone</item>
+    <item name="layout_constraintStart_toStartOf">parent</item>
+    <item name="layout_constraintEnd_toEndOf">parent</item>
+    <item name="layout_constraintTop_toTopOf">parent</item>
+    <item name="layout_constraintBottom_toBottomOf">parent</item>
+  </style>
+
+  <style name="anchor_video_loading_bg_style">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:background">@color/color_000000_50</item>
+    <item name="android:visibility">gone</item>
+  </style>
+
+</resources>

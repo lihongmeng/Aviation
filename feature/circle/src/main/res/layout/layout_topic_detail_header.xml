@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_126DP"
+        android:background="@color/color_FFFFFF"
+        app:elevation="0dp">
+
+        <com.jxntv.widget.GVideoLinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_140DP"
+            android:background="@drawable/icon_bg_topic_detail"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/DIMEN_15DP"
+            android:paddingLeft="@dimen/DIMEN_19DP"
+            android:paddingRight="@dimen/DIMEN_19DP"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/topic_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_48DP"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="17sp"
+                tools:text="# 话题详情内容话题详情内容话题详内话题详情情内容话题详情内容话题详情内容" />
+
+            <include
+                android:id="@+id/circle_layout"
+                layout="@layout/layout_circle_mark_height_26dp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_26DP"
+                android:layout_marginTop="@dimen/DIMEN_10DP"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </com.jxntv.widget.GVideoLinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</layout>

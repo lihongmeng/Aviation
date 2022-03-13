@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="feedModel"
+            type="com.jxntv.media.model.MediaModel" />
+
+        <import type="android.text.TextUtils" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/content_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_22DP"
+            android:gravity="bottom"
+            android:includeFontPadding="false"
+            android:text="@string/news"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_13"
+            android:layout_marginStart="@dimen/feed_layout_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="@{feedModel.isShowTag?View.VISIBLE:View.GONE}" />
+
+        <com.jxntv.widget.GVideoConstraintLayout
+            android:id="@+id/layout_content"
+            android:layout_marginBottom="@dimen/DIMEN_14DP"
+            app:layout_constraintTop_toBottomOf="@id/content_tag"
+            style="@style/feed_layout_margin">
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/title"
+                style="@style/feed_text_style_news"
+                android:layout_width="0dp"
+                android:layout_marginEnd="@dimen/DIMEN_6DP"
+                android:text="@{feedModel.title}"
+                android:layout_marginTop="@dimen/DIMEN_14DP"
+                android:minHeight="@dimen/DIMEN_56DP"
+                android:gravity="top"
+                app:layout_constraintEnd_toStartOf="@id/image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="13贯彻习近平法治思想13贯彻习近平法治思想" />
+
+            <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/DIMEN_5DP"
+                android:layout_marginTop="@dimen/DIMEN_6DP"
+                android:layout_marginBottom="@dimen/DIMEN_2DP"
+                app:layout_constraintEnd_toStartOf="@id/image"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <include
+                    android:id="@+id/bottom"
+                    layout="@layout/news_tpl_news_bottom" />
+
+            </LinearLayout>
+
+            <com.jxntv.widget.GVideoRImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/DIMEN_96DP"
+                android:layout_height="@dimen/DIMEN_70DP"
+                android:layout_marginBottom="@dimen/DIMEN_8DP"
+                android:layout_marginTop="@dimen/DIMEN_4DP"
+                android:scaleType="centerCrop"
+                app:corner_radius="@dimen/DIMEN_4DP"
+                app:placeholder="@{@drawable/media_default_cover_bg}"
+                app:imageData="@{feedModel.imageUrls.size()>0?feedModel.imageUrls.get(0):null}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:src="@drawable/ic_launcher" />
+
+            <com.jxntv.widget.GVideoRImageView
+                android:id="@+id/video_tag"
+                android:layout_width="@dimen/DIMEN_35DP"
+                android:layout_height="@dimen/DIMEN_35DP"
+                android:scaleType="centerCrop"
+                android:src="@drawable/media_video_img_big"
+                android:visibility="gone"
+                app:corner_radius="@dimen/DIMEN_4DP"
+                app:layout_constraintBottom_toBottomOf="@id/image"
+                app:layout_constraintEnd_toEndOf="@id/image"
+                app:layout_constraintStart_toStartOf="@id/image"
+                app:layout_constraintTop_toTopOf="@id/image" />
+
+        </com.jxntv.widget.GVideoConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_D5P"
+            android:background="@color/c_line02"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            app:layout_constraintTop_toBottomOf="@id/layout_content" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+</layout>

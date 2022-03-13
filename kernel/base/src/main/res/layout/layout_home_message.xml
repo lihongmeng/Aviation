@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="dataObservable"
+            type="com.jxntv.base.observable.TopMessageObservable" />
+
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/DIMEN_10DP"
+        android:paddingEnd="@dimen/DIMEN_10DP">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/message"
+            android:layout_width="@dimen/DIMEN_27DP"
+            android:layout_height="@dimen/DIMEN_27DP"
+            android:src="@drawable/feed_icon_message_white" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/setting"
+            android:layout_width="@dimen/DIMEN_27DP"
+            android:layout_height="@dimen/DIMEN_27DP"
+            android:layout_marginStart="@dimen/DIMEN_37DP"
+            android:src="@drawable/feed_icon_setting_white"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.jxntv.widget.GvideoRConstraintLayout
+            android:id="@+id/layout_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/DIMEN_13DP"
+            android:layout_marginStart="@dimen/DIMEN_17DP"
+            android:visibility="gone"
+            app:background_normal="@color/color_e4344e"
+            app:corner_radius="@dimen/DIMEN_15DP"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.jxntv.widget.GVideoRTextView
+                android:id="@+id/unread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/DIMEN_3DP"
+                android:paddingEnd="@dimen/DIMEN_3DP"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/DIMEN_10DP"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:includeFontPadding="false"
+                android:textStyle="bold"
+                android:gravity="center"
+                tools:text="1" />
+
+        </com.jxntv.widget.GvideoRConstraintLayout>
+
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+</layout>

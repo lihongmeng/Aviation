@@ -1,0 +1,4 @@
+apply from: rootProject.file("library.gradle")
+dependencies {
+  api deps.eventbus
+}

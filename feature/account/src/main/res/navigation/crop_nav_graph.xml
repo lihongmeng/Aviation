@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/crop_nav_graph"
+    app:startDestination="@id/cropFragment">
+
+  <!--裁剪界面-->
+  <fragment
+      android:id="@+id/cropFragment"
+      android:name="com.jxntv.account.ui.crop.CropFragment"
+      android:label="CropFragment">
+    <argument
+      android:name="imageUri"
+      app:argType="android.net.Uri" />
+  </fragment>
+</navigation>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">share</string>
+
+    <string name="share_dialog_title">分享至</string>
+    <string name="share_dialog_cancel">取消</string>
+
+    <string name="share_weixin_friends_circle">微信朋友圈</string>
+    <string name="share_weixin_friend">微信好友</string>
+    <string name="share_weibo">微博</string>
+    <string name="share_qq_friend">QQ好友</string>
+    <string name="share_qq_space">QQ空间</string>
+    <string name="share_copy_link">复制链接</string>
+
+    <string name="share_copy_link_success">链接复制成功</string>
+
+    <string name="share_other_collect">喜欢</string>
+    <string name="share_other_attention">关注作者</string>
+    <string name="share_other_favorited">喜欢</string>
+    <string name="share_other_followed">已关注作者</string>
+    <string name="share_other_delete">删除</string>
+    <string name="share">分享</string>
+    <string name="share_bill">分享海报</string>
+    <string name="share_other_report">举报</string>
+    <string name="share_other_font_setting">字体大小</string>
+    <string name="share_other_delete_success">删除成功</string>
+    <string name="share_other_delete_failed">删除失败</string>
+    <string name="share_other_favorite_success">已点赞</string>
+    <string name="share_other_follow_success">已关注</string>
+    <string name="share_other_favorite_cancel">取消点赞</string>
+    <string name="share_other_follow_cancel">取消关注</string>
+    <string name="share_other_favorite_failed">点赞失败</string>
+    <string name="share_other_follow_failed">关注失败</string>
+    <string name="share_other_favorite_cancel_failed">取消点赞失败</string>
+    <string name="share_other_follow_cancel_failed">取消关注失败</string>
+
+    <string name="share_wx_unavailable">您的微信版本过低，请更新微信</string>
+    <string name="share_login_unavailable">请先登陆</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_cancel">分享取消</string>
+</resources>

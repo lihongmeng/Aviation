@@ -1,0 +1,11 @@
+<resources>
+  <string name="liteav_control_speed">倍速</string>
+  <string name="liteav_control_resolution">超清</string>
+  <string name="liteav_control_chapter">章节</string>
+
+  <string name="liteav_retry">刷新重试</string>
+  <string name="liteav_loading">正在缓冲...</string>
+  <string name="liteav_err_video">视频解码失败</string>
+  <string name="liteav_err_audio">音频解码失败</string>
+  <string name="liteav_err_network">网络加载失败</string>
+</resources>

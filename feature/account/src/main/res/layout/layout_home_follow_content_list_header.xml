@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.jxntv.widget.GVideoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+        <com.jxntv.widget.GVideoLinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_45DP"
+            android:gravity="center_vertical">
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/top_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_20DP"
+                android:layout_weight="1"
+                android:text="我关注的人"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15"
+                android:textStyle="bold" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/all"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/icon_arrow_right_text"
+                android:drawablePadding="@dimen/DIMEN_5DP"
+                android:gravity="center"
+                android:paddingLeft="@dimen/DIMEN_18DP"
+                android:paddingRight="@dimen/DIMEN_18DP"
+                android:text="@string/all"
+                android:textColor="@color/color_7f7f7f"
+                android:textSize="@dimen/sp_12" />
+
+        </com.jxntv.widget.GVideoLinearLayout>
+
+        <com.jxntv.widget.GVideoRecyclerView
+            android:id="@+id/follow_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_layout"
+            android:layout_marginLeft="@dimen/DIMEN_20DP"
+            android:layout_marginRight="@dimen/DIMEN_20DP"
+            android:layout_marginBottom="@dimen/DIMEN_16DP"
+            android:scrollbars="none"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <View
+            android:id="@+id/follow_list_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_10DP"
+            android:layout_below="@id/follow_list"
+            android:background="@color/color_f2f2f2" />
+
+    </com.jxntv.widget.GVideoRelativeLayout>
+
+</layout>

@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gvideo">
+
+  <uses-permission android:name="android.permission.INTERNET" />
+
+  <queries>
+    <package android:name="com.tencent.mm" />
+  </queries>
+
+  <application
+      tools:replace="android:allowBackup"
+      android:name=".GVideoApplication"
+      android:allowBackup="false"
+      android:icon="@drawable/ic_launcher"
+      android:label="@string/app_name"
+      android:theme="@style/AppTheme"
+      android:usesCleartextTraffic="true"
+      android:largeHeap="true"
+      tools:ignore="GoogleAppIndexingWarning,UnusedAttribute" />
+
+</manifest>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="feedModel"
+            type="com.jxntv.media.model.MediaModel" />
+
+        <import type="android.view.View" />
+
+        <import type="android.text.TextUtils" />
+
+    </data>
+
+    <com.jxntv.widget.GvideoRConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/DIMEN_8DP"
+        android:paddingStart="@dimen/DIMEN_10DP"
+        android:paddingBottom="@dimen/DIMEN_10DP"
+        android:paddingEnd="@dimen/DIMEN_10DP"
+        android:visibility="@{!feedModel.qaAnswerType||feedModel.questionVO==null?View.GONE:View.VISIBLE,default=gone}"
+        app:background_normal="@color/color_f7f7f7"
+        app:corner_radius="@dimen/DIMEN_4DP"
+        tools:visibility="visible">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/qa_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_question_yellow_white"
+            android:drawablePadding="@dimen/DIMEN_4DP"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:layout_marginTop="@dimen/DIMEN_2DP"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="@{feedModel.questionVO.title}"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_13"
+            android:visibility="@{TextUtils.isEmpty(feedModel.questionVO.title)?View.GONE:View.VISIBLE,default=gone}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="12321321312321"
+            tools:visibility="visible" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/qa_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_5DP"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_11"
+            android:visibility="@{TextUtils.isEmpty(feedModel.questionVO.content)?View.GONE:View.VISIBLE,default=gone}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/qa_title"
+            app:layout_goneMarginTop="@dimen/DIMEN_0DP"
+            tools:text="这是一个情感问答的问题这是一个情感问答的问题这是一个情感问答的问题这是一个情感问答的问题这是一个情感问答的问题" />
+
+    </com.jxntv.widget.GvideoRConstraintLayout>
+</layout>

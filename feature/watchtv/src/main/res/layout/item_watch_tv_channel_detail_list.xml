@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP">
+
+        <View
+            android:id="@+id/divider_current_top"
+            android:layout_width="1px"
+            android:layout_height="@dimen/DIMEN_17DP"
+            android:layout_marginBottom="@dimen/DIMEN_1DP"
+            android:background="@color/color_cccccc"
+            android:visibility="invisible"
+            tools:visibility="invisible"
+            app:layout_constraintLeft_toLeftOf="@id/current"
+            app:layout_constraintRight_toRightOf="@id/current"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/divider_current_bottom"
+            android:layout_width="1px"
+            android:layout_height="@dimen/DIMEN_17DP"
+            android:background="@drawable/icon_watch_tv_channel_detail_list_dotted_line"
+            android:visibility="invisible"
+            tools:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/current"
+            app:layout_constraintRight_toRightOf="@id/current" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/current"
+            android:layout_width="@dimen/DIMEN_14DP"
+            android:layout_height="@dimen/DIMEN_14DP"
+            android:layout_marginStart="@dimen/DIMEN_19DP"
+            android:background="@drawable/icon_watch_tv_channel_detail_process"
+            android:visibility="invisible"
+            tools:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/divider_other_top"
+            android:layout_width="1px"
+            android:layout_height="@dimen/DIMEN_20DP"
+            android:background="@color/color_cccccc"
+            android:visibility="invisible"
+            tools:visibility="invisible"
+            app:layout_constraintLeft_toLeftOf="@id/other"
+            app:layout_constraintRight_toRightOf="@id/other"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/divider_other_bottom"
+            android:layout_width="1px"
+            android:layout_height="@dimen/DIMEN_20DP"
+            android:background="@color/color_cccccc"
+            android:visibility="invisible"
+            tools:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/other"
+            app:layout_constraintRight_toRightOf="@id/other" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/other"
+            android:layout_width="@dimen/DIMEN_6DP"
+            android:layout_height="@dimen/DIMEN_6DP"
+            android:background="@drawable/shape_solid_f2f2f2_corners_10dp"
+            android:visibility="invisible"
+            tools:visibility="invisible"
+            app:layout_constraintTop_toTopOf="@id/current"
+            app:layout_constraintBottom_toBottomOf="@id/current"
+            app:layout_constraintRight_toRightOf="@id/current"
+            app:layout_constraintLeft_toLeftOf="@id/current" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_37DP"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="12:00" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingEnd="@dimen/DIMEN_21DP"
+            android:layout_marginEnd="@dimen/DIMEN_21DP"
+            android:layout_marginStart="@dimen/DIMEN_93DP"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            tools:text="1" />
+
+        <com.jxntv.widget.WaveIndicatorView
+            android:id="@+id/wave"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginStart="@dimen/DIMEN_4DP"
+            android:layout_width="@dimen/DIMEN_17DP"
+            android:layout_height="@dimen/DIMEN_14DP"
+            app:indicator_color="@color/color_e4344e"
+            app:indicator_count="3"
+            app:indicator_spacing="@dimen/DIMEN_2DP"
+            app:indicator_width="@dimen/DIMEN_2D5P"
+            app:layout_constraintRight_toRightOf="@id/name"
+            app:layout_constraintTop_toTopOf="@id/name"
+            app:layout_constraintBottom_toBottomOf="@id/name" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_ececec"
+            android:layout_marginStart="@dimen/DIMEN_40DP"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

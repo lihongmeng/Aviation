@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/account_security_nav_graph"
+    app:startDestination="@id/accountSecurityFragment">
+  <!--账户与安全界面-->
+  <fragment
+      android:id="@+id/accountSecurityFragment"
+      android:name="com.jxntv.account.ui.account.AccountSecurityFragment"
+      android:label="AccountSecurityFragment">
+    <!--跳转身份认证界面-->
+    <action
+        android:id="@+id/action_account_security_to_authentication"
+        app:destination="@id/authenticationFragment" />
+    <!--跳转注销账户界面-->
+    <action
+        android:id="@+id/action_account_security_to_cancel_account"
+        app:destination="@id/cancelAccountFragment" />
+  </fragment>
+
+  <!--身份认证界面-->
+  <fragment
+      android:id="@+id/authenticationFragment"
+      android:name="com.jxntv.account.ui.authentication.AuthenticationFragment"
+      android:label="AuthenticationFragment" />
+
+  <!--注销账户界面-->
+  <fragment
+      android:id="@+id/cancelAccountFragment"
+      android:name="com.jxntv.account.ui.cancel.CancelAccountFragment"
+      android:label="CancelAccountFragment" />
+</navigation>

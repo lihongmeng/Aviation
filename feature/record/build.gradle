@@ -1,0 +1,16 @@
+apply from: rootProject.file("library.gradle")
+apply plugin: 'androidx.navigation.safeargs'
+
+dependencies {
+    implementation deps.tog_kernel_base
+    implementation deps.tog_kernel_stat
+    implementation deps.tog_kernel_liteav
+    implementation deps.tog_kernel_stat
+    implementation deps.tog_kernel_media
+    implementation deps.tog_lib_res
+    implementation deps.tog_lib_crop
+    implementation deps.upload
+    //阿里语音互动
+    implementation files('libs/nuisdk-release.aar')
+}
+

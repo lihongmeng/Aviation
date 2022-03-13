@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <com.jxntv.widget.GVideoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/live_layout_margin_end"
+        android:paddingBottom="@dimen/live_layout_margin_bottom">
+
+        <include
+            android:id="@+id/layout4"
+            style="@style/anchor_video_style"
+            layout="@layout/view_anchor_player_item" />
+
+        <include
+            android:id="@+id/layout3"
+            style="@style/anchor_video_style"
+            layout="@layout/view_anchor_player_item" />
+
+        <include
+            android:id="@+id/layout2"
+            style="@style/anchor_video_style"
+            layout="@layout/view_anchor_player_item" />
+
+        <include
+            android:id="@+id/layout1"
+            style="@style/anchor_video_style"
+            layout="@layout/view_anchor_player_item" />
+
+    </com.jxntv.widget.GVideoLinearLayout>
+</layout>

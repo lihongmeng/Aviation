@@ -1,0 +1,17 @@
+apply from: rootProject.file("library.gradle")
+
+dependencies {
+    implementation deps.okhttpLogging
+    implementation deps.tog_kernel_base
+    implementation deps.tog_kernel_liteav
+    implementation deps.tog_lib_crop
+    implementation deps.tog_kernel_stat
+    implementation deps.tog_kernel_media
+
+    // Tencent IM
+    implementation deps.imSdk
+
+    implementation deps.tencentLiteAV
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+}

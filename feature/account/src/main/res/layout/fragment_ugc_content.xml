@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.jxntv.base.view.GVideoSmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableRefresh="false">
+
+        <com.jxntv.widget.GVideoFrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <com.jxntv.widget.GVideoRecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <LinearLayout
+                android:id="@+id/place_holder"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/loading"
+                    layout="@layout/placeholder_default_loading"/>
+
+                <include
+                    android:id="@+id/empty"
+                    layout="@layout/placeholder_default_empty"/>
+
+                <include
+                    android:id="@+id/error"
+                    layout="@layout/placeholder_default_error"/>
+
+            </LinearLayout>
+
+        </com.jxntv.widget.GVideoFrameLayout>
+
+    </com.jxntv.base.view.GVideoSmartRefreshLayout>
+
+</layout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="authorBind"
+            type="com.jxntv.search.databinding.SearchResultDataBinding" />
+
+        <variable
+            name="model"
+            type="com.jxntv.search.model.SearchDetailModel" />
+
+        <import type="android.view.View" />
+
+        <import type="android.text.TextUtils" />
+    </data>
+
+    <com.jxntv.widget.GVideoLinearLayout
+        android:id="@+id/root_layout"
+        style="@style/feed_layout_margin"
+        android:orientation="vertical">
+
+        <com.jxntv.widget.GVideoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_28DP"
+            android:gravity="bottom"
+            android:includeFontPadding="false"
+            android:text="@string/user"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_13"
+            android:visibility="@{model.showTag?View.VISIBLE:View.GONE}" />
+
+        <com.jxntv.widget.GVideoConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_61DP"
+            android:onClick="@{view->authorBind.onAvatarClick(view, model)}">
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/image_view_avatar"
+                android:layout_width="@dimen/DIMEN_36DP"
+                android:layout_height="@dimen/DIMEN_36DP"
+                android:onClick="@{view->authorBind.onAvatarClick(view, model)}"
+                app:circleCrop="@{true}"
+                app:imageData="@{model.authorAvatar}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:placeholder='@{@drawable/ic_default_avatar}'
+                tools:src="@drawable/ic_default_avatar" />
+
+            <com.jxntv.widget.GVideoImageView
+                android:layout_width="@dimen/DIMEN_12DP"
+                android:layout_height="@dimen/DIMEN_12DP"
+                android:layout_marginStart="@dimen/DIMEN_25DP"
+                android:layout_marginTop="@dimen/DIMEN_25DP"
+                android:src="@drawable/icon_header_authentication"
+                android:visibility="@{model.isAuthentication?View.VISIBLE:View.GONE}"
+                app:layout_constraintStart_toStartOf="@id/image_view_avatar"
+                app:layout_constraintTop_toTopOf="@id/image_view_avatar" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/text_view_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/search_name_margin"
+                android:layout_marginRight="@dimen/search_name_margin"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@{model.title}"
+                android:textColor="@color/t_color08"
+                android:textSize="@dimen/t_font07"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/text_view_description"
+                app:layout_constraintLeft_toRightOf="@id/image_view_avatar"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="喜欢看金牌调解的胡某某" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/text_view_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_2DP"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@{model.authorIntro}"
+                android:textColor="@color/color_7f7f7f"
+                android:textSize="@dimen/t_font04"
+                android:visibility="@{TextUtils.isEmpty(model.authorIntro)?View.GONE:View.VISIBLE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/text_view_name"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_name"
+                tools:text="欢迎分享你的情感故事" />
+
+        </com.jxntv.widget.GVideoConstraintLayout>
+
+        <View
+            android:background="@color/c_line02"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_D5P"/>
+
+    </com.jxntv.widget.GVideoLinearLayout>
+</layout>

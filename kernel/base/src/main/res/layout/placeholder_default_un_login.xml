@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <data>
+    <variable
+        name="layout"
+        type="com.jxntv.base.placeholder.DefaultPlaceholderLayout"
+        />
+  </data>
+  <com.jxntv.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="vertical"
+      >
+    <com.jxntv.widget.GVideoImageView
+        android:id="@+id/un_login_img"
+        style="@style/PlaceholderUnLoginStyle.Image"
+        android:src="@drawable/ic_placeholder_empty"
+        />
+    <com.jxntv.widget.GVideoTextView
+        style="@style/PlaceholderStyle.Text"
+        android:text="@string/all_un_login_forbidden_to_getting_info"
+        />
+    <com.jxntv.widget.GVideoTextView
+        style="@style/PlaceholderStyle.Button"
+        android:onClick="@{(v)->layout.login(v)}"
+        android:text="@string/all_login"
+        />
+  </com.jxntv.widget.GVideoLinearLayout>
+</layout>

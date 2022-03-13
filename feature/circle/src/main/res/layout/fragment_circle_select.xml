@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.circle.viewmodel.CircleSelectViewModel" />
+
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f2f2f2">
+
+        <com.jxntv.base.view.GVideoSmartRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_0DP"
+            android:background="@color/color_f2f2f2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:ksrlv_enableLoadMore="true"
+            app:ksrlv_enableRefresh="false"
+            app:srlEnableRefresh="false"
+            app:srlEnableLoadMore="true"
+            android:layout_marginTop="1px"
+            app:ksrlv_onLoadMore="@{(v)->viewModel.onLoadMore(v)}"
+            app:srlEnableFooterFollowWhenNoMoreData="true">
+
+            <LinearLayout
+                android:id="@+id/recycler_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.jxntv.widget.GVideoTextView
+                    android:id="@+id/tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_43DP"
+                    android:text="@string/recommend_community"
+                    android:background="@color/color_f2f2f2"
+                    android:textSize="@dimen/sp_13"
+                    android:textColor="@color/color_999999"
+                    android:paddingTop="@dimen/DIMEN_14DP"
+                    android:paddingStart="@dimen/DIMEN_14DP"
+                    android:visibility="gone"/>
+
+                <com.jxntv.widget.GVideoRecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </com.jxntv.base.view.GVideoSmartRefreshLayout>
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+</layout>

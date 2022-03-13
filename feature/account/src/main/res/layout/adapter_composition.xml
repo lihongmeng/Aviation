@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+  <data>
+    <variable
+      name="adapter"
+      type="com.jxntv.account.adapter.CompositionAdapter" />
+    <variable
+      name="media"
+      type="com.jxntv.account.model.MediaObservable" />
+    <variable
+      name="position"
+      type="androidx.databinding.ObservableInt" />
+    <import type="android.view.View" />
+  </data>
+
+  <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AdapterComposition.Container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="@{(v)->adapter.onItemClick(v,position)}">
+
+    <com.jxntv.widget.GVideoImageView
+      android:id="@+id/image_view_cover"
+      style="@style/AdapterComposition.Cover"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:imageData="@{media.cover}"
+      app:placeholder="@{@drawable/media_default_cover_bg}"
+      app:layout_constraintDimensionRatio="5:6"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:roundedCorners="@{@dimen/adapter_composition_media_cover_radius}" />
+
+    <com.jxntv.widget.GVideoImageView
+      android:id="@+id/image_view_privacy_tag"
+      style="@style/AdapterComposition.PrivacyTag"
+      android:src="@drawable/ic_privacy_tag"
+      android:visibility='@{media.isPrivacyTag ? View.VISIBLE : View.GONE}'
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toRightOf="parent" />
+
+  </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

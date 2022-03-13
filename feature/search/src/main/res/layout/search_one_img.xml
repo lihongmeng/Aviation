@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="detailBind"
+            type="com.jxntv.search.databinding.SearchResultDataBinding"
+            />
+        <variable
+            name="detailModel"
+            type="com.jxntv.search.model.SearchDetailModel"
+            />
+        <import type="android.view.View" />
+        <import type="android.text.TextUtils" />
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:id="@+id/root_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginBottom="@dimen/search_one_img_margin"
+        style="@style/feed_layout_margin"
+        android:onClick="@{view->detailBind.onAvatarClick(view, detailModel)}">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/content_tag"
+            android:text="@string/tab_author"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_28DP"
+            android:gravity="bottom"
+            android:visibility="@{detailModel.showTag?View.VISIBLE:View.GONE}"
+            android:textSize="@dimen/sp_13"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_333333" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/one_img_img"
+            android:layout_width="@dimen/r_l02"
+            android:layout_height="@dimen/r_h03"
+            app:roundedCorners="@{@dimen/r_r01}"
+            app:imageData="@{detailModel.coverUrl}"
+            app:placeholder="@{@drawable/media_default_cover_bg}"
+            app:layout_constraintTop_toBottomOf="@id/content_tag"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <com.jxntv.widget.GVideoImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_default_play"
+            android:visibility="@{TextUtils.isEmpty(detailModel.coverUrl) ? View.VISIBLE : View.GONE}"
+            app:layout_constraintLeft_toLeftOf="@id/one_img_img"
+            app:layout_constraintTop_toTopOf="@id/one_img_img"
+            app:layout_constraintBottom_toBottomOf="@id/one_img_img"
+            app:layout_constraintRight_toRightOf="@id/one_img_img"
+            />
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/one_img_title"
+            android:layout_width="@dimen/search_one_img_title_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/search_one_img_img_text_margin"
+            android:maxHeight="@dimen/search_one_img_title_height_max"
+            android:minHeight="@dimen/search_one_img_title_height_min"
+            android:text="@{detailModel.title}"
+            android:textColor="@color/t_color01"
+            android:textSize="@dimen/t_font03"
+            android:maxLines="3"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/one_img_img"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/one_img_source"
+            app:layout_constraintVertical_chainStyle="packed"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/one_img_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/search_one_img_img_text_margin"
+            android:layout_marginTop="@dimen/search_one_text_margin"
+            android:textColor="@color/t_color03"
+            android:textSize="@dimen/t_font04"
+            android:text="@{detailModel.authorName}"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintLeft_toRightOf="@+id/one_img_img"
+            app:layout_constraintTop_toBottomOf="@+id/one_img_title"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/img_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginLeft="@dimen/search_tag_margin"
+            android:layout_marginTop="@dimen/search_tag_margin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

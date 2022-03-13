@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.sobey.cloud.view.jiangxi",
+  "variantName": "TestRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 50304,
+      "versionName": "5.03.04",
+      "outputFile": "v5.03.04_TestRelease.apk"
+    }
+  ]
+}

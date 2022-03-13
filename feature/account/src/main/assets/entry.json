@@ -1,0 +1,22 @@
+{
+  "userPolicy": "https://special.jxntv.cn/jsp/about/user.shtml",
+  "lawPolicy": "https://special.jxntv.cn/jsp/about/privacy.shtml",
+  "privacyPolicy": "https://share.jxgdw.com/pages/privacy",
+  "cancelPolicy": "https://special.jxntv.cn/jsp/about/cancel.shtml",
+  "feedback": "http://special.jxntv.cn/jsp/feedback/",
+  "settle": "http://47.114.152.47/enter",
+  "report": "https://special.jxntv.cn/jsp/about/privacy.shtml",
+  "appStoreAppId": null,
+  "selectVideoMaxTime": 900,
+  "inviteEnable": false,
+  "versionUpdate": null,
+  "initConfig": {
+    "aliToken": "1eab76687b5341999e6fe68840e5bd99",
+    "nlpAppKey": "cZ99G352HSY8aqNl"
+  },
+  "shareSwitch": {
+    "share_weixin": false,
+    "share_qq": false,
+    "share_weibo": false
+  }
+}

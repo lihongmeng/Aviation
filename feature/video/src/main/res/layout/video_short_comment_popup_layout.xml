@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_000000_100"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/short_video_comment_empty"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_240DP"
+            android:background="@color/color_000000_100"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/video_comment_popup_bg">
+
+            <FrameLayout
+                android:id="@+id/short_video_comment_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/video_comment_popup_top_bar_height"
+                android:layout_marginBottom="@dimen/video_comment_popup_bottom_bar_height" />
+
+            <FrameLayout
+                android:id="@+id/short_video_comment_top_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/video_comment_popup_top_bar_height">
+
+                <com.jxntv.widget.GVideoImageView
+                    android:id="@+id/short_video_comment_downward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginTop="@dimen/video_dp_6"
+                    android:src="@drawable/video_arrow_down" />
+
+            </FrameLayout>
+
+            <include
+                android:id="@+id/short_video_comment_edit"
+                layout="@layout/comment_input_panel_no_binding"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/video_comment_input_panel_height"
+                android:layout_gravity="bottom" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>

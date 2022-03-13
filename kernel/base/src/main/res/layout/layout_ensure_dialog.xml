@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/CenterDialogStyle.Dialog">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/title"
+            style="@style/CenterDialogStyle.EnsureTitle"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/content"
+            style="@style/CenterDialogStyle.EnsureText"
+            android:paddingTop="@dimen/DIMEN_15DP"
+            android:paddingBottom="@dimen/DIMEN_15DP"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <com.jxntv.widget.GVideoButton
+            android:id="@+id/confirm"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="@dimen/center_button_height"
+            android:background="@drawable/center_dialog_button"
+            android:gravity="center"
+            android:text="@string/all_ensure"
+            android:textColor="@color/center_dialog_confirm_button_color"
+            android:textSize="@dimen/t_font01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/content" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+</layout>

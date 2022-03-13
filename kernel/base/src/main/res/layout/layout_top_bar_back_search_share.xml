@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jxntv.widget.GVideoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root_layout"
+    android:background="@color/color_FFFFFF">
+
+    <com.jxntv.widget.GVideoImageView
+        android:id="@+id/back_button"
+        android:layout_width="@dimen/DIMEN_40DP"
+        android:layout_height="@dimen/DIMEN_40DP"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back_black" />
+
+    <com.jxntv.widget.GVideoImageView
+        android:id="@+id/share"
+        android:layout_width="@dimen/DIMEN_40DP"
+        android:layout_height="@dimen/DIMEN_40DP"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/DIMEN_10DP"
+        android:scaleType="center"
+        android:src="@drawable/icon_share"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <com.jxntv.widget.GVideoImageView
+        android:id="@+id/search"
+        android:layout_width="@dimen/DIMEN_40DP"
+        android:layout_height="@dimen/DIMEN_40DP"
+        android:layout_marginRight="@dimen/DIMEN_5DP"
+        android:layout_toLeftOf="@id/share"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:src="@drawable/icon_search" />
+
+</com.jxntv.widget.GVideoRelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.jxntv.account.model.UgcAuthorModel" />
+        
+        <import type="com.jxntv.base.utils.StringUtils"/>
+
+    </data>
+
+    <com.jxntv.widget.GVideoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/DIMEN_14DP"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.jxntv.widget.GVideoRImageView
+            android:layout_width="@dimen/DIMEN_70DP"
+            android:layout_height="@dimen/DIMEN_70DP"
+            app:corner_radius="@dimen/DIMEN_4DP"
+            android:scaleType="centerCrop"
+            app:imageData="@{model.groupImageUrl}"
+            tools:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_7DP"
+            android:text="@{StringUtils.showMaxLengthString(model.groupName,5)}"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_12"
+            tools:text="金牌调解" />
+
+    </com.jxntv.widget.GVideoLinearLayout>
+</layout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="binding"
+            type="com.jxntv.share.widget.ShareDataBind" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@{binding.shareBackgroundColor}"
+        android:orientation="vertical">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/share_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/share_title_height"
+            android:gravity="center"
+            android:text="@string/share_dialog_title"
+            android:visibility="invisible"
+            android:textColor="@{binding.shareTitleColor}"
+            android:textSize="@dimen/share_title_text_size" />
+
+        <com.jxntv.widget.GVideoRecyclerView
+            android:id="@+id/share_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/share_dialog_margin_landscape"
+            android:layout_marginRight="@dimen/share_dialog_margin_landscape" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/share_interval"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/share_title_height"
+            android:layout_marginTop="@dimen/share_interval_margin_top"
+            android:layout_marginRight="@dimen/share_title_height"
+            android:background="@{binding.shareIntervalColor}" />
+
+        <com.jxntv.widget.GVideoRecyclerView
+            android:id="@+id/more_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/more_margin_top"
+            android:layout_marginLeft="@dimen/share_dialog_margin_landscape"
+            android:layout_marginRight="@dimen/share_dialog_margin_landscape"
+            android:layout_marginBottom="@dimen/more_margin_bottom" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/share_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/share_cancel_height"
+            android:background="@{binding.shareCancelBackColor}"
+            android:gravity="center"
+            android:text="@string/share_dialog_cancel"
+            android:textColor="@{binding.shareTitleColor}"
+            android:textSize="@dimen/share_cancel_text_size" />
+
+    </LinearLayout>
+</layout>

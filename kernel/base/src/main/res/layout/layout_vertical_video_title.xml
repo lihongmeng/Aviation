@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.jxntv.base.view.VideoTitleCalculateTextView
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/color_000000_100"
+            app:last_space_count="40"
+            app:sub_line="3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/title_three_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/sp_15"
+            tools:text="123123456712345678945612345678945612345678945612345678945612345678945689456456712345678945612345678945612345678945612345678945612345678945689456"
+            app:layout_constraintTop_toTopOf="@id/calculate" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/spread"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_19DP"
+            android:layout_marginEnd="@dimen/DIMEN_5DP"
+            android:drawableRight="@drawable/icon_arrow_down"
+            android:drawablePadding="@dimen/DIMEN_3DP"
+            android:gravity="center"
+            android:paddingStart="@dimen/DIMEN_7DP"
+            android:paddingEnd="@dimen/DIMEN_7DP"
+            android:text="@string/spread"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/title_three_line"
+            app:layout_constraintRight_toRightOf="@id/title_three_line"
+            tools:background="@drawable/shape_solid_ffffff_10_corners_200dp"
+            tools:textColor="@color/color_000000" />
+
+        <ScrollView
+            android:id="@+id/title_scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_100DP"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/title_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/sp_15" />
+
+        </ScrollView>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/pack_up"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_19DP"
+            android:background="@drawable/shape_solid_ffffff_10_corners_200dp"
+            android:text="@string/pack_up"
+            android:textColor="@color/color_ffffff"
+            android:paddingStart="@dimen/DIMEN_7DP"
+            android:paddingEnd="@dimen/DIMEN_7DP"
+            android:textSize="@dimen/sp_12"
+            tools:textColor="@color/color_000000"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/DIMEN_5DP"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/DIMEN_5DP"
+            android:drawablePadding="@dimen/DIMEN_3DP"
+            android:drawableRight="@drawable/icon_arrow_up"
+            app:layout_constraintRight_toRightOf="@id/title_three_line"
+            app:layout_constraintTop_toBottomOf="@id/title_scroll_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

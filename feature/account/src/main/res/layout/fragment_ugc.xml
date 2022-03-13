@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+  <data>
+    <variable
+        name="author"
+        type="com.jxntv.account.model.UserAuthorObservable"
+        />
+    <variable
+        name="viewModel"
+        type="com.jxntv.account.ui.ugc.UgcViewModel"
+        />
+    <import type="android.view.View" />
+
+    <import type="com.jxntv.base.utils.StringUtils"/>
+
+  </data>
+  <FrameLayout
+      android:id="@+id/fragment_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+  <com.jxntv.base.view.GVideoSmartRefreshLayout
+      android:id="@+id/refresh_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:srlEnableLoadMoreWhenContentNotFull="false"
+      app:srlEnableFooterFollowWhenNoMoreData="true"
+      app:ksrlv_enableLoadMore="false"
+      app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}"
+      >
+    <com.jxntv.widget.GVideoCoordinatorLayout
+        android:id="@+id/recycler_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+      <include android:id="@+id/app_bar_layout"
+          app:author="@{author}"
+          layout="@layout/view_content_ugc" />
+
+      <!--返回按钮-->
+      <com.jxntv.widget.GVideoViewPager
+          android:id="@+id/view_pager"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          app:layout_anchor="@+id/app_bar_layout"
+          app:layout_anchorGravity="bottom|center"
+          app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+
+      <com.jxntv.widget.GVideoConstraintLayout
+          android:layout_marginTop="@dimen/DIMEN_29DP"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/back"
+            style="@style/Toolbar.LeftBack"
+            android:onClick="@{(v)->viewModel.back(v)}"
+            android:src="@drawable/ic_back_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_behavior="com.jxntv.base.behavior.VisibilityAlphaBehavior"
+            app:vabReferenceViewId="@id/app_bar_layout"
+            app:vabVisibleWhenScrollUp="false"
+            />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/share"
+            android:layout_width="@dimen/DIMEN_28DP"
+            android:layout_height="@dimen/DIMEN_28DP"
+            android:onClick="@{(v)->viewModel.onShareClicked(v)}"
+            android:src="@drawable/ic_common_share_top_white"
+            android:layout_marginEnd="@dimen/DIMEN_8DP"
+            app:layout_constraintTop_toTopOf="@id/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/back"
+            app:layout_behavior="com.jxntv.base.behavior.VisibilityAlphaBehavior"
+            app:vabReferenceViewId="@id/app_bar_layout"
+            app:vabVisibleWhenScrollUp="false"
+            />
+
+      </com.jxntv.widget.GVideoConstraintLayout>
+
+      <!--ToolBar-->
+      <com.jxntv.widget.GVideoConstraintLayout
+          android:id="@+id/close_left"
+          style="@style/FragmentUgcStyle.ToolBarContainer"
+          android:layout_height="wrap_content"
+          android:layout_gravity="top"
+          app:layout_behavior="com.jxntv.base.behavior.VisibilityAlphaBehavior"
+          app:vabReferenceViewId="@id/app_bar_layout"
+          app:vabVisibleSubHeight="@dimen/fragment_ugc_tab_height"
+          >
+        <com.jxntv.widget.GVideoImageView
+            style="@style/Toolbar.LeftBack"
+            android:onClick="@{(v)->viewModel.back(v)}"
+            />
+        <com.jxntv.widget.GVideoTextView
+            style="@style/FragmentUgcStyle.ToolBarTitle"
+            android:text="@{author.name}"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+      </com.jxntv.widget.GVideoConstraintLayout>
+    </com.jxntv.widget.GVideoCoordinatorLayout>
+  </com.jxntv.base.view.GVideoSmartRefreshLayout>
+  </FrameLayout>
+</layout>

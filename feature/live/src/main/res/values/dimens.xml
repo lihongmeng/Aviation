@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 视频直播相关相关 -->
+    <dimen name="live_video_with">@dimen/DIMEN_80DP</dimen>
+    <dimen name="live_video_height">@dimen/DIMEN_120DP</dimen>
+    <dimen name="live_layout_margin_bottom">@dimen/DIMEN_60DP</dimen>
+    <dimen name="live_layout_margin_end">@dimen/DIMEN_10DP</dimen>
+
+</resources>

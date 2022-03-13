@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    app:elevation="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/DIMEN_10DP"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/living"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            tools:listitem="@layout/layout_home_live_living_item"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/title_live_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_24DP"
+            android:layout_marginBottom="@dimen/DIMEN_3DP"
+            android:text="@string/live_review"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"
+            android:drawablePadding="@dimen/DIMEN_7DP"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/living" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.appbar.AppBarLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff">
+
+        <include
+            android:id="@+id/home_tab"
+            layout="@layout/layout_top_search_message" />
+
+        <com.jxntv.widget.GVideoLinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_tab" />
+
+        <com.jxntv.widget.GVideoFrameLayout
+            android:id="@+id/empty_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/home_tab" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="imgModel"
+            type="com.jxntv.android.video.model.LiveCommentModel.CommentLstBean.ImagesBean" />
+    </data>
+
+    <com.jxntv.widget.GVideoRImageView
+        android:id="@+id/image"
+        android:src="@drawable/ic_launcher"
+        app:corner_radius="@dimen/DIMEN_4DP"
+        app:srcCompat="@drawable/ic_launcher"
+        imageUrl="@{imgModel.url}"
+        android:layout_marginStart="@dimen/DIMEN_6DP"
+        android:scaleType="centerCrop"
+        android:layout_width="@dimen/DIMEN_97DP"
+        android:layout_height="@dimen/DIMEN_61DP"/>
+
+</layout>

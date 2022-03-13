@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <data>
+        <variable
+            name="model"
+            type="com.jxntv.circle.model.FXAModel" />
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.circle.fragment.fxa.FXAViewModel" />
+
+        <variable
+            name="type"
+            type="com.jxntv.circle.model.FXAType" />
+
+        <import type="android.view.View"/>
+
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.jxntv.widget.GVideoConstraintLayout
+            android:id="@+id/ll_sign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="@{model.member.currentPart.partType==type.SIGN?View.VISIBLE:View.GONE}"
+            tools:visibility="gone">
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/bg_cover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/DIMEN_N60"
+                android:layout_marginTop="@dimen/DIMEN_64DP"
+                android:layout_marginEnd="@dimen/DIMEN_N60"
+                android:src="@drawable/ic_fxa_number_bg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_131DP"
+                android:text="爱的号码牌"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_15"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/bg_cover"
+                app:layout_constraintStart_toStartOf="@id/bg_cover"
+                app:layout_constraintTop_toTopOf="@id/bg_cover"
+                />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_20DP"
+                android:text="@{model.member.code}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_100DP"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/bg_cover"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/bg_cover"
+                tools:text="29"/>
+
+            <com.jxntv.widget.GVideoRTextView
+                android:layout_width="@dimen/DIMEN_28DP"
+                android:layout_height="@dimen/DIMEN_28DP"
+                android:layout_marginStart="@dimen/DIMEN_90DP"
+                android:layout_marginBottom="@dimen/DIMEN_20DP"
+                android:gravity="center"
+                android:text="号"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_15"
+                app:background_normal="#20000000"
+                app:corner_radius="@dimen/DIMEN_20DP"
+                app:layout_constraintBottom_toBottomOf="@id/number"
+                app:layout_constraintStart_toStartOf="@id/number" />
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/sex"
+                android:layout_width="@dimen/DIMEN_30DP"
+                android:layout_height="@dimen/DIMEN_30DP"
+                android:src="@{model.genderDrawable}"
+                app:layout_constraintEnd_toEndOf="@id/number"
+                app:layout_constraintStart_toStartOf="@id/number"
+                app:layout_constraintTop_toBottomOf="@id/number"
+                tools:src="@drawable/ic_fxa_male"/>
+
+        </com.jxntv.widget.GVideoConstraintLayout>
+
+        <com.jxntv.widget.GVideoConstraintLayout
+            android:id="@+id/ll_pair"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="@{model.member.currentPart.partType==type.PAIR?View.VISIBLE:View.GONE}">
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/input_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/DIMEN_N60"
+                android:layout_marginTop="@dimen/DIMEN_64DP"
+                android:layout_marginEnd="@dimen/DIMEN_N60"
+                android:src="@drawable/ic_fxa_number_input_bg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_65DP"
+                android:text="心动终选择"
+                android:textColor="@color/color_e4344e"
+                android:textSize="@dimen/sp_15"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/input_bg"
+                app:layout_constraintStart_toStartOf="@id/input_bg"
+                app:layout_constraintTop_toTopOf="@id/input_bg"
+                />
+
+            <com.jxntv.widget.GVideoEditText
+                android:id="@+id/input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/DIMEN_59DP"
+                android:layout_marginTop="@dimen/DIMEN_120DP"
+                android:background="@null"
+                android:enabled="@{viewModel.hasCanInput}"
+                android:hint="输入心动嘉宾的号码"
+                android:inputType="number"
+                android:text="@={viewModel.inputNumber}"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_ffffff_60"
+                android:textSize="@{viewModel.hasCanInput?@dimen/DIMEN_15DP:@dimen/DIMEN_77DP}"
+                android:minWidth="@dimen/DIMEN_80DP"
+                android:minHeight="@dimen/DIMEN_80DP"
+                android:gravity="bottom|start"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/input_bg"
+                tools:text="2"
+                tools:textSize="@dimen/DIMEN_77DP" />
+
+            <com.jxntv.widget.GVideoImageView
+                android:layout_width="@dimen/DIMEN_30DP"
+                android:layout_height="@dimen/DIMEN_30DP"
+                android:src="@{model.genderOppositeDrawable}"
+                android:layout_marginStart="@dimen/DIMEN_166DP"
+                android:layout_marginBottom="@dimen/DIMEN_150DP"
+                app:layout_constraintStart_toStartOf="@id/input_bg"
+                app:layout_constraintBottom_toBottomOf="@id/input_bg"
+                tools:src="@drawable/ic_launcher"/>
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/mine_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{model.member.code}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_58DP"
+                android:layout_marginEnd="@dimen/DIMEN_72DP"
+                android:layout_marginTop="@dimen/DIMEN_155DP"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/input_bg"
+                tools:text="11"/>
+
+            <com.jxntv.widget.GVideoImageView
+                android:layout_width="@dimen/DIMEN_30DP"
+                android:layout_height="@dimen/DIMEN_30DP"
+                android:src="@{model.genderDrawable}"
+                app:layout_constraintEnd_toEndOf="@id/mine_number"
+                app:layout_constraintStart_toStartOf="@id/mine_number"
+                app:layout_constraintTop_toBottomOf="@id/mine_number"
+                tools:src="@drawable/ic_fxa_male"/>
+
+        </com.jxntv.widget.GVideoConstraintLayout>
+
+        <com.jxntv.widget.GVideoRTextView
+            android:id="@+id/sign_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_35DP"
+            android:layout_marginEnd="@dimen/DIMEN_35DP"
+            android:layout_marginBottom="@dimen/DIMEN_65DP"
+            android:height="@dimen/DIMEN_42DP"
+            android:onClick="@{v-> viewModel.btnClicked(v)}"
+            android:gravity="center"
+            android:text="@{viewModel.btnString}"
+            android:textColor="@color/white"
+            android:enabled="false"
+            app:background_normal="@color/color_d8d8d8"
+            android:textSize="@dimen/sp_15"
+            app:corner_radius="@dimen/DIMEN_21DP"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <com.jxntv.widget.GVideoFrameLayout
+            android:id="@+id/empty_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+</layout>

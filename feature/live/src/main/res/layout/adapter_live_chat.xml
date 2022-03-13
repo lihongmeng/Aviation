@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <data>
+        <variable
+            name="commentModel"
+            type="com.jxntv.live.liveroom.live.entity.TCChatEntity" />
+    </data>
+
+    <com.ruffian.library.widget.RConstraintLayout
+        app:corner_radius="@dimen/DIMEN_8DP"
+        android:layout_width="wrap_content"
+        app:background_normal="@color/color_3a3a4d_25"
+        android:padding="@dimen/DIMEN_10DP"
+        android:layout_marginStart="@dimen/DIMEN_10DP"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:layout_marginEnd="@dimen/DIMEN_30DP"
+        android:layout_height="wrap_content">
+
+        <com.jxntv.widget.GVideoSpanTextView
+            android:id="@+id/content"
+            android:textColor="@color/white"
+            tools:text="本平台提倡绿色健康 直播 ，直播 内容和评论严谨出现违规、低俗色情、吸烟"
+            android:textSize="@dimen/sp_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </com.ruffian.library.widget.RConstraintLayout>
+
+</layout>

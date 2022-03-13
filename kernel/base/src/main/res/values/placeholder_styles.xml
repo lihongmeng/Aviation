@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--====================占位图====================-->
+  <style name="PlaceholderStyle">
+
+  </style>
+
+  <style name="PlaceholderStyle.Text" parent="TextStyle.t_color04.t_font03">
+    <item name="android:layout_marginTop">@dimen/margin_placeholder_text</item>
+    <item name="android:layout_marginBottom">@dimen/margin_placeholder_text</item>
+  </style>
+
+  <style name="PlaceholderStyle.Button" parent="TextStyle.t_color06.t_font03.bold">
+    <item name="android:paddingLeft">
+      @dimen/padding_horizontal_placeholder_button
+    </item>
+    <item name="android:paddingRight">
+      @dimen/padding_horizontal_placeholder_button
+    </item>
+    <item name="android:paddingTop">
+      @dimen/padding_vertical_placeholder_button
+    </item>
+    <item name="android:paddingBottom">
+      @dimen/padding_vertical_placeholder_button
+    </item>
+    <item name="android:background">@drawable/placeholder_button_background</item>
+  </style>
+
+  <!--====================网络错误占位图====================-->
+  <style name="PlaceholderNetworkNotAvailableStyle">
+
+  </style>
+
+  <style name="PlaceholderNetworkNotAvailableStyle.Image">
+    <item name="android:layout_width">@dimen/width_placeholder_network_not_available_image</item>
+    <item name="android:layout_height">@dimen/height_placeholder_network_not_available_image</item>
+  </style>
+
+  <!--====================空占位图====================-->
+  <style name="PlaceholderEmptyStyle">
+
+  </style>
+
+  <style name="PlaceholderEmptyStyle.Image">
+    <item name="android:layout_width">@dimen/width_placeholder_empty_image</item>
+    <item name="android:layout_height">@dimen/height_placeholder_empty_image</item>
+  </style>
+
+  <!--====================加载占位图====================-->
+  <style name="PlaceholderLoadingStyle">
+
+  </style>
+
+  <style name="PlaceholderLoadingStyle.Loading">
+    <item name="android:layout_width">@dimen/size_placeholder_loading_loading</item>
+    <item name="android:layout_height">@dimen/size_placeholder_loading_loading</item>
+    <item name="android:layout_marginRight">@dimen/margin_placeholder_loading_loading</item>
+  </style>
+
+  <style name="PlaceholderLoadingStyle.Image">
+    <item name="android:layout_width">@dimen/width_placeholder_loading_image</item>
+    <item name="android:layout_height">@dimen/height_placeholder_loading_image</item>
+  </style>
+
+  <!--====================网络错误占位图====================-->
+  <style name="PlaceholderUnLoginStyle">
+
+  </style>
+
+  <style name="PlaceholderUnLoginStyle.Image">
+    <item name="android:layout_width">@dimen/width_placeholder_un_login_image</item>
+    <item name="android:layout_height">@dimen/height_placeholder_un_login_image</item>
+  </style>
+</resources>

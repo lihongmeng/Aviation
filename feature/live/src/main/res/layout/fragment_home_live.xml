@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.live.ui.homelive.HomeLiveViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:background="@color/color_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jxntv.base.view.ViewPagerTab
+            android:id="@+id/view_pager_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_45DP"
+            android:background="@color/color_FFFFFF"
+            app:content_gravity="center"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_pager_tab" />
+
+        <com.jxntv.widget.GVideoFrameLayout
+            android:id="@+id/empty_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

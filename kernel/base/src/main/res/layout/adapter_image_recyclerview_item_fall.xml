@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jxntv.widget.GVideoRImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/DIMEN_320DP"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:corner_radius="@dimen/DIMEN_4DP"
+            tools:src="@drawable/ic_launcher" />
+
+        <com.jxntv.widget.GVideoRTextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/DIMEN_6DP"
+            android:drawableLeft="@drawable/icon_search_text_small"
+            android:drawablePadding="@dimen/DIMEN_3DP"
+            android:includeFontPadding="false"
+            android:paddingStart="@dimen/DIMEN_8DP"
+            android:paddingTop="@dimen/DIMEN_5DP"
+            android:paddingEnd="@dimen/DIMEN_8DP"
+            android:paddingBottom="@dimen/DIMEN_5DP"
+            android:text="长图"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="@dimen/sp_11"
+            android:visibility="gone"
+            app:background_normal="@color/color_000000_50"
+            app:corner_radius="@dimen/DIMEN_20DP"
+            app:layout_constraintBottom_toBottomOf="@id/image"
+            app:layout_constraintEnd_toEndOf="@id/image"
+            tools:visibility="visible" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+</layout>

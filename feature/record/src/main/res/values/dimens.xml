@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fragment_record_cancel">44dp</dimen>
+    <dimen name="fragment_record_cancel_margin_top">20dp</dimen>
+
+    <dimen name="fragment_record_item_width">36dp</dimen>
+    <dimen name="fragment_record_item_margin_landscape">60dp</dimen>
+    <dimen name="fragment_record_item_text_margin_top">4dp</dimen>
+    <dimen name="fragment_record_item_text_size">12sp</dimen>
+
+    <dimen name="fragment_record_main_button_size">62dp</dimen>
+    <dimen name="fragment_record_main_button_margin_bottom">79dp</dimen>
+    <dimen name="fragment_record_main_button_background_size">78dp</dimen>
+
+    <dimen name="fragment_record_progress_radius">38dp</dimen>
+
+    <dimen name="fragment_record_progress_paint_size">2dp</dimen>
+    <dimen name="fragment_record_main_progress_img_size">85dp</dimen>
+    <dimen name="fragment_record_sign_width">10dp</dimen>
+    <dimen name="fragment_record_sign_paint_size">6dp</dimen>
+    <dimen name="fragment_record_sign_img_size">30dp</dimen>
+
+    <dimen name="fragment_record_delete_img_size">28dp</dimen>
+    <dimen name="fragment_record_delete_img_text_margin">4dp</dimen>
+    <dimen name="fragment_record_delete_img_top_margin">30dp</dimen>
+
+    <dimen name="fragment_record_delete_text_size">14sp</dimen>
+    <dimen name="fragment_record_init_text_size">18sp</dimen>
+    <dimen name="fragment_record_init_text_top_margin">34dp</dimen>
+
+    <dimen name="fragment_record_init_view_height">5dp</dimen>
+    <dimen name="fragment_record_init_view_width">12dp</dimen>
+    <dimen name="fragment_record_init_view_radius">3dp</dimen>
+    <dimen name="fragment_record_init_view_margin_top">5dp</dimen>
+
+    <dimen name="fragment_record_finish_img_size">32dp</dimen>
+    <dimen name="fragment_record_finish_img__landscape">62dp</dimen>
+    <dimen name="fragment_record_finish_text_margin_top">6dp</dimen>
+
+    <dimen name="fragment_record_dialog_height">271dp</dimen>
+    <dimen name="fragment_record_dialog_title_margin_top">25dp</dimen>
+    <dimen name="fragment_record_dialog_title_text_size">20sp</dimen>
+    <dimen name="fragment_record_dialog_cancel_height">50dp</dimen>
+    <dimen name="fragment_record_dialog_cancel_text_size">16sp</dimen>
+    <dimen name="fragment_record_dialog_image_size">50dp</dimen>
+    <dimen name="fragment_record_dialog_image_margin_top">35dp</dimen>
+    <dimen name="fragment_record_dialog_image_margin_landscape">75dp</dimen>
+    <dimen name="fragment_record_dialog_item_margin_top">10dp</dimen>
+    <dimen name="fragment_record_dialog_item_text_size">13sp</dimen>
+
+    <dimen name="fragment_record_time_text_size">18sp</dimen>
+    <dimen name="fragment_record_time_margin_bottom">14dp</dimen>
+
+    <dimen name="fragment_choose_bottom_height">50dp</dimen>
+    <dimen name="fragment_choose_title_text_size">18dp</dimen>
+    <dimen name="fragment_choose_bottom_landscape_margin">12dp</dimen>
+    <dimen name="fragment_choose_finish_button_height">32dp</dimen>
+    <dimen name="fragment_choose_finish_button_width">80dp</dimen>
+    <dimen name="fragment_choose_finish_button_marin_bottom">9dp</dimen>
+
+    <dimen name="choose_item_time_text_size">11sp</dimen>
+    <dimen name="choose_item_time_marin_right">7dp</dimen>
+    <dimen name="choose_item_time_marin_bottom">4dp</dimen>
+    <dimen name="choose_num_img_size">22dp</dimen>
+    <dimen name="choose_num_img_margin_right">8dp</dimen>
+    <dimen name="choose_num_img_margin_top">7dp</dimen>
+    <dimen name="choose_num_text_size">13dp</dimen>
+
+    <dimen name="choose_num_item_interval">1dp</dimen>
+
+    <dimen name="preview_choose_text">16sp</dimen>
+    <dimen name="preview_choose_text_margin_right">16dp</dimen>
+    <dimen name="preview_choose_item_margin_right">8dp</dimen>
+    <dimen name="preview_video_item_size">50dp</dimen>
+
+    <dimen name="loading_dialog_width">182dp</dimen>
+    <dimen name="loading_dialog_height">50dp</dimen>
+
+    <dimen name="video_edit_min_height">50dp</dimen>
+    <dimen name="video_edit_margin_top">17dp</dimen>
+    <dimen name="video_edit_margin_landscape">@dimen/DIMEN_14DP</dimen>
+    <dimen name="video_edit_num_margin_top">5dp</dimen>
+    <dimen name="upload_video_height">212dp</dimen>
+    <dimen name="upload_video_width">120dp</dimen>
+    <dimen name="upload_video_margin_top">20dp</dimen>
+    <dimen name="upload_video_item_size">28dp</dimen>
+    <dimen name="upload_video_change_cover_height">24dp</dimen>
+    <dimen name="upload_video_change_cover_width">62dp</dimen>
+    <dimen name="upload_video_change_cover_margin">6dp</dimen>
+    <dimen name="upload_video_public_private_margin">21dp</dimen>
+    <dimen name="upload_video_public_private_half_margin">10.5dp</dimen>
+    <dimen name="upload_video_text_upload_margin">28dp</dimen>
+    <dimen name="upload_video_interval_margin">17dp</dimen>
+    <dimen name="upload_button_height">44dp</dimen>
+    <dimen name="upload_button_margin_bottom">10dp</dimen>
+    <dimen name="upload_back_cover_height">42dp</dimen>
+
+    <dimen name="publish_dialog_width">220dp</dimen>
+    <dimen name="publish_dialog_height">80dp</dimen>
+    <dimen name="publish_progress_dialog_padding">16dp</dimen>
+    <dimen name="publish_progress_margin_bottom">12dp</dimen>
+
+
+
+</resources>

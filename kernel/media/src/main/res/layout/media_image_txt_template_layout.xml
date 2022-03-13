@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="toolBind"
+            type="com.jxntv.media.databind.MediaToolBarDataBind" />
+
+        <variable
+            name="feedModel"
+            type="com.jxntv.media.model.MediaModel" />
+
+        <import type="android.view.View" />
+
+        <import type="android.text.TextUtils" />
+
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout
+        style="@style/feed_layout_margin"
+        android:id="@+id/root">
+
+        <com.jxntv.widget.GVideoConstraintLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/title"
+                style="@style/feed_title_style"
+                android:text="@{feedModel.qaTitle}"
+                android:visibility="@{TextUtils.isEmpty(feedModel.qaTitle)?View.GONE:View.VISIBLE,default=gone}" />
+
+            <com.jxntv.widget.FoldTextView
+                android:id="@+id/content"
+                style="@style/TextStyle.DefaultSpacing_lsm_1_6"
+                android:layout_width="0dp"
+                android:visibility="@{TextUtils.isEmpty(feedModel.getContentThanTitle())?View.GONE:View.VISIBLE}"
+                app:contentSpacing="1.2"
+                app:contentTextColor="@color/color_333333"
+                app:contentTextSize="@dimen/sp_15"
+                app:force_pack="true"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:showMaxLine="3"
+                app:tipClickable="false"
+                app:tipColor="@color/c_4189FF" />
+
+            <com.jxntv.base.view.ImageRecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_4DP"
+                android:visibility="@{feedModel.haveImage?View.VISIBLE:View.GONE,default=gone}"
+                app:imageData="@{feedModel.imageUrls}"
+                app:imageList="@{feedModel.imageList}"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/content"
+                app:layout_goneMarginTop="@dimen/DIMEN_0DP"
+                app:oriImageData="@{feedModel.oriUrls}"
+                tools:visibility="visible" />
+
+            <com.jxntv.android.liteav.GVideoSoundView
+                android:id="@+id/sound_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_9DP"
+                android:visibility="@{feedModel.audioTxt?View.VISIBLE:View.GONE,default=gone}"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/content"
+                app:layout_constraintWidth_percent=".9"
+                tools:visibility="visible" />
+
+        </com.jxntv.widget.GVideoConstraintLayout>
+
+        <include
+            android:id="@+id/feed_layout_qa"
+            layout="@layout/view_question_message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            app:feedModel="@{feedModel}"
+            app:layout_constraintTop_toBottomOf="@id/layout_top" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+</layout>

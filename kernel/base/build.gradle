@@ -1,0 +1,62 @@
+apply from: rootProject.file("library.gradle")
+
+android {
+  defaultConfig {
+    buildConfigField "String", "app_scheme", "\"${appKey.app_scheme}\" "
+  }
+}
+
+dependencies {
+  api fileTree(dir: 'libs', include: ['*.jar'])
+  api deps.appCompat
+  api deps.lifecycleExtensions
+  api deps.constraintLayout
+  api deps.navigation_fragment
+  api deps.navigation_ui
+  api deps.paging
+  api deps.pagingRxJava2
+  api deps.smartRefreshLayout
+  api deps.smartTabLayout
+  api deps.smartTabLayoutUtils
+  api deps.wheelPicker
+  api deps.tog_kernel_network
+  api deps.tog_lib_ioc
+  api deps.tog_lib_widget
+  api deps.tog_lib_utils
+  api deps.tog_lib_res
+  api deps.tog_kernel_runtime
+  api deps.tog_kernel_event
+  api deps.luban
+  api deps.tencentLocation
+  api deps.downloadFile
+  api deps.gson
+  api deps.jsoup
+  api deps.rxPermission
+  api deps.rxJava
+  api deps.lottie
+  api deps.zxing
+  api deps.jetty_server
+  api deps.jetty_servlet
+  api deps.jetty_client
+
+  // glide
+  api deps.glide
+  annotationProcessor deps.glide_compiler
+
+  // implementation 'com.github.devin1014.DLNA-Cast:dlna-dmc:V1.0.0'
+
+  // 投屏相关依赖
+  //  api deps.cling_core
+  api deps.cling_support , {
+    exclude group: 'org.fourthline.cling', module: 'cling-core'
+  }
+  api "org.seamless:seamless-util:1.1.1"
+  api "org.seamless:seamless-http:1.1.1"
+  api "org.seamless:seamless-xml:1.1.1"
+  api "org.eclipse.jetty:jetty-server:8.1.18.v20150929"
+  api "org.eclipse.jetty:jetty-servlet:8.1.18.v20150929"
+  api "org.eclipse.jetty:jetty-client:8.1.18.v20150929"
+  api "javax.enterprise:cdi-api:1.2"
+  api "net.sf.kxml:kxml2:2.3.0"
+  api "org.seamless:seamless-swing:1.1.1"
+}

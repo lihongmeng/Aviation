@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.circle.fragment.qa.QAAnswerMessageViewModel" />
+
+        <variable
+            name="authorObservable"
+            type="com.jxntv.base.model.video.AuthorObservable" />
+
+        <variable
+            name="authorModel"
+            type="com.jxntv.base.model.video.AuthorModel" />
+
+        <import type="android.text.TextUtils" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <com.jxntv.widget.GvideoRConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:background_normal="@color/color_ffffff"
+        app:corner_radius="@dimen/DIMEN_10DP">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/DIMEN_58DP"
+            android:layout_height="@dimen/DIMEN_58DP"
+            android:layout_marginStart="@dimen/DIMEN_14DP"
+            android:layout_marginTop="@dimen/DIMEN_14DP"
+            android:onClick="@{v->viewModel.onAvatarClick(v,authorModel)}"
+            app:placeholder="@{@drawable/ic_default_avatar}"
+            app:circleCrop="@{true}"
+            app:imageData="@{authorObservable.avatar}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_default_avatar" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:layout_width="@dimen/DIMEN_17DP"
+            android:layout_height="@dimen/DIMEN_17DP"
+            android:src="@drawable/icon_header_authentication"
+            android:onClick="@{v->viewModel.onAskQuestionClick(v, authorModel)}"
+            android:visibility="@{authorObservable.isAuthentication?View.VISIBLE:View.GONE,default=gone}"
+            app:layout_constraintBottom_toBottomOf="@id/avatar"
+            app:layout_constraintEnd_toEndOf="@id/avatar" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:layout_marginEnd="@dimen/DIMEN_8DP"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:onClick="@{v->viewModel.onAvatarClick(v,authorModel)}"
+            android:singleLine="true"
+            android:text="@{authorObservable.name}"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_17"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/ask_question"
+            app:layout_constraintStart_toEndOf="@id/avatar"
+            app:layout_constraintBottom_toTopOf="@id/middle_divider"
+            tools:text="新闻问新闻问问新闻问问新闻问问新闻问问新闻问问问" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/introduction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_5DP"
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:singleLine="true"
+            android:text="@{authorObservable.authenticationIntro}"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_12"
+            android:visibility="@{TextUtils.isEmpty(authorObservable.authenticationIntro)?View.GONE:View.VISIBLE}"
+            app:layout_constraintEnd_toStartOf="@id/ask_question"
+            app:layout_constraintTop_toBottomOf="@id/middle_divider"
+            app:layout_constraintStart_toStartOf="@id/name"
+            tools:text="这是一个简介这是一个简介这是一个简介这是一个简介这是一个简介这是一个简介这是一个简介"
+            tools:visibility="visible" />
+
+        <!--中间辅助线-->
+        <View
+            android:id="@+id/middle_divider"
+            android:layout_width="1px"
+            android:layout_height="1px"
+            app:layout_constraintStart_toEndOf="@id/avatar"
+            app:layout_constraintTop_toTopOf="@id/avatar"
+            app:layout_constraintBottom_toBottomOf="@id/avatar" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/ask_question"
+            style="@style/StyleAskQuestionButton"
+            android:layout_marginTop="@dimen/DIMEN_6DP"
+            android:layout_marginEnd="@dimen/DIMEN_17DP"
+            android:onClick="@{v->viewModel.onAskQuestionClick(v,authorModel)}"
+            app:layout_constraintBottom_toBottomOf="@id/avatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/avatar" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_1DP"
+            android:layout_marginStart="@dimen/DIMEN_10DP"
+            android:layout_marginTop="@dimen/DIMEN_7DP"
+            android:layout_marginEnd="@dimen/DIMEN_10DP"
+            android:background="@color/c_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/avatar" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/tag_text"
+            android:layout_width="@dimen/DIMEN_40DP"
+            android:layout_height="@dimen/DIMEN_17DP"
+            android:layout_marginTop="@dimen/DIMEN_9DP"
+            android:src="@drawable/ic_qa_teacher_tag"
+            app:layout_constraintStart_toStartOf="@id/avatar"
+            app:layout_constraintTop_toBottomOf="@id/line" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/user_tag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_5DP"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            android:ellipsize="end"
+            android:paddingBottom="@dimen/DIMEN_10DP"
+            android:text="@{authorModel.areasOfExpertise}"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tag_text"
+            app:layout_constraintTop_toTopOf="@id/line"
+            tools:text="家庭关系/恋爱关系//////" />
+
+    </com.jxntv.widget.GvideoRConstraintLayout>
+</layout>

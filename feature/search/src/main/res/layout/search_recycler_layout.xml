@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <com.jxntv.base.view.GVideoSmartRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/refresh_layout"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          app:srlHeaderHeight="75dp">
+
+        <FrameLayout
+          android:id="@+id/recycler_container"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <com.jxntv.widget.GVideoRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+          <FrameLayout
+            android:id="@+id/empty_container"
+              android:layout_marginTop="@dimen/DIMEN_100DP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+        </FrameLayout>
+    </com.jxntv.base.view.GVideoSmartRefreshLayout>
+</layout>

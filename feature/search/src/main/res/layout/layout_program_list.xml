@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.jxntv.widget.GVideoRTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_33DP"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/DIMEN_14DP"
+        android:paddingEnd="@dimen/DIMEN_14DP"
+        android:singleLine="true"
+        android:text="2021-07-18 金牌调解20210"
+        android:textSize="@dimen/sp_13"
+        android:textColor="@color/color_333333"
+        app:background_normal="@color/color_f7f7f7"
+        app:corner_radius="@dimen/DIMEN_2DP" />
+</layout>

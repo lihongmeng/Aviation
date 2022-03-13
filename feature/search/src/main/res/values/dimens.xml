@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="search_fragment_landscape_margin">12dp</dimen>
+
+    <!-- 搜索栏相关 -->
+    <dimen name="search_bar_height">44dp</dimen>
+    <dimen name="search_bar_vertical_margin">6dp</dimen>
+    <dimen name="search_bar_landscape_margin">12dp</dimen>
+
+    <dimen name="search_icon_size">20dp</dimen>
+    <dimen name="search_icon_margin_left">15dp</dimen>
+    <dimen name="search_icon_margin_right">10dp</dimen>
+
+
+    <dimen name="search_edit_height">32dp</dimen>
+    <dimen name="search_edit_text_size">14dp</dimen>
+    <dimen name="search_edit_padding_left">40dp</dimen>
+    <dimen name="search_edit_padding_right">35dp</dimen>
+
+
+    <dimen name="search_bar_cancel_text_right_margin">6dp</dimen>
+    <dimen name="search_bar_cancel_text_left_margin">18dp</dimen>
+    <dimen name="search_bar_cancel_text_top_margin">11dp</dimen>
+
+    <dimen name="search_bar_cancel_text_width">32dp</dimen>
+    <dimen name="search_bar_cancel_text_height">22.5dp</dimen>
+
+    <dimen name="search_bar_radius">16.5dp</dimen>
+
+    <dimen name="search_bar_cursor_radius">1dp</dimen>
+    <dimen name="search_bar_cursor_width">2dp</dimen>
+    <dimen name="search_bar_cursor_height">15dp</dimen>
+
+    <!-- 搜索历史相关 -->
+    <dimen name="search_history_title_margin_top">15dp</dimen>
+
+    <dimen name="search_history_title_width">64dp</dimen>
+    <dimen name="search_history_title_height">24dp</dimen>
+
+    <dimen name="search_history_delete_icon_size">24dp</dimen>
+
+    <dimen name="search_history_list_margin_top">13dp</dimen>
+    <dimen name="search_history_list_margin">10dp</dimen>
+    <dimen name="search_history_text_height">28dp</dimen>
+    <dimen name="search_history_text_radius">5dp</dimen>
+    <dimen name="search_history_text_padding_landscape">15dp</dimen>
+
+    <!-- 搜索结果相关 -->
+    <dimen name="search_result_tab_bar_height">@dimen/DIMEN_36DP</dimen>
+    <dimen name="search_result_tab_bar_margin_bottom">6dp</dimen>
+    <dimen name="search_view_page_margin_top">6dp</dimen>
+
+    <dimen name="search_tag_margin">6dp</dimen>
+
+    <!-- 搜索结果-单图 -->
+    <dimen name="search_one_img_img_text_margin">12dp</dimen>
+    <dimen name="search_one_img_title_height_max">60dp</dimen>
+    <dimen name="search_one_img_title_height_min">20dp</dimen>
+    <dimen name="search_one_img_title_width">172dp</dimen>
+    <dimen name="search_one_text_margin">8dp</dimen>
+    <dimen name="search_one_img_margin">15dp</dimen>
+
+    <!-- 搜索结果-单图（音频） -->
+    <dimen name="search_sound_img_width">121dp</dimen>
+    <dimen name="search_sound_status_img_width">48.6dp</dimen>
+    <dimen name="search_sound_status_margin_left">31dp</dimen>
+
+    <!-- 搜索结果-短作品 -->
+    <dimen name="search_short_production_img_size">20dp</dimen>
+    <dimen name="search_short_production_img_margin">10dp</dimen>
+    <dimen name="search_short_production_author_left_margin">6dp</dimen>
+    <dimen name="search_short_production_title_margin">10dp</dimen>
+    <dimen name="search_short_production_margin_bottom">6dp</dimen>
+
+    <!-- 搜索结果-关注 -->
+    <dimen name="search_follow_margin">@dimen/DIMEN_19DP</dimen>
+    <dimen name="search_follow_img_size">50dp</dimen>
+    <dimen name="search_name_margin">@dimen/DIMEN_12DP</dimen>
+    <dimen name="search_text_margin">3dp</dimen>
+
+    <dimen name="search_follow_follow_width">75dp</dimen>
+    <dimen name="search_follow_follow_height">30dp</dimen>
+    <dimen name="search_follow_follow_radius">15dp</dimen>
+
+    <!-- 搜索历史-取消 -->
+    <dimen name="search_cancel_dialog_width">75dp</dimen>
+    <dimen name="search_cancel_dialog_height">75dp</dimen>
+
+    <dimen name="width_adapter_follow_follow">75dp</dimen>
+    <dimen name="height_adapter_follow_follow">30dp</dimen>
+
+    <!-- NoMoreData -->
+    <dimen name="search_padding_no_more_data_top_margin">3dp</dimen>
+    <dimen name="search_padding_no_more_data_bottom_margin">18dp</dimen>
+</resources>

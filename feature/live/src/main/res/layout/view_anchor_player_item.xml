@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <!--连麦：第一个播放小窗口-->
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:id="@+id/root_layout"
+        style="@style/anchor_video_style"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <View
+            android:id="@+id/loading_background"
+            style="@style/anchor_video_loading_bg_style" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/loading_imageview"
+            style="@style/anchor_video_loading_style" />
+
+        <com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/video_player"
+            style="@style/anchor_video_style"
+            android:visibility="gone" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/btn_kick_out"
+            android:layout_width="@dimen/DIMEN_20DP"
+            android:layout_height="@dimen/DIMEN_20DP"
+            android:src="@drawable/icon_clear"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+
+</layout>

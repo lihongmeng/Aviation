@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jxntv.record" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.permission.camera"/>
+    <uses-feature android:name="android.hardware.autofocus"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        tools:targetApi="q">
+
+        <activity android:name="com.jxntv.record.RecordActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout"
+            android:windowSoftInputMode="adjustResize"
+            android:resizeableActivity="false"
+            android:maxAspectRatio="2.2"
+            android:minAspectRatio="1.7"/>
+
+    </application>
+
+</manifest>

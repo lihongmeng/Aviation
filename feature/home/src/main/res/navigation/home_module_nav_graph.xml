@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_module_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jxntv.home.HomeFragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/videoShortFragment"
+        android:name="com.jxntv.android.video.ui.vshort.VideoContainerFragment"
+        android:label="videoShortFragment"/>
+
+</navigation>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="videoObservable"
+            type="com.jxntv.base.model.video.VideoObservable" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jxntv.widget.GVideoConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/media_normal_vertical_margin"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/toolbar_favorite_img"
+                style="@style/feed_comment_img"
+                android:layout_marginLeft="@dimen/DIMEN_19DP"
+                android:scaleType="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bottom_divider"
+                tools:src="@drawable/media_toolbar_favorite_checked" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/toolbar_favorite_num_text"
+                style="@style/feed_comment_text"
+                android:text="@{videoObservable.favorText}"
+                app:layout_constraintStart_toEndOf="@id/toolbar_favorite_img"
+                app:layout_constraintLeft_toLeftOf="@id/toolbar_favorite_img"
+                app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img"
+                app:layout_constraintBottom_toBottomOf="@id/toolbar_favorite_img"
+                tools:text="44" />
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/toolbar_chat_img"
+                style="@style/feed_comment_img"
+                android:layout_marginStart="@dimen/DIMEN_50DP"
+                android:src="@drawable/ic_common_comment"
+                app:layout_constraintBottom_toBottomOf="@id/toolbar_favorite_img"
+                app:layout_constraintLeft_toRightOf="@id/toolbar_favorite_img"
+                app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/toolbar_comment_num_text"
+                style="@style/feed_comment_text"
+                app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img"
+                app:layout_constraintBottom_toBottomOf="@id/toolbar_favorite_img"
+                app:layout_constraintStart_toEndOf="@id/toolbar_chat_img"
+                tools:text="99+" />
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/toolbar_more_img"
+                android:layout_width="@dimen/DIMEN_50DP"
+                android:layout_height="@dimen/DIMEN_36DP"
+                android:layout_marginLeft="@dimen/DIMEN_36DP"
+                android:scaleType="center"
+                android:src="@drawable/media_toolbar_share"
+                app:layout_constraintBottom_toBottomOf="@id/toolbar_favorite_img"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/DIMEN_19DP"
+                android:paddingEnd="@dimen/DIMEN_19DP"
+                android:paddingBottom="@dimen/DIMEN_6DP"
+                android:textColor="@color/color_006fbb"
+                android:textSize="@dimen/sp_17"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/DIMEN_35DP"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="# 怎样处怎样处理亲子关系怎样处理亲子关系怎样处理亲子关系理亲子关系? #" />
+
+            <!--链接信息-->
+            <com.jxntv.base.view.PublishLinkView
+                android:id="@+id/link_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/DIMEN_19DP"
+                android:layout_marginTop="@dimen/DIMEN_5DP"
+                android:layout_marginEnd="@dimen/DIMEN_19DP"
+                android:layout_marginBottom="@dimen/DIMEN_8DP"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/topic"
+                tools:visibility="visible" />
+
+            <View
+                android:id="@+id/bottom_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/DIMEN_12DP"
+                android:layout_marginTop="@dimen/DIMEN_15DP"
+                android:layout_marginRight="@dimen/DIMEN_12DP"
+                android:background="@color/color_f2f2f2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/link_layout" />
+
+        </com.jxntv.widget.GVideoConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

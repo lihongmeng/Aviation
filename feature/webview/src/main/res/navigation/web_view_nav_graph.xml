@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/web_view_nav_graph"
+    app:startDestination="@id/webViewFragment"
+    tools:ignore="UnusedNavigation">
+
+  <fragment
+      android:id="@+id/webViewFragment"
+      android:name="com.jxntv.webview.WebViewFragment"
+      android:label="WebViewFragment">
+    <argument
+        android:name="title"
+        android:defaultValue="@null"
+        app:argType="string"
+        app:nullable="true" />
+
+    <argument
+        android:name="pageName"
+        android:defaultValue="@null"
+        app:argType="string"
+        app:nullable="true" />
+    <argument
+        android:name="url"
+        android:defaultValue=""
+        app:argType="string" />
+  </fragment>
+</navigation>

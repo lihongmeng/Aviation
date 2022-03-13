@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 首页tab bar相关 -->
+    <dimen name="home_tab_img_width">@dimen/DIMEN_35DP</dimen>
+    <dimen name="home_tab_text_margin_top">@dimen/DIMEN_1DP</dimen>
+    <dimen name="home_tab_height">50dp</dimen>
+
+
+    <!-- 以下是字体 -->
+
+    <!-- 首页tab bar相关 -->
+    <dimen name="home_tab_title_size">@dimen/sp_10</dimen>
+
+</resources>

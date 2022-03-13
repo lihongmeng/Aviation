@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.circle.viewmodel.CircleDetailViewModel" />
+
+        <variable
+            name="gather"
+            type="com.jxntv.base.model.circle.GatherModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_gradient_bg_999999_corners_10dp"
+        android:visibility="@{viewModel.showQAGroup||viewModel.showQATeacher?View.VISIBLE:View.GONE,default=gone}"
+        tools:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/DIMEN_8DP"
+            app:cardElevation="@dimen/DIMEN_0DP">
+
+            <com.jxntv.widget.GVideoConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.jxntv.widget.GVideoTextView
+                    android:id="@+id/more"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_36DP"
+                    android:drawableEnd="@drawable/ic_common_arrow_right"
+                    android:drawablePadding="@dimen/DIMEN_5DP"
+                    android:gravity="end|center_vertical"
+                    android:onClick="@{v->viewModel.onQAGroupALlClicked(v)}"
+                    android:paddingEnd="@dimen/DIMEN_14DP"
+                    android:text="@string/all"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="RtlSymmetry" />
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/qa_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="@{viewModel.showQAGroup?View.VISIBLE:View.GONE,default=gone}"
+                    app:constraint_referenced_ids="iv_qa,layout_content" />
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/qa_teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="@{viewModel.showQATeacher?View.VISIBLE:View.GONE,default=gone}"
+                    app:constraint_referenced_ids="layout_teacher_banner,iv_teacher_question,iv_teacher_text"
+                    tools:visibility="visible" />
+
+                <!--    问答老师广场   -->
+                <com.jxntv.widget.GVideoImageView
+                    android:id="@+id/iv_qa"
+                    android:layout_width="@dimen/DIMEN_66DP"
+                    android:layout_height="@dimen/DIMEN_15DP"
+                    android:layout_marginStart="@dimen/DIMEN_14DP"
+                    android:layout_marginTop="@dimen/DIMEN_10DP"
+                    android:src="@drawable/ic_group_qa"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/more" />
+
+                <com.jxntv.widget.GVideoConstraintLayout
+                    android:id="@+id/layout_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/DIMEN_12DP"
+                    android:visibility="@{viewModel.showQAGroup?View.VISIBLE:View.GONE,default=gone}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_qa">
+
+                    <com.jxntv.widget.GVideoRecyclerView
+                        android:id="@+id/recycler_qa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/DIMEN_16DP"
+                        android:layout_marginEnd="@dimen/DIMEN_10DP"
+                        android:maxHeight="@dimen/DIMEN_82DP"
+                        android:nestedScrollingEnabled="false" />
+
+                    <com.jxntv.widget.GVideoImageView
+                        android:id="@+id/place_empty"
+                        android:layout_width="@dimen/DIMEN_314DP"
+                        android:layout_height="@dimen/DIMEN_82DP"
+                        android:layout_marginBottom="@dimen/DIMEN_5DP"
+                        android:src="@drawable/ic_group_qasquare_empty"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </com.jxntv.widget.GVideoConstraintLayout>
+
+                <!--    问答老师banner   -->
+                <com.jxntv.widget.GVideoImageView
+                    android:id="@+id/iv_teacher_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_15DP"
+                    android:layout_marginStart="@dimen/DIMEN_12DP"
+                    android:layout_marginTop="@dimen/DIMEN_10DP"
+                    android:src="@drawable/ic_question_yellow_white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/more" />
+
+                <com.jxntv.widget.GVideoTextView
+                    android:id="@+id/iv_teacher_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/DIMEN_4DP"
+                    android:text="@{gather.name}"
+                    android:textColor="@color/color_7f7f7f"
+                    android:textSize="@dimen/sp_15"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_teacher_question"
+                    app:layout_constraintStart_toEndOf="@id/iv_teacher_question"
+                    app:layout_constraintTop_toTopOf="@id/iv_teacher_question" />
+
+                <com.jxntv.widget.GVideoConstraintLayout
+                    android:id="@+id/layout_teacher_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_117DP"
+                    android:background="@color/color_ffffff"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/more"
+                    tools:visibility="visible">
+
+                    <com.jxntv.widget.GVideoBanner
+                        android:id="@+id/teacher_banner"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/DIMEN_117DP"
+                        android:background="@color/color_ffffff"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DIMEN_26DP"
+                        android:background="@drawable/shape_banner_teacher_top_bg" />
+
+                </com.jxntv.widget.GVideoConstraintLayout>
+
+            </com.jxntv.widget.GVideoConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+</layout>

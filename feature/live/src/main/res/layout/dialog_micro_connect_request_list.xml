@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_solid_ffffff_corners_top_8dp"
+        android:layout_gravity="bottom">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_42DP"
+            android:layout_marginLeft="@dimen/DIMEN_14DP"
+            android:gravity="center_vertical"
+            android:text="@string/apply_message"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/close"
+            android:layout_width="@dimen/DIMEN_47DP"
+            android:layout_height="@dimen/DIMEN_42DP"
+            android:paddingRight="@dimen/DIMEN_5DP"
+            android:scaleType="center"
+            android:src="@drawable/icon_close_micro_connect"
+            app:layout_constraintBottom_toBottomOf="@id/title"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/title" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_f2f2f2"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <com.jxntv.widget.GVideoMaxMinHeightRecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_350DP"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider"
+            tools:listitem="@layout/item_micro_connect_request_list" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

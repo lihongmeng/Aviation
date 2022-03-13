@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:useLevel="false" >
+  <solid android:color="@color/t_color05"/>
+  <size android:width="@dimen/fragment_record_init_view_width"
+      android:height="@dimen/fragment_record_init_view_height" />
+  <corners android:radius="@dimen/fragment_record_init_view_radius"/>
+</shape>

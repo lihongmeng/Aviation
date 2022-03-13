@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.jxntv.account.adapter.MessageNotificationDetailAdapter" />
+
+        <variable
+            name="detail"
+            type="com.jxntv.account.model.MessageNotificationDetailObservable" />
+
+        <variable
+            name="position"
+            type="androidx.databinding.ObservableInt" />
+
+        <import type="android.view.View"/>
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/AdapterMessageNotificationDetail.Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{v->adapter.onAvatarClicked(v,position)}">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/image_view_avatar"
+            style="@style/AdapterMessageNotificationDetail.Avatar"
+            android:layout_marginTop="@dimen/DIMEN_14DP"
+            android:layout_marginBottom="@dimen/DIMEN_14DP"
+            app:circleCrop="@{true}"
+            app:imageData="@{detail.avatarUrl}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:placeholder='@{@drawable/ic_default_avatar}'
+            tools:src="@drawable/ic_default_avatar" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:layout_width="@dimen/DIMEN_14DP"
+            android:layout_height="@dimen/DIMEN_14DP"
+            android:src="@drawable/icon_header_authentication"
+            android:visibility="@{detail.isAuth?View.VISIBLE:View.GONE}"
+            app:layout_constraintBottom_toBottomOf="@id/image_view_avatar"
+            app:layout_constraintEnd_toEndOf="@id/image_view_avatar" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_10DP"
+            android:layout_marginTop="@dimen/DIMEN_13DP"
+            android:text="@{detail.title}"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintStart_toEndOf="@id/image_view_avatar"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="张三"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{detail.content}"
+            android:textColor="@color/color_7f7f7f"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintStart_toStartOf="@id/text_view_name"
+            app:layout_constraintTop_toBottomOf="@id/text_view_name"
+            tools:text="关注了你"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{detail.createdAt}"
+            android:textColor="@color/color_7f7f7f"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintStart_toStartOf="@id/text_view_name"
+            app:layout_constraintTop_toBottomOf="@id/content"
+            tools:text="08-02" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{v-> adapter.onAttentionClicked(v,position)}"
+            android:src="@{detail.getFollowedDrawableRes(detail.isFollow)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            style="@style/AdapterMessageNotificationDetail.Driver"
+            android:layout_marginStart="@dimen/DIMEN_14DP"
+            android:layout_marginTop="@dimen/DIMEN_14DP"
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_view_avatar" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

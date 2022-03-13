@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.search.SearchViewModel" />
+
+        <variable
+            name="binding"
+            type="com.jxntv.search.databinding.SearchBarDataBinding" />
+
+        <import type="android.app.Activity"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/search_search_bar_layout"
+        android:layout_width="match_parent"
+        android:paddingStart="@dimen/DIMEN_10DP"
+        android:paddingEnd="@dimen/DIMEN_10DP"
+        android:layout_height="@dimen/search_bar_height"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <!--返回按钮-->
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/search_back"
+            android:layout_width="@dimen/DIMEN_27DP"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_back_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoEditText
+            android:id="@+id/search_edit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_29DP"
+            android:gravity="center_vertical"
+            android:hint="@string/search_bar_hint"
+            android:paddingStart="@dimen/search_edit_padding_left"
+            android:paddingEnd="@dimen/search_edit_padding_right"
+            android:layout_marginStart="@dimen/DIMEN_1DP"
+            android:textColor="@color/t_color01"
+            android:textColorHint="@color/t_color03"
+            android:textSize="@dimen/sp_13"
+            android:text="@={binding.searchWord}"
+            android:background="@drawable/search_bar_drawable"
+            android:ellipsize="end"
+            android:textCursorDrawable="@drawable/search_edit_color"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            app:layout_constraintLeft_toRightOf="@id/search_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/search_cancel" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:layout_width="@dimen/DIMEN_18DP"
+            android:layout_height="@dimen/DIMEN_17DP"
+            android:src="@drawable/icon_search_search_grey"
+            android:layout_marginStart="@dimen/DIMEN_13DP"
+            android:onClick="@{(v)->viewModel.onSearchItemClick()}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/search_edit" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/search_scan"
+            android:layout_width="@dimen/search_edit_height"
+            android:layout_height="@dimen/search_edit_height"
+            android:layout_marginEnd="@dimen/search_icon_margin_right"
+            android:scaleType="center"
+            android:src="@drawable/icon_search_scan_grey"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="@id/search_edit" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:gravity="center_vertical"
+            android:textColor="@{binding.searchBtnState?@color/color_333333:@color/color_7f7f7f}"
+            android:text="@string/all_search"
+            android:textSize="@dimen/sp_15"
+            android:onClick="@{(v)->viewModel.onSearchItemClick()}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/search_edit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

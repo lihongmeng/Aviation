@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.android.video.ui.vshort.info.VideoShortInfoViewModel" />
+
+        <variable
+            name="authorObservable"
+            type="com.jxntv.base.model.video.AuthorObservable" />
+
+        <variable
+            name="videoObservable"
+            type="com.jxntv.base.model.video.VideoObservable" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_250DP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/shape_gradient_e6000000_00000000_90" />
+
+        <!--返回按钮-->
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/DIMEN_42DP"
+            android:layout_height="@dimen/DIMEN_42DP"
+            android:onClick="@{(v)->viewModel.onBackPressed(v)}"
+            android:src="@drawable/icon_arrow_white_left"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--分享按钮-->
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/share"
+            android:layout_width="@dimen/DIMEN_31DP"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_23DP"
+            android:drawableTop="@{authorObservable.self ? @drawable/video_more_light : @drawable/video_share_light}"
+            android:gravity="center"
+            android:onClick="@{(v)->viewModel.onShareClicked(v)}"
+            android:text="@{authorObservable.self ? @string/video_more : @string/video_share}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/video_sp_12"
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            app:layout_constraintBottom_toTopOf="@id/progress"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <!--评论按钮-->
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/video_comment_light"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/DIMEN_20DP"
+            android:onClick="@{(v)->viewModel.onCommentClicked(v)}"
+            android:text="@{videoObservable.commentText}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/video_sp_12"
+            app:layout_constraintBottom_toTopOf="@id/share"
+            app:layout_constraintLeft_toLeftOf="@id/share"
+            app:layout_constraintRight_toRightOf="@id/share" />
+
+        <!--喜欢按钮-->
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/star"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop='@{videoObservable.isFavor ? @drawable/video_stared : @drawable/video_star}'
+            android:gravity="center"
+            android:onClick="@{(v)->viewModel.onStarClicked(v)}"
+            android:text='@{videoObservable.isFavor ? @string/video_stared : @string/video_star}'
+            android:textColor="@color/white"
+            android:textSize="@dimen/video_sp_12"
+            android:layout_marginBottom="@dimen/DIMEN_20DP"
+            app:layout_constraintBottom_toTopOf="@id/comment"
+            app:layout_constraintLeft_toLeftOf="@id/share"
+            app:layout_constraintRight_toRightOf="@id/share" />
+
+        <!--链接信息-->
+        <com.jxntv.base.view.PublishLinkView
+            android:id="@+id/link_layout"
+            android:layout_width="@dimen/DIMEN_246DP"
+            android:layout_height="@dimen/DIMEN_29DP"
+            android:layout_marginStart="@dimen/DIMEN_14DP"
+            android:layout_marginBottom="@dimen/DIMEN_8DP"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:left_bg_drawable="@drawable/shape_solid_5ea3f5_30_corners_4dp"
+            app:left_icon_height="@dimen/DIMEN_29DP"
+            app:left_icon_width="@dimen/DIMEN_29DP"
+            app:middle_content_max_line="1"
+            app:show_delete="false" />
+
+        <!--标题-->
+        <com.jxntv.base.view.VerticalVideoTitleLayout
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_14DP"
+            android:layout_marginEnd="@dimen/DIMEN_100DP"
+            android:layout_marginBottom="@dimen/DIMEN_25DP"
+            app:bg_drawable="@drawable/shape_solid_ffffff_10_corners_200dp"
+            app:content_text_color="@color/color_ffffff"
+            app:layout_constraintBottom_toTopOf="@id/progress"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:setContentText="@{videoObservable.contentThanTitle}" />
+
+        <!--头像-->
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/DIMEN_40DP"
+            android:layout_height="@dimen/DIMEN_40DP"
+            android:layout_marginStart="@dimen/DIMEN_10DP"
+            android:layout_marginEnd="@dimen/DIMEN_10DP"
+            android:layout_marginBottom="@dimen/DIMEN_18DP"
+            android:onClick="@{(v)->viewModel.onAvatarClicked(v)}"
+            app:circleCrop="@{true}"
+            app:imageData='@{authorObservable.avatar}'
+            app:layout_constraintBottom_toTopOf="@id/link_layout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:placeholder='@{@drawable/ic_default_avatar}' />
+
+        <!--关注按钮-->
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/follow"
+            android:layout_width="@dimen/DIMEN_40DP"
+            android:layout_height="@dimen/DIMEN_16DP"
+            android:layout_marginTop="@dimen/DIMEN_33DP"
+            android:onClick="@{(v)->viewModel.onFollowClicked(v)}"
+            android:src='@{authorObservable.isFollow ? @drawable/icon_video_short_follow_already : @drawable/icon_video_short_follow}'
+            android:visibility="@{authorObservable.self ? View.GONE : View.VISIBLE}"
+            app:layout_constraintLeft_toLeftOf="@id/avatar"
+            app:layout_constraintRight_toRightOf="@id/avatar"
+            app:layout_constraintTop_toTopOf="@id/avatar" />
+
+        <!--用户大V标识-->
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/authentication"
+            android:layout_width="@dimen/DIMEN_13DP"
+            android:layout_height="@dimen/DIMEN_13DP"
+            android:src="@drawable/icon_header_authentication"
+            app:layout_constraintBottom_toBottomOf="@id/avatar"
+            app:layout_constraintEnd_toEndOf="@id/avatar" />
+
+        <!--用户名称-->
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_10DP"
+            android:layout_marginEnd="@dimen/DIMEN_118DP"
+            android:ellipsize="end"
+            android:onClick="@{(v)->viewModel.onAvatarClicked(v)}"
+            android:singleLine="true"
+            android:text='@{authorObservable.name}'
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/sp_15"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/description"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toRightOf="@id/avatar"
+            app:layout_constraintTop_toTopOf="@id/avatar"
+            tools:text="123456789123456789123456789123456789" />
+
+        <!--用户描述-->
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/DIMEN_118DP"
+            android:ellipsize="end"
+            android:onClick="@{(v)->viewModel.onAvatarClicked(v)}"
+            android:singleLine="true"
+            android:text="@{authorObservable.intro}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/video_sp_12"
+            android:layout_marginStart="@dimen/DIMEN_10DP"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/avatar"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toRightOf="@id/avatar"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            tools:text="123456789123456789123456789123456789123456789123456789123456789123456789" />
+
+        <!--批量控制隐藏与显示-->
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:constraint_referenced_ids="avatar,name,description,title,simple_progress,follow,authentication,link_layout" />
+
+        <!--进度条-->
+        <include
+            android:id="@+id/progress"
+            layout="@layout/video_controller_progress"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <!--进度条-->
+        <SeekBar
+            android:id="@+id/simple_progress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/video_simple_progressbar"
+            android:thumb="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

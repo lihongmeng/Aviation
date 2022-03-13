@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--TabLayout-->
+  <style name="TabLayoutDefaultStyle">
+    <item name="stl_underlineThickness">0dp</item>
+    <item name="stl_dividerThickness">0dp</item>
+    <item name="stl_indicatorColor">@color/color_e4344e</item>
+    <item name="stl_indicatorThickness">@dimen/height_tab_layout_indicator</item>
+    <item name="stl_indicatorWidth">@dimen/width_tab_layout_indicator</item>
+    <item name="stl_indicatorCornerRadius">@dimen/radius_tab_layout_indicator</item>
+    <item name="stl_defaultTabBackground">@android:color/transparent</item>
+    <item name="stl_defaultTabTextHorizontalPadding">@dimen/DIMEN_10DP</item>
+  </style>
+
+  <!--Toolbar-->
+  <style name="Toolbar">
+
+  </style>
+
+  <style name="Toolbar.Container">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/height_toolbar</item>
+    <item name="android:background">@color/all_layout_background</item>
+  </style>
+
+  <style name="Toolbar.LeftBack">
+    <item name="android:layout_width">@dimen/height_toolbar</item>
+    <item name="android:layout_height">@dimen/height_toolbar</item>
+    <item name="android:src">@drawable/ic_back_black</item>
+    <item name="android:background">?android:attr/selectableItemBackground</item>
+  </style>
+
+  <style name="Toolbar.RightBack">
+    <item name="android:layout_width">@dimen/height_toolbar</item>
+    <item name="android:layout_height">@dimen/height_toolbar</item>
+    <item name="android:background">?android:attr/selectableItemBackground</item>
+  </style>
+
+  <style name="Toolbar.Title" parent="TextStyle.t_color01.t_font01.bold">
+    <item name="android:textSize">@dimen/text_size_toolbar_title</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">middle</item>
+  </style>
+
+  <style name="Toolbar.RightOperation" parent="TextStyle.state_t_color06.t_font03">
+    <item name="android:layout_marginRight">@dimen/margin_right_toolbar_right_operation</item>
+    <item name="android:visibility">gone</item>
+  </style>
+
+  <!--Cell-->
+  <style name="CellLeftIcon" parent="IconStyle.Medium">
+
+  </style>
+
+  <style name="CellLeftIconPoint">
+    <item name="android:layout_width">9dp</item>
+    <item name="android:layout_height">9dp</item>
+    <item name="android:src">@drawable/adapter_message_notification_red_dot</item>
+  </style>
+
+  <style name="CellLeftText" parent="TextStyle.t_color01.t_font03">
+
+  </style>
+
+  <style name="CellRightText" parent="TextStyle.t_color01.t_font02">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:textColor">@color/all_cell_right_text_color</item>
+    <item name="android:layout_marginRight">@dimen/margin_right_cell_right_text</item>
+  </style>
+
+  <style name="CellRightTopText" parent="CellRightText">
+    <item name="android:gravity">center_vertical|end</item>
+  </style>
+
+  <style name="CellRightBottomText" parent="CellRightTopText">
+    <item name="android:layout_marginRight">0dp</item>
+    <item name="android:textColor">@color/t_color03</item>
+  </style>
+
+  <style name="CellRightIcon" parent="IconStyle.X_Small">
+
+  </style>
+
+  <style name="CellStyle">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">55dp</item>
+    <item name="android:paddingLeft">16dp</item>
+    <item name="android:paddingRight">16dp</item>
+    <item name="android:paddingTop">10dp</item>
+    <item name="android:paddingBottom">10dp</item>
+    <item name="android:background">@drawable/all_transparent_c_bg01_background</item>
+    <!--left icon-->
+    <item name="cvLeftIconStyle">@style/CellLeftIcon</item>
+    <!--left icon point -->
+    <item name="cvLeftIconPointStyle">@style/CellLeftIconPoint</item>
+    <!--left text-->
+    <item name="cvLeftTextStyle">@style/CellLeftText</item>
+    <!--right text-->
+    <item name="cvRightTextStyle">@style/CellRightText</item>
+    <!--right top text-->
+    <item name="cvRightTopTextStyle">@style/CellRightTopText</item>
+    <!--right bottom text-->
+    <item name="cvRightBottomTextStyle">@style/CellRightBottomText</item>
+    <!--right icon-->
+    <item name="cvRightIcon">@drawable/icon_right_arrow_48_48</item>
+    <item name="cvRightIconStyle">@style/CellRightIcon</item>
+    <!--diver-->
+    <item name="cvDriverColor">@color/c_line01</item>
+    <item name="cvDriverHeight">@dimen/height_driver</item>
+    <item name="cvBottomDriverMarginLeft">16dp</item>
+  </style>
+
+  <style name="CellStyle.Small">
+
+  </style>
+
+  <style name="CellStyle.Small.WhiteBackground">
+    <item name="android:background">@drawable/all_white_c_bg01_background</item>
+  </style>
+
+  <style name="CellStyle.Medium">
+
+  </style>
+
+  <style name="CellStyle.Medium.WhiteBackground">
+    <item name="android:background">@drawable/all_white_c_bg01_background</item>
+  </style>
+
+
+  <!--NoMoreData-->
+  <style name="NoMoreDataDefaultStyle" parent="TextStyle.t_color03.t_font04">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:paddingTop">@dimen/padding_no_more_data</item>
+    <item name="android:paddingBottom">@dimen/padding_no_more_data</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <!--日期选择-->
+  <style name="CenterDialogStyle">
+
+  </style>
+
+  <style name="CenterDialogStyle.NoDarkBackground" parent="Theme.AppCompat.Light.Dialog">
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+
+  <style name="CenterDialogStyle.DarkDialog">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:background">@drawable/center_dialog_dark_drawable</item>
+  </style>
+
+  <style name="CenterDialogStyle.StatusImg">
+    <item name="android:layout_width">@dimen/status_img_size</item>
+    <item name="android:layout_height">@dimen/status_img_size</item>
+    <item name="android:layout_marginTop">@dimen/status_margin_portrait</item>
+    <item name="android:layout_marginBottom">@dimen/status_margin_portrait</item>
+    <item name="android:layout_marginLeft">@dimen/status_margin_left</item>
+    <item name="android:layout_marginRight">@dimen/status_img_text_margin</item>
+  </style>
+
+  <style name="CenterDialogStyle.StatusText">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:textColor">@color/t_color05</item>
+    <item name="android:textSize">@dimen/t_font06</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_marginRight">@dimen/status_margin_right</item>
+  </style>
+
+  <style name="CenterDialogStyle.Dialog">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@drawable/center_dialog_drawable</item>
+  </style>
+
+  <style name="CenterDialogStyle.Button">
+    <item name="android:layout_height">@dimen/center_button_height</item>
+    <item name="android:layout_width">@dimen/center_button_width</item>
+    <item name="android:textSize">@dimen/t_font01</item>
+    <item name="android:gravity">center</item>
+    <item name="android:background">@drawable/center_dialog_button</item>
+  </style>
+
+  <style name="CenterDialogStyle.NoWidthButton">
+    <item name="android:layout_height">@dimen/center_button_height</item>
+    <item name="android:textSize">@dimen/t_font01</item>
+    <item name="android:gravity">center</item>
+    <item name="android:background">@drawable/center_dialog_button</item>
+  </style>
+
+  <style name="CenterDialogStyle.CancelButton" parent="CenterDialogStyle.Button">
+    <item name="android:textColor">@color/center_dialog_cancel_button_color</item>
+  </style>
+
+  <style name="CenterDialogStyle.ConfirmButton" parent="CenterDialogStyle.Button">
+    <item name="android:textColor">@color/center_dialog_confirm_button_color</item>
+  </style>
+
+  <style name="CenterDialogStyle.SingleNoWidthButton" parent="CenterDialogStyle.NoWidthButton">
+    <item name="android:textColor">@color/center_dialog_confirm_button_color</item>
+  </style>
+
+  <style name="CenterDialogStyle.TitleButton">
+    <item name="android:layout_height">@dimen/center_title_height</item>
+    <item name="android:layout_width">@dimen/center_dialog_width</item>
+    <item name="android:textColor">@color/center_dialog_title_color</item>
+    <item name="android:textSize">@dimen/t_font01</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="CenterDialogStyle.EnsureTitle">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">@dimen/center_dialog_width</item>
+    <item name="android:textColor">@color/center_dialog_title_color</item>
+    <item name="android:textSize">@dimen/t_font01</item>
+    <item name="android:layout_marginTop">@dimen/ensure_button_title_margin_top</item>
+    <item name="android:layout_marginBottom">@dimen/ensure_button_title_margin_bottom</item>
+    <item name="android:paddingRight">@dimen/ensure_button_title_margin_landscape</item>
+    <item name="android:paddingLeft">@dimen/ensure_button_title_margin_landscape</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="CenterDialogStyle.EnsureText">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">@dimen/center_dialog_width</item>
+    <item name="android:textColor">@color/t_color04</item>
+    <item name="android:textSize">@dimen/t_font07</item>
+    <item name="android:layout_marginBottom">@dimen/ensure_button_text_margin_bottom</item>
+    <item name="android:paddingLeft">@dimen/ensure_button_title_margin_landscape</item>
+    <item name="android:paddingRight">@dimen/ensure_button_title_margin_landscape</item>
+    <item name="android:gravity">center</item>
+  </style>
+  <!--默认网络弹窗-->
+  <style name="DefaultNetworkDialogStyle">
+
+  </style>
+
+  <style name="DefaultNetworkDialogStyle.Tip" parent="TextStyle.t_color05.t_font03.bold">
+    <item name="background">@drawable/default_network_dialog_background</item>
+    <item name="android:paddingLeft">@dimen/padding_horizontal_default_network_dialog</item>
+    <item name="android:paddingRight">@dimen/padding_horizontal_default_network_dialog</item>
+    <item name="android:paddingTop">@dimen/padding_vertical_default_network_dialog</item>
+    <item name="android:paddingBottom">@dimen/padding_vertical_default_network_dialog</item>
+  </style>
+
+  <!--NoMoreData-->
+  <style name="HomeRecordStyle">
+    <item name="android:layout_width">@dimen/home_tab_record_size</item>
+    <item name="android:layout_height">@dimen/home_tab_record_size</item>
+  </style>
+
+</resources>

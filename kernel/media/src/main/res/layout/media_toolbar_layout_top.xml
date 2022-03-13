@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="toolBind"
+            type="com.jxntv.media.databind.MediaToolBarDataBind" />
+
+        <variable
+            name="videoObservable"
+            type="com.jxntv.base.model.video.VideoObservable" />
+
+        <variable
+            name="authorObservable"
+            type="com.jxntv.base.model.video.AuthorObservable" />
+
+        <import type="android.view.View" />
+
+        <import type="com.jxntv.base.utils.StringUtils" />
+
+        <import type="android.text.TextUtils" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/feed_layout_margin_toolbar_top"
+        android:visibility="@{authorObservable==null?View.GONE:View.VISIBLE,default=gone}"
+        android:onClick="@{(view)->toolBind.onItemClick(view)}"
+        tools:visibility="visible">
+
+        <!--头像-->
+        <com.jxntv.base.view.MediaImageView
+            android:id="@+id/toolbar_person_img"
+            android:layout_width="@dimen/DIMEN_31DP"
+            android:layout_height="@dimen/DIMEN_31DP"
+            android:onClick="@{(view)->toolBind.onPGCClick(view)}"
+            android:visibility="@{toolBind.showDate ? View.GONE : View.VISIBLE}"
+            app:circleCrop="@{true}"
+            app:imageData="@{authorObservable.avatar}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:placeholder='@{@drawable/ic_default_avatar}'
+            tools:src="@drawable/ic_default_avatar" />
+
+        <!--大V标识-->
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/header_authentication"
+            android:layout_width="@dimen/DIMEN_12DP"
+            android:layout_height="@dimen/DIMEN_12DP"
+            android:layout_marginStart="@dimen/DIMEN_21DP"
+            android:background="@drawable/icon_header_authentication"
+            android:visibility="@{authorObservable.isAuthentication?View.VISIBLE:View.GONE}"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_person_img"
+            app:layout_constraintLeft_toLeftOf="@id/toolbar_person_img"
+            tools:visibility="visible" />
+
+        <com.jxntv.widget.GVideoConstraintLayout
+            android:id="@+id/layout_name"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_31DP"
+            android:onClick="@{(view)->toolBind.onPGCClick(view)}"
+            android:layout_marginLeft="@dimen/media_tool_bar_person_img_margin"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_person_img"
+            app:layout_constraintStart_toEndOf="@id/toolbar_person_img"
+            app:layout_constraintTop_toTopOf="@id/toolbar_person_img">
+
+            <!--名称-->
+            <com.jxntv.widget.GVideoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="@{authorObservable.name}"
+                android:textColor="@{toolBind.getAuthorNameColor}"
+                android:textSize="@dimen/sp_13"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:visibility="@{!toolBind.showDate&amp;&amp;TextUtils.isEmpty(toolBind.getAuthorSourceText) ? View.VISIBLE : View.GONE}"
+                tools:visibility="gone"
+                tools:text="1231" />
+
+            <!--名称-->
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/toolbar_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="@{authorObservable.name}"
+                android:textColor="@{toolBind.getAuthorNameColor}"
+                android:textSize="@dimen/DIMEN_13DP"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="@{toolBind.showDate||TextUtils.isEmpty(toolBind.getAuthorSourceText)? View.GONE : View.VISIBLE}"
+                tools:text="张三" />
+
+            <!--认证信息或作者简介 -->
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/toolbar_sources_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/media_tool_bar_attention_right_min_margin"
+                android:maxLength="50"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:singleLine="true"
+                android:text="@{toolBind.getAuthorSourceText}"
+                android:textColor="@{toolBind.getAuthorSourceColor}"
+                android:textSize="@dimen/DIMEN_11DP"
+                android:visibility="@{toolBind.showDate||TextUtils.isEmpty(toolBind.getAuthorSourceText)? View.GONE : View.VISIBLE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="作者简介"
+                tools:visibility="visible" />
+
+        </com.jxntv.widget.GVideoConstraintLayout>
+
+        <!--关注与否-->
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/toolbar_attention_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="@{(view)->toolBind.onAttentionClick(view)}"
+            android:text='@{authorObservable.isFollow?  @string/media_is_attention : @string/media_not_attention}'
+            android:textColor="@{authorObservable.isFollow? toolBind.FollowedColor : @color/t_color06}"
+            android:textSize="@dimen/t_font03"
+            android:visibility="@{toolBind.showFollow ? View.VISIBLE : View.GONE}"
+            app:layout_constraintLeft_toRightOf="@+id/layout_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--圈子信息-->
+        <com.jxntv.widget.GVideoRLinearLayout
+            android:id="@+id/circle_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_21DP"
+            android:gravity="center"
+            android:onClick="@{(v)->toolBind.onCircleClick(v)}"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/DIMEN_9DP"
+            android:paddingEnd="@dimen/DIMEN_9DP"
+            android:layout_marginTop="@dimen/DIMEN_4DP"
+            android:tag="@{toolBind.tag}"
+            android:visibility="@{!toolBind.showCircle || videoObservable.showAuthUgc ? View.GONE : View.VISIBLE}"
+            app:border_color_normal="@color/color_df2e51"
+            app:border_width_normal="1px"
+            app:corner_radius="@dimen/DIMEN_20DP"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/toolbar_person_img"
+            tools:visibility="visible">
+
+            <com.jxntv.widget.GVideoImageView
+                android:layout_width="@dimen/DIMEN_19DP"
+                android:layout_height="@dimen/DIMEN_11DP"
+                android:background="@drawable/icon_publish_circle" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/DIMEN_5DP"
+                android:layout_marginTop="@dimen/DIMEN_5DP"
+                android:layout_marginEnd="@dimen/DIMEN_3DP"
+                android:layout_marginBottom="@dimen/DIMEN_5DP"
+                android:background="@color/color_df2e51" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/circle_name"
+                android:maxEms="4"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{toolBind.showCircleName}"
+                android:textColor="@color/color_93989C"
+                android:textSize="@dimen/sp_10"
+                tools:text="一二三四五六七八" />
+
+        </com.jxntv.widget.GVideoRLinearLayout>
+
+        <com.jxntv.widget.GVideoRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_24DP"
+            android:orientation="horizontal"
+            android:visibility="@{videoObservable.showAuthUgc?View.VISIBLE:View.GONE}"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone">
+
+            <com.jxntv.widget.GVideoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/DIMEN_18DP"
+                android:background="@drawable/shape_corners_right_200dp_soild_f2f2f2"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/DIMEN_10DP"
+                android:paddingTop="@dimen/DIMEN_2DP"
+                android:paddingRight="@dimen/DIMEN_8DP"
+                android:paddingBottom="@dimen/DIMEN_2DP"
+                android:singleLine="true"
+                android:text="@{@string/person_reply(StringUtils.showMaxLength(videoObservable.authUgcReplyContent,4))}"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/DIMEN_12DP"
+                tools:text="慕容回复" />
+
+            <com.jxntv.base.view.MediaImageView
+                android:layout_width="@dimen/DIMEN_24DP"
+                android:layout_height="@dimen/DIMEN_24DP"
+                app:circleCrop="@{true}"
+                app:imageData="@{videoObservable.authUgcReplyAvatar}"
+                app:placeholder='@{@drawable/ic_default_avatar}' />
+
+        </com.jxntv.widget.GVideoRelativeLayout>
+
+        <!--创建时间-->
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/toolbar_create_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@{@string/media_create_date(videoObservable.createDate)}"
+            android:textColor="@color/t_color03"
+            android:textSize="@dimen/t_font04"
+            android:visibility="@{toolBind.showDate ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

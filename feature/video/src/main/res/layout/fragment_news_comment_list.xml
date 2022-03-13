@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jxntv.base.view.GVideoSmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/bottom">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:fillViewport="true">
+
+                <com.jxntv.widget.GVideoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DIMEN_10DP"
+                        android:background="@color/c_f7f8fc" />
+
+                    <com.jxntv.widget.GVideoRecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+
+                </com.jxntv.widget.GVideoLinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </com.jxntv.base.view.GVideoSmartRefreshLayout>
+
+        <FrameLayout
+            android:id="@+id/placeholder"
+            android:layout_marginTop="@dimen/DIMEN_50DP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <include
+                android:id="@+id/input_panel"
+                layout="@layout/comment_input_panel" />
+
+        </LinearLayout>
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+</layout>

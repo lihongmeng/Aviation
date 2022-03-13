@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/test_nav_graph"
+    app:startDestination="@id/testFragment">
+
+  <fragment
+      android:id="@+id/testFragment"
+      android:name="com.jxntv.test.TestFragment"
+      android:label="testFragment" >
+    <action
+        android:id="@+id/action_to_environment"
+        app:destination="@id/environmentFragment" />
+    <action
+        android:id="@+id/action_to_splash"
+        app:destination="@id/splashFragment" />
+  </fragment>
+
+  <fragment
+      android:id="@+id/environmentFragment"
+      android:name="com.jxntv.test.environment.EnvironmentFragment"
+      android:label="environmentFragment">
+  </fragment>
+  <fragment
+      android:id="@+id/splashFragment"
+      android:name="com.jxntv.test.splashdata.SplashDataFragment"
+      android:label="splashFragment">
+  </fragment>
+</navigation>

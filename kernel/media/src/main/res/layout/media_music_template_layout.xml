@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="videoBind"
+            type="com.jxntv.media.databind.MediaVideoDataBind" />
+
+        <variable
+            name="feedModel"
+            type="com.jxntv.media.model.MediaModel" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <com.jxntv.widget.GVideoLinearLayout
+        android:orientation="vertical"
+        style="@style/feed_layout_margin"
+        android:onClick="@{(view)->videoBind.onItemClick(view)}">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/sound_feed_title"
+            style="@style/feed_text_style"
+            android:textSize="@{feedModel.showInNews()?@dimen/sp_17:@dimen/sp_15}"
+            android:visibility="@{feedModel.showInPgc()?View.GONE:View.VISIBLE}"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="@dimen/DIMEN_5DP"
+            android:textColor="@color/color_333333" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/r_r01"
+            app:cardElevation="@dimen/DIMEN_0DP">
+
+            <com.jxntv.widget.GVideoConstraintLayout
+                android:id="@+id/player_view_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/r_h02">
+
+                <com.jxntv.android.liteav.GVideoView
+                    android:id="@+id/player_view"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/bg_sound_cover"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintDimensionRatio="16:9" />
+
+                <com.jxntv.widget.CommonRoundImageView
+                    android:id="@+id/sound_img"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:imageData="@{feedModel.coverUrl}"
+                    app:placeholder="@{@drawable/media_default_cover_bg}"
+                    app:roundedCorners="@{@dimen/r_r01}"
+                    app:left_top_corner="true"
+                    app:left_bottom_corner="true"
+                    app:layout_constraintBottom_toBottomOf="@id/bg_sound_cover"
+                    app:layout_constraintDimensionRatio="13:9"
+                    app:layout_constraintLeft_toLeftOf="@id/bg_sound_cover"
+                    app:layout_constraintTop_toTopOf="@id/bg_sound_cover" />
+
+                <com.jxntv.widget.CommonRoundImageView
+                    android:id="@+id/sound_status_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@{videoBind.getSoundResource(feedModel)}"
+                    app:corner="@dimen/r_r01"
+                    app:right_bottom_corner="true"
+                    app:right_top_corner="true"
+                    app:layout_constraintBottom_toBottomOf="@id/bg_sound_cover"
+                    app:layout_constraintRight_toRightOf="@id/bg_sound_cover"
+                    app:layout_constraintTop_toTopOf="@id/bg_sound_cover" />
+
+                <View
+                    android:id="@+id/title_mask"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/feed_title_back_cover"
+                    android:visibility="@{feedModel.showInPgc()?View.VISIBLE:View.GONE}"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.jxntv.widget.GVideoTextView
+                    android:id="@+id/sound_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="@dimen/media_big_img_title_margin_left"
+                    android:layout_marginRight="@dimen/media_big_img_title_margin_left"
+                    android:layout_marginTop="@dimen/media_big_img_title_margin_top"
+                    android:textSize="@dimen/t_font01"
+                    android:visibility="@{feedModel.showInPgc()?View.VISIBLE:View.GONE}"
+                    android:maxLines="2"
+                    android:textColor="@color/t_color05" />
+
+                <com.jxntv.base.view.MediaImageView
+                    android:id="@+id/video_big_img"
+                    android:layout_width="@dimen/media_big_img_video_img_size"
+                    android:layout_height="@dimen/media_big_img_video_img_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/media_video_img_big"
+                    android:onClick="@{(view)->videoBind.dealMediaClick(view, feedModel)}" />
+
+            </com.jxntv.widget.GVideoConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </com.jxntv.widget.GVideoLinearLayout>
+
+</layout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/circle_nav_graph"
+    app:startDestination="@id/homeWatchTvFragment">
+
+    <!--首页的看电视功能父级Fragment-->
+    <fragment
+        android:id="@+id/homeWatchTvFragment"
+        android:name="com.jxntv.watchtv.ui.HomeWatchTvFragment"
+        android:label="HomeWatchTvFragment" />
+
+    <!--首页看电视Fragment，下方ViewPager中的子Fragment-->
+    <fragment
+        android:id="@+id/homeWatchTvTvListFragment"
+        android:name="com.jxntv.watchtv.ui.HomeWatchTvTvListFragment"
+        android:label="HomeWatchTvTvListFragment" />
+
+    <!--看电视频道详情页-->
+    <fragment
+        android:id="@+id/watchTvChannelDetailFragment"
+        android:name="com.jxntv.watchtv.ui.WatchTvChannelDetailFragment"
+        android:label="WatchTvChannelDetailFragment" />
+
+    <!--整期详情页-->
+    <fragment
+        android:id="@+id/watchTvWholePeriodDetailFragment"
+        android:name="com.jxntv.watchtv.ui.WatchTvWholePeriodDetailFragment"
+        android:label="WatchTvWholePeriodDetailFragment" />
+
+</navigation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.jxntv.widget.GVideoLinearLayout
+        android:id="@+id/web_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.jxntv.base.webview.GVWebView
+                android:id="@+id/web"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ProgressBar
+                android:id="@+id/progress_horizontal"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1DP"
+                android:visibility="gone"
+                android:progressDrawable="@drawable/web_progress_background"
+                tools:progress="50"/>
+
+            <com.jxntv.widget.GVideoFrameLayout
+                android:id="@+id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+    </com.jxntv.widget.GVideoLinearLayout>
+
+</layout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:orientation="vertical">
+
+    <com.jxntv.widget.GVideoImageView
+        android:id="@+id/function_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_black" />
+
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/function_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_12DP"
+        android:text="临时占位"
+        android:textColor="@color/t_color06"
+        android:textSize="@dimen/t_font01" />
+
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/function_button"
+        android:layout_width="160dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="@dimen/DIMEN_20DP"
+        android:gravity="center"
+        android:text="刷新--临时占位"
+        android:textColor="@color/t_color06"
+        android:textSize="@dimen/t_font01"  />
+  </LinearLayout>
+</layout>

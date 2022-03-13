@@ -1,0 +1,15 @@
+apply from: rootProject.file("library.gradle")
+apply plugin: 'androidx.navigation.safeargs'
+
+dependencies {
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
+  implementation deps.tog_kernel_base
+  implementation deps.tog_kernel_media
+  implementation deps.tog_kernel_stat
+  implementation deps.tog_kernel_liteav
+  implementation deps.tog_lib_crop
+  implementation files('libs/auth_number_product-2.12.3.4-log-online-standard-release.aar')
+  implementation files('libs/crashshield-2.1.3.2-release.aar')
+  implementation files('libs/main-2.1.3.2-release.aar')
+  implementation files('libs/logger-2.1.3.2-release.aar')
+}

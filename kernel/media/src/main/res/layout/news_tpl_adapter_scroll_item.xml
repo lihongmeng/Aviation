@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="feedModel"
+            type="com.jxntv.media.model.MediaModel" />
+
+        <import type="android.view.View" />
+
+        <import type="com.jxntv.utils.DateUtils" />
+
+    </data>
+
+    <com.jxntv.widget.GVideoLinearLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/DIMEN_8DP"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="@{feedModel.title}"
+            android:textColor="@color/t_color01"
+            android:textSize="@dimen/sp_15" />
+
+        <com.jxntv.widget.GVideoRTextView
+            android:id="@+id/tag_tv"
+            android:layout_width="@dimen/DIMEN_13DP"
+            android:layout_height="@dimen/DIMEN_13DP"
+            android:layout_marginEnd="@dimen/DIMEN_12DP"
+            android:gravity="center"
+            android:lines="1"
+            android:text="爆"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_10"
+            app:background_normal="@color/color_FC284D"
+            app:corner_radius="@dimen/DIMEN_1DP" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/create_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="@{DateUtils.friendlyTime(feedModel.getCreateDate())}"
+            android:textColor="@color/t_color04"
+            android:textSize="@dimen/sp_10" />
+
+
+    </com.jxntv.widget.GVideoLinearLayout>
+
+</layout>

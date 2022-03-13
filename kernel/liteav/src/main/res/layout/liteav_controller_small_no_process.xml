@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <com.jxntv.widget.GVideoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_42DP"
+            android:background="@drawable/shape_gradient_000000_70_000000_0_0_270"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <!--返回按钮-->
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/DIMEN_42DP"
+                android:layout_height="@dimen/DIMEN_42DP"
+                android:background="@drawable/icon_arrow_white_left"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <!--标题-->
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:maxLines="2"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/liteav_sp_17"
+                android:paddingRight="@dimen/liteav_dp_12"
+                app:layout_goneMarginLeft="@dimen/liteav_dp_12"
+                app:layout_constraintLeft_toRightOf="@id/iv_back"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/screen_projection"
+                android:layout_width="@dimen/DIMEN_42DP"
+                android:layout_height="@dimen/DIMEN_42DP"
+                android:scaleType="center"
+                android:layout_marginEnd="@dimen/DIMEN_5DP"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/icon_screen_projection" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.jxntv.widget.GVideoFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/liteav_player_bottom_shadow">
+
+            <!--进度控制器-->
+            <include
+                layout="@layout/liteav_controller_small_no_process_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.jxntv.widget.GVideoFrameLayout>
+
+        <!--播放结束后的重播按钮-->
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/iv_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/liteav_dp_20"
+            android:src="@drawable/liteav_replay"
+            android:background="@drawable/pendant_background_drawable"
+            android:visibility="gone" />
+
+        <!--播放异常的布局-->
+        <com.jxntv.android.liteav.view.ControllerProgressLayout
+            android:id="@+id/video_progress_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <!--投屏的控制器-->
+        <com.jxntv.base.view.ScreenProjectionLayout
+            android:id="@+id/screen_projection_controller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </com.jxntv.widget.GVideoFrameLayout>
+
+</layout>

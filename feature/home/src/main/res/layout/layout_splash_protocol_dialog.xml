@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <com.jxntv.widget.GVideoConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/CenterDialogStyle.Dialog">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/splash_protocol_dialog_title"
+            android:layout_height="0dp"
+            style="@style/CenterDialogStyle.TitleButton"
+            android:text=""
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/splash_protocol_context"/>
+
+        <ScrollView
+            android:id="@+id/splash_protocol_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/splash_protocol_dialog_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/splash_protocol_cancel"
+            >
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/content"
+                style="@style/CenterDialogStyle.TitleButton"
+                android:padding="10dp"
+                android:text="@string/home_confirm_protocol_text"
+                />
+        </ScrollView>
+
+
+        <com.jxntv.widget.GVideoButton
+            android:id="@+id/splash_protocol_cancel"
+            style="@style/CenterDialogStyle.CancelButton"
+            android:text="不同意"
+            app:layout_constraintTop_toBottomOf="@id/splash_protocol_context"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/splash_protocol_confirm"/>
+
+        <com.jxntv.widget.GVideoButton
+            android:id="@+id/splash_protocol_confirm"
+            style="@style/CenterDialogStyle.ConfirmButton"
+            android:text="同意"
+            app:layout_constraintTop_toBottomOf="@id/splash_protocol_context"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/splash_protocol_cancel"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

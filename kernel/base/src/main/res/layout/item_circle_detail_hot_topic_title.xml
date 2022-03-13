@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jxntv.widget.GVideoImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawablePadding="@dimen/DIMEN_5DP"
+    android:paddingLeft="@dimen/DIMEN_5DP"
+    android:paddingTop="@dimen/DIMEN_14DP"
+    android:paddingBottom="@dimen/DIMEN_14DP"
+    android:layout_marginLeft="@dimen/DIMEN_14DP"
+    android:src="@drawable/icon_hot_topic_circle_detail" />

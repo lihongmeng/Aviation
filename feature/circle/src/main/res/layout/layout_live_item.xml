@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jxntv.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/live_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_54DP"
+    android:background="@drawable/shape_solid_ffffff_corners_200dp"
+    android:gravity="center_vertical">
+
+    <com.jxntv.widget.GVideoImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_20DP"
+        android:background="@drawable/icon_live_room" />
+
+    <com.jxntv.widget.GVideoImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_4DP"
+        android:background="@drawable/icon_is_live" />
+
+    <com.jxntv.widget.GVideoTextView
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_10DP"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/color_4c4c4c"
+        tools:text="怎么处理和领导的关系" />
+
+    <com.jxntv.widget.GVideoImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_10DP"
+        android:background="@drawable/icon_jump_right"
+        android:layout_marginRight="@dimen/DIMEN_10DP" />
+
+</com.jxntv.widget.GVideoLinearLayout>

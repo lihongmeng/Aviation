@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jxntv.webview" >
+  <application>
+    <activity
+        android:name="com.jxntv.webview.WebViewActivity"
+        android:configChanges="orientation|screenSize"
+        android:exported="false"
+        android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+  </application>
+</manifest>

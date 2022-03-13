@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="adapter"
+      type="com.jxntv.account.adapter.MomentAdapter" />
+
+    <variable
+      name="media"
+      type="com.jxntv.account.model.MediaObservable" />
+
+    <variable
+      name="author"
+      type="com.jxntv.base.model.video.AuthorObservable" />
+
+    <variable
+      name="position"
+      type="androidx.databinding.ObservableInt" />
+  </data>
+
+  <com.jxntv.widget.GVideoConstraintLayout
+    style="@style/AdapterMoment.Container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="@{(v)->adapter.onItemClick(v,position)}">
+
+    <com.jxntv.widget.GVideoImageView
+      android:id="@+id/image_view_cover"
+      style="@style/AdapterMoment.Cover"
+      android:layout_width="0dp"
+      app:imageData="@{media.cover}"
+        app:placeholder="@{@drawable/media_default_cover_bg}"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:roundedCorners="@{@dimen/r_r01}" />
+
+    <com.jxntv.widget.GVideoImageView
+      style="@style/AdapterMoment.Play"
+      android:src="@drawable/ic_play"
+      app:layout_constraintBottom_toBottomOf="@id/image_view_cover"
+      app:layout_constraintLeft_toLeftOf="@id/image_view_cover"
+      app:layout_constraintRight_toRightOf="@id/image_view_cover"
+      app:layout_constraintTop_toTopOf="@id/image_view_cover" />
+
+    <com.jxntv.widget.GVideoTextView
+      style="@style/AdapterMoment.Description"
+      android:layout_width="0dp"
+      android:text="@{media.title}"
+      app:layout_constraintLeft_toLeftOf="@id/image_view_cover"
+      app:layout_constraintRight_toRightOf="@id/image_view_cover"
+      app:layout_constraintTop_toTopOf="@id/image_view_cover" />
+
+    <com.jxntv.widget.GVideoImageView
+      android:id="@+id/image_view_avatar"
+      style="@style/AdapterMoment.Avatar"
+      android:onClick="@{(v)->adapter.onUserClick(v,position)}"
+      app:circleCrop="@{true}"
+      app:imageData="@{author.avatar}"
+        app:placeholder='@{@drawable/ic_default_avatar}'
+      app:layout_constraintLeft_toLeftOf="@id/image_view_cover"
+      app:layout_constraintTop_toBottomOf="@id/image_view_cover" />
+
+    <com.jxntv.widget.GVideoTextView
+      android:id="@+id/text_view_owner_name"
+      style="@style/AdapterMoment.OwnerName"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@{author.name}"
+        android:onClick="@{(v)->adapter.onUserClick(v,position)}"
+      app:layout_constraintBottom_toTopOf="@+id/text_view_owner_description"
+      app:layout_constraintLeft_toRightOf="@id/image_view_avatar"
+      app:layout_constraintRight_toLeftOf="@+id/image_view_comment"
+      app:layout_constraintTop_toTopOf="@id/image_view_avatar"
+      app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <com.jxntv.widget.GVideoTextView
+      android:id="@+id/text_view_owner_description"
+      style="@style/AdapterMoment.OwnerDescription"
+      android:layout_width="0dp"
+      android:text="@{author.intro}"
+      android:onClick="@{(v)->adapter.onUserClick(v,position)}"
+      app:layout_constraintLeft_toLeftOf="@id/text_view_owner_name"
+      app:layout_constraintRight_toRightOf="@id/text_view_owner_name"
+      app:layout_constraintTop_toBottomOf="@id/text_view_owner_name"
+      tools:ignore="HardcodedText" />
+
+    <com.jxntv.widget.GVideoImageView
+      android:id="@+id/image_view_comment"
+      style="@style/AdapterMoment.Comment"
+      android:src="@drawable/ic_comment"
+      app:layout_constraintBottom_toBottomOf="@id/image_view_avatar"
+      app:layout_constraintRight_toLeftOf="@+id/image_view_share"
+      app:layout_constraintTop_toTopOf="@id/image_view_avatar" />
+
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guide_line_comment_count"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_end="@dimen/margin_adapter_moment_comment_count_guideline" />
+
+    <com.jxntv.widget.GVideoTextView
+      style="@style/AdapterMoment.CommentCount"
+      android:text="@{media.commentText}"
+        android:onClick="@{(v)->adapter.onCommentClick(v,position)}"
+      app:layout_constraintLeft_toLeftOf="@id/guide_line_comment_count"
+      app:layout_constraintRight_toRightOf="@id/guide_line_comment_count"
+      app:layout_constraintTop_toTopOf="@id/image_view_comment" />
+
+    <com.jxntv.widget.GVideoImageView
+      android:id="@+id/image_view_share"
+      style="@style/AdapterMoment.Operation"
+      android:onClick="@{(v)->adapter.share(v,position)}"
+      android:src="@drawable/ic_share"
+      app:layout_constraintBottom_toBottomOf="@id/image_view_avatar"
+      app:layout_constraintRight_toLeftOf="@+id/image_view_more"
+      app:layout_constraintTop_toTopOf="@id/image_view_avatar" />
+
+    <com.jxntv.widget.GVideoImageView
+      android:id="@+id/image_view_more"
+      style="@style/AdapterMoment.More"
+      android:onClick="@{(v)->adapter.more(v,position)}"
+      android:src="@drawable/ic_more_dark"
+      app:layout_constraintBottom_toBottomOf="@id/image_view_avatar"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="@id/image_view_avatar" />
+  </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

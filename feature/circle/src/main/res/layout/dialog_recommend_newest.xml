@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_000000_100">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/DIMEN_86DP"
+        android:id="@+id/root"
+        android:layout_height="@dimen/DIMEN_92DP"
+        android:background="@drawable/shape_soild_ffffff_corners_4dp">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/newest"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/hottest"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:paddingRight="@dimen/DIMEN_33DP"
+            android:paddingTop="@dimen/DIMEN_10DP"
+            android:paddingBottom="@dimen/DIMEN_5DP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_15"
+            android:paddingLeft="@dimen/DIMEN_16DP"
+            android:text="@string/newest" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/hottest"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/newest"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:paddingLeft="@dimen/DIMEN_16DP"
+            android:paddingRight="@dimen/DIMEN_33DP"
+            android:paddingTop="@dimen/DIMEN_10DP"
+            android:paddingBottom="@dimen/DIMEN_5DP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_15"
+            android:text="@string/hot_chat" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/newest_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_black_check"
+            app:layout_constraintBottom_toBottomOf="@id/newest"
+            app:layout_constraintRight_toRightOf="@id/newest"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginRight="@dimen/DIMEN_10DP"
+            app:layout_constraintTop_toTopOf="@id/newest" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/hottest_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_black_check"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/DIMEN_10DP"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/hottest"
+            app:layout_constraintRight_toRightOf="@id/hottest"
+            app:layout_constraintTop_toTopOf="@id/hottest" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

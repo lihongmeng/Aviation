@@ -1,0 +1,190 @@
+ext.buildVersions = [
+
+        applicationId    : "com.sobey.cloud.view.jiangxi",
+
+        buildToolsVersion: "30.0.2",
+        compileSdkVersion: 30,
+
+        minSdkVersion    : 21,
+        targetSdkVersion : 29,
+
+        versionCode      : 50304,
+        versionName      : "5.03.04",
+
+]
+
+ext.buildVersions = buildVersions
+
+def appKey = [
+
+        huawei_appId      : "10635419",
+        huawei_cpId       : "260086000021213032",
+
+        xiaomi_appId      : "2882303761517504972",
+        xiaomi_appKey     : "5331750467972",
+
+        oppo_appId        : "3387009",
+        oppo_appKey       : "8mkL123i6144KG4OGsGwgg8Gg",
+        oppo_appSecret    : "2caa566Ce2279a5b15f7E38da3001499",
+
+        vivo_appId        : "13930",
+        vivo_appKey       : "965168f0-c76d-49e0-ab9f-1cb72538f2a3",
+        vivo_appSecret    : "14ebaa2a-e7ba-4782-af50-4f182a2de3d1",
+
+        openinstall_appKey: "wty20g",
+
+        app_scheme        : "jinshipin"
+]
+
+ext.appKey = appKey
+
+def versions = [
+    retrofit: "2.9.0",
+    okhttp: "4.9.2",
+    rxAndroid: "3.0.0",
+    rxJava:"3.x.y",
+    rxPermission:"0.12",
+    appCompat: "1.2.0",
+    lifecycle: "2.2.0",
+    constraintLayout: "2.0.4",
+    recyclerView: "1.2.1",
+    navigation: "2.3.1",
+    paging: "2.1.2",
+    libphonenumberAndroid: "8.12.37",
+    smartRefreshLayout: "1.1.3",
+    room: "2.2.5",
+    glide: "4.12.0",
+    multidex: "2.0.1",
+    smartTabLayout: "2.0.0@aar",
+    coordinatorLayout: "1.1.0",
+    eventbus: "1.8.0",
+    flexbox: "2.0.1",
+    wheelPicker: "1.1.3",
+    exif: "1.2.0",
+    upload:"1.6.0",
+    rWidgetHelper:"0.0.8",
+    photoView:"2.3.0",
+    huawei_agconnent: "1.4.2.300",
+    huawei_hms_push: "5.0.2.300",
+    gson:"2.8.5",
+    banner :"2.2.1",
+    sensorsAnalytic :"2.2.1",
+    sensors_plugin :"3.4.0",
+    sensorsAnalyticsSDK:"5.4.7",
+    downloadFile :"1.7.7",
+    luban :"1.1.8",
+    weibosdk :"11.8.1",
+    qqOpenSDK :"3.52.0",
+    imSdk :"5.7.1435",
+    zxing:"3.6.0",
+    tencentLocation: "7.3.9",
+    lottie: "4.2.2",
+    jetty_server         : "8.1.18.v20150929",
+    jetty_servlet        : "8.1.18.v20150929",
+    jetty_client         : "8.1.18.v20150929",
+//    cling_core           : "2.1.1",
+    cling_support        : "2.1.1",
+    jsoup                : "1.13.1"
+]
+
+ext.versions = versions
+
+ext.deps = [
+        retrofit                  : "com.squareup.retrofit2:retrofit:${versions.retrofit}",
+        okhttpLogging             : "com.squareup.okhttp3:logging-interceptor:${versions.okhttp}",
+        converterGson             : "com.squareup.retrofit2:converter-gson:${versions.retrofit}",
+        adapterRxJava             : "com.squareup.retrofit2:adapter-rxjava3:${versions.retrofit}",
+        rxAndroid                 : "io.reactivex.rxjava3:rxandroid:${versions.rxAndroid}",
+        rxJava                    : "io.reactivex.rxjava3:rxjava:${versions.rxJava}",
+        appCompat                 : "androidx.appcompat:appcompat:${versions.appCompat}",
+        lifecycleExtensions       : "androidx.lifecycle:lifecycle-extensions:${versions.lifecycle}",
+        constraintLayout          : "androidx.constraintlayout:constraintlayout:${versions.constraintLayout}",
+        recyclerView              : "androidx.recyclerview:recyclerview:${versions.recyclerView}",
+        navigation_fragment       : "androidx.navigation:navigation-fragment:${versions.navigation}",
+        navigation_ui             : "androidx.navigation:navigation-ui:${versions.navigation}",
+        paging                    : "androidx.paging:paging-runtime:${versions.paging}",
+        pagingRxJava2             : "androidx.paging:paging-rxjava2:${versions.paging}",
+        libphonenumberAndroid     : "io.michaelrocks:libphonenumber-android:${versions.libphonenumberAndroid}",
+        smartRefreshLayout        : "com.scwang.smartrefresh:SmartRefreshLayout:${versions.smartRefreshLayout}",
+        room_rxjava2              : "androidx.room:room-rxjava2:${versions.room}",
+        room_runtime              : "androidx.room:room-runtime:${versions.room}",
+        room_compiler             : "androidx.room:room-compiler:${versions.room}",
+        glide                     : "com.github.bumptech.glide:glide:${versions.glide}",
+        glide_compiler            : "com.github.bumptech.glide:compiler:${versions.glide}",
+        multidex                  : "com.android.support:multidex:${versions.multidex}",
+        smartTabLayout            : "com.ogaclejapan.smarttablayout:library:${versions.smartTabLayout}",
+        smartTabLayoutUtils       : "com.ogaclejapan.smarttablayout:utils-v4:${versions.smartTabLayout}",
+        coordinatorLayout         : "androidx.coordinatorlayout:coordinatorlayout:${versions.coordinatorLayout}",
+        flexboxLayout             : "com.google.android:flexbox:${versions.flexbox}",
+        eventbus                  : "io.github.jeremyliao:live-event-bus-x:${versions.eventbus}",
+        wheelPicker               : "cn.aigestudio.wheelpicker:WheelPicker:${versions.wheelPicker}",
+        wxsdk                     : "com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+",
+        weibosdk                  : "io.github.sinaweibosdk:core:${versions.weibosdk}:@aar",
+        qqOpenSDK                 : "com.tencent.tauth:qqopensdk:${versions.qqOpenSDK}",
+        bugly_crash               : "com.tencent.bugly:crashreport:latest.release",
+        bugly_ndk_crash           : "com.tencent.bugly:nativecrashreport:3.7.7",
+        exif                      : "androidx.exifinterface:exifinterface:${versions.exif}",
+        upload                    : "com.aliyun.video.android:upload:${versions.upload}",
+        rWidgetHelper             : "com.github.RuffianZhong:RWidgetHelper:androidx.v${versions.rWidgetHelper}",
+        photoView                 : "com.github.chrisbanes:PhotoView:${versions.photoView}",
+        gson                      : "com.google.code.gson:gson:${versions.gson}",
+        banner                    : "io.github.youth5201314:banner:${versions.banner}",
+
+        //push相关
+        huawei_agconnent          : "com.huawei.agconnect:agconnect-core:${versions.huawei_agconnent}",
+        huawei_hms_push           : "com.huawei.hms:push:${versions.huawei_hms_push}",
+
+        sensorsAnalytics          : "com.sensorsdata.analytics.android:SensorsAnalyticsSDK:${versions.sensorsAnalyticsSDK}",
+        luban                     : "top.zibin:Luban:${versions.luban}",
+        downloadFile              : "com.liulishuo.filedownloader:library:${versions.downloadFile}",
+
+        imSdk                     : "com.tencent.imsdk:imsdk-plus:${versions.imSdk}",
+        tencentLiteAV             : "com.tencent.liteav:LiteAVSDK_Smart:latest.release",
+        zxing                     : "com.journeyapps:zxing-android-embedded:${versions.zxing}",
+        tencentLocation           : "com.tencent.map.geolocation:TencentLocationSdk-openplatform:${versions.tencentLocation}",
+        jetty_server              : "org.eclipse.jetty:jetty-server:${versions.jetty_server}",
+        jetty_servlet             : "org.eclipse.jetty:jetty-servlet:${versions.jetty_servlet}",
+        jetty_client              : "org.eclipse.jetty:jetty-client:${versions.jetty_client}",
+//    cling_core                : "org.fourthline.cling:cling-core:${versions.cling_core}",
+        cling_support             : "org.fourthline.cling:cling-support:${versions.cling_support}",
+        jsoup                     : "org.jsoup:jsoup:${versions.jsoup}",
+        rxPermission              : "com.github.tbruyelle:rxpermissions:${versions.rxPermission}",
+        lottie                    : "com.airbnb.android:lottie:${versions.lottie}",
+
+        tog_feature_account       : project(":feature:account"),
+        tog_feature_circle        : project(":feature:circle"),
+        tog_feature_video         : project(":feature:video"),
+        tog_feature_home          : project(":feature:home"),
+        tog_feature_feed          : project(":feature:feed"),
+        tog_feature_webview       : project(":feature:webview"),
+        tog_feature_search        : project(":feature:search"),
+        tog_feature_share         : project(":feature:share"),
+        tog_feature_test          : project(":feature:test"),
+        tog_feature_record        : project(":feature:record"),
+        tog_feature_live          : project(":feature:live"),
+        tog_feature_watch_tv      : project(":feature:watchtv"),
+        tog_feature_common        : project(":feature:common"),
+        tog_kernel_base           : project(":kernel:base"),
+        tog_kernel_network        : project(":kernel:network"),
+        tog_kernel_liteav         : project(":kernel:liteav"),
+        tog_kernel_media          : project(":kernel:media"),
+
+        tog_kernel_runtime        : project(":kernel:runtime"),
+        tog_kernel_event          : project(":kernel:event"),
+        tog_kernel_stat           : project(":kernel:stat"),
+        tog_kernel_push           : project(":kernel:push"),
+
+        tog_lib_ioc               : project(":library:ioc"),
+        tog_lib_widget            : project(":library:widget"),
+        tog_lib_crop              : project(":library:crop"),
+        tog_lib_utils             : project(":library:utils"),
+        tog_lib_videocache        : project(":library:videocache"),
+        tog_lib_res               : project(":res"),
+
+        tog_tuikit_chat           : project(":tuikit:chat"),
+        tog_tuikit_tuicore        : project(":tuikit:tuicore"),
+        tog_tuikit_tuichat        : project(":tuikit:tuichat"),
+        tog_tuikit_tuicontact     : project(":tuikit:tuicontact"),
+        tog_tuikit_tuiconversation: project(":tuikit:tuiconversation"),
+        tog_tuikit_tuigroup       : project(":tuikit:tuigroup"),
+]

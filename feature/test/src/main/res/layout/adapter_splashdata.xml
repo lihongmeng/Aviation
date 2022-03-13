@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <variable
+      name="position"
+      type="androidx.databinding.ObservableInt" />
+
+    <variable
+      name="adapter"
+      type="com.jxntv.test.splashdata.SplashDataAdapter" />
+
+    <variable
+      name="data"
+      type="com.jxntv.test.splashdata.SplashData" />
+  </data>
+
+  <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="@{(v)->adapter.onItemClick(v,position)}">
+
+    <com.jxntv.widget.GVideoTextView
+      android:id="@+id/text_view_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+        android:text='@{data.text}'
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jxntv.widget.GVideoImageView
+        android:id="@+id/image_view_name"
+        android:layout_width="@dimen/DIMEN_100DP"
+        android:layout_height="@dimen/DIMEN_100DP"
+        app:imageData='@{data.source}'
+        app:placeholder='@{@drawable/media_default_cover_bg}'
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_name" />
+  </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

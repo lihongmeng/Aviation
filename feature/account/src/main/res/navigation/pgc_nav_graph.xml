@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pgc_nav_graph"
+    app:startDestination="@id/pgcFragment">
+
+  <!--PGC 页面-->
+  <fragment
+      android:id="@+id/pgcFragment"
+      android:name="com.jxntv.account.ui.pgc.PgcFragment"
+      android:label="PgcFragment">
+    <argument
+        android:name="authorId"
+        app:argType="string" />
+    <action
+        android:id="@+id/action_pgc_to_ugc"
+        app:destination="@id/ugcFragment" />
+  </fragment>
+
+  <!--UGC 页面-->
+  <fragment
+      android:id="@+id/ugcFragment"
+      android:name="com.jxntv.account.ui.ugc.UgcFragment"
+      android:label="UgcFragment">
+    <argument
+        android:name="authorId"
+        app:argType="string" />
+    <action
+        android:id="@+id/action_ugc_to_relation"
+        app:destination="@id/relationFragment" />
+  </fragment>
+</navigation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.jxntv.search.SearchViewModel"
+            />
+    </data>
+    <com.jxntv.widget.GVideoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@color/color_ffffff"
+        android:onClick="@{(v)->viewModel.onLayoutClick(v)}">
+
+        <include
+            android:id="@+id/search_bar_include"
+            layout="@layout/layout_search_bar"/>
+
+        <include
+            android:id="@+id/history_include"
+            layout="@layout/layout_history"/>
+
+        <include
+            android:id="@+id/result_include"
+            layout="@layout/layout_search_result"/>
+
+        <FrameLayout
+            android:id="@+id/empty_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </com.jxntv.widget.GVideoLinearLayout>
+</layout>

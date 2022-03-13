@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_35DP"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.jxntv.widget.GVideoLinearLayout
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_23DP"
+            android:layout_marginRight="@dimen/DIMEN_10DP"
+            android:background="@drawable/shape_solid_f2f2f2_corners_200dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/DIMEN_2DP"
+            android:paddingRight="@dimen/DIMEN_2DP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

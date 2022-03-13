@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jxntv.widget.GVideoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/DIMEN_40DP"
+    android:ellipsize="end"
+    android:gravity="center_vertical"
+    android:singleLine="true"
+    android:textSize="@dimen/sp_15"
+    android:textColor="@color/color_333333"
+    tools:text="大家正在参与讨论大家正在参与讨论大家正在参与讨论大家正在参与讨论大家正在参与讨论大家正在参与讨论大家正在参与讨论大家正在参与讨论大家正在参与讨论大家正在参与讨论大家正在参与讨论大家正在参与讨论大家正在参与讨论大家正在参与讨论" />

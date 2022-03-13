@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.jxntv.widget.GVideoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical">
+
+        <com.jxntv.base.view.GVideoSmartRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnableFooterFollowWhenNoMoreData="true"
+            app:srlEnableLoadMoreWhenContentNotFull="false"
+            app:srlHeaderHeight="75dp">
+
+            <com.jxntv.widget.GVideoFrameLayout
+                android:id="@+id/recycler_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.jxntv.widget.GVideoRecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.jxntv.widget.GVideoFrameLayout
+                    android:id="@+id/empty_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <!--发布按钮-->
+                <com.jxntv.circle.view.PublishButton
+                    android:id="@+id/ask_question"
+                    android:layout_width="@dimen/DIMEN_46DP"
+                    android:layout_height="@dimen/DIMEN_46DP"
+                    android:layout_gravity="right|bottom"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="@dimen/DIMEN_24DP"
+                    android:layout_marginBottom="@dimen/DIMEN_29DP"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_publish_button_write"
+                    android:background="@drawable/shape_gradient_f36486_e4344e_angle_270_corners_200dp" />
+
+            </com.jxntv.widget.GVideoFrameLayout>
+
+        </com.jxntv.base.view.GVideoSmartRefreshLayout>
+
+    </com.jxntv.widget.GVideoLinearLayout>
+
+</layout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+  <data>
+
+    <variable
+        name="adapter"
+        type="com.jxntv.pptv.adapter.ChannelAdapter"
+        />
+
+    <variable
+        name="channel"
+        type="com.jxntv.pptv.model.Channel"
+        />
+    <import type="android.text.TextUtils" />
+    <import type="android.view.View" />
+  </data>
+
+  <com.jxntv.widget.GVideoConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/adapter_channel_section_height"
+      android:padding="@dimen/adapter_channel_section_padding"
+      >
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|start"
+        android:singleLine="true"
+        android:text="@{channel.name}"
+        android:textSize="@dimen/t_font01"
+        android:textColor="@color/t_color07"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/more"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/more"
+        android:textSize="@dimen/t_font02"
+        android:textColor="@color/t_color03"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:drawablePadding="@dimen/adapter_channel_section_more_drawable_padding"
+        android:gravity="center"
+        android:onClick="@{v->adapter.onHeaderMoreButtonClicked(v, channel)}"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/title"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+  </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

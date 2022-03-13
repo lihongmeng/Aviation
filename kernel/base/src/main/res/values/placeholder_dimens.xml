@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--====================占位图====================-->
+  <dimen name="margin_placeholder_text">20dp</dimen>
+  <dimen name="padding_horizontal_placeholder_button">25dp</dimen>
+  <dimen name="padding_vertical_placeholder_button">7dp</dimen>
+
+  <!--====================网络错误占位图====================-->
+  <dimen name="width_placeholder_network_not_available_image">200dp</dimen>
+  <dimen name="height_placeholder_network_not_available_image">150dp</dimen>
+
+  <!--====================空占位图====================-->
+  <dimen name="width_placeholder_empty_image">200dp</dimen>
+  <dimen name="height_placeholder_empty_image">150dp</dimen>
+
+  <!--====================加载占位图====================-->
+  <dimen name="width_placeholder_loading_image">200dp</dimen>
+  <dimen name="height_placeholder_loading_image">50dp</dimen>
+  <dimen name="size_placeholder_loading_loading">17dp</dimen>
+  <dimen name="margin_placeholder_loading_loading">6dp</dimen>
+
+  <!--====================未登录占位图====================-->
+  <dimen name="width_placeholder_un_login_image">200dp</dimen>
+  <dimen name="height_placeholder_un_login_image">150dp</dimen>
+</resources>

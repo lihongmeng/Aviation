@@ -1,0 +1,37 @@
+buildscript {
+  apply from: "versions.gradle"
+
+  repositories {
+    google()
+    jcenter()
+    maven { url 'https://jitpack.io' }
+    maven { url "https://maven.aliyun.com/nexus/content/repositories/releases" }
+    // 配置HMS Core SDK的Maven仓地址。
+    maven { url 'https://developer.huawei.com/repo/' }
+    maven { url 'http://4thline.org/m2' }
+    mavenCentral()
+  }
+  dependencies {
+    classpath "com.android.tools.build:gradle:4.2.0"
+    classpath "androidx.navigation:navigation-safe-args-gradle-plugin:${versions.navigation}"
+    classpath "com.huawei.agconnect:agcp:${versions.huawei_agconnent}"
+    classpath "com.sensorsdata.analytics.android:android-gradle-plugin2:${versions.sensors_plugin}"
+  }
+}
+
+allprojects {
+  repositories {
+    def rootRepositories = rootProject.buildscript.repositories
+    rootRepositories.each { repo ->
+      repositories.add(repo)
+      buildscript.repositories.add(repo)
+    }
+    // 配置HMS Core SDK的Maven仓地址。
+    maven { url 'https://developer.huawei.com/repo/' }
+    mavenCentral()
+  }
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}

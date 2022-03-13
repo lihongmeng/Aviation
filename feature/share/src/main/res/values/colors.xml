@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="share_title_color">#525566</color>
+  <color name="share_back_color">#f5f6fa</color>
+  <color name="share_back_color_dark">#1b1c1f</color>
+
+  <color name="share_cancel_back_color">#ffffff</color>
+  <color name="share_cancel_back_color_dark">#1b1b1f</color>
+
+  <color name="share_interval_color">#e6e9f5</color>
+  <color name="share_interval_color_dark">#2e2f33</color>
+</resources>

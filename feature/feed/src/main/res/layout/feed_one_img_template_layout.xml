@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="recommendBind"
+            type="com.jxntv.feed.frame.databind.FeedRecommendDataBind"
+            />
+        <variable
+            name="recommendModel"
+            type="com.jxntv.base.model.video.RecommendModel"
+            />
+    </data>
+    <com.jxntv.widget.GVideoConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/normal_recommend_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="@dimen/media_normal_vertical_margin"
+        android:onClick="@{(view)->recommendBind.onViewClick(view, recommendModel)}">
+
+        <com.jxntv.base.view.MediaImageView
+            android:id="@+id/one_img_img"
+            android:layout_width="@dimen/r_l02"
+            android:layout_height="@dimen/r_h03"
+            app:roundedCorners="@{@dimen/r_r01}"
+            app:imageData="@{recommendModel.imageUrl}"
+            app:placeholder="@{@drawable/media_default_cover_bg}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/one_img_title"
+            android:layout_width="@dimen/feed_one_img_title_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/feed_one_img_img_text_margin"
+            android:maxHeight="@dimen/feed_one_img_title_height_max"
+            android:minHeight="@dimen/feed_one_img_title_height_min"
+            android:textColor="@{recommendBind.getAuthorNameColor}"
+            android:textSize="@dimen/t_font03"
+            android:text="@{recommendModel.title}"
+            app:layout_constraintLeft_toRightOf="@+id/one_img_img"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/one_img_source"
+            app:layout_constraintVertical_chainStyle="packed"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/one_img_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_max="@dimen/feed_one_img_source_width_max"
+            android:layout_marginLeft="@dimen/feed_one_img_img_text_margin"
+            android:layout_marginTop="@dimen/feed_one_text_margin"
+            android:textColor="@{recommendBind.getAuthorSourceColor}"
+            android:textSize="@dimen/t_font04"
+            android:text="@{recommendModel.author}"
+            android:ellipsize="end"
+            app:layout_constraintLeft_toRightOf="@+id/one_img_img"
+            app:layout_constraintTop_toBottomOf="@+id/one_img_title"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/one_img_ad"
+            android:gravity="center"
+            android:layout_width="@dimen/feed_ad_width"
+            android:layout_height="@dimen/feed_ad_height"
+            android:background="@drawable/feed_ad_background_drawable"
+            android:textColor="@color/feed_ad_text_color"
+            android:textSize="@dimen/feed_ad_text_size"
+            android:text="@string/feed_ad"
+            app:layout_constraintBottom_toBottomOf="@id/one_img_source"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

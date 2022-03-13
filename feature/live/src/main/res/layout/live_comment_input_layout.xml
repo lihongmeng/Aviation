@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        >
+
+        <com.jxntv.widget.GVideoEditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/DIMEN_16DP"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:maxLines="4"
+            android:scrollbars="vertical"
+            android:hint="@string/comment_hint"
+            android:textColorHint="@color/color_a1a4b3"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/color_212229"
+            />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/sp_12"
+            android:background="@drawable/video_comment_input_send_background"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/send"
+            android:textColor="@drawable/video_comment_input_send_text"
+            android:textSize="@dimen/sp_14"
+            />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/shadow"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/c_shadow01"
+            android:layout_alignParentTop="true"
+            />
+    </RelativeLayout>
+</layout>

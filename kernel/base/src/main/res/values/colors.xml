@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Cell-->
+    <color name="all_cell_right_text_color">#737580</color>
+
+    <!--CenterDialog-->
+    <color name="center_dialog_back_color">#F2F2F2</color>
+    <color name="center_dialog_dark_back_color">#000000</color>
+    <color name="center_dialog_button_stroke_color">#293C3C43</color>
+    <color name="center_dialog_cancel_button_color">#BEBEC0</color>
+    <color name="center_dialog_confirm_button_color">#007AFF</color>
+    <!--网络弹窗-->
+    <color name="default_network_dialog_background_color">#000000</color>
+
+</resources>

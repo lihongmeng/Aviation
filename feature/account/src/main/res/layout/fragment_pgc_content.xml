@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="apter"
+            type="androidx.recyclerview.widget.RecyclerView.Adapter" />
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.account.ui.pgc.PgcContentViewModel" />
+    </data>
+
+    <com.jxntv.base.view.GVideoSmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ksrlv_enableLoadMore="true"
+        app:ksrlv_enableRefresh="true"
+        android:background="@color/color_f2f2f2"
+        app:srlEnableFooterFollowWhenNoMoreData="true"
+        app:srlEnableLoadMoreWhenContentNotFull="false">
+
+        <com.jxntv.widget.GVideoConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.jxntv.widget.GVideoRecyclerView
+                android:id="@+id/recycler_view"
+                style="@style/FragmentPgcStyle.RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:adapter="@{apter}"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <com.jxntv.widget.GVideoFrameLayout
+                android:id="@+id/empty_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/DIMEN_100DP"
+                android:visibility="gone" />
+
+        </com.jxntv.widget.GVideoConstraintLayout>
+
+    </com.jxntv.base.view.GVideoSmartRefreshLayout>
+
+</layout>

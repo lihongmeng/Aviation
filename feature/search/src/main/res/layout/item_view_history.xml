@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/search_history_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_42DP">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/icon_history"
+            android:layout_width="@dimen/DIMEN_13DP"
+            android:layout_height="@dimen/DIMEN_13DP"
+            android:src="@drawable/ic_search_history"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/DIMEN_10DP"
+            android:layout_marginEnd="@dimen/DIMEN_10DP"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/color_7f7f7f"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/icon_close"
+            app:layout_constraintStart_toEndOf="@id/icon_history"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="搜索历史" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/icon_close"
+            android:layout_width="@dimen/DIMEN_15DP"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_history_close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            android:background="@color/c_line02"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_D5P"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

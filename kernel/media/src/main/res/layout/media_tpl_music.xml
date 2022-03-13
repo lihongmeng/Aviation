@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <com.jxntv.widget.GVideoLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/music_layout"
+        style="@style/feed_layout_margin_root">
+
+        <include
+            android:id="@+id/feed_toolbar_top"
+            layout="@layout/media_toolbar_layout_top"/>
+
+        <include
+            android:id="@+id/music_include"
+            layout="@layout/media_music_template_layout"/>
+
+        <include
+            android:id="@+id/feed_toolbar_include"
+            layout="@layout/media_toolbar_layout_bottom"/>
+
+        <View
+            android:id="@+id/line"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            style="@style/feed_layout_line" />
+
+    </com.jxntv.widget.GVideoLinearLayout>
+</layout>

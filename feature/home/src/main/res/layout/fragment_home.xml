@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/shadow"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/c_shadow01"
+                app:layout_constraintBottom_toTopOf="@id/tab_layout" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_tab_height"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:tabBackground="@android:color/transparent"
+                app:tabIndicatorHeight="0dp"
+                app:tabRippleColor="@android:color/transparent" />
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/record_button"
+                android:layout_width="@dimen/home_tab_record_size"
+                android:layout_height="@dimen/home_tab_record_size"
+                android:layout_marginBottom="@dimen/home_tab_record_margin_bottom"
+                android:src="@drawable/home_tab_record_drawable"
+                app:layout_constraintBottom_toBottomOf="@id/tab_layout"
+                app:layout_constraintLeft_toLeftOf="@id/tab_layout"
+                app:layout_constraintRight_toRightOf="@id/tab_layout"
+                app:layout_constraintTop_toTopOf="@id/tab_layout" />
+
+            <com.jxntv.home.HomeViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@id/shadow"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.jxntv.service.view.FloatAudioTipView
+                android:id="@+id/float_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_60DP"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <!--用于拦截我的页面的点击事件-->
+            <View
+                android:id="@+id/me"
+                android:layout_width="@dimen/DIMEN_1DP"
+                android:layout_height="@dimen/home_tab_height"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tab_layout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_layout_right_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

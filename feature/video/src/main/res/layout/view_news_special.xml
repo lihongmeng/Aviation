@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.jxntv.android.video.ui.news.NewsDetailViewModel" />
+
+        <variable
+            name="videoModel"
+            type="com.jxntv.base.model.video.VideoModel" />
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                <com.jxntv.widget.GVideoImageView
+                    android:id="@+id/bg_special_big"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_300DP"
+                    android:scaleType="fitXY"
+                    app:imageData="@{videoModel.detailBigPic}"
+                    app:layout_collapseMode="pin"
+                    app:layout_collapseParallaxMultiplier="0.7" />
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetStart="0dp"
+                    app:layout_collapseMode="pin">
+
+                    <com.jxntv.widget.GVideoImageView
+                        android:id="@+id/bg_special_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:imageData="@{videoModel.detailSmallPic}"
+                        android:scaleType="fitXY" />
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.jxntv.widget.GVideoFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <include
+                android:id="@+id/news_content"
+                layout="@layout/view_news_content" />
+
+        </com.jxntv.widget.GVideoFrameLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

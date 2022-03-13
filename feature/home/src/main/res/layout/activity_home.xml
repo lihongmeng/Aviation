@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.jxntv.home.splash.SplashViewModel"
+            />
+        <variable
+            name="binding"
+            type="com.jxntv.home.splash.binding.SplashDataBinding"
+            />
+    </data>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/fragment_home_module_activity"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/home_module_nav_graph"
+            />
+    </FrameLayout>
+</layout>

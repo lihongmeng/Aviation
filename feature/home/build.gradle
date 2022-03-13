@@ -1,0 +1,28 @@
+apply from: rootProject.file("library.gradle")
+
+android {
+
+    defaultConfig {
+
+        manifestPlaceholders = [
+                openinstall_appKey: appKey.openinstall_appKey,
+                app_scheme: appKey.app_scheme,
+        ]
+        buildConfigField "String", "app_scheme", "\"${appKey.app_scheme}\" "
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation deps.tog_kernel_base
+    implementation deps.tog_kernel_liteav
+    implementation deps.tog_kernel_stat
+    implementation deps.tog_feature_common
+
+    //Room
+    implementation deps.room_rxjava2
+    implementation deps.room_runtime
+    annotationProcessor deps.room_compiler
+    implementation files('libs/OpenInstall_v2.5.3.jar')
+}

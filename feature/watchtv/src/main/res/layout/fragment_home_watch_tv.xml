@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.watchtv.ui.HomeWatchTvViewModel" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jxntv.base.view.GVideoSmartRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_ffffff"
+            app:ksrlv_enableLoadMore="true"
+            app:ksrlv_enableRefresh="true"
+            app:ksrlv_onLoadMore="@{(v)->viewModel.onLoadMore(v)}"
+            app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}"
+            app:srlEnableFooterFollowWhenNoMoreData="true"
+            app:srlEnableLoadMoreWhenContentNotFull="true">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/app_bar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:elevation="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/recycler_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/color_ffffff"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                        <FrameLayout
+                            android:id="@+id/banner_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/DIMEN_192DP"
+                            android:layout_marginStart="@dimen/DIMEN_10DP"
+                            android:layout_marginEnd="@dimen/DIMEN_10DP"
+                            android:background="@color/color_f2f2f2">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:cardCornerRadius="@dimen/DIMEN_4DP"
+                                app:cardElevation="@dimen/DIMEN_0DP"
+                                app:layout_constraintStart_toEndOf="@id/layout"
+                                app:layout_constraintTop_toBottomOf="@id/layout">
+
+                                <com.jxntv.widget.GVideoBanner
+                                    android:id="@+id/banner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </FrameLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/DIMEN_10DP"
+                            android:layout_marginEnd="@dimen/DIMEN_10DP"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/DIMEN_10DP"
+                            android:background="@drawable/shape_gradient_fff4f4_fffaf4_90">
+
+                            <com.jxntv.widget.GVideoImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/icon_home_watch_tv_live_bg" />
+
+                            <com.jxntv.widget.GVideoTextView
+                                android:id="@+id/tv_channel_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/DIMEN_10DP"
+                                android:layout_marginTop="@dimen/DIMEN_16DP"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:text="@string/tv_channel"
+                                android:textColor="@color/color_333333"
+                                android:textSize="@dimen/sp_15"
+                                android:textStyle="bold" />
+
+                            <com.jxntv.widget.WaveIndicatorView
+                                android:layout_width="@dimen/DIMEN_17DP"
+                                android:layout_height="@dimen/DIMEN_12DP"
+                                android:layout_marginStart="@dimen/DIMEN_5DP"
+                                android:layout_marginTop="@dimen/DIMEN_20DP"
+                                android:layout_toEndOf="@id/tv_channel_title"
+                                app:indicator_color="@color/color_e4344e"
+                                app:indicator_count="3"
+                                app:indicator_spacing="@dimen/DIMEN_2DP"
+                                app:indicator_width="@dimen/DIMEN_2D5P"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <com.jxntv.widget.GVideoRecyclerView
+                                android:id="@+id/tv_channel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_channel_title"
+                                android:paddingTop="@dimen/DIMEN_12DP"
+                                android:paddingBottom="@dimen/DIMEN_14DP"
+                                android:scrollbars="none" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/hot_tv_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/DIMEN_182DP"
+                            android:background="@color/color_ffffff"
+                            android:orientation="vertical">
+
+                            <com.jxntv.widget.GVideoTextView
+                                android:id="@+id/hot_tv_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/icon_home_tv_hot_tv"
+                                android:drawablePadding="@dimen/DIMEN_7DP"
+                                android:includeFontPadding="false"
+                                android:paddingStart="@dimen/DIMEN_20DP"
+                                android:paddingTop="@dimen/DIMEN_16DP"
+                                android:text="@string/hot_tv"
+                                android:textColor="@color/color_333333"
+                                android:textSize="@dimen/sp_15"
+                                android:textStyle="bold" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/hot_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="@dimen/DIMEN_12DP"
+                                android:scrollbars="none" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/DIMEN_10DP"
+                            android:background="@color/color_f2f2f2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@color/color_ffffff">
+
+                            <com.jxntv.widget.GVideoTextView
+                                android:id="@+id/all_tv_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/icon_home_tv_all_tv"
+                                android:drawablePadding="@dimen/DIMEN_7DP"
+                                android:includeFontPadding="false"
+                                android:paddingStart="@dimen/DIMEN_20DP"
+                                android:paddingTop="@dimen/DIMEN_16DP"
+                                android:text="@string/all_tv"
+                                android:textColor="@color/color_333333"
+                                android:textSize="@dimen/sp_15"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/tv_list_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DIMEN_45DP"
+                        android:background="@drawable/shape_soild_ffffff_corners_10dp_top"
+                        android:scrollbars="none"
+                        app:layout_scrollFlags="snap" />
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/tv_channel_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:visibility="gone"
+                    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+                    android:background="@color/color_ffffff" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </com.jxntv.base.view.GVideoSmartRefreshLayout>
+
+        <FrameLayout
+            android:id="@+id/empty_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</layout>

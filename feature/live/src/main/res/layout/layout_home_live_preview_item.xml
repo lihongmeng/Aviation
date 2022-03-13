@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.jxntv.widget.GVideoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/DIMEN_10DP"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/root_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.jxntv.widget.GVideoRImageView
+                android:id="@+id/cover_left"
+                android:layout_width="@dimen/DIMEN_160DP"
+                android:layout_height="@dimen/DIMEN_90DP"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/DIMEN_12DP"
+                android:background="@drawable/shape_soild_f7f7f7_corners_4dp"
+                app:corner_radius="@dimen/DIMEN_4DP" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/title_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_5DP"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/color_333333"
+                android:maxLines="2"
+                android:ellipsize="end"
+                tools:text="1234567894567894123456789456789456945645645612345678945678945694564564561234567894567894569456456456569456456456"
+                android:layout_alignStart="@id/cover_left"
+                android:layout_alignEnd="@id/cover_left"
+                android:layout_below="@id/cover_left" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/root_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <com.jxntv.widget.GVideoRImageView
+                android:id="@+id/cover_right"
+                android:layout_width="@dimen/DIMEN_160DP"
+                android:layout_height="@dimen/DIMEN_90DP"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/DIMEN_12DP"
+                android:background="@drawable/shape_soild_f7f7f7_corners_4dp"
+                app:corner_radius="@dimen/DIMEN_4DP" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/title_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_5DP"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/color_333333"
+                android:maxLines="2"
+                android:ellipsize="end"
+                tools:text="1234567894567894569456456456"
+                android:layout_alignStart="@id/cover_right"
+                android:layout_alignEnd="@id/cover_right"
+                android:layout_below="@id/cover_right" />
+
+        </RelativeLayout>
+
+    </com.jxntv.widget.GVideoLinearLayout>
+
+</layout>

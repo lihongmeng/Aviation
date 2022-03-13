@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/message_notification_nav_graph"
+    app:startDestination="@id/messageNotificationFragment">
+
+  <fragment
+      android:id="@+id/messageNotificationFragment"
+      android:name="com.jxntv.account.ui.notification.MessageNotificationFragment"
+      android:label="MessageNotificationFragment">
+    <action
+        android:id="@+id/action_message_notification_to_message_notification_detail"
+        app:destination="@id/messageNotificationDetailFragment" />
+    <action
+        android:id="@+id/action_to_imChatNotificationFragment"
+        app:destination="@id/imChatNotificationFragment" />
+  </fragment>
+  <fragment
+      android:id="@+id/messageNotificationDetailFragment"
+      android:name="com.jxntv.account.ui.notification.detail.MessageNotificationDetailFragment"
+      android:label="MessageNotificationDetailFragment">
+    <argument
+        android:name="msgType"
+        app:argType="integer" />
+    <argument
+        android:name="title"
+        app:argType="string" />
+  </fragment>
+
+  <fragment
+      android:id="@+id/imChatNotificationFragment"
+      android:name="com.jxntv.account.ui.notification.IMChatNotificationFragment"
+      android:label="IMChatNotificationFragment"/>
+</navigation>

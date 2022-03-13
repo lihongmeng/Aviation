@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/color_f7f7f7"
+        android:clickable="true"
+        android:focusable="true">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/shadow"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/c_shadow01"
+            android:layout_alignParentTop="true"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_42DP"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:paddingLeft="@dimen/DIMEN_14DP"
+            android:paddingRight="@dimen/DIMEN_14DP"
+            android:focusable="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/send"
+            android:textColor="@drawable/video_comment_input_white_send_text"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoEditText
+            android:id="@+id/input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/DIMEN_14DP"
+            android:layout_marginTop="@dimen/DIMEN_5DP"
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            android:layout_marginBottom="@dimen/DIMEN_5DP"
+            android:background="@color/color_ffffff"
+            android:gravity="center_vertical"
+            android:hint="@string/comment_hint"
+            android:maxLines="4"
+            android:padding="@dimen/DIMEN_6DP"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/send"
+            android:scrollbars="vertical"
+            android:textColor="@color/color_212229"
+            android:textColorHint="@color/color_a1a4b3"
+            android:textSize="@dimen/sp_14" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

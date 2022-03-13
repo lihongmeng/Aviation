@@ -1,0 +1,19 @@
+apply from: rootProject.file('library.gradle')
+android {
+  packagingOptions{
+    exclude('AndroidManifest.xml')
+    exclude('R.txt')
+    exclude('res/values/values.xml')
+    exclude('annotations.zip')
+    exclude('classes.jar')
+  }
+}
+dependencies {
+  implementation deps.constraintLayout
+  implementation deps.tog_kernel_base
+  implementation deps.tog_lib_widget
+  implementation deps.tog_lib_videocache
+  implementation deps.tog_lib_res
+  implementation deps.tog_kernel_stat
+  implementation deps.tencentLiteAV
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="VisibilityAlphaBehavior">
+    <attr name="vabReferenceViewId" format="reference" />
+    <attr name="vabVisibleWhenScrollUp" format="boolean" />
+    <attr name="vabVisibleMinScrollDistance" format="dimension|reference" />
+    <attr name="vabScrollFactor" format="float" />
+    <attr name="vabVisibleSubHeight" format="dimension|reference" />
+  </declare-styleable>
+</resources>

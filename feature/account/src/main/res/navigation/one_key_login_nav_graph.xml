@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/phone_nav_graph"
+    app:startDestination="@id/oneKeyLoginFragment">
+
+    <!--一键登录-->
+    <fragment
+        android:id="@+id/oneKeyLoginFragment"
+        android:name="com.jxntv.account.ui.onekeylogin.OneKeyLoginFragment"
+        android:label="OneKeyLoginFragment" />
+
+</navigation>

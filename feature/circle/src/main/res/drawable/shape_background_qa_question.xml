@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:centerX="0"
+        android:centerY="0"
+        android:endColor="#ffe5344e"
+        android:gradientRadius="0dp"
+        android:startColor="#ffff657c"
+        android:type="linear"
+        android:useLevel="true" />
+    <corners android:radius="@dimen/DIMEN_29DP" />
+    <item android:name="android:shadowColor">#66e4344e</item>
+    <item android:name="android:shadowDx">0</item>
+    <item android:name="android:shadowDy">0</item>
+</shape>

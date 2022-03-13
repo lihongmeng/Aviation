@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--====================收藏适配器====================-->
+  <style name="AdapterFavorite">
+
+  </style>
+
+  <style name="AdapterFavorite.Container">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@drawable/all_transparent_c_bg01_background</item>
+  </style>
+
+  <style name="AdapterFavorite.CoverBackground">
+    <item name="android:layout_width">@dimen/width_adapter_favorite_cover_background</item>
+    <item name="android:layout_height">0dp</item>
+    <item name="android:background">@drawable/adapter_favorite_cover_background</item>
+    <item name="android:layout_marginTop">@dimen/margin_top_adapter_favorite_cover_background</item>
+    <item name="android:layout_marginBottom">@dimen/margin_bottom_adapter_favorite_cover_background</item>
+  </style>
+
+  <style name="AdapterFavorite.VerticalCoverBackground" parent="AdapterFavorite.CoverBackground">
+    <item name="android:layout_height">@dimen/height_adapter_favorite_vertical_cover_background
+    </item>
+  </style>
+
+  <style name="AdapterFavorite.Cover">
+    <item name="android:layout_width">@dimen/width_adapter_favorite_cover</item>
+    <item name="android:layout_height">@dimen/height_adapter_favorite_cover</item>
+    <item name="android:layout_marginTop">@dimen/margin_top_adapter_favorite_cover</item>
+    <item name="android:layout_marginBottom">@dimen/margin_top_adapter_favorite_cover</item>
+  </style>
+
+  <style name="AdapterFavorite.Play">
+    <item name="android:layout_width">@dimen/size_adapter_favorite_play</item>
+    <item name="android:layout_height">@dimen/size_adapter_favorite_play</item>
+  </style>
+
+  <style name="AdapterFavorite.VerticalCover" parent="AdapterFavorite.Cover">
+    <item name="android:layout_height">@dimen/height_adapter_favorite_short_video_cover</item>
+  </style>
+
+  <style name="AdapterFavorite.GroupName" parent="TextStyle.t_color01.t_font01.bold">
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+    <item name="android:textSize">@dimen/text_size_adapter_favorite_group_name</item>
+    <item name="android:paddingTop">@dimen/padding_top_adapter_favorite_group_name</item>
+    <item name="android:paddingBottom">0dp</item>
+  </style>
+
+  <style name="AdapterFavorite.Count" parent="TextStyle.t_color04.t_font04">
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+    <item name="android:paddingTop">@dimen/padding_top_adapter_favorite_count</item>
+    <item name="android:paddingBottom">@dimen/padding_top_adapter_favorite_count</item>
+  </style>
+
+  <style name="AdapterFavorite.RightArrow" parent="IconStyle.X_Small">
+    <item name="android:src">@drawable/icon_right_arrow_48_48</item>
+    <item name="android:layout_marginRight">@dimen/margin_right_adapter_favorite_arrow</item>
+  </style>
+
+  <style name="AdapterFavorite.Driver" parent="AllDriverStyle">
+
+  </style>
+
+  <!--====================作品适配器====================-->
+  <style name="AdapterComposition">
+
+  </style>
+
+  <style name="AdapterComposition.Container">
+    <item name="android:padding">@dimen/padding_adapter_composition_media_container</item>
+    <item name="android:background">@drawable/all_transparent_c_bg01_background</item>
+  </style>
+
+  <style name="AdapterComposition.Cover">
+
+  </style>
+
+  <style name="AdapterComposition.PrivacyTag">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginBottom">@dimen/margin_adapter_composition_media_privacy_tag</item>
+    <item name="android:layout_marginRight">@dimen/margin_adapter_composition_media_privacy_tag</item>
+  </style>
+
+  <!--====================一列媒体适配器====================-->
+  <style name="AdapterOneColumnStyle">
+
+  </style>
+
+  <style name="AdapterOneColumnStyle.Container">
+    <item name="android:paddingLeft">
+      @dimen/padding_horizontal_adapter_one_column_media_container
+    </item>
+    <item name="android:paddingRight">
+      @dimen/padding_horizontal_adapter_one_column_media_container
+    </item>
+    <item name="android:paddingTop">
+      @dimen/padding_vertical_adapter_one_column_media_container
+    </item>
+    <item name="android:paddingBottom">
+      @dimen/padding_vertical_adapter_one_column_media_container
+    </item>
+    <item name="android:background">@drawable/all_transparent_c_bg01_background</item>
+  </style>
+
+  <style name="AdapterOneColumnStyle.Cover">
+    <item name="android:layout_width">@dimen/width_adapter_one_column_media_cover</item>
+    <item name="android:layout_height">@dimen/height_adapter_one_column_media_cover</item>
+  </style>
+
+  <style name="AdapterOneColumnStyle.Tag">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginLeft">6dp</item>
+    <item name="android:layout_marginTop">6dp</item>
+  </style>
+
+  <style name="AdapterOneColumnStyle.Description" parent="TextStyle.t_color01.t_font03">
+    <item name="android:layout_marginLeft">
+      @dimen/margin_left_adapter_one_column_media_description
+    </item>
+    <item name="android:layout_marginBottom">
+      @dimen/margin_bottom_adapter_one_column_media_description
+    </item>
+    <item name="android:layout_marginTop">
+      @dimen/margin_top_adapter_one_column_media_description
+    </item>
+    <item name="android:maxLines">2</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
+  <style name="AdapterOneColumnStyle.OwnerName" parent="TextStyle.t_color03.t_font04">
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
+  <style name="AdapterOneColumnStyle.More" parent="IconStyle.Medium">
+    <item name="android:layout_marginBottom">
+      @dimen/margin_bottom_adapter_one_column_media_more
+    </item>
+  </style>
+
+  <!--====================两列媒体适配器====================-->
+  <style name="AdapterTwoColumnStyle">
+
+  </style>
+
+  <style name="AdapterTwoColumnStyle.Container">
+    <item name="android:padding">@dimen/padding_adapter_two_column_media_container</item>
+    <item name="android:background">@drawable/all_transparent_c_bg01_background</item>
+  </style>
+
+  <style name="AdapterTwoColumnStyle.Cover">
+
+  </style>
+
+  <style name="AdapterTwoColumnStyle.Tag">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginLeft">6dp</item>
+
+    <item name="android:layout_marginTop">6dp</item>
+  </style>
+
+  <style name="AdapterTwoColumnStyle.Description" parent="TextStyle.t_color05.t_font02.bold">
+    <item name="android:layout_marginLeft">
+      @dimen/margin_left_adapter_two_column_media_description
+    </item>
+    <item name="android:layout_marginRight">
+      @dimen/margin_left_adapter_two_column_media_description
+    </item>
+    <item name="android:layout_marginBottom">
+      @dimen/margin_bottom_adapter_two_column_media_description
+    </item>
+    <item name="android:maxLines">2</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
+
+  <style name="AdapterTwoColumnStyle.OwnerAvatar" parent="IconStyle.Small">
+    <item name="android:layout_marginLeft">@dimen/margin_adapter_two_column_media_avatar</item>
+    <item name="android:layout_marginBottom">@dimen/margin_adapter_two_column_media_avatar</item>
+  </style>
+
+  <style name="AdapterTwoColumnStyle.OwnerName" parent="TextStyle.t_color05.t_font04">
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+    <item name="android:layout_marginLeft">@dimen/margin_adapter_two_column_media_owner_name</item>
+    <item name="android:layout_marginRight">@dimen/margin_adapter_two_column_media_owner_name</item>
+  </style>
+
+  <style name="AdapterTwoColumnStyle.More" parent="IconStyle.Small">
+    <item name="android:layout_marginRight">@dimen/margin_adapter_two_column_media_owner_more</item>
+    <item name="android:layout_marginBottom">
+      @dimen/margin_adapter_two_column_media_owner_more
+    </item>
+  </style>
+
+  <!--====================Pgc 适配器====================-->
+  <style name="AdapterPgcStyle">
+
+  </style>
+
+  <style name="AdapterPgcStyle.Container">
+    <item name="android:paddingLeft">@dimen/padding_left_adapter_pgc</item>
+    <item name="android:paddingRight">@dimen/padding_right_adapter_pgc</item>
+    <item name="android:paddingTop">@dimen/padding_top_adapter_pgc</item>
+    <item name="android:paddingBottom">@dimen/padding_bottom_adapter_pgc</item>
+    <item name="android:background">@drawable/all_transparent_c_bg01_background</item>
+  </style>
+
+  <style name="AdapterPgcStyle.Cover">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">@dimen/height_adapter_pgc_cover</item>
+  </style>
+
+  <style name="AdapterPgcStyle.Play" parent="IconStyle.XX_Large">
+
+  </style>
+
+  <style name="AdapterPgcStyle.Description" parent="TextStyle.t_color05.t_font01.bold">
+    <item name="android:layout_marginTop">@dimen/margin_top_adapter_pgc_description</item>
+    <item name="android:layout_marginLeft">@dimen/margin_left_adapter_pgc_description</item>
+    <item name="android:layout_marginRight">@dimen/margin_left_adapter_pgc_description</item>
+  </style>
+
+  <style name="AdapterPgcStyle.CreatedAt" parent="TextStyle.t_color03.t_font04">
+
+  </style>
+
+  <style name="AdapterPgcStyle.Operation" parent="IconStyle.Medium">
+    <item name="android:layout_marginRight">@dimen/margin_right_adapter_pgc_operation</item>
+  </style>
+
+  <style name="AdapterPgcStyle.Comment" parent="AdapterPgcStyle.Operation">
+    <item name="android:layout_marginTop">@dimen/margin_top_adapter_pgc_comment</item>
+  </style>
+
+  <style name="AdapterPgcStyle.Favorite" parent="AdapterPgcStyle.Operation">
+    <item name="android:layout_marginRight">@dimen/margin_right_adapter_pgc_favorite</item>
+  </style>
+
+  <style name="AdapterPgcStyle.CommentCount" parent="TextStyle.t_color01.t_font02">
+    <item name="android:textSize">@dimen/text_size_adapter_pgc_comment</item>
+    <item name="android:paddingLeft">@dimen/padding_adapter_pgc_comment</item>
+    <item name="android:paddingRight">@dimen/padding_adapter_pgc_comment</item>
+  </style>
+
+  <!--====================头像适配器====================-->
+  <style name="AdapterAvatar">
+
+  </style>
+
+  <style name="AdapterAvatar.Container">
+    <item name="android:layout_width">@dimen/size_adapter_avatar_container</item>
+    <item name="android:layout_height">@dimen/size_adapter_avatar_container</item>
+    <item name="android:background">@drawable/adapter_avatar_container_background</item>
+  </style>
+
+  <style name="AdapterAvatar.Avatar" parent="AvatarStyle.XX_Large">
+
+  </style>
+
+  <style name="AdapterAvatar.CheckBackground">
+    <item name="android:background">@drawable/adapter_avatar_check_background</item>
+  </style>
+
+  <style name="AdapterAvatar.Check" parent="IconStyle.Small">
+
+  </style>
+
+  <!--====================关注适配器====================-->
+  <style name="AdapterFollow">
+
+  </style>
+
+  <style name="AdapterFollow.Container">
+    <item name="android:background">@drawable/all_transparent_c_bg01_background</item>
+    <item name="android:paddingLeft">@dimen/padding_left_adapter_follow_container</item>
+    <item name="android:paddingRight">@dimen/padding_right_adapter_follow_container</item>
+    <item name="android:paddingTop">@dimen/padding_top_adapter_follow_container</item>
+    <item name="android:paddingBottom">@dimen/padding_bottom_adapter_follow_container</item>
+  </style>
+
+  <style name="AdapterFollow.Avatar" parent="AvatarStyle.Medium">
+
+  </style>
+
+  <style name="AdapterFollow.Name" parent="TextStyle.t_color01.t_font03">
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+    <item name="android:layout_marginLeft">@dimen/margin_adapter_follow_name</item>
+    <item name="android:layout_marginRight">@dimen/margin_adapter_follow_name</item>
+  </style>
+
+  <style name="AdapterFollow.Description" parent="TextStyle.t_color03.t_font04">
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
+  <style name="AdapterFollow.Follow" parent="TextStyle.t_color05.t_font03.bold">
+    <item name="android:layout_width">@dimen/width_adapter_follow_follow</item>
+    <item name="android:layout_height">@dimen/height_adapter_follow_follow</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <!--====================动态适配器====================-->
+  <style name="AdapterMoment">
+
+  </style>
+
+  <style name="AdapterMoment.Container">
+    <item name="android:background">@drawable/all_transparent_c_bg01_background</item>
+    <item name="android:paddingLeft">@dimen/padding_left_adapter_moment_container</item>
+    <item name="android:paddingRight">@dimen/padding_right_adapter_moment_container</item>
+    <item name="android:paddingTop">@dimen/padding_top_adapter_moment_container</item>
+    <item name="android:paddingBottom">@dimen/padding_bottom_adapter_moment_container</item>
+  </style>
+
+  <style name="AdapterMoment.Cover">
+    <item name="android:layout_height">@dimen/height_adapter_moment_cover</item>
+  </style>
+
+  <style name="AdapterMoment.Play" parent="IconStyle.XX_Large">
+
+  </style>
+
+  <style name="AdapterMoment.Description" parent="TextStyle.t_color05.t_font01.bold">
+    <item name="android:layout_marginTop">@dimen/margin_top_adapter_moment_description</item>
+    <item name="android:layout_marginLeft">@dimen/margin_left_adapter_moment_description</item>
+    <item name="android:layout_marginRight">@dimen/margin_left_adapter_moment_description</item>
+  </style>
+
+  <style name="AdapterMoment.Avatar" parent="AvatarStyle.Small">
+    <item name="android:layout_marginTop">@dimen/margin_top_adapter_moment_avatar</item>
+  </style>
+
+  <style name="AdapterMoment.OwnerName" parent="TextStyle.t_color01.t_font03.bold">
+    <item name="android:layout_marginLeft">@dimen/margin_left_adapter_moment_owner_name</item>
+    <item name="android:layout_marginRight">@dimen/margin_left_adapter_moment_owner_name</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
+  <style name="AdapterMoment.OwnerDescription" parent="TextStyle.t_color03.t_font04">
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
+
+  <style name="AdapterMoment.Operation" parent="IconStyle.Medium">
+    <item name="android:layout_marginRight">@dimen/margin_right_adapter_moment_operation</item>
+  </style>
+
+  <style name="AdapterMoment.Comment" parent="AdapterMoment.Operation">
+    <item name="android:layout_marginRight">@dimen/margin_right_adapter_moment_comment</item>
+  </style>
+
+  <style name="AdapterMoment.CommentCount" parent="TextStyle.t_color01.t_font01.bold">
+    <item name="android:background">@color/all_layout_background</item>
+    <item name="android:paddingLeft">@dimen/padding_adapter_moment_comment_count</item>
+    <item name="android:paddingRight">@dimen/padding_adapter_moment_comment_count</item>
+    <item name="android:textSize">@dimen/text_size_adapter_moment_comment_count</item>
+  </style>
+
+  <style name="AdapterMoment.More" parent="AdapterMoment.Operation">
+    <item name="android:layout_marginRight">0dp</item>
+  </style>
+
+  <!--====================消息通知适配器====================-->
+  <style name="AdapterMessageNotification">
+
+  </style>
+
+  <style name="AdapterMessageNotification.Container">
+    <item name="android:paddingLeft">
+      @dimen/padding_horizontal_adapter_message_notification_container
+    </item>
+    <item name="android:paddingRight">
+      @dimen/padding_horizontal_adapter_message_notification_container
+    </item>
+    <item name="android:paddingTop">
+      @dimen/padding_vertical_adapter_message_notification_container
+    </item>
+    <item name="android:paddingBottom">
+      @dimen/padding_vertical_adapter_message_notification_container
+    </item>
+    <item name="android:background">@drawable/all_transparent_c_bg01_background</item>
+  </style>
+
+  <style name="AdapterMessageNotification.Avatar" parent="AvatarStyle.Medium">
+
+  </style>
+
+  <style name="AdapterMessageNotification.RedDot">
+    <item name="android:layout_width">@dimen/size_adapter_message_notification_red_dot</item>
+    <item name="android:layout_height">@dimen/size_adapter_message_notification_red_dot</item>
+    <item name="android:background">@drawable/adapter_message_notification_red_dot</item>
+  </style>
+
+  <style name="AdapterMessageNotification.Title" parent="TextStyle.t_color01.t_font03">
+    <item name="android:layout_marginLeft">@dimen/margin_adapter_message_notification_title</item>
+    <item name="android:layout_marginRight">@dimen/margin_adapter_message_notification_title</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
+  <style name="AdapterMessageNotification.Content" parent="TextStyle.t_color04.t_font01">
+    <item name="android:textSize">@dimen/text_size_adapter_message_notification_content</item>
+    <item name="android:layout_marginTop">
+      @dimen/margin_top_adapter_message_notification_content
+    </item>
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
+  <style name="AdapterMessageNotification.Time" parent="TextStyle.t_color03.t_font04">
+
+  </style>
+
+  <!--====================消息通知详情适配器====================-->
+  <style name="AdapterMessageNotificationDetail">
+
+  </style>
+
+  <style name="AdapterMessageNotificationDetail.Container">
+    <item name="android:background">@drawable/all_transparent_c_bg01_background</item>
+  </style>
+
+  <style name="AdapterMessageNotificationDetail.Avatar" parent="AvatarStyle.Medium">
+    <item name="android:layout_marginTop">
+      @dimen/margin_top_adapter_message_notification_detail_avatar
+    </item>
+    <item name="android:layout_marginLeft">
+      @dimen/margin_left_adapter_message_notification_detail_avatar
+    </item>
+  </style>
+
+  <style name="AdapterMessageNotificationDetail.Title" parent="TextStyle.t_color01.t_font03.bold">
+    <item name="android:layout_marginLeft">
+      @dimen/margin_left_adapter_message_notification_detail_title
+    </item>
+    <item name="android:layout_marginRight">
+      @dimen/margin_right_adapter_message_notification_detail_title
+    </item>
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
+  <style name="AdapterMessageNotificationDetail.Content" parent="TextStyle.t_color02.t_font02">
+    <item name="android:layout_marginTop">
+      @dimen/margin_top_adapter_message_notification_detail_content
+    </item>
+  </style>
+
+  <style name="AdapterMessageNotificationDetail.Time" parent="TextStyle.t_color03.t_font04">
+    <item name="android:layout_marginTop">
+      @dimen/margin_top_adapter_message_notification_detail_time
+    </item>
+  </style>
+
+  <style name="AdapterMessageNotificationDetail.ButtonLink" parent="TextStyle.t_color06.t_font02.bold">
+    <item name="android:paddingLeft">
+      @dimen/padding_horizontal_adapter_message_notification_detail_button_link
+    </item>
+    <item name="android:paddingRight">
+      @dimen/padding_horizontal_adapter_message_notification_detail_button_link
+    </item>
+    <item name="android:paddingTop">
+      @dimen/padding_vertical_adapter_message_notification_detail_button_link
+    </item>
+    <item name="android:paddingBottom">
+      @dimen/padding_vertical_adapter_message_notification_detail_button_link
+    </item>
+    <item name="android:layout_marginTop">
+      @dimen/margin_top_adapter_message_notification_detail_button_link
+    </item>
+    <item name="android:background">
+      @drawable/adapter_message_notification_detail_button_link_background
+    </item>
+  </style>
+
+  <style name="AdapterMessageNotificationDetail.ImageLink">
+    <item name="android:layout_marginTop">
+      @dimen/margin_top_adapter_message_notification_detail_image_link
+    </item>
+  </style>
+
+  <style name="AdapterMessageNotificationDetail.ImageTime" parent="AdapterMessageNotificationDetail.Time">
+    <item name="android:layout_marginTop">
+      @dimen/margin_top_adapter_message_notification_detail_image_time
+    </item>
+  </style>
+
+  <style name="AdapterMessageNotificationDetail.Driver" parent="AllDriverStyle">
+    <item name="android:layout_marginTop">@dimen/DIMEN_30DP</item>
+    <item name="android:paddingStart">@dimen/margin_top_adapter_message_notification_detail_driver</item>
+    <item name="android:paddingEnd">@dimen/margin_top_adapter_message_notification_detail_driver</item>
+  </style>
+</resources>

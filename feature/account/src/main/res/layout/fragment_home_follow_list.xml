@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.account.ui.follow.HomeFollowListViewModel" />
+
+    </data>
+
+    <com.jxntv.base.view.GVideoSmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadMore="false"
+        app:srlEnableRefresh="true"
+        app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}"
+        app:srlHeaderHeight="75dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_FFFFFF">
+
+            <com.jxntv.widget.GVideoTextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/DIMEN_28DP"
+                android:paddingStart="@dimen/DIMEN_20DP"
+                android:textStyle="bold"
+                android:text="@string/person_you_maybe_like"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_13"
+                android:background="@color/color_ffffff"
+                app:layout_constraintRight_toLeftOf="@id/batch_replace"
+                android:gravity="center_vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/batch_replace"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_28DP"
+                android:drawableStart="@drawable/icon_batch_replace"
+                android:drawablePadding="@dimen/DIMEN_6DP"
+                android:gravity="center_vertical"
+                android:text="@string/batch_replace"
+                android:textColor="@color/color_7f7f7f"
+                android:textSize="12sp"
+                android:paddingLeft="@dimen/DIMEN_16DP"
+                android:paddingRight="@dimen/DIMEN_16DP"
+                android:background="@color/color_ffffff"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.jxntv.widget.GVideoRecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_0DP"
+                android:layout_marginTop="@dimen/DIMEN_28DP"
+                app:adapter="@{viewModel.adapter}"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toTopOf="@id/one_key_follow_complete"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/one_key_follow_complete"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/DIMEN_42DP"
+                android:layout_margin="@dimen/DIMEN_20DP"
+                android:background="@drawable/shape_soild_e4344e_coners_200dp"
+                android:gravity="center"
+                android:text="@string/one_key_follow_high_quality_author"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="@dimen/sp_15"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recycler_view" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.jxntv.base.view.GVideoSmartRefreshLayout>
+
+</layout>

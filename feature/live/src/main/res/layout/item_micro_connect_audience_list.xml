@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/DIMEN_58DP"
+    android:layout_height="@dimen/DIMEN_58DP"
+    android:background="@drawable/shape_solid_000000_50_corners_4dp">
+
+    <com.jxntv.widget.GVideoRImageView
+        android:id="@+id/header"
+        android:layout_width="@dimen/DIMEN_31DP"
+        android:layout_height="@dimen/DIMEN_31DP"
+        android:layout_marginTop="@dimen/DIMEN_7DP"
+        android:scaleType="center"
+        app:corner_radius="@dimen/DIMEN_31DP"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/icon_join_micro_connect" />
+
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_2DP"
+        android:ellipsize="end"
+        android:paddingLeft="@dimen/DIMEN_3DP"
+        android:paddingRight="@dimen/DIMEN_3DP"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        tools:text="静夜思" />
+
+    <com.jxntv.widget.GVideoImageView
+        android:id="@+id/micro_status"
+        android:visibility="gone"
+        android:layout_width="@dimen/DIMEN_8DP"
+        android:layout_height="@dimen/DIMEN_12DP"
+        android:layout_marginEnd="@dimen/DIMEN_4DP"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/DIMEN_2DP"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/icon_micro_talking" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

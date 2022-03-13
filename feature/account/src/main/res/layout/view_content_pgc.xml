@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="authorObservable"
+            type="com.jxntv.base.model.video.AuthorObservable" />
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.account.ui.pgc.PgcViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:elevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/appbar_content"
+            style="@style/FragmentPgcStyle.DetailContainer"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <com.jxntv.widget.GVideoImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                app:centerCrop="@{true}"
+                app:imageData="@{authorObservable.cover}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:placeholder='@{@drawable/ic_pgc_background}'
+                tools:src="@drawable/ic_pgc_background" />
+
+            <View
+                android:id="@+id/title_mask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_000000_30" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_author"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.jxntv.widget.GVideoImageView
+                    android:id="@+id/image_view_detail_avatar"
+                    style="@style/FragmentPgcStyle.DetailAvatar_68dp_68dp"
+                    app:circleCrop="@{true}"
+                    android:padding="@dimen/DIMEN_3DP"
+                    app:imageData="@{authorObservable.avatar}"
+                    android:background="@drawable/shape_solid_9eb8cd_corners_68dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:placeholder='@{@drawable/ic_default_avatar}' />
+
+                <com.jxntv.widget.GVideoTextView
+                    android:id="@+id/text_view_detail_name"
+                    style="@style/FragmentPgcStyle.DetailName"
+                    android:layout_width="0dp"
+                    android:text="@{authorObservable.name}"
+                    app:layout_constraintBottom_toTopOf="@+id/text_view_detail_description"
+                    app:layout_constraintLeft_toRightOf="@id/image_view_detail_avatar"
+                    app:layout_constraintRight_toLeftOf="@+id/text_view_detail_follow"
+                    app:layout_constraintTop_toTopOf="@id/image_view_detail_avatar"
+                    app:layout_constraintVertical_chainStyle="spread" />
+
+                <com.jxntv.widget.GVideoTextView
+                    android:id="@+id/text_view_detail_description"
+                    style="@style/FragmentPgcStyle.DetailDescription"
+                    android:layout_width="0dp"
+                    android:text="@{authorObservable.intro}"
+                    app:layout_constraintBottom_toBottomOf="@id/image_view_detail_avatar"
+                    app:layout_constraintLeft_toLeftOf="@id/text_view_detail_name"
+                    app:layout_constraintRight_toRightOf="@id/text_view_detail_name"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_detail_name" />
+
+                <com.jxntv.widget.GVideoTextView
+                    android:id="@+id/text_view_detail_follow"
+                    style="@style/FragmentPgcStyle.DetailFollow"
+                    android:background="@{authorObservable.isFollow ? @drawable/fragment_pgc_detail_follow_followed_background  : @drawable/all_c_gradual01_button_background}"
+                    android:onClick="@{(v)->viewModel.follow(v)}"
+                    android:text="@{authorObservable.isFollow ? @string/all_followed : @string/all_follow}"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/text_view_detail_name" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.jxntv.widget.GVideoRLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_N5"
+            android:paddingTop="@dimen/DIMEN_3DP"
+            android:paddingBottom="@dimen/DIMEN_3DP"
+            android:paddingStart="@dimen/DIMEN_7DP"
+            app:background_normal="@color/white"
+            app:corner_radius_top_left="@dimen/DIMEN_5DP"
+            app:corner_radius_top_right="@dimen/DIMEN_5DP">
+
+            <com.jxntv.base.view.tab.GVideoSmartTabLayout
+                android:id="@+id/tab_layout"
+                style="@style/FragmentUgcStyle.DetailTabLayout"
+                android:layout_width="wrap_content"
+                app:layout_scrollFlags="snap"
+                app:stl_defaultTabTextColor="@drawable/fragment_ugc_tab_layout_default_text_color"
+                app:stl_defaultTabTextSize="@dimen/t_font03"
+                app:stl_distributeEvenly="true" />
+
+        </com.jxntv.widget.GVideoRLinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+</layout>

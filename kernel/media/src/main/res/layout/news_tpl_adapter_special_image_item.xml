@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="feedModel"
+            type="com.jxntv.media.model.MediaModel" />
+
+    </data>
+
+    <com.jxntv.widget.GVideoLinearLayout
+        android:id="@+id/root_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/DIMEN_10DP"
+        android:orientation="vertical">
+
+        <com.jxntv.widget.GVideoRImageView
+            android:layout_width="@dimen/DIMEN_192DP"
+            android:layout_height="@dimen/DIMEN_108DP"
+            android:scaleType="centerCrop"
+            app:corner_radius="@dimen/DIMEN_4DP"
+            app:imageData="@{feedModel.imageUrls[0]}" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/title"
+            style="@style/feed_text_style"
+            android:layout_width="@dimen/DIMEN_192DP"
+            android:paddingStart="@dimen/DIMEN_6DP"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:paddingEnd="@dimen/DIMEN_6DP"
+            android:maxLines="2"
+            android:text="@{feedModel.title}"
+            android:textStyle="bold" />
+
+    </com.jxntv.widget.GVideoLinearLayout>
+
+</layout>

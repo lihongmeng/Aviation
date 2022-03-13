@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="video_comment_avatar_width">54dp</dimen>
+  <dimen name="video_reply_avatar_width">44dp</dimen>
+  <dimen name="video_comment_popup_top_bar_height">42dp</dimen>
+  <dimen name="video_comment_popup_bottom_bar_height">50dp</dimen>
+  <dimen name="video_comment_input_panel_height">50dp</dimen>
+  <dimen name="video_follow_width">67dp</dimen>
+  <dimen name="video_dp_1">1dp</dimen>
+  <dimen name="video_dp_1_5">1.5dp</dimen>
+  <dimen name="video_dp_2">2dp</dimen>
+  <dimen name="video_dp_3">3dp</dimen>
+  <dimen name="video_dp_4">4dp</dimen>
+  <dimen name="video_dp_5">5dp</dimen>
+  <dimen name="video_dp_6">6dp</dimen>
+  <dimen name="video_dp_7">7dp</dimen>
+  <dimen name="video_dp_8">8dp</dimen>
+  <dimen name="video_dp_10">10dp</dimen>
+  <dimen name="video_dp_12">12dp</dimen>
+  <dimen name="video_dp_14">14dp</dimen>
+  <dimen name="video_dp_15">15dp</dimen>
+  <dimen name="video_dp_16">16dp</dimen>
+  <dimen name="video_dp_17">17dp</dimen>
+  <dimen name="video_dp_17_5">17.5dp</dimen>
+  <dimen name="video_dp_20">20dp</dimen>
+  <dimen name="video_dp_24">24dp</dimen>
+  <dimen name="video_dp_25">25dp</dimen>
+  <dimen name="video_dp_30">30dp</dimen>
+  <dimen name="video_dp_35">35dp</dimen>
+  <dimen name="video_dp_40">40dp</dimen>
+  <dimen name="video_dp_50">50dp</dimen>
+  <dimen name="video_dp_52">52dp</dimen>
+  <dimen name="video_dp_53">53dp</dimen>
+  <dimen name="video_dp_60">60dp</dimen>
+
+  <dimen name="video_sp_10">10sp</dimen>
+  <dimen name="video_sp_12">12sp</dimen>
+  <dimen name="video_sp_13">13sp</dimen>
+  <dimen name="video_sp_14">14sp</dimen>
+  <dimen name="video_sp_16">16sp</dimen>
+  <dimen name="video_sp_17">17sp</dimen>
+
+</resources>

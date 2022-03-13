@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--BottomSheetItemDialog-->
+  <dimen name="bottom_sheet_item_dialog_item_radius">8dp</dimen>
+  <dimen name="bottom_sheet_item_dialog_item_height">48dp</dimen>
+  <dimen name="bottom_sheet_item_dialog_item_text_size">16sp</dimen>
+
+  <dimen name="bottom_sheet_item_dialog_cancel_margin_top">10dp</dimen>
+  <dimen name="bottom_sheet_item_dialog_cancel_margin_bottom">8dp</dimen>
+</resources>

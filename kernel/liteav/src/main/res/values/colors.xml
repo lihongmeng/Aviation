@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="liteav_audio_progress_bg">#FFFFFF</color>
+    <color name="liteav_audio_progress_first">#FC284D</color>
+    <color name="liteav_audio_progress_second">#6b6666</color>
+    <color name="liteav_refresh_bg">#FC284D</color>
+
+    <!--gray4-->
+    <color name="colorGray4">#787878</color>
+    <color name="feed_wave_color">#FFFFFF</color>
+    <!-- pendant -->
+    <color name="big_img_title_color">#FFFFFF</color>
+</resources>

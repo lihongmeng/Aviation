@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="imageVideoEntity"
+            type="com.jxntv.record.recorder.data.ImageVideoEntity" />
+
+    </data>
+
+    <com.jxntv.widget.GVideoFrameLayout
+        android:id="@+id/item_container"
+        android:layout_width="93dp"
+        android:layout_height="93dp">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/choose_item_img"
+            android:layout_width="@dimen/DIMEN_45DP"
+            android:layout_height="@dimen/DIMEN_45DP"
+            android:layout_gravity="right"
+            android:paddingStart="@dimen/DIMEN_15DP"
+            android:paddingEnd="@dimen/DIMEN_8DP"
+            android:paddingTop="@dimen/DIMEN_8DP"
+            android:paddingBottom="@dimen/DIMEN_15DP"
+            android:src="@drawable/ic_video_choose" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/choose_item_text"
+            android:layout_width="@dimen/choose_num_img_size"
+            android:layout_height="@dimen/choose_num_img_size"
+            android:layout_marginTop="@dimen/choose_num_img_margin_top"
+            android:layout_marginRight="@dimen/choose_num_img_margin_right"
+            android:textSize="@dimen/choose_item_time_text_size"
+            android:background="@drawable/bg_choose_video"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:textColor="@color/t_color05"
+            android:visibility="gone" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/item_video_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/choose_item_time_text_size"
+            android:layout_gravity="bottom|right"
+            android:textColor="@color/t_color05"
+            android:layout_marginRight="@dimen/choose_item_time_marin_right"
+            android:layout_marginBottom="@dimen/choose_item_time_marin_bottom" />
+
+    </com.jxntv.widget.GVideoFrameLayout>
+</layout>

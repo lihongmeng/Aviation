@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@drawable/shape_corners_23dp_stroke_1dp_f2f2f2">
+
+    <com.jxntv.widget.GVideoImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/DIMEN_20DP"
+        android:layout_height="@dimen/DIMEN_18DP"/>
+
+    <com.jxntv.widget.GVideoTextView
+        android:id="@+id/name"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/DIMEN_20DP"
+        android:layout_marginStart="@dimen/DIMEN_2DP"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

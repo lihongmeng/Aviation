@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GVideoView">
+        <attr name="player_type" format="integer"/>
+        <!--是否在信息流中显示-->
+        <attr name="play_in_recycler" format="boolean"/>
+    </declare-styleable>
+</resources>

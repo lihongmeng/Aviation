@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jxntv.widget.GVideoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingLeft="@dimen/DIMEN_5DP"
+    android:paddingTop="@dimen/DIMEN_1DP"
+    android:paddingRight="@dimen/DIMEN_5DP"
+    android:paddingBottom="@dimen/DIMEN_1DP"
+    android:textSize="12sp"
+    tools:background="@drawable/shape_solid_ffffff_corners_200dp"
+    tools:text="最新"
+    tools:textColor="@color/color_333333" />

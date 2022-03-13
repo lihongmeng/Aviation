@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_209DP"
+        android:background="@color/color_f2f2f2">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/icon_hot_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_20DP"
+            android:background="@drawable/icon_hot_circle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:layout_height="@dimen/DIMEN_175DP"
+            app:layout_constraintTop_toBottomOf="@id/icon_hot_circle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

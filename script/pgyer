@@ -1,0 +1,40 @@
+#!/bin/bash
+
+help(){
+	echo ""
+	echo "usage: pgyer [arguments]"
+	echo ""
+	echo "Arguments:"
+	echo "  debug : upload debug apk to pgyer"
+	echo "  release : upload release apk to pgyer"
+	echo ""
+}
+
+upload_to_pgyer(){
+	echo "upload_to_pgyer : $1"
+	curl --verbose \
+		-X POST \
+		-H "Content-Type:multipart/form-data" \
+		-F "file=@../app/build/outputs/apk/$1/app-$1.apk" \
+		-F "buildInstallType=2" \
+		-F "buildPassword=kstg1234" \
+		-F "_api_key=dba9ba8d2263d73eda4752c5578a790f" \
+		https://www.pgyer.com/apiv2/app/upload
+}
+
+arg=$1
+if [ $# -eq 0 ]
+then
+	help
+elif [[ $arg == "--help" ]]
+then
+	help
+elif [[ $arg == "debug" ]]
+then
+	upload_to_pgyer $arg
+elif [[ $arg == "release" ]]
+then
+	upload_to_pgyer $arg
+else
+	echo "Counld not find an argument named \"$arg\""
+fi

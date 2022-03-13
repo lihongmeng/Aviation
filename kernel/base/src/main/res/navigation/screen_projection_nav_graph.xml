@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/circle_nav_graph"
+    app:startDestination="@id/screenProjectionFragment">
+
+    <!--投屏页-->
+    <fragment
+        android:id="@+id/screenProjectionFragment"
+        android:name="com.jxntv.base.screenprojection.ScreenProjectionFragment"
+        android:label="HomeWatchTvFragment" />
+
+</navigation>

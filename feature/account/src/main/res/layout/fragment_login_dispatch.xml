@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/image_view"
+            style="@style/PlaceholderLoadingStyle.Image"
+            android:src="@drawable/ic_placeholder_loading"
+            app:layout_constraintBottom_toTopOf="@id/text_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/image_view_loading"
+            style="@style/PlaceholderLoadingStyle.Loading"
+            android:src="@drawable/ic_placeholder_loading_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/text_view"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/text_view"
+            app:layout_constraintTop_toTopOf="@+id/text_view" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view"
+            style="@style/PlaceholderStyle.Text"
+            android:text="@string/is_jumping_please_wait"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/image_view_loading"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_view" />
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+
+</layout>

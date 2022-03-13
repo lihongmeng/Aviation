@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="all_resend_sms_code">重新发送(%ds)</string>
+  <string name="all_sms_code_has_sent_to_phone">验证码已发送至 %s %s</string>
+  <string name="all_obtain_sms_code">获取验证码</string>
+  <string name="all_id_card_number">身份证号</string>
+  <string name="all_upload_picture">上传照片</string>
+  <string name="all_real_name_authentication">实名认证</string>
+  <string name="all_read_and_agree">我已阅读并同意 </string>
+  <string name="all_cancel_account_contract">注销协议</string>
+  <string name="all_followed">已关注</string>
+  <string name="all_follow">关注</string>
+  <string name="all_follow_with_sex">关注%s</string>
+  <string name="all_follow_each_other">相互关注</string>
+  <string name="all_un_login">点此登录</string>
+  <string name="all_account_login">登录</string>
+  <string name="all_account_rebind_phone">换绑手机号</string>
+  <string name="all_account_rebind_phone_successfully">换绑手机号成功</string>
+  <string name="all_account_test_entry">测试入口</string>
+  <string name="all_account_logout">退出登录</string>
+  <string name="all_account_switch_account">切换账号</string>
+  <string name="all_account_cancel_account_successfully">注销账号成功</string>
+  <string name="all_account_goto_identity_verification">前往认证</string>
+  <string name="all_account_has_identity_verified">已验证</string>
+  <string name="all_account_check_network">请检查网络是否开启</string>
+  <string name="all_account_notification">通知</string>
+</resources>

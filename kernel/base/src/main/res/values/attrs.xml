@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--简单环形进度-->
+    <declare-styleable name="RoundProgressView">
+        <!--圆环颜色-->
+        <attr name="roundColor" format="color" />
+        <!--圆环的宽度-->
+        <attr name="roundWidth" format="dimension" />
+        <!--圆环上的进度颜色-->
+        <attr name="progressColor" format="color" />
+        <!--圆环上的进度宽度-->
+        <attr name="progressWidth" format="dimension" />
+        <!--进度值的最大值，一般为100-->
+        <attr name="maxValue" format="integer" />
+        <!--开始角度，指定进度初始点的绘制位置-->
+        <attr name="startAngle" format="integer" />
+        <!--样式，空心还是实心-->
+        <attr name="style">
+            <enum name="STROKE" value="0" />
+            <enum name="FILL" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="GVideoSoundRecordView">
+        <attr name="timeTextColor" format="color" />
+        <attr name="waveColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ImageRecyclerView">
+        <attr name="imageSize" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="small" value="1" />
+        </attr>
+        <attr name="show_style" format="enum">
+            <enum name="nine" value="0" />
+            <enum name="fall" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ViewPagerTab">
+        <attr name="content_gravity">
+            <enum name="center" value="0" />
+            <enum name="center_vertical_left" value="1" />
+        </attr>
+        <attr name="unSelectTextSize" format="reference" />
+        <attr name="selectTextSize" format="reference" />
+        <attr name="may_show_right_arrow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="VisibilityAlphaBehavior">
+        <attr name="vabReferenceViewId" format="reference" />
+        <attr name="vabVisibleWhenScrollUp" format="boolean" />
+        <attr name="vabVisibleMinScrollDistance" format="dimension|reference" />
+        <attr name="vabScrollFactor" format="float" />
+        <attr name="vabVisibleSubHeight" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="HomeMessageLayout">
+        <attr name="is_white_icon" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FollowButtonView">
+        <attr name="followText" format="dimension" />
+        <attr name="unfollowText" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="VerticalVideoTitleLayout">
+        <attr name="set_content_text" format="string" />
+        <attr name="bg_drawable" format="reference" />
+        <attr name="content_text_color" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="VideoTitleCalculateTextView">
+        <attr name="last_space_count" format="integer" />
+        <attr name="sub_line" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="PublishLinkView">
+        <attr name="show_delete" format="boolean" />
+        <attr name="left_bg_drawable" format="reference" />
+        <attr name="left_icon_width" format="reference" />
+        <attr name="left_icon_height" format="reference" />
+        <attr name="middle_content_max_line" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ShareButton">
+        <attr name="icon" format="reference" />
+        <attr name="name" format="string" />
+    </declare-styleable>
+
+
+</resources>

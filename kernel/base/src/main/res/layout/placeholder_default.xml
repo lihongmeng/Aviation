@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/default_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:clickable="true"
+      android:focusable="true"
+      >
+    <!--加载中-->
+    <ViewStub
+        android:id="@+id/view_stub_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/placeholder_default_loading"
+        />
+    <!--网络不可用-->
+    <ViewStub
+        android:id="@+id/view_stub_network_not_available"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/placeholder_default_network_not_available"
+        />
+    <!--错误（ 主要为 API 错误 ）-->
+    <ViewStub
+        android:id="@+id/view_stub_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/placeholder_default_error"
+        />
+    <!--空（没有数据）-->
+    <ViewStub
+        android:id="@+id/view_stub_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/placeholder_default_empty"
+        />
+
+    <!--空（搜索没有数据）-->
+    <ViewStub
+        android:id="@+id/view_stub_empty_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/placeholder_default_empty_search"
+        />
+
+    <!--空（评论没有数据）-->
+    <ViewStub
+        android:id="@+id/view_stub_empty_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/placeholder_default_empty_comment"
+        />
+
+    <!--未登录-->
+    <ViewStub
+        android:id="@+id/view_stub_un_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/placeholder_default_un_login"
+        />
+  </LinearLayout>
+</layout>

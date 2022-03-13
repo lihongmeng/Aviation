@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.jxntv.account.adapter.MessageNotificationDetailAdapter" />
+
+        <variable
+            name="detail"
+            type="com.jxntv.account.model.MessageNotificationDetailObservable" />
+
+        <variable
+            name="position"
+            type="androidx.databinding.ObservableInt" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/AdapterMessageNotificationDetail.Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v)->adapter.onItemClicked(v,position)}">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/image_view_avatar"
+            style="@style/AdapterMessageNotificationDetail.Avatar"
+            app:circleCrop="@{true}"
+            app:imageData="@{detail.avatarUrl}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:placeholder='@{@drawable/ic_default_avatar}' />
+
+        <com.jxntv.widget.GVideoImageView
+            android:layout_width="@dimen/DIMEN_13DP"
+            android:layout_height="@dimen/DIMEN_13DP"
+            android:src="@drawable/icon_header_authentication"
+            android:visibility="@{detail.isAuth?View.VISIBLE:View.GONE}"
+            app:layout_constraintBottom_toBottomOf="@id/image_view_avatar"
+            app:layout_constraintEnd_toEndOf="@id/image_view_avatar" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_title"
+            style="@style/AdapterMessageNotificationDetail.Title"
+            android:layout_width="0dp"
+            android:text="@{detail.title}"
+            app:layout_constraintLeft_toRightOf="@id/image_view_avatar"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/image_view_avatar" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_content"
+            style="@style/AdapterMessageNotificationDetail.Content"
+            android:layout_width="0dp"
+            android:text="@{detail.content}"
+            app:layout_constraintLeft_toLeftOf="@id/text_view_title"
+            app:layout_constraintRight_toRightOf="@id/text_view_title"
+            app:layout_constraintTop_toBottomOf="@id/text_view_title" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/image_link"
+            style="@style/AdapterMessageNotificationDetail.ImageLink"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="@{(v)->adapter.onImageLinkClicked(v,position)}"
+            app:imageData="@{detail.imageUrl}"
+            app:layout_constraintDimensionRatio="7:4"
+            app:layout_constraintLeft_toLeftOf="@id/text_view_content"
+            app:layout_constraintRight_toRightOf="@id/text_view_content"
+            app:layout_constraintTop_toBottomOf="@id/text_view_content"
+            app:roundedCorners="@{@dimen/r_r01}" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_time"
+            style="@style/AdapterMessageNotificationDetail.ImageTime"
+            android:text="@{detail.createdAt}"
+            app:layout_constraintLeft_toLeftOf="@id/image_link"
+            app:layout_constraintTop_toBottomOf="@id/image_link" />
+
+        <View
+            style="@style/AdapterMessageNotificationDetail.Driver"
+            android:layout_width="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/text_view_time"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_time" />
+    </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="feedModel"
+            type="com.jxntv.media.model.MediaModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jxntv.widget.GVideoBanner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.jxntv.widget.GVideoRImageView
+            android:id="@+id/image_left"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/DIMEN_10DP"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:layout_marginEnd="@dimen/DIMEN_5DP"
+            android:scaleType="centerCrop"
+            android:visibility="@{feedModel.headBottom==null?View.GONE:View.VISIBLE}"
+            app:corner_radius="@dimen/DIMEN_6DP"
+            app:layout_constraintDimensionRatio="h,2:1"
+            app:layout_constraintEnd_toStartOf="@id/image_right"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/banner" />
+
+        <com.jxntv.widget.GVideoRImageView
+            android:id="@+id/image_right"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/DIMEN_5DP"
+            android:layout_marginEnd="@dimen/DIMEN_10DP"
+            android:scaleType="centerCrop"
+            android:visibility="@{feedModel.headBottom==null?View.GONE:View.VISIBLE}"
+            app:corner_radius="@dimen/DIMEN_6DP"
+            app:layout_constraintDimensionRatio="h,2:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image_left"
+            app:layout_constraintTop_toTopOf="@id/image_left" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+</layout>

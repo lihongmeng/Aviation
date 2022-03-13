@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--个人信息界面-->
+  <style name="ProfileStyle">
+
+  </style>
+
+  <style name="ProfileStyle.AvatarContainer">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">159dp</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:background">@drawable/ic_avatar_background</item>
+  </style>
+
+  <style name="ProfileStyle.Avatar">
+    <item name="android:layout_width">80dp</item>
+    <item name="android:layout_height">80dp</item>
+    <item name="android:layout_marginTop">32dp</item>
+    <item name="android:layout_gravity">center_horizontal</item>
+  </style>
+
+  <style name="ProfileStyle.ChangeAvatar">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">10dp</item>
+    <item name="android:layout_marginBottom">20dp</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:textColor">#737580</item>
+    <item name="android:layout_gravity">center_horizontal</item>
+  </style>
+
+  <style name="ProfileStyle.Cell" parent="CellStyle">
+    <item name="android:layout_height">60dp</item>
+    <item name="android:paddingTop">10dp</item>
+    <item name="android:paddingBottom">10dp</item>
+    <item name="android:paddingRight">10dp</item>
+    <!--left icon-->
+    <item name="cvAddLeftIcon">false</item>
+    <!--diver-->
+    <item name="cvShowBottomDriver">true</item>
+  </style>
+
+
+  <!--界面-->
+
+  <!--侧边栏界面-->
+  <style name="FragmentDrawer">
+
+  </style>
+
+  <style name="FragmentDrawer.AvatarContainer">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:paddingTop">32dp</item>
+    <item name="android:paddingBottom">32dp</item>
+    <item name="android:paddingLeft">16dp</item>
+    <item name="android:paddingRight">16dp</item>
+    <item name="android:orientation">horizontal</item>
+    <item name="android:background">@drawable/all_transparent_c_bg01_background</item>
+  </style>
+
+  <style name="FragmentDrawer.Avatar">
+    <item name="android:layout_width">60dp</item>
+    <item name="android:layout_height">60dp</item>
+  </style>
+
+  <style name="FragmentDrawer.Nickname">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginLeft">20dp</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">#212229</item>
+    <item name="android:layout_gravity">center_vertical</item>
+  </style>
+
+  <style name="FragmentDrawer.Cell" parent="CellStyle">
+    <item name="android:layout_height">54dp</item>
+    <item name="android:paddingTop">15dp</item>
+    <item name="android:paddingBottom">15dp</item>
+    <item name="android:paddingRight">10dp</item>
+    <!--left text-->
+    <item name="cvLeftTextStyle">@style/FragmentDrawer.CellLeftText</item>
+    <!--right text-->
+    <item name="cvAddRightText">false</item>
+    <!--right top text-->
+    <item name="cvAddRightTopText">false</item>
+    <!--right bottom text-->
+    <item name="cvAddRightBottomText">false</item>
+    <!--right icon-->
+    <item name="cvAddRightIcon">false</item>
+    <!--driver-->
+    <item name="cvBottomDriverMarginLeft">50dp</item>
+  </style>
+
+  <style name="FragmentDrawer.CellLeftText" parent="CellLeftText">
+    <item name="android:paddingLeft">10dp</item>
+  </style>
+
+  <style name="FragmentDrawer.NotificationRedDot" parent="CellLeftIconPoint">
+    <item name="android:layout_marginLeft">16.5dp</item>
+    <item name="android:layout_marginTop">0.5dp</item>
+  </style>
+
+  <style name="FragmentDrawer.NotificationCell" parent="FragmentDrawer.Cell">
+    <item name="cvLeftIconPointStyle">@style/FragmentDrawer.NotificationRedDot</item>
+    <item name="cvAddLeftIconPoint">true</item>
+  </style>
+
+
+  <!--我的界面-->
+  <style name="FragmentMeStyle">
+
+  </style>
+
+  <style name="FragmentMeStyle.Tab" parent="TabLayoutDefaultStyle">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">@dimen/fragment_me_tab_layout_height</item>
+  </style>
+
+  <style name="FragmentMeStyle.Drawer">
+    <item name="android:layout_width">@dimen/fragment_me_tab_layout_height</item>
+    <item name="android:layout_height">@dimen/fragment_me_tab_layout_height</item>
+    <item name="android:background">@drawable/all_transparent_c_bg01_background</item>
+    <item name="android:padding">@dimen/DIMEN_7DP</item>
+  </style>
+
+
+
+  <style name="FXADialogLayout">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/DIMEN_42DP</item>
+    <item name="android:layout_marginStart">@dimen/DIMEN_26DP</item>
+    <item name="android:layout_marginEnd">@dimen/DIMEN_26DP</item>
+    <item name="android:layout_marginTop">@dimen/DIMEN_10DP</item>
+    <item name="paddingStart">@dimen/DIMEN_24DP</item>
+    <item name="paddingEnd">@dimen/DIMEN_24DP</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="corner_radius">@dimen/DIMEN_21DP</item>
+    <item name="background_normal">@color/color_f7f7f7</item>
+  </style>
+
+  <style name="FXADialogTextView.right" parent="FXADialogTextView">
+    <item name="android:textColor">@color/color_333333</item>
+    <item name="android:textSize">@dimen/DIMEN_15DP</item>
+    <item name="singleLine">true</item>
+    <item name="android:layout_marginStart">@dimen/DIMEN_16DP</item>
+  </style>
+
+  <style name="FXADialogTextView" >
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@color/color_999999</item>
+    <item name="android:textSize">@dimen/DIMEN_13DP</item>
+    <item name="android:layout_marginStart">@dimen/DIMEN_24DP</item>
+  </style>
+
+</resources>

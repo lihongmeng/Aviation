@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/DIMEN_250DP"
+    android:layout_height="@dimen/DIMEN_130DP"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.jxntv.live.ui.widget.MicroConnectAnchorView
+        android:id="@+id/first"
+        android:layout_width="@dimen/DIMEN_58DP"
+        android:layout_height="@dimen/DIMEN_58DP"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/second"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jxntv.live.ui.widget.MicroConnectAnchorView
+        android:id="@+id/second"
+        android:layout_width="@dimen/DIMEN_58DP"
+        android:layout_height="@dimen/DIMEN_58DP"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@id/first"
+        app:layout_constraintRight_toLeftOf="@id/third"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jxntv.live.ui.widget.MicroConnectAnchorView
+        android:id="@+id/third"
+        android:layout_width="@dimen/DIMEN_58DP"
+        android:layout_height="@dimen/DIMEN_58DP"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@id/second"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jxntv.live.ui.widget.MicroConnectAnchorView
+        android:id="@+id/four"
+        android:layout_width="@dimen/DIMEN_58DP"
+        android:layout_height="@dimen/DIMEN_58DP"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/five"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.jxntv.live.ui.widget.MicroConnectAnchorView
+        android:id="@+id/five"
+        android:layout_width="@dimen/DIMEN_58DP"
+        android:layout_height="@dimen/DIMEN_58DP"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@id/four"
+        app:layout_constraintRight_toLeftOf="@id/six"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.jxntv.live.ui.widget.MicroConnectAnchorView
+        android:id="@+id/six"
+        android:layout_width="@dimen/DIMEN_58DP"
+        android:layout_height="@dimen/DIMEN_58DP"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@id/five"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

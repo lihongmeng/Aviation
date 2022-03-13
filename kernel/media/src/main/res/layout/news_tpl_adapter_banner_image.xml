@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="feedModel"
+            type="com.jxntv.media.model.MediaModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jxntv.widget.GVideoImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            app:imageData="@{feedModel.imageUrls.size()>0?feedModel.imageUrls.get(0):null}"
+            app:layout_constraintDimensionRatio="h,16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_40DP"
+            android:background="@drawable/feed_live_bottom_back_cover"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_10DP"
+            android:layout_marginEnd="@dimen/DIMEN_60DP"
+            android:layout_marginBottom="@dimen/DIMEN_6DP"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_14"
+            android:text="@{feedModel.title}"
+            android:textStyle="bold"
+            android:textColor="@color/color_ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="大量事件大撒的金卡" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+</layout>

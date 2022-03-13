@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="userInfoModel"
+            type="com.jxntv.live.liveroom.live.entity.TCSimpleUserInfo" />
+
+    </data>
+
+    <com.jxntv.widget.GvideoRConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.jxntv.widget.GVideoRImageView
+            android:id="@+id/avatar"
+            app:corner_radius="@dimen/DIMEN_20DP"
+            app:placeholder="@{@drawable/ic_default_avatar}"
+            app:imageData="@{userInfoModel.avatar}"
+            android:layout_width="@dimen/DIMEN_24DP"
+            android:layout_height="@dimen/DIMEN_24DP"/>
+
+    </com.jxntv.widget.GvideoRConstraintLayout>
+
+</layout>

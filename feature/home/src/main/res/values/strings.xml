@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">home</string>
+
+    <string name="splash_confirm">如果您不同意，我们可能无法为您提供服务</string>
+    <string name="splash_confirm_twice">今视频致力于为您提供最优价值的内容服务，您确定要离开吗？</string>
+
+    <string name="splash_ad">广告</string>
+    <string name="splash_skip">跳过 0</string>
+    <string name="user_protocol">用户协议</string>
+    <string name="privacy_protocol">隐私政策</string>
+
+    <string name="home_confirm_protocol_text">亲爱的用户您好，感谢您安装并使用今视频。我们深知个人信息对您的重要性，并会尽全力保护您的个人信息安全。请您使用前充分阅读我们的《用户协议》和《隐私政策》。如果您未同意用户协议和隐私权协议将导致我们无法为您提产品和服务。</string>
+
+    <string name="update_title">正在更新中</string>
+    <string name="update_title_error">更新包异常</string>
+    <string name="update_bt_confirm">立即体验</string>
+    <string name="install_bt_confirm">去安装</string>
+    <string name="update_bt_cancel">暂不</string>
+    <string name="update_background">正在后台下载...</string>
+</resources>

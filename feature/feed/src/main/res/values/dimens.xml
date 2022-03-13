@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- tab bar相关 -->
+    <dimen name="slide_tab_bar_height">44dp</dimen>
+    <dimen name="feed_recycler_view_landscape_margin">2dp</dimen>
+
+    <!-- 首页搜索栏相关 -->
+    <dimen name="search_tab_bar_height">30dp</dimen>
+    <dimen name="search_tab_bar_width">222.5dp</dimen>
+    <dimen name="search_img_left_margin">@dimen/DIMEN_14DP</dimen>
+    <dimen name="search_img_right_margin">5dp</dimen>
+    <dimen name="search_img_size">@dimen/DIMEN_17DP</dimen>
+    <dimen name="search_tab_bar_radio_size">15dp</dimen>
+    <dimen name="search_tab_bar_single_search_img_size">@dimen/DIMEN_27DP</dimen>
+    <dimen name="search_tab_bar_single_plus_img_size">@dimen/DIMEN_27DP</dimen>
+    <dimen name="search_tab_bar_single_plus_margin">2dp</dimen>
+    <dimen name="search_tab_bar_margin">11.5dp</dimen>
+    <dimen name="search_text_size">@dimen/sp_13</dimen>
+    <dimen name="search_tab_bar_left_margin">7.5dp</dimen>
+
+    <!-- tab相关 -->
+    <dimen name="feed_tab_text_size">22sp</dimen>
+    <dimen name="feed_tab_text_normal">16sp</dimen>
+    <dimen name="feed_tab_text_margin">10dp</dimen>
+    <dimen name="feed_tab_margin_bottom">3dp</dimen>
+
+    <!-- 视频滑动indicator相关 -->
+    <dimen name="video_indicator_height">7dp</dimen>
+    <dimen name="video_indicator_width">12dp</dimen>
+    <dimen name="video_indicator_border_radius">2dp</dimen>
+
+    <!-- 模板label相关 -->
+    <dimen name="feed_label_height">18dp</dimen>
+    <dimen name="feed_label_width">48dp</dimen>
+
+    <dimen name="feed_label_item_img_size">12dp</dimen>
+    <dimen name="feed_label_item_text_height">12dp</dimen>
+    <dimen name="feed_label_item_text_width">24dp</dimen>
+
+    <dimen name="feed_label_item_text_size">12dp</dimen>
+
+    <dimen name="feed_label_radio_size">3dp</dimen>
+
+    <dimen name="feed_label_icon_left_margin">4dp</dimen>
+    <dimen name="feed_label_more_icon_text_left_interval">3dp</dimen>
+
+
+    <!-- 模板相关 -->
+
+    <dimen name="feed_big_img_width">336dp</dimen>
+    <dimen name="feed_big_img_height">190dp</dimen>
+    <dimen name="feed_big_img_vertical_height">407dp</dimen>
+
+    <dimen name="feed_big_img_title_height">50dp</dimen>
+
+    <dimen name="feed_big_img_title_size">17sp</dimen>
+
+
+
+    <dimen name="feed_big_img_generalize_width">178.5dp</dimen>
+    <dimen name="feed_big_img_generalize_height">42dp</dimen>
+    <dimen name="feed_big_img_generalize_margin_right">12dp</dimen>
+    <dimen name="feed_big_img_generalize_margin_bottom">12dp</dimen>
+    <dimen name="feed_big_img_generalize_radio">7dp</dimen>
+
+    <!-- tool bar -->
+    <dimen name="feed_tool_bar_width">336dp</dimen>
+    <dimen name="feed_tool_bar_height">38dp</dimen>
+
+    <dimen name="feed_tool_bar_person_img_size">38dp</dimen>
+    <dimen name="feed_tool_bar_person_img_margin">8dp</dimen>
+
+    <dimen name="feed_tool_bar_icon_size">24dp</dimen>
+    <dimen name="feed_tool_bar_icon_right_margin">-3dp</dimen>
+    <dimen name="feed_tool_bar_icon_helper_interval">327dp</dimen>
+    <dimen name="feed_tool_bar_chat_share_interval">27dp</dimen>
+    <dimen name="feed_tool_bar_share_more_interval">16dp</dimen>
+
+    <dimen name="feed_tool_bar_source_text_height">16.5dp</dimen>
+    <dimen name="feed_tool_bar_source_text_width">153.5dp</dimen>
+    <dimen name="feed_tool_bar_source_text_size">12dp</dimen>
+
+    <dimen name="feed_tool_bar_attention_text_height">22.5dp</dimen>
+    <dimen name="feed_tool_bar_attention_text_width">48dp</dimen>
+    <dimen name="feed_tool_bar_attention_text_size">16dp</dimen>
+
+    <dimen name="feed_tool_bar_name_text_height">22.5dp</dimen>
+    <dimen name="feed_tool_bar_name_text_size">16dp</dimen>
+    <dimen name="feed_tool_bar_name_text_max_width">96dp</dimen>
+
+    <dimen name="feed_tool_bar_text_icon_interval">21dp</dimen>
+
+    <!-- 横滑模板 -->
+    <dimen name="feed_slide_view_height">101.5dp</dimen>
+    <dimen name="feed_slide_child_width">152dp</dimen>
+    <dimen name="feed_slide_child_height">148.5dp</dimen>
+    <dimen name="feed_slide_child_margin_right">8dp</dimen>
+
+    <dimen name="feed_slide_img_height">86dp</dimen>
+
+    <dimen name="feed_slide_label_text_width">48dp</dimen>
+    <dimen name="feed_slide_label_text_height">18dp</dimen>
+
+    <dimen name="feed_slide_video_img_size">18dp</dimen>
+
+    <dimen name="feed_slide_pendant_margin">6dp</dimen>
+
+    <dimen name="feed_slide_text_height">40dp</dimen>
+    <dimen name="feed_slide_title_size">14sp</dimen>
+
+    <dimen name="feed_slide_source_text_height">16.5dp</dimen>
+    <dimen name="feed_slide_source_size">12sp</dimen>
+
+    <dimen name="feed_slide_title_margin_top">6dp</dimen>
+    <dimen name="feed_slide_source_margin_top">3dp</dimen>
+
+    <!-- 单图模板 -->
+    <dimen name="feed_one_img_height">86dp</dimen>
+
+    <dimen name="feed_one_img_img_width">152dp</dimen>
+    <dimen name="feed_one_img_img_height">86dp</dimen>
+
+    <dimen name="feed_one_img_title_height_max">60dp</dimen>
+    <dimen name="feed_one_img_title_height_min">20dp</dimen>
+    <dimen name="feed_one_img_title_width">172dp</dimen>
+    <dimen name="feed_one_img_title_text_size">16sp</dimen>
+
+
+    <dimen name="feed_one_img_source_height">16.5dp</dimen>
+    <dimen name="feed_one_img_source_text_size">12sp</dimen>
+
+    <dimen name="feed_one_img_img_text_margin">12dp</dimen>
+    <dimen name="feed_one_text_margin">8dp</dimen>
+
+    <!-- 音频模板 -->
+
+
+    <dimen name="feed_normal_border_radius">7dp</dimen>
+
+    <dimen name="feed_pendant_item_width">99dp</dimen>
+    <dimen name="feed_pendant_dimen_size">12dp</dimen>
+
+
+
+    <!-- 以下无需整理 -->
+    <!-- tool bar -->
+    <dimen name="feed_tool_bar_comment_num_left_margin">17.5dp</dimen>
+    <dimen name="feed_tool_bar_comment_num_top_margin">1.5dp</dimen>
+
+    <dimen name="feed_inside_vertical_margin">4dp</dimen>
+    <dimen name="feed_normal_vertical_margin">9dp</dimen>
+
+    <!-- 音频模板 -->
+    <dimen name="feed_sound_img_width">267.5dp</dimen>
+    <dimen name="feed_sound_status_img_width">107.5dp</dimen>
+
+    <!-- 大图模板 -->
+    <dimen name="feed_big_img_title_margin_left">12dp</dimen>
+    <dimen name="feed_big_img_title_margin_top">10dp</dimen>
+    <dimen name="feed_big_img_video_img_size">50dp</dimen>
+
+    <!-- 挂件相关 -->
+    <dimen name="feed_pendant_height">42dp</dimen>
+    <dimen name="feed_pendant_width">178.5dp</dimen>
+    <dimen name="feed_pendant_margin_right">12dp</dimen>
+    <dimen name="feed_pendant_margin_bottom">12dp</dimen>
+
+    <dimen name="feed_pendant_title_height">33dp</dimen>
+    <dimen name="feed_pendant_title_width">99dp</dimen>
+
+    <dimen name="feed_pendant_title_margin_left">8dp</dimen>
+    <dimen name="feed_pendant_title_margin_right">8dp</dimen>
+
+    <dimen name="feed_pendant_img_height">34dp</dimen>
+    <dimen name="feed_pendant_img_width">59.5dp</dimen>
+    <dimen name="feed_pendant_img_margin_right">4dp</dimen>
+
+    <dimen name="feed_pendant_img_corner">4dp</dimen>
+
+    <dimen name="feed_pendant_video_img_size">25dp</dimen>
+    <dimen name="feed_pendant_video_img_margin_right">21dp</dimen>
+
+    <dimen name="feed_ad_text_size">10dp</dimen>
+    <dimen name="feed_ad_radio">3dp</dimen>
+
+    <dimen name="feed_ad_width">30dp</dimen>
+    <dimen name="feed_ad_height">14dp</dimen>
+    <dimen name="feed_ad_margin_left">6dp</dimen>
+
+    <dimen name="feed_one_img_source_width_max">167dp</dimen>
+    <dimen name="feed_slide_source_width_max">116dp</dimen>
+
+</resources>

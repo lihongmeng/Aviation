@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="IconStyle">
+
+  </style>
+
+  <style name="IconStyle.X_Small">
+    <item name="android:layout_width">@dimen/size_icon_x_small</item>
+    <item name="android:layout_height">@dimen/size_icon_x_small</item>
+  </style>
+
+  <style name="IconStyle.Small">
+    <item name="android:layout_width">@dimen/size_icon_small</item>
+    <item name="android:layout_height">@dimen/size_icon_small</item>
+  </style>
+
+  <style name="IconStyle.Medium">
+    <item name="android:layout_width">@dimen/size_icon_medium</item>
+    <item name="android:layout_height">@dimen/size_icon_medium</item>
+  </style>
+
+  <style name="IconStyle.Large">
+    <item name="android:layout_width">@dimen/size_icon_large</item>
+    <item name="android:layout_height">@dimen/size_icon_large</item>
+  </style>
+
+  <style name="IconStyle.X_Large">
+    <item name="android:layout_width">@dimen/size_icon_x_large</item>
+    <item name="android:layout_height">@dimen/size_icon_x_large</item>
+  </style>
+
+  <style name="IconStyle.XX_Large">
+    <item name="android:layout_width">@dimen/size_icon_xx_large</item>
+    <item name="android:layout_height">@dimen/size_icon_xx_large</item>
+  </style>
+
+  <style name="IconStyle.XXX_Large">
+    <item name="android:layout_width">@dimen/size_icon_xxx_large</item>
+    <item name="android:layout_height">@dimen/size_icon_xxx_large</item>
+  </style>
+</resources>

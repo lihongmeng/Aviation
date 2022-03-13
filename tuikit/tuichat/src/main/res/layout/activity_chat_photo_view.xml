@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/photo_view_back"
+        android:layout_width="@dimen/DIMEN_44DP"
+        android:layout_height="@dimen/DIMEN_44DP">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:src="@drawable/ic_back_white" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tencent.qcloud.tuikit.tuichat.component.photoview.view.PhotoView
+            android:id="@+id/chat_photo_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:id="@+id/view_original_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/view_original_image_border"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/view_original_image"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

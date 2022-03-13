@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+    <corners android:radius="@dimen/video_dp_15"/>
+    <stroke android:width="@dimen/video_dp_1" android:color="@color/c_4DFFFFFF" />
+    <padding android:top="@dimen/video_dp_4" android:bottom="@dimen/video_dp_4" />
+</shape>

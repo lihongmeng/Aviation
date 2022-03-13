@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="@dimen/DIMEN_320DP"
+        android:layout_height="@dimen/DIMEN_175DP"
+        android:layout_marginStart="12dp"
+        android:padding="@dimen/DIMEN_10DP"
+        android:background="@drawable/shape_solid_ffffff_corners_5dp">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/cover"
+            android:layout_width="@dimen/DIMEN_65DP"
+            android:layout_height="@dimen/DIMEN_65DP"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/icon_circle_text_red"
+            android:drawablePadding="@dimen/DIMEN_5DP"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/DIMEN_215DP"
+            android:paddingLeft="@dimen/DIMEN_10DP"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toRightOf="@id/cover"
+            app:layout_constraintTop_toTopOf="@id/cover"
+            tools:text="123456789123456789123456789" />
+
+        <com.jxntv.widget.GVideoRecyclerView
+            android:id="@+id/famous_circle_layout"
+            android:layout_width="@dimen/DIMEN_111DP"
+            android:layout_height="@dimen/DIMEN_32DP"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/DIMEN_10DP"
+            app:layout_constraintLeft_toRightOf="@id/cover"
+            app:layout_constraintBottom_toBottomOf="@id/cover" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/join_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/famous_circle_layout"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="@dimen/DIMEN_10DP"
+            app:layout_constraintTop_toTopOf="@id/famous_circle_layout" />
+
+        <com.jxntv.base.view.CircleTopicLiveLayout
+            android:id="@+id/circle_topic_live"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_80DP"
+            android:layout_marginTop="@dimen/DIMEN_15DP"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/famous_circle_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

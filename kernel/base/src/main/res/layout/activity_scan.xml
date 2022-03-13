@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_50DP"
+            android:background="@color/color_ffffff"
+            android:gravity="center"
+            android:text="@string/scan_scan"
+            android:textSize="@dimen/sp_17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.journeyapps.barcodescanner.DecoratedBarcodeView
+            android:id="@+id/scan_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:zxing_framing_rect_height="250dp"
+            app:zxing_framing_rect_width="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top"
+            app:zxing_preview_scaling_strategy="fitXY"
+            app:zxing_scanner_layout="@layout/layout_zxing"
+            app:zxing_use_texture_view="true" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/DIMEN_50DP"
+            android:layout_height="@dimen/DIMEN_50DP"
+            android:src="@drawable/ic_back_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/sp_15"
+            android:layout_marginBottom="@dimen/DIMEN_200DP"
+            android:text="@string/let_qr_code_screen_center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

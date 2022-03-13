@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/DIMEN_37DP"
+        android:layout_height="@dimen/DIMEN_32DP">
+
+        <com.jxntv.widget.GVideoRImageView
+            android:id="@+id/header"
+            android:layout_width="@dimen/DIMEN_32DP"
+            android:layout_height="@dimen/DIMEN_32DP"
+            app:corner_radius="@dimen/DIMEN_32DP"/>
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/mark"
+            android:layout_width="@dimen/DIMEN_12DP"
+            android:layout_height="@dimen/DIMEN_12DP"
+            app:layout_constraintBottom_toBottomOf="@id/header"
+            app:layout_constraintRight_toRightOf="@id/header"
+            android:background="@drawable/icon_header_authentication"
+            android:visibility="gone" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+</layout>

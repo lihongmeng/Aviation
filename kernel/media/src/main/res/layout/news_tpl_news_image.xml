@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="feedModel"
+            type="com.jxntv.media.model.MediaModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <com.jxntv.widget.GVideoLinearLayout
+        style="@style/feed_layout_margin_root">
+
+        <com.jxntv.widget.GVideoLinearLayout
+            android:id="@+id/root_layout"
+            style="@style/feed_layout_margin"
+            android:orientation="vertical">
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/content_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_22DP"
+                android:paddingTop="@dimen/DIMEN_5DP"
+                android:gravity="top"
+                android:includeFontPadding="false"
+                android:text="@string/news"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_13"
+                app:layout_constraintStart_toStartOf="parent"
+                android:visibility="@{feedModel.isShowTag?View.VISIBLE:View.GONE}" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/title"
+                style="@style/feed_text_style_news"
+                android:text="@{feedModel.title}" />
+
+            <com.jxntv.widget.GVideoConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_5DP"
+                android:layout_marginTop="@dimen/DIMEN_6DP">
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/image_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="image1,image2,image3" />
+
+                <com.ruffian.library.widget.RImageView
+                    android:id="@+id/image1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="centerCrop"
+                    app:corner_radius="@dimen/DIMEN_4DP"
+                    app:layout_constraintDimensionRatio="h,108:67"
+                    app:layout_constraintEnd_toStartOf="@id/image2"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:src="@drawable/liteav_player_bg" />
+
+                <com.ruffian.library.widget.RImageView
+                    android:id="@+id/image2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/DIMEN_7DP"
+                    android:scaleType="centerCrop"
+                    app:corner_radius="@dimen/DIMEN_4DP"
+                    app:layout_constraintDimensionRatio="h,108:67"
+                    app:layout_constraintEnd_toStartOf="@id/image3"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/image1"
+                    tools:src="@drawable/liteav_player_bg" />
+
+                <com.ruffian.library.widget.RImageView
+                    android:id="@+id/image3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/DIMEN_7DP"
+                    android:scaleType="centerCrop"
+                    app:corner_radius="@dimen/DIMEN_4DP"
+                    app:layout_constraintDimensionRatio="h,108:67"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/image2"
+                    tools:src="@drawable/liteav_player_bg" />
+
+                <com.ruffian.library.widget.RImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:scaleType="centerCrop"
+                    app:corner_radius="@dimen/DIMEN_4DP"
+                    app:layout_constraintDimensionRatio="h,337:190"
+                    android:visibility="gone"
+                    tools:src="@drawable/liteav_player_bg" />
+
+            </com.jxntv.widget.GVideoConstraintLayout>
+
+            <include
+                android:id="@+id/bottom"
+                layout="@layout/news_tpl_news_bottom"
+                app:layout_constraintTop_toBottomOf="@id/image" />
+
+        </com.jxntv.widget.GVideoLinearLayout>
+
+        <View
+            android:layout_marginTop="@dimen/DIMEN_14DP"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_D5P"
+            android:background="@color/c_line02" />
+
+    </com.jxntv.widget.GVideoLinearLayout>
+
+</layout>

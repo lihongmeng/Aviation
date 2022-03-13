@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <com.jxntv.widget.GVideoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--标题-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/liteav_dp_10"
+            android:paddingBottom="@dimen/liteav_dp_10">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_arrow_white_left"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- 直播结束 -->
+        <LinearLayout
+            android:id="@+id/layout_live_end"
+            android:visibility="gone"
+            android:background="@drawable/liteav_player_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.jxntv.widget.GVideoImageView
+                android:layout_width="@dimen/DIMEN_38DP"
+                android:layout_height="@dimen/DIMEN_38DP"
+                android:src="@drawable/live_end" />
+
+            <com.ruffian.library.widget.RTextView
+                android:textColor="@color/white"
+                android:text="@string/live_tag_end"
+                android:layout_marginTop="@dimen/DIMEN_5DP"
+                android:textSize="@dimen/sp_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--重播-->
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/iv_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/liteav_dp_20"
+            android:src="@drawable/liteav_replay"
+            android:background="@drawable/pendant_background_drawable"
+            android:visibility="gone" />
+
+
+        <com.jxntv.widget.GVideoFrameLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/liteav_player_bottom_shadow">
+
+            <include
+                layout="@layout/liteav_controller_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.jxntv.widget.GVideoFrameLayout>
+
+        <com.jxntv.android.liteav.view.ControllerProgressLayout
+            android:id="@+id/video_progress_layout"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </com.jxntv.widget.GVideoFrameLayout>
+
+</layout>

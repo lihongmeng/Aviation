@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/root_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_96DP"
+            app:cardCornerRadius="@dimen/DIMEN_8DP"
+            app:cardElevation="@dimen/DIMEN_0DP"
+            app:layout_constraintStart_toEndOf="@id/layout"
+            app:layout_constraintTop_toBottomOf="@id/layout">
+
+            <com.jxntv.widget.GVideoBanner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</layout>

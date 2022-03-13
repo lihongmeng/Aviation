@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.circle.viewmodel.CircleFamousViewModel" />
+
+    </data>
+
+    <com.jxntv.widget.GVideoFrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jxntv.base.view.GVideoSmartRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnableLoadMoreWhenContentNotFull="false"
+            app:srlEnableFooterFollowWhenNoMoreData="true"
+            app:ksrlv_onLoadMore="@{(v)->viewModel.onLoadMore(v)}"
+            app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}"
+            app:srlHeaderHeight="75dp">
+
+            <com.jxntv.widget.GVideoFrameLayout
+                android:id="@+id/recycler_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.jxntv.widget.GVideoRecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:adapter="@{viewModel.adapter}"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <com.jxntv.widget.GVideoFrameLayout
+                    android:id="@+id/empty_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+            </com.jxntv.widget.GVideoFrameLayout>
+
+        </com.jxntv.base.view.GVideoSmartRefreshLayout>
+
+    </com.jxntv.widget.GVideoFrameLayout>
+
+</layout>

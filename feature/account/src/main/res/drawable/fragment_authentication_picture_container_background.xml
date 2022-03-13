@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+  <stroke
+      android:width="@dimen/width_fragment_authentication_picture_container_stroke"
+      android:color="@color/fragment_authentication_picture_container_accent"
+      android:dashWidth="@dimen/width_fragment_authentication_picture_container_dash"
+      android:dashGap="@dimen/width_fragment_authentication_picture_container_dash_gap" />
+  <corners android:radius="@dimen/r_r01" />
+</shape>

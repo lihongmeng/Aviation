@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.jxntv.widget.GVideoLinearLayout
+        android:id="@+id/ll_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/DIMEN_16DP"
+        android:paddingEnd="@dimen/DIMEN_16DP">
+
+        <com.jxntv.widget.GVideoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="1"
+            android:layout_marginTop="@dimen/DIMEN_16DP"
+            android:text="查看更多"
+            android:textColor="@color/color_000000_35"
+            android:textSize="@dimen/sp_11" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:layout_width="@dimen/DIMEN_15DP"
+            android:layout_height="@dimen/DIMEN_15DP"
+            android:layout_marginTop="@dimen/DIMEN_6DP"
+            android:src="@drawable/ic_right_arrow_with_bg" />
+
+    </com.jxntv.widget.GVideoLinearLayout>
+
+</layout>

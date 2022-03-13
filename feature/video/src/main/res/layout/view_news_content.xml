@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.android.video.ui.news.NewsDetailViewModel" />
+
+        <variable
+            name="videoModel"
+            type="com.jxntv.base.model.video.VideoModel" />
+
+        <import type="android.text.TextUtils" />
+
+        <import type="com.jxntv.utils.DateUtils" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <com.jxntv.widget.GVideoConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextStyle.DefaultSpacing"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="@dimen/DIMEN_14DP"
+                android:layout_marginTop="@dimen/DIMEN_12DP"
+                android:layout_marginEnd="@dimen/DIMEN_14DP"
+                android:text="@{videoModel.title}"
+                android:textColor="@color/color_212229"
+                android:textSize="@dimen/sp_21"
+                android:textStyle="bold"
+                tools:text="讲述英雄故事 传承红色基因—庆祝建党100周年特别节目《闪亮的 坐标》" />
+
+            <com.jxntv.widget.GVideoConstraintLayout
+                android:id="@+id/layout_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/DIMEN_14DP"
+                android:layout_marginStart="@dimen/DIMEN_14DP"
+                android:layout_marginTop="@dimen/DIMEN_17DP"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/news_title">
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/author_message_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="author_avatar,author_name,create_time,follow"
+                    android:visibility="@{TextUtils.isEmpty(videoModel.source)?View.VISIBLE:View.GONE}"
+                    tools:visibility="gone" />
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/author_message_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="author_name1,line1,create_time2"
+                    android:visibility="@{TextUtils.isEmpty(videoModel.source)?View.GONE:View.VISIBLE}"
+                    tools:visibility="visible"/>
+
+                <com.jxntv.widget.GVideoRImageView
+                    android:id="@+id/author_avatar"
+                    android:layout_width="@dimen/DIMEN_35DP"
+                    android:layout_height="@dimen/DIMEN_35DP"
+                    android:onClick="@{v-> viewModel.onAvatarClicked(v)}"
+                    android:src="@drawable/ic_launcher"
+                    app:corner_radius="@dimen/DIMEN_18DP"
+                    app:imageData="@{videoModel.author.avatar}"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/author_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/DIMEN_7DP"
+                    android:text="@{videoModel.author.name}"
+                    android:textColor="@color/color_212229"
+                    android:textSize="@dimen/sp_13"
+                    android:textStyle="bold"
+                    android:onClick="@{v-> viewModel.onAvatarClicked(v)}"
+                    app:layout_constraintBottom_toTopOf="@id/create_time"
+                    app:layout_constraintLeft_toRightOf="@id/author_avatar"
+                    app:layout_constraintTop_toTopOf="@id/author_avatar"
+                    tools:text="新闻" />
+
+                <TextView
+                    android:id="@+id/create_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/DIMEN_7DP"
+                    android:text="@{DateUtils.getDefaultTime(videoModel.createDate)}"
+                    android:textColor="@color/c_A1A4B3"
+                    android:textSize="@dimen/sp_10"
+                    android:onClick="@{v-> viewModel.onAvatarClicked(v)}"
+                    app:layout_constraintBottom_toBottomOf="@id/author_avatar"
+                    app:layout_constraintLeft_toRightOf="@id/author_avatar"
+                    app:layout_constraintTop_toBottomOf="@id/author_name"
+                    tools:text="2021-05-12" />
+
+                <com.jxntv.widget.GVideoImageView
+                    android:id="@+id/follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/DIMEN_13DP"
+                    android:onClick="@{(v)-> viewModel.onFollowClicked(v)}"
+                    android:src="@{videoModel.author.observable.isFollow?@drawable/icon_already_follow:@drawable/icon_follow}"
+                    app:layout_constraintBottom_toBottomOf="@id/author_avatar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/author_avatar"
+                    tools:src="@drawable/icon_follow"
+                    />
+
+                <TextView
+                    android:id="@+id/author_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/DIMEN_7DP"
+                    android:text="@{videoModel.source}"
+                    android:textColor="@color/color_212229"
+                    android:textSize="@dimen/sp_13"
+                    tools:text="新闻"/>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="@dimen/DIMEN_2DP"
+                    android:layout_height="@dimen/DIMEN_12DP"
+                    android:layout_marginStart="@dimen/DIMEN_10DP"
+                    android:background="@color/color_ececec"
+                    app:layout_constraintStart_toEndOf="@id/author_name1"
+                    app:layout_constraintTop_toTopOf="@id/author_name1"
+                    app:layout_constraintBottom_toBottomOf="@id/author_name1"
+                    />
+
+                <TextView
+                    android:id="@+id/create_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/DIMEN_9DP"
+                    android:text="@{DateUtils.getDefaultDateFormatYYMMddHHmm(videoModel.createDate)}"
+                    android:textColor="@color/c_A1A4B3"
+                    android:textSize="@dimen/sp_12"
+                    app:layout_constraintBottom_toBottomOf="@id/author_name1"
+                    app:layout_constraintStart_toEndOf="@id/line1"
+                    app:layout_constraintTop_toTopOf="@id/author_name1"
+                    tools:text="2021-01-12  11：00"/>
+
+            </com.jxntv.widget.GVideoConstraintLayout>
+
+            <com.jxntv.widget.GVideoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/DIMEN_7DP"
+                android:text="@string/read_web"
+                android:textColor="@color/c_A1A4B3"
+                android:textSize="@dimen/sp_13"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/layout_author"
+                app:layout_constraintRight_toLeftOf="@id/read"
+                app:layout_constraintTop_toTopOf="@id/layout_author" />
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/read"
+                android:layout_width="@dimen/DIMEN_22DP"
+                android:layout_height="@dimen/DIMEN_22DP"
+                android:layout_marginEnd="@dimen/DIMEN_12DP"
+                android:src="@drawable/ic_article_voice"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/layout_author" />
+
+            <com.jxntv.base.webview.GVWebView
+                android:id="@+id/web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginStart="@dimen/DIMEN_14DP"
+                android:layout_marginEnd="@dimen/DIMEN_14DP"
+                android:layout_marginTop="@dimen/DIMEN_14DP"
+                app:layout_constraintTop_toBottomOf="@id/layout_author" />
+
+            <FrameLayout
+                android:id="@+id/share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_30DP"
+                android:layout_marginStart="@dimen/DIMEN_3DP"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/web" />
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/share_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_37DP"
+                android:layout_marginTop="@dimen/DIMEN_16DP"
+                android:paddingBottom="@dimen/DIMEN_21DP"
+                android:src="@drawable/ic_share_text"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/share" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="@{viewModel.isRelatedNews?View.VISIBLE:View.GONE}"
+                app:layout_constraintTop_toBottomOf="@id/share_text">
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_10DP"
+                    android:background="@color/c_f7f8fc" />
+
+                <com.jxntv.widget.GVideoTextView
+                    android:id="@+id/related_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/DIMEN_12DP"
+                    android:layout_marginTop="@dimen/DIMEN_22DP"
+                    android:text="@string/related_news"
+                    android:textColor="@color/color_212229"
+                    android:textSize="@dimen/sp_18"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line2" />
+
+                <com.jxntv.widget.GVideoRecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    app:adapter="@{viewModel.recommendAdapter}"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintTop_toBottomOf="@id/related_news" />
+
+            </LinearLayout>
+
+        </com.jxntv.widget.GVideoConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relation_nav_graph"
+    app:startDestination="@id/relationFragment">
+  <!-- 好友关系 页面 -->
+  <fragment
+      android:id="@+id/relationFragment"
+      android:name="com.jxntv.account.ui.relation.RelationFragment"
+      android:label="RelationFragment">
+    <argument
+        android:name="author"
+        app:argType="com.jxntv.account.model.Author" />
+    <argument
+        android:name="start"
+        android:defaultValue="0"
+        app:argType="integer" />
+  </fragment>
+</navigation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:id="@+id/search_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_marginBottom="@dimen/DIMEN_1D5P"
+            app:layout_constraintBottom_toBottomOf="@id/search_result_tabs"
+            android:background="@color/c_line02"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1DP"/>
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            android:id="@+id/search_result_tabs"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/search_result_tab_bar_height"
+            android:layout_marginStart="@dimen/DIMEN_9DP"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:stl_defaultTabTextColor="@drawable/search_tab_layout_text_color"
+            app:stl_defaultTabTextSize="@dimen/t_font02"
+            style="@style/TabLayoutDefaultStyle"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/search_result_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/search_view_page_margin_top"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_result_tabs" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

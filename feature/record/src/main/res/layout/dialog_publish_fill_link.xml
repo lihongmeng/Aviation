@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_soild_ffffff_corners_8dp_top"
+        android:paddingStart="@dimen/DIMEN_14DP"
+        android:paddingTop="@dimen/DIMEN_24DP"
+        android:paddingEnd="@dimen/DIMEN_14DP"
+        tools:ignore="RtlSymmetry">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_link"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:text="@string/add_link_tip"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <View
+            android:id="@+id/link_input_bg"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_42DP"
+            android:layout_marginTop="@dimen/DIMEN_24DP"
+            android:background="@drawable/shape_soild_f2f2f2_coners_10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/desc" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/clear"
+            android:scaleType="center"
+            android:layout_width="@dimen/DIMEN_42DP"
+            android:layout_height="@dimen/DIMEN_42DP"
+            android:src="@drawable/icon_clear"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@id/link_input_bg"
+            app:layout_constraintBottom_toBottomOf="@id/link_input_bg"
+            app:layout_constraintRight_toRightOf="@id/link_input_bg" />
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_42DP"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/DIMEN_14DP"
+            android:background="@color/color_000000_100"
+            android:hint="@string/add_link_hint"
+            android:textSize="@dimen/sp_13"
+            android:singleLine="true"
+            android:ellipsize="end"
+            tools:text="1234567894561234567894569123456789456123456789456912345678945612345678945691234567894561234567894569"
+            android:textColorHint="@color/color_7f7f7f"
+            app:layout_constraintTop_toTopOf="@id/link_input_bg"
+            app:layout_constraintBottom_toBottomOf="@id/link_input_bg"
+            app:layout_constraintLeft_toLeftOf="@id/link_input_bg"
+            app:layout_constraintRight_toLeftOf="@id/clear" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/paste_bubble_bg"
+            android:layout_width="@dimen/DIMEN_203DP"
+            android:layout_height="@dimen/DIMEN_42DP"
+            android:layout_marginBottom="@dimen/DIMEN_23DP"
+            android:background="@drawable/icon_publish_link_paste_dialog"
+            app:layout_constraintBottom_toBottomOf="@id/edit"
+            app:layout_constraintRight_toRightOf="@id/link_input_bg"
+            android:visibility="gone" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/paste_bubble_bg_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_17DP"
+            android:layout_marginEnd="@dimen/DIMEN_17DP"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/color_006eb9"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@id/paste_bubble_bg"
+            app:layout_constraintRight_toRightOf="@id/paste_bubble_bg"
+            app:layout_constraintTop_toTopOf="@id/paste_bubble_bg"
+            tools:text="123456789456121234567894561234578912345678945612345789345789" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/confirm_add"
+            android:layout_width="@dimen/DIMEN_203DP"
+            android:layout_height="@dimen/DIMEN_42DP"
+            android:layout_marginTop="@dimen/DIMEN_24DP"
+            android:background="@drawable/shape_soild_e4344e_coners_200dp"
+            android:gravity="center"
+            android:text="@string/confirm_add"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintLeft_toLeftOf="@id/link_input_bg"
+            app:layout_constraintRight_toRightOf="@id/link_input_bg"
+            app:layout_constraintTop_toBottomOf="@id/link_input_bg" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_58DP"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintTop_toBottomOf="@id/confirm_add" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

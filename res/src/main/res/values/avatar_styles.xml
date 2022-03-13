@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="AvatarStyle">
+
+  </style>
+
+  <style name="AvatarStyle.Small">
+    <item name="android:layout_width">@dimen/size_avatar_small</item>
+    <item name="android:layout_height">@dimen/size_avatar_small</item>
+  </style>
+
+  <style name="AvatarStyle.Medium">
+    <item name="android:layout_width">@dimen/DIMEN_48DP</item>
+    <item name="android:layout_height">@dimen/DIMEN_48DP</item>
+  </style>
+
+  <style name="AvatarStyle.Large">
+    <item name="android:layout_width">@dimen/size_avatar_large</item>
+    <item name="android:layout_height">@dimen/size_avatar_large</item>
+  </style>
+
+  <style name="AvatarStyle.X_Large">
+    <item name="android:layout_width">@dimen/size_avatar_x_large</item>
+    <item name="android:layout_height">@dimen/size_avatar_x_large</item>
+  </style>
+
+  <style name="AvatarStyle.XX_Large">
+    <item name="android:layout_width">@dimen/size_avatar_xx_large</item>
+    <item name="android:layout_height">@dimen/size_avatar_xx_large</item>
+  </style>
+</resources>

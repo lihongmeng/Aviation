@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+
+    <com.jxntv.widget.GvideoRConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:background_normal="@color/color_ffffff"
+        app:corner_radius="@dimen/DIMEN_8DP">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_14DP"
+            android:layout_marginTop="@dimen/DIMEN_14DP"
+            android:text="@string/report_reason"
+            android:textColor="@color/color_4c4c4c"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/close"
+            android:layout_width="@dimen/DIMEN_15DP"
+            android:layout_height="@dimen/DIMEN_15DP"
+            android:layout_margin="@dimen/DIMEN_11DP"
+            android:src="@drawable/ic_report_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoLinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_4DP"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/DIMEN_24DP"
+            android:paddingEnd="@dimen/DIMEN_24DP"
+            android:paddingBottom="@dimen/DIMEN_4DP"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+    </com.jxntv.widget.GvideoRConstraintLayout>
+
+</layout>

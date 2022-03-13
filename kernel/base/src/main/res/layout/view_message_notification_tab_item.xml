@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:maxHeight="@dimen/DIMEN_55DP"
+        android:minWidth="@dimen/DIMEN_60DP"
+        android:minHeight="@dimen/DIMEN_35DP">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/tab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="123" />
+
+        <com.jxntv.widget.GVideoRTextView
+            android:id="@+id/tab_unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_3DP"
+            android:layout_marginTop="@dimen/DIMEN_5DP"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:minWidth="@dimen/DIMEN_13DP"
+            android:paddingStart="@dimen/DIMEN_3DP"
+            android:paddingEnd="@dimen/DIMEN_3DP"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/DIMEN_10DP"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:background_normal="@color/color_e4344e"
+            app:corner_radius="@dimen/DIMEN_10DP"
+            app:layout_constraintStart_toEndOf="@id/tab_title"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="1"
+            tools:visibility="visible" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

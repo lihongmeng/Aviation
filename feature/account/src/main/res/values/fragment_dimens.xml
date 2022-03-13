@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--====================手机号界面====================-->
+  <!--margin-->
+  <dimen name="margin_top_phone_title">20dp</dimen>
+  <dimen name="margin_left_phone_triangle">6dp</dimen>
+  <dimen name="margin_top_phone_phone_number">40dp</dimen>
+  <dimen name="margin_left_phone_phone_number">20dp</dimen>
+  <dimen name="margin_top_phone_next">40dp</dimen>
+  <dimen name="margin_top_phone_login_for_agreement">35dp</dimen>
+  <dimen name="margin_left_phone_user_contract">4dp</dimen>
+  <dimen name="margin_right_phone_user_contract">4dp</dimen>
+  <!--text_size-->
+  <dimen name="text_size_phone_title">28sp</dimen>
+  <!--height-->
+  <dimen name="height_phone_phone_number">64dp</dimen>
+  <dimen name="height_phone_driver">1dp</dimen>
+  <dimen name="height_phone_next">50dp</dimen>
+  <!--size-->
+  <dimen name="size_phone_triangle">12dp</dimen>
+
+  <!--====================验证码界面====================-->
+  <!--margin-->
+  <dimen name="margin_top_sms_code_title">20dp</dimen>
+  <dimen name="margin_top_sms_code_sms_code_sent">4dp</dimen>
+  <dimen name="margin_top_sms_code_sms_code">@dimen/DIMEN_30DP</dimen>
+  <dimen name="margin_top_sms_code_confirm">40dp</dimen>
+  <!--text_size-->
+  <dimen name="text_size_sms_code_title">28dp</dimen>
+  <!--height-->
+  <dimen name="height_sms_code_sms_code">@dimen/DIMEN_60DP</dimen>
+  <dimen name="height_sms_code_obtain_sms_code">40dp</dimen>
+  <dimen name="height_sms_code_driver">1dp</dimen>
+  <dimen name="height_sms_code_confirm">50dp</dimen>
+  <!--padding-->
+  <dimen name="padding_sms_code_obtain_sms_code_vertical">9dp</dimen>
+  <dimen name="padding_sms_code_obtain_sms_code_horizontal">16dp</dimen>
+
+  <!--====================账户安全界面====================-->
+  <dimen name="margin_top_fragment_account_security_rebind_phone">10dp</dimen>
+  <dimen name="height_fragment_account_security_logout">50dp</dimen>
+
+  <!--====================身份认证界面====================-->
+  <!--公共尺寸-->
+  <dimen name="padding_fragment_authentication_default">16dp</dimen>
+  <dimen name="margin_fragment_authentication_default">16dp</dimen>
+  <!--其他尺寸-->
+  <dimen name="height_fragment_authentication_id_card_number_container">60dp</dimen>
+  <dimen name="margin_top_fragment_authentication_id_card_number_container">10dp</dimen>
+  <dimen name="margin_top_fragment_authentication_upload_picture">16dp</dimen>
+  <dimen name="width_fragment_authentication_picture_container_stroke">1dp</dimen>
+  <dimen name="width_fragment_authentication_picture_container_dash">3dp</dimen>
+  <dimen name="width_fragment_authentication_picture_container_dash_gap">3dp</dimen>
+  <dimen name="height_fragment_authentication_picture_example">102dp</dimen>
+  <dimen name="width_fragment_authentication_picture_example">105dp</dimen>
+  <dimen name="margin_left_fragment_authentication_picture_example">31dp</dimen>
+  <dimen name="margin_right_fragment_authentication_picture_plus">65dp</dimen>
+  <dimen name="margin_top_fragment_authentication_picture_tip">9dp</dimen>
+  <dimen name="width_fragment_authentication_picture_real">160dp</dimen>
+  <dimen name="height_fragment_authentication_picture_real">100dp</dimen>
+  <dimen name="height_fragment_authentication_submit">50dp</dimen>
+  <dimen name="space_extra_fragment_authentication_attention">6dp</dimen>
+
+  <!--====================修改昵称界面====================-->
+  <dimen name="margin_fragment_modify_nickname_default">12dp</dimen>
+  <dimen name="height_fragment_modify_nickname_nickname">50dp</dimen>
+  <dimen name="padding_fragment_modify_nickname_nickname">15dp</dimen>
+  <dimen name="margin_top_fragment_modify_nickname_counter">8dp</dimen>
+  <dimen name="margin_right_fragment_modify_nickname_counter">25dp</dimen>
+
+  <!--====================通用设置界面====================-->
+  <dimen name="margin_top_fragment_setting_first_cell">10dp</dimen>
+
+  <!--====================关于界面====================-->
+  <dimen name="padding_fragment_about_top_container">25dp</dimen>
+  <dimen name="margin_bottom_fragment_about_top_container">10dp</dimen>
+  <dimen name="size_fragment_about_app_icon">90dp</dimen>
+  <dimen name="margin_top_fragment_about_version">18dp</dimen>
+  <dimen name="margin_top_fragment_about_copyright">8dp</dimen>
+  <dimen name="conner_fragment_about_app_icon">19dp</dimen>
+
+  <!--====================修改头像界面====================-->
+  <dimen name="margin_fragment_modify_avatar_default">12dp</dimen>
+  <dimen name="height_fragment_modify_avatar_avatar_background">159dp</dimen>
+  <dimen name="margin_fragment_modify_avatar_optional_avatar_list">10dp</dimen>
+  <dimen name="padding_fragment_modify_avatar_optional_avatar_list">12dp</dimen>
+  <dimen name="height_fragment_modify_avatar_submit">50dp</dimen>
+  <dimen name="margin_bottom_fragment_modify_avatar_submit">10dp</dimen>
+
+  <!--====================注销界面====================-->
+  <dimen name="margin_fragment_cancel_account_default">12dp</dimen>
+  <dimen name="padding_fragment_cancel_account_container">12dp</dimen>
+  <dimen name="spacing_extra_fragment_cancel_account">4dp</dimen>
+  <dimen name="height_fragment_cancel_account_button_operation">44dp</dimen>
+  <dimen name="margin_button_fragment_cancel_account_button_operation">25dp</dimen>
+  <dimen name="margin_right_fragment_cancel_account_confirm">12dp</dimen>
+  <dimen name="width_fragment_cancel_account_confirm">122dp</dimen>
+  <dimen name="size_fragment_cancel_account_check_agreement">26dp</dimen>
+  <dimen name="padding_fragment_cancel_account_check_agreement">6dp</dimen>
+  <dimen name="margin_left_fragment_cancel_account_agreement">6dp</dimen>
+
+  <!--====================Pgc 页面====================-->
+  <dimen name="height_fragment_pgc_detail_container">@dimen/DIMEN_160DP</dimen>
+  <dimen name="margin_top_fragment_pgc_avatar">@dimen/DIMEN_52DP</dimen>
+  <dimen name="margin_left_fragment_pgc_avatar">18dp</dimen>
+  <dimen name="margin_left_fragment_pgc_detail_name">10dp</dimen>
+  <dimen name="margin_right_fragment_pgc_detail_name">10dp</dimen>
+  <dimen name="text_size_fragment_pgc_detail_name">20sp</dimen>
+  <dimen name="text_size_fragment_pgc_detail_description">13sp</dimen>
+  <dimen name="height_fragment_pgc_detail_follow">@dimen/DIMEN_24DP</dimen>
+  <dimen name="width_fragment_pgc_detail_follow">@dimen/DIMEN_55DP</dimen>
+  <dimen name="width_fragment_pgc_detail_follow_stroke">1dp</dimen>
+  <dimen name="margin_right_fragment_pgc_detail_follow">15dp</dimen>
+  <dimen name="padding_fragment_pgc_recycler_view">12dp</dimen>
+  <dimen name="margin_top_fragment_pgc_recycler_view">-12dp</dimen>
+  <dimen name="margin_fragment_pgc_recycler_view_vertical_gap">18dp</dimen>
+  <dimen name="margin_fragment_pgc_recycler_view_first_row_gap">12dp</dimen>
+  <dimen name="width_fragment_pgc_toolbar_follow">@dimen/DIMEN_55DP</dimen>
+  <dimen name="height_fragment_pgc_toolbar_follow">@dimen/DIMEN_24DP</dimen>
+  <dimen name="margin_right_fragment_pgc_toolbar_follow">@dimen/DIMEN_26DP</dimen>
+
+  <!--UGC页面-->
+  <dimen name="margin_top_fragment_ugc_avatar">@dimen/DIMEN_10DP</dimen>
+  <dimen name="margin_bottom_fragment_ugc_avatar">16dp</dimen>
+  <dimen name="margin_left_fragment_ugc_avatar">18dp</dimen>
+  <dimen name="margin_right_fragment_ugc_avatar">18dp</dimen>
+  <dimen name="margin_left_fragment_ugc_detail_sex">6dp</dimen>
+  <dimen name="padding_left_right_fragment_ugc_edit">18dp</dimen>
+  <dimen name="padding_top_bottom_fragment_ugc_edit">2dp</dimen>
+  <dimen name="padding_fragment_ugc_detail_sex">4dp</dimen>
+  <dimen name="padding_fragment_ugc_detail_description">3dp</dimen>
+  <dimen name="margin_right_fragment_ugc_detail_description">18dp</dimen>
+  <dimen name="height_fragment_ugc_detail_container">250dp</dimen>
+  <dimen name="text_size_fragment_ugc_detail_name">19sp</dimen>
+  <dimen name="text_size_fragment_ugc_detail_sex">14sp</dimen>
+  <dimen name="text_size_fragment_ugc_detail_description">@dimen/sp_13</dimen>
+  <dimen name="text_size_fragment_ugc_detail_follow_count">@dimen/sp_15</dimen>
+  <dimen name="text_size_fragment_ugc_detail_fans_count">@dimen/sp_15</dimen>
+  <dimen name="text_size_fragment_ugc_detail_edit">@dimen/sp_16</dimen>
+  <dimen name="height_fragment_ugc_detail_follow">30dp</dimen>
+  <dimen name="width_fragment_ugc_detail_follow">130dp</dimen>
+
+  <dimen name="margin_fragment_follow_search_top_bottom">6dp</dimen>
+  <dimen name="margin_fragment_follow_search_left_right">12dp</dimen>
+  <dimen name="height_fragment_follow_search">32dp</dimen>
+  <dimen name="padding_fragment_follow_search">8dp</dimen>
+  <dimen name="height_fragment_follow_cancel">44dp</dimen>
+  <dimen name="padding_fragment_follow_cancel">18dp</dimen>
+  <!--====================收藏详情界面====================-->
+  <dimen name="padding_fragment_favorite_detail_for_grid_layout">8dp</dimen>
+</resources>

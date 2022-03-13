@@ -1,0 +1,17 @@
+apply from: rootProject.file("library.gradle")
+apply plugin: 'androidx.navigation.safeargs'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation deps.tog_kernel_base
+    implementation deps.tog_lib_res
+    implementation deps.tog_kernel_stat
+    implementation deps.tog_kernel_media
+    implementation deps.flexboxLayout
+
+    //Room
+    implementation deps.room_rxjava2
+    implementation deps.room_runtime
+    implementation deps.tog_kernel_liteav
+    annotationProcessor deps.room_compiler
+}

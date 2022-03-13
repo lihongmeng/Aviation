@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.jxntv.android.video.ui.detail.comment.CommentViewModel" />
+
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:background="@color/white">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/audio_comment"
+            android:layout_width="@dimen/DIMEN_50DP"
+            android:layout_height="match_parent"
+            android:padding="@dimen/DIMEN_12DP"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_comment_input_audio"
+            android:onClick="@{(v)-> viewModel.onClickShowAudioDialog(v)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoRTextView
+            android:id="@+id/comment_txt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_35DP"
+            android:focusable="false"
+            android:gravity="start|center_vertical"
+            android:hint="@string/video_comment_hint"
+            android:lines="3"
+            android:textColorHint="@color/color_a1a4b3"
+            android:paddingStart="@dimen/DIMEN_12DP"
+            android:paddingEnd="@dimen/DIMEN_12DP"
+            android:onClick="@{(v)-> viewModel.onClickShowTxtInputDialog(v)}"
+            app:background_normal="@color/c_bg01"
+            app:corner_radius="@dimen/DIMEN_7DP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/audio_comment"
+            app:layout_constraintRight_toLeftOf="@id/image_comment"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/image_comment"
+            android:layout_width="@dimen/DIMEN_50DP"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/DIMEN_12DP"
+            android:src="@drawable/ic_comment_input_img"
+            android:onClick="@{(v)-> viewModel.onClickShowImageDialog(v)}"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="position"
+            type="androidx.databinding.ObservableInt" />
+
+        <variable
+            name="adapter"
+            type="com.jxntv.account.adapter.FollowAdapter" />
+
+        <variable
+            name="author"
+            type="com.jxntv.base.model.video.AuthorObservable" />
+
+        <import type="android.view.View" />
+        <import type="android.text.TextUtils"/>
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/AdapterFollow.Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v)->adapter.onItemClick(v,position)}">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/image_view_avatar"
+            style="@style/AdapterFollow.Avatar"
+            app:circleCrop="@{true}"
+            app:imageData="@{author.avatar}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:placeholder='@{@drawable/ic_default_avatar}'
+            tools:src="@drawable/ic_default_avatar"/>
+
+        <com.jxntv.widget.GVideoImageView
+            android:layout_width="@dimen/DIMEN_16DP"
+            android:layout_height="@dimen/DIMEN_15DP"
+            android:src="@drawable/icon_header_authentication"
+            android:visibility="@{author.isAuthentication?View.VISIBLE:View.GONE}"
+            app:layout_constraintBottom_toBottomOf="@id/image_view_avatar"
+            app:layout_constraintEnd_toEndOf="@id/image_view_avatar"
+           />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_name"
+            style="@style/AdapterFollow.Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{author.name}"
+            app:layout_constraintBottom_toTopOf="@+id/text_view_description"
+            app:layout_constraintLeft_toRightOf="@id/image_view_avatar"
+            app:layout_constraintRight_toLeftOf="@+id/button_follow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread"
+            tools:text="张三" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/text_view_description"
+            style="@style/AdapterFollow.Description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{author.authenticationIntro}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/text_view_name"
+            app:layout_constraintRight_toRightOf="@id/text_view_name"
+            app:layout_constraintTop_toBottomOf="@id/text_view_name"
+            android:visibility="@{TextUtils.isEmpty(author.authenticationIntro)?View.GONE:View.VISIBLE}"
+            tools:text="认证信息" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/button_follow"
+            style="@style/AdapterFollow.Follow"
+            android:background="@{ author.isFollow ? @drawable/all_c_bg01_button_background : @drawable/all_c_gradual01_button_background }"
+            android:onClick="@{(v)->adapter.follow(v,position)}"
+            android:text="@{author.isFollow ? (author.followMe ? @string/all_follow_each_other : @string/all_followed) : @string/all_follow }"
+            android:textColor="@{author.isFollow? @color/t_color04 : @color/t_color05}"
+            android:visibility="@{author.self ? View.GONE : View.VISIBLE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.jxntv.widget.GVideoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.jxntv.widget.GVideoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_45DP"
+            android:drawableStart="@drawable/icon_topic"
+            android:drawablePadding="@dimen/DIMEN_10DP"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/DIMEN_13DP"
+            android:background="@color/color_FFFFFF"
+            android:paddingRight="@dimen/DIMEN_20DP"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_15"
+            tools:text="123456789456123456789456123456789456123456789456123456789456" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/DIMEN_13DP"
+            android:layout_marginRight="@dimen/DIMEN_13DP"
+            android:background="@color/color_f2f2f2" />
+
+    </com.jxntv.widget.GVideoLinearLayout>
+
+</layout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <integer name="video_edit_max_ems">30</integer>
+</resources>

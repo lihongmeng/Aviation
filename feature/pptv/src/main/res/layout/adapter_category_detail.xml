@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+  <data>
+    <variable
+        name="adapter"
+        type="com.jxntv.pptv.adapter.CategoryDetailAdapter"
+        />
+
+    <variable
+        name="category"
+        type="com.jxntv.pptv.model.CategoryObservable"
+        />
+
+    <variable
+        name="position"
+        type="androidx.databinding.ObservableInt"
+        />
+    <import type="android.text.TextUtils" />
+    <import type="android.view.View" />
+  </data>
+
+  <com.jxntv.widget.GVideoConstraintLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      >
+    <com.jxntv.widget.GVideoCheckedText
+        android:onClick="@{v->adapter.onItemRootViewClicked(v, position)}"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/adapter_more_category_detail_height"
+        android:singleLine="true"
+        android:gravity="center"
+        android:checked="@{category.check}"
+        android:text="@{category.name}"
+        android:textSize="@dimen/t_font02"
+        android:textColor="@drawable/adapter_category_text_color"
+        android:background="@drawable/adapter_category_background"
+        android:paddingStart="@dimen/adapter_tag_name_padding_start"
+        android:paddingEnd="@dimen/adapter_tag_name_padding_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+  </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

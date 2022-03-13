@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_nav_graph"
+    app:startDestination="@id/cropImageFragment">
+
+    <fragment
+        android:id="@+id/author_prepare_fragment"
+        android:name="com.jxntv.live.ui.author.AuthorPrepareFragment"
+        android:label="authorPrepareFragment"/>
+
+    <fragment
+        android:id="@+id/author_live_fragment"
+        android:name="com.jxntv.live.ui.author.AuthorLiveFragment"
+        android:label="authorLiveFragment"/>
+
+    <fragment
+        android:id="@+id/audience_fragment"
+        android:name="com.jxntv.live.ui.audience.AudienceFragment"
+        android:label="audienceFragment"/>
+
+    <fragment
+        android:id="@+id/videoAuthorLiveFragment"
+        android:name="com.jxntv.live.video.author.VideoAuthorLiveFragment"
+        android:label="videoAuthorLiveFragment"/>
+
+    <fragment
+        android:id="@+id/videoAudienceFragment"
+        android:name="com.jxntv.live.video.audience.VideoAudienceFragment"
+        android:label="videoAudienceFragment"/>
+
+    <!--裁剪界面-->
+    <fragment
+        android:id="@+id/cropImageFragment"
+        android:name="com.jxntv.live.crop.CropImageFragment"
+        android:label="cropImageFragment">
+
+        <argument
+            android:name="imageUri"
+            app:argType="android.net.Uri" />
+
+    </fragment>
+
+</navigation>

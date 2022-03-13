@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.jxntv.widget.GVideoRTextView
+
+        android:id="@+id/channel"
+        android:layout_width="@dimen/DIMEN_80DP"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/DIMEN_4DP"
+        android:paddingBottom="@dimen/DIMEN_4DP"
+        android:layout_marginTop="@dimen/DIMEN_5DP"
+        android:layout_marginBottom="@dimen/DIMEN_5DP"
+        android:textColor="@color/t_color02"
+        android:textSize="@dimen/sp_12"
+        android:maxLength="6"
+        app:background_pressed="@color/c_F4F4F4"
+        app:border_color_normal="@color/t_color02"
+        app:border_width_normal="@dimen/DIMEN_D5P"
+        app:corner_radius="@dimen/DIMEN_18DP"
+        android:text="全是动态动态"/>
+
+
+</layout>

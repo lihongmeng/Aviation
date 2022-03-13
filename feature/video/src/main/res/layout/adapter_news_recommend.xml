@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.jxntv.base.model.video.RecommendModel" />
+
+        <import type="com.jxntv.utils.DateUtils" />
+
+    </data>
+
+    <com.jxntv.widget.GVideoConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/DIMEN_12DP">
+
+        <com.jxntv.widget.GVideoTextView
+
+            android:id="@+id/news_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/DIMEN_10DP"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@{model.title}"
+            android:textColor="@color/color_212229"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintBottom_toTopOf="@id/create_time"
+            app:layout_constraintEnd_toStartOf="@id/news_thumb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/news_thumb"
+            tools:text="江西省艺术家企业家联合会成立大"
+            />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_13DP"
+            android:text="@{model.author}"
+            android:textColor="@color/c_A1A4B3"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintBottom_toBottomOf="@id/news_thumb"
+            app:layout_constraintTop_toBottomOf="@id/news_title"
+            tools:text="2020-12-29万" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_13DP"
+            android:textColor="@color/c_A1A4B3"
+            android:textSize="@dimen/sp_12"
+            android:layout_marginStart="@dimen/DIMEN_14DP"
+            android:text="@{DateUtils.friendlyTime(model.createDate)}"
+            app:layout_constraintBaseline_toBaselineOf="@id/source"
+            app:layout_constraintStart_toEndOf="@id/source"
+            tools:text="阅读4.3万" />
+
+        <com.jxntv.widget.GVideoRImageView
+            android:id="@+id/news_thumb"
+            android:layout_width="@dimen/DIMEN_106DP"
+            android:layout_height="@dimen/DIMEN_82DP"
+            android:scaleType="centerCrop"
+            app:corner_radius="@dimen/DIMEN_4DP"
+            app:imageData="@{model.imageUrl}"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+
+
+</layout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">base</string>
+    <string name="all_nor_more_data">没有更多内容了</string>
+    <string name="all_try_load_more">努力加载中...</string>
+    <string name="all_network_not_available">网络不通畅，无法获取内容</string>
+    <string name="all_network_not_available_action_tip">网络不给力，请稍后重试</string>
+    <string name="all_click_to_retry">点此重试</string>
+    <string name="all_not_found_content">更多精彩，等你发现</string>
+    <string name="all_not_found_search_content">翻遍了也没有找到相关内容，换个词试试～</string>
+    <string name="all_data_refreshing_wait">数据更新中，请稍候</string>
+    <string name="all_un_login_forbidden_to_getting_info">尚未登录，无法获取相关信息</string>
+    <string name="all_not_found_comment">快来发表你的观点吧</string>
+    <string name="all_login">登录</string>
+    <string name="all_search">搜索</string>
+    <string name="default_network_dialog_loading">加载中&#xB7;&#xB7;&#xB7;</string>
+    <string name="all_ensure">确定</string>
+    <string name="all_cancel">取消</string>
+    <string name="hot_topic">热门话题</string>
+    <string name="all_circle">全部社区</string>
+    <string name="comment_count">%d万+</string>
+    <string name="start_record_sound">开始录音</string>
+    <string name="click_record_sound">点击录音</string>
+    <string name="click_stop">点击停止</string>
+    <string name="change_to_text">转文字</string>
+    <string name="replace">替换</string>
+    <string name="search_history_text_limit">输入的字数过多</string>
+    <string name="join">加入</string>
+    <string name="enter">进入</string>
+    <string name="enter_circle">进入社区</string>
+    <string name="yesterday">昨天 %s</string>
+    <string name="join_success">加入成功！</string>
+    <string name="join_failed">加入失败！</string>
+    <string name="publishing_please_post_later">动态发布中，请稍候</string>
+    <string name="let_qr_code_screen_center">将二维码对准屏幕中心</string>
+</resources>

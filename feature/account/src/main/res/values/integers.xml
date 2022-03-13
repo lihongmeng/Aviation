@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <integer-array name="fragment_phone_tip">
+    <item>@color/fragment_phone_tip</item>
+    <item>@color/fragment_phone_tip</item>
+  </integer-array>
+
+  <integer name="drawer_close_duration">220</integer>
+
+  <integer name="max_nickname_length">12</integer>
+
+  <!--修改介绍界面-->
+  <integer name="description_max_length">40</integer>
+
+  <!--弹窗-->
+
+  <!--隐私范围视图-->
+  <integer name="privacy_range_position_tag">1</integer>
+  <integer name="privacy_range_value_tag">2</integer>
+
+  <!--弹窗-->
+</resources>

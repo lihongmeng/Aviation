@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/DIMEN_10DP"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/top_space"
+            android:layout_width="@dimen/DIMEN_10DP"
+            android:layout_height="@dimen/DIMEN_1DP"
+            android:visibility="gone" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/DIMEN_69DP"
+            android:layout_height="@dimen/DIMEN_69DP"
+            android:background="@drawable/shape_soild_ffffff_corners_10dp">
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/DIMEN_46DP"
+                android:layout_height="@dimen/DIMEN_31DP"
+                android:layout_marginTop="@dimen/DIMEN_10DP"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_7DP"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</layout>

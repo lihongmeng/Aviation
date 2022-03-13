@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_ffffff"
+    tools:ignore="MissingDefaultResource">
+
+    <com.jxntv.widget.GVideoRLinearLayout
+        android:layout_width="@dimen/DIMEN_53DP"
+        android:layout_height="@dimen/DIMEN_53DP"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:gravity="center"
+        app:background_normal="@color/color_ffffff"
+        app:border_color_normal="@color/color_ececec"
+        app:border_width_normal="1px"
+        android:padding="@dimen/DIMEN_1DP"
+        app:corner_radius="@dimen/DIMEN_12DP">
+
+        <com.jxntv.widget.GVideoImageView
+            android:id="@+id/share_menu_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/DIMEN_5DP"
+            tools:src="@drawable/share_item_weibo"/>
+
+    </com.jxntv.widget.GVideoRLinearLayout>
+</layout>

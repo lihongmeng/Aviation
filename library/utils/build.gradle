@@ -1,0 +1,7 @@
+apply from: rootProject.file("library.gradle")
+
+dependencies {
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
+  api deps.libphonenumberAndroid
+    implementation 'androidx.fragment:fragment:1.2.4'
+}

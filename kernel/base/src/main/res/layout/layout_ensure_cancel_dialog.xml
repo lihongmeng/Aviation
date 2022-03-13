@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/CenterDialogStyle.Dialog">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/title"
+            style="@style/CenterDialogStyle.EnsureTitle"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/content"
+            style="@style/CenterDialogStyle.EnsureText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:paddingTop="@dimen/DIMEN_15DP"
+            android:paddingBottom="@dimen/DIMEN_15DP"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <com.jxntv.widget.GVideoButton
+            android:id="@+id/cancel"
+            style="@style/CenterDialogStyle.CancelButton"
+            android:text="@string/all_cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/confirm"
+            app:layout_constraintTop_toBottomOf="@id/content" />
+
+        <com.jxntv.widget.GVideoButton
+            android:id="@+id/confirm"
+            style="@style/CenterDialogStyle.ConfirmButton"
+            android:text="@string/all_ensure"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/cancel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cancel" />
+
+    </com.jxntv.widget.GVideoConstraintLayout>
+</layout>

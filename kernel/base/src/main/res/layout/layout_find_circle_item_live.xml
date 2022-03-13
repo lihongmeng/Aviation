@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jxntv.widget.GVideoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/DIMEN_40DP"
+    android:drawableRight="@drawable/icon_is_live"
+    android:drawablePadding="@dimen/DIMEN_2DP"
+    android:singleLine="true"
+    android:gravity="center_vertical"
+    android:textColor="@color/color_191919"
+    android:textSize="@dimen/sp_15"
+    tools:text="庆元 正在直播庆元 正在直播庆元 正在直播庆元 正在直播庆元正在直播庆元正在直播庆元 正在直播庆元 正在直播庆元 正在直播" />

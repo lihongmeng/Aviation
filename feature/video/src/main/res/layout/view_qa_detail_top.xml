@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="videoModel"
+            type="com.jxntv.base.model.video.VideoModel" />
+
+        <variable
+            name="authorObservable"
+            type="com.jxntv.base.model.video.AuthorObservable" />
+
+        <variable
+            name="videoObservable"
+            type="com.jxntv.base.model.video.VideoObservable" />
+
+        <variable
+            name="viewModel"
+            type="com.jxntv.android.video.ui.vtxt.ImageTxtAudioViewModel" />
+
+        <variable
+            name="commentModel"
+            type="com.jxntv.android.video.ui.detail.comment.CommentViewModel" />
+
+        <import type="android.view.View" />
+
+        <import type="android.text.TextUtils" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="@{videoModel==null?View.INVISIBLE:View.VISIBLE}">
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_19DP"
+            android:layout_marginEnd="@dimen/DIMEN_19DP"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@{videoModel.qaTitle}"
+            android:textColor="@color/color_4d4c4c"
+            android:textSize="@dimen/sp_21"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/DIMEN_5DP"
+            android:visibility="@{TextUtils.isEmpty(videoModel.qaTitle)?View.GONE:View.VISIBLE,default=gone}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="adsadadasasdasdasdasdasd" />
+
+        <include
+            android:id="@+id/author_layout"
+            layout="@layout/view_author_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:authorObservable="@{authorObservable}"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:videoModel="@{videoModel}"
+            app:viewModel="@{viewModel}" />
+
+        <com.jxntv.widget.GVideoTextView
+            android:id="@+id/content"
+            style="@style/TextStyle.DefaultSpacing.width_0DP"
+            android:layout_marginStart="@dimen/DIMEN_19DP"
+            android:layout_marginTop="@dimen/DIMEN_14DP"
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            android:text="@{videoModel.content}"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_17"
+            android:textIsSelectable="true"
+            android:visibility="@{TextUtils.isEmpty(videoModel.content)?View.GONE:View.VISIBLE,default=gone}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/author_layout"
+            app:layout_goneMarginTop="@dimen/DIMEN_17DP"
+            tools:text="氨基酸qq斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大" />
+
+        <com.jxntv.widget.GVideoConstraintLayout
+            android:id="@+id/layout_sound_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_14DP"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            app:layout_constraintEnd_toEndOf="@id/content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@id/content"
+            app:layout_constraintTop_toBottomOf="@id/content"
+            app:layout_goneMarginTop="@dimen/DIMEN_15DP">
+
+            <com.jxntv.base.view.ImageRecyclerView
+                android:id="@+id/image_recycler_view"
+                android:layout_width="@dimen/DIMEN_320DP"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:visibility="@{videoModel.haveImage?View.VISIBLE:View.GONE,default=gone}"
+                app:imageData="@{videoModel.imageUrls}"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:oriImageData="@{videoModel.oriUrls}"
+                app:show_style="fall" />
+
+            <com.jxntv.android.liteav.GVideoSoundView
+                android:id="@+id/sound_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="@{videoModel.haveAudio?View.VISIBLE:View.GONE,default=gone}"
+                app:layout_constraintWidth_percent=".9" />
+
+            <com.jxntv.android.liteav.GVideoView
+                android:id="@+id/video_view"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="@{videoModel.isMedia?View.VISIBLE:View.GONE,default=gone}"
+                app:layout_constraintDimensionRatio="h,16:9"
+                tools:visibility="gone"/>
+
+        </com.jxntv.widget.GVideoConstraintLayout>
+
+        <!--链接信息-->
+        <com.jxntv.base.view.PublishLinkView
+            android:id="@+id/link_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_14DP"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_sound_image"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/layout_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1DP"
+            android:layout_marginTop="@dimen/DIMEN_19DP"
+            android:background="@color/color_f2f2f2"
+            app:layout_constraintTop_toBottomOf="@id/link_layout" />
+
+        <com.jxntv.widget.GVideoConstraintLayout
+            android:id="@+id/layout_favorite_comment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_52DP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_divider">
+
+            <View
+                android:id="@+id/vertical_line"
+                android:layout_width="@dimen/DIMEN_1DP"
+                android:layout_height="@dimen/DIMEN_19DP"
+                android:background="@color/color_f2f2f2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/toolbar_favorite_img"
+                android:layout_width="@dimen/DIMEN_23DP"
+                android:layout_height="@dimen/DIMEN_23DP"
+                android:onClick="@{v->viewModel.onFavorClicked(v)}"
+                android:scaleType="center"
+                android:src="@{videoObservable.isFavor?@drawable/media_toolbar_favorite_checked:@drawable/media_toolbar_favorite_unchecked}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/toolbar_favorite_num_text"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/media_toolbar_favorite_checked" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/toolbar_favorite_num_text"
+                style="@style/feed_comment_text"
+                android:layout_marginStart="@dimen/DIMEN_5DP"
+                android:textSize="@dimen/sp_15"
+                android:text="@{videoObservable.favorText}"
+                app:layout_constraintBottom_toBottomOf="@id/toolbar_favorite_img"
+                app:layout_constraintEnd_toStartOf="@id/vertical_line"
+                app:layout_constraintStart_toEndOf="@id/toolbar_favorite_img"
+                app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img"
+                tools:text="44" />
+
+            <com.jxntv.widget.GVideoImageView
+                android:id="@+id/toolbar_chat_img"
+                android:layout_width="@dimen/DIMEN_23DP"
+                android:layout_height="@dimen/DIMEN_23DP"
+                android:src="@drawable/ic_common_qa_comment_red"
+                android:onClick="@{v->commentModel.onClickShowTxtInputDialog(v)}"
+                app:layout_constraintBottom_toBottomOf="@id/toolbar_favorite_img"
+                app:layout_constraintEnd_toStartOf="@id/toolbar_comment_num_text"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@id/vertical_line"
+                app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img" />
+
+            <com.jxntv.widget.GVideoTextView
+                android:id="@+id/toolbar_comment_num_text"
+                style="@style/feed_comment_text"
+                android:layout_marginStart="@dimen/DIMEN_5DP"
+                android:text="@string/write_answer"
+                android:textSize="@dimen/sp_15"
+                android:textColor="@color/color_e4344e"
+                android:textStyle="bold"
+                android:onClick="@{v->commentModel.onClickShowTxtInputDialog(v)}"
+                app:layout_constraintBottom_toBottomOf="@id/toolbar_favorite_img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/toolbar_chat_img"
+                app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img" />
+
+        </com.jxntv.widget.GVideoConstraintLayout>
+
+        <View
+            android:id="@+id/layout_divider2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_10DP"
+            android:background="@color/color_f2f2f2"
+            app:layout_constraintTop_toBottomOf="@id/layout_favorite_comment" />
+
+        <com.jxntv.widget.GVideoRelativeLayout
+            android:id="@+id/all_comment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_45DP"
+            app:layout_constraintTop_toBottomOf="@id/layout_divider2">
+
+            <com.jxntv.widget.GVideoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/DIMEN_19DP"
+                android:drawableEnd="@drawable/ic_common_all_qa"
+                android:drawablePadding="@dimen/DIMEN_5DP"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/all_answer"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_f2f2f2" />
+
+        </com.jxntv.widget.GVideoRelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
