@@ -11,10 +11,10 @@
 
         <variable
             name="viewModel"
-            type="com.jxntv.account.ui.pgc.PgcContentViewModel" />
+            type="com.hzlz.aviation.feature.account.ui.pgc.PgcContentViewModel" />
     </data>
 
-    <com.jxntv.base.view.GVideoSmartRefreshLayout
+    <com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout
         android:id="@+id/refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,11 +24,11 @@
         app:srlEnableFooterFollowWhenNoMoreData="true"
         app:srlEnableLoadMoreWhenContentNotFull="false">
 
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.jxntv.widget.GVideoRecyclerView
+            <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
                 android:id="@+id/recycler_view"
                 style="@style/FragmentPgcStyle.RecyclerView"
                 android:layout_width="match_parent"
@@ -36,15 +36,15 @@
                 app:adapter="@{apter}"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
-            <com.jxntv.widget.GVideoFrameLayout
+            <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
                 android:id="@+id/empty_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingBottom="@dimen/DIMEN_100DP"
                 android:visibility="gone" />
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
-    </com.jxntv.base.view.GVideoSmartRefreshLayout>
+    </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
 
 </layout>

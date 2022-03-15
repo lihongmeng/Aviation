@@ -5,7 +5,7 @@
 
         <variable
             name="binding"
-            type="com.jxntv.share.widget.ShareDataBind" />
+            type="com.hzlz.aviation.feature.share.widget.ShareDataBind" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -14,7 +14,7 @@
         android:background="@{binding.shareBackgroundColor}"
         android:orientation="vertical">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/share_title"
             android:layout_width="match_parent"
             android:layout_height="@dimen/share_title_height"
@@ -24,14 +24,14 @@
             android:textColor="@{binding.shareTitleColor}"
             android:textSize="@dimen/share_title_text_size" />
 
-        <com.jxntv.widget.GVideoRecyclerView
+        <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
             android:id="@+id/share_recycler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/share_dialog_margin_landscape"
             android:layout_marginRight="@dimen/share_dialog_margin_landscape" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/share_interval"
             android:layout_width="match_parent"
             android:layout_height="1px"
@@ -40,7 +40,7 @@
             android:layout_marginRight="@dimen/share_title_height"
             android:background="@{binding.shareIntervalColor}" />
 
-        <com.jxntv.widget.GVideoRecyclerView
+        <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
             android:id="@+id/more_recycler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
             android:layout_marginRight="@dimen/share_dialog_margin_landscape"
             android:layout_marginBottom="@dimen/more_margin_bottom" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/share_cancel"
             android:layout_width="match_parent"
             android:layout_height="@dimen/share_cancel_height"

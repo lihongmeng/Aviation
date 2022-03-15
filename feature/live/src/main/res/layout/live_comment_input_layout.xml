@@ -9,7 +9,7 @@
         android:focusable="true"
         >
 
-        <com.jxntv.widget.GVideoEditText
+        <com.hzlz.aviation.library.widget.widget.GVideoEditText
             android:id="@+id/input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
             android:textColor="@color/color_212229"
             />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/send"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
             android:textSize="@dimen/sp_14"
             />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/shadow"
             android:layout_width="match_parent"
             android:layout_height="1px"

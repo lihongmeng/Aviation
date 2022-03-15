@@ -5,22 +5,22 @@
   <data>
     <variable
         name="viewModel"
-        type="com.jxntv.account.ui.profile.ProfileViewModel"
+        type="com.hzlz.aviation.feature.account.ui.profile.ProfileViewModel"
         />
 
     <variable
         name="user"
-        type="com.jxntv.account.model.UserObservable"
+        type="com.hzlz.aviation.feature.account.model.UserObservable"
         />
   </data>
-  <com.jxntv.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:background="@color/all_layout_background"
       android:orientation="vertical"
       >
-    <com.jxntv.widget.GVideoLinearLayout style="@style/ProfileStyle.AvatarContainer">
-      <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout style="@style/ProfileStyle.AvatarContainer">
+      <com.hzlz.aviation.library.widget.widget.GVideoImageView
           style="@style/ProfileStyle.Avatar"
           android:onClick="@{(v)->viewModel.modifyAvatar(v)}"
           app:placeholder="@{@drawable/ic_default_avatar}"
@@ -28,14 +28,14 @@
           bind:imageUrl="@{user.avatarUrl}"
           />
 
-      <com.jxntv.widget.GVideoTextView
+      <com.hzlz.aviation.library.widget.widget.GVideoTextView
           style="@style/ProfileStyle.ChangeAvatar"
           android:onClick="@{(v)->viewModel.modifyAvatar(v)}"
           android:text="@string/fragment_profile_click_top_change_avatar"
           />
-    </com.jxntv.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
     <!--昵称-->
-    <com.jxntv.widget.GVideoCellView
+    <com.hzlz.aviation.library.widget.widget.GVideoCellView
         style="@style/ProfileStyle.Cell"
         android:onClick="@{(v)->viewModel.modifyNickName(v)}"
         app:cvLeftText="@string/fragment_profile_nickname"
@@ -47,7 +47,7 @@
         app:cvShowRightTopText="@{user.newNickname != null}"
         />
     <!--性别-->
-    <com.jxntv.widget.GVideoCellView
+    <com.hzlz.aviation.library.widget.widget.GVideoCellView
         style="@style/ProfileStyle.Cell"
         android:onClick="@{()->viewModel.modifyGender()}"
         app:cvLeftText="@string/fragment_profile_gender"
@@ -59,7 +59,7 @@
         app:cvShowRightTopText="@{user.genderVisibility != null}"
         />
     <!--生日-->
-    <com.jxntv.widget.GVideoCellView
+    <com.hzlz.aviation.library.widget.widget.GVideoCellView
         style="@style/ProfileStyle.Cell"
         android:onClick="@{()->viewModel.modifyBirthday()}"
         app:cvBottomDriverMarginLeft="0dp"
@@ -71,7 +71,7 @@
         app:cvShowRightText="@{user.birthdayVisibility == null}"
         app:cvShowRightTopText="@{user.birthdayVisibility != null}"
         />
-    <com.jxntv.widget.GVideoCellView
+    <com.hzlz.aviation.library.widget.widget.GVideoCellView
         style="@style/ProfileStyle.Cell"
         android:onClick="@{()->viewModel.modifyRegion()}"
         app:cvBottomDriverMarginLeft="0dp"
@@ -84,7 +84,7 @@
         app:cvShowRightTopText="false"
         />
     <!--简介-->
-    <com.jxntv.widget.GVideoCellView
+    <com.hzlz.aviation.library.widget.widget.GVideoCellView
         android:id="@+id/cell_view_description"
         style="@style/ProfileStyle.Cell"
         android:onClick="@{(v)->viewModel.modifyDescription(v)}"
@@ -96,5 +96,5 @@
         app:cvShowRightText="@{user.newDescription == null}"
         app:cvShowRightTopText="@{user.newDescription != null}"
         />
-  </com.jxntv.widget.GVideoLinearLayout>
+  </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 </layout>

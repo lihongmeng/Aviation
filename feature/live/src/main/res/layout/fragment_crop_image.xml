@@ -4,19 +4,19 @@
   <data>
     <variable
         name="viewModel"
-        type="com.jxntv.live.crop.CropImageViewModel"
+        type="com.hzlz.aviation.feature.live.crop.CropImageViewModel"
         />
   </data>
-  <com.jxntv.widget.GVideoFrameLayout
+  <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       >
-    <com.jxntv.cropper.CropImageView
+    <com.hzlz.aviation.library.crop.CropImageView
         android:id="@+id/image_view_crop"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:cropAspectRatioX="1"
         app:cropAspectRatioY="1"
       />
-  </com.jxntv.widget.GVideoFrameLayout>
+  </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
 </layout>

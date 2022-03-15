@@ -5,16 +5,16 @@
     <data>
         <variable
             name="viewModel"
-            type="com.jxntv.android.video.ui.detail.comment.CommentViewModel" />
+            type="com.hzlz.aviation.feature.video.ui.detail.comment.CommentViewModel" />
 
     </data>
 
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/DIMEN_48DP"
         android:background="@color/white">
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/audio_comment"
             android:layout_width="@dimen/DIMEN_50DP"
             android:layout_height="match_parent"
@@ -25,7 +25,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoRTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoRTextView
             android:id="@+id/comment_txt"
             android:layout_width="0dp"
             android:layout_height="@dimen/DIMEN_35DP"
@@ -44,7 +44,7 @@
             app:layout_constraintRight_toLeftOf="@id/image_comment"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/image_comment"
             android:layout_width="@dimen/DIMEN_50DP"
             android:layout_height="match_parent"
@@ -57,5 +57,5 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

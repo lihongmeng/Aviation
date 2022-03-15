@@ -5,19 +5,19 @@
 
         <variable
             name="toolBind"
-            type="com.jxntv.media.databind.MediaToolBarDataBind" />
+            type="com.hzlz.aviation.kernel.media.databind.MediaToolBarDataBind" />
 
         <variable
             name="videoObservable"
-            type="com.jxntv.base.model.video.VideoObservable" />
+            type="com.hzlz.aviation.kernel.base.model.video.VideoObservable" />
 
         <variable
             name="authorObservable"
-            type="com.jxntv.base.model.video.AuthorObservable" />
+            type="com.hzlz.aviation.kernel.base.model.video.AuthorObservable" />
 
         <import type="android.view.View" />
 
-        <import type="com.jxntv.base.utils.StringUtils" />
+        <import type="com.hzlz.aviation.kernel.base.utils.StringUtils" />
 
         <import type="android.text.TextUtils"/>
 
@@ -31,7 +31,7 @@
         android:onClick="@{(view)->toolBind.onItemClick(view)}">
 
         <!--头像-->
-        <com.jxntv.base.view.MediaImageView
+        <com.hzlz.aviation.kernel.base.view.MediaImageView
             android:id="@+id/toolbar_person_img"
             android:layout_width="@dimen/DIMEN_32DP"
             android:layout_height="@dimen/DIMEN_32DP"
@@ -44,7 +44,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:placeholder='@{@drawable/ic_default_avatar}' />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/header_authentication"
             android:layout_width="@dimen/DIMEN_13DP"
             android:layout_height="@dimen/DIMEN_13DP"
@@ -55,7 +55,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             tools:visibility="visible" />
 
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:id="@+id/layout_name"
             android:orientation="vertical"
             android:layout_width="wrap_content"
@@ -67,7 +67,7 @@
             app:layout_constraintTop_toTopOf="@id/toolbar_person_img">
 
             <!--名称-->
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:lines="1"
@@ -82,7 +82,7 @@
                 tools:text="1231" />
 
             <!--名称-->
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/toolbar_name_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
                 tools:text="1231" />
 
             <!--认证信息或作者简介 -->
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/toolbar_sources_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -113,9 +113,9 @@
                 tools:text="作者简介"
                 tools:visibility="visible" />
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/toolbar_favorite_img"
             style="@style/feed_comment_img"
             android:onClick="@{(view)->toolBind.onFavoriteClick(view)}"
@@ -124,7 +124,7 @@
             app:layout_constraintEnd_toStartOf="@id/toolbar_favorite_num_text"
             tools:src="@drawable/media_toolbar_favorite_checked" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/toolbar_favorite_num_text"
             style="@style/feed_comment_text"
             android:text="@{videoObservable.favorText}"
@@ -136,7 +136,7 @@
             app:layout_constraintEnd_toStartOf="@id/toolbar_chat_img"
             tools:text="44" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/toolbar_chat_img"
             style="@style/feed_comment_img"
             android:onClick="@{(view)->toolBind.onCommentClick(view)}"
@@ -146,7 +146,7 @@
             app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img"
             tools:src="@drawable/ic_common_comment" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/toolbar_comment_num_text"
             style="@style/feed_comment_text"
             android:onClick="@{(view)->toolBind.onCommentClick(view)}"
@@ -156,7 +156,7 @@
             app:layout_constraintEnd_toStartOf="@id/toolbar_more_img"
             tools:text="12" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/toolbar_more_img"
             android:layout_width="@dimen/DIMEN_50DP"
             android:layout_height="@dimen/DIMEN_36DP"

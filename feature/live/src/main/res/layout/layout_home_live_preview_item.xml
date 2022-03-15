@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.jxntv.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="@dimen/DIMEN_10DP"
@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
-            <com.jxntv.widget.GVideoRImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoRImageView
                 android:id="@+id/cover_left"
                 android:layout_width="@dimen/DIMEN_160DP"
                 android:layout_height="@dimen/DIMEN_90DP"
@@ -25,7 +25,7 @@
                 android:background="@drawable/shape_soild_f7f7f7_corners_4dp"
                 app:corner_radius="@dimen/DIMEN_4DP" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/title_left"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
             android:layout_weight="1"
             android:visibility="gone">
 
-            <com.jxntv.widget.GVideoRImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoRImageView
                 android:id="@+id/cover_right"
                 android:layout_width="@dimen/DIMEN_160DP"
                 android:layout_height="@dimen/DIMEN_90DP"
@@ -57,7 +57,7 @@
                 android:background="@drawable/shape_soild_f7f7f7_corners_4dp"
                 app:corner_radius="@dimen/DIMEN_4DP" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/title_right"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -73,6 +73,6 @@
 
         </RelativeLayout>
 
-    </com.jxntv.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
 </layout>

@@ -5,24 +5,24 @@
 
         <variable
             name="detailBind"
-            type="com.jxntv.search.databinding.SearchResultDataBinding" />
+            type="com.hzlz.aviation.feature.search.databinding.SearchResultDataBinding" />
 
         <variable
             name="detailModel"
-            type="com.jxntv.search.model.SearchDetailModel" />
+            type="com.hzlz.aviation.feature.search.model.SearchDetailModel" />
 
         <import type="android.view.View" />
 
         <import type="android.text.TextUtils" />
     </data>
 
-    <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         style="@style/feed_layout_margin"
         android:id="@+id/root_layout"
         android:onClick="@{view->detailBind.onProgramClick(view, detailModel)}">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/content_tag"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/DIMEN_28DP"
@@ -33,7 +33,7 @@
             android:textSize="@dimen/sp_13"
             android:visibility="@{detailModel.showTag?View.VISIBLE:View.GONE}" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/cover_img"
             android:layout_width="@dimen/DIMEN_77DP"
             android:layout_height="@dimen/DIMEN_77DP"
@@ -45,7 +45,7 @@
             app:placeholder="@{@drawable/media_default_cover_bg}"
             app:roundedCorners="@{@dimen/r_r01}" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:layout_width="@dimen/DIMEN_29DP"
             android:layout_height="@dimen/DIMEN_29DP"
             android:src="@drawable/ic_play_white_bg_black"
@@ -54,7 +54,7 @@
             app:layout_constraintRight_toRightOf="@id/cover_img"
             app:layout_constraintTop_toTopOf="@id/cover_img" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
             app:layout_constraintVertical_chainStyle="packed"
             tools:text="金牌调解" />
 
-        <com.jxntv.widget.GVideoRLinearLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout
             android:layout_width="@dimen/DIMEN_62DP"
             android:layout_height="@dimen/DIMEN_23DP"
             android:layout_marginBottom="@dimen/DIMEN_10DP"
@@ -80,21 +80,21 @@
             app:layout_constraintBottom_toBottomOf="@id/cover_img"
             app:layout_constraintStart_toStartOf="@id/title">
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:layout_width="@dimen/DIMEN_15DP"
                 android:layout_height="@dimen/DIMEN_15DP"
                 android:src="@drawable/ic_play_white" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/DIMEN_3DP"
                 android:text="@string/play"
                 android:textColor="@color/color_ffffff" />
 
-        </com.jxntv.widget.GVideoRLinearLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout>
 
-        <com.jxntv.widget.GVideoRecyclerView
+        <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
             android:id="@+id/program_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -110,5 +110,5 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/program_list" />
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

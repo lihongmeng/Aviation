@@ -6,7 +6,7 @@
     android:layout_height="@dimen/DIMEN_58DP"
     android:background="@drawable/shape_solid_000000_50_corners_4dp">
 
-    <com.jxntv.widget.GVideoRImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoRImageView
         android:id="@+id/header"
         android:layout_width="@dimen/DIMEN_31DP"
         android:layout_height="@dimen/DIMEN_31DP"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/icon_join_micro_connect" />
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
         android:id="@+id/name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@id/header"
         tools:text="静夜思" />
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:id="@+id/micro_status"
         android:visibility="gone"
         android:layout_width="@dimen/DIMEN_8DP"

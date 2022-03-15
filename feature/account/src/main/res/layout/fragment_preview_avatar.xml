@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:bind="http://schemas.android.com/tools">
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
         <variable
             name="viewModel"
-            type="com.jxntv.account.ui.profile.ProfileViewModel" />
+            type="com.hzlz.aviation.feature.account.ui.profile.ProfileViewModel" />
 
         <variable
             name="author"
-            type="com.jxntv.base.model.video.AuthorModel" />
+            type="com.hzlz.aviation.kernel.base.model.video.AuthorModel" />
 
         <import type="android.text.TextUtils"/>
     </data>
 
-    <com.jxntv.widget.GVideoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/root"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black"
         android:orientation="vertical">
 
-        <com.jxntv.widget.GVideoPhotoView
+        <com.hzlz.aviation.library.widget.widget.GVideoPhotoView
             android:id="@+id/photo_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,7 +29,7 @@
             android:adjustViewBounds="true"
             android:transitionName="transition_image" />
 
-        <com.jxntv.widget.GVideoRTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoRTextView
             android:id="@+id/modify_avatar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,5 +47,5 @@
             app:border_width_normal="@dimen/DIMEN_1DP"
             app:corner_radius="@dimen/DIMEN_20DP" />
 
-    </com.jxntv.widget.GVideoFrameLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
 </layout>

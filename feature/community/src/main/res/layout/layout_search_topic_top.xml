@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_45DP"
+    android:background="@color/color_FFFFFF"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        android:id="@+id/top_back"
+        android:layout_width="@dimen/DIMEN_45DP"
+        android:layout_height="@dimen/DIMEN_45DP"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back_black" />
+
+    <com.hzlz.aviation.library.widget.widget.GVideoEditText
+        android:id="@+id/edit"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/DIMEN_30DP"
+        android:gravity="center_vertical"
+        android:hint="@string/search_topic"
+        android:paddingStart="@dimen/DIMEN_32DP"
+        android:paddingEnd="@dimen/DIMEN_45DP"
+        android:textColor="@color/t_color01"
+        android:textColorHint="@color/t_color03"
+        android:textSize="@dimen/t_font02"
+        android:background="@drawable/shape_solid_f7f8fc_corners_45dp"
+        android:textCursorDrawable="@drawable/shape_solid_f7f8fc_corners_45dp"
+        android:ellipsize="end"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        app:layout_constraintLeft_toRightOf="@id/top_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/search" />
+
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        android:layout_width="@dimen/DIMEN_24DP"
+        android:layout_height="@dimen/DIMEN_24DP"
+        android:src="@drawable/icon_search"
+        android:scaleType="centerInside"
+        android:layout_marginStart="@dimen/DIMEN_7DP"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/edit" />
+
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        android:id="@+id/clear"
+        android:layout_width="@dimen/DIMEN_20DP"
+        android:layout_height="@dimen/DIMEN_20DP"
+        android:layout_marginRight="@dimen/DIMEN_10DP"
+        android:src="@drawable/search_cancel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@id/edit" />
+
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/DIMEN_45DP"
+        android:paddingStart="@dimen/DIMEN_18DP"
+        android:paddingEnd="@dimen/DIMEN_6DP"
+        android:gravity="center_vertical"
+        android:text="@string/search"
+        android:textColor="@color/color_000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/edit"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

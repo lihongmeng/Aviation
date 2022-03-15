@@ -7,11 +7,11 @@
 
         <variable
             name="videoBind"
-            type="com.jxntv.media.databind.MediaVideoDataBind" />
+            type="com.hzlz.aviation.kernel.media.databind.MediaVideoDataBind" />
 
         <variable
             name="feedModel"
-            type="com.jxntv.media.model.MediaModel" />
+            type="com.hzlz.aviation.kernel.media.model.MediaModel" />
 
         <import type="android.view.View" />
 
@@ -21,21 +21,21 @@
 
     </data>
 
-    <com.jxntv.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
         style="@style/feed_layout_margin_basic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:onClick="@{(view)->videoBind.onItemClick(view)}">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/title"
             style="@style/feed_title_style"
             android:text="@{feedModel.title}"
             android:visibility="@{TextUtils.isEmpty(feedModel.qaTitle)?View.GONE:View.VISIBLE,default=gone}"
             />
 
-        <com.jxntv.widget.FoldTextView
+        <com.hzlz.aviation.library.widget.widget.FoldTextView
             android:id="@+id/vertical_top_title"
             style="@style/TextStyle.DefaultSpacing"
             android:layout_marginBottom="@dimen/DIMEN_9DP"
@@ -67,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <com.jxntv.android.liteav.GVideoView
+                <com.hzlz.aviation.kernel.liteav.GVideoView
                     android:id="@+id/player_view"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -86,7 +86,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintDimensionRatio="h,14:14" />
 
-                <com.jxntv.base.view.MediaImageView
+                <com.hzlz.aviation.kernel.base.view.MediaImageView
                     android:id="@+id/vertical_background"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -115,7 +115,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <com.jxntv.widget.GVideoTextView
+                    <com.hzlz.aviation.library.widget.widget.GVideoTextView
                         android:id="@+id/vertical_title"
                         style="@style/feed_text_style_match_wrap"
                         android:text="@{feedModel.title}"
@@ -136,7 +136,7 @@
                         android:layout_below="@id/vertical_title"
                         android:visibility="@{feedModel.liveMedia ? View.VISIBLE : View.GONE}">
 
-                        <com.jxntv.widget.WaveIndicatorView
+                        <com.hzlz.aviation.library.widget.widget.WaveIndicatorView
                             android:layout_width="@dimen/DIMEN_14DP"
                             android:layout_height="@dimen/DIMEN_10DP"
                             android:layout_gravity="center_vertical"
@@ -146,7 +146,7 @@
                             app:indicator_spacing="@dimen/DIMEN_2DP"
                             app:indicator_width="@dimen/DIMEN_2D5P" />
 
-                        <com.jxntv.widget.GVideoTextView
+                        <com.hzlz.aviation.library.widget.widget.GVideoTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:includeFontPadding="false"
@@ -159,7 +159,7 @@
 
                     </LinearLayout>
 
-                    <com.jxntv.base.view.LiveStartTimeView
+                    <com.hzlz.aviation.kernel.base.view.LiveStartTimeView
                         android:id="@+id/live_start_time"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -170,7 +170,7 @@
 
                 </RelativeLayout>
 
-                <com.jxntv.base.view.MediaImageView
+                <com.hzlz.aviation.kernel.base.view.MediaImageView
                     android:id="@+id/vertical_img"
                     android:layout_width="@dimen/media_big_img_video_img_size"
                     android:layout_height="@dimen/media_big_img_video_img_size"
@@ -187,6 +187,6 @@
 
         </androidx.cardview.widget.CardView>
 
-    </com.jxntv.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
 </layout>

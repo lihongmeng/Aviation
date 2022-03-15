@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     >
-  <com.jxntv.base.view.GVideoSmartRefreshLayout
+  <com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout
       android:id="@+id/refreshLayout"
       android:layout_width="match_parent"
       android:layout_height="match_parent">
@@ -20,12 +20,12 @@
       </androidx.core.widget.NestedScrollView>
 
 
-      <com.jxntv.widget.GVideoRecyclerView
+      <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
           android:id="@+id/recycler"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:orientation="vertical" />
     </FrameLayout>
 
-  </com.jxntv.base.view.GVideoSmartRefreshLayout>
+  </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
 </layout>

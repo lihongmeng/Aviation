@@ -14,7 +14,7 @@
             layout="@layout/default_banner_layout"
             app:layout_scrollFlags="scroll|exitUntilCollapsed" />
 
-        <com.jxntv.feed.view.recommend.widget.HotCircleLayout
+        <com.hzlz.aviation.feature.feed.view.recommend.widget.HotCircleLayout
             android:id="@+id/hot_circle_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

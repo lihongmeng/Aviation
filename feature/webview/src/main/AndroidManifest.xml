@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jxntv.webview" >
+    package="com.hzlz.aviation.feature.webview" >
   <application>
     <activity
-        android:name="com.jxntv.webview.WebViewActivity"
+        android:name="com.hzlz.aviation.feature.webview.com.hzlz.aviation.feature.webview.WebViewActivity"
         android:configChanges="orientation|screenSize"
         android:exported="false"
         android:theme="@style/Theme.AppCompat.NoActionBar" />

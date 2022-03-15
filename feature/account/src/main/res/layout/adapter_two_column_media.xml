@@ -5,19 +5,19 @@
 
     <variable
       name="adapter"
-      type="com.jxntv.account.adapter.AbstractMediaAdapter" />
+      type="com.hzlz.aviation.feature.account.adapter.AbstractMediaAdapter" />
 
     <variable
       name="media"
-      type="com.jxntv.account.model.MediaObservable" />
+      type="com.hzlz.aviation.feature.account.model.MediaObservable" />
 
     <variable
       name="author"
-      type="com.jxntv.base.model.video.AuthorObservable" />
+      type="com.hzlz.aviation.kernel.base.model.video.AuthorObservable" />
 
     <variable
         name="fromAuthor"
-        type="com.jxntv.account.model.Author"
+        type="com.hzlz.aviation.feature.account.model.Author"
         />
 
     <variable
@@ -27,13 +27,13 @@
     <import type="android.text.TextUtils" />
   </data>
 
-  <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/AdapterTwoColumnStyle.Container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:onClick="@{(v)->adapter.onItemClick(v,position)}">
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
       android:id="@+id/image_view_cover"
       style="@style/AdapterTwoColumnStyle.Cover"
       android:layout_width="0dp"
@@ -45,7 +45,7 @@
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:roundedCorners="@{@dimen/adapter_media_cover_radius}" />
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_default_play"
@@ -54,13 +54,13 @@
         app:layout_constraintRight_toRightOf="@id/image_view_cover"
         app:layout_constraintTop_toTopOf="@id/image_view_cover"
         app:layout_constraintBottom_toBottomOf="@id/image_view_cover"/>
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
       android:id="@+id/text_view_tag"
       style="@style/AdapterTwoColumnStyle.Tag"
       app:layout_constraintLeft_toLeftOf="@id/image_view_cover"
       app:layout_constraintTop_toTopOf="@id/image_view_cover" />
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
       android:id="@+id/text_view_description"
       style="@style/AdapterTwoColumnStyle.Description"
       android:layout_width="0dp"
@@ -69,7 +69,7 @@
       app:layout_constraintLeft_toLeftOf="@id/image_view_cover"
       app:layout_constraintRight_toRightOf="@id/image_view_cover" />
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
       android:id="@+id/image_view_owner_avatar"
       style="@style/AdapterTwoColumnStyle.OwnerAvatar"
       app:circleCrop="@{true}"
@@ -79,7 +79,7 @@
       app:layout_constraintBottom_toBottomOf="@id/image_view_cover"
       app:layout_constraintLeft_toLeftOf="@id/image_view_cover" />
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
       android:id="@+id/text_view_owner_name"
       style="@style/AdapterTwoColumnStyle.OwnerName"
       android:layout_width="0dp"
@@ -90,7 +90,7 @@
       app:layout_constraintRight_toLeftOf="@+id/image_view_more"
       app:layout_constraintTop_toTopOf="@+id/image_view_owner_avatar" />
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
       android:id="@+id/image_view_more"
       style="@style/AdapterTwoColumnStyle.More"
       android:onClick="@{(v)->adapter.onMore(v,position)}"
@@ -98,5 +98,5 @@
       android:visibility="@{fromAuthor.self ? View.VISIBLE : View.GONE}"
       app:layout_constraintBottom_toBottomOf="@id/image_view_cover"
       app:layout_constraintRight_toRightOf="@id/image_view_cover" />
-  </com.jxntv.widget.GVideoConstraintLayout>
+  </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

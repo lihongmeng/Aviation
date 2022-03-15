@@ -7,25 +7,25 @@
 
         <variable
             name="feedModel"
-            type="com.jxntv.media.model.MediaModel" />
+            type="com.hzlz.aviation.kernel.media.model.MediaModel" />
 
-        <import type="com.jxntv.base.utils.FriendlyStringUtils" />
+        <import type="com.hzlz.aviation.kernel.base.utils.FriendlyStringUtils" />
 
-        <import type="com.jxntv.utils.DateUtils" />
+        <import type="com.hzlz.aviation.library.util.DateUtils" />
 
         <import type="android.text.TextUtils" />
 
         <import type="android.view.View" />
     </data>
 
-    <com.jxntv.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/root_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/source"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="江西新闻联播江西新闻联播江西新闻联播江西新闻联播" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/review_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
             android:visibility="gone"
             tools:text="阅读3000" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/create_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
             android:text="@{DateUtils.friendlyTime(feedModel.createDate)}"
             tools:text="2021-5-22" />
 
-        <com.jxntv.widget.GVideoRTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoRTextView
             android:id="@+id/news_tag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -81,5 +81,5 @@
             android:text="@{feedModel.contentLabel}"
             tools:text="视频" />
 
-    </com.jxntv.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 </layout>

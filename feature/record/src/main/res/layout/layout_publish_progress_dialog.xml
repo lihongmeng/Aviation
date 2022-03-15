@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.jxntv.widget.GVideoRLinearLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="@dimen/publish_dialog_width"
         android:layout_height="wrap_content"
@@ -10,7 +10,7 @@
         app:background_normal="@color/process_dialog_bg_color"
         app:corner_radius="@dimen/r_r01"
         >
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/text_progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
             android:text="@string/publish_progress_default_text"
             android:layout_marginBottom="@dimen/publish_progress_margin_bottom"
             />
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,5 +31,5 @@
             android:textSize="@dimen/t_font06"
             android:text="@string/publish_wait_text"
             />
-    </com.jxntv.widget.GVideoRLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout>
 </layout>

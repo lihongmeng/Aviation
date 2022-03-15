@@ -6,7 +6,7 @@
 
   <fragment
       android:id="@+id/recordFragment"
-      android:name="com.jxntv.record.recorder.fragment.record.RecordFragment"
+      android:name="com.hzlz.aviation.feature.record.recorder.fragment.record.RecordFragment"
       android:label="RecordFragment" >
     <action
         android:id="@+id/action_record_to_upload"
@@ -18,7 +18,7 @@
 
   <fragment
       android:id="@+id/chooseImageVideoFragment"
-      android:name="com.jxntv.record.recorder.fragment.choose.ChooseImageVideoFragment"
+      android:name="com.hzlz.aviation.feature.record.recorder.fragment.choose.ChooseImageVideoFragment"
       android:label="ChooseImageVideoFragment">
     <action
         android:id="@+id/action_choose_to_upload"
@@ -30,23 +30,23 @@
 
   <fragment
       android:id="@+id/previewVideoFragment"
-      android:name="com.jxntv.record.recorder.fragment.preview.PreviewVideoFragment"
+      android:name="com.hzlz.aviation.feature.record.recorder.fragment.preview.PreviewVideoFragment"
       android:label="PreviewVideoFragment" />
 
   <fragment
       android:id="@+id/uploadVideoFragment"
-      android:name="com.jxntv.record.recorder.fragment.upload.UploadFragment"
+      android:name="com.hzlz.aviation.feature.record.recorder.fragment.upload.UploadFragment"
       android:label="UploadVideoFragment" />
 
   <fragment
       android:id="@+id/publishFragment"
-      android:name="com.jxntv.record.recorder.fragment.publish.PublishFragment"
+      android:name="com.hzlz.aviation.feature.record.recorder.fragment.publish.PublishFragment"
       android:label="PublishFragment" />
 
   <!--裁剪界面-->
   <fragment
       android:id="@+id/cropVideoFragment"
-      android:name="com.jxntv.record.recorder.fragment.crop.CropVideoFragment"
+      android:name="com.hzlz.aviation.feature.record.recorder.fragment.crop.CropVideoFragment"
       android:label="CropVideoFragment">
     <argument
         android:name="cropImageUri"

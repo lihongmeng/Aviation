@@ -18,7 +18,6 @@ dependencies {
     implementation deps.tog_kernel_base
     implementation deps.tog_kernel_liteav
     implementation deps.tog_kernel_stat
-    implementation deps.tog_feature_common
 
     //Room
     implementation deps.room_rxjava2

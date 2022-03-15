@@ -6,22 +6,22 @@
 
         <variable
             name="feedModel"
-            type="com.jxntv.media.model.MediaModel" />
+            type="com.hzlz.aviation.kernel.media.model.MediaModel" />
 
         <import type="android.view.View" />
 
-        <import type="com.jxntv.utils.DateUtils" />
+        <import type="com.hzlz.aviation.library.util.DateUtils" />
 
     </data>
 
-    <com.jxntv.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
         android:id="@+id/root_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
             android:textColor="@color/t_color01"
             android:textSize="@dimen/sp_15" />
 
-        <com.jxntv.widget.GVideoRTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoRTextView
             android:id="@+id/tag_tv"
             android:layout_width="@dimen/DIMEN_13DP"
             android:layout_height="@dimen/DIMEN_13DP"
@@ -48,7 +48,7 @@
             app:background_normal="@color/color_FC284D"
             app:corner_radius="@dimen/DIMEN_1DP" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/create_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -58,6 +58,6 @@
             android:textSize="@dimen/sp_10" />
 
 
-    </com.jxntv.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
 </layout>

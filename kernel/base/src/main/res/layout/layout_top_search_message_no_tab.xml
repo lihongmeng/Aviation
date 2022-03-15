@@ -25,14 +25,14 @@
             app:layout_constraintEnd_toStartOf="@id/messageLayout"
             app:layout_constraintTop_toTopOf="parent">
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:layout_width="@dimen/DIMEN_17DP"
                 android:layout_height="@dimen/DIMEN_17DP"
                 android:layout_marginLeft="@dimen/DIMEN_14DP"
                 android:scaleType="centerInside"
                 android:src="@drawable/icon_search_search_grey" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
@@ -49,7 +49,7 @@
             android:background="@color/color_ffffff"
             app:layout_constraintTop_toBottomOf="@id/top_bar_search_layout" />
 
-        <com.jxntv.base.view.HomeMessageLayout
+        <com.hzlz.aviation.kernel.base.view.HomeMessageLayout
             android:id="@+id/messageLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

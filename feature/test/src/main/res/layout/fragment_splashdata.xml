@@ -3,7 +3,7 @@
   <data>
     <variable
         name="viewModel"
-        type="com.jxntv.test.splashdata.SplashDataViewModel"
+        type="com.hzlz.aviation.feature.test.splashdata.SplashDataViewModel"
         />
   </data>
   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -11,7 +11,7 @@
       android:layout_height="match_parent"
       android:orientation="vertical"
       >
-    <com.jxntv.base.view.GVideoSmartRefreshLayout
+    <com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout
         android:id="@+id/refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,7 +24,7 @@
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           app:adapter="@{viewModel.adapter}" />
-    </com.jxntv.base.view.GVideoSmartRefreshLayout>
+    </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
 
   </LinearLayout>
 </layout>

@@ -1,6 +1,5 @@
-<manifest package="com.jxntv.base"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest package="com.hzlz.aviation.kernel.base"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -17,7 +16,7 @@
     <application>
 
         <receiver
-            android:name="com.jxntv.base.receiver.NetWorkStatusReceiver"
+            android:name="com.hzlz.aviation.kernel.base.receiver.NetWorkStatusReceiver"
             android:exported="false">
 
             <intent-filter>
@@ -31,12 +30,12 @@
         <service android:name="org.fourthline.cling.android.AndroidUpnpServiceImpl" />
 
         <activity
-            android:name="com.jxntv.base.scan.ScanActivity"
+            android:name="com.hzlz.aviation.kernel.base.scan.ScanActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.jxntv.base.screenprojection.ScreenProjectionActivity"
+            android:name="com.hzlz.aviation.kernel.base.screenprojection.ScreenProjectionActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
 

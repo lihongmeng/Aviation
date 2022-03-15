@@ -1,4 +1,4 @@
-rootProject.name = 'GVideo'
+rootProject.name = 'Aviation'
 include ':app'
 
 //res
@@ -14,8 +14,7 @@ include ':feature:share'
 include ':feature:test'
 include ':feature:record'
 include ':feature:live'
-include ':feature:circle'
-include ':feature:common'
+include ':feature:community'
 include ':feature:watchtv'
 // kernel
 include ':kernel:network'
@@ -33,9 +32,3 @@ include ':library:utils'
 include ':library:crop'
 include ':library:videocache'
 
-include ':tuikit:chat'
-include ':tuikit:tuicore'
-include ':tuikit:tuichat'
-include ':tuikit:tuiconversation'
-include ':tuikit:tuigroup'
-include ':tuikit:tuicontact'

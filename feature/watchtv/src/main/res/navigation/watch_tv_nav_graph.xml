@@ -7,25 +7,25 @@
     <!--首页的看电视功能父级Fragment-->
     <fragment
         android:id="@+id/homeWatchTvFragment"
-        android:name="com.jxntv.watchtv.ui.HomeWatchTvFragment"
+        android:name="com.hzlz.aviation.feature.watchtv.ui.HomeWatchTvFragment"
         android:label="HomeWatchTvFragment" />
 
     <!--首页看电视Fragment，下方ViewPager中的子Fragment-->
     <fragment
         android:id="@+id/homeWatchTvTvListFragment"
-        android:name="com.jxntv.watchtv.ui.HomeWatchTvTvListFragment"
+        android:name="com.hzlz.aviation.feature.watchtv.ui.HomeWatchTvTvListFragment"
         android:label="HomeWatchTvTvListFragment" />
 
     <!--看电视频道详情页-->
     <fragment
         android:id="@+id/watchTvChannelDetailFragment"
-        android:name="com.jxntv.watchtv.ui.WatchTvChannelDetailFragment"
+        android:name="com.hzlz.aviation.feature.watchtv.ui.WatchTvChannelDetailFragment"
         android:label="WatchTvChannelDetailFragment" />
 
     <!--整期详情页-->
     <fragment
         android:id="@+id/watchTvWholePeriodDetailFragment"
-        android:name="com.jxntv.watchtv.ui.WatchTvWholePeriodDetailFragment"
+        android:name="com.hzlz.aviation.feature.watchtv.ui.WatchTvWholePeriodDetailFragment"
         android:label="WatchTvWholePeriodDetailFragment" />
 
 </navigation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hzlz.aviation.feature.community.viewmodel.HomeFindCommunityViewModel" />
+
+    </data>
+
+    <com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ksrlv_enableLoadMore="true"
+        app:ksrlv_enableRefresh="true"
+        app:ksrlv_onLoadMore="@{(v)->viewModel.onLoadMore(v)}"
+        app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}"
+        app:srlEnableFooterFollowWhenNoMoreData="true"
+        app:srlEnableLoadMore="false"
+        android:background="@color/color_f2f2f2"
+        app:srlEnableRefresh="true"
+        app:srlHeaderHeight="75dp">
+
+        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+            android:id="@+id/recycler_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:adapter="@{viewModel.adapter}"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+                android:id="@+id/empty_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+        </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
+
+    </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
+
+</layout>

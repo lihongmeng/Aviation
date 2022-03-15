@@ -6,12 +6,12 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.jxntv.home.HomeFragment">
+        android:name="com.hzlz.aviation.feature.home.HomeFragment">
     </fragment>
 
     <fragment
         android:id="@+id/videoShortFragment"
-        android:name="com.jxntv.android.video.ui.vshort.VideoContainerFragment"
+        android:name="com.hzlz.aviation.feature.video.ui.vshort.VideoContainerFragment"
         android:label="videoShortFragment"/>
 
 </navigation>

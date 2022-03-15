@@ -6,11 +6,11 @@
 
         <variable
             name="adapter"
-            type="com.jxntv.android.video.ui.detail.series.SeriesAdapter" />
+            type="com.hzlz.aviation.feature.video.ui.detail.series.SeriesAdapter" />
 
         <variable
             name="series"
-            type="com.jxntv.base.model.video.VideoModel" />
+            type="com.hzlz.aviation.kernel.base.model.video.VideoModel" />
 
         <import type="android.view.View" />
 
@@ -26,7 +26,7 @@
         android:focusable="true"
         android:onClick="@{(v)->adapter.onItemClick(v, series)}">
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/image"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -41,7 +41,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintWidth_percent="0.4" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_default_play"
@@ -51,7 +51,7 @@
             app:layout_constraintBottom_toBottomOf="@id/image"
             app:layout_constraintRight_toRightOf="@id/image" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
             app:layout_constraintLeft_toRightOf="@id/image"
             app:layout_constraintTop_toTopOf="@id/image" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/author"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

@@ -2,11 +2,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.jxntv.base.view.GVideoSmartRefreshLayout
+        <com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout
             android:id="@+id/refreshLayout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -18,7 +18,7 @@
                 android:background="@color/white"
                 android:fillViewport="true">
 
-                <com.jxntv.widget.GVideoLinearLayout
+                <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -28,17 +28,17 @@
                         android:layout_height="@dimen/DIMEN_10DP"
                         android:background="@color/c_f7f8fc" />
 
-                    <com.jxntv.widget.GVideoRecyclerView
+                    <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
                         android:id="@+id/recycler"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical" />
 
-                </com.jxntv.widget.GVideoLinearLayout>
+                </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
             </androidx.core.widget.NestedScrollView>
 
-        </com.jxntv.base.view.GVideoSmartRefreshLayout>
+        </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
 
         <FrameLayout
             android:id="@+id/placeholder"
@@ -58,6 +58,6 @@
 
         </LinearLayout>
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
 </layout>

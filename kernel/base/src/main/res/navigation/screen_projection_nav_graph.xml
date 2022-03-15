@@ -7,7 +7,7 @@
     <!--投屏页-->
     <fragment
         android:id="@+id/screenProjectionFragment"
-        android:name="com.jxntv.base.screenprojection.ScreenProjectionFragment"
+        android:name="com.hzlz.aviation.kernel.base.screenprojection.ScreenProjectionFragment"
         android:label="HomeWatchTvFragment" />
 
 </navigation>

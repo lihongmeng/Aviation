@@ -4,7 +4,7 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       >
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
         android:id="@+id/text_view_tip"
         android:layout_gravity="center"
         android:background="@drawable/default_network_dialog_background"

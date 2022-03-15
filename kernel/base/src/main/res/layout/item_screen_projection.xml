@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.jxntv.widget.GVideoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/DIMEN_48DP">
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="@dimen/DIMEN_48DP"
@@ -28,4 +28,4 @@
         android:visibility="gone"
         android:src="@drawable/icon_loading_black_white" />
 
-</com.jxntv.widget.GVideoRelativeLayout>
+</com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout>

@@ -9,24 +9,24 @@
 
     <variable
       name="adapter"
-      type="com.jxntv.account.adapter.MessageNotificationAdapter" />
+      type="com.hzlz.aviation.feature.account.adapter.MessageNotificationAdapter" />
 
     <variable
       name="notification"
-      type="com.jxntv.account.model.MessageNotificationObservable" />
+      type="com.hzlz.aviation.feature.account.model.MessageNotificationObservable" />
 
     <variable
       name="position"
       type="androidx.databinding.ObservableInt" />
   </data>
 
-  <com.jxntv.widget.GVideoConstraintLayout
+  <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
     style="@style/AdapterMessageNotification.Container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:onClick="@{(v)->adapter.onItemClick(v,position)}">
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
       android:id="@+id/image_view_avatar"
       style="@style/AdapterMessageNotification.Avatar"
       app:placeholder='@{@drawable/ic_default_avatar}'
@@ -34,7 +34,7 @@
       app:imageData="@{notification.avatarUrl}"
       tools:src="@drawable/ic_launcher"  />
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
       android:textSize="@dimen/sp_12"
       android:textColor="@color/white"
       android:gravity="center"
@@ -45,7 +45,7 @@
       app:layout_constraintTop_toTopOf="@id/image_view_avatar"
       tools:text="···"/>
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
       android:id="@+id/text_view_title"
       style="@style/AdapterMessageNotification.Title"
       android:layout_width="0dp"
@@ -56,7 +56,7 @@
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_chainStyle="packed" />
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
       android:id="@+id/text_view_content"
       style="@style/AdapterMessageNotification.Content"
       android:layout_width="0dp"
@@ -66,12 +66,12 @@
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintTop_toBottomOf="@id/text_view_title" />
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
       android:id="@+id/text_view_time"
       style="@style/AdapterMessageNotification.Time"
       android:text="@{notification.newestTime}"
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintBottom_toBottomOf="@id/text_view_title"
       app:layout_constraintTop_toTopOf="@id/text_view_title" />
-  </com.jxntv.widget.GVideoConstraintLayout>
+  </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

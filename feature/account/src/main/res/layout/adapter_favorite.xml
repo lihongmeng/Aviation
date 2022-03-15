@@ -7,22 +7,22 @@
 
     <variable
       name="adapter"
-      type="com.jxntv.account.adapter.FavoriteAdapter" />
+      type="com.hzlz.aviation.feature.account.adapter.FavoriteAdapter" />
 
     <variable
       name="favorite"
-      type="com.jxntv.account.model.FavoriteObservable" />
+      type="com.hzlz.aviation.feature.account.model.FavoriteObservable" />
 
     <variable
       name="position"
       type="androidx.databinding.ObservableInt" />
   </data>
 
-  <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/AdapterFavorite.Container"
     android:onClick="@{(v)->adapter.onItemClick(v,position)}">
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
       android:id="@+id/image_view_cover"
       style="@style/AdapterFavorite.Cover"
       app:imageData="@{favorite.coverUrl}"
@@ -32,7 +32,7 @@
       app:placeholder="@{@drawable/adapter_favorite_default_cover}"
       app:roundedCorners="@{@dimen/fragment_favorite_cover_radius}" />
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
       style="@style/AdapterFavorite.Play"
       android:src="@drawable/ic_favorite_play"
       android:visibility="@{favorite.coverUrl == null ? View.VISIBLE : View.GONE}"
@@ -41,13 +41,13 @@
       app:layout_constraintRight_toRightOf="@id/image_view_cover"
       app:layout_constraintTop_toTopOf="@id/image_view_cover" />
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         style="@style/AdapterFavorite.CoverBackground"
         app:layout_constraintBottom_toBottomOf="@id/image_view_cover"
         app:layout_constraintLeft_toRightOf="@+id/image_view_cover"
         app:layout_constraintTop_toTopOf="@id/image_view_cover" />
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
       android:id="@+id/text_view_group_name"
       style="@style/AdapterFavorite.GroupName"
       android:layout_width="0dp"
@@ -57,7 +57,7 @@
       app:layout_constraintRight_toRightOf="@id/image_view_cover"
       app:layout_constraintTop_toBottomOf="@id/image_view_cover" />
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
       android:id="@+id/text_view_count"
       style="@style/AdapterFavorite.Count"
       android:layout_width="0dp"
@@ -67,5 +67,5 @@
       app:layout_constraintLeft_toLeftOf="@id/text_view_group_name"
       app:layout_constraintRight_toRightOf="@id/text_view_group_name"
       app:layout_constraintTop_toBottomOf="@id/text_view_group_name" />
-  </com.jxntv.widget.GVideoConstraintLayout>
+  </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

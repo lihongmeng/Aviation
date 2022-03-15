@@ -6,21 +6,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/color_f6f6f6">
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:id="@+id/share_top_right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:background="@drawable/icon_share_bg_top_right" />
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:id="@+id/share_bg_bottom_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/share_top_right"
         android:background="@drawable/icon_share_bg_bottom_left" />
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:id="@+id/white_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -30,7 +30,7 @@
         android:layout_marginBottom="@dimen/DIMEN_119DP"
         android:background="@drawable/layer_list_ffffff_000000_10_shift_1dp_corners_20dp" />
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:id="@+id/bill_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
         android:layout_alignEnd="@id/white_bg" />
 
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:id="@+id/qr_code_bg"
         android:layout_width="@dimen/DIMEN_77DP"
         android:layout_height="@dimen/DIMEN_77DP"
@@ -65,7 +65,7 @@
         android:layout_marginRight="@dimen/DIMEN_24DP"
         android:background="@drawable/layer_list_ffffff_000000_10_shift_1dp_corners_8dp" />
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:id="@+id/qr_code"
         android:layout_width="@dimen/DIMEN_69DP"
         android:layout_height="@dimen/DIMEN_69DP"
@@ -75,7 +75,7 @@
         android:layout_marginTop="@dimen/DIMEN_4DP"
         android:background="@drawable/icon_qr_code_share" />
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:id="@+id/gviv_share_bottom_left"
         android:layout_width="@dimen/DIMEN_24DP"
         android:layout_height="@dimen/DIMEN_24DP"
@@ -84,7 +84,7 @@
         android:layout_marginTop="@dimen/DIMEN_6DP"
         android:background="@drawable/ic_launcher_round" />
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
         android:id="@+id/tv_gviv_share_bottom_left"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/DIMEN_24DP"
@@ -100,7 +100,7 @@
         android:textSize="@dimen/sp_15"
         android:textStyle="bold" />
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
         android:id="@+id/long_press_qr_code_join"
         android:layout_width="@dimen/DIMEN_173DP"
         android:layout_height="@dimen/DIMEN_27DP"
@@ -141,7 +141,7 @@
         android:layout_marginRight="@dimen/DIMEN_19DP"
         android:background="@drawable/shape_gradient_ffac92_ffbf6c_corners_200dp">
 
-        <com.jxntv.widget.GVideoRImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoRImageView
             android:id="@+id/header"
             android:layout_width="@dimen/DIMEN_38DP"
             android:layout_height="@dimen/DIMEN_38DP"
@@ -150,7 +150,7 @@
             android:layout_marginLeft="@dimen/DIMEN_14DP"
             app:corner_radius="@dimen/DIMEN_38DP" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -164,7 +164,7 @@
             android:textSize="@dimen/sp_13"
             tools:text="世界小王子" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@id/header"

@@ -2,14 +2,14 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.jxntv.widget.GvideoRConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GvideoRConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:background_normal="@color/white"
         app:corner_radius_top_left="@dimen/DIMEN_12DP"
         app:corner_radius_top_right="@dimen/DIMEN_12DP">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/a_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
             android:background="@color/c_line01"
             app:layout_constraintTop_toBottomOf="@id/a_right" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/cancel"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_50DP"
@@ -77,6 +77,6 @@
             android:textSize="@dimen/sp_15"
             app:layout_constraintTop_toBottomOf="@id/line" />
 
-    </com.jxntv.widget.GvideoRConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GvideoRConstraintLayout>
 
 </layout>

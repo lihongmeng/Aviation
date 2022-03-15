@@ -7,11 +7,11 @@
 
         <variable
             name="authorObservable"
-            type="com.jxntv.base.model.video.AuthorObservable" />
+            type="com.hzlz.aviation.kernel.base.model.video.AuthorObservable" />
 
         <variable
             name="viewModel"
-            type="com.jxntv.account.ui.pgc.PgcViewModel" />
+            type="com.hzlz.aviation.feature.account.ui.pgc.PgcViewModel" />
 
         <import type="android.view.View" />
     </data>
@@ -28,7 +28,7 @@
             style="@style/FragmentPgcStyle.DetailContainer"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:scaleType="centerCrop"
@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:id="@+id/image_view_detail_avatar"
                     style="@style/FragmentPgcStyle.DetailAvatar_68dp_68dp"
                     app:circleCrop="@{true}"
@@ -65,7 +65,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:placeholder='@{@drawable/ic_default_avatar}' />
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/text_view_detail_name"
                     style="@style/FragmentPgcStyle.DetailName"
                     android:layout_width="0dp"
@@ -76,7 +76,7 @@
                     app:layout_constraintTop_toTopOf="@id/image_view_detail_avatar"
                     app:layout_constraintVertical_chainStyle="spread" />
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/text_view_detail_description"
                     style="@style/FragmentPgcStyle.DetailDescription"
                     android:layout_width="0dp"
@@ -86,7 +86,7 @@
                     app:layout_constraintRight_toRightOf="@id/text_view_detail_name"
                     app:layout_constraintTop_toBottomOf="@id/text_view_detail_name" />
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/text_view_detail_follow"
                     style="@style/FragmentPgcStyle.DetailFollow"
                     android:background="@{authorObservable.isFollow ? @drawable/fragment_pgc_detail_follow_followed_background  : @drawable/all_c_gradual01_button_background}"
@@ -99,7 +99,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.jxntv.widget.GVideoRLinearLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/DIMEN_N5"
@@ -110,7 +110,7 @@
             app:corner_radius_top_left="@dimen/DIMEN_5DP"
             app:corner_radius_top_right="@dimen/DIMEN_5DP">
 
-            <com.jxntv.base.view.tab.GVideoSmartTabLayout
+            <com.hzlz.aviation.kernel.base.view.tab.GVideoSmartTabLayout
                 android:id="@+id/tab_layout"
                 style="@style/FragmentUgcStyle.DetailTabLayout"
                 android:layout_width="wrap_content"
@@ -119,7 +119,7 @@
                 app:stl_defaultTabTextSize="@dimen/t_font03"
                 app:stl_distributeEvenly="true" />
 
-        </com.jxntv.widget.GVideoRLinearLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 </layout>

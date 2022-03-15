@@ -3,10 +3,10 @@
     <data>
         <variable
             name="viewModel"
-            type="com.jxntv.search.SearchViewModel"
+            type="com.hzlz.aviation.feature.search.SearchViewModel"
             />
     </data>
-    <com.jxntv.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -33,5 +33,5 @@
             android:layout_height="match_parent"
             android:visibility="gone" />
 
-    </com.jxntv.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 </layout>

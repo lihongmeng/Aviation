@@ -5,10 +5,10 @@
     <data>
         <variable
             name="imgModel"
-            type="com.jxntv.android.video.model.LiveCommentModel.CommentLstBean.ImagesBean" />
+            type="com.hzlz.aviation.feature.video.model.LiveCommentModel.CommentLstBean.ImagesBean" />
     </data>
 
-    <com.jxntv.widget.GVideoRImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoRImageView
         android:id="@+id/image"
         android:src="@drawable/ic_launcher"
         app:corner_radius="@dimen/DIMEN_4DP"

@@ -7,22 +7,22 @@
 
         <variable
             name="viewModel"
-            type="com.jxntv.android.video.ui.news.NewsDetailViewModel" />
+            type="com.hzlz.aviation.feature.video.ui.news.NewsDetailViewModel" />
 
         <variable
             name="videoModel"
-            type="com.jxntv.base.model.video.VideoModel" />
+            type="com.hzlz.aviation.kernel.base.model.video.VideoModel" />
 
         <import type="android.text.TextUtils"/>
 
     </data>
 
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/color_FFFFFF">
 
-        <com.jxntv.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
             android:id="@+id/layout_content"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_0DP"
@@ -30,7 +30,7 @@
             app:layout_constraintBottom_toTopOf="@id/bottom"
             app:layout_constraintTop_toTopOf="parent">
 
-        </com.jxntv.widget.GVideoFrameLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
 
         <LinearLayout
             android:id="@+id/bottom"
@@ -45,19 +45,19 @@
 
         </LinearLayout>
 
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:id="@+id/top_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/back"
                 android:layout_width="@dimen/DIMEN_44DP"
                 android:layout_height="@dimen/DIMEN_44DP"
                 android:src="@{TextUtils.isEmpty(videoModel.detailBigPic)?@drawable/ic_back_black:@drawable/ic_back_white}"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/more"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/DIMEN_44DP"
@@ -66,14 +66,14 @@
                 android:src="@drawable/ic_news_more_black"
                 app:layout_constraintEnd_toEndOf="parent" />
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
-        <com.jxntv.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
             android:id="@+id/empty_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>
 
 

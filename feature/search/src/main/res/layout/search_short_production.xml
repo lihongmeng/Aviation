@@ -4,22 +4,22 @@
     <data>
         <variable
             name="detailBind"
-            type="com.jxntv.search.databinding.SearchResultDataBinding"
+            type="com.hzlz.aviation.feature.search.databinding.SearchResultDataBinding"
             />
         <variable
             name="detailModel"
-            type="com.jxntv.search.model.SearchDetailModel"
+            type="com.hzlz.aviation.feature.search.model.SearchDetailModel"
             />
         <import type="android.view.View" />
         <import type="android.text.TextUtils" />
     </data>
 
-    <com.jxntv.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/content_tag"
             android:text="@string/video"
             android:layout_width="wrap_content"
@@ -31,14 +31,14 @@
             android:includeFontPadding="false"
             android:textColor="@color/color_333333" />
 
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:id="@+id/short_production_layout"
             android:layout_width="@dimen/r_l03"
             android:layout_height="@dimen/r_h04"
             android:layout_marginBottom="@dimen/search_short_production_margin_bottom"
             android:onClick="@{(v)->detailBind.onLayoutClick(v, detailModel)}">
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/short_production_background"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -47,7 +47,7 @@
                 app:roundedCorners="@{@dimen/r_r01}"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_default_play"
@@ -57,7 +57,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/short_production_background"
                 app:layout_constraintRight_toRightOf="@id/short_production_background"
                 />
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/short_production_img"
                 android:layout_width="@dimen/search_short_production_img_size"
                 android:layout_height="@dimen/search_short_production_img_size"
@@ -69,7 +69,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/short_production_author"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/short_production_img"
                 app:layout_constraintTop_toTopOf="@id/short_production_img"/>
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/short_production_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintBottom_toTopOf="@id/short_production_author"/>
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/short_production_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -108,8 +108,8 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
-    </com.jxntv.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
 </layout>

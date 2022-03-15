@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.jxntv.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.hzlz.aviation.library.widget.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="@dimen/DIMEN_210DP"
     android:orientation="vertical">
 
-    <com.jxntv.record.recorder.view.soundrecord.GVideoSoundRecordWaveView
+    <com.hzlz.aviation.feature.record.recorder.view.soundrecord.GVideoSoundRecordWaveView
         android:id="@+id/gvsrwv_layout_sound_record"
         android:layout_width="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -12,7 +12,7 @@
         android:layout_marginTop="@dimen/DIMEN_10DP"
         android:layout_height="30dp" />
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:id="@+id/gvyv_layout_sound_record"
         android:layout_width="@dimen/DIMEN_92DP"
         android:layout_height="@dimen/DIMEN_92DP"
@@ -20,7 +20,7 @@
         android:layout_marginTop="@dimen/DIMEN_10DP"
         android:background="@drawable/icon_sound_record_start" />
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
         android:id="@+id/gvtv_layout_sound_record_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,4 +30,4 @@
         android:textColor="@color/color_7f7f7f"
         android:textSize="@dimen/sp_13" />
 
-</com.jxntv.widget.GVideoLinearLayout>
+</com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>

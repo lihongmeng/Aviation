@@ -7,17 +7,17 @@
 
         <variable
             name="adapter"
-            type="com.jxntv.android.video.ui.detail.comment.CommentAdapter" />
+            type="com.hzlz.aviation.feature.video.ui.detail.comment.CommentAdapter" />
 
         <variable
             name="comment"
-            type="com.jxntv.base.model.comment.CommentModel" />
+            type="com.hzlz.aviation.kernel.base.model.comment.CommentModel" />
 
         <import type="android.view.View" />
 
     </data>
 
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?android:attr/selectableItemBackground"
@@ -26,7 +26,7 @@
         android:paddingTop="@dimen/video_dp_4"
         android:paddingBottom="@dimen/video_dp_4">
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/avatar"
             android:layout_width="@dimen/video_comment_avatar_width"
             android:layout_height="@dimen/video_comment_avatar_width"
@@ -40,7 +40,7 @@
             app:placeholder='@{@drawable/ic_default_avatar}' />
 
         <!--大V标识-->
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:layout_width="@dimen/DIMEN_16DP"
             android:layout_height="@dimen/DIMEN_16DP"
             android:layout_marginEnd="@dimen/DIMEN_5DP"
@@ -59,7 +59,7 @@
             app:layout_constraintGuide_begin="@dimen/video_comment_avatar_width"
             app:layout_constraintGuide_end="@dimen/video_comment_avatar_width" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
             app:layout_constraintStart_toEndOf="@id/avatar_guide"
             app:layout_constraintTop_toTopOf="@id/avatar" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
             app:layout_constraintStart_toEndOf="@id/name"
             app:layout_constraintTop_toTopOf="@id/name" />
 
-        <com.jxntv.widget.FoldTextView
+        <com.hzlz.aviation.library.widget.widget.FoldTextView
             android:id="@+id/content"
             style="@style/TextStyle.DefaultSpacing.width_0DP"
             android:paddingEnd="@dimen/video_dp_10"
@@ -101,7 +101,7 @@
             app:showMaxLine="3"
             app:tipColor="@color/c_4189FF" />
 
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:id="@+id/layout_sound_image"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/content">
 
-            <com.jxntv.base.view.ImageRecyclerView
+            <com.hzlz.aviation.kernel.base.view.ImageRecyclerView
                 android:id="@+id/comment_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -118,7 +118,7 @@
                 app:imageData="@{comment.imageList}"
                 app:oriImageData="@{comment.oriImageList}" />
 
-            <com.jxntv.android.liteav.GVideoSoundView
+            <com.hzlz.aviation.kernel.liteav.GVideoSoundView
                 android:id="@+id/sound_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -130,9 +130,9 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -143,7 +143,7 @@
             app:layout_constraintStart_toStartOf="@id/name"
             app:layout_constraintTop_toBottomOf="@id/layout_sound_image" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/reply_action"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -159,7 +159,7 @@
             app:layout_constraintBottom_toBottomOf="@id/date"
             app:layout_constraintStart_toEndOf="@id/date" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/report_action"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -174,7 +174,7 @@
             app:layout_constraintBottom_toBottomOf="@id/date"
             app:layout_constraintStart_toEndOf="@id/reply_action" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/praise_action"
             android:layout_width="@dimen/DIMEN_37DP"
             android:layout_height="@dimen/DIMEN_37DP"
@@ -194,7 +194,7 @@
             app:layout_constraintBottom_toTopOf="@id/recycler_container"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoRecyclerView
+        <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
             android:id="@+id/recycler_container"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -208,6 +208,6 @@
             app:layout_constraintTop_toBottomOf="@id/date" />
 
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
 </layout>

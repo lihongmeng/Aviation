@@ -5,14 +5,14 @@
 
     <variable
       name="viewModel"
-      type="com.jxntv.account.ui.favortite.detail.FavoriteDetailViewModel" />
+      type="com.hzlz.aviation.feature.account.ui.favortite.detail.FavoriteDetailViewModel" />
   </data>
 
   <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.jxntv.base.view.GVideoSmartRefreshLayout
+    <com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout
       android:id="@+id/refresh_layout"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
@@ -25,6 +25,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:adapter="@{viewModel.adapter}" />
-    </com.jxntv.base.view.GVideoSmartRefreshLayout>
+    </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
   </FrameLayout>
 </layout>

@@ -6,7 +6,7 @@
 
     </data>
 
-    <com.jxntv.widget.GVideoRLinearLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -14,7 +14,7 @@
         app:background_normal="@color/color_ffffff"
         app:corner_radius="@dimen/DIMEN_19DP">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/DIMEN_29DP"
@@ -25,7 +25,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoRTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoRTextView
             android:id="@+id/confirm"
             android:layout_width="@dimen/DIMEN_100DP"
             android:layout_height="@dimen/DIMEN_42DP"
@@ -36,7 +36,7 @@
             android:textColor="@color/color_e4344e"
             android:textSize="@dimen/sp_15" />
 
-        <com.jxntv.widget.GVideoRTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoRTextView
             android:id="@+id/cancel"
             android:layout_width="@dimen/DIMEN_202DP"
             android:layout_height="@dimen/DIMEN_42DP"
@@ -54,5 +54,5 @@
 
 
 
-    </com.jxntv.widget.GVideoRLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout>
 </layout>

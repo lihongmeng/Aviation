@@ -6,11 +6,11 @@
 
         <variable
             name="adapter"
-            type="com.jxntv.account.adapter.MessageNotificationDetailAdapter" />
+            type="com.hzlz.aviation.feature.account.adapter.MessageNotificationDetailAdapter" />
 
         <variable
             name="detail"
-            type="com.jxntv.account.model.MessageNotificationDetailObservable" />
+            type="com.hzlz.aviation.feature.account.model.MessageNotificationDetailObservable" />
 
         <variable
             name="position"
@@ -20,11 +20,11 @@
 
         <import type="android.view.View"/>
 
-        <import type="com.jxntv.base.utils.StringUtils"/>
+        <import type="com.hzlz.aviation.kernel.base.utils.StringUtils"/>
 
     </data>
 
-    <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         style="@style/AdapterMessageNotificationDetail.Container"
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
         android:layout_marginEnd="@dimen/DIMEN_14DP"
         android:onClick="@{(v)->adapter.onItemClicked(v,position)}">
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/image_view_avatar"
             android:layout_width="@dimen/DIMEN_40DP"
             android:layout_height="@dimen/DIMEN_40DP"
@@ -46,7 +46,7 @@
             app:placeholder='@{@drawable/ic_default_avatar}'
             tools:src="@drawable/ic_default_avatar" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:layout_width="@dimen/DIMEN_12DP"
             android:layout_height="@dimen/DIMEN_12DP"
             android:src="@drawable/icon_header_authentication"
@@ -54,7 +54,7 @@
             app:layout_constraintBottom_toBottomOf="@id/image_view_avatar"
             app:layout_constraintEnd_toEndOf="@id/image_view_avatar" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/text_view_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="昵称"/>
 
-        <com.jxntv.widget.GVideoRTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoRTextView
             android:id="@+id/text_view_title_description"
             android:paddingStart="@dimen/DIMEN_5DP"
             android:paddingEnd="@dimen/DIMEN_5DP"
@@ -87,7 +87,7 @@
             app:corner_radius="@dimen/DIMEN_10DP"
             tools:text="昵称描述"/>
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
             tools:text="测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字"
             />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/text_view_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
             app:layout_constraintTop_toBottomOf="@id/content"
             tools:text="5分钟前" />
 
-        <com.jxntv.widget.GVideoRImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoRImageView
             android:id="@+id/right_img"
             android:layout_width="@dimen/DIMEN_52DP"
             android:layout_height="@dimen/DIMEN_52DP"
@@ -125,7 +125,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:src="@drawable/ic_play"
             android:layout_width="@dimen/DIMEN_29DP"
             android:layout_height="@dimen/DIMEN_29DP"
@@ -135,7 +135,7 @@
             app:layout_constraintStart_toStartOf="@id/right_img"
             app:layout_constraintEnd_toEndOf="@id/right_img"/>
 
-        <com.jxntv.widget.GVideoRTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoRTextView
             android:id="@+id/media_text"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -160,5 +160,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_view_time" />
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

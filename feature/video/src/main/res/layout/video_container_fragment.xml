@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
-  <com.jxntv.android.video.ui.vshort.VideoVerticalViewPager
+  <com.hzlz.aviation.feature.video.ui.vshort.VideoVerticalViewPager
       android:id="@+id/vertical_view_pager"
       android:background="@android:color/black"
       android:layout_width="match_parent"

@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.jxntv.android.video.ui.news.JXXWNewsDetailViewModel" />
+            type="com.hzlz.aviation.feature.video.ui.news.JXXWNewsDetailViewModel" />
 
     </data>
 
@@ -25,7 +25,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoScrollView
+        <com.hzlz.aviation.library.widget.widget.GVideoScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/title"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
                     app:layout_constraintRight_toRightOf="parent"
                     tools:text="123123123123485678978123123123123485678978945646212312312312312348567897894564621239456462123" />
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                     app:layout_constraintTop_toBottomOf="@id/title"
                     tools:text="123456" />
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/source"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                     app:layout_constraintTop_toTopOf="@id/time"
                     tools:text="123456" />
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/read_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
                     app:layout_constraintTop_toTopOf="@id/source"
                     tools:text="123456" />
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/description"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
                     app:layout_constraintTop_toBottomOf="@id/time"
                     tools:text="123456789645645645646123456789645645645646123456789645645645646123456789645645645646" />
 
-                <com.jxntv.base.view.ShareButton
+                <com.hzlz.aviation.kernel.base.view.ShareButton
                     android:id="@+id/favorite"
                     android:layout_width="@dimen/DIMEN_85DP"
                     android:layout_height="@dimen/DIMEN_30DP"
@@ -112,7 +112,7 @@
                     app:name="赞"
                     app:icon="@drawable/ic_news_like" />
 
-                <com.jxntv.base.view.ShareButton
+                <com.hzlz.aviation.kernel.base.view.ShareButton
                     android:id="@+id/wx"
                     android:layout_width="@dimen/DIMEN_85DP"
                     android:layout_height="@dimen/DIMEN_30DP"
@@ -122,7 +122,7 @@
                     app:layout_constraintLeft_toRightOf="@id/favorite"
                     app:layout_constraintRight_toLeftOf="@id/wx_circle" />
 
-                <com.jxntv.base.view.ShareButton
+                <com.hzlz.aviation.kernel.base.view.ShareButton
                     android:id="@+id/wx_circle"
                     android:layout_width="@dimen/DIMEN_85DP"
                     android:layout_height="@dimen/DIMEN_30DP"
@@ -134,9 +134,9 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </com.jxntv.widget.GVideoScrollView>
+        </com.hzlz.aviation.library.widget.widget.GVideoScrollView>
 
-        <com.jxntv.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
             android:id="@+id/empty_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

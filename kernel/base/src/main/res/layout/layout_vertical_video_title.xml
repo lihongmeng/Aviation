@@ -6,7 +6,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <com.jxntv.base.view.VideoTitleCalculateTextView
+        <com.hzlz.aviation.kernel.base.view.VideoTitleCalculateTextView
             android:id="@+id/calculate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/title_three_line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
             tools:text="123123456712345678945612345678945612345678945612345678945612345678945689456456712345678945612345678945612345678945612345678945612345678945689456"
             app:layout_constraintTop_toTopOf="@id/calculate" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/spread"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/DIMEN_19DP"
@@ -62,7 +62,7 @@
 
         </ScrollView>
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/pack_up"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/DIMEN_19DP"

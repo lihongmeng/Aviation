@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.jxntv.watchtv.ui.HomeWatchTvViewModel" />
+            type="com.hzlz.aviation.feature.watchtv.ui.HomeWatchTvViewModel" />
 
     </data>
 
@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.jxntv.base.view.GVideoSmartRefreshLayout
+        <com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout
             android:id="@+id/refresh_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -62,7 +62,7 @@
                                 app:layout_constraintStart_toEndOf="@id/layout"
                                 app:layout_constraintTop_toBottomOf="@id/layout">
 
-                                <com.jxntv.widget.GVideoBanner
+                                <com.hzlz.aviation.library.widget.widget.GVideoBanner
                                     android:id="@+id/banner"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent" />
@@ -80,12 +80,12 @@
                             android:layout_marginTop="@dimen/DIMEN_10DP"
                             android:background="@drawable/shape_gradient_fff4f4_fffaf4_90">
 
-                            <com.jxntv.widget.GVideoImageView
+                            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/icon_home_watch_tv_live_bg" />
 
-                            <com.jxntv.widget.GVideoTextView
+                            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                                 android:id="@+id/tv_channel_title"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
                                 android:textSize="@dimen/sp_15"
                                 android:textStyle="bold" />
 
-                            <com.jxntv.widget.WaveIndicatorView
+                            <com.hzlz.aviation.library.widget.widget.WaveIndicatorView
                                 android:layout_width="@dimen/DIMEN_17DP"
                                 android:layout_height="@dimen/DIMEN_12DP"
                                 android:layout_marginStart="@dimen/DIMEN_5DP"
@@ -110,7 +110,7 @@
                                 app:indicator_width="@dimen/DIMEN_2D5P"
                                 app:layout_constraintTop_toTopOf="parent" />
 
-                            <com.jxntv.widget.GVideoRecyclerView
+                            <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
                                 android:id="@+id/tv_channel"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
                             android:background="@color/color_ffffff"
                             android:orientation="vertical">
 
-                            <com.jxntv.widget.GVideoTextView
+                            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                                 android:id="@+id/hot_tv_title"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -162,7 +162,7 @@
                             android:orientation="vertical"
                             android:background="@color/color_ffffff">
 
-                            <com.jxntv.widget.GVideoTextView
+                            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                                 android:id="@+id/all_tv_title"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -200,7 +200,7 @@
 
             </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-        </com.jxntv.base.view.GVideoSmartRefreshLayout>
+        </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
 
         <FrameLayout
             android:id="@+id/empty_container"

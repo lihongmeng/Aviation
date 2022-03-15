@@ -6,11 +6,11 @@
 
         <variable
             name="adapter"
-            type="com.jxntv.account.adapter.MessageNotificationDetailAdapter" />
+            type="com.hzlz.aviation.feature.account.adapter.MessageNotificationDetailAdapter" />
 
         <variable
             name="detail"
-            type="com.jxntv.account.model.MessageNotificationDetailObservable" />
+            type="com.hzlz.aviation.feature.account.model.MessageNotificationDetailObservable" />
 
         <variable
             name="position"
@@ -19,14 +19,14 @@
         <import type="android.view.View"/>
     </data>
 
-    <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         style="@style/AdapterMessageNotificationDetail.Container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="@{v->adapter.onAvatarClicked(v,position)}">
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/image_view_avatar"
             style="@style/AdapterMessageNotificationDetail.Avatar"
             android:layout_marginTop="@dimen/DIMEN_14DP"
@@ -38,7 +38,7 @@
             app:placeholder='@{@drawable/ic_default_avatar}'
             tools:src="@drawable/ic_default_avatar" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:layout_width="@dimen/DIMEN_14DP"
             android:layout_height="@dimen/DIMEN_14DP"
             android:src="@drawable/icon_header_authentication"
@@ -46,7 +46,7 @@
             app:layout_constraintBottom_toBottomOf="@id/image_view_avatar"
             app:layout_constraintEnd_toEndOf="@id/image_view_avatar" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/text_view_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="张三"/>
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
             app:layout_constraintTop_toBottomOf="@id/text_view_name"
             tools:text="关注了你"/>
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/text_view_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
             app:layout_constraintTop_toBottomOf="@id/content"
             tools:text="08-02" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:layout_marginEnd="@dimen/DIMEN_14DP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -100,5 +100,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/image_view_avatar" />
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

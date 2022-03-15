@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.jxntv.widget.GVideoRLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/circle_layout_root"
     android:layout_width="wrap_content"
@@ -10,18 +10,18 @@
     android:paddingLeft="@dimen/DIMEN_10DP"
     android:paddingRight="@dimen/DIMEN_10DP">
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/icon_publish_circle" />
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
         android:layout_width="1px"
         android:layout_height="@dimen/DIMEN_10DP"
         android:layout_margin="@dimen/DIMEN_4DP"
         android:background="@color/color_df2e51" />
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
         android:id="@+id/circle_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,4 +29,4 @@
         android:textSize="@dimen/sp_11"
         tools:text="123456" />
 
-</com.jxntv.widget.GVideoRLinearLayout>
+</com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout>

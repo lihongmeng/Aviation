@@ -20,7 +20,7 @@
             android:layout_height="@dimen/DIMEN_69DP"
             android:background="@drawable/shape_soild_ffffff_corners_10dp">
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/icon"
                 android:layout_width="@dimen/DIMEN_46DP"
                 android:layout_height="@dimen/DIMEN_31DP"
@@ -29,7 +29,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

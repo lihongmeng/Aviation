@@ -7,19 +7,19 @@
 
         <variable
             name="viewModel"
-            type="com.jxntv.record.recorder.fragment.publish.PublishViewModel" />
+            type="com.hzlz.aviation.feature.record.recorder.fragment.publish.PublishViewModel" />
 
         <import type="android.view.View" />
 
     </data>
 
-    <com.jxntv.widget.GVideoRelativeLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/color_fffff">
 
         <!--固定在界面底部，键盘上方的容器-->
-        <com.jxntv.widget.GVideoRelativeLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout
             android:id="@+id/gvll_topic_group_operation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
                 android:paddingEnd="@dimen/DIMEN_12DP">
 
                 <!--录音按钮-->
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:id="@+id/sound_record_icon"
                     android:layout_width="@dimen/DIMEN_38DP"
                     android:layout_height="@dimen/DIMEN_40DP"
@@ -56,7 +56,7 @@
                     android:src="@drawable/icon_publish_sound_record_enable" />
 
                 <!--图库按钮-->
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:id="@+id/pic_icon"
                     android:layout_width="@dimen/DIMEN_38DP"
                     android:layout_height="@dimen/DIMEN_40DP"
@@ -65,7 +65,7 @@
                     android:src="@drawable/icon_publish_pic_enable" />
 
                 <!--录像按钮-->
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:id="@+id/video_icon"
                     android:layout_width="@dimen/DIMEN_38DP"
                     android:layout_height="@dimen/DIMEN_40DP"
@@ -76,7 +76,7 @@
                     tools:visibility="visible" />
 
                 <!--外链按钮-->
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:id="@+id/link_icon"
                     android:layout_width="@dimen/DIMEN_38DP"
                     android:layout_height="@dimen/DIMEN_40DP"
@@ -89,14 +89,14 @@
             </LinearLayout>
 
             <!--话题组件-->
-            <com.jxntv.widget.GVideoRelativeLayout
+            <com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout
                 android:id="@+id/circle_topic_layout"
                 android:layout_width="match_parent"
                 android:layout_above="@id/bottom_layout"
                 android:layout_height="@dimen/DIMEN_55DP"
                 android:orientation="horizontal">
 
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:id="@+id/icon_topic"
                     android:layout_width="@dimen/DIMEN_30DP"
                     android:layout_height="@dimen/DIMEN_30DP"
@@ -106,7 +106,7 @@
                     android:src="@drawable/icon_topic"
                     tools:visibility="visible" />
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/topic"
                     android:layout_width="@dimen/DIMEN_0DP"
                     android:layout_height="wrap_content"
@@ -134,10 +134,10 @@
                     android:layout_alignParentBottom="true"
                     android:background="@color/color_f2f2f2" />
 
-            </com.jxntv.widget.GVideoRelativeLayout>
+            </com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout>
 
             <!--录音组件-->
-            <com.jxntv.record.recorder.view.soundrecord.GVideoSoundRecordView
+            <com.hzlz.aviation.feature.record.recorder.view.soundrecord.GVideoSoundRecordView
                 android:id="@+id/sound_record"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/DIMEN_210DP"
@@ -147,15 +147,15 @@
                 app:timeTextColor="@color/color_525566"
                 tools:visibility="gone" />
 
-        </com.jxntv.widget.GVideoRelativeLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout>
 
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:id="@+id/layout_back"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <!--返回按钮-->
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/back"
                 android:layout_width="@dimen/DIMEN_40DP"
                 android:layout_height="@dimen/DIMEN_40DP"
@@ -175,7 +175,7 @@
                 tools:visibility="visible" />
 
             <!--问-->
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/qa_text"
                 android:text="@string/ask"
                 android:textSize="@dimen/sp_15"
@@ -189,7 +189,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/qa_avatar_teacher" />
 
             <!--导师头像-->
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/qa_avatar_teacher"
                 android:src="@drawable/ic_default_avatar"
                 android:layout_width="@dimen/DIMEN_21DP"
@@ -203,7 +203,7 @@
                 app:layout_constraintStart_toEndOf="@+id/qa_text" />
 
             <!--导师名称-->
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/qa_teacher_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -217,7 +217,7 @@
                 app:layout_constraintTop_toTopOf="@id/qa_avatar_teacher"
                 tools:text="张三" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:text="提问："
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -229,7 +229,7 @@
                 app:layout_constraintTop_toBottomOf="@id/back" />
 
             <!--文字输入框-->
-            <com.jxntv.widget.GVideoEditText
+            <com.hzlz.aviation.library.widget.widget.GVideoEditText
                 android:id="@+id/qa_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -253,7 +253,7 @@
                 app:layout_constraintTop_toBottomOf="@id/qa_avatar_teacher"
                 tools:text="1234567890123456789012345678901234567890123456789012345678901234567890" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/qa_title_tip"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -278,7 +278,7 @@
                 app:layout_constraintStart_toStartOf="@id/qa_title"
                 app:layout_constraintTop_toBottomOf="@id/qa_title" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/input_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -291,10 +291,10 @@
                 app:layout_constraintBottom_toTopOf="@id/edit_line"
                 app:layout_constraintEnd_toEndOf="@id/edit_line" />
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
         <!--解析外链标题需要用到，为了节省绘制成本，宽高1px并隐藏起来-->
-        <com.jxntv.base.webview.GVWebView
+        <com.hzlz.aviation.kernel.base.webview.GVWebView
             android:id="@+id/web"
             android:visibility="gone"
             android:layout_width="1px"
@@ -329,7 +329,7 @@
                 android:paddingEnd="@dimen/DIMEN_14DP">
 
                 <!--社区icon-->
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:id="@+id/select_community_icon"
                     android:layout_width="@dimen/DIMEN_30DP"
                     android:layout_height="@dimen/DIMEN_30DP"
@@ -339,7 +339,7 @@
                     app:layout_constraintBottom_toBottomOf="parent" />
 
                 <!--社区名称-->
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/select_community_name"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -354,7 +354,7 @@
                     tools:text="1" />
 
                 <!--如果没有选择社区，引导用户点击的提示文案-->
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/select_community_tip"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -398,7 +398,7 @@
                 android:orientation="vertical">
 
                 <!--文字输入框-->
-                <com.jxntv.widget.GVideoEditText
+                <com.hzlz.aviation.library.widget.widget.GVideoEditText
                     android:id="@+id/edittext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -419,7 +419,7 @@
                     android:visibility="@{!viewModel.isQaType||viewModel.qaTitleCount>0?View.VISIBLE:View.GONE,default=gone}" />
 
                 <!--链接信息-->
-                <com.jxntv.base.view.PublishLinkView
+                <com.hzlz.aviation.kernel.base.view.PublishLinkView
                     android:id="@+id/link_layout"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/DIMEN_54DP"
@@ -431,13 +431,13 @@
                     app:show_delete="true" />
 
                 <!--语音、图片、视频数据的容器-->
-                <com.jxntv.widget.GVideoFrameLayout
+                <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
                     android:id="@+id/gvfl_layout_publish_image_video"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/DIMEN_8DP">
 
-                    <com.jxntv.android.liteav.GVideoSoundView
+                    <com.hzlz.aviation.kernel.liteav.GVideoSoundView
                         android:id="@+id/sound_view"
                         android:layout_width="@dimen/DIMEN_320DP"
                         android:layout_height="wrap_content"
@@ -447,7 +447,7 @@
                         android:visibility="gone"
                         tools:visibility="visible" />
 
-                    <com.jxntv.base.view.PublishImageRecyclerView
+                    <com.hzlz.aviation.kernel.base.view.PublishImageRecyclerView
                         android:id="@+id/image_list"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -456,7 +456,7 @@
                         android:visibility="visible"
                         app:imageData="@{viewModel.imagePathList}" />
 
-                    <com.jxntv.widget.GVideoRelativeLayout
+                    <com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout
                         android:id="@+id/video_view_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -465,7 +465,7 @@
                         android:visibility="gone"
                         tools:visibility="visible">
 
-                        <com.jxntv.base.view.MediaImageView
+                        <com.hzlz.aviation.kernel.base.view.MediaImageView
                             android:id="@+id/video_view_image"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -473,7 +473,7 @@
                             android:maxWidth="@dimen/DIMEN_200DP"
                             android:maxHeight="@dimen/DIMEN_200DP" />
 
-                        <com.jxntv.widget.GVideoImageView
+                        <com.hzlz.aviation.library.widget.widget.GVideoImageView
                             android:id="@+id/video_view_delete"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -481,22 +481,22 @@
                             android:layout_alignEnd="@id/video_view_image"
                             android:background="@drawable/icon_delete" />
 
-                        <com.jxntv.widget.GVideoImageView
+                        <com.hzlz.aviation.library.widget.widget.GVideoImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
                             android:src="@drawable/icon_video_play" />
 
-                    </com.jxntv.widget.GVideoRelativeLayout>
+                    </com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout>
 
-                </com.jxntv.widget.GVideoFrameLayout>
+                </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
 
             </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>
 
         <!--发布按钮-->
-        <com.jxntv.widget.GVideoButton
+        <com.hzlz.aviation.library.widget.widget.GVideoButton
             android:id="@+id/publish"
             android:layout_width="@dimen/DIMEN_96DP"
             android:layout_height="@dimen/DIMEN_33DP"
@@ -509,6 +509,6 @@
             android:enabled="false"
             android:onClick="@{(view)->viewModel.onPublish()}" />
 
-    </com.jxntv.widget.GVideoRelativeLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout>
 
 </layout>

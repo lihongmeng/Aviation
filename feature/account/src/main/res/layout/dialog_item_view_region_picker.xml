@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.jxntv.widget.GvideoRConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GvideoRConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/DIMEN_10DP"
@@ -81,6 +81,6 @@
             app:wheel_item_text_size="@dimen/sp_18"
             app:wheel_selected_item_text_color="@color/color_333333" />
 
-    </com.jxntv.widget.GvideoRConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GvideoRConstraintLayout>
 
 </layout>

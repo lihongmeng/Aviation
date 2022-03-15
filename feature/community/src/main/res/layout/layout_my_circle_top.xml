@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
+            android:id="@+id/group_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_126DP"
+            android:background="@color/color_f2f2f2"
+            android:scrollbars="none" />
+
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+
+</layout>

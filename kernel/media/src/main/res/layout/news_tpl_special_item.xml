@@ -6,12 +6,12 @@
 
         <variable
             name="feedModel"
-            type="com.jxntv.media.model.MediaModel" />
+            type="com.hzlz.aviation.kernel.media.model.MediaModel" />
 
         <import type="android.view.View" />
     </data>
 
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:id="@+id/root_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
         android:paddingEnd="@dimen/DIMEN_10DP"
         android:paddingBottom="@dimen/DIMEN_10DP">
 
-        <com.jxntv.widget.GVideoRLinearLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout
             android:id="@+id/layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,14 +32,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <com.jxntv.widget.GVideoRecyclerView
+            <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
                 android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/DIMEN_10DP"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
-        </com.jxntv.widget.GVideoRLinearLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/layout_banner"
@@ -52,13 +52,13 @@
             app:layout_constraintTop_toBottomOf="@id/layout"
             app:layout_constraintStart_toEndOf="@id/layout">
 
-            <com.jxntv.widget.GVideoBanner
+            <com.hzlz.aviation.library.widget.widget.GVideoBanner
                 android:id="@+id/banner"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/DIMEN_96DP" />
 
         </androidx.cardview.widget.CardView>
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
 </layout>

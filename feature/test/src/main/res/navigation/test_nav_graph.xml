@@ -6,7 +6,7 @@
 
   <fragment
       android:id="@+id/testFragment"
-      android:name="com.jxntv.test.TestFragment"
+      android:name="com.hzlz.aviation.feature.test.TestFragment"
       android:label="testFragment" >
     <action
         android:id="@+id/action_to_environment"
@@ -18,12 +18,12 @@
 
   <fragment
       android:id="@+id/environmentFragment"
-      android:name="com.jxntv.test.environment.EnvironmentFragment"
+      android:name="com.hzlz.aviation.feature.test.environment.EnvironmentFragment"
       android:label="environmentFragment">
   </fragment>
   <fragment
       android:id="@+id/splashFragment"
-      android:name="com.jxntv.test.splashdata.SplashDataFragment"
+      android:name="com.hzlz.aviation.feature.test.splashdata.SplashDataFragment"
       android:label="splashFragment">
   </fragment>
 </navigation>

@@ -5,14 +5,14 @@
 
         <variable
             name="viewModel"
-            type="com.jxntv.search.SearchViewModel" />
+            type="com.hzlz.aviation.feature.search.SearchViewModel" />
 
         <variable
             name="binding"
-            type="com.jxntv.search.databinding.SearchHistoryDataBinding" />
+            type="com.hzlz.aviation.feature.search.databinding.SearchHistoryDataBinding" />
     </data>
 
-    <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/search_history_layout"
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
         android:layout_marginTop="@dimen/search_history_title_margin_top"
         android:visibility="invisible">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/search_history_text"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/search_history_title_height"
@@ -32,7 +32,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/search_history_img"
             android:layout_width="@dimen/search_history_delete_icon_size"
             android:layout_height="@dimen/search_history_delete_icon_size"
@@ -42,7 +42,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoRecyclerView
+        <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
             android:id="@+id/search_flex_box"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
             android:layout_marginTop="@dimen/search_history_list_margin_top"
             app:layout_constraintTop_toBottomOf="@id/search_history_text" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/clear"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/DIMEN_50DP"
@@ -64,5 +64,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/search_flex_box" />
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@drawable/shape_soild_ffffff_corners_4dp">
+
+    <com.hzlz.aviation.library.widget.widget.GVideoRImageView
+        android:id="@+id/cover"
+        android:layout_width="@dimen/DIMEN_100DP"
+        android:layout_height="@dimen/DIMEN_100DP"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:background="@drawable/shape_soild_ffffff_corners_4dp"
+        android:drawableTop="@drawable/icon_is_live"
+        android:gravity="center"
+        android:text="123456"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cover" />
+
+</com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>

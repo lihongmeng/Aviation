@@ -8,13 +8,13 @@
 
     </data>
 
-    <com.jxntv.widget.GvideoRConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GvideoRConstraintLayout
         app:corner_radius="@dimen/DIMEN_4DP"
         app:background_normal="@color/c_f7f8fc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <com.jxntv.widget.GVideoRImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoRImageView
             android:id="@+id/image"
             android:layout_width="@dimen/DIMEN_100DP"
             android:layout_height="@dimen/DIMEN_100DP"
@@ -28,7 +28,7 @@
             app:layout_constraintWidth_max="@dimen/DIMEN_171DP"
             app:layout_constraintWidth_min="@dimen/DIMEN_96DP" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/delete"
             android:layout_width="@dimen/DIMEN_18DP"
             android:layout_height="@dimen/DIMEN_18DP"
@@ -36,7 +36,7 @@
             app:layout_constraintRight_toRightOf="@id/image"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/replace"
             android:layout_width="@dimen/DIMEN_100DP"
             android:layout_height="@dimen/DIMEN_20DP"
@@ -49,7 +49,7 @@
             android:textColor="@color/color_FFFFFF"
             android:background="@drawable/shape_item_publish_image_list_replace" />
 
-    </com.jxntv.widget.GvideoRConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GvideoRConstraintLayout>
 
 
 </layout>

@@ -4,11 +4,11 @@
   <data>
     <variable
         name="viewModel"
-        type="com.jxntv.record.recorder.fragment.record.RecordViewModel"
+        type="com.hzlz.aviation.feature.record.recorder.fragment.record.RecordViewModel"
         />
     <import type="android.view.View" />
   </data>
-  <com.jxntv.widget.GVideoConstraintLayout
+  <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       >
@@ -118,7 +118,7 @@
         android:background="@drawable/fragment_record_button_background"
         android:visibility="invisible"/>
 
-    <com.jxntv.record.recorder.view.VideoRecordProgressView
+    <com.hzlz.aviation.feature.record.recorder.view.VideoRecordProgressView
         android:id="@+id/record_progress"
         android:layout_width="@dimen/fragment_record_main_progress_img_size"
         android:layout_height="@dimen/fragment_record_main_progress_img_size"
@@ -139,7 +139,7 @@
         android:background="@drawable/fragment_record_button"
         android:onClick="@{()->viewModel.onRecordItemClick()}"/>
 
-    <com.jxntv.record.recorder.view.VideoSignView
+    <com.hzlz.aviation.feature.record.recorder.view.VideoSignView
         android:id="@+id/record_sign"
         android:layout_width="@dimen/fragment_record_sign_img_size"
         android:layout_height="@dimen/fragment_record_sign_img_size"
@@ -149,7 +149,7 @@
         app:layout_constraintTop_toTopOf="@+id/record_main_button"
         android:visibility="invisible"/>
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:id="@+id/record_delete_img"
         android:layout_width="@dimen/fragment_record_delete_img_size"
         android:layout_height="@dimen/fragment_record_delete_img_size"
@@ -163,7 +163,7 @@
         android:onClick="@{()->viewModel.onDeleteItemClick()}"
         android:visibility="gone"/>
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
         android:id="@+id/record_delete_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -177,7 +177,7 @@
         android:onClick="@{()->viewModel.onDeleteItemClick()}"
         android:visibility="gone"/>
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
         android:id="@+id/record_init_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -199,7 +199,7 @@
         app:layout_constraintRight_toRightOf="@id/record_init_text"
         android:background="@drawable/bg_record_init_view"/>
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
         android:id="@+id/record_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -213,5 +213,5 @@
         android:text="@string/record_time_text_default"
         android:visibility="gone"/>
 
-  </com.jxntv.widget.GVideoConstraintLayout>
+  </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

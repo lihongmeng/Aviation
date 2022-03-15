@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.jxntv.live.ui.homelive.homelive.HomeLiveContentViewModel" />
+            type="com.hzlz.aviation.feature.live.ui.homelive.homelive.HomeLiveContentViewModel" />
 
     </data>
 
@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.jxntv.base.view.GVideoSmartRefreshLayout
+        <com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout
             android:id="@+id/refresh_layout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -60,7 +60,7 @@
                                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                                 android:orientation="vertical" />
 
-                            <com.jxntv.widget.GVideoTextView
+                            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                                 android:id="@+id/title_live_review"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
 
                 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-                <com.jxntv.widget.GVideoFrameLayout
+                <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
                     android:id="@+id/empty_container"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -104,7 +104,7 @@
 
             </FrameLayout>
 
-        </com.jxntv.base.view.GVideoSmartRefreshLayout>
+        </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

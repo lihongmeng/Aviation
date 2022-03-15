@@ -9,19 +9,19 @@
 
     <variable
       name="adapter"
-      type="com.jxntv.test.splashdata.SplashDataAdapter" />
+      type="com.hzlz.aviation.feature.test.splashdata.SplashDataAdapter" />
 
     <variable
       name="data"
-      type="com.jxntv.test.splashdata.SplashData" />
+      type="com.hzlz.aviation.feature.test.splashdata.SplashData" />
   </data>
 
-  <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:onClick="@{(v)->adapter.onItemClick(v,position)}">
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
       android:id="@+id/text_view_name"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:id="@+id/image_view_name"
         android:layout_width="@dimen/DIMEN_100DP"
         android:layout_height="@dimen/DIMEN_100DP"
@@ -40,5 +40,5 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_view_name" />
-  </com.jxntv.widget.GVideoConstraintLayout>
+  </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

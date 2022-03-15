@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:tools="http://schemas.android.com/tools">
 
-    <com.jxntv.widget.GVideoFrameLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <!--标题-->
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:id="@+id/layout_top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
-            <com.jxntv.widget.GVideoRLinearLayout
+            <com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout
                 android:id="@+id/layout_live_tag"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -50,7 +50,7 @@
                 android:layout_marginStart="@dimen/DIMEN_12DP"
                 style="@style/live_tag_layout" >
 
-                <com.jxntv.widget.WaveIndicatorView
+                <com.hzlz.aviation.library.widget.widget.WaveIndicatorView
                     android:id="@+id/live_tag"
                     android:layout_width="@dimen/DIMEN_14DP"
                     android:layout_height="@dimen/DIMEN_10DP"
@@ -62,7 +62,7 @@
                     app:indicator_spacing="@dimen/DIMEN_2DP"
                     app:indicator_width="@dimen/DIMEN_2D5P" />
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/live_type_str"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -70,12 +70,12 @@
                     android:textSize="@dimen/sp_12"
                     tools:text="直播" />
 
-            </com.jxntv.widget.GVideoRLinearLayout>
+            </com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout>
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
         <!--重播-->
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/iv_replay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -86,11 +86,11 @@
             android:visibility="gone"
             />
 
-        <com.jxntv.android.liteav.view.ControllerProgressLayout
+        <com.hzlz.aviation.kernel.liteav.view.ControllerProgressLayout
             android:id="@+id/video_progress_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center" />
 
-    </com.jxntv.widget.GVideoFrameLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
 </layout>

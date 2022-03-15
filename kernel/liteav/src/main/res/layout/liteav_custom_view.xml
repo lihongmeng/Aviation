@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-  <com.jxntv.widget.GVideoImageView
+  <com.hzlz.aviation.library.widget.widget.GVideoImageView
       android:id="@+id/bg_cover"
       android:layout_width="0dp"
       android:layout_height="0dp"
@@ -24,7 +24,7 @@
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintDimensionRatio="16:9"
       />
-  <com.jxntv.widget.CommonRoundImageView
+  <com.hzlz.aviation.library.widget.widget.CommonRoundImageView
       android:id="@+id/sound_back_cover"
       android:layout_width="0dp"
       android:layout_height="0dp"
@@ -35,7 +35,7 @@
       app:layout_constraintLeft_toLeftOf="@id/bg_sound_cover"
       app:layout_constraintTop_toTopOf="@id/bg_sound_cover"
       />
-  <com.jxntv.widget.CommonRoundImageView
+  <com.hzlz.aviation.library.widget.widget.CommonRoundImageView
       android:id="@+id/sound_cover"
       android:layout_width="wrap_content"
       android:layout_height="0dp"
@@ -46,7 +46,7 @@
       app:layout_constraintRight_toRightOf="@id/bg_sound_cover"
       app:layout_constraintTop_toTopOf="@id/bg_sound_cover"
       />
-  <com.jxntv.android.liteav.view.SoundWaveView
+  <com.hzlz.aviation.kernel.liteav.view.SoundWaveView
       android:id="@+id/sound_wave_anim"
       android:layout_width="@dimen/feed_sound_wave_width"
       android:layout_height="@dimen/feed_sound_wave_height"
@@ -56,4 +56,4 @@
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintLeft_toLeftOf="parent"
       />
-</com.jxntv.widget.GVideoConstraintLayout>
+</com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>

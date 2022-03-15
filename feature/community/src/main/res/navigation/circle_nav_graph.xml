@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/circle_nav_graph"
+    app:startDestination="@id/circleFragment">
+
+    <!--圈子 页面-->
+    <fragment
+        android:id="@+id/circleFragment"
+        android:name="com.hzlz.aviation.feature.community.fragment.HomeCommunityFragment"
+        android:label="CircleFragment" />
+
+    <!--圈子详情页-->
+    <fragment
+        android:id="@+id/circleDetailFragment"
+        android:name="com.hzlz.aviation.feature.community.fragment.CircleDetailFragment"
+        android:label="CircleDetailFragment" >
+
+        <action
+            android:id="@+id/action_to_qaTeacherListFragment"
+            app:destination="@id/qaTeacherListFragment" />
+
+    </fragment>
+
+    <!--话题集合页-->
+    <fragment
+        android:id="@+id/topicDetailFragment"
+        android:name="com.hzlz.aviation.feature.community.fragment.TopicDetailFragment"
+        android:label="TopicDetailFragment" />
+
+    <!--话题集合页-->
+    <fragment
+        android:id="@+id/circleFamousFragment"
+        android:name="com.hzlz.aviation.feature.community.fragment.CircleFamousFragment"
+        android:label="CircleFamousFragment" />
+
+    <!--话题搜索页-->
+    <fragment
+        android:id="@+id/searchTopicFragment"
+        android:name="com.hzlz.aviation.feature.community.fragment.SearchTopicFragment"
+        android:label="SearchTopicFragment" />
+
+    <!--圈子选择页-->
+    <fragment
+        android:id="@+id/circleSelectFragment"
+        android:name="com.hzlz.aviation.feature.community.fragment.CircleSelectFragment"
+        android:label="CircleSelectFragment" />
+
+    <!--修改信息页-->
+    <fragment
+        android:id="@+id/modifyCircleTextInfoFragment"
+        android:name="com.hzlz.aviation.feature.community.fragment.ModifyCircleTextInfoFragment"
+        android:label="ModifyCircleTextInfoFragment" />
+
+    <!--修改信息页-->
+    <fragment
+        android:id="@+id/fxaFragment"
+        android:name="com.hzlz.aviation.feature.community.fragment.fxa.FXAFragment"
+        android:label="fxaFragment" />
+
+
+    <!--问答广场-->
+    <fragment
+        android:id="@+id/qaGroupListFragment"
+        android:name="com.hzlz.aviation.feature.community.fragment.qa.QAGroupListFragment"
+        android:label="qaGroupListFragment" >
+        <action
+            android:id="@+id/action_to_qaTeacherListFragment"
+            app:destination="@id/qaTeacherListFragment" />
+    </fragment>
+
+    <!--问答老师选择界面-->
+    <fragment
+        android:id="@+id/qaTeacherListFragment"
+        android:name="com.hzlz.aviation.feature.community.fragment.qa.QAAnswerListFragment"
+        android:label="qaTeacherListFragment" />
+
+</navigation>

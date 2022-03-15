@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:id="@+id/root_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
             android:progress="0"
             android:progressDrawable="@drawable/float_window_progress" />
 
-        <com.jxntv.widget.GVideoLinearLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
             android:id="@+id/ll_content"
             android:layout_width="match_parent"
             android:gravity="center"
@@ -25,14 +25,14 @@
             app:layout_constraintTop_toBottomOf="@id/progress"
             android:layout_height="@dimen/DIMEN_50DP">
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/icon"
                 android:src="@drawable/ic_float_window_loading"
                 android:layout_marginEnd="@dimen/DIMEN_8DP"
                 android:layout_width="@dimen/DIMEN_20DP"
                 android:layout_height="@dimen/DIMEN_20DP"/>
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/content"
                 android:textSize="@dimen/sp_14"
                 android:textColor="@color/color_999999"
@@ -41,8 +41,8 @@
                 tools:text="动态发布中，请稍候"/>
 
 
-        </com.jxntv.widget.GVideoLinearLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
 </layout>

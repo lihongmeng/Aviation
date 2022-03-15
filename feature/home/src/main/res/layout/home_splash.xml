@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <import type="android.view.View"/>
         <variable
             name="viewModel"
-            type="com.jxntv.home.splash.SplashViewModel"
+            type="com.hzlz.aviation.feature.home.splash.SplashViewModel"
             />
         <variable
             name="binding"
-            type="com.jxntv.home.splash.binding.SplashDataBinding"
+            type="com.hzlz.aviation.feature.home.splash.binding.SplashDataBinding"
             />
     </data>
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:id="@+id/splash_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
@@ -27,7 +26,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/ad_img"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -39,7 +38,7 @@
             android:onClick="@{(v)->binding.onClickAd(v)}"
             android:visibility="gone"/>
 
-        <com.jxntv.android.liteav.GVideoView
+        <com.hzlz.aviation.kernel.liteav.GVideoView
             android:id="@+id/ad_player_view"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -50,7 +49,7 @@
             android:onClick="@{(v)->binding.onClickAd(v)}"
             android:visibility="gone"/>
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/ad_count_down_text"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -66,7 +65,7 @@
             android:onClick="@{(v)->binding.onClickSkip()}"
             android:visibility="@{binding.countDownVisible}"/>
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/slide_ad"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -101,5 +100,5 @@
                 android:drawableLeft="@drawable/ic_launcher"
                 android:textColor="@color/black" />
         </FrameLayout>
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

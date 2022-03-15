@@ -7,18 +7,18 @@
 
         <variable
             name="model"
-            type="com.jxntv.base.model.video.RecommendModel" />
+            type="com.hzlz.aviation.kernel.base.model.video.RecommendModel" />
 
-        <import type="com.jxntv.utils.DateUtils" />
+        <import type="com.hzlz.aviation.library.util.DateUtils" />
 
     </data>
 
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/DIMEN_12DP">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
 
             android:id="@+id/news_title"
             android:layout_width="0dp"
@@ -36,7 +36,7 @@
             tools:text="江西省艺术家企业家联合会成立大"
             />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/source"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
             app:layout_constraintTop_toBottomOf="@id/news_title"
             tools:text="2020-12-29万" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/create_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
             app:layout_constraintStart_toEndOf="@id/source"
             tools:text="阅读4.3万" />
 
-        <com.jxntv.widget.GVideoRImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoRImageView
             android:id="@+id/news_thumb"
             android:layout_width="@dimen/DIMEN_106DP"
             android:layout_height="@dimen/DIMEN_82DP"
@@ -70,7 +70,7 @@
             app:imageData="@{model.imageUrl}"
             app:layout_constraintEnd_toEndOf="parent" />
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
 
 </layout>

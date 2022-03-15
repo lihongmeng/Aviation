@@ -6,11 +6,11 @@
   <!-- 好友关系 页面 -->
   <fragment
       android:id="@+id/relationFragment"
-      android:name="com.jxntv.account.ui.relation.RelationFragment"
+      android:name="com.hzlz.aviation.feature.account.ui.relation.RelationFragment"
       android:label="RelationFragment">
     <argument
         android:name="author"
-        app:argType="com.jxntv.account.model.Author" />
+        app:argType="com.hzlz.aviation.feature.account.model.Author" />
     <argument
         android:name="start"
         android:defaultValue="0"

@@ -1,8 +1,0 @@
-apply from: rootProject.file("library.gradle")
-apply plugin: 'androidx.navigation.safeargs'
-
-dependencies {
-  implementation fileTree(dir: 'libs', include: ['*.jar'])
-  implementation deps.tog_kernel_base
-  implementation deps.tog_kernel_stat
-}

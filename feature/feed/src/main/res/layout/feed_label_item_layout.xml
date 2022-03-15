@@ -5,12 +5,12 @@
     android:layout_height="match_parent"
     android:background="@drawable/feed_label_background_drawable">
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:id="@+id/label_img"
         android:layout_width="@dimen/feed_label_item_img_size"
         android:layout_height="@dimen/feed_label_item_img_size"/>
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
         android:id="@+id/label_text"
         android:layout_width="@dimen/feed_label_item_text_width"
         android:layout_height="@dimen/feed_label_item_text_height"

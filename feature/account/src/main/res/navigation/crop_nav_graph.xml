@@ -7,7 +7,7 @@
   <!--裁剪界面-->
   <fragment
       android:id="@+id/cropFragment"
-      android:name="com.jxntv.account.ui.crop.CropFragment"
+      android:name="com.hzlz.aviation.feature.account.ui.crop.CropFragment"
       android:label="CropFragment">
     <argument
       android:name="imageUri"

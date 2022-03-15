@@ -5,19 +5,19 @@
 
         <variable
             name="toolBind"
-            type="com.jxntv.media.databind.MediaToolBarDataBind" />
+            type="com.hzlz.aviation.kernel.media.databind.MediaToolBarDataBind" />
 
         <variable
             name="videoObservable"
-            type="com.jxntv.base.model.video.VideoObservable" />
+            type="com.hzlz.aviation.kernel.base.model.video.VideoObservable" />
 
         <variable
             name="authorObservable"
-            type="com.jxntv.base.model.video.AuthorObservable" />
+            type="com.hzlz.aviation.kernel.base.model.video.AuthorObservable" />
 
         <import type="android.view.View" />
 
-        <import type="com.jxntv.base.utils.StringUtils" />
+        <import type="com.hzlz.aviation.kernel.base.utils.StringUtils" />
 
         <import type="android.text.TextUtils" />
 
@@ -31,7 +31,7 @@
         tools:visibility="visible">
 
         <!--头像-->
-        <com.jxntv.base.view.MediaImageView
+        <com.hzlz.aviation.kernel.base.view.MediaImageView
             android:id="@+id/toolbar_person_img"
             android:layout_width="@dimen/DIMEN_31DP"
             android:layout_height="@dimen/DIMEN_31DP"
@@ -46,7 +46,7 @@
             tools:src="@drawable/ic_default_avatar" />
 
         <!--大V标识-->
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/header_authentication"
             android:layout_width="@dimen/DIMEN_12DP"
             android:layout_height="@dimen/DIMEN_12DP"
@@ -57,7 +57,7 @@
             app:layout_constraintLeft_toLeftOf="@id/toolbar_person_img"
             tools:visibility="visible" />
 
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:id="@+id/layout_name"
             android:orientation="vertical"
             android:layout_width="wrap_content"
@@ -69,7 +69,7 @@
             app:layout_constraintTop_toTopOf="@id/toolbar_person_img">
 
             <!--名称-->
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:lines="1"
@@ -84,7 +84,7 @@
                 tools:text="1231" />
 
             <!--名称-->
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/toolbar_name_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
                 tools:text="张三" />
 
             <!--认证信息或作者简介 -->
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/toolbar_sources_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -115,10 +115,10 @@
                 tools:text="作者简介"
                 tools:visibility="visible" />
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
         <!--关注与否-->
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/toolbar_attention_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <!--圈子信息-->
-        <com.jxntv.widget.GVideoRLinearLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout
             android:id="@+id/circle_layout"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/DIMEN_21DP"
@@ -151,12 +151,12 @@
             app:layout_constraintTop_toTopOf="@id/toolbar_person_img"
             tools:visibility="visible">
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:layout_width="@dimen/DIMEN_19DP"
                 android:layout_height="@dimen/DIMEN_11DP"
                 android:background="@drawable/icon_publish_circle" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:layout_width="1px"
                 android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/DIMEN_5DP"
@@ -165,7 +165,7 @@
                 android:layout_marginBottom="@dimen/DIMEN_5DP"
                 android:background="@color/color_df2e51" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/circle_name"
                 android:maxEms="4"
                 android:singleLine="true"
@@ -177,9 +177,9 @@
                 android:textSize="@dimen/sp_10"
                 tools:text="一二三四五六七八" />
 
-        </com.jxntv.widget.GVideoRLinearLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout>
 
-        <com.jxntv.widget.GVideoRelativeLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="@dimen/DIMEN_24DP"
             android:orientation="horizontal"
@@ -188,7 +188,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:visibility="gone">
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -206,17 +206,17 @@
                 android:textSize="@dimen/DIMEN_12DP"
                 tools:text="慕容回复" />
 
-            <com.jxntv.base.view.MediaImageView
+            <com.hzlz.aviation.kernel.base.view.MediaImageView
                 android:layout_width="@dimen/DIMEN_24DP"
                 android:layout_height="@dimen/DIMEN_24DP"
                 app:circleCrop="@{true}"
                 app:imageData="@{videoObservable.authUgcReplyAvatar}"
                 app:placeholder='@{@drawable/ic_default_avatar}' />
 
-        </com.jxntv.widget.GVideoRelativeLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout>
 
         <!--创建时间-->
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/toolbar_create_date"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

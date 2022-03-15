@@ -6,7 +6,7 @@
 
         <variable
             name="viewModel"
-            type="com.jxntv.live.ui.homelive.HomeLiveViewModel" />
+            type="com.hzlz.aviation.feature.live.ui.homelive.HomeLiveViewModel" />
 
     </data>
 
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.jxntv.base.view.ViewPagerTab
+        <com.hzlz.aviation.kernel.base.view.ViewPagerTab
             android:id="@+id/view_pager_tab"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_45DP"
@@ -31,7 +31,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/view_pager_tab" />
 
-        <com.jxntv.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
             android:id="@+id/empty_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

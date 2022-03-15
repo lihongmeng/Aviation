@@ -6,12 +6,12 @@
 
         <variable
             name="feedModel"
-            type="com.jxntv.media.model.MediaModel" />
+            type="com.hzlz.aviation.kernel.media.model.MediaModel" />
 
         <import type="android.view.View" />
     </data>
 
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:id="@+id/root_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/tag"
             android:layout_width="@dimen/DIMEN_3DP"
             android:layout_height="@dimen/DIMEN_16DP"
@@ -31,7 +31,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/title" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             app:layout_constraintStart_toEndOf="@id/tag"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/more"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/title">
 
-            <com.jxntv.widget.GVideoLinearLayout
+            <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
                 android:id="@+id/ll_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
                 android:layout_marginBottom="@dimen/DIMEN_13DP"
                 android:orientation="horizontal">
 
-            </com.jxntv.widget.GVideoLinearLayout>
+            </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
         </HorizontalScrollView>
 
@@ -83,7 +83,7 @@
             android:background="@color/c_line02"
             app:layout_constraintBottom_toBottomOf="parent" />
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
 
 </layout>

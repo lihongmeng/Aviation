@@ -6,7 +6,7 @@
 
     </data>
 
-    <com.jxntv.widget.GVideoRTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoRTextView
 
         android:id="@+id/channel"
         android:layout_width="@dimen/DIMEN_80DP"

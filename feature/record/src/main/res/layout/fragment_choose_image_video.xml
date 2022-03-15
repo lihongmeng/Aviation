@@ -4,17 +4,17 @@
     <data>
         <variable
             name="viewModel"
-            type="com.jxntv.record.recorder.fragment.choose.ChooseImageVideoViewModel"
+            type="com.hzlz.aviation.feature.record.recorder.fragment.choose.ChooseImageVideoViewModel"
             />
         <import type="android.view.View" />
     </data>
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:id="@+id/choose_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white">
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/back_choose"
             android:layout_width="@dimen/fragment_record_cancel"
             android:layout_height="@dimen/fragment_record_cancel"
@@ -22,7 +22,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/fragment_record_cancel"
             android:layout_gravity="center_horizontal"
@@ -36,7 +36,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent" />
 
-        <com.jxntv.widget.GVideoRecyclerView
+        <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -45,7 +45,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintBottom_toTopOf="@id/select_num_text" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/select_num_text"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/fragment_choose_bottom_height"
@@ -58,7 +58,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/select_num_time"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/fragment_choose_bottom_height"
@@ -72,7 +72,7 @@
             app:layout_constraintLeft_toRightOf="@id/select_num_text"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/button_finish"
             android:layout_width="@dimen/fragment_choose_finish_button_width"
             android:layout_height="@dimen/fragment_choose_finish_button_height"
@@ -94,6 +94,6 @@
             android:layout_height="match_parent"
             android:visibility="gone" />
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
 </layout>

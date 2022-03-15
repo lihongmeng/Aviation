@@ -5,15 +5,15 @@
 
     <variable
       name="viewModel"
-      type="com.jxntv.account.ui.notification.detail.MessageNotificationDetailViewModel" />
+      type="com.hzlz.aviation.feature.account.ui.notification.detail.MessageNotificationDetailViewModel" />
   </data>
 
-  <com.jxntv.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.jxntv.base.view.GVideoSmartRefreshLayout
+    <com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout
       android:id="@+id/refresh_layout"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
@@ -21,11 +21,11 @@
       app:ksrlv_onLoadMore="@{(v)->viewModel.onLoadMore(v)}"
       app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}">
 
-      <com.jxntv.widget.GVideoRecyclerView
+      <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:adapter="@{viewModel.adapter}"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
-    </com.jxntv.base.view.GVideoSmartRefreshLayout>
-  </com.jxntv.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
+  </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 </layout>

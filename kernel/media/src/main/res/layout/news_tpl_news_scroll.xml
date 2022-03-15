@@ -6,12 +6,12 @@
 
         <variable
             name="feedModel"
-            type="com.jxntv.media.model.MediaModel" />
+            type="com.hzlz.aviation.kernel.media.model.MediaModel" />
 
         <import type="android.view.View" />
     </data>
 
-    <com.jxntv.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
         android:id="@+id/root_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,14 +22,14 @@
         android:paddingEnd="@dimen/DIMEN_10DP"
         android:paddingBottom="@dimen/DIMEN_10DP">
 
-        <com.jxntv.widget.GVideoRLinearLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_55DP"
             android:gravity="center_vertical"
             app:background_normal="@drawable/ic_news_scroll_bg"
             app:corner_radius="@dimen/DIMEN_4DP">
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/tag"
                 android:layout_width="@dimen/DIMEN_64DP"
                 android:layout_height="@dimen/DIMEN_18DP"
@@ -43,15 +43,15 @@
                 android:layout_marginStart="@dimen/DIMEN_11DP"
                 android:background="@color/t_color01" />
 
-            <com.jxntv.widget.GVideoBanner
+            <com.hzlz.aviation.library.widget.widget.GVideoBanner
                 android:id="@+id/banner"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/DIMEN_8DP"
                 android:layout_marginEnd="@dimen/DIMEN_8DP" />
 
-        </com.jxntv.widget.GVideoRLinearLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout>
 
-    </com.jxntv.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
 </layout>

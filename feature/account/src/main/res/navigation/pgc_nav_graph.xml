@@ -7,7 +7,7 @@
   <!--PGC 页面-->
   <fragment
       android:id="@+id/pgcFragment"
-      android:name="com.jxntv.account.ui.pgc.PgcFragment"
+      android:name="com.hzlz.aviation.feature.account.ui.pgc.PgcFragment"
       android:label="PgcFragment">
     <argument
         android:name="authorId"
@@ -20,7 +20,7 @@
   <!--UGC 页面-->
   <fragment
       android:id="@+id/ugcFragment"
-      android:name="com.jxntv.account.ui.ugc.UgcFragment"
+      android:name="com.hzlz.aviation.feature.account.ui.ugc.UgcFragment"
       android:label="UgcFragment">
     <argument
         android:name="authorId"

@@ -6,6 +6,6 @@
 
   <fragment
       android:id="@+id/settingFragment"
-      android:name="com.jxntv.account.ui.setting.SettingFragment"
+      android:name="com.hzlz.aviation.feature.account.ui.setting.SettingFragment"
       android:label="SettingFragment" />
 </navigation>

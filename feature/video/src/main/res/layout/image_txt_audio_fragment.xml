@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -8,25 +7,25 @@
         android:background="@color/white"
         android:orientation="vertical">
 
-        <com.jxntv.base.view.GVideoSmartRefreshLayout
+        <com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout
             android:id="@+id/refreshLayout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <com.jxntv.widget.GVideoConstraintLayout
+            <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <com.jxntv.widget.GVideoRecyclerView
+                <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
                     android:id="@+id/recycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
-            </com.jxntv.widget.GVideoConstraintLayout>
+            </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
-        </com.jxntv.base.view.GVideoSmartRefreshLayout>
+        </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
 
         <include
             android:id="@+id/input_panel"

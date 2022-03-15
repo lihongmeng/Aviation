@@ -3,7 +3,7 @@
   <data>
     <variable
         name="viewModel"
-        type="com.jxntv.test.environment.EnvironmentViewModel"
+        type="com.hzlz.aviation.feature.test.environment.EnvironmentViewModel"
         />
   </data>
   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

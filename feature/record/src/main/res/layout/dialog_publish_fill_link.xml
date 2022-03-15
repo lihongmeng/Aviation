@@ -12,7 +12,7 @@
         android:paddingEnd="@dimen/DIMEN_14DP"
         tools:ignore="RtlSymmetry">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/desc"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/desc" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/clear"
             android:scaleType="center"
             android:layout_width="@dimen/DIMEN_42DP"
@@ -73,7 +73,7 @@
             app:layout_constraintLeft_toLeftOf="@id/link_input_bg"
             app:layout_constraintRight_toLeftOf="@id/clear" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/paste_bubble_bg"
             android:layout_width="@dimen/DIMEN_203DP"
             android:layout_height="@dimen/DIMEN_42DP"
@@ -83,7 +83,7 @@
             app:layout_constraintRight_toRightOf="@id/link_input_bg"
             android:visibility="gone" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/paste_bubble_bg_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -100,7 +100,7 @@
             app:layout_constraintTop_toTopOf="@id/paste_bubble_bg"
             tools:text="123456789456121234567894561234578912345678945612345789345789" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/confirm_add"
             android:layout_width="@dimen/DIMEN_203DP"
             android:layout_height="@dimen/DIMEN_42DP"
@@ -114,7 +114,7 @@
             app:layout_constraintRight_toRightOf="@id/link_input_bg"
             app:layout_constraintTop_toBottomOf="@id/link_input_bg" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/cancel"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_58DP"

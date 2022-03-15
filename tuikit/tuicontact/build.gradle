@@ -1,7 +1,0 @@
-apply from: rootProject.file("library.gradle")
-
-dependencies {
-    implementation 'com.github.promeg:tinypinyin:2.0.1' // ~80KB
-    implementation deps.tog_kernel_base
-    implementation deps.tog_tuikit_tuicore
-}

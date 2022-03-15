@@ -4,7 +4,7 @@
     android:layout_height="@dimen/DIMEN_130DP"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.jxntv.live.ui.widget.MicroConnectAnchorView
+    <com.hzlz.aviation.feature.live.ui.widget.MicroConnectAnchorView
         android:id="@+id/first"
         android:layout_width="@dimen/DIMEN_58DP"
         android:layout_height="@dimen/DIMEN_58DP"
@@ -13,7 +13,7 @@
         app:layout_constraintRight_toLeftOf="@id/second"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.jxntv.live.ui.widget.MicroConnectAnchorView
+    <com.hzlz.aviation.feature.live.ui.widget.MicroConnectAnchorView
         android:id="@+id/second"
         android:layout_width="@dimen/DIMEN_58DP"
         android:layout_height="@dimen/DIMEN_58DP"
@@ -22,7 +22,7 @@
         app:layout_constraintRight_toLeftOf="@id/third"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.jxntv.live.ui.widget.MicroConnectAnchorView
+    <com.hzlz.aviation.feature.live.ui.widget.MicroConnectAnchorView
         android:id="@+id/third"
         android:layout_width="@dimen/DIMEN_58DP"
         android:layout_height="@dimen/DIMEN_58DP"
@@ -31,7 +31,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.jxntv.live.ui.widget.MicroConnectAnchorView
+    <com.hzlz.aviation.feature.live.ui.widget.MicroConnectAnchorView
         android:id="@+id/four"
         android:layout_width="@dimen/DIMEN_58DP"
         android:layout_height="@dimen/DIMEN_58DP"
@@ -40,7 +40,7 @@
         app:layout_constraintRight_toLeftOf="@id/five"
         app:layout_constraintBottom_toBottomOf="parent" />
 
-    <com.jxntv.live.ui.widget.MicroConnectAnchorView
+    <com.hzlz.aviation.feature.live.ui.widget.MicroConnectAnchorView
         android:id="@+id/five"
         android:layout_width="@dimen/DIMEN_58DP"
         android:layout_height="@dimen/DIMEN_58DP"
@@ -49,7 +49,7 @@
         app:layout_constraintRight_toLeftOf="@id/six"
         app:layout_constraintBottom_toBottomOf="parent" />
 
-    <com.jxntv.live.ui.widget.MicroConnectAnchorView
+    <com.hzlz.aviation.feature.live.ui.widget.MicroConnectAnchorView
         android:id="@+id/six"
         android:layout_width="@dimen/DIMEN_58DP"
         android:layout_height="@dimen/DIMEN_58DP"

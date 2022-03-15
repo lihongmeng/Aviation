@@ -7,21 +7,21 @@
 
         <variable
             name="author"
-            type="com.jxntv.account.model.UserAuthorObservable" />
+            type="com.hzlz.aviation.feature.account.model.UserAuthorObservable" />
 
         <variable
             name="user"
-            type="com.jxntv.account.model.UserAuthor" />
+            type="com.hzlz.aviation.feature.account.model.UserAuthor" />
 
         <variable
             name="binding"
-            type="com.jxntv.account.ui.ugc.UgcDataBinding" />
+            type="com.hzlz.aviation.feature.account.ui.ugc.UgcDataBinding" />
 
         <import type="android.view.View" />
 
         <import type="android.text.TextUtils" />
 
-        <import type="com.jxntv.base.utils.StringUtils" />
+        <import type="com.hzlz.aviation.kernel.base.utils.StringUtils" />
 
     </data>
 
@@ -32,13 +32,13 @@
         android:background="@color/white"
         app:elevation="0dp">
 
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:id="@+id/appbar_content"
             style="@style/FragmentUgcStyle.DetailContainer"
             android:minHeight="@dimen/DIMEN_80DP"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-            <com.jxntv.widget.GVideoConstraintLayout
+            <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
                 android:id="@+id/layout_detail_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
                 android:background="@{binding.editVisible()?@drawable/ic_ugc_bg_mine:@drawable/ic_ugc_bg}"
                 tools:background="@drawable/ic_ugc_bg">
 
-                <com.jxntv.widget.GVideoRLinearLayout
+                <com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout
                     android:id="@+id/image_view_detail_avatar"
                     android:layout_width="@dimen/DIMEN_57DP"
                     android:layout_height="@dimen/DIMEN_57DP"
@@ -59,7 +59,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <com.jxntv.widget.GVideoRImageView
+                    <com.hzlz.aviation.library.widget.widget.GVideoRImageView
                         android:layout_width="@dimen/DIMEN_56DP"
                         android:layout_height="@dimen/DIMEN_56DP"
                         android:onClick="@{v->binding.onAvatarClick(v)}"
@@ -68,9 +68,9 @@
                         app:placeholder='@{@drawable/ic_default_avatar}'
                         tools:src="@drawable/ic_default_avatar" />
 
-                </com.jxntv.widget.GVideoRLinearLayout>
+                </com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout>
 
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:layout_width="@dimen/DIMEN_17DP"
                     android:layout_height="@dimen/DIMEN_17DP"
                     android:src="@drawable/icon_header_authentication"
@@ -79,7 +79,7 @@
                     app:layout_constraintRight_toRightOf="@id/image_view_detail_avatar"
                     tools:visibility="visible" />
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/text_view_detail_name"
                     style="@style/FragmentUgcStyle.DetailName"
                     android:layout_marginTop="@dimen/DIMEN_12DP"
@@ -88,7 +88,7 @@
                     app:layout_constraintTop_toBottomOf="@id/image_view_detail_avatar"
                     tools:text="张三" />
 
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:id="@+id/gender"
                     android:layout_width="@dimen/DIMEN_15DP"
                     android:layout_height="@dimen/DIMEN_15DP"
@@ -100,7 +100,7 @@
                     app:layout_constraintTop_toTopOf="@id/text_view_detail_name"
                     tools:src="@drawable/ic_male_blue" />
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/text_view_detail_description"
                     style="@style/FragmentUgcStyle.DetailDescription"
                     android:layout_width="match_parent"
@@ -113,7 +113,7 @@
                     app:layout_constraintTop_toBottomOf="@id/text_view_detail_name"
                     tools:text="无业游民无业游民无业游民无业游民无业游民无业游民无业游民无业游民无业游民无业游民无业游民无业游民无业游民无业游民无业游民无业游民无业游民" />
 
-                <com.jxntv.widget.GVideoLinearLayout
+                <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
                     android:id="@+id/layout_fans"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -122,18 +122,18 @@
                     app:layout_constraintStart_toStartOf="@id/image_view_detail_avatar"
                     app:layout_constraintTop_toBottomOf="@id/text_view_detail_description">
 
-                    <com.jxntv.widget.GVideoLinearLayout
+                    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:onClick="@{(v)->binding.onFollowCountClick(v)}"
                         android:orientation="horizontal">
 
-                        <com.jxntv.widget.GVideoTextView
+                        <com.hzlz.aviation.library.widget.widget.GVideoTextView
                             style="@style/FragmentUgcStyle.DetailFansCount"
                             android:text="@{author.followCount}"
                             tools:text="12" />
 
-                        <com.jxntv.widget.GVideoTextView
+                        <com.hzlz.aviation.library.widget.widget.GVideoTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/DIMEN_5DP"
@@ -142,21 +142,21 @@
                             android:textSize="@dimen/sp_13"
                             tools:text="粉丝" />
 
-                    </com.jxntv.widget.GVideoLinearLayout>
+                    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
-                    <com.jxntv.widget.GVideoLinearLayout
+                    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/DIMEN_29DP"
                         android:onClick="@{(v)->binding.onFansCountClick(v)}"
                         android:orientation="horizontal">
 
-                        <com.jxntv.widget.GVideoTextView
+                        <com.hzlz.aviation.library.widget.widget.GVideoTextView
                             style="@style/FragmentUgcStyle.DetailFansCount"
                             android:text="@{author.fansCount}"
                             tools:text="12" />
 
-                        <com.jxntv.widget.GVideoTextView
+                        <com.hzlz.aviation.library.widget.widget.GVideoTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/DIMEN_5DP"
@@ -165,11 +165,11 @@
                             android:textSize="@dimen/sp_13"
                             tools:text="关注" />
 
-                    </com.jxntv.widget.GVideoLinearLayout>
+                    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
-                </com.jxntv.widget.GVideoLinearLayout>
+                </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
-                <com.jxntv.widget.GVideoLinearLayout
+                <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
                     android:id="@+id/region"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -181,7 +181,7 @@
                     app:layout_constraintTop_toTopOf="@id/layout_fans"
                     tools:visibility="visible">
 
-                    <com.jxntv.widget.GVideoImageView
+                    <com.hzlz.aviation.library.widget.widget.GVideoImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -189,7 +189,7 @@
                         android:layout_marginEnd="@dimen/DIMEN_5DP"
                         android:src="@drawable/ic_common_location" />
 
-                    <com.jxntv.widget.GVideoTextView
+                    <com.hzlz.aviation.library.widget.widget.GVideoTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@{author.region}"
@@ -197,9 +197,9 @@
                         android:textSize="@dimen/sp_12"
                         tools:text="南昌市·青山湖区" />
 
-                </com.jxntv.widget.GVideoLinearLayout>
+                </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
-                <com.jxntv.widget.GVideoRTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoRTextView
                     android:id="@+id/text_view_detail_edit"
                     android:layout_width="@dimen/DIMEN_58DP"
                     android:layout_height="@dimen/DIMEN_23DP"
@@ -217,7 +217,7 @@
                     app:layout_constraintStart_toEndOf="@id/image_view_detail_avatar"
                     app:layout_constraintTop_toTopOf="@id/image_view_detail_avatar" />
 
-                <com.jxntv.widget.GVideoLinearLayout
+                <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
                     android:id="@+id/layout_follow_state"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -228,7 +228,7 @@
                     app:layout_constraintTop_toTopOf="@id/image_view_detail_avatar"
                     tools:visibility="visible">
 
-                    <com.jxntv.widget.GvideoRConstraintLayout
+                    <com.hzlz.aviation.library.widget.widget.GvideoRConstraintLayout
                         android:id="@+id/follow_bg"
                         android:layout_width="@dimen/DIMEN_77DP"
                         android:layout_height="@dimen/DIMEN_29DP"
@@ -238,7 +238,7 @@
                         app:border_width_normal="@dimen/DIMEN_1DP"
                         app:corner_radius="@dimen/DIMEN_15DP">
 
-                        <com.jxntv.widget.GVideoImageView
+                        <com.hzlz.aviation.library.widget.widget.GVideoImageView
                             android:id="@+id/follow_iv_left"
                             android:layout_width="@dimen/DIMEN_14DP"
                             android:layout_height="@dimen/DIMEN_14DP"
@@ -250,7 +250,7 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <com.jxntv.widget.GVideoTextView
+                        <com.hzlz.aviation.library.widget.widget.GVideoTextView
                             android:id="@+id/follow_text_right"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -262,9 +262,9 @@
                             app:layout_constraintStart_toEndOf="@id/follow_iv_left"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                    </com.jxntv.widget.GvideoRConstraintLayout>
+                    </com.hzlz.aviation.library.widget.widget.GvideoRConstraintLayout>
 
-                    <com.jxntv.widget.GVideoImageView
+                    <com.hzlz.aviation.library.widget.widget.GVideoImageView
                         android:layout_width="@dimen/DIMEN_23DP"
                         android:layout_height="@dimen/DIMEN_23DP"
                         android:layout_marginStart="@dimen/DIMEN_10DP"
@@ -272,9 +272,9 @@
                         android:onClick="@{(v)->binding.onChatCheckClicked(v, author, user)}"
                         android:src="@{author.isFollowed?@drawable/ic_profile_follow_checked:@drawable/ic_profile_chat}" />
 
-                </com.jxntv.widget.GVideoLinearLayout>
+                </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
-                <com.jxntv.widget.GvideoRConstraintLayout
+                <com.hzlz.aviation.library.widget.widget.GvideoRConstraintLayout
                     android:layout_width="@dimen/DIMEN_0DP"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/DIMEN_10DP"
@@ -292,7 +292,7 @@
                     app:layout_constraintTop_toBottomOf="@id/layout_fans"
                     tools:visibility="visible">
 
-                    <com.jxntv.widget.GVideoImageView
+                    <com.hzlz.aviation.library.widget.widget.GVideoImageView
                         android:id="@+id/ic_qa_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -301,7 +301,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <com.jxntv.widget.GVideoTextView
+                    <com.hzlz.aviation.library.widget.widget.GVideoTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/DIMEN_4DP"
@@ -313,7 +313,7 @@
                         app:layout_constraintStart_toEndOf="@+id/ic_qa_icon"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <com.jxntv.widget.GVideoTextView
+                    <com.hzlz.aviation.library.widget.widget.GVideoTextView
                         android:id="@+id/qa_tag_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -324,7 +324,7 @@
                         android:textColor="@color/color_ffffff_60"
                         app:layout_constraintTop_toBottomOf="@id/ic_qa_icon" />
 
-                    <com.jxntv.widget.GVideoTextView
+                    <com.hzlz.aviation.library.widget.widget.GVideoTextView
                         android:id="@+id/divider"
                         android:layout_width="1dp"
                         android:layout_height="12dp"
@@ -334,7 +334,7 @@
                         app:layout_constraintBottom_toBottomOf="@id/qa_tag_text"
                         android:background="@color/color_ffffff_30"/>
 
-                    <com.jxntv.widget.GVideoTextView
+                    <com.hzlz.aviation.library.widget.widget.GVideoTextView
                         android:id="@+id/qa_tag"
                         android:layout_width="@dimen/DIMEN_0DP"
                         android:layout_height="wrap_content"
@@ -348,7 +348,7 @@
                         app:layout_constraintStart_toEndOf="@id/divider"
                         app:layout_constraintTop_toTopOf="@id/qa_tag_text" />
 
-                    <com.jxntv.widget.GVideoTextView
+                    <com.hzlz.aviation.library.widget.widget.GVideoTextView
                         android:id="@+id/ask_question"
                         android:text="@string/question"
                         style="@style/StyleAskQuestionButton"
@@ -358,11 +358,11 @@
                         app:layout_constraintStart_toEndOf="@id/qa_tag"
                         app:layout_constraintEnd_toEndOf="parent"/>
 
-                </com.jxntv.widget.GvideoRConstraintLayout>
+                </com.hzlz.aviation.library.widget.widget.GvideoRConstraintLayout>
 
-            </com.jxntv.widget.GVideoConstraintLayout>
+            </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
-            <com.jxntv.widget.GVideoLinearLayout
+            <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
                 android:id="@+id/ll_circle_follow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -371,29 +371,29 @@
                 android:visibility="@{StringUtils.IsZero(author.followGroupCount)?View.GONE:View.VISIBLE}"
                 app:layout_constraintTop_toBottomOf="@id/layout_detail_user">
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/text_view_detail_circle_count"
                     style="@style/FragmentUgcStyle.DetailFollowCount"
                     android:text="@{@string/circle_count(StringUtils.getGender(author.gender,author.self))}"
                     tools:text="Ta加入的圈子" />
 
-                <com.jxntv.widget.GVideoRecyclerView
+                <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
                     android:id="@+id/recycler_circle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/DIMEN_19DP"
                     android:layout_marginBottom="@dimen/DIMEN_14DP" />
 
-            </com.jxntv.widget.GVideoLinearLayout>
+            </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
             <View
                 android:visibility="@{StringUtils.IsZero(author.followGroupCount)?View.GONE:View.VISIBLE}"
                 style="@style/feed_layout_line"
                 app:layout_constraintTop_toBottomOf="@id/ll_circle_follow" />
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
-        <com.jxntv.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
@@ -406,14 +406,14 @@
                 android:layout_marginBottom="@dimen/DIMEN_1D5P"
                 android:background="@color/color_f2f2f2" />
 
-            <com.jxntv.base.view.tab.GVideoSmartTabLayout
+            <com.hzlz.aviation.kernel.base.view.tab.GVideoSmartTabLayout
                 android:id="@+id/tab_layout"
                 style="@style/FragmentUgcStyle.DetailTabLayout"
                 android:layout_marginStart="@dimen/DIMEN_10DP"
                 android:background="@color/transparent"
                 app:stl_defaultTabTextHorizontalPadding="@dimen/DIMEN_10DP" />
 
-        </com.jxntv.widget.GVideoFrameLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 </layout>

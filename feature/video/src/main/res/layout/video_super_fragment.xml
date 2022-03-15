@@ -17,7 +17,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.base.view.GVideoSmartRefreshLayout
+        <com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout
             android:id="@+id/refreshLayout"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -52,7 +52,7 @@
                         android:layout_height="wrap_content"
                         app:layout_scrollFlags="scroll" />
 
-                    <com.jxntv.base.view.tab.GVideoSmartTabLayout
+                    <com.hzlz.aviation.kernel.base.view.tab.GVideoSmartTabLayout
                         android:id="@+id/sliding"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/video_dp_50"
@@ -65,7 +65,7 @@
 
             </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-        </com.jxntv.base.view.GVideoSmartRefreshLayout>
+        </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
 
         <include
             android:id="@+id/input_panel"

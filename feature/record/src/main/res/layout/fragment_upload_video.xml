@@ -4,23 +4,23 @@
     <data>
         <variable
             name="viewModel"
-            type="com.jxntv.record.recorder.fragment.upload.UploadViewModel"
+            type="com.hzlz.aviation.feature.record.recorder.fragment.upload.UploadViewModel"
             />
     </data>
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:id="@+id/refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white">
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/iv_back"
             android:layout_width="@dimen/fragment_record_cancel"
             android:layout_height="@dimen/fragment_record_cancel"
             android:src="@drawable/ic_back_black"
             android:onClick="@{v ->viewModel.onPublishBackCancel(v)}"/>
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/fragment_record_cancel"
             android:layout_gravity="center_horizontal"
@@ -34,7 +34,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent" />
 
-        <com.jxntv.widget.GVideoEditText
+        <com.hzlz.aviation.library.widget.widget.GVideoEditText
             android:id="@+id/et_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/tv_edit_num"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -79,12 +79,12 @@
             app:layout_constraintLeft_toLeftOf="parent"
             android:onClick="@{v ->viewModel.onPreviewVideoClick(v)}">
 
-            <com.jxntv.base.view.MediaImageView
+            <com.hzlz.aviation.kernel.base.view.MediaImageView
                 android:id="@+id/player_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
-            <com.jxntv.base.view.MediaImageView
+            <com.hzlz.aviation.kernel.base.view.MediaImageView
                 android:id="@+id/video_big_img"
                 android:layout_width="@dimen/upload_video_item_size"
                 android:layout_height="@dimen/upload_video_item_size"
@@ -101,7 +101,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"/>
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:layout_gravity="bottom"
                 android:layout_width="@dimen/upload_video_change_cover_width"
                 android:layout_height="@dimen/upload_video_change_cover_height"
@@ -112,7 +112,7 @@
 
         </androidx.cardview.widget.CardView>
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/upload_video_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -125,7 +125,7 @@
             app:layout_constraintTop_toBottomOf="@+id/player_view_layout"
             app:layout_constraintLeft_toLeftOf="parent"/>
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/upload_video_public"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -148,7 +148,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/upload_video_text"
             app:layout_constraintRight_toLeftOf="@id/upload_video_private"/>
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/upload_video_private"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -172,7 +172,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/button_finish"
             android:layout_width="match_parent"
             android:layout_height="@dimen/upload_button_height"
@@ -189,6 +189,6 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             android:onClick="@{v ->viewModel.onPublish(v)}"/>
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
 </layout>

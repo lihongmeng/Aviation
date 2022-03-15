@@ -10,7 +10,7 @@
         app:zxing_framing_rect_height="@dimen/DIMEN_300DP"
         app:zxing_framing_rect_width="@dimen/DIMEN_300DP" />
 
-    <com.jxntv.base.scan.GVideoViewfinderView
+    <com.hzlz.aviation.kernel.base.scan.GVideoViewfinderView
         android:id="@+id/zxing_viewfinder_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

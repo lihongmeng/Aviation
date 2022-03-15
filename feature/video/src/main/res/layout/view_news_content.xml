@@ -9,15 +9,15 @@
 
         <variable
             name="viewModel"
-            type="com.jxntv.android.video.ui.news.NewsDetailViewModel" />
+            type="com.hzlz.aviation.feature.video.ui.news.NewsDetailViewModel" />
 
         <variable
             name="videoModel"
-            type="com.jxntv.base.model.video.VideoModel" />
+            type="com.hzlz.aviation.kernel.base.model.video.VideoModel" />
 
         <import type="android.text.TextUtils" />
 
-        <import type="com.jxntv.utils.DateUtils" />
+        <import type="com.hzlz.aviation.library.util.DateUtils" />
 
         <import type="android.view.View" />
 
@@ -29,11 +29,11 @@
         android:layout_height="wrap_content"
         android:background="@color/white">
 
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/news_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
                 android:textStyle="bold"
                 tools:text="讲述英雄故事 传承红色基因—庆祝建党100周年特别节目《闪亮的 坐标》" />
 
-            <com.jxntv.widget.GVideoConstraintLayout
+            <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
                 android:id="@+id/layout_author"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
                     android:visibility="@{TextUtils.isEmpty(videoModel.source)?View.GONE:View.VISIBLE}"
                     tools:visibility="visible"/>
 
-                <com.jxntv.widget.GVideoRImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoRImageView
                     android:id="@+id/author_avatar"
                     android:layout_width="@dimen/DIMEN_35DP"
                     android:layout_height="@dimen/DIMEN_35DP"
@@ -113,7 +113,7 @@
                     app:layout_constraintTop_toBottomOf="@id/author_name"
                     tools:text="2021-05-12" />
 
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:id="@+id/follow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -160,9 +160,9 @@
                     app:layout_constraintTop_toTopOf="@id/author_name1"
                     tools:text="2021-01-12  11：00"/>
 
-            </com.jxntv.widget.GVideoConstraintLayout>
+            </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/DIMEN_7DP"
@@ -174,7 +174,7 @@
                 app:layout_constraintRight_toLeftOf="@id/read"
                 app:layout_constraintTop_toTopOf="@id/layout_author" />
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/read"
                 android:layout_width="@dimen/DIMEN_22DP"
                 android:layout_height="@dimen/DIMEN_22DP"
@@ -184,7 +184,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/layout_author" />
 
-            <com.jxntv.base.webview.GVWebView
+            <com.hzlz.aviation.kernel.base.webview.GVWebView
                 android:id="@+id/web"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -203,7 +203,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/web" />
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/share_text"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/DIMEN_37DP"
@@ -228,7 +228,7 @@
                     android:layout_height="@dimen/DIMEN_10DP"
                     android:background="@color/c_f7f8fc" />
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/related_news"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -240,7 +240,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/line2" />
 
-                <com.jxntv.widget.GVideoRecyclerView
+                <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
                     android:id="@+id/recycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -251,7 +251,7 @@
 
             </LinearLayout>
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
 

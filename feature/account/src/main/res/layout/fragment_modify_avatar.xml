@@ -6,14 +6,14 @@
 
         <variable
             name="viewModel"
-            type="com.jxntv.account.ui.modify.avatar.ModifyAvatarViewModel" />
+            type="com.hzlz.aviation.feature.account.ui.modify.avatar.ModifyAvatarViewModel" />
 
         <variable
             name="user"
-            type="com.jxntv.account.model.UserObservable" />
+            type="com.hzlz.aviation.feature.account.model.UserObservable" />
     </data>
 
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/all_layout_background"
@@ -27,7 +27,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/image_view_avatar"
             style="@style/FragmentModifyAvatarStyle.Avatar"
             app:circleCrop="@{true}"
@@ -38,14 +38,14 @@
             app:layout_constraintRight_toRightOf="@id/view_avatar_background"
             app:layout_constraintTop_toTopOf="@id/view_avatar_background" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/text_view_optional_avatar"
             style="@style/FragmentModifyAvatarStyle.OptionalAvatar"
             android:text="@string/optional_avatar"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/view_avatar_background" />
 
-        <com.jxntv.widget.GVideoRecyclerView
+        <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
             android:id="@+id/recycler_view"
             style="@style/FragmentModifyAvatarStyle.OptionalAvatarList"
             android:layout_width="0dp"
@@ -58,7 +58,7 @@
             app:layout_constraintTop_toBottomOf="@id/text_view_optional_avatar"
             app:spanCount="3" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/text_view_submit"
             style="@style/FragmentModifyAvatarStyle.Submit"
             android:layout_width="0dp"
@@ -69,6 +69,6 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent" />
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
 </layout>

@@ -7,19 +7,19 @@
 
         <variable
             name="feedModel"
-            type="com.jxntv.media.model.MediaModel" />
+            type="com.hzlz.aviation.kernel.media.model.MediaModel" />
 
         <import type="android.text.TextUtils" />
 
         <import type="android.view.View" />
     </data>
 
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:id="@+id/root_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/content_tag"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/DIMEN_22DP"
@@ -32,13 +32,13 @@
             app:layout_constraintStart_toStartOf="parent"
             android:visibility="@{feedModel.isShowTag?View.VISIBLE:View.GONE}" />
 
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:id="@+id/layout_content"
             android:layout_marginBottom="@dimen/DIMEN_14DP"
             app:layout_constraintTop_toBottomOf="@id/content_tag"
             style="@style/feed_layout_margin">
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/title"
                 style="@style/feed_text_style_news"
                 android:layout_width="0dp"
@@ -70,7 +70,7 @@
 
             </LinearLayout>
 
-            <com.jxntv.widget.GVideoRImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoRImageView
                 android:id="@+id/image"
                 android:layout_width="@dimen/DIMEN_96DP"
                 android:layout_height="@dimen/DIMEN_70DP"
@@ -85,7 +85,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 tools:src="@drawable/ic_launcher" />
 
-            <com.jxntv.widget.GVideoRImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoRImageView
                 android:id="@+id/video_tag"
                 android:layout_width="@dimen/DIMEN_35DP"
                 android:layout_height="@dimen/DIMEN_35DP"
@@ -98,7 +98,7 @@
                 app:layout_constraintStart_toStartOf="@id/image"
                 app:layout_constraintTop_toTopOf="@id/image" />
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
         <View
             android:layout_width="match_parent"
@@ -107,6 +107,6 @@
             android:layout_marginTop="@dimen/DIMEN_10DP"
             app:layout_constraintTop_toBottomOf="@id/layout_content" />
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
 </layout>

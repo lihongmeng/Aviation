@@ -5,7 +5,7 @@
     android:background="@color/color_ffffff"
     tools:ignore="MissingDefaultResource">
 
-    <com.jxntv.widget.GVideoRLinearLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout
         android:layout_width="@dimen/DIMEN_53DP"
         android:layout_height="@dimen/DIMEN_53DP"
         android:layout_marginStart="@dimen/DIMEN_15DP"
@@ -16,12 +16,12 @@
         android:padding="@dimen/DIMEN_1DP"
         app:corner_radius="@dimen/DIMEN_12DP">
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/share_menu_icon"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="@dimen/DIMEN_5DP"
             tools:src="@drawable/share_item_weibo"/>
 
-    </com.jxntv.widget.GVideoRLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout>
 </layout>

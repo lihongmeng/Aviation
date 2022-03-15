@@ -3,33 +3,33 @@
   <data>
     <variable
         name="viewModel"
-        type="com.jxntv.account.ui.setting.SettingViewModel"
+        type="com.hzlz.aviation.feature.account.ui.setting.SettingViewModel"
         />
   </data>
-  <com.jxntv.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:background="@color/c_bg01"
       android:orientation="vertical"
       >
-    <com.jxntv.widget.GVideoCellView
+    <com.hzlz.aviation.library.widget.widget.GVideoCellView
         style="@style/FragmentSettingStyle.FirstCell"
         android:onClick="@{(v)->viewModel.startNotificationSettingActivity(v)}"
         app:cvLeftText="@string/accept_push_notification"
         app:cvRightText="@{viewModel.acceptPushNotification}"
         />
-    <com.jxntv.widget.GVideoCellView
+    <com.hzlz.aviation.library.widget.widget.GVideoCellView
         style="@style/FragmentSettingStyle.Cell"
         android:onClick="@{()->viewModel.showAutoPlayDialog()}"
         app:cvLeftText="@string/whether_auto_play"
         app:cvRightText="@{viewModel.autoPlay}"
         />
-    <com.jxntv.widget.GVideoCellView
+    <com.hzlz.aviation.library.widget.widget.GVideoCellView
         style="@style/FragmentSettingStyle.Cell"
         android:onClick="@{()->viewModel.showAutoPlayNextContentDialog()}"
         app:cvLeftText="@string/whether_auto_play_next_content"
         app:cvRightText="@{viewModel.autoPlayNextContent}"
         app:cvShowBottomDriver="false"
         />
-  </com.jxntv.widget.GVideoLinearLayout>
+  </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 </layout>

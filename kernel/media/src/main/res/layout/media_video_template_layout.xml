@@ -7,11 +7,11 @@
 
         <variable
             name="videoBind"
-            type="com.jxntv.media.databind.MediaVideoDataBind" />
+            type="com.hzlz.aviation.kernel.media.databind.MediaVideoDataBind" />
 
         <variable
             name="feedModel"
-            type="com.jxntv.media.model.MediaModel" />
+            type="com.hzlz.aviation.kernel.media.model.MediaModel" />
 
         <import type="android.view.View" />
 
@@ -19,18 +19,18 @@
 
     </data>
 
-    <com.jxntv.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
         android:orientation="vertical"
         style="@style/feed_layout_margin"
         android:onClick="@{(view)->videoBind.onItemClick(view)}">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/title"
             style="@style/feed_title_style"
             android:text="@{feedModel.qaTitle}"
             android:visibility="@{TextUtils.isEmpty(feedModel.qaTitle)?View.GONE:View.VISIBLE,default=gone}" />
 
-        <com.jxntv.widget.FoldTextView
+        <com.hzlz.aviation.library.widget.widget.FoldTextView
             android:id="@+id/video_top_title"
             style="@style/TextStyle.DefaultSpacing_lsm_1_4"
             android:layout_marginBottom="@dimen/DIMEN_9DP"
@@ -62,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <com.jxntv.android.liteav.GVideoView
+                <com.hzlz.aviation.kernel.liteav.GVideoView
                     android:id="@+id/player_view"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
@@ -73,7 +73,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintDimensionRatio="h,16:9" />
 
-                <com.jxntv.base.view.MediaImageView
+                <com.hzlz.aviation.kernel.base.view.MediaImageView
                     android:id="@+id/video_background"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -103,7 +103,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <com.jxntv.widget.GVideoTextView
+                    <com.hzlz.aviation.library.widget.widget.GVideoTextView
                         android:id="@+id/video_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
                         android:paddingEnd="@dimen/DIMEN_5DP"
                         android:visibility="@{feedModel.liveMedia ? View.VISIBLE : View.GONE}">
 
-                        <com.jxntv.widget.WaveIndicatorView
+                        <com.hzlz.aviation.library.widget.widget.WaveIndicatorView
                             android:layout_width="@dimen/DIMEN_14DP"
                             android:layout_height="@dimen/DIMEN_10DP"
                             android:layout_gravity="center_vertical"
@@ -138,7 +138,7 @@
                             app:indicator_spacing="@dimen/DIMEN_2DP"
                             app:indicator_width="@dimen/DIMEN_2D5P" />
 
-                        <com.jxntv.widget.GVideoTextView
+                        <com.hzlz.aviation.library.widget.widget.GVideoTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ellipsize="end"
@@ -151,7 +151,7 @@
 
                     </LinearLayout>
 
-                    <com.jxntv.base.view.LiveStartTimeView
+                    <com.hzlz.aviation.kernel.base.view.LiveStartTimeView
                         android:id="@+id/live_start_time"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -162,7 +162,7 @@
 
                 </RelativeLayout>
 
-                <com.jxntv.widget.GVideoLinearLayout
+                <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
                     android:id="@+id/layout_enter_live_room"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -176,7 +176,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     tools:visibility="visible">
 
-                    <com.jxntv.widget.WaveIndicatorView
+                    <com.hzlz.aviation.library.widget.widget.WaveIndicatorView
                         android:layout_width="@dimen/DIMEN_14DP"
                         android:layout_height="@dimen/DIMEN_12DP"
                         android:layout_gravity="bottom"
@@ -188,7 +188,7 @@
                         app:indicator_spacing="@dimen/DIMEN_2DP"
                         app:indicator_width="@dimen/DIMEN_2D5P" />
 
-                    <com.jxntv.widget.GVideoTextView
+                    <com.hzlz.aviation.library.widget.widget.GVideoTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:outlineProvider="none"
@@ -196,9 +196,9 @@
                         android:textColor="@color/t_color05"
                         android:textSize="@dimen/t_font07" />
 
-                </com.jxntv.widget.GVideoLinearLayout>
+                </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
-                <com.jxntv.base.view.MediaImageView
+                <com.hzlz.aviation.kernel.base.view.MediaImageView
                     android:id="@+id/video_big_img"
                     android:layout_width="@dimen/media_big_img_video_img_size"
                     android:layout_height="@dimen/media_big_img_video_img_size"
@@ -215,5 +215,5 @@
 
         </androidx.cardview.widget.CardView>
 
-    </com.jxntv.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 </layout>

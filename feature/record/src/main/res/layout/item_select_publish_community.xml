@@ -9,7 +9,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto">
 
         <!--第一个推荐社区前面的标题-->
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/recommend_community_title"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_31DP"
@@ -33,7 +33,7 @@
             android:background="@color/color_ffffff" />
 
         <!--社区封面-->
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/cover"
             android:layout_width="@dimen/DIMEN_29DP"
             android:layout_height="@dimen/DIMEN_29DP"
@@ -43,7 +43,7 @@
             app:layout_constraintTop_toTopOf="@id/bg" />
 
         <!--选择、未选择按钮-->
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/select_selected"
             android:layout_width="@dimen/DIMEN_52DP"
             android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
             tools:text="已选择" />
 
         <!--圈子名称-->
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

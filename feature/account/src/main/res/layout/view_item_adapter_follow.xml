@@ -7,22 +7,22 @@
 
         <variable
             name="model"
-            type="com.jxntv.account.model.UgcAuthorModel" />
+            type="com.hzlz.aviation.feature.account.model.UgcAuthorModel" />
 
-        <import type="com.jxntv.base.utils.StringUtils" />
+        <import type="com.hzlz.aviation.kernel.base.utils.StringUtils" />
 
         <import type="android.view.View"/>
 
     </data>
 
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/DIMEN_24DP"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <com.jxntv.widget.GVideoRImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoRImageView
             android:id="@+id/avatar"
             android:layout_width="@dimen/DIMEN_35DP"
             android:layout_height="@dimen/DIMEN_35DP"
@@ -34,7 +34,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:src="@drawable/ic_launcher" />
 
-        <com.jxntv.widget.GVideoRImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoRImageView
             android:layout_width="@dimen/DIMEN_12DP"
             android:layout_height="@dimen/DIMEN_12DP"
             android:src="@drawable/icon_header_authentication"
@@ -55,5 +55,5 @@
             app:layout_constraintTop_toBottomOf="@id/avatar"
             tools:text="来自的..."/>
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

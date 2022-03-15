@@ -5,7 +5,7 @@
     app:startDestination="@id/videoSuperFragment">
   <fragment
       android:id="@+id/videoSuperFragment"
-      android:name="com.jxntv.android.video.ui.vsuper.VideoSuperFragment"
+      android:name="com.hzlz.aviation.feature.video.ui.vsuper.VideoSuperFragment"
       android:label="videoSuperFragment">
     <action
         android:id="@+id/action_super_popup_self"
@@ -21,12 +21,12 @@
 
   <fragment
       android:id="@+id/videoLiveFragment"
-      android:name="com.jxntv.android.video.ui.vlive.AtyLiveFragment"
+      android:name="com.hzlz.aviation.feature.video.ui.vlive.AtyLiveFragment"
       android:label="videoLiveFragment"/>
 
   <fragment
       android:id="@+id/videoShortFragment"
-      android:name="com.jxntv.android.video.ui.vshort.VideoContainerFragment"
+      android:name="com.hzlz.aviation.feature.video.ui.vshort.VideoContainerFragment"
       android:label="videoShortFragment">
 
   </fragment>
@@ -34,7 +34,7 @@
 
   <fragment
       android:id="@+id/imageTxtAudioFragment"
-      android:name="com.jxntv.android.video.ui.vtxt.ImageTxtAudioFragment"
+      android:name="com.hzlz.aviation.feature.video.ui.vtxt.ImageTxtAudioFragment"
       android:label="imageTxtAudioFragment">
 
   </fragment>
@@ -42,37 +42,37 @@
 
   <fragment
       android:id="@+id/newsDetailFragment"
-      android:name="com.jxntv.android.video.ui.news.NewsDetailFragment"
+      android:name="com.hzlz.aviation.feature.video.ui.news.NewsDetailFragment"
       android:label="newsDetailFragment">
 
   </fragment>
 
   <fragment
       android:id="@+id/jxxwNewsDetailFragment"
-      android:name="com.jxntv.android.video.ui.news.JXXWNewsDetailFragment"
+      android:name="com.hzlz.aviation.feature.video.ui.news.JXXWNewsDetailFragment"
       android:label="jxxwNewsDetailFragment"/>
 
   <fragment
       android:id="@+id/newsCommentFragment"
-      android:name="com.jxntv.android.video.ui.news.NewsCommentFragment"
+      android:name="com.hzlz.aviation.feature.video.ui.news.NewsCommentFragment"
       android:label="newsCommentFragment">
   </fragment>
 
   <fragment
       android:id="@+id/newsListFragment"
-      android:name="com.jxntv.android.video.ui.news.list.NewsListFragment"
+      android:name="com.hzlz.aviation.feature.video.ui.news.list.NewsListFragment"
       android:label="newsListFragment">
   </fragment>
 
   <fragment
       android:id="@+id/specialListFragment"
-      android:name="com.jxntv.android.video.ui.news.list.SpecialListFragment"
+      android:name="com.hzlz.aviation.feature.video.ui.news.list.SpecialListFragment"
       android:label="specialListFragment">
   </fragment>
 
   <fragment
       android:id="@+id/qaDetailFragment"
-      android:name="com.jxntv.android.video.ui.qa.QADetailFragment"
+      android:name="com.hzlz.aviation.feature.video.ui.qa.QADetailFragment"
       android:label="qaDetailFragment">
 
   </fragment>

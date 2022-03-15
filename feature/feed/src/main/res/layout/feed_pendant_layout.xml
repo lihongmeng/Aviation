@@ -3,10 +3,10 @@
     <data>
         <variable
             name="feedPendantModel"
-            type="com.jxntv.base.model.video.PendantModel"
+            type="com.hzlz.aviation.kernel.base.model.video.PendantModel"
             />
     </data>
-    <com.jxntv.widget.GVideoFrameLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/pendant_layout"
@@ -17,7 +17,7 @@
         android:layout_height="@dimen/feed_pendant_height"
         android:background="@drawable/feed_pendant_background_drawable">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/pendant_text"
             android:layout_width="@dimen/feed_pendant_title_width"
             android:layout_height="@dimen/feed_pendant_title_height"
@@ -27,7 +27,7 @@
             android:layout_marginLeft="@dimen/feed_pendant_title_margin_left"
             android:layout_marginRight="@dimen/feed_pendant_title_margin_right"/>
 
-        <com.jxntv.base.view.MediaImageView
+        <com.hzlz.aviation.kernel.base.view.MediaImageView
             android:id="@+id/pendant_img"
             android:layout_width="@dimen/feed_pendant_img_width"
             android:layout_height="@dimen/feed_pendant_img_height"
@@ -37,12 +37,12 @@
             app:placeholder="@{@drawable/media_default_cover_bg}"
             app:roundedCorners="@{@dimen/feed_pendant_img_corner}" />
 
-        <com.jxntv.base.view.MediaImageView
+        <com.hzlz.aviation.kernel.base.view.MediaImageView
             android:id="@+id/pendant_video_img"
             android:layout_width="@dimen/feed_pendant_video_img_size"
             android:layout_height="@dimen/feed_pendant_video_img_size"
             android:layout_gravity="right|center"
             android:layout_marginRight="@dimen/feed_pendant_video_img_margin_right"
             android:src="@drawable/feed_video_img_small"/>
-    </com.jxntv.widget.GVideoFrameLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
 </layout>

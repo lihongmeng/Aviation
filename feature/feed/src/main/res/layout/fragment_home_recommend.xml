@@ -6,10 +6,10 @@
 
         <variable
             name="viewModel"
-            type="com.jxntv.feed.view.recommend.HomeRecommendViewModel" />
+            type="com.hzlz.aviation.feature.feed.view.recommend.HomeRecommendViewModel" />
     </data>
 
-    <com.jxntv.base.view.GVideoSmartRefreshLayout
+    <com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout
         android:id="@+id/refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,15 +20,15 @@
         app:srlHeaderHeight="75dp"
         android:background="@color/color_FFFFFF">
         
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-<!--        <com.jxntv.widget.GVideoCoordinatorLayout-->
+<!--        <com.hzlz.aviation.library.widget.widget.GVideoCoordinatorLayout-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="match_parent">-->
 
-            <com.jxntv.widget.GVideoFrameLayout
+            <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
                 android:id="@+id/empty_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -38,7 +38,7 @@
 <!--                android:id="@+id/header"-->
 <!--                layout="@layout/layout_home_recommend_header" />-->
 
-            <com.jxntv.widget.GVideoRecyclerView
+            <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
                 android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -46,10 +46,10 @@
                 android:scrollbars="none"
                 app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
-<!--        </com.jxntv.widget.GVideoCoordinatorLayout>-->
+<!--        </com.hzlz.aviation.library.widget.widget.GVideoCoordinatorLayout>-->
 
-    </com.jxntv.base.view.GVideoSmartRefreshLayout>
+    </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
 
 </layout>

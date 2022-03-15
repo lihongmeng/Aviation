@@ -18,7 +18,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/please_select_screen_projection_device"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/DIMEN_43DP"
@@ -46,7 +46,7 @@
                         android:gravity="center_horizontal"
                         android:orientation="horizontal">
 
-                        <com.jxntv.widget.GVideoTextView
+                        <com.hzlz.aviation.library.widget.widget.GVideoTextView
                             android:id="@+id/loading_text"
                             android:layout_width="wrap_content"
                             android:layout_height="@dimen/DIMEN_49DP"
@@ -69,7 +69,7 @@
 
                     </LinearLayout>
 
-                    <com.jxntv.widget.NestScrollListView
+                    <com.hzlz.aviation.library.widget.widget.NestScrollListView
                         android:id="@+id/wifi_list"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
 
                 </LinearLayout>
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/screen_projection_use_help"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/DIMEN_43DP"
@@ -105,7 +105,7 @@
                     app:layout_constraintTop_toBottomOf="@id/screen_projection_use_help"
                     android:background="@drawable/shape_soild_ffffff_corners_8dp_stroke_1dp_ebecf0" />
 
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:id="@+id/screen_projection_help_wifi"
                     android:layout_width="@dimen/DIMEN_42DP"
                     android:layout_height="@dimen/DIMEN_42DP"
@@ -115,7 +115,7 @@
                     app:layout_constraintLeft_toLeftOf="@id/bg_tip"
                     app:layout_constraintTop_toTopOf="@id/bg_tip" />
 
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:layout_width="@dimen/DIMEN_1DP"
                     android:layout_height="@dimen/DIMEN_33DP"
                     android:background="@drawable/dotted_line"
@@ -124,7 +124,7 @@
                     app:layout_constraintRight_toRightOf="@id/screen_projection_help_wifi"
                     app:layout_constraintTop_toBottomOf="@id/screen_projection_help_wifi" />
 
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:id="@+id/screen_projection_help_device"
                     android:layout_width="@dimen/DIMEN_42DP"
                     android:layout_height="@dimen/DIMEN_42DP"
@@ -133,7 +133,7 @@
                     app:layout_constraintLeft_toLeftOf="@id/screen_projection_help_wifi"
                     app:layout_constraintTop_toBottomOf="@id/screen_projection_help_wifi" />
 
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:layout_width="@dimen/DIMEN_1DP"
                     android:layout_height="@dimen/DIMEN_33DP"
                     android:background="@drawable/dotted_line"
@@ -142,7 +142,7 @@
                     app:layout_constraintRight_toRightOf="@id/screen_projection_help_device"
                     app:layout_constraintTop_toBottomOf="@id/screen_projection_help_device" />
 
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:id="@+id/screen_projection_help_button"
                     android:layout_width="@dimen/DIMEN_42DP"
                     android:layout_height="@dimen/DIMEN_42DP"
@@ -151,7 +151,7 @@
                     app:layout_constraintTop_toBottomOf="@id/screen_projection_help_device"
                     android:background="@drawable/screen_projection_help_button" />
 
-                <com.jxntv.widget.GVideoLinearLayout
+                <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
                     android:layout_width="0dp"
                     android:layout_height="@dimen/DIMEN_42DP"
                     android:gravity="center_vertical"
@@ -162,7 +162,7 @@
                     app:layout_constraintTop_toTopOf="@id/screen_projection_help_wifi"
                     android:orientation="vertical">
 
-                    <com.jxntv.widget.GVideoTextView
+                    <com.hzlz.aviation.library.widget.widget.GVideoTextView
                         android:id="@+id/screen_projection_help_wifi_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -172,7 +172,7 @@
                         android:includeFontPadding="false"
                         android:text="把电视/盒子与手机连接在同一WiFi下" />
 
-                    <com.jxntv.widget.GVideoTextView
+                    <com.hzlz.aviation.library.widget.widget.GVideoTextView
                         android:id="@+id/wifi_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -188,9 +188,9 @@
                         app:layout_constraintTop_toBottomOf="@id/screen_projection_help_wifi_title"
                         tools:text="123456748789789789789789123456748789789789789789789789" />
 
-                </com.jxntv.widget.GVideoLinearLayout>
+                </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/screen_projection_help_device_title"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -207,7 +207,7 @@
                     app:layout_constraintTop_toTopOf="@id/screen_projection_help_device"
                     android:text="确认你的电视/盒子支持投屏功能" />
 
-                <com.jxntv.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoTextView
                     android:id="@+id/screen_projection_help_button_title"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"

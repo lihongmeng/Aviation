@@ -10,23 +10,23 @@
 
         <variable
             name="adapter"
-            type="com.jxntv.account.adapter.FollowAdapter" />
+            type="com.hzlz.aviation.feature.account.adapter.FollowAdapter" />
 
         <variable
             name="author"
-            type="com.jxntv.base.model.video.AuthorObservable" />
+            type="com.hzlz.aviation.kernel.base.model.video.AuthorObservable" />
 
         <import type="android.view.View" />
         <import type="android.text.TextUtils"/>
     </data>
 
-    <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         style="@style/AdapterFollow.Container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="@{(v)->adapter.onItemClick(v,position)}">
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/image_view_avatar"
             style="@style/AdapterFollow.Avatar"
             app:circleCrop="@{true}"
@@ -36,7 +36,7 @@
             app:placeholder='@{@drawable/ic_default_avatar}'
             tools:src="@drawable/ic_default_avatar"/>
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:layout_width="@dimen/DIMEN_16DP"
             android:layout_height="@dimen/DIMEN_15DP"
             android:src="@drawable/icon_header_authentication"
@@ -45,7 +45,7 @@
             app:layout_constraintEnd_toEndOf="@id/image_view_avatar"
            />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/text_view_name"
             style="@style/AdapterFollow.Name"
             android:layout_width="0dp"
@@ -58,7 +58,7 @@
             app:layout_constraintVertical_chainStyle="spread"
             tools:text="张三" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/text_view_description"
             style="@style/AdapterFollow.Description"
             android:layout_width="0dp"
@@ -71,7 +71,7 @@
             android:visibility="@{TextUtils.isEmpty(author.authenticationIntro)?View.GONE:View.VISIBLE}"
             tools:text="认证信息" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/button_follow"
             style="@style/AdapterFollow.Follow"
             android:background="@{ author.isFollow ? @drawable/all_c_bg01_button_background : @drawable/all_c_gradual01_button_background }"
@@ -82,5 +82,5 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

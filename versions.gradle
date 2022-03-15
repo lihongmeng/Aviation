@@ -1,6 +1,6 @@
 ext.buildVersions = [
 
-        applicationId    : "com.sobey.cloud.view.jiangxi",
+        applicationId    : "com.hzlz.aviation",
 
         buildToolsVersion: "30.0.2",
         compileSdkVersion: 30,
@@ -8,8 +8,8 @@ ext.buildVersions = [
         minSdkVersion    : 21,
         targetSdkVersion : 29,
 
-        versionCode      : 50304,
-        versionName      : "5.03.04",
+        versionCode      : 10000,
+        versionName      : "1.01.01",
 
 ]
 
@@ -33,58 +33,58 @@ def appKey = [
 
         openinstall_appKey: "wty20g",
 
-        app_scheme        : "jinshipin"
+        app_scheme        : "aviation"
 ]
 
 ext.appKey = appKey
 
 def versions = [
-    retrofit: "2.9.0",
-    okhttp: "4.9.2",
-    rxAndroid: "3.0.0",
-    rxJava:"3.x.y",
-    rxPermission:"0.12",
-    appCompat: "1.2.0",
-    lifecycle: "2.2.0",
-    constraintLayout: "2.0.4",
-    recyclerView: "1.2.1",
-    navigation: "2.3.1",
-    paging: "2.1.2",
-    libphonenumberAndroid: "8.12.37",
-    smartRefreshLayout: "1.1.3",
-    room: "2.2.5",
-    glide: "4.12.0",
-    multidex: "2.0.1",
-    smartTabLayout: "2.0.0@aar",
-    coordinatorLayout: "1.1.0",
-    eventbus: "1.8.0",
-    flexbox: "2.0.1",
-    wheelPicker: "1.1.3",
-    exif: "1.2.0",
-    upload:"1.6.0",
-    rWidgetHelper:"0.0.8",
-    photoView:"2.3.0",
-    huawei_agconnent: "1.4.2.300",
-    huawei_hms_push: "5.0.2.300",
-    gson:"2.8.5",
-    banner :"2.2.1",
-    sensorsAnalytic :"2.2.1",
-    sensors_plugin :"3.4.0",
-    sensorsAnalyticsSDK:"5.4.7",
-    downloadFile :"1.7.7",
-    luban :"1.1.8",
-    weibosdk :"11.8.1",
-    qqOpenSDK :"3.52.0",
-    imSdk :"5.7.1435",
-    zxing:"3.6.0",
-    tencentLocation: "7.3.9",
-    lottie: "4.2.2",
-    jetty_server         : "8.1.18.v20150929",
-    jetty_servlet        : "8.1.18.v20150929",
-    jetty_client         : "8.1.18.v20150929",
+        retrofit             : "2.9.0",
+        okhttp               : "4.9.2",
+        rxAndroid            : "3.0.0",
+        rxJava               : "3.x.y",
+        rxPermission         : "0.12",
+        appCompat            : "1.2.0",
+        lifecycle            : "2.2.0",
+        constraintLayout     : "2.0.4",
+        recyclerView         : "1.2.1",
+        navigation           : "2.3.1",
+        paging               : "2.1.2",
+        libphonenumberAndroid: "8.12.37",
+        smartRefreshLayout   : "1.1.3",
+        room                 : "2.2.5",
+        glide                : "4.12.0",
+        multidex             : "2.0.1",
+        smartTabLayout       : "2.0.0@aar",
+        coordinatorLayout    : "1.1.0",
+        eventbus             : "1.8.0",
+        flexbox              : "2.0.1",
+        wheelPicker          : "1.1.3",
+        exif                 : "1.2.0",
+        upload               : "1.6.0",
+        rWidgetHelper        : "0.0.8",
+        photoView            : "2.3.0",
+        huawei_agconnent     : "1.4.2.300",
+        huawei_hms_push      : "5.0.2.300",
+        gson                 : "2.8.5",
+        banner               : "2.2.1",
+        sensorsAnalytic      : "2.2.1",
+        sensors_plugin       : "3.4.0",
+        sensorsAnalyticsSDK  : "5.4.7",
+        downloadFile         : "1.7.7",
+        luban                : "1.1.8",
+        weibosdk             : "11.8.1",
+        qqOpenSDK            : "3.52.0",
+        imSdk                : "5.7.1435",
+        zxing                : "3.6.0",
+        tencentLocation      : "7.3.9",
+        lottie               : "4.2.2",
+        jetty_server         : "8.1.18.v20150929",
+        jetty_servlet        : "8.1.18.v20150929",
+        jetty_client         : "8.1.18.v20150929",
 //    cling_core           : "2.1.1",
-    cling_support        : "2.1.1",
-    jsoup                : "1.13.1"
+        cling_support        : "2.1.1",
+        jsoup                : "1.13.1"
 ]
 
 ext.versions = versions
@@ -152,7 +152,7 @@ ext.deps = [
         lottie                    : "com.airbnb.android:lottie:${versions.lottie}",
 
         tog_feature_account       : project(":feature:account"),
-        tog_feature_circle        : project(":feature:circle"),
+        tog_feature_community     : project(":feature:community"),
         tog_feature_video         : project(":feature:video"),
         tog_feature_home          : project(":feature:home"),
         tog_feature_feed          : project(":feature:feed"),
@@ -163,7 +163,6 @@ ext.deps = [
         tog_feature_record        : project(":feature:record"),
         tog_feature_live          : project(":feature:live"),
         tog_feature_watch_tv      : project(":feature:watchtv"),
-        tog_feature_common        : project(":feature:common"),
         tog_kernel_base           : project(":kernel:base"),
         tog_kernel_network        : project(":kernel:network"),
         tog_kernel_liteav         : project(":kernel:liteav"),
@@ -179,12 +178,5 @@ ext.deps = [
         tog_lib_crop              : project(":library:crop"),
         tog_lib_utils             : project(":library:utils"),
         tog_lib_videocache        : project(":library:videocache"),
-        tog_lib_res               : project(":res"),
-
-        tog_tuikit_chat           : project(":tuikit:chat"),
-        tog_tuikit_tuicore        : project(":tuikit:tuicore"),
-        tog_tuikit_tuichat        : project(":tuikit:tuichat"),
-        tog_tuikit_tuicontact     : project(":tuikit:tuicontact"),
-        tog_tuikit_tuiconversation: project(":tuikit:tuiconversation"),
-        tog_tuikit_tuigroup       : project(":tuikit:tuigroup"),
+        tog_lib_res               : project(":res")
 ]

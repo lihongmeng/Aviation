@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hzlz.aviation.feature.community.viewmodel.CircleDetailViewModel" />
+
+        <variable
+            name="model"
+            type="com.hzlz.aviation.kernel.base.model.circle.CircleDetail" />
+
+    </data>
+
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:ksrlv_enableLoadMore="false"
+            android:background="@color/color_FFFFFF"
+            app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}"
+            app:srlEnableFooterFollowWhenNoMoreData="true"
+            app:srlEnableLoadMoreWhenContentNotFull="false">
+
+            <com.hzlz.aviation.library.widget.widget.GVideoCoordinatorLayout
+                android:id="@+id/recycler_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--圈子基本信息-->
+                <include
+                    android:id="@+id/info_list"
+                    app:model="@{model}"
+                    app:viewModel="@{viewModel}"
+                    layout="@layout/layout_circle_detail_basic_info" />
+
+                <RelativeLayout
+                    android:id="@+id/top_place_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_20DP"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:orientation="vertical">
+
+                    <!--上划后顶部的占位图-->
+                    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                        android:id="@+id/top_place_holder_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:background="@color/color_ffffff" />
+
+                    <!--分割线-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_f2f2f2" />
+
+                </RelativeLayout>
+
+                <!--内容数据-->
+                <com.hzlz.aviation.library.widget.widget.GVideoViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/info_list"
+                    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+            </com.hzlz.aviation.library.widget.widget.GVideoCoordinatorLayout>
+
+        </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
+
+        <!--返回按钮-->
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/DIMEN_26DP"
+            android:layout_height="@dimen/DIMEN_36DP"
+            android:layout_marginStart="@dimen/DIMEN_14DP"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/DIMEN_5DP"
+            android:src="@drawable/ic_back_white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!--滑动页面时吸顶的信息 - 圈子名称-->
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            android:id="@+id/top_circle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_26DP"
+            android:layout_alignBottom="@id/back_button"
+            android:drawablePadding="@dimen/DIMEN_5DP"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_17"
+            tools:text="金牌调解"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/back_button"
+            app:layout_constraintBottom_toBottomOf="@id/back_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <!--分享按钮-->
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_26DP"
+            android:scaleType="centerInside"
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            android:onClick="@{v->viewModel.onShareClicked(v)}"
+            android:src="@drawable/ic_common_share_top_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/back_button"
+            app:layout_constraintBottom_toBottomOf="@id/back_button" />
+
+        <!--需要两层Layout包裹是因为-->
+        <!--publish按钮和publish_align要保持对齐覆盖关系-->
+        <!--publish按钮和float_audio_view保持上下层，并且float_audio_view设置Gone占位的效果-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--发布按钮-->
+                <com.hzlz.aviation.feature.community.view.PublishButton
+                    android:id="@+id/publish"
+                    android:layout_width="@dimen/DIMEN_46DP"
+                    android:layout_height="@dimen/DIMEN_46DP"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/DIMEN_24DP"
+                    android:layout_marginBottom="@dimen/DIMEN_29DP"
+                    android:scaleType="center"
+                    android:visibility="gone"
+                    tools:visibility="gone"
+                    android:src="@drawable/icon_publish_button_write"
+                    android:background="@drawable/shape_gradient_f36486_e4344e_angle_270_corners_200dp" />
+
+                <View
+                    android:id="@+id/publish_align"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_46DP" />
+
+            </RelativeLayout>
+
+            <com.hzlz.aviation.kernel.liteav.service.view.FloatAudioTipView
+                android:id="@+id/float_audio_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--最新、最热选择弹窗的背景阴影-->
+        <View
+            android:id="@+id/shadow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_000000_50"
+            android:visibility="invisible" />
+
+        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+            android:id="@+id/empty_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+
+</layout>
+

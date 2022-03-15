@@ -1,7 +1,0 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jxntv.pptv">
-  <application>
-    <!--登录界面-->
-    <activity android:name="com.jxntv.pptv.ui.PptvModuleActivity" />
-  </application>
-</manifest>

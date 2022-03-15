@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.jxntv.live.ui.author.AuthorPrepareViewModel" />
+            type="com.hzlz.aviation.feature.live.ui.author.AuthorPrepareViewModel" />
 
     </data>
 
@@ -19,7 +19,7 @@
         android:paddingStart="@dimen/DIMEN_15DP"
         android:paddingEnd="@dimen/DIMEN_15DP">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/text_platform"
             style="@style/PrepareText"
             android:drawableLeft="@drawable/icon_star_red"
@@ -28,7 +28,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoSpinner
+        <com.hzlz.aviation.library.widget.widget.GVideoSpinner
             android:id="@+id/spinner_platform"
             style="@style/PrepareText"
             android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
             app:layout_constraintTop_toBottomOf="@id/spinner_platform"
             style="@style/PrepareLineStyle" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/text_room_name"
             style="@style/PrepareText"
             android:drawableLeft="@drawable/icon_star_red"
@@ -52,7 +52,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_platform" />
 
-        <com.jxntv.widget.GVideoEditText
+        <com.hzlz.aviation.library.widget.widget.GVideoEditText
             android:id="@+id/et_room_name"
             style="@style/PrepareEditText"
             android:hint="@string/input_live_room_name"
@@ -68,7 +68,7 @@
             app:layout_constraintTop_toBottomOf="@id/text_room_name"
             style="@style/PrepareLineStyle" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/live_type_title"
             style="@style/PrepareText"
             android:drawableLeft="@drawable/icon_star_red"
@@ -78,7 +78,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_room_name" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/live_type"
             android:layout_width="@dimen/DIMEN_0DP"
             android:layout_height="@dimen/DIMEN_53DP"
@@ -102,7 +102,7 @@
             app:layout_constraintTop_toBottomOf="@id/live_type"
             style="@style/PrepareLineStyle" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/text_introduction"
             style="@style/PrepareText"
             android:text="@string/live_introduction"
@@ -110,7 +110,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/live_type" />
 
-        <com.jxntv.widget.GVideoEditText
+        <com.hzlz.aviation.library.widget.widget.GVideoEditText
             android:id="@+id/et_introduction"
             style="@style/PrepareEditText"
             android:hint="@string/please_input_introduction"
@@ -126,7 +126,7 @@
             app:layout_constraintTop_toBottomOf="@id/text_introduction"
             style="@style/PrepareLineStyle" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/text_thumb"
             style="@style/PrepareText"
             android:layout_height="@dimen/DIMEN_85DP"
@@ -136,7 +136,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_introduction" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/live_thumb"
             android:layout_width="@dimen/DIMEN_63DP"
             android:layout_height="@dimen/DIMEN_63DP"
@@ -151,7 +151,7 @@
             app:layout_constraintTop_toBottomOf="@id/text_thumb"
             style="@style/PrepareLineStyle" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/btn_start_live"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_48DP"

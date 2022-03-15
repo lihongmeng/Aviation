@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.jxntv.account">
+    package="com.hzlz.aviation.feature.account">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.GET_TASKS" />
@@ -16,7 +16,7 @@
 
         <!--登录界面-->
         <activity
-            android:name="com.jxntv.account.ui.AccountModuleActivity"
+            android:name="com.hzlz.aviation.feature.account.ui.AccountModuleActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
@@ -24,7 +24,7 @@
 
         <!--一键登录界面-->
         <activity
-            android:name="com.jxntv.account.ui.onekeylogin.OneKeyLoginActivity"
+            android:name="com.hzlz.aviation.feature.account.ui.onekeylogin.OneKeyLoginActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:screenOrientation="portrait"
             android:launchMode="singleTask"
@@ -59,7 +59,7 @@
             android:launchMode="singleTop" />
 
         <provider
-            android:name="com.jxntv.account.AccountFileProvider"
+            android:name="com.hzlz.aviation.feature.account.com.hzlz.aviation.feature.account.AccountFileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true"

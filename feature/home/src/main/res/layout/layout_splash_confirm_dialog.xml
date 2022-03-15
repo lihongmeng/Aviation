@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         style="@style/CenterDialogStyle.Dialog">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/splash_confirm_title"
             style="@style/CenterDialogStyle.TitleButton"
             app:layout_constraintTop_toTopOf="parent"
@@ -13,7 +13,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/splash_dialog_cancel"/>
 
-        <com.jxntv.widget.GVideoButton
+        <com.hzlz.aviation.library.widget.widget.GVideoButton
             android:id="@+id/splash_dialog_cancel"
             style="@style/CenterDialogStyle.CancelButton"
             android:text="不同意"
@@ -22,7 +22,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/splash_dialog_confirm"/>
 
-        <com.jxntv.widget.GVideoButton
+        <com.hzlz.aviation.library.widget.widget.GVideoButton
             android:id="@+id/splash_dialog_confirm"
             style="@style/CenterDialogStyle.ConfirmButton"
             android:text="再次查看"
@@ -31,5 +31,5 @@
             app:layout_constraintLeft_toRightOf="@id/splash_dialog_cancel"
             app:layout_constraintRight_toRightOf="parent"/>
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

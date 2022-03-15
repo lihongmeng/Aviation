@@ -6,7 +6,7 @@
   <!--账户与安全界面-->
   <fragment
       android:id="@+id/accountSecurityFragment"
-      android:name="com.jxntv.account.ui.account.AccountSecurityFragment"
+      android:name="com.hzlz.aviation.feature.account.ui.account.AccountSecurityFragment"
       android:label="AccountSecurityFragment">
     <!--跳转身份认证界面-->
     <action
@@ -21,12 +21,12 @@
   <!--身份认证界面-->
   <fragment
       android:id="@+id/authenticationFragment"
-      android:name="com.jxntv.account.ui.authentication.AuthenticationFragment"
+      android:name="com.hzlz.aviation.feature.account.ui.authentication.AuthenticationFragment"
       android:label="AuthenticationFragment" />
 
   <!--注销账户界面-->
   <fragment
       android:id="@+id/cancelAccountFragment"
-      android:name="com.jxntv.account.ui.cancel.CancelAccountFragment"
+      android:name="com.hzlz.aviation.feature.account.ui.cancel.CancelAccountFragment"
       android:label="CancelAccountFragment" />
 </navigation>

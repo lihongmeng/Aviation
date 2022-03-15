@@ -6,7 +6,7 @@
 
   <fragment
       android:id="@+id/aboutFragment"
-      android:name="com.jxntv.account.ui.about.AboutFragment"
+      android:name="com.hzlz.aviation.feature.account.ui.about.AboutFragment"
       android:label="AboutFragment" >
 
   </fragment>

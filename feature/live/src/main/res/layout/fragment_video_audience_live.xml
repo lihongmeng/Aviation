@@ -7,30 +7,30 @@
 
         <variable
             name="viewModel"
-            type="com.jxntv.live.video.audience.VideoAudienceViewModel" />
+            type="com.hzlz.aviation.feature.live.video.audience.VideoAudienceViewModel" />
 
         <variable
             name="detailModel"
-            type="com.jxntv.live.model.LiveDetailModel" />
+            type="com.hzlz.aviation.feature.live.model.LiveDetailModel" />
 
         <import type="android.view.View" />
 
     </data>
 
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:id="@+id/rl_root"
         android:background="@color/color_000000"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:id="@+id/audience_background"
             android:visibility="@{viewModel.isShowBackground?View.VISIBLE:View.GONE}"
             android:background="@drawable/liteav_player_bg"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:text="@string/liteav_loading"
                 android:textColor="@color/white"
                 android:textSize="@dimen/sp_14"
@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
         <com.tencent.rtmp.ui.TXCloudVideoView
             android:id="@+id/anchor_video_view"
@@ -57,7 +57,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             layout="@layout/view_anchor_player_list"/>
 
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:id="@+id/detail"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -71,7 +71,7 @@
                 android:background="@color/color_000000_50"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/comment"
                 android:layout_width="@dimen/DIMEN_211DP"
                 android:layout_height="@dimen/DIMEN_33DP"
@@ -90,7 +90,7 @@
                 app:layout_constraintTop_toTopOf="@id/bottom_bg"
                 app:layout_constraintVertical_bias="0.578" />
 
-            <com.jxntv.widget.GvideoRConstraintLayout
+            <com.hzlz.aviation.library.widget.widget.GvideoRConstraintLayout
                 android:id="@+id/c_title_layout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
                 app:layout_constraintRight_toLeftOf="@id/share"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:id="@+id/back"
                     android:layout_width="@dimen/DIMEN_27DP"
                     android:layout_height="@dimen/DIMEN_27DP"
@@ -117,7 +117,7 @@
                     app:layout_constraintLeft_toRightOf="@id/back"
                     app:layout_constraintRight_toRightOf="@id/title" />
 
-                <com.jxntv.widget.GVideoRTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoRTextView
                     android:id="@+id/live_tag"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -138,7 +138,7 @@
                     app:layout_constraintLeft_toRightOf="@id/back"
                     app:layout_constraintTop_toTopOf="@id/top_room_info_bg" />
 
-                <com.jxntv.widget.GVideoRTextView
+                <com.hzlz.aviation.library.widget.widget.GVideoRTextView
                     android:id="@+id/title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -151,9 +151,9 @@
                     app:layout_constraintLeft_toRightOf="@id/live_tag"
                     tools:text="张三的直播····" />
 
-            </com.jxntv.widget.GvideoRConstraintLayout>
+            </com.hzlz.aviation.library.widget.widget.GvideoRConstraintLayout>
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/share"
                 android:layout_width="@dimen/DIMEN_27DP"
                 android:layout_height="@dimen/DIMEN_27DP"
@@ -176,7 +176,7 @@
                 app:layout_constraintRight_toRightOf="@id/follow_bg"
                 app:layout_constraintTop_toBottomOf="@id/c_title_layout" />
 
-            <com.jxntv.widget.GVideoRImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoRImageView
                 android:id="@+id/thumb"
                 android:layout_width="@dimen/DIMEN_18DP"
                 android:layout_height="@dimen/DIMEN_18DP"
@@ -188,7 +188,7 @@
                 app:layout_constraintLeft_toLeftOf="@id/top_user_info_bg"
                 app:layout_constraintTop_toTopOf="@id/top_user_info_bg" />
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/anchor_mark"
                 android:layout_width="@dimen/DIMEN_7DP"
                 android:layout_height="@dimen/DIMEN_7DP"
@@ -197,7 +197,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/thumb"
                 app:layout_constraintRight_toRightOf="@id/thumb" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/platform_name"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/DIMEN_21DP"
@@ -227,7 +227,7 @@
                 app:layout_constraintLeft_toRightOf="@id/platform_name"
                 app:layout_constraintTop_toTopOf="@id/top_user_info_bg" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/follow"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/DIMEN_17DP"
@@ -257,7 +257,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent">
 
-                <com.jxntv.widget.GVideoRecyclerView
+                <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
                     android:id="@+id/recycler_chat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -268,7 +268,7 @@
 
             </LinearLayout>
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/micro_connect"
                 android:layout_width="@dimen/DIMEN_50DP"
                 android:layout_height="@dimen/DIMEN_50DP"
@@ -279,7 +279,7 @@
                 app:layout_constraintRight_toLeftOf="@id/praise"
                 app:layout_constraintTop_toTopOf="@id/bottom_bg" />
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/praise"
                 android:layout_width="@dimen/DIMEN_38DP"
                 android:layout_height="@dimen/DIMEN_38DP"
@@ -291,8 +291,8 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="@id/bottom_bg" />
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

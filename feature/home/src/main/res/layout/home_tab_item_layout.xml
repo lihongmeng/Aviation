@@ -6,7 +6,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <com.jxntv.base.view.GvideoLottieAnimationView
+    <com.hzlz.aviation.kernel.base.view.GvideoLottieAnimationView
         android:id="@+id/tab_icon"
         android:layout_width="@dimen/home_tab_img_width"
         android:layout_height="@dimen/home_tab_img_width"
@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
         android:id="@+id/tab_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:id="@+id/tab_unread"
         android:visibility="gone"
         android:layout_width="wrap_content"

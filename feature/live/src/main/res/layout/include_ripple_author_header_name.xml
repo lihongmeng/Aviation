@@ -19,7 +19,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:visibility="visible" />
 
-        <com.jxntv.widget.GVideoRImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoRImageView
             android:id="@+id/sound_live_anchor_header"
             android:layout_width="@dimen/DIMEN_94DP"
             android:layout_height="@dimen/DIMEN_94DP"
@@ -31,7 +31,7 @@
             app:layout_constraintTop_toTopOf="@id/sound_live_ripple_bg"
             tools:visibility="visible" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/sound_live_anchor_name"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/DIMEN_18DP"

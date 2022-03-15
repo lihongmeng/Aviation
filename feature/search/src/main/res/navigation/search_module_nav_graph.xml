@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.jxntv.search.SearchFragment"
+        android:name="com.hzlz.aviation.feature.search.SearchFragment"
         android:label="SearchFragment">
 
         <argument

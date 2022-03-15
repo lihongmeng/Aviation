@@ -7,7 +7,7 @@
     <!--手机号界面-->
     <fragment
         android:id="@+id/phoneFragment"
-        android:name="com.jxntv.account.ui.phone.PhoneFragment"
+        android:name="com.hzlz.aviation.feature.account.ui.phone.PhoneFragment"
         android:label="PhoneFragment">
 
         <argument
@@ -44,13 +44,13 @@
     <!--个人头像界面-->
     <fragment
         android:id="@+id/modifyAvatarFragment"
-        android:name="com.jxntv.account.ui.modify.avatar.ModifyAvatarFragment"
+        android:name="com.hzlz.aviation.feature.account.ui.modify.avatar.ModifyAvatarFragment"
         android:label="ModifyAvatarFragment" />
 
     <!--验证码界面-->
     <fragment
         android:id="@+id/loginCodeFragment"
-        android:name="com.jxntv.account.ui.sms.LoginCodeFragment"
+        android:name="com.hzlz.aviation.feature.account.ui.sms.LoginCodeFragment"
         android:label="LoginCodeFragment">
 
         <argument
@@ -73,7 +73,7 @@
     <!--设置昵称页面-->
     <fragment
         android:id="@+id/nickNameSetFragment"
-        android:name="com.jxntv.account.ui.nickname.NickNameSetFragment"
+        android:name="com.hzlz.aviation.feature.account.ui.nickname.NickNameSetFragment"
         android:label="NickNameSetFragment">
 
         <!--跳转个人头像界面-->
@@ -86,13 +86,13 @@
     <!--国家代码界面-->
     <fragment
         android:id="@+id/countryCodeFragment"
-        android:name="com.jxntv.account.ui.country.CountryCodeFragment"
+        android:name="com.hzlz.aviation.feature.account.ui.country.CountryCodeFragment"
         android:label="CountryCodeFragment" />
 
     <!--  消息详情-->
     <fragment
         android:id="@+id/messageNotificationDetailFragment"
-        android:name="com.jxntv.account.ui.notification.detail.MessageNotificationDetailFragment"
+        android:name="com.hzlz.aviation.feature.account.ui.notification.detail.MessageNotificationDetailFragment"
         android:label="MessageNotificationDetailFragment">
 
         <argument

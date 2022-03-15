@@ -3,15 +3,15 @@
   <data>
     <variable
         name="bind"
-        type="com.jxntv.account.ui.modify.description.ModifyDescriptionDataBinding"
+        type="com.hzlz.aviation.feature.account.ui.modify.description.ModifyDescriptionDataBinding"
         />
   </data>
-  <com.jxntv.widget.GVideoFrameLayout
+  <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:orientation="vertical"
       >
-    <com.jxntv.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/fragment_modify_description_margin_left"
@@ -23,7 +23,7 @@
         android:orientation="vertical"
         android:padding="@dimen/fragment_modify_description_padding"
         >
-      <com.jxntv.widget.GVideoEditText
+      <com.hzlz.aviation.library.widget.widget.GVideoEditText
           android:id="@+id/edit_text_description"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
           android:textColor="@color/fragment_modify_description_description_text_color"
           android:textSize="@dimen/fragment_modify_description_description_text_size"
           />
-      <com.jxntv.widget.GVideoTextView
+      <com.hzlz.aviation.library.widget.widget.GVideoTextView
           android:id="@+id/text_view_counter"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -47,6 +47,6 @@
           android:textColor="@{bind.counterMax ? @color/t_color06 : @color/fragment_modify_description_counter_text_color}"
           android:textSize="@dimen/fragment_modify_description_counter_text_size"
           />
-    </com.jxntv.widget.GVideoLinearLayout>
-  </com.jxntv.widget.GVideoFrameLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+  </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
 </layout>

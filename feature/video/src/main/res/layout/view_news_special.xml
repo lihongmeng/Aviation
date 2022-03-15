@@ -6,11 +6,11 @@
     <data>
         <variable
             name="viewModel"
-            type="com.jxntv.android.video.ui.news.NewsDetailViewModel" />
+            type="com.hzlz.aviation.feature.video.ui.news.NewsDetailViewModel" />
 
         <variable
             name="videoModel"
-            type="com.jxntv.base.model.video.VideoModel" />
+            type="com.hzlz.aviation.kernel.base.model.video.VideoModel" />
 
     </data>
 
@@ -30,7 +30,7 @@
                 android:background="@color/white"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 
-                <com.jxntv.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.GVideoImageView
                     android:id="@+id/bg_special_big"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/DIMEN_300DP"
@@ -47,7 +47,7 @@
                     app:contentInsetStart="0dp"
                     app:layout_collapseMode="pin">
 
-                    <com.jxntv.widget.GVideoImageView
+                    <com.hzlz.aviation.library.widget.widget.GVideoImageView
                         android:id="@+id/bg_special_small"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
-        <com.jxntv.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/white"
@@ -70,7 +70,7 @@
                 android:id="@+id/news_content"
                 layout="@layout/view_news_content" />
 
-        </com.jxntv.widget.GVideoFrameLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

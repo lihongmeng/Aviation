@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.jxntv.feed.view.GVideoFeedTabLayout
+        <com.hzlz.aviation.feature.feed.view.GVideoFeedTabLayout
             android:id="@+id/feed_tab"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

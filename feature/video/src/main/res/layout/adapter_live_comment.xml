@@ -7,7 +7,7 @@
 
         <variable
             name="commentModel"
-            type="com.jxntv.android.video.model.LiveCommentModel.CommentLstBean" />
+            type="com.hzlz.aviation.feature.video.model.LiveCommentModel.CommentLstBean" />
 
 
     </data>
@@ -23,7 +23,7 @@
         android:layout_marginEnd="@dimen/video_dp_30"
         android:layout_height="wrap_content">
 
-        <com.jxntv.widget.GVideoSpanTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoSpanTextView
             android:id="@+id/content"
             android:textColor="@color/white"
             tools:text="本平台提倡绿色健康 直播 ，直播 内容和评论严谨出现违规、低俗色情、吸烟"
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"/>
 
 
-<!--        <com.jxntv.widget.GVideoRImageView-->
+<!--        <com.hzlz.aviation.library.widget.widget.GVideoRImageView-->
 <!--            android:id="@+id/image1"-->
 <!--            android:src="@drawable/ic_launcher"-->
 <!--            android:layout_marginTop="@dimen/video_dp_10"-->
@@ -52,7 +52,7 @@
 <!--            android:layout_width="@dimen/DIMEN_97DP"-->
 <!--            android:layout_height="@dimen/DIMEN_61DP"/>-->
 
-<!--        <com.jxntv.widget.GVideoRImageView-->
+<!--        <com.hzlz.aviation.library.widget.widget.GVideoRImageView-->
 <!--            android:id="@+id/image2"-->
 <!--            android:src="@drawable/ic_launcher"-->
 <!--            android:layout_marginTop="@dimen/video_dp_10"-->
@@ -65,7 +65,7 @@
 <!--            android:layout_width="@dimen/DIMEN_97DP"-->
 <!--            android:layout_height="@dimen/DIMEN_61DP"/>-->
 
-<!--        <com.jxntv.widget.GVideoRImageView-->
+<!--        <com.hzlz.aviation.library.widget.widget.GVideoRImageView-->
 <!--            android:id="@+id/image3"-->
 <!--            app:layout_constraintLeft_toRightOf="@id/image2"-->
 <!--            app:corner_radius="@dimen/DIMEN_4DP"-->

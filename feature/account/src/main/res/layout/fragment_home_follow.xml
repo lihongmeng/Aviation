@@ -10,14 +10,14 @@
             android:id="@+id/home_tab"
             layout="@layout/layout_top_search_message" />
 
-        <com.jxntv.widget.GVideoLinearLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
             android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/home_tab" />
 
-        <com.jxntv.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
             android:id="@+id/empty_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

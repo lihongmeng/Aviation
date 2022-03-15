@@ -7,7 +7,7 @@
 
         <variable
             name="feedModel"
-            type="com.jxntv.media.model.MediaModel" />
+            type="com.hzlz.aviation.kernel.media.model.MediaModel" />
 
         <import type="android.view.View" />
 
@@ -15,7 +15,7 @@
 
     </data>
 
-    <com.jxntv.widget.GvideoRConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GvideoRConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/DIMEN_8DP"
@@ -27,7 +27,7 @@
         app:corner_radius="@dimen/DIMEN_4DP"
         tools:visibility="visible">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/qa_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
             tools:text="12321321312321"
             tools:visibility="visible" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/qa_content"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -64,5 +64,5 @@
             app:layout_goneMarginTop="@dimen/DIMEN_0DP"
             tools:text="这是一个情感问答的问题这是一个情感问答的问题这是一个情感问答的问题这是一个情感问答的问题这是一个情感问答的问题" />
 
-    </com.jxntv.widget.GvideoRConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GvideoRConstraintLayout>
 </layout>

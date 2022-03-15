@@ -7,14 +7,14 @@
 
         <variable
             name="authorObservable"
-            type="com.jxntv.base.model.video.AuthorObservable" />
+            type="com.hzlz.aviation.kernel.base.model.video.AuthorObservable" />
 
         <variable
             name="viewModel"
-            type="com.jxntv.account.ui.pgc.PgcViewModel" />
+            type="com.hzlz.aviation.feature.account.ui.pgc.PgcViewModel" />
     </data>
 
-    <com.jxntv.widget.GVideoCoordinatorLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoCoordinatorLayout
         android:id="@+id/recycler_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,29 +24,29 @@
             android:id="@+id/app_bar_layout"
             layout="@layout/view_content_pgc" />
 
-        <com.jxntv.widget.GVideoViewPager
+        <com.hzlz.aviation.library.widget.widget.GVideoViewPager
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
 
         <!--返回按钮-->
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:id="@+id/open_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_behavior="com.jxntv.base.behavior.VisibilityAlphaBehavior"
+            app:layout_behavior="com.hzlz.aviation.kernel.base.behavior.VisibilityAlphaBehavior"
             app:vabReferenceViewId="@id/app_bar_layout"
             app:vabVisibleWhenScrollUp="false">
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/left_back"
                 style="@style/Toolbar.LeftBack"
                 android:background="?attr/selectableItemBackground"
                 android:src="@drawable/ic_left_white_back"
                 />
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/share"
                 android:onClick="@{v->viewModel.onShareClicked(v)}"
                 android:src="@drawable/ic_common_share_top_white"
@@ -57,22 +57,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
         <!--ToolBar-->
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:id="@+id/toolbar"
             style="@style/FragmentPgcStyle.ToolBarContainer"
             android:layout_gravity="top"
             android:background="@color/white"
-            app:layout_behavior="com.jxntv.base.behavior.VisibilityAlphaBehavior"
+            app:layout_behavior="com.hzlz.aviation.kernel.base.behavior.VisibilityAlphaBehavior"
             app:vabReferenceViewId="@id/app_bar_layout">
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 style="@style/Toolbar.LeftBack"
                 android:onClick="@{(v)->viewModel.back(v)}" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 style="@style/FragmentPgcStyle.ToolBarTitle"
                 android:text="@{authorObservable.name}"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -80,7 +80,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/text_view_toolbar_follow"
                 style="@style/FragmentPgcStyle.ToolBarFollow"
                 android:background="@{authorObservable.isFollow ? @drawable/all_c_bg01_button_background  : @drawable/all_c_gradual01_button_background}"
@@ -91,8 +91,8 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
-    </com.jxntv.widget.GVideoCoordinatorLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoCoordinatorLayout>
 
 </layout>

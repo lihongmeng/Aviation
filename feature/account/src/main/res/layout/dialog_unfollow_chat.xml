@@ -6,7 +6,7 @@
 
     </data>
 
-    <com.jxntv.widget.GVideoRLinearLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout
         android:layout_width="@dimen/DIMEN_269DP"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -14,7 +14,7 @@
         app:background_normal="@color/color_ffffff"
         app:corner_radius="@dimen/DIMEN_19DP">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/DIMEN_29DP"
@@ -25,7 +25,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/DIMEN_19DP"
@@ -36,7 +36,7 @@
             android:textColor="@color/color_7f7f7f"
             android:textSize="@dimen/sp_13" />
 
-        <com.jxntv.widget.GVideoRTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoRTextView
             android:id="@+id/confirm"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_42DP"
@@ -50,7 +50,7 @@
             app:background_normal="@color/color_e5344e"
             app:corner_radius="@dimen/DIMEN_21DP" />
 
-        <com.jxntv.widget.GVideoRTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoRTextView
             android:id="@+id/cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -60,5 +60,5 @@
             android:textColor="@color/color_999999"
             android:textSize="@dimen/sp_13" />
 
-    </com.jxntv.widget.GVideoRLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout>
 </layout>

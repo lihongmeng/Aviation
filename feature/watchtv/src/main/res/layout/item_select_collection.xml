@@ -6,7 +6,7 @@
 
         <variable
             name="videomodel"
-            type="com.jxntv.base.model.video.VideoModel" />
+            type="com.hzlz.aviation.kernel.base.model.video.VideoModel" />
 
         <import type="android.view.View" />
 
@@ -22,7 +22,7 @@
         android:clickable="true"
         android:focusable="true">
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/image"
             android:layout_width="@dimen/DIMEN_146DP"
             android:layout_height="@dimen/DIMEN_83DP"
@@ -35,7 +35,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_default_play"
@@ -55,7 +55,7 @@
             app:layout_constraintTop_toTopOf="@id/image"
             android:background="@drawable/shape_gradient_f36486_e4344e_180_corners_2dp" />
 
-        <com.jxntv.widget.WaveIndicatorView
+        <com.hzlz.aviation.library.widget.widget.WaveIndicatorView
             android:id="@+id/mask_wave"
             android:layout_width="@dimen/DIMEN_12DP"
             android:layout_height="@dimen/DIMEN_10DP"
@@ -68,7 +68,7 @@
             app:indicator_spacing="@dimen/DIMEN_2DP"
             app:indicator_width="@dimen/DIMEN_2D5P" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/mask_text"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -80,7 +80,7 @@
             app:layout_constraintTop_toTopOf="@id/mask_bg"
             app:layout_constraintLeft_toRightOf="@id/mask_wave" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
             app:layout_constraintLeft_toRightOf="@id/image"
             app:layout_constraintTop_toTopOf="@id/image" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/time"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

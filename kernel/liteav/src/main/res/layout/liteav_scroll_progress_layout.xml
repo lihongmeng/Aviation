@@ -25,7 +25,7 @@
       android:textSize="16sp"
       />
 
-  <com.jxntv.widget.GVideoTextView
+  <com.hzlz.aviation.library.widget.widget.GVideoTextView
       android:id="@+id/retry"
       android:visibility="gone"
       tools:visibility="visible"

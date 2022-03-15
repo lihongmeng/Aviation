@@ -6,7 +6,7 @@
 
   <fragment
       android:id="@+id/messageNotificationFragment"
-      android:name="com.jxntv.account.ui.notification.MessageNotificationFragment"
+      android:name="com.hzlz.aviation.feature.account.ui.notification.MessageNotificationFragment"
       android:label="MessageNotificationFragment">
     <action
         android:id="@+id/action_message_notification_to_message_notification_detail"
@@ -14,7 +14,7 @@
   </fragment>
   <fragment
       android:id="@+id/messageNotificationDetailFragment"
-      android:name="com.jxntv.account.ui.notification.detail.MessageNotificationDetailFragment"
+      android:name="com.hzlz.aviation.feature.account.ui.notification.detail.MessageNotificationDetailFragment"
       android:label="MessageNotificationDetailFragment">
     <argument
         android:name="msgType"

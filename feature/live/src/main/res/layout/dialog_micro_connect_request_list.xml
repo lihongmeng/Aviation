@@ -8,7 +8,7 @@
         android:background="@drawable/shape_solid_ffffff_corners_top_8dp"
         android:layout_gravity="bottom">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/title"
             android:layout_width="0dp"
             android:layout_height="@dimen/DIMEN_42DP"
@@ -21,7 +21,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/close"
             android:layout_width="@dimen/DIMEN_47DP"
             android:layout_height="@dimen/DIMEN_42DP"
@@ -41,7 +41,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent" />
 
-        <com.jxntv.widget.GVideoMaxMinHeightRecyclerView
+        <com.hzlz.aviation.library.widget.widget.GVideoMaxMinHeightRecyclerView
             android:id="@+id/list"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_350DP"

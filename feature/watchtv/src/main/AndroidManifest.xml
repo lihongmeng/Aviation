@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.jxntv.watchtv"
+<manifest package="com.hzlz.aviation.feature.watchtv"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -11,7 +11,7 @@
         <service android:name="org.fourthline.cling.android.AndroidUpnpServiceImpl" />
 
         <activity
-            android:name="com.jxntv.watchtv.ui.WatchTvActivity"
+            android:name="com.hzlz.aviation.feature.watchtv.ui.WatchTvActivity"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustResize" />

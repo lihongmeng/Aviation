@@ -6,25 +6,25 @@
 
         <variable
             name="feedModel"
-            type="com.jxntv.media.model.MediaModel" />
+            type="com.hzlz.aviation.kernel.media.model.MediaModel" />
 
     </data>
 
-    <com.jxntv.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
         android:id="@+id/root_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingStart="@dimen/DIMEN_10DP"
         android:orientation="vertical">
 
-        <com.jxntv.widget.GVideoRImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoRImageView
             android:layout_width="@dimen/DIMEN_192DP"
             android:layout_height="@dimen/DIMEN_108DP"
             android:scaleType="centerCrop"
             app:corner_radius="@dimen/DIMEN_4DP"
             app:imageData="@{feedModel.imageUrls[0]}" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/title"
             style="@style/feed_text_style"
             android:layout_width="@dimen/DIMEN_192DP"
@@ -35,6 +35,6 @@
             android:text="@{feedModel.title}"
             android:textStyle="bold" />
 
-    </com.jxntv.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
 </layout>

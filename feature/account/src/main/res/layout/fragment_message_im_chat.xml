@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.jxntv.widget.GVideoFrameLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.jxntv.widget.GVideoViewPager
+        <com.hzlz.aviation.library.widget.widget.GVideoViewPager
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <com.jxntv.widget.GVideoLinearLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
             android:id="@+id/place_holder"
             android:orientation="vertical"
             android:gravity="center"
@@ -18,17 +18,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/un_login_img"
                 style="@style/PlaceholderUnLoginStyle.Image"
                 android:src="@drawable/ic_placeholder_empty"
                 />
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 style="@style/PlaceholderStyle.Text"
                 android:text="@string/all_nor_more_data"
                 />
-        </com.jxntv.widget.GVideoLinearLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 
-    </com.jxntv.widget.GVideoFrameLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
 
 </layout>

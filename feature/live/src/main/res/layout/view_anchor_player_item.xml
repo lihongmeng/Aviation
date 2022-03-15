@@ -7,7 +7,7 @@
     </data>
 
     <!--连麦：第一个播放小窗口-->
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:id="@+id/root_layout"
         style="@style/anchor_video_style"
         app:layout_constraintBottom_toBottomOf="parent">
@@ -16,7 +16,7 @@
             android:id="@+id/loading_background"
             style="@style/anchor_video_loading_bg_style" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/loading_imageview"
             style="@style/anchor_video_loading_style" />
 
@@ -25,7 +25,7 @@
             style="@style/anchor_video_style"
             android:visibility="gone" />
 
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/btn_kick_out"
             android:layout_width="@dimen/DIMEN_20DP"
             android:layout_height="@dimen/DIMEN_20DP"
@@ -34,7 +34,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
 
 </layout>

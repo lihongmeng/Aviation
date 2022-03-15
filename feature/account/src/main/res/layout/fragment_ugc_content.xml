@@ -2,19 +2,19 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.jxntv.base.view.GVideoSmartRefreshLayout
+    <com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout
         android:id="@+id/refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:srlEnableRefresh="false">
 
-        <com.jxntv.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/white">
 
-            <com.jxntv.widget.GVideoRecyclerView
+            <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
                 android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -41,8 +41,8 @@
 
             </LinearLayout>
 
-        </com.jxntv.widget.GVideoFrameLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
 
-    </com.jxntv.base.view.GVideoSmartRefreshLayout>
+    </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
 
 </layout>

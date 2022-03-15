@@ -214,7 +214,7 @@ public static ** valueOf(java.lang.String);
 -dontwarn com.vivo.push.**
 -keep class com.vivo.push.**{*; }
 -keep class com.vivo.vms.**{*; }
--keep class com.jxntv.push.vivo.VivoPushReceiver
+-keep class com.hzlz.aviation.kernel.push.push.vivo.VivoPushReceiver
 -keep class **.PushMessageReceiverImpl{*;}
 
 #------pptv 相关------

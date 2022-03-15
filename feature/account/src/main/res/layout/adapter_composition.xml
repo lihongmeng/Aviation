@@ -3,23 +3,23 @@
   <data>
     <variable
       name="adapter"
-      type="com.jxntv.account.adapter.CompositionAdapter" />
+      type="com.hzlz.aviation.feature.account.adapter.CompositionAdapter" />
     <variable
       name="media"
-      type="com.jxntv.account.model.MediaObservable" />
+      type="com.hzlz.aviation.feature.account.model.MediaObservable" />
     <variable
       name="position"
       type="androidx.databinding.ObservableInt" />
     <import type="android.view.View" />
   </data>
 
-  <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/AdapterComposition.Container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:onClick="@{(v)->adapter.onItemClick(v,position)}">
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
       android:id="@+id/image_view_cover"
       style="@style/AdapterComposition.Cover"
       android:layout_width="0dp"
@@ -32,7 +32,7 @@
       app:layout_constraintTop_toTopOf="parent"
       app:roundedCorners="@{@dimen/adapter_composition_media_cover_radius}" />
 
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
       android:id="@+id/image_view_privacy_tag"
       style="@style/AdapterComposition.PrivacyTag"
       android:src="@drawable/ic_privacy_tag"
@@ -40,5 +40,5 @@
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintRight_toRightOf="parent" />
 
-  </com.jxntv.widget.GVideoConstraintLayout>
+  </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

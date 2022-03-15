@@ -3,11 +3,11 @@
   <data>
     <variable
         name="viewModel"
-        type="com.jxntv.account.ui.relation.RelationViewModel"
+        type="com.hzlz.aviation.feature.account.ui.relation.RelationViewModel"
         />
     <import type="android.view.View" />
   </data>
-  <com.jxntv.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:background="@color/all_layout_background"
@@ -15,7 +15,7 @@
       android:id="@+id/root_layout"
       >
     <!--返回按钮-->
-    <com.jxntv.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:id="@+id/iv_back"
         style="@style/Toolbar.LeftBack"
         android:onClick="@{(v)->viewModel.back(v)}"
@@ -23,7 +23,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
-    <com.jxntv.base.view.tab.GVideoSmartTabLayout
+    <com.hzlz.aviation.kernel.base.view.tab.GVideoSmartTabLayout
         android:id="@+id/tab_layout"
         style="@style/FragmentMeStyle.Tab"
         app:stl_distributeEvenly="true"
@@ -31,7 +31,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
-    <com.jxntv.widget.GVideoViewPager
+    <com.hzlz.aviation.library.widget.widget.GVideoViewPager
         android:id="@+id/view_pager"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -40,5 +40,5 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tab_layout"
         />
-  </com.jxntv.widget.GVideoConstraintLayout>
+  </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 </layout>

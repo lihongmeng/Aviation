@@ -8,7 +8,7 @@
         android:background="@android:color/black"
         android:orientation="vertical">
 
-        <com.jxntv.android.liteav.GVideoView
+        <com.hzlz.aviation.kernel.liteav.GVideoView
             android:id="@+id/short_video_play_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -17,7 +17,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
             android:id="@+id/comment_container"
             android:layout_width="0dp"
             android:layout_height="0dp"

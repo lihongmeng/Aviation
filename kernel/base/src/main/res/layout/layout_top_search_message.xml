@@ -26,7 +26,7 @@
             app:layout_constraintEnd_toStartOf="@id/messageLayout"
             app:layout_constraintTop_toTopOf="parent">
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/search"
                 android:layout_width="@dimen/DIMEN_17DP"
                 android:layout_height="@dimen/DIMEN_17DP"
@@ -35,7 +35,7 @@
                 android:src="@drawable/icon_search_search_grey" />
 
 
-            <com.jxntv.widget.GVideoBanner
+            <com.hzlz.aviation.library.widget.widget.GVideoBanner
                 android:id="@+id/top_search_banner"
                 android:layout_width="match_parent"
                 android:layout_marginStart="@dimen/DIMEN_12DP"
@@ -43,7 +43,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/scan"
                 android:layout_width="@dimen/DIMEN_17DP"
                 android:layout_height="@dimen/DIMEN_17DP"
@@ -60,7 +60,7 @@
             android:visibility="gone"
             app:layout_constraintTop_toBottomOf="@id/top_bar_search_layout" />
 
-        <com.jxntv.base.view.tab.GVideoSmartTabLayout
+        <com.hzlz.aviation.kernel.base.view.tab.GVideoSmartTabLayout
             android:id="@+id/gvideo_tabs"
             style="@style/TabLayoutDefaultStyle"
             android:layout_width="wrap_content"
@@ -72,7 +72,7 @@
             app:layout_constraintTop_toBottomOf="@id/top_bar_search_layout"
             app:stl_defaultTabTextHorizontalPadding="10dp" />
 
-        <com.jxntv.base.view.HomeMessageLayout
+        <com.hzlz.aviation.kernel.base.view.HomeMessageLayout
             android:id="@+id/messageLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

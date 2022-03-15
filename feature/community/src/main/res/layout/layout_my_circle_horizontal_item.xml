@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root"
+        android:layout_width="@dimen/DIMEN_83DP"
+        android:layout_height="@dimen/DIMEN_126DP"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:background="@color/color_333333">
+
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            android:id="@+id/cover"
+            android:layout_width="@dimen/DIMEN_69DP"
+            android:layout_height="@dimen/DIMEN_69DP"
+            android:background="@drawable/shape_soild_ffffff_corners_4dp" />
+
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_13"
+            android:singleLine="true"
+            android:maxWidth="@dimen/DIMEN_69DP"
+            android:ellipsize="end"
+            android:gravity="center"
+            tools:drawableLeft="@drawable/icon_red_dot_e4344e"
+            android:drawablePadding="@dimen/DIMEN_4DP"
+            android:layout_marginTop="@dimen/DIMEN_7DP"
+            android:textColor="@color/color_333333"
+            tools:text="1" />
+
+    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+
+</layout>

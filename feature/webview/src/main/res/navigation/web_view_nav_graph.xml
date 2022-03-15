@@ -8,7 +8,7 @@
 
   <fragment
       android:id="@+id/webViewFragment"
-      android:name="com.jxntv.webview.WebViewFragment"
+      android:name="com.hzlz.aviation.feature.webview.WebViewFragment"
       android:label="WebViewFragment">
     <argument
         android:name="title"

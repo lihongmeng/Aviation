@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.hzlz.aviation.kernel.base.model.circle.QaGroupModel" />
+
+        <import type="android.view.View" />
+
+        <import type="com.hzlz.aviation.kernel.base.utils.StringUtils"/>
+
+    </data>
+
+    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_36DP"
+        android:layout_marginBottom="@dimen/DIMEN_5DP"
+        android:background="@drawable/shape_background_detail_qa_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.hzlz.aviation.library.widget.widget.GVideoRImageView
+                android:id="@+id/request_avatar"
+                android:layout_width="@dimen/DIMEN_33DP"
+                android:layout_height="@dimen/DIMEN_33DP"
+                android:layout_marginStart="@dimen/DIMEN_2DP"
+                app:corner_radius="@dimen/DIMEN_17DP"
+                app:imageData="@{model.avatar}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:placeholder="@{@drawable/ic_default_avatar}"
+                tools:src="@drawable/ic_default_avatar" />
+
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                android:layout_width="@dimen/DIMEN_14DP"
+                android:layout_height="@dimen/DIMEN_14DP"
+                android:src="@drawable/icon_header_authentication"
+                android:visibility="@{model.auth?View.VISIBLE:View.GONE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            android:id="@+id/answer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_6DP"
+            android:ellipsize="end"
+            android:minWidth="@dimen/DIMEN_40DP"
+            android:singleLine="true"
+            android:text="@{StringUtils.showMaxLengthString(model.name,5)}"
+            android:textColor="@color/color_006fbb"
+            android:textSize="@dimen/sp_13"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="张三张三张三张三" />
+
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_5DP"
+            android:text="@string/answered"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_13" />
+
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            android:id="@+id/request_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_5DP"
+            android:layout_marginEnd="@dimen/DIMEN_5DP"
+            android:singleLine="true"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_13"
+            tools:text="柏燕谊柏燕谊柏柏燕谊" />
+
+    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+
+</layout>

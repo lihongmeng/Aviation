@@ -4,7 +4,7 @@
     <data>
         <variable
             name="videoObservable"
-            type="com.jxntv.base.model.video.VideoObservable" />
+            type="com.hzlz.aviation.kernel.base.model.video.VideoObservable" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -12,13 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/media_normal_vertical_margin"
             app:layout_constraintTop_toTopOf="parent">
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/toolbar_favorite_img"
                 style="@style/feed_comment_img"
                 android:layout_marginLeft="@dimen/DIMEN_19DP"
@@ -28,7 +28,7 @@
                 app:layout_constraintTop_toBottomOf="@id/bottom_divider"
                 tools:src="@drawable/media_toolbar_favorite_checked" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/toolbar_favorite_num_text"
                 style="@style/feed_comment_text"
                 android:text="@{videoObservable.favorText}"
@@ -38,7 +38,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/toolbar_favorite_img"
                 tools:text="44" />
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/toolbar_chat_img"
                 style="@style/feed_comment_img"
                 android:layout_marginStart="@dimen/DIMEN_50DP"
@@ -47,7 +47,7 @@
                 app:layout_constraintLeft_toRightOf="@id/toolbar_favorite_img"
                 app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/toolbar_comment_num_text"
                 style="@style/feed_comment_text"
                 app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img"
@@ -55,7 +55,7 @@
                 app:layout_constraintStart_toEndOf="@id/toolbar_chat_img"
                 tools:text="99+" />
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/toolbar_more_img"
                 android:layout_width="@dimen/DIMEN_50DP"
                 android:layout_height="@dimen/DIMEN_36DP"
@@ -66,7 +66,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/topic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                 tools:text="# 怎样处怎样处理亲子关系怎样处理亲子关系怎样处理亲子关系理亲子关系? #" />
 
             <!--链接信息-->
-            <com.jxntv.base.view.PublishLinkView
+            <com.hzlz.aviation.kernel.base.view.PublishLinkView
                 android:id="@+id/link_layout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/link_layout" />
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

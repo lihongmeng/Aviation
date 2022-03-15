@@ -7,20 +7,20 @@
 
         <variable
             name="model"
-            type="com.jxntv.account.model.UgcAuthorModel" />
+            type="com.hzlz.aviation.feature.account.model.UgcAuthorModel" />
         
-        <import type="com.jxntv.base.utils.StringUtils"/>
+        <import type="com.hzlz.aviation.kernel.base.utils.StringUtils"/>
 
     </data>
 
-    <com.jxntv.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/DIMEN_14DP"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <com.jxntv.widget.GVideoRImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoRImageView
             android:layout_width="@dimen/DIMEN_70DP"
             android:layout_height="@dimen/DIMEN_70DP"
             app:corner_radius="@dimen/DIMEN_4DP"
@@ -37,5 +37,5 @@
             android:textSize="@dimen/sp_12"
             tools:text="金牌调解" />
 
-    </com.jxntv.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
 </layout>

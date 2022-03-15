@@ -10,7 +10,7 @@
         android:clickable="true"
         android:focusable="true">
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/shadow"
             android:layout_width="match_parent"
             android:layout_height="1px"
@@ -18,7 +18,7 @@
             android:layout_alignParentTop="true"
             app:layout_constraintBottom_toBottomOf="parent" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/send"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/DIMEN_42DP"
@@ -35,7 +35,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jxntv.widget.GVideoEditText
+        <com.hzlz.aviation.library.widget.widget.GVideoEditText
             android:id="@+id/input"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

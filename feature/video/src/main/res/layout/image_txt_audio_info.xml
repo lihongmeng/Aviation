@@ -7,19 +7,19 @@
 
         <variable
             name="videoModel"
-            type="com.jxntv.base.model.video.VideoModel" />
+            type="com.hzlz.aviation.kernel.base.model.video.VideoModel" />
 
         <variable
             name="authorObservable"
-            type="com.jxntv.base.model.video.AuthorObservable" />
+            type="com.hzlz.aviation.kernel.base.model.video.AuthorObservable" />
 
         <variable
             name="videoObservable"
-            type="com.jxntv.base.model.video.VideoObservable" />
+            type="com.hzlz.aviation.kernel.base.model.video.VideoObservable" />
 
         <variable
             name="viewModel"
-            type="com.jxntv.android.video.ui.vtxt.ImageTxtAudioViewModel" />
+            type="com.hzlz.aviation.feature.video.ui.vtxt.ImageTxtAudioViewModel" />
 
         <import type="android.view.View" />
 
@@ -48,7 +48,7 @@
             app:viewModel="@{viewModel}"
             layout="@layout/view_author_message" />
 
-        <com.jxntv.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
             android:id="@+id/content"
             style="@style/TextStyle.DefaultSpacing.width_0DP"
             android:layout_marginTop="8dp"
@@ -65,7 +65,7 @@
             app:layout_constraintTop_toBottomOf="@id/author_layout"
             tools:text="氨基酸qq斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大" />
 
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:id="@+id/layout_sound_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/content">
 
-            <com.jxntv.base.view.ImageRecyclerView
+            <com.hzlz.aviation.kernel.base.view.ImageRecyclerView
                 android:id="@+id/image_recycler_view"
                 android:layout_width="@dimen/DIMEN_320DP"
                 android:layout_height="wrap_content"
@@ -88,16 +88,16 @@
                 android:gravity="center_horizontal"
                 app:show_style="fall" />
 
-            <com.jxntv.android.liteav.GVideoSoundView
+            <com.hzlz.aviation.kernel.liteav.GVideoSoundView
                 android:id="@+id/sound_view"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent=".9"
                 android:layout_height="wrap_content"
                 android:visibility="@{videoModel.haveAudio?View.VISIBLE:View.GONE}" />
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
-        <com.jxntv.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
             android:id="@+id/gfl_media_toolbar_layout_bottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
                 app:videoObservable="@{videoObservable}"
                 layout="@layout/media_toolbar_layout_bottom_no_data_bind" />
 
-        </com.jxntv.widget.GVideoFrameLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
 
         <View
             android:id="@+id/circle_layout_top_divider"
@@ -119,7 +119,7 @@
             app:layout_constraintTop_toBottomOf="@id/gfl_media_toolbar_layout_bottom" />
 
 
-        <com.jxntv.widget.GVideoRelativeLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout
             android:id="@+id/circle_layout"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_68DP"
@@ -132,7 +132,7 @@
             android:onClick="@{(v)-> viewModel.onEnterCircleClick(v)}"
             app:layout_constraintTop_toBottomOf="@id/circle_layout_top_divider">
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/circle_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -148,7 +148,7 @@
                 android:textStyle="bold"
                 tools:text="123456789123456789123456789" />
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/introduction"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -162,7 +162,7 @@
                 android:layout_below="@id/circle_name"
                 tools:text="123456789456123456789123456789456123456789123456789456123456789" />
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/circle_name"
@@ -171,7 +171,7 @@
                 android:scaleType="center"
                 android:src="@drawable/icon_enter_circle_long" />
 
-        </com.jxntv.widget.GVideoRelativeLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout>
 
         <View
             android:id="@+id/all_comment_top_divider"
@@ -180,13 +180,13 @@
             android:background="@color/color_f2f2f2"
             app:layout_constraintTop_toBottomOf="@id/circle_layout" />
 
-        <com.jxntv.widget.GVideoRelativeLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout
             android:id="@+id/all_comment"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_45DP"
             app:layout_constraintTop_toBottomOf="@id/all_comment_top_divider">
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -205,7 +205,7 @@
                 android:layout_alignParentBottom="true"
                 android:background="@color/color_f2f2f2" />
 
-        </com.jxntv.widget.GVideoRelativeLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

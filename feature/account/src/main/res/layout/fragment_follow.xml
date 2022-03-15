@@ -5,14 +5,14 @@
   <data>
     <variable
         name="viewModel"
-        type="com.jxntv.account.ui.relation.follow.FollowViewModel"
+        type="com.hzlz.aviation.feature.account.ui.relation.follow.FollowViewModel"
         />
     <import type="android.view.View" />
   </data>
-  <com.jxntv.widget.GVideoConstraintLayout
+  <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent">
-    <com.jxntv.widget.GVideoClearableEditText
+    <com.hzlz.aviation.library.widget.widget.GVideoClearableEditText
         android:id="@+id/edit_text_search"
         style="@style/FragmentFollowStyle.Search"
         android:hint="@string/all_search"
@@ -27,7 +27,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/text_view_cancel"
         />
-    <com.jxntv.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.GVideoTextView
         android:id="@+id/text_view_cancel"
         style="@style/FragmentFollowStyle.Cancel"
         android:text="@string/cancel"
@@ -38,7 +38,7 @@
         app:layout_constraintRight_toRightOf="parent"
       />
     <!-- 支持联系人搜索？ android:layout_marginTop="@dimen/height_fragment_follow_cancel" -->
-    <com.jxntv.widget.GVideoFrameLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -47,7 +47,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         >
-      <com.jxntv.base.view.GVideoSmartRefreshLayout
+      <com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout
           android:id="@+id/refresh_layout"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
@@ -56,7 +56,7 @@
           app:srlEnableLoadMore="true"
           app:srlEnableRefresh="true"
           >
-        <com.jxntv.widget.GVideoRecyclerView
+        <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -64,8 +64,8 @@
             app:adapter="@{viewModel.adapter}"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             />
-      </com.jxntv.base.view.GVideoSmartRefreshLayout>
-    </com.jxntv.widget.GVideoFrameLayout>
-  </com.jxntv.widget.GVideoConstraintLayout>
+      </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
+  </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
 </layout>

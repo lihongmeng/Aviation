@@ -7,11 +7,11 @@
 
         <variable
             name="toolBind"
-            type="com.jxntv.media.databind.MediaToolBarDataBind" />
+            type="com.hzlz.aviation.kernel.media.databind.MediaToolBarDataBind" />
 
         <variable
             name="feedModel"
-            type="com.jxntv.media.model.MediaModel" />
+            type="com.hzlz.aviation.kernel.media.model.MediaModel" />
 
         <import type="android.view.View" />
 
@@ -19,22 +19,22 @@
 
     </data>
 
-    <com.jxntv.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         style="@style/feed_layout_margin"
         android:id="@+id/root">
 
-        <com.jxntv.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:id="@+id/layout_top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.jxntv.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
                 android:id="@+id/title"
                 style="@style/feed_title_style"
                 android:text="@{feedModel.qaTitle}"
                 android:visibility="@{TextUtils.isEmpty(feedModel.qaTitle)?View.GONE:View.VISIBLE,default=gone}" />
 
-            <com.jxntv.widget.FoldTextView
+            <com.hzlz.aviation.library.widget.widget.FoldTextView
                 android:id="@+id/content"
                 style="@style/TextStyle.DefaultSpacing_lsm_1_6"
                 android:layout_width="0dp"
@@ -48,7 +48,7 @@
                 app:tipClickable="false"
                 app:tipColor="@color/c_4189FF" />
 
-            <com.jxntv.base.view.ImageRecyclerView
+            <com.hzlz.aviation.kernel.base.view.ImageRecyclerView
                 android:id="@+id/recycler_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
                 app:oriImageData="@{feedModel.oriUrls}"
                 tools:visibility="visible" />
 
-            <com.jxntv.android.liteav.GVideoSoundView
+            <com.hzlz.aviation.kernel.liteav.GVideoSoundView
                 android:id="@+id/sound_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
                 app:layout_constraintWidth_percent=".9"
                 tools:visibility="visible" />
 
-        </com.jxntv.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
         <include
             android:id="@+id/feed_layout_qa"
@@ -84,6 +84,6 @@
             app:feedModel="@{feedModel}"
             app:layout_constraintTop_toBottomOf="@id/layout_top" />
 
-    </com.jxntv.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
 
 </layout>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
 
-    <com.jxntv.widget.GVideoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -35,7 +35,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
 
-            <com.jxntv.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
                 android:id="@+id/screen_projection"
                 android:layout_width="@dimen/DIMEN_42DP"
                 android:layout_height="@dimen/DIMEN_42DP"
@@ -61,7 +61,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.jxntv.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
@@ -72,10 +72,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
-        </com.jxntv.widget.GVideoFrameLayout>
+        </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
 
         <!--重播-->
-        <com.jxntv.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
             android:id="@+id/iv_replay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,12 +85,12 @@
             android:background="@drawable/pendant_background_drawable"
             android:visibility="gone" />
 
-        <com.jxntv.android.liteav.view.ControllerProgressLayout
+        <com.hzlz.aviation.kernel.liteav.view.ControllerProgressLayout
             android:id="@+id/video_progress_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center" />
 
-    </com.jxntv.widget.GVideoFrameLayout>
+    </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
 
 </layout>
