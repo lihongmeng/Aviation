@@ -14,6 +14,7 @@ import androidx.databinding.DataBindingUtil;
 
 import com.hzlz.aviation.feature.record.RecordActivity;
 import com.hzlz.aviation.feature.record.RecordPluginImpl;
+import com.hzlz.aviation.feature.record.databinding.LayoutRecordDialogBinding;
 import com.hzlz.aviation.feature.record.recorder.fragment.publish.PublishHelper;
 import com.hzlz.aviation.kernel.base.plugin.LivePlugin;
 import com.hzlz.aviation.kernel.base.utils.ToastUtils;

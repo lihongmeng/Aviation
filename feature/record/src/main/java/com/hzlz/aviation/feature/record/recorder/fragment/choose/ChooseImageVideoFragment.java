@@ -14,6 +14,7 @@ import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.GridLayoutManager;
 
 import com.hzlz.aviation.feature.record.RecordPluginImpl;
+import com.hzlz.aviation.feature.record.databinding.FragmentChooseImageVideoBinding;
 import com.hzlz.aviation.feature.record.recorder.helper.VideoChooseHelper;
 import com.hzlz.aviation.kernel.base.BaseFragment;
 import com.hzlz.aviation.kernel.base.decoration.GapItemDecoration;

@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 
+import com.hzlz.aviation.feature.record.databinding.DialogSelectCommunityBinding;
 import com.hzlz.aviation.feature.record.recorder.adapter.SelectCommunityAdapter;
 import com.hzlz.aviation.kernel.base.Constant;
 import com.hzlz.aviation.kernel.base.model.circle.Circle;

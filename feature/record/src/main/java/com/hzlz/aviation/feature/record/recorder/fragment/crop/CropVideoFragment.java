@@ -5,6 +5,7 @@ import android.view.View;
 
 import androidx.annotation.NonNull;
 
+import com.hzlz.aviation.feature.record.databinding.FragmentCropVideoBinding;
 import com.hzlz.aviation.kernel.base.BaseFragment;
 import com.hzlz.aviation.kernel.stat.stat.StatPid;
 import com.hzlz.aviation.library.crop.CropImageView;

@@ -9,7 +9,7 @@ import com.hzlz.aviation.kernel.base.tag.TagTextHelper;
 import com.hzlz.aviation.kernel.liteav.LiteavConstants;
 import com.hzlz.aviation.kernel.liteav.R;
 import com.hzlz.aviation.kernel.liteav.controller.GVideoControllerBase;
-import com.hzlz.aviation.feature.android.liteav.databinding.LiteavControllerSmallBinding;
+import com.hzlz.aviation.kernel.liteav.databinding.LiteavControllerSmallBinding;
 
 /**
  * 小窗控制器

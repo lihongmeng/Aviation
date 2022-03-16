@@ -9,6 +9,7 @@ import androidx.navigation.NavGraph;
 import androidx.navigation.NavInflater;
 import androidx.navigation.Navigation;
 
+import com.hzlz.aviation.feature.record.databinding.ActivityRecordBinding;
 import com.hzlz.aviation.kernel.base.BaseActivity;
 
 /**

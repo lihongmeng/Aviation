@@ -18,6 +18,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 
+import com.hzlz.aviation.feature.record.databinding.DialogPublishFillLinkBinding;
 import com.hzlz.aviation.library.util.ResourcesUtils;
 import com.hzlz.aviation.library.widget.dialog.GVideoBottomSheetDialog;
 import com.hzlz.aviation.feature.record.R;

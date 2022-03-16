@@ -65,7 +65,6 @@ import com.hzlz.aviation.library.util.DeviceId;
 import com.hzlz.aviation.library.util.LogUtils;
 import com.hzlz.aviation.library.util.ResourcesUtils;
 import com.hzlz.aviation.library.widget.image.ImageLoaderManager;
-import com.hzlz.aviation.feature.ChatIMPluginImpl;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 
 import io.reactivex.rxjava3.plugins.RxJavaPlugins;
@@ -89,8 +88,10 @@ public final class GVideoApplication extends BaseApplication {
   @Override
   protected void onMainProcessCreate() {
     long t = System.currentTimeMillis();
+
     // DeviceId
-    DeviceId.init(this).externalStorageDirectoryName("GVideo").init();
+    DeviceId.init(this).externalStorageDirectoryName("Aviation").init();
+
     EnvironmentManager.getInstance().setTestProductFlavors(TextUtils.equals("Test",BuildConfig.FLAVOR));
     EnvironmentManager.getInstance().setEnvironment(new GVideoEnvironment());
     // 初始化网络
@@ -109,14 +110,10 @@ public final class GVideoApplication extends BaseApplication {
     );
     SmartRefreshLayout.setDefaultRefreshFooterCreator((context, layout) -> new DefaultRefreshFooterView(context));
 
-    if (TextUtils.equals("vip",BuildConfig.FLAVOR)) {
-      KernelSharedPrefs.getInstance().putBoolean(SP_LOGIN_HAS_VERIFICATE, true);
-    }
     LogUtils.e("初始化用时："+(System.currentTimeMillis() - t));
 
     // 取消订阅后，抛出的异常无法捕获，导致程序崩溃，使用此方法解决
     RxJavaPlugins.setErrorHandler(Throwable::printStackTrace);
-
   }
 
   private void initPlugin() {
@@ -141,7 +138,6 @@ public final class GVideoApplication extends BaseApplication {
     PluginManager.register(PhotoPreviewPlugin.class, new PhotoPreviewPluginImpl());
     PluginManager.register(LivePlugin.class,new LivePluginImpl());
     PluginManager.register(DetailPagePlugin.class,new DetailPagePluginImpl());
-    PluginManager.register(ChatIMPlugin.class,new ChatIMPluginImpl());
     PluginManager.register(AppSDKInitPlugin.class,new AppSDKInitPluginImpl());
     PluginManager.register(WatchTvPlugin.class,new WatchTvPluginImpl());
     PluginManager.register(StatPlugin.class,new StatPluginImpl());

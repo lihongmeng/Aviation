@@ -5,6 +5,7 @@ import android.view.View;
 
 import androidx.annotation.NonNull;
 
+import com.hzlz.aviation.feature.live.databinding.LayoutHomeLivePreviewItemSingleBinding;
 import com.hzlz.aviation.kernel.base.adapter.BaseDataBindingAdapter;
 import com.hzlz.aviation.kernel.base.adapter.DataBindingViewHolder;
 import com.hzlz.aviation.kernel.base.plugin.DetailPagePlugin;

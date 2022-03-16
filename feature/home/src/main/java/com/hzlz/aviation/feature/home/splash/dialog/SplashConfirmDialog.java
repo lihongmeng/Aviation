@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 
 import com.hzlz.aviation.feature.home.R;
+import com.hzlz.aviation.feature.home.databinding.LayoutSplashConfirmDialogBinding;
 import com.hzlz.aviation.feature.home.launch.LaunchProtocolHelper;
 import com.hzlz.aviation.kernel.runtime.GVideoRuntime;
 import com.hzlz.aviation.library.widget.dialog.GVideoCenterDialog;

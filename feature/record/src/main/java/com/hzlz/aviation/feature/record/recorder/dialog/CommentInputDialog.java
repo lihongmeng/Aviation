@@ -31,6 +31,7 @@ import com.alibaba.sdk.android.vod.upload.VODUploadClient;
 import com.alibaba.sdk.android.vod.upload.VODUploadClientImpl;
 import com.alibaba.sdk.android.vod.upload.model.UploadFileInfo;
 import com.alibaba.sdk.android.vod.upload.model.VodInfo;
+import com.hzlz.aviation.feature.record.databinding.DialogInputCommentBinding;
 import com.hzlz.aviation.feature.record.recorder.model.ChooseImageListModel;
 import com.hzlz.aviation.feature.record.recorder.model.VodVideoCreateModel;
 import com.hzlz.aviation.feature.record.recorder.repository.VideoRecordRepository;

@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 import androidx.databinding.DataBindingUtil;
 
+import com.hzlz.aviation.feature.record.databinding.LayoutIdentifacationConfirmDialogBinding;
 import com.hzlz.aviation.library.widget.dialog.GVideoCenterDialog;
 import com.hzlz.aviation.feature.record.R;
 

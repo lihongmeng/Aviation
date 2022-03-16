@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 
 import androidx.databinding.DataBindingUtil;
 
+import com.hzlz.aviation.feature.record.databinding.LayoutLongVideoLimitDialogBinding;
 import com.hzlz.aviation.library.widget.dialog.GVideoCenterDialog;
 import com.hzlz.aviation.feature.record.R;
 

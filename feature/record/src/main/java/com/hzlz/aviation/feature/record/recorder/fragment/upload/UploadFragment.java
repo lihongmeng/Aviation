@@ -17,6 +17,7 @@ import androidx.navigation.Navigation;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.CustomTarget;
 import com.bumptech.glide.request.transition.Transition;
+import com.hzlz.aviation.feature.record.databinding.FragmentUploadVideoBinding;
 import com.hzlz.aviation.feature.record.recorder.data.ImageVideoEntity;
 import com.hzlz.aviation.feature.record.recorder.fragment.crop.CropVideoFragmentArgs;
 import com.hzlz.aviation.feature.record.recorder.helper.VideoChooseHelper;

@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 
+import com.hzlz.aviation.feature.record.databinding.LayoutProcessDialogBinding;
 import com.hzlz.aviation.library.util.ResourcesUtils;
 import com.hzlz.aviation.library.widget.dialog.GVideoCenterDialog;
 import com.hzlz.aviation.feature.record.R;

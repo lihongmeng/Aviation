@@ -37,6 +37,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.CustomTarget;
 import com.bumptech.glide.request.transition.Transition;
 import com.hzlz.aviation.feature.record.RecordPluginImpl;
+import com.hzlz.aviation.feature.record.databinding.LayoutPublishBinding;
 import com.hzlz.aviation.feature.record.recorder.dialog.LinkAnalysisDialog;
 import com.hzlz.aviation.feature.record.recorder.dialog.ProcessVideoDialog;
 import com.hzlz.aviation.feature.record.recorder.helper.VideoChooseHelper;

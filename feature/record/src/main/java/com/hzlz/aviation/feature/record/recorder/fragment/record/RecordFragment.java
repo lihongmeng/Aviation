@@ -12,6 +12,7 @@ import android.view.SurfaceHolder;
 import android.view.View;
 import android.view.WindowManager;
 
+import com.hzlz.aviation.feature.record.databinding.FragmentRecordBinding;
 import com.hzlz.aviation.feature.record.recorder.data.ImageVideoEntity;
 import com.hzlz.aviation.feature.record.recorder.dialog.ProcessVideoDialog;
 import com.hzlz.aviation.feature.record.recorder.helper.VideoChooseHelper;

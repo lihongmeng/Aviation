@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import com.hzlz.aviation.feature.record.databinding.FragmentPreviewBinding;
 import com.hzlz.aviation.feature.record.recorder.GVideoRecordController;
 import com.hzlz.aviation.feature.record.recorder.data.ImageVideoEntity;
 import com.hzlz.aviation.feature.record.recorder.helper.VideoChooseHelper;
