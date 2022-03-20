@@ -73,11 +73,6 @@ public class HomeTabUtils {
      * 设置菜单控件
      */
     public void setLottieRes(GvideoLottieAnimationView lottie, String downLoadUrl, int position) {
-        //        if (!setResFormSDCard(lottie, downLoadUrl)) {
-        //            downloadRes(downLoadUrl);
-        //            lottie.setImageAssetsFolder("defaultTab/images"+ position);
-        //            lottie.setAnimation("defaultTab/data.json"+position);
-        //        lottie.setScale(ImageView.ScaleType.FIT_XY);
         if (openHomeSwitchInteger != null && openHomeSwitchInteger == 1) {
             try {
                 String path = "configTab/tab_" + position;

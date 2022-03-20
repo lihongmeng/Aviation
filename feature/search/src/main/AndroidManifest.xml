@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hzlz.aviation.feature.search">
     <application>
-        <activity android:name="com.hzlz.aviation.feature.search.com.hzlz.aviation.feature.search.SearchActivity"
+        <activity android:name="com.hzlz.aviation.feature.search.SearchActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden"/>

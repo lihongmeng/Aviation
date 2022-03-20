@@ -10,7 +10,6 @@
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
 
     <application>
 
@@ -59,7 +58,7 @@
             android:launchMode="singleTop" />
 
         <provider
-            android:name="com.hzlz.aviation.feature.account.com.hzlz.aviation.feature.account.AccountFileProvider"
+            android:name="com.hzlz.aviation.feature.account.AccountFileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true"

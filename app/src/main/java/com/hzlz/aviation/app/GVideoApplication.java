@@ -19,6 +19,7 @@ import com.hzlz.aviation.feature.community.CirclePluginImpl;
 import com.hzlz.aviation.feature.feed.FeedPluginImpl;
 import com.hzlz.aviation.feature.home.HomePluginImpl;
 import com.hzlz.aviation.feature.live.LivePluginImpl;
+import com.hzlz.aviation.feature.mall.MallPluginImpl;
 import com.hzlz.aviation.feature.record.RecordPluginImpl;
 import com.hzlz.aviation.feature.search.SearchPluginImpl;
 import com.hzlz.aviation.feature.share.SharePluginImpl;
@@ -45,6 +46,7 @@ import com.hzlz.aviation.kernel.base.plugin.HomePlugin;
 import com.hzlz.aviation.kernel.base.plugin.InitializationPlugin;
 import com.hzlz.aviation.kernel.base.plugin.LivePlugin;
 import com.hzlz.aviation.kernel.base.plugin.LoadMorePlugin;
+import com.hzlz.aviation.kernel.base.plugin.MallPlugin;
 import com.hzlz.aviation.kernel.base.plugin.PhotoPreviewPlugin;
 import com.hzlz.aviation.kernel.base.plugin.RecordPlugin;
 import com.hzlz.aviation.kernel.base.plugin.SearchPlugin;
@@ -141,6 +143,7 @@ public final class GVideoApplication extends BaseApplication {
     PluginManager.register(AppSDKInitPlugin.class,new AppSDKInitPluginImpl());
     PluginManager.register(WatchTvPlugin.class,new WatchTvPluginImpl());
     PluginManager.register(StatPlugin.class,new StatPluginImpl());
+    PluginManager.register(MallPlugin.class,new MallPluginImpl());
   }
 
 

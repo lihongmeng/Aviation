@@ -14,7 +14,7 @@
         android:requestLegacyExternalStorage="true"
         tools:targetApi="q">
 
-        <activity android:name="com.hzlz.aviation.feature.record.com.hzlz.aviation.feature.record.RecordActivity"
+        <activity android:name="com.hzlz.aviation.feature.record.RecordActivity"
             android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout"
             android:windowSoftInputMode="adjustResize"
             android:resizeableActivity="false"

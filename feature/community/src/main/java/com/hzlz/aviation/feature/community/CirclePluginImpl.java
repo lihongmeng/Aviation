@@ -80,7 +80,7 @@ public final class CirclePluginImpl implements CirclePlugin {
 
     @NonNull
     @Override
-    public BaseFragment getCircleFragment() {
+    public BaseFragment getHomeCommunityFragment() {
         return new HomeCommunityFragment();
     }
 

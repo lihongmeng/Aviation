@@ -194,4 +194,6 @@
     <string name="change_to_normal_method">切换到普通方式</string>
     <string name="is_jumping_please_wait">正在跳转，请稍后</string>
     <string name="one_key_login">一键登录</string>
+    <string name="good_thing">好物</string>
+    <string name="publish_post">发帖</string>
 </resources>

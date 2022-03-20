@@ -1,58 +1,37 @@
 package com.hzlz.aviation.feature.home;
 
-import static com.hzlz.aviation.kernel.base.Constant.BUNDLE_KEY.IS_NEED_BROAD_HOME_TO_ME;
-import static com.hzlz.aviation.kernel.base.Constant.BUNDLE_KEY.IS_QA;
-import static com.hzlz.aviation.kernel.base.Constant.BUNDLE_KEY.START_VIDEO_TAB_ID;
-import static com.hzlz.aviation.kernel.base.Constant.EVENT_BUS_EVENT.SHOW_HOME_TAB_FOLLOW;
-import static com.hzlz.aviation.kernel.base.Constant.START_PUBLISH_FROM.HOME;
-
-import android.app.Activity;
-import android.content.Context;
-import android.os.Bundle;
-import android.os.Handler;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.view.GravityCompat;
-import androidx.lifecycle.ViewModelProviders;
 
 import com.google.android.material.tabs.TabLayout;
 import com.hzlz.aviation.feature.home.adapter.HomePageAdapter;
-import com.hzlz.aviation.feature.home.businessdialog.BusinessDialogViewModel;
 import com.hzlz.aviation.feature.home.databinding.FragmentHomeBinding;
-import com.hzlz.aviation.feature.home.utils.HomeTabUtils;
 import com.hzlz.aviation.kernel.base.BackPressHandler;
 import com.hzlz.aviation.kernel.base.BaseActivity;
 import com.hzlz.aviation.kernel.base.BaseFragment;
 import com.hzlz.aviation.kernel.base.Constant;
-import com.hzlz.aviation.kernel.base.StaticParams;
-import com.hzlz.aviation.kernel.base.dialog.BusinessDialog;
-import com.hzlz.aviation.kernel.base.entity.PublishSataData;
 import com.hzlz.aviation.kernel.base.immersive.ImmersiveUtils;
-import com.hzlz.aviation.kernel.base.model.anotation.AuthorType;
-import com.hzlz.aviation.kernel.base.model.video.AuthorModel;
 import com.hzlz.aviation.kernel.base.plugin.AccountPlugin;
 import com.hzlz.aviation.kernel.base.plugin.CirclePlugin;
 import com.hzlz.aviation.kernel.base.plugin.HomePlugin;
-import com.hzlz.aviation.kernel.base.plugin.RecordPlugin;
 import com.hzlz.aviation.kernel.base.plugin.WatchTvPlugin;
 import com.hzlz.aviation.kernel.base.plugin.WebViewPlugin;
 import com.hzlz.aviation.kernel.base.utils.ToastUtils;
-import com.hzlz.aviation.kernel.base.view.GvideoLottieAnimationView;
 import com.hzlz.aviation.kernel.event.GVideoEventBus;
 import com.hzlz.aviation.kernel.event.entity.DrawerLayoutData;
 import com.hzlz.aviation.kernel.runtime.GVideoRuntime;
-import com.hzlz.aviation.kernel.stat.sensordata.GVideoSensorDataManager;
-import com.hzlz.aviation.kernel.stat.stat.StatPid;
 import com.hzlz.aviation.library.ioc.PluginManager;
 import com.hzlz.aviation.library.util.ResourcesUtils;
 import com.hzlz.aviation.library.util.ScreenUtils;
 import com.hzlz.aviation.library.util.SizeUtils;
+import com.hzlz.aviation.library.widget.widget.GVideoImageView;
+import com.hzlz.aviation.library.widget.widget.GVideoTextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,10 +42,6 @@ import java.util.List;
 public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
 
     /**
-     * 首页TAG
-     */
-    public final String TAG = "HomeFragment";
-    /**
      * 首页page 适配器
      */
     protected HomePageAdapter mPagerAdapter;
@@ -74,9 +49,6 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
      * 是否为暗黑模式
      */
     private boolean mIsDarkMode = false;
-
-    private String mStartVideoTabId = "";
-    private String mStartFmTabId = "";
 
     private BaseFragment currentBaseFragment;
 
@@ -92,7 +64,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
     /**
      * 屏幕宽度
      */
-    private int screenSize = ScreenUtils.getAppScreenWidth(GVideoRuntime.getAppContext());
+    private final int screenSize = ScreenUtils.getAppScreenWidth(GVideoRuntime.getAppContext());
 
     /**
      * 侧边栏宽度比例
@@ -102,11 +74,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
     /**
      * 底部菜单
      */
-    private List<TabLayout.Tab> tabList = new ArrayList<>();
-
-    private final Handler handler = new Handler();
-
-    private BusinessDialog businessDialog;
+    private final List<TabLayout.Tab> tabList = new ArrayList<>();
 
     @Override
     protected int getLayoutId() {
@@ -129,44 +97,8 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
         ImmersiveUtils.enterImmersiveFullTransparent(getActivity(), true);
         initViewPager();
         initTabLayout();
-        initMeAlphaButton();
-
-        mBinding.recordButton.setOnClickListener(v -> {
-            Context context = v.getContext();
-            if (context == null) {
-                return;
-            }
-            // 未登录需要跳转到登录页面
-            String token = PluginManager.get(AccountPlugin.class).getToken();
-            if (TextUtils.isEmpty(token)) {
-                PluginManager.get(AccountPlugin.class).startLoginActivity(v.getContext());
-                GVideoSensorDataManager.getInstance().enterRegister(
-                        StatPid.getPageName(StaticParams.currentStatPid),
-                        ResourcesUtils.getString(R.string.publish)
-                );
-            } else {
-
-                RecordPlugin recordPlugin = PluginManager.get(RecordPlugin.class);
-
-                // 获取发布页面外链相关的白名单
-                recordPlugin.initWhiteListData();
-
-                Bundle bundle = new Bundle();
-                bundle.putBoolean(IS_QA, false);
-
-                // 如果是平台运营人员，弹出选择弹窗
-                // 如果不是，直接启动发布页
-                if (PluginManager.get(AccountPlugin.class).getIsPlatformUser()) {
-                    recordPlugin.showRecordDialog(context, bundle);
-                } else {
-                    recordPlugin.startPublishFragmentUseActivity(context, bundle);
-                }
-            }
-        });
 
         mBinding.viewPager.setCurrentItem(0);
-
-        HomeTabUtils.getInstance().setTabListener(this::initBottomBar);
         initBottomBar();
         listenEvent();
 
@@ -188,20 +120,6 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
 
     @Override
     protected void bindViewModels() {
-        BusinessDialogViewModel businessDialogViewModel = ViewModelProviders.of(this).get(BusinessDialogViewModel.class);
-        businessDialogViewModel.imagesBeanLiveData.observe(
-                this,
-                imagesBean -> {
-                    businessDialog = new BusinessDialog(
-                            getActivity(),
-                            imagesBean,
-                            StatPid.HOME,
-                            null
-                    );
-                    businessDialog.showImagesBeanData(imagesBean);
-                }
-        );
-        businessDialogViewModel.requireBusinessDialogData();
     }
 
     @Override
@@ -214,27 +132,6 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
     }
 
     private void listenEvent() {
-
-        // 消息中心（未读/已读）状态发生变化
-        GVideoEventBus.get(AccountPlugin.EVENT_NEW_MOMENT, Boolean.class).observe(this,
-                hasUnread -> {
-                    if (mBinding == null) {
-                        return;
-                    }
-                    TabLayout.Tab tab = mBinding.tabLayout.getTabAt(3);
-                    if (tab == null) {
-                        return;
-                    }
-                    View customView = tab.getCustomView();
-                    if (customView == null) {
-                        return;
-                    }
-                    View unReadView = customView.findViewById(R.id.tab_unread);
-                    if (unReadView == null) {
-                        return;
-                    }
-                    unReadView.setVisibility(hasUnread ? View.VISIBLE : View.GONE);
-                });
 
         // 侧边栏（隐藏/展示）状态发生变化
         GVideoEventBus.get(HomePlugin.EVENT_HOME_DRAWER, DrawerLayoutData.class).observe(
@@ -250,111 +147,6 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
                     }
                 });
 
-        // 打开消息中心
-        GVideoEventBus.get(HomePlugin.EVENT_HOME_MESSAGE, String.class).observe(
-                this,
-                pid -> PluginManager.get(AccountPlugin.class).startNotificationFragment(
-                        mBinding.drawerLayout,
-                        pid
-                ));
-
-        // 跳转到"首页"TAB页
-        GVideoEventBus.get(HomePlugin.EVENT_HOME_TAB, Bundle.class).observe(this,
-                bundle -> {
-                    if (bundle == null
-                            || mBinding == null
-                            || mPagerAdapter == null) {
-                        return;
-                    }
-                    mStartVideoTabId = bundle.getString(START_VIDEO_TAB_ID, "");
-                    dealShowHomeChildFragment("");
-                });
-
-        // 跳转到"直播"TAB页
-        GVideoEventBus.get(HomePlugin.EVENT_LIVE_TAB, String.class).observe(this,
-                tabId -> {
-                    mStartFmTabId = tabId;
-                    mBinding.viewPager.setCurrentItem(1);
-                });
-
-        // 跳转到"社区"TAB页
-        GVideoEventBus.get(HomePlugin.EVENT_CIRCLE, Integer.class).observe(
-                this,
-                index -> {
-                    StaticParams.circleFragmentInitIndex = index;
-                    mBinding.viewPager.setCurrentItem(2);
-                });
-
-        // 跳转到"我的"TAB页
-        GVideoEventBus.get(HomePlugin.EVENT_PERSONAL, String.class).observe(this,
-                authorId -> mBinding.viewPager.setCurrentItem(3));
-
-        // 启动PGC页面
-        GVideoEventBus.get(HomePlugin.EVENT_PGC, String.class).observe(this,
-                authorId -> {
-                    AuthorModel author = AuthorModel.Builder.anAuthorModel()
-                            .withId(authorId)
-                            .withType(AuthorType.PGC)
-                            .build();
-                    PluginManager.get(AccountPlugin.class).startPgcActivity(mBinding.tabLayout, author);
-                });
-
-        // 启动UGC页面
-        GVideoEventBus.get(HomePlugin.EVENT_UGC, String.class).observe(this,
-                authorId -> {
-                    AuthorModel author = AuthorModel.Builder.anAuthorModel()
-                            .withId(authorId)
-                            .withType(AuthorType.UGC)
-                            .build();
-                    PluginManager.get(AccountPlugin.class).startPgcActivity(mBinding.tabLayout, author);
-                });
-
-        // 发布成功后会收到通知，跳转到关注页
-        GVideoEventBus.get(SHOW_HOME_TAB_FOLLOW, PublishSataData.class).observe(
-                this,
-                publishSataData -> {
-                    Activity activity = getActivity();
-                    if (publishSataData == null
-                            || activity == null
-                            || !TextUtils.equals(publishSataData.startPublishFrom, HOME)) {
-                        return;
-                    }
-                    if (publishSataData.circle == null) {
-                        dealShowHomeChildFragment(StatPid.HOME_FOLLOW);
-                    } else {
-                        PluginManager.get(CirclePlugin.class).startCircleDetailWithActivity(
-                                activity,
-                                publishSataData.circle,
-                                null
-                        );
-                    }
-                }
-        );
-
-        GVideoEventBus.get(Constant.EVENT_BUS_EVENT.HOME_TO_ME).observe(this,
-                value -> {
-                    if (mBinding != null) {
-                        mBinding.viewPager.setCurrentItem(3);
-                    }
-                });
-
-    }
-
-    /**
-     * 先跳转到Home页，再根据TabId跳转到指定页面
-     *
-     * @param tabId 页面对应Id
-     */
-    public void dealShowHomeChildFragment(String tabId) {
-        if (mBinding == null
-                || mPagerAdapter == null) {
-            return;
-        }
-        mBinding.viewPager.setCurrentItem(0);
-        if (TextUtils.isEmpty(tabId)) {
-            return;
-        }
-        ((BaseFragment<?>) mPagerAdapter.getItem(0)).showFragmentWithTabId(tabId);
     }
 
     /**
@@ -459,36 +251,10 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
     private void setTabState(TabLayout.Tab tab, boolean isSelected) {
         View view = tab.getCustomView();
         if (view != null) {
-            GvideoLottieAnimationView lottieAnimationView = view.findViewById(R.id.tab_icon);
-            if (lottieAnimationView != null) {
-                if (isSelected) {
-                    if (lottieAnimationView.getMaxFrame() > 0) {
-                        lottieAnimationView.setMinFrame(1);
-                    }
-                    lottieAnimationView.playAnimation();
-                } else {
-                    lottieAnimationView.setMinFrame(0);
-//                  未选中状态
-                    lottieAnimationView.setFrame(0);
-                }
-            }
-        }
-    }
+            ((GVideoImageView)view.findViewById(R.id.tab_icon)).getDrawable().setTint(ResourcesUtils.getColor(isSelected ? R.color.color_e6e6e6 : R.color.color_e6e6e6_50));
+            ((GVideoTextView)view.findViewById(R.id.tab_text)).setTextColor(ResourcesUtils.getColor(isSelected ? R.color.color_e6e6e6 : R.color.color_e6e6e6_50));
 
-    private void initMeAlphaButton() {
-        ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) mBinding.me.getLayoutParams();
-        layoutParams.width = screenSize / 5;
-        mBinding.me.setLayoutParams(layoutParams);
-        mBinding.me.setOnClickListener(v -> {
-            AccountPlugin accountPlugin = PluginManager.get(AccountPlugin.class);
-            if (accountPlugin.hasLoggedIn()) {
-                mBinding.viewPager.setCurrentItem(3);
-            } else {
-                Bundle bundle = new Bundle();
-                bundle.putBoolean(IS_NEED_BROAD_HOME_TO_ME, true);
-                accountPlugin.startLoginActivity(v.getContext(),bundle);
-            }
-        });
+        }
     }
 
     /**
@@ -496,18 +262,18 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
      */
     private void initBottomBar() {
         tabList.clear();
-        initTabView(mBinding.tabLayout.getTabAt(0), R.drawable.home_tab_feed_drawable, R.string.home_page, 0, 0);
-        initTabView(mBinding.tabLayout.getTabAt(1), R.drawable.home_tab_live_drawable, R.string.live, screenSize / 10, 0);
-        initTabView(mBinding.tabLayout.getTabAt(2), R.drawable.home_tab_community_drawable, R.string.community, 0, screenSize / 10);
-        initTabView(mBinding.tabLayout.getTabAt(3), R.drawable.home_tab_person_drawable, R.string.mine, 0, 0);
+        initTabView(0, R.drawable.home_tab_feed_drawable, R.string.home_page);
+        initTabView(1, R.drawable.home_tab_live_drawable, R.string.community);
+        initTabView(2, R.drawable.home_tab_community_drawable, R.string.good_thing);
+        initTabView(3, R.drawable.home_tab_person_drawable, R.string.mine);
         setSelectedTab(tabList.get(0));
-        HomeTabUtils.getInstance().initRecordButton(mBinding.recordButton);
     }
 
     /**
      * 初始化tab视图
      */
-    private void initTabView(TabLayout.Tab tab, int drawableId, int textId, int rightMargin, int leftMargin) {
+    private void initTabView(int index, int drawableId, int textId) {
+        TabLayout.Tab tab = mBinding.tabLayout.getTabAt(index);
         if (tab == null) {
             return;
         }
@@ -518,59 +284,12 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
         }
         View tabView = tab.view;
         LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) tabView.getLayoutParams();
-        layoutParams.width = screenSize / 5;
-        layoutParams.rightMargin = rightMargin;
-        layoutParams.leftMargin = leftMargin;
-        GvideoLottieAnimationView lottieAnimationView = view.findViewById(R.id.tab_icon);
-        HomeTabUtils.getInstance().setLottieRes(lottieAnimationView, null, tab.getPosition());
-//        ((ImageView) view.findViewById(R.id.tab_icon)).setImageResource(drawableId);
-//        lottieAnimationView.setImageAssetsFolder("images");
-//        lottieAnimationView.setAnimation("data.json");
-//        lottieAnimationView.playAnimation();
+        layoutParams.width = screenSize / 4;
+        layoutParams.rightMargin = 0;
+        layoutParams.leftMargin = 0;
         ((TextView) view.findViewById(R.id.tab_text)).setText(textId);
+        ((GVideoImageView) view.findViewById(R.id.tab_icon)).setImageResource(drawableId);
         tabList.add(tab);
-    }
-
-    /**
-     * 更新夜间模式
-     *
-     * @param isDarkMode 是否为暗黑模式
-     */
-    private void updateDarkMode(boolean isDarkMode) {
-        // ImmersiveUtils.enterImmersive(this, getBackgroundColor(isDarkMode), !isDarkMode);
-        mBinding.tabLayout.setBackgroundColor(getBackgroundColor(isDarkMode));
-        updateText(mBinding.tabLayout.getTabAt(0), isDarkMode);
-        updateText(mBinding.tabLayout.getTabAt(1), isDarkMode);
-        updateText(mBinding.tabLayout.getTabAt(3), isDarkMode);
-        updateShadow(isDarkMode);
-
-    }
-
-    /**
-     * 更新夜间模式文字
-     *
-     * @param tab    待处理的tab
-     * @param isDark 是否为暗黑模式
-     */
-    private void updateText(TabLayout.Tab tab, boolean isDark) {
-        if (tab == null) {
-            return;
-        }
-        View view = tab.getCustomView();
-        if (view == null) {
-            return;
-        }
-        int color = isDark ? R.color.t_color05 : R.color.home_tab_text_color;
-        ((TextView) view.findViewById(R.id.tab_text)).setTextColor(getColor(color));
-    }
-
-    /**
-     * 更新shadow
-     *
-     * @param isDark 是否为暗黑模式
-     */
-    private void updateShadow(boolean isDark) {
-        mBinding.shadow.setBackgroundColor(getColor(isDark ? R.color.home_background_color_dark : R.color.c_shadow01));
     }
 
     /**
@@ -623,17 +342,4 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
         }
     };
 
-    @Override
-    public String getPid() {
-        if (currentBaseFragment == null) {
-            return StatPid.HOME;
-        }
-        return currentBaseFragment.getPageName();
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        handler.removeCallbacksAndMessages(null);
-    }
 }

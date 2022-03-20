@@ -13,26 +13,127 @@
 
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/color_fffff">
+
+        <!--返回按钮-->
+        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/DIMEN_42DP"
+            android:layout_height="@dimen/DIMEN_42DP"
+            android:onClick="@{v->viewModel.onBackClick()}"
+            android:padding="@dimen/DIMEN_2DP"
+            android:src="@drawable/ic_back_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--标题-->
+        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_42DP"
+            android:text="@string/publish_post"
+            android:textColor="@color/color_212229"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--发布按钮-->
+        <com.hzlz.aviation.library.widget.widget.GVideoButton
+            android:id="@+id/publish"
+            android:layout_width="@dimen/DIMEN_55DP"
+            android:layout_height="@dimen/DIMEN_25DP"
+            android:layout_marginEnd="@dimen/DIMEN_15DP"
+            android:background="@drawable/icon_publish_disable"
+            android:enabled="false"
+            android:onClick="@{(view)->viewModel.onPublish()}"
+            app:layout_constraintBottom_toBottomOf="@id/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/back" />
+
+        <!--分割线-->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            app:layout_constraintTop_toBottomOf="@id/back"
+            android:layout_marginTop="@dimen/DIMEN_15DP"
+            android:visibility="@{viewModel.isQaType?View.GONE:View.VISIBLE,default=gone}"
+            android:background="@color/color_f2f2f2" />
+
+        <!--选择社区布局-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/select_community"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_58DP"
+            android:background="@color/color_ffffff"
+            tools:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/divider"
+            android:visibility="@{viewModel.isQaType?View.GONE:View.VISIBLE}"
+            android:paddingStart="@dimen/DIMEN_14DP"
+            android:paddingEnd="@dimen/DIMEN_14DP">
+
+            <!--社区icon-->
+            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                android:id="@+id/select_community_icon"
+                android:layout_width="@dimen/DIMEN_30DP"
+                android:layout_height="@dimen/DIMEN_30DP"
+                android:background="@drawable/home_tab_icon_community"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <!--社区名称-->
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                android:id="@+id/select_community_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="@string/select_community"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15"
+                android:layout_marginStart="@dimen/DIMEN_10DP"
+                app:layout_constraintStart_toEndOf="@id/select_community_icon"
+                tools:text="1" />
+
+            <!--如果没有选择社区，引导用户点击的提示文案-->
+            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                android:id="@+id/select_community_tip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:drawableEnd="@drawable/icon_arrow_right_text"
+                android:drawablePadding="@dimen/DIMEN_6DP"
+                android:gravity="center_vertical|end"
+                android:textColor="@color/color_7f7f7f"
+                android:textSize="@dimen/sp_13"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="@string/select_community_tip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/select_community_name"
+                tools:text="12345678912345768" />
+
+            <!--底部分割线-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_f2f2f2"
+                android:layout_marginStart="@dimen/DIMEN_14DP"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="@dimen/DIMEN_14DP" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <!--固定在界面底部，键盘上方的容器-->
         <com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout
             android:id="@+id/gvll_topic_group_operation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="bottom"
-            android:layout_alignParentBottom="true"
+            app:layout_constraintBottom_toBottomOf="parent"
             android:orientation="vertical">
-
-            <!--阴影背景-->
-            <View
-                android:id="@+id/shadow"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/DIMEN_77DP"
-                android:background="@drawable/shape_gradient_d8d8d8_26_eeeeee_0_angle_90" />
 
             <!--操作按钮的容器-->
             <LinearLayout
@@ -41,19 +142,10 @@
                 android:layout_height="@dimen/DIMEN_50DP"
                 android:background="@color/color_ffffff"
                 android:orientation="horizontal"
-                android:layout_below="@id/shadow"
                 android:layout_gravity="center_vertical"
                 android:gravity="center_vertical"
                 android:paddingStart="@dimen/DIMEN_18DP"
                 android:paddingEnd="@dimen/DIMEN_12DP">
-
-                <!--录音按钮-->
-                <com.hzlz.aviation.library.widget.widget.GVideoImageView
-                    android:id="@+id/sound_record_icon"
-                    android:layout_width="@dimen/DIMEN_38DP"
-                    android:layout_height="@dimen/DIMEN_40DP"
-                    android:scaleType="center"
-                    android:src="@drawable/icon_publish_sound_record_enable" />
 
                 <!--图库按钮-->
                 <com.hzlz.aviation.library.widget.widget.GVideoImageView
@@ -73,17 +165,6 @@
                     android:scaleType="center"
                     android:src="@drawable/icon_publish_video_enable"
                     android:visibility="gone"
-                    tools:visibility="visible" />
-
-                <!--外链按钮-->
-                <com.hzlz.aviation.library.widget.widget.GVideoImageView
-                    android:id="@+id/link_icon"
-                    android:layout_width="@dimen/DIMEN_38DP"
-                    android:layout_height="@dimen/DIMEN_40DP"
-                    android:layout_marginStart="@dimen/DIMEN_10DP"
-                    android:scaleType="center"
-                    android:src="@drawable/ic_btn_publish_link"
-                    android:visibility="visible"
                     tools:visibility="visible" />
 
             </LinearLayout>
@@ -136,97 +217,13 @@
 
             </com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout>
 
-            <!--录音组件-->
-            <com.hzlz.aviation.feature.record.recorder.view.soundrecord.GVideoSoundRecordView
-                android:id="@+id/sound_record"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/DIMEN_210DP"
-                android:gravity="center_horizontal"
-                android:visibility="gone"
-                android:layout_below="@id/bottom_layout"
-                app:timeTextColor="@color/color_525566"
-                tools:visibility="gone" />
-
         </com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout>
 
         <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
             android:id="@+id/layout_back"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <!--返回按钮-->
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
-                android:id="@+id/back"
-                android:layout_width="@dimen/DIMEN_40DP"
-                android:layout_height="@dimen/DIMEN_40DP"
-                android:padding="@dimen/DIMEN_2DP"
-                android:src="@drawable/ic_back_black"
-                android:onClick="@{v->viewModel.onBackClick()}"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <!--问答组件Group-->
-            <androidx.constraintlayout.widget.Group
-                android:id="@+id/qa_teacher_message"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:visibility="@{!viewModel.isQaType||viewModel.authorModel==null?View.GONE:View.VISIBLE,default=gone}"
-                app:constraint_referenced_ids="qa_text,qa_avatar_teacher,qa_teacher_name"
-                tools:visibility="visible" />
-
-            <!--问-->
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
-                android:id="@+id/qa_text"
-                android:text="@string/ask"
-                android:textSize="@dimen/sp_15"
-                android:textColor="@color/color_999999"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/video_edit_margin_landscape"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/back"
-                app:layout_constraintTop_toTopOf="@id/qa_avatar_teacher"
-                app:layout_constraintBottom_toBottomOf="@id/qa_avatar_teacher" />
-
-            <!--导师头像-->
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
-                android:id="@+id/qa_avatar_teacher"
-                android:src="@drawable/ic_default_avatar"
-                android:layout_width="@dimen/DIMEN_21DP"
-                android:layout_height="@dimen/DIMEN_21DP"
-                android:layout_marginTop="@dimen/DIMEN_6DP"
-                android:layout_marginStart="@dimen/DIMEN_5DP"
-                app:imageData="@{viewModel.authorModel.avatar}"
-                app:placeholder='@{@drawable/ic_default_avatar}'
-                app:circleCrop="@{true}"
-                app:layout_constraintTop_toBottomOf="@id/back"
-                app:layout_constraintStart_toEndOf="@+id/qa_text" />
-
-            <!--导师名称-->
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
-                android:id="@+id/qa_teacher_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/DIMEN_5DP"
-                android:text="@{@string/name_colon(viewModel.authorModel.name)}"
-                android:textColor="@color/color_333333"
-                android:textSize="@dimen/sp_15"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@id/qa_avatar_teacher"
-                app:layout_constraintStart_toEndOf="@id/qa_avatar_teacher"
-                app:layout_constraintTop_toTopOf="@id/qa_avatar_teacher"
-                tools:text="张三" />
-
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
-                android:text="提问："
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/color_333333"
-                android:textSize="@dimen/sp_15"
-                android:layout_marginStart="@dimen/video_edit_margin_landscape"
-                android:visibility="@{!viewModel.isQaType||viewModel.authorModel!=null?View.GONE:View.VISIBLE,default=gone}"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/back" />
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent">
 
             <!--文字输入框-->
             <com.hzlz.aviation.library.widget.widget.GVideoEditText
@@ -253,143 +250,16 @@
                 app:layout_constraintTop_toBottomOf="@id/qa_avatar_teacher"
                 tools:text="1234567890123456789012345678901234567890123456789012345678901234567890" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
-                android:id="@+id/qa_title_tip"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="@dimen/DIMEN_14DP"
-                android:layout_marginTop="@dimen/DIMEN_5DP"
-                android:text="@string/publish_qa_title_hint_last"
-                android:textColor="@color/color_cccccc"
-                android:textSize="@dimen/sp_13"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/qa_title"
-                android:visibility="@{viewModel.isNeedShowTitle?View.VISIBLE:View.GONE,default=gone}" />
-
-            <View
-                android:id="@+id/edit_line"
-                android:layout_width="0dp"
-                android:layout_height="1px"
-                android:layout_marginTop="@dimen/DIMEN_28DP"
-                android:background="@color/color_f2f2f2"
-                android:visibility="@{viewModel.qaTitleCount>0?View.VISIBLE:View.GONE,default=gone}"
-                app:layout_constraintEnd_toEndOf="@id/qa_title"
-                app:layout_constraintStart_toStartOf="@id/qa_title"
-                app:layout_constraintTop_toBottomOf="@id/qa_title" />
-
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
-                android:id="@+id/input_count"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/DIMEN_5DP"
-                android:text="@{@string/publish_qa_title_count(viewModel.qaTitleCount)}"
-                android:visibility="@{viewModel.qaTitleCount>0?View.VISIBLE:View.GONE,default=gone}"
-                android:textColor="@color/color_cccccc"
-                android:textSize="@dimen/sp_13"
-                tools:text="30/50"
-                app:layout_constraintBottom_toTopOf="@id/edit_line"
-                app:layout_constraintEnd_toEndOf="@id/edit_line" />
-
         </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
-
-        <!--解析外链标题需要用到，为了节省绘制成本，宽高1px并隐藏起来-->
-        <com.hzlz.aviation.kernel.base.webview.GVWebView
-            android:id="@+id/web"
-            android:visibility="gone"
-            android:layout_width="1px"
-            android:layout_height="1px" />
-
-        <!--顶部需要固定显示的布局-->
-        <LinearLayout
-            android:id="@+id/top_layout"
-            android:layout_below="@id/layout_back"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <!--分割线-->
-            <View
-                android:id="@+id/divider"
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:layout_marginTop="@dimen/DIMEN_15DP"
-                android:visibility="@{viewModel.isQaType?View.GONE:View.VISIBLE,default=gone}"
-                android:background="@color/color_f2f2f2" />
-
-            <!--选择社区布局-->
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/select_community"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/DIMEN_58DP"
-                android:background="@color/color_ffffff"
-                tools:visibility="visible"
-                android:visibility="@{viewModel.isQaType?View.GONE:View.VISIBLE}"
-                android:paddingStart="@dimen/DIMEN_14DP"
-                android:paddingEnd="@dimen/DIMEN_14DP">
-
-                <!--社区icon-->
-                <com.hzlz.aviation.library.widget.widget.GVideoImageView
-                    android:id="@+id/select_community_icon"
-                    android:layout_width="@dimen/DIMEN_30DP"
-                    android:layout_height="@dimen/DIMEN_30DP"
-                    android:background="@drawable/home_tab_icon_community"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent" />
-
-                <!--社区名称-->
-                <com.hzlz.aviation.library.widget.widget.GVideoTextView
-                    android:id="@+id/select_community_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:singleLine="true"
-                    android:ellipsize="end"
-                    android:text="@string/select_community"
-                    android:textColor="@color/color_333333"
-                    android:textSize="@dimen/sp_15"
-                    android:layout_marginStart="@dimen/DIMEN_10DP"
-                    app:layout_constraintStart_toEndOf="@id/select_community_icon"
-                    tools:text="1" />
-
-                <!--如果没有选择社区，引导用户点击的提示文案-->
-                <com.hzlz.aviation.library.widget.widget.GVideoTextView
-                    android:id="@+id/select_community_tip"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:drawableEnd="@drawable/icon_arrow_right_text"
-                    android:drawablePadding="@dimen/DIMEN_6DP"
-                    android:gravity="center_vertical|end"
-                    android:textColor="@color/color_7f7f7f"
-                    android:textSize="@dimen/sp_13"
-                    android:singleLine="true"
-                    android:ellipsize="end"
-                    android:text="@string/select_community_tip"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/select_community_name"
-                    tools:text="12345678912345768" />
-
-                <!--底部分割线-->
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:background="@color/color_f2f2f2"
-                    android:layout_marginStart="@dimen/DIMEN_14DP"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    android:layout_marginEnd="@dimen/DIMEN_14DP" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </LinearLayout>
 
         <!--中间可滑动部分-->
         <androidx.core.widget.NestedScrollView
             android:id="@+id/link_image_video_sound"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/gvll_topic_group_operation"
-            android:layout_below="@id/top_layout"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/select_community"
+            app:layout_constraintBottom_toTopOf="@id/gvll_topic_group_operation"
+            android:layout_below="@id/select_community"
             android:scrollbars="none">
 
             <LinearLayout
@@ -495,20 +365,6 @@
 
         </androidx.core.widget.NestedScrollView>
 
-        <!--发布按钮-->
-        <com.hzlz.aviation.library.widget.widget.GVideoButton
-            android:id="@+id/publish"
-            android:layout_width="@dimen/DIMEN_96DP"
-            android:layout_height="@dimen/DIMEN_33DP"
-            android:layout_alignBottom="@id/bottom_layout"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="@dimen/DIMEN_15DP"
-            android:layout_marginBottom="@dimen/DIMEN_9DP"
-            android:background="@drawable/icon_publish_disable"
-            android:enabled="false"
-            android:onClick="@{(view)->viewModel.onPublish()}" />
-
-    </com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

@@ -98,6 +98,7 @@ dependencies {
     implementation deps.tog_kernel_base
     implementation deps.tog_kernel_stat
     implementation deps.tog_feature_account
+    implementation deps.tog_feature_mall
     implementation deps.tog_feature_community
     implementation deps.tog_feature_video
     implementation deps.tog_feature_home

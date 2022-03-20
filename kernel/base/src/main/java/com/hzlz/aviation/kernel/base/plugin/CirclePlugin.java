@@ -57,7 +57,7 @@ public interface CirclePlugin extends Plugin {
     void addDestinations(@NonNull BaseFragment fragment);
 
     @NonNull
-    public BaseFragment getCircleFragment();
+    public BaseFragment getHomeCommunityFragment();
 
     void navigationToSearchTopic(View view, Circle circle);
 

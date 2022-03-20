@@ -155,6 +155,7 @@ ext.deps = [
         tog_feature_community     : project(":feature:community"),
         tog_feature_video         : project(":feature:video"),
         tog_feature_home          : project(":feature:home"),
+        tog_feature_mall          : project(":feature:mall"),
         tog_feature_feed          : project(":feature:feed"),
         tog_feature_webview       : project(":feature:webview"),
         tog_feature_search        : project(":feature:search"),

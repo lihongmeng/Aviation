@@ -6,11 +6,12 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <com.hzlz.aviation.kernel.base.view.GvideoLottieAnimationView
+    <com.hzlz.aviation.library.widget.widget.GVideoImageView
         android:id="@+id/tab_icon"
-        android:layout_width="@dimen/home_tab_img_width"
-        android:layout_height="@dimen/home_tab_img_width"
+        android:layout_width="@dimen/DIMEN_25DP"
+        android:layout_height="@dimen/DIMEN_25DP"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -19,24 +20,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:includeFontPadding="false"
-        android:textColor="@color/home_tab_text_color"
+        android:textColor="@color/color_ffffff"
         android:textSize="@dimen/home_tab_title_size"
-        android:layout_marginBottom="@dimen/DIMEN_6DP"
+        android:layout_marginTop="@dimen/DIMEN_1DP"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
-
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
-        android:id="@+id/tab_unread"
-        android:visibility="gone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_unread"
-        app:layout_constraintCircle="@id/tab_icon"
-        app:layout_constraintCircleAngle="45"
-        app:layout_constraintCircleRadius="10dp"
-        app:layout_constraintRight_toRightOf="@id/tab_icon"
-        app:layout_constraintTop_toTopOf="@id/tab_icon" />
+        app:layout_constraintTop_toBottomOf="@id/tab_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

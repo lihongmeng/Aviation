@@ -6,7 +6,7 @@ import com.hzlz.aviation.kernel.base.BaseFragment;
 import com.hzlz.aviation.kernel.base.plugin.AccountPlugin;
 import com.hzlz.aviation.kernel.base.plugin.CirclePlugin;
 import com.hzlz.aviation.kernel.base.plugin.FeedPlugin;
-import com.hzlz.aviation.kernel.base.plugin.LivePlugin;
+import com.hzlz.aviation.kernel.base.plugin.MallPlugin;
 import com.hzlz.aviation.kernel.stat.stat.StatPid;
 import com.hzlz.aviation.library.ioc.PluginManager;
 
@@ -32,9 +32,9 @@ public class HomePageAdapter extends BasePageAdapter {
             case 0:
                 return PluginManager.get(FeedPlugin.class).getFeedFragment(StatPid.HOME);
             case 1:
-                return PluginManager.get(LivePlugin.class).getHomeLiveFragment();
+                return PluginManager.get(CirclePlugin.class).getHomeCommunityFragment();
             case 2:
-                return PluginManager.get(CirclePlugin.class).getCircleFragment();
+                return PluginManager.get(MallPlugin.class).getHomeMallFragment();
             case 3:
                 return PluginManager.get(AccountPlugin.class).getMeFragment();
             default:

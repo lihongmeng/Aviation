@@ -1,104 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <data>
-        <import type="android.view.View"/>
-        <variable
-            name="viewModel"
-            type="com.hzlz.aviation.feature.home.splash.SplashViewModel"
-            />
-        <variable
-            name="binding"
-            type="com.hzlz.aviation.feature.home.splash.binding.SplashDataBinding"
-            />
-    </data>
+
     <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
         android:id="@+id/splash_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
-            android:id="@+id/ad_img"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/logo"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:scaleType="centerCrop"
-            android:onClick="@{(v)->binding.onClickAd(v)}"
-            android:visibility="gone"/>
-
-        <com.hzlz.aviation.kernel.liteav.GVideoView
-            android:id="@+id/ad_player_view"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/logo"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:onClick="@{(v)->binding.onClickAd(v)}"
-            android:visibility="gone"/>
-
         <com.hzlz.aviation.library.widget.widget.GVideoTextView
-            android:id="@+id/ad_count_down_text"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:gravity="center"
-            android:padding="10dp"
-            android:layout_marginEnd="@dimen/DIMEN_10DP"
-            android:layout_marginTop="@dimen/DIMEN_35DP"
-            android:textColor="@color/white"
-            android:background="@drawable/splash_skip_bg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text='@{@string/splash_skip + binding.countDownTime}'
-            android:onClick="@{(v)->binding.onClickSkip()}"
-            android:visibility="@{binding.countDownVisible}"/>
-
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
-            android:id="@+id/slide_ad"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:gravity="center"
-            android:layout_width="30dp"
-            android:layout_height="14dp"
-            android:layout_margin="6dp"
-            android:background="@drawable/splash_ad_bg"
-            android:textColor="#80808080"
-            android:textSize="@dimen/DIMEN_12DP"
-            android:text="@string/splash_ad"
-            android:visibility="@{binding.adVisible}"
-            android:includeFontPadding="false"
-            />
-
-        <FrameLayout
-            android:id="@+id/logo"
-            android:visibility="@{binding.logoVisible}"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/DIMEN_50DP"
+            android:drawableStart="@drawable/ic_launcher"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/DIMEN_100DP"
-            android:background="@color/white">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/app_name"
-                android:layout_gravity="center"
-                android:textSize="30sp"
-                android:drawablePadding="10dp"
-                android:drawableLeft="@drawable/ic_launcher"
-                android:textColor="@color/black" />
-        </FrameLayout>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
     </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+
 </layout>

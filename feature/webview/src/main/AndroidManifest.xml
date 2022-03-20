@@ -2,7 +2,7 @@
     package="com.hzlz.aviation.feature.webview" >
   <application>
     <activity
-        android:name="com.hzlz.aviation.feature.webview.com.hzlz.aviation.feature.webview.WebViewActivity"
+        android:name="com.hzlz.aviation.feature.webview.WebViewActivity"
         android:configChanges="orientation|screenSize"
         android:exported="false"
         android:theme="@style/Theme.AppCompat.NoActionBar" />

@@ -32,3 +32,5 @@ include ':library:utils'
 include ':library:crop'
 include ':library:videocache'
 
+include ':feature:mylibrary'
+include ':feature:mall'

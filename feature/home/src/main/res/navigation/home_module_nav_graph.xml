@@ -9,9 +9,4 @@
         android:name="com.hzlz.aviation.feature.home.HomeFragment">
     </fragment>
 
-    <fragment
-        android:id="@+id/videoShortFragment"
-        android:name="com.hzlz.aviation.feature.video.ui.vshort.VideoContainerFragment"
-        android:label="videoShortFragment"/>
-
 </navigation>

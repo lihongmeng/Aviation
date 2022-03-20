@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">home</string>
+    <string name="app_name">Aviation</string>
 
     <string name="splash_confirm">如果您不同意，我们可能无法为您提供服务</string>
     <string name="splash_confirm_twice">今视频致力于为您提供最优价值的内容服务，您确定要离开吗？</string>
