@@ -102,4 +102,10 @@
     <attr name="min_Height" format="dimension"/>
   </declare-styleable>
 
+
+  <declare-styleable name="CountLimitEditText">
+    <attr name="max_Height" format="dimension"/>
+    <attr name="min_Height" format="dimension"/>
+  </declare-styleable>
+
 </resources>

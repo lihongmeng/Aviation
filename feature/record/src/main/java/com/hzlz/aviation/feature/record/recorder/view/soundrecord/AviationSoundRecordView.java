@@ -22,13 +22,13 @@ import com.hzlz.aviation.kernel.base.permission.PermissionCallback;
 import com.hzlz.aviation.kernel.base.permission.PermissionManager;
 import com.hzlz.aviation.kernel.base.utils.ContextUtils;
 import com.hzlz.aviation.kernel.event.GVideoEventBus;
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
-import com.hzlz.aviation.library.widget.widget.GVideoLinearLayout;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
+import com.hzlz.aviation.library.widget.widget.AviationLinearLayout;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 import java.io.IOException;
 
-public class GVideoSoundRecordView extends GVideoLinearLayout {
+public class AviationSoundRecordView extends AviationLinearLayout {
 
     // 当期是否正在录制
     private boolean isRecording = false;
@@ -37,10 +37,10 @@ public class GVideoSoundRecordView extends GVideoLinearLayout {
     private GVideoSoundRecordWaveView waveView;
 
     // 录音、暂停按钮
-    private GVideoImageView startStopGviv;
+    private AviationImageView startStopGviv;
 
     // 按钮标题
-    private GVideoTextView startStopGvtv;
+    private AviationTextView startStopGvtv;
 
     // 上下文Context
     private Context context;
@@ -69,15 +69,15 @@ public class GVideoSoundRecordView extends GVideoLinearLayout {
 
     // <editor-folder desc="构造方法">
 
-    public GVideoSoundRecordView(Context context) {
+    public AviationSoundRecordView(Context context) {
         this(context, null);
     }
 
-    public GVideoSoundRecordView(Context context, @Nullable AttributeSet attrs) {
+    public AviationSoundRecordView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public GVideoSoundRecordView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public AviationSoundRecordView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initVars(context);
         initAttrs(attrs);

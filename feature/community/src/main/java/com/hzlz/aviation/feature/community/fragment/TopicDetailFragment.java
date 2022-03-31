@@ -26,7 +26,7 @@ import com.hzlz.aviation.kernel.media.model.MediaModel;
 import com.hzlz.aviation.kernel.media.recycler.MediaPageFragment;
 import com.hzlz.aviation.kernel.stat.stat.StatPid;
 import com.hzlz.aviation.library.ioc.PluginManager;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 import io.reactivex.rxjava3.core.Observable;
 
@@ -190,7 +190,7 @@ public class TopicDetailFragment extends MediaPageFragment<FragmentTopicDetailBi
             mBinding.header.circleLayout.setVisibility(View.GONE);
         } else {
             mBinding.header.circleLayout.setVisibility(View.VISIBLE);
-            ((GVideoTextView) (mBinding.header.circleLayout.findViewById(R.id.circle_name))).setText(viewModel.circle.getName());
+            ((AviationTextView) (mBinding.header.circleLayout.findViewById(R.id.circle_name))).setText(viewModel.circle.getName());
             mBinding.header.circleLayout.setOnClickListener(v -> {
                 if (viewModel.circle == null) {
                     return;

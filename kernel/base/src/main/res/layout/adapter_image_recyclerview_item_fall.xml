@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -38,6 +38,6 @@
             app:layout_constraintEnd_toEndOf="@id/image"
             tools:visibility="visible" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
 </layout>

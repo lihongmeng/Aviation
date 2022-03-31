@@ -31,7 +31,7 @@ import com.hzlz.aviation.kernel.event.GVideoEventBus;
 import com.hzlz.aviation.kernel.network.exception.GVideoAPIException;
 import com.hzlz.aviation.kernel.stat.sensordata.GVideoSensorDataManager;
 import com.hzlz.aviation.library.ioc.PluginManager;
-import com.hzlz.aviation.library.widget.widget.GVideoButton;
+import com.hzlz.aviation.library.widget.widget.AviationButton;
 
 import java.net.SocketTimeoutException;
 import java.net.UnknownHostException;
@@ -177,7 +177,7 @@ public final class LoginCodeViewModel extends BaseViewModel {
         }
     }
 
-    public void smsCodeChange(String content, GVideoButton confirmButton) {
+    public void smsCodeChange(String content, AviationButton confirmButton) {
         dataBinding.smsInviteCode = content;
         dataBinding.updateConfirmButtonChange(confirmButton);
     }

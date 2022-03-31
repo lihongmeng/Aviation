@@ -6,13 +6,13 @@
       android:gravity="center"
       android:orientation="vertical">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:id="@+id/function_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_back_black" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:id="@+id/function_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
         android:textColor="@color/t_color06"
         android:textSize="@dimen/t_font01" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:id="@+id/function_button"
         android:layout_width="160dp"
         android:layout_height="32dp"

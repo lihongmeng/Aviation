@@ -14,8 +14,8 @@ import androidx.annotation.StringRes;
 import androidx.annotation.StyleRes;
 
 import com.hzlz.aviation.library.widget.R;
-import com.hzlz.aviation.library.widget.widget.GVideoLinearLayout;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationLinearLayout;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -138,7 +138,7 @@ public class GVideoBottomSheetItemDialog extends GVideoBottomSheetDialog
    * 生成视图
    */
   private void generateView() {
-    GVideoLinearLayout linearLayout = new GVideoLinearLayout(getContext());
+    AviationLinearLayout linearLayout = new AviationLinearLayout(getContext());
     linearLayout.setOrientation(LinearLayout.VERTICAL);
     // 循环列表添加 Item 和 分割线
     int size = mItemList.size();
@@ -146,7 +146,7 @@ public class GVideoBottomSheetItemDialog extends GVideoBottomSheetDialog
       // 添加 item
       int style = getItemStyle(i, size);
       ContextThemeWrapper contextWrapper = new ContextThemeWrapper(getContext(), style);
-      GVideoTextView item = new GVideoTextView(contextWrapper, null, 0);
+      AviationTextView item = new AviationTextView(contextWrapper, null, 0);
       item.setText(mItemList.get(i));
       item.setTag(R.integer.bottom_sheet_item_dialog_tag, i);
       item.setOnClickListener(this);
@@ -164,7 +164,7 @@ public class GVideoBottomSheetItemDialog extends GVideoBottomSheetDialog
     }
     // 添加取消
     ContextThemeWrapper contextWrapper = new ContextThemeWrapper(getContext(), mCancelStyleResId);
-    GVideoTextView cancel = new GVideoTextView(contextWrapper, null, 0);
+    AviationTextView cancel = new AviationTextView(contextWrapper, null, 0);
     cancel.setText(mCancelText);
     cancel.setTag(R.integer.bottom_sheet_item_dialog_tag, CANCEL_TAG);
     cancel.setOnClickListener(this);

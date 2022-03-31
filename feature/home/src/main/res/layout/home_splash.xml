@@ -2,12 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:id="@+id/splash_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -22,6 +22,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
 </layout>

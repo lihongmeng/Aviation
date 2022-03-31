@@ -15,7 +15,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 import com.hzlz.aviation.kernel.base.R;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 import com.liuwei.android.upnpcast.device.CastDevice;
 
 import org.fourthline.cling.model.meta.Device;
@@ -71,7 +71,7 @@ public class ScreenProjectionAdapter extends BaseAdapter {
             return null;
         }
         convertView = LayoutInflater.from(context).inflate(R.layout.item_screen_projection, null);
-        ((GVideoTextView) convertView.findViewById(R.id.name)).setText(castDevice.getName());
+        ((AviationTextView) convertView.findViewById(R.id.name)).setText(castDevice.getName());
 
         ImageView loading = convertView.findViewById(R.id.loading);
         if (isLoading && position == currentSelectedIndex) {

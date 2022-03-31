@@ -21,14 +21,14 @@
 
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
         style="@style/feed_layout_margin_basic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:onClick="@{(view)->videoBind.onItemClick(view)}">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/title"
             style="@style/feed_title_style"
             android:text="@{feedModel.title}"
@@ -115,7 +115,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                    <com.hzlz.aviation.library.widget.widget.AviationTextView
                         android:id="@+id/vertical_title"
                         style="@style/feed_text_style_match_wrap"
                         android:text="@{feedModel.title}"
@@ -146,7 +146,7 @@
                             app:indicator_spacing="@dimen/DIMEN_2DP"
                             app:indicator_width="@dimen/DIMEN_2D5P" />
 
-                        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                        <com.hzlz.aviation.library.widget.widget.AviationTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:includeFontPadding="false"
@@ -187,6 +187,6 @@
 
         </androidx.cardview.widget.CardView>
 
-    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
 </layout>

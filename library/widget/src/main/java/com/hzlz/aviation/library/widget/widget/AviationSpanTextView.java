@@ -24,18 +24,18 @@ import java.util.List;
  * date : 2021/2/23
  * desc :
  **/
-public class GVideoSpanTextView extends GVideoTextView{
+public class AviationSpanTextView extends AviationTextView {
 
     private HashMap<String,Integer> contentColor;
     private HashMap<String,ClickableSpan> contentClick;
     private List<String> contentList;
     private StringBuilder contentAll;
 
-    public GVideoSpanTextView(Context context) {
+    public AviationSpanTextView(Context context) {
         super(context);
     }
 
-    public GVideoSpanTextView(Context context, AttributeSet attrs) {
+    public AviationSpanTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         contentColor = new HashMap<>();
         contentClick = new HashMap<>();
@@ -43,7 +43,7 @@ public class GVideoSpanTextView extends GVideoTextView{
         contentAll = new StringBuilder();
     }
 
-    public GVideoSpanTextView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public AviationSpanTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
@@ -54,7 +54,7 @@ public class GVideoSpanTextView extends GVideoTextView{
         contentAll.delete(0,contentAll.length());
     }
 
-    public GVideoSpanTextView addText(String text, @ColorRes int textColor,ClickableSpan clickableSpan){
+    public AviationSpanTextView addText(String text, @ColorRes int textColor, ClickableSpan clickableSpan){
         if (!TextUtils.isEmpty(text)) {
             contentAll.append(text);
             contentColor.put(text, textColor);

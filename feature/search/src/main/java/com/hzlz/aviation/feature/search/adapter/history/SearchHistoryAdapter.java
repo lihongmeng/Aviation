@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.flexbox.FlexboxLayoutManager;
 import com.hzlz.aviation.feature.search.SearchViewModel;
 import com.hzlz.aviation.feature.search.db.entity.SearchHistoryEntity;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 import com.hzlz.aviation.feature.search.R;
 
 import java.util.ArrayList;
@@ -65,7 +65,7 @@ public class SearchHistoryAdapter extends RecyclerView.Adapter<SearchHistoryAdap
     @NonNull
     @Override
     public Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        GVideoTextView textView = new GVideoTextView(mContext);
+        AviationTextView textView = new AviationTextView(mContext);
         textView.setGravity(Gravity.CENTER_VERTICAL);
         textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, mContext.getResources().getDimension(R.dimen.t_font04));
         textView.setTextColor(mContext.getResources().getColor(R.color.t_color01));
@@ -88,8 +88,8 @@ public class SearchHistoryAdapter extends RecyclerView.Adapter<SearchHistoryAdap
         holder.textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (view instanceof GVideoTextView && mSearchViewModel != null) {
-                    CharSequence sequence = ((GVideoTextView) view).getText();
+                if (view instanceof AviationTextView && mSearchViewModel != null) {
+                    CharSequence sequence = ((AviationTextView) view).getText();
                     if (sequence != null && !TextUtils.isEmpty(sequence.toString())) {
                         mSearchViewModel.onHistoryWordItemClick(sequence.toString());
                     }

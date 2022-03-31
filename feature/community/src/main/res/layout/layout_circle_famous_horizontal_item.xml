@@ -7,7 +7,7 @@
             type="com.hzlz.aviation.kernel.base.model.circle.CircleFamous" />
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -35,7 +35,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 tools:src="@drawable/ic_default_avatar" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/header_authentication"
                 android:layout_width="@dimen/DIMEN_7DP"
                 android:layout_height="@dimen/DIMEN_7DP"
@@ -47,6 +47,6 @@
 
         </com.hzlz.aviation.library.widget.widget.GvideoRConstraintLayout>
 
-    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
 </layout>

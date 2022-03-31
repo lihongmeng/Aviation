@@ -17,7 +17,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:visibility="visible" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/shadow"
             android:layout_width="@dimen/DIMEN_45DP"
             android:layout_height="@dimen/DIMEN_18DP"
@@ -29,7 +29,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:visibility="visible" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/icon_bg"
             android:layout_width="@dimen/DIMEN_48DP"
             android:layout_height="@dimen/DIMEN_48DP"
@@ -41,7 +41,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:background="@drawable/shape_corners_16dp_gradient_ffffff_00ffffff_90" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/icon"
             android:layout_width="@dimen/DIMEN_43DP"
             android:layout_height="@dimen/DIMEN_29DP"
@@ -50,7 +50,7 @@
             app:layout_constraintRight_toRightOf="@id/icon_bg"
             app:layout_constraintTop_toTopOf="@id/icon_bg" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

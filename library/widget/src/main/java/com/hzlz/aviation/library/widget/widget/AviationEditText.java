@@ -11,17 +11,17 @@ import androidx.appcompat.widget.AppCompatEditText;
  *
  * @since 2020-01-13 14:42
  */
-public class GVideoEditText extends AppCompatEditText {
+public class AviationEditText extends AppCompatEditText {
   //<editor-fold desc="构造函数">
-  public GVideoEditText(Context context) {
+  public AviationEditText(Context context) {
     super(context);
   }
 
-  public GVideoEditText(Context context, AttributeSet attrs) {
+  public AviationEditText(Context context, AttributeSet attrs) {
     super(context, attrs);
   }
 
-  public GVideoEditText(Context context, AttributeSet attrs, int defStyleAttr) {
+  public AviationEditText(Context context, AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
   }
   //</editor-fold>

@@ -23,7 +23,7 @@
         app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}"
         app:srlHeaderHeight="75dp">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/white">
@@ -42,7 +42,7 @@
                 android:scrollbars="none"
                 app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
     </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
 

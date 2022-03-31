@@ -21,7 +21,7 @@
     style="@style/AdapterAvatar.Container"
     android:onClick="@{(v)->adapter.onItemClicked(v,position)}">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
       style="@style/AdapterAvatar.Avatar"
       android:layout_centerInParent="true"
         app:placeholder='@{@drawable/ic_default_avatar}'
@@ -34,7 +34,7 @@
       android:layout_height="match_parent"
       android:visibility="@{avatarInfo.checkVisibility}" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
       style="@style/AdapterAvatar.Check"
       android:layout_alignParentEnd="true"
       android:layout_alignParentBottom="true"

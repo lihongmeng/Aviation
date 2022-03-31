@@ -79,8 +79,8 @@ import com.hzlz.aviation.kernel.stat.stat.StatPid;
 import com.hzlz.aviation.library.ioc.PluginManager;
 import com.hzlz.aviation.library.util.ResourcesUtils;
 import com.hzlz.aviation.library.widget.dialog.GVideoBottomSheetItemDialog;
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
 import com.hzlz.aviation.library.widget.widget.IGVideoRefreshLoadMoreView;
 
 import java.io.File;
@@ -675,10 +675,10 @@ public class CircleDetailViewModel extends BaseViewModel {
         );
         rootView.setLayoutParams(lp);
 
-        GVideoTextView newest = rootView.findViewById(R.id.newest);
-        GVideoTextView hottest = rootView.findViewById(R.id.hottest);
-        GVideoImageView newestCheck = rootView.findViewById(R.id.newest_check);
-        GVideoImageView hottestCheck = rootView.findViewById(R.id.hottest_check);
+        AviationTextView newest = rootView.findViewById(R.id.newest);
+        AviationTextView hottest = rootView.findViewById(R.id.hottest);
+        AviationImageView newestCheck = rootView.findViewById(R.id.newest_check);
+        AviationImageView hottestCheck = rootView.findViewById(R.id.hottest_check);
 
         if (sortType == DEFAULT_NEWEST_SORT) {
             newest.setTextColor(ResourcesUtils.getColor(R.color.color_333333));

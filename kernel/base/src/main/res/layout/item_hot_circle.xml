@@ -11,14 +11,14 @@
         android:padding="@dimen/DIMEN_10DP"
         android:background="@drawable/shape_solid_ffffff_corners_5dp">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/cover"
             android:layout_width="@dimen/DIMEN_65DP"
             android:layout_height="@dimen/DIMEN_65DP"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="27dp"
@@ -45,7 +45,7 @@
             app:layout_constraintLeft_toRightOf="@id/cover"
             app:layout_constraintBottom_toBottomOf="@id/cover" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/join_enter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

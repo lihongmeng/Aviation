@@ -13,13 +13,13 @@
     <import type="android.view.View" />
   </data>
 
-  <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/AdapterComposition.Container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:onClick="@{(v)->adapter.onItemClick(v,position)}">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
       android:id="@+id/image_view_cover"
       style="@style/AdapterComposition.Cover"
       android:layout_width="0dp"
@@ -32,7 +32,7 @@
       app:layout_constraintTop_toTopOf="parent"
       app:roundedCorners="@{@dimen/adapter_composition_media_cover_radius}" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
       android:id="@+id/image_view_privacy_tag"
       style="@style/AdapterComposition.PrivacyTag"
       android:src="@drawable/ic_privacy_tag"
@@ -40,5 +40,5 @@
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintRight_toRightOf="parent" />
 
-  </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+  </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 </layout>

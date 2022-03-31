@@ -35,7 +35,7 @@ import com.hzlz.aviation.feature.record.databinding.DialogInputCommentBinding;
 import com.hzlz.aviation.feature.record.recorder.model.ChooseImageListModel;
 import com.hzlz.aviation.feature.record.recorder.model.VodVideoCreateModel;
 import com.hzlz.aviation.feature.record.recorder.repository.VideoRecordRepository;
-import com.hzlz.aviation.feature.record.recorder.view.soundrecord.GVideoSoundRecordView;
+import com.hzlz.aviation.feature.record.recorder.view.soundrecord.AviationSoundRecordView;
 import com.hzlz.aviation.kernel.base.BaseViewModel;
 import com.hzlz.aviation.kernel.base.Constant;
 import com.hzlz.aviation.kernel.base.permission.PermissionCallback;
@@ -210,7 +210,7 @@ public class CommentInputDialog extends GVideoBottomSheetDialog {
             mBinding.soundRecord.setVisibility(View.VISIBLE);
         });
 
-        mBinding.soundRecord.setCompleteListener(new GVideoSoundRecordView.OperationListener() {
+        mBinding.soundRecord.setCompleteListener(new AviationSoundRecordView.OperationListener() {
 
             @Override
             public void startRequestPermission() {

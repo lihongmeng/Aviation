@@ -19,16 +19,16 @@
 
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         style="@style/feed_layout_margin"
         android:id="@+id/root">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:id="@+id/layout_top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/title"
                 style="@style/feed_title_style"
                 android:text="@{feedModel.qaTitle}"
@@ -62,7 +62,7 @@
                 app:oriImageData="@{feedModel.oriUrls}"
                 tools:visibility="visible" />
 
-            <com.hzlz.aviation.kernel.liteav.GVideoSoundView
+            <com.hzlz.aviation.kernel.liteav.AviationSoundView
                 android:id="@+id/sound_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
                 app:layout_constraintWidth_percent=".9"
                 tools:visibility="visible" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
         <include
             android:id="@+id/feed_layout_qa"
@@ -84,6 +84,6 @@
             app:feedModel="@{feedModel}"
             app:layout_constraintTop_toBottomOf="@id/layout_top" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
 </layout>

@@ -22,7 +22,7 @@ import com.hzlz.aviation.kernel.base.plugin.CirclePlugin;
 import com.hzlz.aviation.kernel.base.plugin.DetailPagePlugin;
 import com.hzlz.aviation.kernel.base.plugin.StatPlugin;
 import com.hzlz.aviation.library.ioc.PluginManager;
-import com.hzlz.aviation.library.widget.widget.GVideoBanner;
+import com.hzlz.aviation.library.widget.widget.AviationBanner;
 import com.youth.banner.adapter.BannerImageAdapter;
 import com.youth.banner.config.IndicatorConfig;
 import com.youth.banner.holder.BannerImageHolder;
@@ -51,7 +51,7 @@ public class BannerUtils {
      * @param banner Banner控件
      */
     @SuppressWarnings({"rawtypes", "unchecked"})
-    public static void initDefaultBanner(BannerModel model, GVideoBanner banner,String pid) {
+    public static void initDefaultBanner(BannerModel model, AviationBanner banner, String pid) {
         Context context = banner.getContext();
         if (context == null) {
             return;
@@ -100,8 +100,8 @@ public class BannerUtils {
      * @param isWhite   true 未选择时白色指示器， 否则黑色
      */
     @SuppressLint("ResourceType")
-    public static void initDefaultIndicator(GVideoBanner banner, boolean isWhite, @IndicatorConfig.Direction int gravity,
-                    @DimenRes int rightMargin, @DimenRes int bottomMargin) {
+    public static void initDefaultIndicator(AviationBanner banner, boolean isWhite, @IndicatorConfig.Direction int gravity,
+                                            @DimenRes int rightMargin, @DimenRes int bottomMargin) {
         if (banner != null) {
             Context context = banner.getContext();
             IndicatorConfig.Margins margins = new IndicatorConfig.Margins();

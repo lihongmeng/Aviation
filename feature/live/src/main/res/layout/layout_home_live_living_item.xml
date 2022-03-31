@@ -7,7 +7,7 @@
     android:background="@color/color_ffffff"
     android:layout_height="wrap_content">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:id="@+id/cover"
         android:layout_width="match_parent"
         android:layout_height="@dimen/DIMEN_202DP"
@@ -21,7 +21,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@id/cover" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
             app:indicator_spacing="@dimen/DIMEN_2DP"
             app:indicator_width="@dimen/DIMEN_2D5P" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/live_type"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/DIMEN_15DP"
@@ -84,7 +84,7 @@
         app:layout_constraintTop_toTopOf="@id/live_type_background"
         app:layout_constraintBottom_toBottomOf="@id/live_type_background" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:id="@+id/herald_icon"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/DIMEN_15DP"
@@ -95,7 +95,7 @@
         app:layout_constraintTop_toTopOf="@id/herald_background"
         app:layout_constraintBottom_toBottomOf="@id/herald_background" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:id="@+id/herald_time"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/DIMEN_15DP"

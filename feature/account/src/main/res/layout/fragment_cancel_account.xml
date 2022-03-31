@@ -7,7 +7,7 @@
         />
     <import type="android.widget.ImageView" />
   </data>
-  <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.AviationLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:orientation="vertical"
@@ -18,20 +18,20 @@
         android:background="@color/c_bg01"
         android:fillViewport="true"
         >
-      <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+      <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
           style="@style/FragmentCancelAccount.Container"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           >
         <!--提示-->
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_view_important_tip_title"
             style="@style/FragmentCancelAccount.ImportTipTitle"
             android:text="@string/fragment_cancel_account_import_tip_title"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             />
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_view_important_tip_content"
             style="@style/FragmentCancelAccount.ImportTip"
             android:text="@string/fragment_cancel_account_import_tip_content"
@@ -39,14 +39,14 @@
             app:layout_constraintTop_toBottomOf="@id/text_view_important_tip_title"
             />
         <!--谨记-->
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_view_remember_title"
             style="@style/FragmentCancelAccount.RememberTitle"
             android:text="@string/fragment_cancel_account_remember_title"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_view_important_tip_content"
             />
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_view_remember_content"
             style="@style/FragmentCancelAccount.Remember"
             android:layout_height="0dp"
@@ -56,14 +56,14 @@
             app:layout_constraintTop_toBottomOf="@id/text_view_remember_title"
             />
         <!--Check-->
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/image_view_check"
             style="@style/FragmentCancelAccount.CheckAgreement"
             android:onClick="@{(v)->viewModel.readCheck((ImageView)v)}"
             app:layout_constraintBottom_toTopOf="@id/text_view_confirm"
             app:layout_constraintTop_toBottomOf="@id/text_view_remember_content"
             />
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_view_read_and_agree"
             style="@style/FragmentCancelAccount.AgreementTip"
             android:text="@string/all_read_and_agree"
@@ -71,7 +71,7 @@
             app:layout_constraintLeft_toRightOf="@id/image_view_check"
             app:layout_constraintTop_toTopOf="@id/image_view_check"
             />
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             style="@style/FragmentCancelAccount.CancelContact"
             android:onClick="@{(v)->viewModel.showCancelAccountContract(v)}"
             android:text="@string/fragment_cancel_account_cancel_account_contract"
@@ -101,7 +101,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="@id/text_view_confirm"
             />
-      </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+      </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
     </com.hzlz.aviation.library.widget.widget.GVideoScrollView>
-  </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+  </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 </layout>

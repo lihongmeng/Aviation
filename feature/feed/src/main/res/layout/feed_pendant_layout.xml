@@ -6,7 +6,7 @@
             type="com.hzlz.aviation.kernel.base.model.video.PendantModel"
             />
     </data>
-    <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+    <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/pendant_layout"
@@ -17,7 +17,7 @@
         android:layout_height="@dimen/feed_pendant_height"
         android:background="@drawable/feed_pendant_background_drawable">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/pendant_text"
             android:layout_width="@dimen/feed_pendant_title_width"
             android:layout_height="@dimen/feed_pendant_title_height"
@@ -44,5 +44,5 @@
             android:layout_gravity="right|center"
             android:layout_marginRight="@dimen/feed_pendant_video_img_margin_right"
             android:src="@drawable/feed_video_img_small"/>
-    </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationFrameLayout>
 </layout>

@@ -14,12 +14,12 @@
         <import type="android.view.View" />
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:id="@+id/root_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/content_tag"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/DIMEN_22DP"
@@ -32,13 +32,13 @@
             app:layout_constraintStart_toStartOf="parent"
             android:visibility="@{feedModel.isShowTag?View.VISIBLE:View.GONE}" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:id="@+id/layout_content"
             android:layout_marginBottom="@dimen/DIMEN_14DP"
             app:layout_constraintTop_toBottomOf="@id/content_tag"
             style="@style/feed_layout_margin">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/title"
                 style="@style/feed_text_style_news"
                 android:layout_width="0dp"
@@ -98,7 +98,7 @@
                 app:layout_constraintStart_toStartOf="@id/image"
                 app:layout_constraintTop_toTopOf="@id/image" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
         <View
             android:layout_width="match_parent"
@@ -107,6 +107,6 @@
             android:layout_marginTop="@dimen/DIMEN_10DP"
             app:layout_constraintTop_toBottomOf="@id/layout_content" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
 </layout>

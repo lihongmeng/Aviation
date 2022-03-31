@@ -51,7 +51,7 @@ import com.hzlz.aviation.kernel.event.GVideoEventBus;
 import com.hzlz.aviation.library.ioc.PluginManager;
 import com.hzlz.aviation.library.util.AppManager;
 import com.hzlz.aviation.library.util.LogUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
 import com.hzlz.aviation.feature.live.R;
 
 import java.util.ArrayList;
@@ -314,7 +314,7 @@ public class AudienceFragment extends BaseFragment<FragmentAudienceBinding> {
         }
         // 再通过那一项的index获取对应的View
         View target = microConnectAnchorViewHelper.getChildAt(anchorInfo.index);
-        GVideoImageView microStatus = target.findViewById(R.id.micro_status);
+        AviationImageView microStatus = target.findViewById(R.id.micro_status);
 
         if (TextUtils.isEmpty(anchorInfo.userid)) {
             microStatus.setVisibility(View.GONE);

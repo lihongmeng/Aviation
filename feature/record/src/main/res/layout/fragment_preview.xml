@@ -21,7 +21,7 @@
             android:layout_height="match_parent"
             />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/preview_back_cancel"
             android:layout_width="@dimen/fragment_record_cancel"
             android:layout_height="@dimen/fragment_record_cancel"
@@ -30,7 +30,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             android:onClick="@{v ->viewModel.onPreviewBackCancel(v)}"/>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/choose_item_img"
             android:layout_width="@dimen/choose_num_img_size"
             android:layout_height="@dimen/choose_num_img_size"
@@ -42,7 +42,7 @@
             android:visibility="@{viewModel.canShowSelect()? (viewModel.isSelect ? View.GONE : View.VISIBLE) : View.GONE}"
             android:onClick="@{v ->viewModel.onChooseItemImgClick(v)}"/>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/choose_item_text"
             android:layout_width="@dimen/choose_num_img_size"
             android:layout_height="@dimen/choose_num_img_size"
@@ -59,7 +59,7 @@
             android:visibility="@{viewModel.canShowSelect()? (viewModel.isSelect ? View.VISIBLE : View.GONE) : View.GONE}"
             android:onClick="@{v ->viewModel.onChooseItemTextClick(v)}"/>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/preview_select_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

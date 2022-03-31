@@ -7,7 +7,7 @@
         android:layout_height="@dimen/DIMEN_209DP"
         android:background="@color/color_f2f2f2">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/icon_hot_circle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

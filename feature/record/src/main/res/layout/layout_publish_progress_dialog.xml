@@ -10,7 +10,7 @@
         app:background_normal="@color/process_dialog_bg_color"
         app:corner_radius="@dimen/r_r01"
         >
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
             android:text="@string/publish_progress_default_text"
             android:layout_marginBottom="@dimen/publish_progress_margin_bottom"
             />
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

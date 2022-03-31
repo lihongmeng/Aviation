@@ -14,7 +14,7 @@ import androidx.annotation.NonNull;
 import com.hzlz.aviation.kernel.base.Constant;
 import com.hzlz.aviation.kernel.base.R;
 import com.hzlz.aviation.library.util.ResourcesUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 public class FindCircleContent implements Parcelable {
 
@@ -116,7 +116,7 @@ public class FindCircleContent implements Parcelable {
 
     public static void getLiveMomentContent(
             @NonNull final FindCircleContent findCircleContent,
-            GVideoTextView gVideoTextView
+            AviationTextView aviationTextView
     ) {
         if (findCircleContent.type == Constant.FindCircleContentType.LIVE) {
             SpannableString result = new SpannableString(findCircleContent.authorName + " 正在直播");
@@ -126,7 +126,7 @@ public class FindCircleContent implements Parcelable {
                     result.length(),
                     Spanned.SPAN_INCLUSIVE_EXCLUSIVE
             );
-            gVideoTextView.setText(result);
+            aviationTextView.setText(result);
             return;
         }
 
@@ -136,7 +136,7 @@ public class FindCircleContent implements Parcelable {
         if (findCircleContent.type == Constant.FindCircleContentType.TOPIC) {
             if (TextUtils.isEmpty(findCircleContent.topic.authName)
                     && TextUtils.isEmpty(findCircleContent.topic.content)) {
-                gVideoTextView.setText("");
+                aviationTextView.setText("");
                 return;
             }
 
@@ -148,7 +148,7 @@ public class FindCircleContent implements Parcelable {
                         result.length(),
                         Spanned.SPAN_INCLUSIVE_EXCLUSIVE
                 );
-                gVideoTextView.setText(result);
+                aviationTextView.setText(result);
                 return;
             } else {
                 // String authName = AuthUgcReply.getName(findCircleContent.topic.authName, 4);
@@ -175,14 +175,14 @@ public class FindCircleContent implements Parcelable {
                         Spanned.SPAN_INCLUSIVE_EXCLUSIVE
                 );
             }
-            gVideoTextView.setText(result);
+            aviationTextView.setText(result);
             return;
         }
 
         // 内容
         if (TextUtils.isEmpty(findCircleContent.authorName)
                 && TextUtils.isEmpty(findCircleContent.title)) {
-            gVideoTextView.setText("");
+            aviationTextView.setText("");
             return;
         }
 
@@ -218,7 +218,7 @@ public class FindCircleContent implements Parcelable {
                     Spanned.SPAN_INCLUSIVE_EXCLUSIVE
             );
         }
-        gVideoTextView.setText(result);
+        aviationTextView.setText(result);
     }
 
     public SpannableString getLiveSpannableString() {

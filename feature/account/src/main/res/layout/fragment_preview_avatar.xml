@@ -14,7 +14,7 @@
         <import type="android.text.TextUtils"/>
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.hzlz.aviation.library.widget.widget.AviationFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/root"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -47,5 +47,5 @@
             app:border_width_normal="@dimen/DIMEN_1DP"
             app:corner_radius="@dimen/DIMEN_20DP" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationFrameLayout>
 </layout>

@@ -32,7 +32,7 @@ import com.hzlz.aviation.kernel.base.view.recyclerview.BaseRecyclerAdapter;
 import com.hzlz.aviation.kernel.event.GVideoEventBus;
 import com.hzlz.aviation.kernel.media.player.AudioPlayManager;
 import com.hzlz.aviation.library.ioc.PluginManager;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 import com.hzlz.aviation.feature.video.R;
 import com.scwang.smartrefresh.layout.api.RefreshFooter;
 import com.scwang.smartrefresh.layout.api.RefreshHeader;
@@ -263,10 +263,10 @@ public abstract class BaseCommentFragment<T extends ViewDataBinding> extends Bas
         AudioPlayManager.getInstance().release();
     }
 
-    private GVideoTextView footerView;
+    private AviationTextView footerView;
     private View getFootView(){
         if (footerView==null){
-            footerView = new GVideoTextView(getContext());
+            footerView = new AviationTextView(getContext());
             int d60 = getResources().getDimensionPixelOffset(R.dimen.DIMEN_60DP);
             ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,d60);
             footerView.setGravity(Gravity.CENTER);

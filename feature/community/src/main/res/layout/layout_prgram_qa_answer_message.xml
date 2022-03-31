@@ -23,12 +23,12 @@
         app:cardCornerRadius="@dimen/DIMEN_4DP"
         app:cardElevation="@dimen/DIMEN_0DP">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="@dimen/DIMEN_117DP">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/more"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/DIMEN_36DP"
@@ -44,7 +44,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/iv_teacher_question"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/DIMEN_15DP"
@@ -54,7 +54,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/iv_teacher_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                 android:layout_marginTop="@dimen/DIMEN_14DP"
                 app:layout_constraintTop_toBottomOf="@id/iv_teacher_question" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 

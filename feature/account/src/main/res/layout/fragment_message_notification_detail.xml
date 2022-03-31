@@ -8,7 +8,7 @@
       type="com.hzlz.aviation.feature.account.ui.notification.detail.MessageNotificationDetailViewModel" />
   </data>
 
-  <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.AviationLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -27,5 +27,5 @@
         app:adapter="@{viewModel.adapter}"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
     </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
-  </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+  </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 </layout>

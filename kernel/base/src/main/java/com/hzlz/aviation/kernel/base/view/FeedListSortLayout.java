@@ -10,13 +10,13 @@ import androidx.databinding.DataBindingUtil;
 
 import com.hzlz.aviation.kernel.base.R;
 import com.hzlz.aviation.kernel.base.databinding.LayoutFeedListSortBinding;
-import com.hzlz.aviation.library.widget.widget.GVideoLinearLayout;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationLinearLayout;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FeedListSortLayout extends GVideoLinearLayout {
+public class FeedListSortLayout extends AviationLinearLayout {
 
     private Context context;
     private LayoutInflater layoutInflater;
@@ -74,7 +74,7 @@ public class FeedListSortLayout extends GVideoLinearLayout {
         }
         currentIndex=value;
         for (int index = 0; index < childCount; index++) {
-            GVideoTextView itemView = (GVideoTextView) binding.content.getChildAt(index);
+            AviationTextView itemView = (AviationTextView) binding.content.getChildAt(index);
             if (index == currentIndex) {
                 itemView.setBackgroundResource(R.drawable.shape_solid_ffffff_corners_200dp);
                 itemView.setTextColor(ContextCompat.getColor(context, R.color.color_333333));
@@ -97,7 +97,7 @@ public class FeedListSortLayout extends GVideoLinearLayout {
             currentIndex = contentListLength - 1;
         }
         for (int index = 0; index < contentList.size(); index++) {
-            GVideoTextView itemView = (GVideoTextView) layoutInflater.inflate(R.layout.item_feed_list_sort, null, false);
+            AviationTextView itemView = (AviationTextView) layoutInflater.inflate(R.layout.item_feed_list_sort, null, false);
             itemView.setText(contentList.get(index));
             if (index == currentIndex) {
                 itemView.setBackgroundResource(R.drawable.shape_solid_ffffff_corners_200dp);

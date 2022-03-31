@@ -8,7 +8,7 @@
         type="com.hzlz.aviation.feature.account.ui.relation.fans.FansViewModel"
         />
   </data>
-  <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+  <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
       android:id="@+id/fragment_container"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
@@ -31,5 +31,5 @@
           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
           />
     </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
-  </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
+  </com.hzlz.aviation.library.widget.widget.AviationFrameLayout>
 </layout>

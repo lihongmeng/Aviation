@@ -11,7 +11,7 @@
         <import type="android.view.View" />
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:id="@+id/root_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,13 +52,13 @@
             app:layout_constraintTop_toBottomOf="@id/layout"
             app:layout_constraintStart_toEndOf="@id/layout">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoBanner
+            <com.hzlz.aviation.library.widget.widget.AviationBanner
                 android:id="@+id/banner"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/DIMEN_96DP" />
 
         </androidx.cardview.widget.CardView>
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
 </layout>

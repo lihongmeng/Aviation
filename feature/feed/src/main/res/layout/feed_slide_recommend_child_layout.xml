@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="@dimen/DIMEN_125DP"
@@ -14,7 +14,7 @@
             android:background="@drawable/feed_img_background_drawable"
             app:layout_constraintTop_toTopOf="parent"/>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/slide_video_img"
             android:layout_width="@dimen/DIMEN_29DP"
             android:layout_height="@dimen/DIMEN_29DP"
@@ -26,7 +26,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/slide_child_img"
             app:layout_constraintRight_toRightOf="@+id/slide_child_img" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/slide_title_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,5 +39,5 @@
             android:textColor="@color/color_333333"
             app:layout_constraintTop_toBottomOf="@+id/slide_child_img"/>
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 </layout>

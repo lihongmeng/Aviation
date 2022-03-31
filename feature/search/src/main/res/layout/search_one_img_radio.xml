@@ -14,7 +14,7 @@
         <import type="android.text.TextUtils" />
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/normal_recommend_layout"
@@ -22,7 +22,7 @@
         style="@style/feed_layout_margin"
         android:onClick="@{view->detailBind.onLayoutClick(view, detailModel)}">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/content_tag"
             android:text="@string/tab_audios"
             android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
             android:includeFontPadding="false"
             android:textColor="@color/color_333333" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/one_img_img"
             android:layout_width="@dimen/search_sound_img_width"
             android:layout_height="@dimen/r_h03"
@@ -43,7 +43,7 @@
             app:layout_constraintTop_toBottomOf="@id/content_tag"
             app:layout_constraintLeft_toLeftOf="parent"/>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_default_play"
@@ -73,7 +73,7 @@
             app:layout_constraintRight_toLeftOf="@id/guide_line_left"/>
 
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/one_img_title"
             android:layout_width="@dimen/search_one_img_title_width"
             android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
             app:layout_constraintBottom_toTopOf="@+id/one_img_source"
             app:layout_constraintVertical_chainStyle="packed"/>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/one_img_source"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
             app:layout_constraintTop_toBottomOf="@+id/one_img_title"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/img_tag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -112,5 +112,5 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 </layout>

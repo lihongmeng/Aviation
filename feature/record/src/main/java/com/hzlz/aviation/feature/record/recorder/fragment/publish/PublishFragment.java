@@ -43,7 +43,7 @@ import com.hzlz.aviation.feature.record.recorder.dialog.ProcessVideoDialog;
 import com.hzlz.aviation.feature.record.recorder.helper.VideoChooseHelper;
 import com.hzlz.aviation.feature.record.recorder.model.ChooseImageListModel;
 import com.hzlz.aviation.feature.record.recorder.model.ChooseVideoModel;
-import com.hzlz.aviation.feature.record.recorder.view.soundrecord.GVideoSoundRecordView;
+import com.hzlz.aviation.feature.record.recorder.view.soundrecord.AviationSoundRecordView;
 import com.hzlz.aviation.kernel.base.BaseFragment;
 import com.hzlz.aviation.kernel.base.Constant;
 import com.hzlz.aviation.kernel.base.StaticParams;
@@ -155,7 +155,7 @@ public class PublishFragment extends BaseFragment<LayoutPublishBinding> {
         });
 
         // 录音结果回调
-        mBinding.soundRecord.setCompleteListener(new GVideoSoundRecordView.OperationListener() {
+        mBinding.soundRecord.setCompleteListener(new AviationSoundRecordView.OperationListener() {
 
             @Override
             public void startRequestPermission() {
@@ -993,7 +993,7 @@ public class PublishFragment extends BaseFragment<LayoutPublishBinding> {
      */
     private void setImageButtonEnableStatus(boolean enableStatus) {
         mBinding.picIcon.setTag(enableStatus);
-        mBinding.picIcon.setImageResource(enableStatus ? R.drawable.icon_publish_pic_enable : R.drawable.icon_publish_pic_disable);
+        mBinding.picIcon.setImageResource(enableStatus ? R.drawable.icon_publish_pic : R.drawable.icon_publish_pic_disable);
     }
 
     /**
@@ -1003,7 +1003,7 @@ public class PublishFragment extends BaseFragment<LayoutPublishBinding> {
      */
     private void setVideoButtonEnableStatus(boolean enableStatus) {
         mBinding.videoIcon.setTag(enableStatus);
-        mBinding.videoIcon.setImageResource(enableStatus ? R.drawable.icon_publish_video_enable : R.drawable.icon_publish_video_disable);
+        mBinding.videoIcon.setImageResource(enableStatus ? R.drawable.icon_publish_video : R.drawable.icon_publish_video_disable);
     }
 
     /**

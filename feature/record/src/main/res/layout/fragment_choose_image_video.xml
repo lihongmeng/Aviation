@@ -8,13 +8,13 @@
             />
         <import type="android.view.View" />
     </data>
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:id="@+id/choose_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/back_choose"
             android:layout_width="@dimen/fragment_record_cancel"
             android:layout_height="@dimen/fragment_record_cancel"
@@ -22,7 +22,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/fragment_record_cancel"
             android:layout_gravity="center_horizontal"
@@ -45,7 +45,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintBottom_toTopOf="@id/select_num_text" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/select_num_text"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/fragment_choose_bottom_height"
@@ -58,7 +58,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/select_num_time"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/fragment_choose_bottom_height"
@@ -72,7 +72,7 @@
             app:layout_constraintLeft_toRightOf="@id/select_num_text"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/button_finish"
             android:layout_width="@dimen/fragment_choose_finish_button_width"
             android:layout_height="@dimen/fragment_choose_finish_button_height"
@@ -94,6 +94,6 @@
             android:layout_height="match_parent"
             android:visibility="gone" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
 </layout>

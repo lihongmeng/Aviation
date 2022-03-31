@@ -19,7 +19,7 @@
         android:orientation="vertical">
 
         <!--换绑手机号-->
-        <com.hzlz.aviation.library.widget.widget.GVideoCellView
+        <com.hzlz.aviation.library.widget.widget.AviationCellView
             android:id="@+id/item_rebind_phone"
             style="@style/FragmentAccountSecurityStyle.Cell.Phone"
             android:onClick="@{(v)->viewModel.rebindPhoneNumber(v)}"
@@ -27,7 +27,7 @@
             app:cvRightText="@{user.encryptedPhoneNumberWithCountryCode}" />
 
         <!--实名认证-->
-        <com.hzlz.aviation.library.widget.widget.GVideoCellView
+        <com.hzlz.aviation.library.widget.widget.AviationCellView
             android:id="@+id/item_rebind_real_name_authentication"
             style="@style/FragmentAccountSecurityStyle.Cell"
             android:layout_below="@id/item_rebind_phone"
@@ -39,7 +39,7 @@
             app:cvShowRightIcon="@{user.canVerifyIdentity}" />
 
         <!--注销账号-->
-        <com.hzlz.aviation.library.widget.widget.GVideoCellView
+        <com.hzlz.aviation.library.widget.widget.AviationCellView
             android:id="@+id/item_cancel_account"
             style="@style/FragmentAccountSecurityStyle.Cell"
             android:layout_below="@id/item_rebind_real_name_authentication"
@@ -48,7 +48,7 @@
             app:cvShowBottomDriver="false" />
 
         <!--退出-->
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             style="@style/FragmentAccountSecurityStyle.Logout"
             android:layout_width="match_parent"
             android:layout_alignParentBottom="true"

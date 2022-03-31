@@ -16,7 +16,7 @@ import com.hzlz.aviation.kernel.network.observer.BaseResponseObserver;
 import com.hzlz.aviation.kernel.runtime.GVideoRuntime;
 import com.hzlz.aviation.library.util.FileUtils;
 import com.hzlz.aviation.library.util.ScreenUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
 import com.liulishuo.filedownloader.BaseDownloadTask;
 import com.liulishuo.filedownloader.FileDownloadListener;
 import com.liulishuo.filedownloader.FileDownloader;
@@ -60,7 +60,7 @@ public class HomeTabUtils {
         prefsWrapper.putInt("openHomeSwitchInteger", openHomeSwitchInteger);
     }
 
-    public void initRecordButton(GVideoImageView imageView) {
+    public void initRecordButton(AviationImageView imageView) {
         if (openHomeSwitchInteger != null && openHomeSwitchInteger == 1) {
             imageView.setImageResource(R.drawable.home_tab_record_drawable2);
         } else {

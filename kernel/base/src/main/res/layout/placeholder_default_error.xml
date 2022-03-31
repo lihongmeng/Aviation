@@ -8,28 +8,28 @@
             type="com.hzlz.aviation.kernel.base.placeholder.DefaultPlaceholderLayout" />
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.hzlz.aviation.library.widget.widget.AviationLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/root"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/error_image"
             style="@style/PlaceholderNetworkNotAvailableStyle.Image"
             android:src="@drawable/ic_network_not_available" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             style="@style/PlaceholderStyle.Text"
             android:text="@string/all_network_not_available" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/retry"
             style="@style/PlaceholderStyle.Button"
             android:onClick="@{(v)->layout.reload(v)}"
             android:text="@string/all_click_to_retry" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
 </layout>

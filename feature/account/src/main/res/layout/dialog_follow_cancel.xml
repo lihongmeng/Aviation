@@ -14,7 +14,7 @@
         app:background_normal="@color/color_ffffff"
         app:corner_radius="@dimen/DIMEN_19DP">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/DIMEN_29DP"

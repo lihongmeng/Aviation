@@ -32,7 +32,7 @@
             android:background="@drawable/shape_gradient_e6000000_00000000_90" />
 
         <!--返回按钮-->
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/iv_back"
             android:layout_width="@dimen/DIMEN_42DP"
             android:layout_height="@dimen/DIMEN_42DP"
@@ -42,7 +42,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <!--分享按钮-->
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/share"
             android:layout_width="@dimen/DIMEN_31DP"
             android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
             app:layout_constraintRight_toRightOf="parent" />
 
         <!--评论按钮-->
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/comment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
             app:layout_constraintRight_toRightOf="@id/share" />
 
         <!--喜欢按钮-->
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/star"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -121,7 +121,7 @@
             app:setContentText="@{videoObservable.contentThanTitle}" />
 
         <!--头像-->
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/avatar"
             android:layout_width="@dimen/DIMEN_40DP"
             android:layout_height="@dimen/DIMEN_40DP"
@@ -136,7 +136,7 @@
             app:placeholder='@{@drawable/ic_default_avatar}' />
 
         <!--关注按钮-->
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/follow"
             android:layout_width="@dimen/DIMEN_40DP"
             android:layout_height="@dimen/DIMEN_16DP"
@@ -149,7 +149,7 @@
             app:layout_constraintTop_toTopOf="@id/avatar" />
 
         <!--用户大V标识-->
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/authentication"
             android:layout_width="@dimen/DIMEN_13DP"
             android:layout_height="@dimen/DIMEN_13DP"
@@ -158,7 +158,7 @@
             app:layout_constraintEnd_toEndOf="@id/avatar" />
 
         <!--用户名称-->
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -180,7 +180,7 @@
             tools:text="123456789123456789123456789123456789" />
 
         <!--用户描述-->
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

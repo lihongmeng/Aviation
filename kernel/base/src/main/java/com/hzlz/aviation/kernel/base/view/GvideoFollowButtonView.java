@@ -10,8 +10,8 @@ import androidx.annotation.StringRes;
 import androidx.core.content.ContextCompat;
 
 import com.hzlz.aviation.kernel.base.R;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 import com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
 
 /**
  * @author huangwei
@@ -21,7 +21,7 @@ import com.hzlz.aviation.library.widget.widget.GVideoTextView;
 public class GvideoFollowButtonView extends GVideoRLinearLayout {
 
     private String followText,unFollowText;
-    private GVideoTextView content;
+    private AviationTextView content;
 
     public GvideoFollowButtonView(Context context) {
         this(context,null);
@@ -58,7 +58,7 @@ public class GvideoFollowButtonView extends GVideoRLinearLayout {
         getHelper().setCornerRadius(radius);
         getHelper().setBorderWidthNormal(borderWidth);
 
-        content = new GVideoTextView(getContext());
+        content = new AviationTextView(getContext());
         addView(content);
 
         content.setTextSize(12);

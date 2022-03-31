@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/feed_slide_layout"
         android:visibility="gone"
@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_10DP"/>
 
-    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
 
 </layout>

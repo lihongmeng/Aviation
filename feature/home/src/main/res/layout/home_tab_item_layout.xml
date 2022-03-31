@@ -6,7 +6,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:id="@+id/tab_icon"
         android:layout_width="@dimen/DIMEN_25DP"
         android:layout_height="@dimen/DIMEN_25DP"
@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:id="@+id/tab_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

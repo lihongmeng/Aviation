@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.hzlz.aviation.library.widget.widget.AviationLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="@dimen/loading_dialog_width"
         android:layout_height="@dimen/loading_dialog_height"
         android:orientation="horizontal"
@@ -8,12 +8,12 @@
         android:background="@color/process_dialog_bg_color"
         app:corner="@dimen/r_r01"
         >
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/image_view_loading"
             style="@style/PlaceholderLoadingStyle.Loading"
             android:src="@drawable/ic_placeholder_loading_icon"
             />
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_view"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -22,5 +22,5 @@
             android:textSize="@dimen/t_font06"
             android:text="@string/process_video_text"
             />
-    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 </layout>

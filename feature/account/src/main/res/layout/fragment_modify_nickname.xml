@@ -16,14 +16,14 @@
       android:background="@color/c_bg01"
       android:orientation="vertical"
       >
-    <com.hzlz.aviation.library.widget.widget.GVideoClearableEditText
+    <com.hzlz.aviation.library.widget.widget.AviationClearableEditText
         android:id="@+id/edit_text_nickname"
         style="@style/FragmentModifyNickname.Nickname"
         android:layout_width="match_parent"
         android:maxLength="@integer/max_nickname_length"
         android:text="@={binding.nickname}"
         />
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         style="@style/FragmentModifyNickname.Counter"
         android:text="@{binding.counter}"
         android:textColor="@{binding.counterMax ? @color/t_color06 : @color/t_color03}"

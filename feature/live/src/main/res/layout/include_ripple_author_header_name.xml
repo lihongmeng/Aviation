@@ -31,7 +31,7 @@
             app:layout_constraintTop_toTopOf="@id/sound_live_ripple_bg"
             tools:visibility="visible" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/sound_live_anchor_name"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/DIMEN_18DP"

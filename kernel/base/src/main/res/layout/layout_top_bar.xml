@@ -4,7 +4,7 @@
     android:layout_height="@dimen/DIMEN_50DP"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="@dimen/DIMEN_50DP"
@@ -13,7 +13,7 @@
         android:textSize="18sp"
         tools:text="1423456" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:id="@+id/back"
         android:layout_width="@dimen/DIMEN_50DP"
         android:layout_height="@dimen/DIMEN_50DP"

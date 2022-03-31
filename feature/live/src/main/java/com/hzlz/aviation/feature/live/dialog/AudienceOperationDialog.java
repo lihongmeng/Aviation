@@ -20,7 +20,7 @@ import com.hzlz.aviation.feature.live.bean.AudienceOperation;
 import com.hzlz.aviation.feature.live.databinding.DialogAudienceOperationBinding;
 import com.hzlz.aviation.library.util.SizeUtils;
 import com.hzlz.aviation.library.widget.dialog.GVideoBottomSheetDialog;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 import com.hzlz.aviation.feature.live.R;
 
 import java.util.ArrayList;
@@ -83,7 +83,7 @@ public class AudienceOperationDialog extends GVideoBottomSheetDialog {
             if (audienceOperation == null) {
                 continue;
             }
-            GVideoTextView itemView = (GVideoTextView) inflater.inflate(
+            AviationTextView itemView = (AviationTextView) inflater.inflate(
                     R.layout.item_audience_operation, container, false);
             itemView.setText(TextUtils.isEmpty(audienceOperation.operation) ? "" : audienceOperation.operation);
             itemView.setOnClickListener(audienceOperation.clickListener);

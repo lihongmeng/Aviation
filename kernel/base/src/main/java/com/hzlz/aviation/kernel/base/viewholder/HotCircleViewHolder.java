@@ -5,17 +5,17 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import com.hzlz.aviation.kernel.base.databinding.ItemHotCircleBinding;
 import com.hzlz.aviation.kernel.base.view.CircleTopicLiveLayout;
 import com.hzlz.aviation.kernel.base.view.recyclerview.BaseRecyclerViewHolder;
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
 import com.hzlz.aviation.library.widget.widget.GVideoRecyclerView;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 public class HotCircleViewHolder extends BaseRecyclerViewHolder<ItemHotCircleBinding> {
 
     private ConstraintLayout root;
-    private GVideoImageView cover;
-    private GVideoTextView name;
+    private AviationImageView cover;
+    private AviationTextView name;
     private GVideoRecyclerView famousCircleLayout;
-    private GVideoImageView joinEnter;
+    private AviationImageView joinEnter;
     private CircleTopicLiveLayout circleTopicLive;
 
     public HotCircleViewHolder(ItemHotCircleBinding binding) {

@@ -9,7 +9,7 @@
 
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="wrap_content"
@@ -17,13 +17,13 @@
         android:paddingStart="@dimen/DIMEN_10DP"
         android:paddingEnd="@dimen/DIMEN_10DP">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/message"
             android:layout_width="@dimen/DIMEN_27DP"
             android:layout_height="@dimen/DIMEN_27DP"
             android:src="@drawable/feed_icon_message_white" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/setting"
             android:layout_width="@dimen/DIMEN_27DP"
             android:layout_height="@dimen/DIMEN_27DP"
@@ -60,6 +60,6 @@
         </com.hzlz.aviation.library.widget.widget.GvideoRConstraintLayout>
 
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
 </layout>

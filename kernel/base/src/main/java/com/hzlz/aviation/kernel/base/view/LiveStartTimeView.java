@@ -10,11 +10,11 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.hzlz.aviation.kernel.base.R;
 import com.hzlz.aviation.library.util.DateUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 public class LiveStartTimeView extends ConstraintLayout {
 
-    private GVideoTextView timeView;
+    private AviationTextView timeView;
 
     public LiveStartTimeView(@NonNull Context context) {
         this(context, null);

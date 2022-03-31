@@ -12,15 +12,15 @@
         <import type="android.view.View" />
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
         style="@style/feed_layout_margin_root">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+        <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
             android:id="@+id/root_layout"
             style="@style/feed_layout_margin"
             android:orientation="vertical">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/content_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/DIMEN_22DP"
@@ -33,12 +33,12 @@
                 app:layout_constraintStart_toStartOf="parent"
                 android:visibility="@{feedModel.isShowTag?View.VISIBLE:View.GONE}" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/title"
                 style="@style/feed_text_style_news"
                 android:text="@{feedModel.title}" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+            <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/DIMEN_5DP"
@@ -98,14 +98,14 @@
                     android:visibility="gone"
                     tools:src="@drawable/liteav_player_bg" />
 
-            </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+            </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
             <include
                 android:id="@+id/bottom"
                 layout="@layout/news_tpl_news_bottom"
                 app:layout_constraintTop_toBottomOf="@id/image" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
         <View
             android:layout_marginTop="@dimen/DIMEN_14DP"
@@ -113,6 +113,6 @@
             android:layout_height="@dimen/DIMEN_D5P"
             android:background="@color/c_line02" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
 </layout>

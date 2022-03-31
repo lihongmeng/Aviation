@@ -11,17 +11,17 @@ import androidx.constraintlayout.widget.ConstraintLayout;
  *
  * @since 2020-01-13 14:39
  */
-public class GVideoConstraintLayout extends ConstraintLayout {
+public class AviationConstraintLayout extends ConstraintLayout {
   //<editor-fold desc="构造函数">
-  public GVideoConstraintLayout(Context context) {
+  public AviationConstraintLayout(Context context) {
     super(context);
   }
 
-  public GVideoConstraintLayout(Context context, AttributeSet attrs) {
+  public AviationConstraintLayout(Context context, AttributeSet attrs) {
     super(context, attrs);
   }
 
-  public GVideoConstraintLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+  public AviationConstraintLayout(Context context, AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
   }
   //</editor-fold>

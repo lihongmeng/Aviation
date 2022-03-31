@@ -10,7 +10,7 @@
 
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingBottom="@dimen/DIMEN_10DP"
@@ -38,14 +38,14 @@
                 app:background_normal="@color/color_f7f7f7"
                 app:corner_radius="@dimen/DIMEN_4DP">
 
-                <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.AviationImageView
                     android:layout_width="@dimen/DIMEN_19DP"
                     android:layout_height="@dimen/DIMEN_19DP"
                     android:src="@drawable/ic_qa_no_img" />
 
             </com.ruffian.library.widget.RLinearLayout>
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:textColor="@color/color_999999"
                 android:text="直接提问"
                 android:textSize="@dimen/sp_12"
@@ -54,7 +54,7 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"/>
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/ask_question"
                 style="@style/StyleAskQuestionButton"
                 android:layout_marginEnd="@dimen/DIMEN_17DP"
@@ -65,6 +65,6 @@
 
         </com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout>
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
 </layout>

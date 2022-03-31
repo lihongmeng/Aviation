@@ -13,7 +13,7 @@
 
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -30,11 +30,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+                <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                    <com.hzlz.aviation.library.widget.widget.AviationImageView
                         android:id="@+id/top_image"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/DIMEN_123DP"
@@ -42,7 +42,7 @@
                         app:imageData="@{videoModel.headPic}"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                    <com.hzlz.aviation.library.widget.widget.AviationTextView
                         android:id="@+id/title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
                         app:layout_constraintTop_toBottomOf="@id/top_image"
                         android:text="@{videoModel.title}" />
 
-                    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                    <com.hzlz.aviation.library.widget.widget.AviationTextView
                         android:id="@+id/content"
                         style="@style/TextStyle.t_color02.t_font02"
                         android:layout_width="match_parent"
@@ -86,7 +86,7 @@
                         android:layout_marginTop="@dimen/DIMEN_14DP"
                         app:layout_constraintTop_toBottomOf="@id/special_channel" />
 
-                    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                    <com.hzlz.aviation.library.widget.widget.AviationTextView
                         android:id="@+id/special_channel_name"
                         style="@style/TextStyle.t_color01.t_font03"
                         android:layout_marginTop="@dimen/DIMEN_15DP"
@@ -106,7 +106,7 @@
                         android:nestedScrollingEnabled="false"
                         app:layout_constraintTop_toBottomOf="@id/special_channel_name" />
 
-                </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+                </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
             </androidx.core.widget.NestedScrollView>
 
@@ -117,5 +117,5 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 </layout>

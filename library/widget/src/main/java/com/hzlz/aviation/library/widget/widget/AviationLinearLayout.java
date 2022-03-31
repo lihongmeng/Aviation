@@ -12,18 +12,18 @@ import androidx.annotation.Nullable;
  *
  * @since 2020-01-20 11:08
  */
-public class GVideoLinearLayout extends LinearLayout {
+public class AviationLinearLayout extends LinearLayout {
   //<editor-fold desc="构造函数">
-  public GVideoLinearLayout(Context context) {
+  public AviationLinearLayout(Context context) {
     super(context);
   }
 
-  public GVideoLinearLayout(Context context,
-      @Nullable AttributeSet attrs) {
+  public AviationLinearLayout(Context context,
+                              @Nullable AttributeSet attrs) {
     super(context, attrs);
   }
 
-  public GVideoLinearLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+  public AviationLinearLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
   }
   //</editor-fold>

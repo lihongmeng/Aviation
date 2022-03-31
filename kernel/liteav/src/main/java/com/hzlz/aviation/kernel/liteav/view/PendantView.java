@@ -22,12 +22,12 @@ import com.hzlz.aviation.kernel.base.model.video.PendantModel;
 import com.hzlz.aviation.kernel.liteav.R;
 import com.hzlz.aviation.kernel.liteav.player.GVideoPlayerListener;
 import com.hzlz.aviation.kernel.runtime.GVideoRuntime;
-import com.hzlz.aviation.library.widget.widget.GVideoFrameLayout;
+import com.hzlz.aviation.library.widget.widget.AviationFrameLayout;
 
 /**
  * 播放器挂件
  */
-public class PendantView extends GVideoFrameLayout implements View.OnClickListener {
+public class PendantView extends AviationFrameLayout implements View.OnClickListener {
   private static final int THOUSAND = 1000;
   private PendantModel mPendant;
 

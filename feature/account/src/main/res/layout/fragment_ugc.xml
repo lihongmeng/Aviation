@@ -29,7 +29,7 @@
       app:ksrlv_enableLoadMore="false"
       app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}"
       >
-    <com.hzlz.aviation.library.widget.widget.GVideoCoordinatorLayout
+    <com.hzlz.aviation.library.widget.widget.AviationCoordinatorLayout
         android:id="@+id/recycler_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -49,12 +49,12 @@
           app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
 
 
-      <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+      <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
           android:layout_marginTop="@dimen/DIMEN_29DP"
           android:layout_width="match_parent"
           android:layout_height="wrap_content">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/back"
             style="@style/Toolbar.LeftBack"
             android:onClick="@{(v)->viewModel.back(v)}"
@@ -66,7 +66,7 @@
             app:vabVisibleWhenScrollUp="false"
             />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/share"
             android:layout_width="@dimen/DIMEN_28DP"
             android:layout_height="@dimen/DIMEN_28DP"
@@ -81,10 +81,10 @@
             app:vabVisibleWhenScrollUp="false"
             />
 
-      </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+      </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
       <!--ToolBar-->
-      <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+      <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
           android:id="@+id/close_left"
           style="@style/FragmentUgcStyle.ToolBarContainer"
           android:layout_height="wrap_content"
@@ -93,11 +93,11 @@
           app:vabReferenceViewId="@id/app_bar_layout"
           app:vabVisibleSubHeight="@dimen/fragment_ugc_tab_height"
           >
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             style="@style/Toolbar.LeftBack"
             android:onClick="@{(v)->viewModel.back(v)}"
             />
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             style="@style/FragmentUgcStyle.ToolBarTitle"
             android:text="@{author.name}"
             android:layout_width="0dp"
@@ -107,8 +107,8 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             />
-      </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
-    </com.hzlz.aviation.library.widget.widget.GVideoCoordinatorLayout>
+      </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationCoordinatorLayout>
   </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
   </FrameLayout>
 </layout>

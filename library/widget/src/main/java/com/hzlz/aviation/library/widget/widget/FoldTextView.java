@@ -71,7 +71,7 @@ public class FoldTextView extends LinearLayout {
     private void initView() {
 
         setOrientation(VERTICAL);
-        contentText = new GVideoTextView(getContext());
+        contentText = new AviationTextView(getContext());
 
         contentText.setTextSize(TypedValue.COMPLEX_UNIT_PX, contentSize);
         contentText.setTextColor(contentColor);
@@ -79,7 +79,7 @@ public class FoldTextView extends LinearLayout {
         contentText.setMaxLines(showLines);
         addView(contentText);
 
-        textPlus = new GVideoTextView(getContext());
+        textPlus = new AviationTextView(getContext());
         textPlus.setTextSize(TypedValue.COMPLEX_UNIT_PX, contentSize);
         textPlus.setTextColor(tipColor);
         contentText.setLineSpacing(0, contentSpacing);

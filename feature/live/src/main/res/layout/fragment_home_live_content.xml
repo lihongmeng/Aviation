@@ -60,7 +60,7 @@
                                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                                 android:orientation="vertical" />
 
-                            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                            <com.hzlz.aviation.library.widget.widget.AviationTextView
                                 android:id="@+id/title_live_review"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
 
                 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-                <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+                <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
                     android:id="@+id/empty_container"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

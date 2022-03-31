@@ -25,7 +25,7 @@ import com.hzlz.aviation.kernel.base.utils.SpannableStringUtils;
 import com.hzlz.aviation.kernel.event.GVideoEventBus;
 import com.hzlz.aviation.kernel.liteav.service.AudioLivePlayHelper;
 import com.hzlz.aviation.library.util.LogUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout;
+import com.hzlz.aviation.library.widget.widget.AviationConstraintLayout;
 
 import java.util.concurrent.TimeUnit;
 
@@ -39,7 +39,7 @@ import io.reactivex.rxjava3.schedulers.Schedulers;
  * date : 2021/9/26
  * desc : 悬浮音频播放控件
  **/
-public class FloatAudioTipView extends GVideoConstraintLayout {
+public class FloatAudioTipView extends AviationConstraintLayout {
 
     private final LayoutAudioFloatViewBinding binding;
     private boolean isDelayedCollapse = true;

@@ -20,30 +20,30 @@ import com.hzlz.aviation.kernel.liteav.player.GVideoPlayerListener;
 import com.hzlz.aviation.kernel.liteav.view.GVideoSoundViewWave;
 import com.hzlz.aviation.library.util.DateUtils;
 import com.hzlz.aviation.library.util.SizeUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
-import com.hzlz.aviation.library.widget.widget.GVideoLinearLayout;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
+import com.hzlz.aviation.library.widget.widget.AviationLinearLayout;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
-public class GVideoSoundView extends GVideoLinearLayout {
+public class AviationSoundView extends AviationLinearLayout {
 
     //播放状态
     private Status status = Status.STATUS_STOP;
     // 播放声音的控件
     private GVideoView playGvv;
     // 语音点击生效区域，点击就播放语音
-    private GVideoImageView soundGviv;
+    private AviationImageView soundGviv;
     // 播放、暂停icon
-    private GVideoImageView iconGviv;
+    private AviationImageView iconGviv;
     // 波形
     private GVideoSoundViewWave waveViewGvsvw;
     // 时间
-    private GVideoTextView timeGvtv;
+    private AviationTextView timeGvtv;
     // 删除
-    private GVideoImageView deleteGviv;
+    private AviationImageView deleteGviv;
     // 语音转文字
-    private GVideoTextView changeGvtv;
+    private AviationTextView changeGvtv;
     // 文字显示区域
-    private GVideoTextView textGvtv;
+    private AviationTextView textGvtv;
     // 语音文字
     private String soundText = "0";
     // 是否显示删除按钮
@@ -62,15 +62,15 @@ public class GVideoSoundView extends GVideoLinearLayout {
     //埋点数据
     private VideoModel videoModel;
 
-    public GVideoSoundView(Context context) {
+    public AviationSoundView(Context context) {
         this(context, null);
     }
 
-    public GVideoSoundView(Context context, @Nullable AttributeSet attrs) {
+    public AviationSoundView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public GVideoSoundView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public AviationSoundView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initVars(context);
         initViews();

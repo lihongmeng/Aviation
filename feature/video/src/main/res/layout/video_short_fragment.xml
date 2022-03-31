@@ -17,7 +17,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
             android:id="@+id/comment_container"
             android:layout_width="0dp"
             android:layout_height="0dp"

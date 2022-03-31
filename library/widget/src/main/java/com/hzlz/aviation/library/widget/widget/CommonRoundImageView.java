@@ -13,7 +13,7 @@ import com.hzlz.aviation.library.widget.R;
 /**
  * 圆角imageView
  */
-public class CommonRoundImageView extends GVideoImageView {
+public class CommonRoundImageView extends AviationImageView {
 
     /** 控件宽度 */
     private float mWidth;

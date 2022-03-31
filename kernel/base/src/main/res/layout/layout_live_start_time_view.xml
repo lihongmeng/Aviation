@@ -5,7 +5,7 @@
     android:background="@drawable/shape_solid_000000_30_corners_2dp"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:id="@+id/herald_icon"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/DIMEN_15DP"
@@ -14,7 +14,7 @@
         android:src="@drawable/icon_herald"
         android:layout_marginStart="@dimen/DIMEN_4DP" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:id="@+id/herald_time"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/DIMEN_15DP"

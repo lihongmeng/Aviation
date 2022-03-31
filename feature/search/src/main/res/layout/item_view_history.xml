@@ -2,12 +2,12 @@
 <layout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/search_history_layout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/DIMEN_42DP">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/icon_history"
             android:layout_width="@dimen/DIMEN_13DP"
             android:layout_height="@dimen/DIMEN_13DP"
@@ -15,7 +15,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/textView"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -32,7 +32,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="搜索历史" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/icon_close"
             android:layout_width="@dimen/DIMEN_15DP"
             android:layout_height="match_parent"
@@ -48,5 +48,5 @@
             android:layout_height="@dimen/DIMEN_D5P"
             app:layout_constraintBottom_toBottomOf="parent" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 </layout>

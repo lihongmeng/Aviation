@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.hzlz.aviation.library.widget.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.hzlz.aviation.library.widget.widget.AviationLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="@dimen/DIMEN_210DP"
     android:orientation="vertical">
@@ -12,7 +12,7 @@
         android:layout_marginTop="@dimen/DIMEN_10DP"
         android:layout_height="30dp" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:id="@+id/gvyv_layout_sound_record"
         android:layout_width="@dimen/DIMEN_92DP"
         android:layout_height="@dimen/DIMEN_92DP"
@@ -20,7 +20,7 @@
         android:layout_marginTop="@dimen/DIMEN_10DP"
         android:background="@drawable/icon_sound_record_start" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:id="@+id/gvtv_layout_sound_record_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,4 +30,4 @@
         android:textColor="@color/color_7f7f7f"
         android:textSize="@dimen/sp_13" />
 
-</com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+</com.hzlz.aviation.library.widget.widget.AviationLinearLayout>

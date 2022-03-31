@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="@dimen/DIMEN_37DP"
         android:layout_height="@dimen/DIMEN_32DP">
 
@@ -11,7 +11,7 @@
             android:layout_height="@dimen/DIMEN_32DP"
             app:corner_radius="@dimen/DIMEN_32DP"/>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/mark"
             android:layout_width="@dimen/DIMEN_12DP"
             android:layout_height="@dimen/DIMEN_12DP"
@@ -20,6 +20,6 @@
             android:background="@drawable/icon_header_authentication"
             android:visibility="gone" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
 </layout>

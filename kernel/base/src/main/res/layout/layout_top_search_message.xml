@@ -26,7 +26,7 @@
             app:layout_constraintEnd_toStartOf="@id/messageLayout"
             app:layout_constraintTop_toTopOf="parent">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/search"
                 android:layout_width="@dimen/DIMEN_17DP"
                 android:layout_height="@dimen/DIMEN_17DP"
@@ -35,7 +35,7 @@
                 android:src="@drawable/icon_search_search_grey" />
 
 
-            <com.hzlz.aviation.library.widget.widget.GVideoBanner
+            <com.hzlz.aviation.library.widget.widget.AviationBanner
                 android:id="@+id/top_search_banner"
                 android:layout_width="match_parent"
                 android:layout_marginStart="@dimen/DIMEN_12DP"
@@ -43,7 +43,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/scan"
                 android:layout_width="@dimen/DIMEN_17DP"
                 android:layout_height="@dimen/DIMEN_17DP"

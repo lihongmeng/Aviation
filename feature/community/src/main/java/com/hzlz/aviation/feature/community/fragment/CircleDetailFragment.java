@@ -68,8 +68,8 @@ import com.hzlz.aviation.kernel.stat.stat.StatPid;
 import com.hzlz.aviation.library.ioc.PluginManager;
 import com.hzlz.aviation.library.util.AsyncUtils;
 import com.hzlz.aviation.library.util.ResourcesUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoBanner;
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
+import com.hzlz.aviation.library.widget.widget.AviationBanner;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
 import com.youth.banner.config.IndicatorConfig;
 
 import java.util.ArrayList;
@@ -610,7 +610,7 @@ public class CircleDetailFragment extends BaseFragment<FragmentCircleDetailBindi
     private void initQABanner(CircleDetail circleDetail) {
         List<AuthorModel> modelList = circleDetail.answerDetailListVO.getMentorVoList();
         if (modelList != null && modelList.size() > 1) {
-            GVideoBanner banner = mBinding.infoList.layoutQa.teacherBanner;
+            AviationBanner banner = mBinding.infoList.layoutQa.teacherBanner;
             QABannerAnswerAdapter adapter = new QABannerAnswerAdapter(modelList, getPageName());
             adapter.setCircle(circle);
             banner.setAdapter(adapter).setLoopTime(3500);
@@ -631,8 +631,8 @@ public class CircleDetailFragment extends BaseFragment<FragmentCircleDetailBindi
     private void iniAudioView(CircleDetail circleDetail) {
 
         SharedPrefsWrapper prefsWrapper = new SharedPrefsWrapper("circle_audio");
-        GVideoImageView imageView = mBinding.infoList.layoutCircleAudio.play;
-        GVideoImageView tips = mBinding.infoList.layoutCircleAudio.tips;
+        AviationImageView imageView = mBinding.infoList.layoutCircleAudio.play;
+        AviationImageView tips = mBinding.infoList.layoutCircleAudio.tips;
         TextView title = mBinding.infoList.layoutCircleAudio.audioTitle;
 
         title.setEllipsize(TextUtils.TruncateAt.MARQUEE);

@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 
 import com.hzlz.aviation.kernel.base.R;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 /**
  * 没有更多了
@@ -59,7 +59,7 @@ public class NoMoreDataViewHolder extends BaseRecyclerViewHolder {
                 parent.getContext(), R.style.NoMoreDataDefaultStyle
             );
         }
-        GVideoTextView textView = new GVideoTextView(wrapper, null);
+        AviationTextView textView = new AviationTextView(wrapper, null);
         textView.setText(stringRes);
         textView.setTextColor(ContextCompat.getColor(parent.getContext(),R.color.color_cccccc));
         textView.setLayoutParams(new ViewGroup.LayoutParams(

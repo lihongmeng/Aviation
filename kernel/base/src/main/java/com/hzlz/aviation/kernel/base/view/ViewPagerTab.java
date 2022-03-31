@@ -22,9 +22,9 @@ import com.hzlz.aviation.kernel.base.databinding.ViewPagerCenterTabLeftBinding;
 import com.hzlz.aviation.kernel.base.model.feed.TabItemInfo;
 import com.hzlz.aviation.library.util.ScreenUtils;
 import com.hzlz.aviation.library.util.SizeUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoLinearLayout;
+import com.hzlz.aviation.library.widget.widget.AviationLinearLayout;
 import com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,7 +78,7 @@ public class ViewPagerTab extends GVideoRelativeLayout {
 
     private OnTabClickListener onClickListener;
 
-    private GVideoLinearLayout viewLayout;
+    private AviationLinearLayout viewLayout;
 
     private boolean mayShowRightArrow = false;
 
@@ -223,7 +223,7 @@ public class ViewPagerTab extends GVideoRelativeLayout {
     }
 
     private void updateContentGvtv(View parentView, int index) {
-        GVideoTextView contentGvtv = parentView.findViewById(R.id.gvtv_view_pager_tab_layout_item);
+        AviationTextView contentGvtv = parentView.findViewById(R.id.gvtv_view_pager_tab_layout_item);
         View markView = parentView.findViewById(R.id.v_view_pager_tab_layout_item);
         contentGvtv.setText(dataSource.get(index));
         markView.setBackground(selectedIndicatorDrawable);
@@ -268,11 +268,11 @@ public class ViewPagerTab extends GVideoRelativeLayout {
             Drawable bottom,
             int drawablePadding
     ) {
-        GVideoLinearLayout linearLayout = findViewById(R.id.view_layout);
+        AviationLinearLayout linearLayout = findViewById(R.id.view_layout);
         if (index >= linearLayout.getChildCount()) {
             return;
         }
-        GVideoTextView textView = (linearLayout.getChildAt(index)).findViewById(R.id.gvtv_view_pager_tab_layout_item);
+        AviationTextView textView = (linearLayout.getChildAt(index)).findViewById(R.id.gvtv_view_pager_tab_layout_item);
         textView.setCompoundDrawablesWithIntrinsicBounds(
                 left,
                 top,
@@ -287,7 +287,7 @@ public class ViewPagerTab extends GVideoRelativeLayout {
             int index,
             String text
     ) {
-        GVideoLinearLayout linearLayout = findViewById(R.id.view_layout);
+        AviationLinearLayout linearLayout = findViewById(R.id.view_layout);
         if (index >= linearLayout.getChildCount()) {
             return;
         }

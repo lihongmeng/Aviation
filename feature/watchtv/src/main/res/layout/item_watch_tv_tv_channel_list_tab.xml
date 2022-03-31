@@ -10,7 +10,7 @@
         android:paddingStart="@dimen/DIMEN_20DP"
         android:paddingEnd="@dimen/DIMEN_10DP">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

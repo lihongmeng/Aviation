@@ -30,7 +30,7 @@
                 android:background="@color/white"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 
-                <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.AviationImageView
                     android:id="@+id/bg_special_big"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/DIMEN_300DP"
@@ -47,7 +47,7 @@
                     app:contentInsetStart="0dp"
                     app:layout_collapseMode="pin">
 
-                    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                    <com.hzlz.aviation.library.widget.widget.AviationImageView
                         android:id="@+id/bg_special_small"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/white"
@@ -70,7 +70,7 @@
                 android:id="@+id/news_content"
                 layout="@layout/view_news_content" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationFrameLayout>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

@@ -9,12 +9,12 @@ import androidx.databinding.DataBindingUtil;
 
 import com.hzlz.aviation.kernel.base.R;
 import com.hzlz.aviation.kernel.base.databinding.LayoutScreenProjectionBinding;
-import com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout;
+import com.hzlz.aviation.library.widget.widget.AviationConstraintLayout;
 
 /**
  * 投屏后显示投屏状态的布局
  */
-public class ScreenProjectionLayout extends GVideoConstraintLayout {
+public class ScreenProjectionLayout extends AviationConstraintLayout {
 
     // 布局文件
     private LayoutScreenProjectionBinding binding;

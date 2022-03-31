@@ -14,12 +14,12 @@
         <import type="android.text.TextUtils" />
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/content_tag"
             android:text="@string/video"
             android:layout_width="wrap_content"
@@ -31,14 +31,14 @@
             android:includeFontPadding="false"
             android:textColor="@color/color_333333" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:id="@+id/short_production_layout"
             android:layout_width="@dimen/r_l03"
             android:layout_height="@dimen/r_h04"
             android:layout_marginBottom="@dimen/search_short_production_margin_bottom"
             android:onClick="@{(v)->detailBind.onLayoutClick(v, detailModel)}">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/short_production_background"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -47,7 +47,7 @@
                 app:roundedCorners="@{@dimen/r_r01}"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_default_play"
@@ -57,7 +57,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/short_production_background"
                 app:layout_constraintRight_toRightOf="@id/short_production_background"
                 />
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/short_production_img"
                 android:layout_width="@dimen/search_short_production_img_size"
                 android:layout_height="@dimen/search_short_production_img_size"
@@ -69,7 +69,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/short_production_author"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/short_production_img"
                 app:layout_constraintTop_toTopOf="@id/short_production_img"/>
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/short_production_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintBottom_toTopOf="@id/short_production_author"/>
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/short_production_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -108,8 +108,8 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
 
-        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
-    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
 </layout>

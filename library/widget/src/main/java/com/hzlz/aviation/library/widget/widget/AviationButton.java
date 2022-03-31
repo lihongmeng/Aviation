@@ -11,18 +11,18 @@ import androidx.appcompat.widget.AppCompatButton;
  *
  * @since 2020-01-13 14:43
  */
-public class GVideoButton extends AppCompatButton {
+public class AviationButton extends AppCompatButton {
   //<editor-fold desc="构造函数">
 
-  public GVideoButton(Context context) {
+  public AviationButton(Context context) {
     super(context);
   }
 
-  public GVideoButton(Context context, AttributeSet attrs) {
+  public AviationButton(Context context, AttributeSet attrs) {
     super(context, attrs);
   }
 
-  public GVideoButton(Context context, AttributeSet attrs, int defStyleAttr) {
+  public AviationButton(Context context, AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
   }
   //</editor-fold>

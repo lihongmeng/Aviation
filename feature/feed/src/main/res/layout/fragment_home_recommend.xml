@@ -20,15 +20,15 @@
         app:srlHeaderHeight="75dp"
         android:background="@color/color_FFFFFF">
         
-        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-<!--        <com.hzlz.aviation.library.widget.widget.GVideoCoordinatorLayout-->
+<!--        <com.hzlz.aviation.library.widget.widget.AviationCoordinatorLayout-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="match_parent">-->
 
-            <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+            <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
                 android:id="@+id/empty_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -46,9 +46,9 @@
                 android:scrollbars="none"
                 app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
-<!--        </com.hzlz.aviation.library.widget.widget.GVideoCoordinatorLayout>-->
+<!--        </com.hzlz.aviation.library.widget.widget.AviationCoordinatorLayout>-->
 
     </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
 

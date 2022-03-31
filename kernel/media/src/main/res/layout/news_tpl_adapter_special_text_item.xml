@@ -16,7 +16,7 @@
 
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
         android:id="@+id/root_layout"
         android:orientation="vertical"
         android:layout_marginStart="@dimen/DIMEN_10DP"
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/title"
             style="@style/feed_text_style_news"
             android:textSize="@dimen/sp_16"
@@ -40,7 +40,7 @@
             android:layout_marginTop="@dimen/DIMEN_1DP"
             android:orientation="horizontal">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/source"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
                 android:textSize="@dimen/sp_12"
                 tools:text="13232a1sd23as" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:textColor="@color/color_cccccc"
@@ -62,6 +62,6 @@
 
 
 
-    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
 </layout>

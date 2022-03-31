@@ -2,12 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/fragment_record_dialog_height"
         android:background="@color/home_background_color">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/record_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/record_cancel"
             android:layout_width="match_parent"
             android:layout_height="@dimen/fragment_record_dialog_cancel_height"
@@ -35,7 +35,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/record_img"
             android:layout_width="0dp"
             android:layout_height="@dimen/fragment_record_dialog_image_size"
@@ -48,7 +48,7 @@
             app:layout_constraintRight_toLeftOf="@id/live_img"
             app:layout_constraintTop_toBottomOf="@id/record_title" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/live_img"
             android:layout_width="0dp"
             android:layout_height="@dimen/fragment_record_dialog_image_size"
@@ -61,7 +61,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/record_title" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/record_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
             app:layout_constraintRight_toRightOf="@id/record_img"
             app:layout_constraintTop_toBottomOf="@id/record_img" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/live_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,5 +85,5 @@
             app:layout_constraintRight_toRightOf="@id/live_img"
             app:layout_constraintTop_toBottomOf="@id/live_img" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 </layout>

@@ -30,7 +30,7 @@
             app:layout_constraintLeft_toLeftOf="parent" />
 
         <!--返回按钮-->
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/image_view_back"
             style="@style/FragmentPhoneStyle.Back"
             android:visibility="gone"
@@ -57,7 +57,7 @@
             app:layout_constraintGuide_end="@dimen/margin_all_account_large" />
 
         <!--标题-->
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_view_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
             app:layout_goneMarginTop="@dimen/DIMEN_45DP" />
 
         <!--城市电话编码-->
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_view_country_code"
             style="@style/FragmentPhoneStyle.CountryCode"
             android:onClick="@{(view)->viewModel.selectCountryCode(view)}"
@@ -83,7 +83,7 @@
             app:layout_constraintTop_toTopOf="@+id/edit_text_phone_number" />
 
         <!--手机号输入框-->
-        <com.hzlz.aviation.library.widget.widget.GVideoClearableEditText
+        <com.hzlz.aviation.library.widget.widget.AviationClearableEditText
             android:id="@+id/edit_text_phone_number"
             style="@style/FragmentPhoneStyle.PhoneNumber"
             android:hint="@string/fragment_phone_phone_number_hint"
@@ -101,7 +101,7 @@
             app:layout_constraintTop_toBottomOf="@id/edit_text_phone_number" />
 
         <!--下一步按钮-->
-        <com.hzlz.aviation.library.widget.widget.GVideoButton
+        <com.hzlz.aviation.library.widget.widget.AviationButton
             android:id="@+id/button_next"
             style="@style/FragmentPhoneStyle.Next"
             android:background="@{binding.enableNext?@drawable/all_c_gradual01_button_state_enable_background:@drawable/all_c_gradual01_button_state_disable_background}"
@@ -133,7 +133,7 @@
             app:layout_constraintBottom_toBottomOf="@id/checkbox" />
 
         <!--登录即代表已同意-->
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_view_login_for_agreement"
             style="@style/FragmentPhoneStyle.LoginForAgreement"
             android:paddingTop="@dimen/DIMEN_5DP"
@@ -146,7 +146,7 @@
             app:layout_constraintRight_toLeftOf="@+id/text_view_user_contract"
             app:layout_constraintTop_toBottomOf="@id/button_next" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_view_user_contract"
             style="@style/FragmentPhoneStyle.UserContract"
             android:onClick="@{(v)->viewModel.showUserAgreement(v)}"
@@ -159,7 +159,7 @@
             app:layout_constraintRight_toLeftOf="@+id/text_view_and"
             app:layout_constraintTop_toTopOf="@id/text_view_login_for_agreement" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_view_and"
             style="@style/FragmentPhoneStyle.And"
             android:text="@string/fragment_phone_and"
@@ -170,7 +170,7 @@
             app:layout_constraintRight_toLeftOf="@+id/text_view_privacy_policy"
             app:layout_constraintTop_toBottomOf="@id/button_next" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_view_privacy_policy"
             style="@style/FragmentPhoneStyle.UserContract"
             android:onClick="@{(v)->viewModel.showPrivacyPolicy(v)}"

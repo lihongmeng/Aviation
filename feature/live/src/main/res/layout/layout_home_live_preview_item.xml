@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="@dimen/DIMEN_10DP"
@@ -25,7 +25,7 @@
                 android:background="@drawable/shape_soild_f7f7f7_corners_4dp"
                 app:corner_radius="@dimen/DIMEN_4DP" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/title_left"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
                 android:background="@drawable/shape_soild_f7f7f7_corners_4dp"
                 app:corner_radius="@dimen/DIMEN_4DP" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/title_right"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -73,6 +73,6 @@
 
         </RelativeLayout>
 
-    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
 </layout>

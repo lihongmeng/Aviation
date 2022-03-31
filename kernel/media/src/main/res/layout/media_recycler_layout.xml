@@ -9,7 +9,7 @@
           app:srlEnableFooterFollowWhenNoMoreData="true"
           app:srlHeaderHeight="75dp">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
           android:id="@+id/recycler_container"
           android:layout_width="match_parent"
           android:layout_height="match_parent">
@@ -19,12 +19,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+            <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
                 android:id="@+id/empty_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:visibility="gone" />
-        </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationFrameLayout>
 
     </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
 

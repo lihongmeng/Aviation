@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/video_comment_popup_top_bar_height">
 
-                <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.AviationImageView
                     android:id="@+id/short_video_comment_downward"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

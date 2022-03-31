@@ -18,12 +18,12 @@
         <import type="android.text.TextUtils" />
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
         android:id="@+id/root_layout"
         style="@style/feed_layout_margin"
         android:orientation="vertical">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/DIMEN_28DP"
             android:gravity="bottom"
@@ -33,12 +33,12 @@
             android:textSize="@dimen/sp_13"
             android:visibility="@{model.showTag?View.VISIBLE:View.GONE}" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_61DP"
             android:onClick="@{view->authorBind.onAvatarClick(view, model)}">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/image_view_avatar"
                 android:layout_width="@dimen/DIMEN_36DP"
                 android:layout_height="@dimen/DIMEN_36DP"
@@ -51,7 +51,7 @@
                 app:placeholder='@{@drawable/ic_default_avatar}'
                 tools:src="@drawable/ic_default_avatar" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:layout_width="@dimen/DIMEN_12DP"
                 android:layout_height="@dimen/DIMEN_12DP"
                 android:layout_marginStart="@dimen/DIMEN_25DP"
@@ -61,7 +61,7 @@
                 app:layout_constraintStart_toStartOf="@id/image_view_avatar"
                 app:layout_constraintTop_toTopOf="@id/image_view_avatar" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/text_view_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
                 app:layout_constraintVertical_chainStyle="packed"
                 tools:text="喜欢看金牌调解的胡某某" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/text_view_description"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -99,12 +99,12 @@
                 app:layout_constraintTop_toBottomOf="@id/text_view_name"
                 tools:text="欢迎分享你的情感故事" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
         <View
             android:background="@color/c_line02"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_D5P"/>
 
-    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 </layout>

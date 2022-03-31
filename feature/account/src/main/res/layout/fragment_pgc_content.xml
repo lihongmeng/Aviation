@@ -24,7 +24,7 @@
         app:srlEnableFooterFollowWhenNoMoreData="true"
         app:srlEnableLoadMoreWhenContentNotFull="false">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -36,14 +36,14 @@
                 app:adapter="@{apter}"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+            <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
                 android:id="@+id/empty_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingBottom="@dimen/DIMEN_100DP"
                 android:visibility="gone" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
     </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
 

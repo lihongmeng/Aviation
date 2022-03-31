@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 
 import com.hzlz.aviation.kernel.base.R;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 /**
  * 没有更多数据 ViewHolder
@@ -32,7 +32,7 @@ public final class DefaultNoMoreDataViewHolder extends DataBindingViewHolder {
     ContextThemeWrapper context = new ContextThemeWrapper(
         parent.getContext(), R.style.NoMoreDataDefaultStyle
     );
-    GVideoTextView textView = new GVideoTextView(context, null);
+    AviationTextView textView = new AviationTextView(context, null);
     textView.setText(stringRes);
     textView.setLayoutParams(new ViewGroup.LayoutParams(
         ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT

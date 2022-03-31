@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-  <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.AviationLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
       android:id="@+id/root"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:gravity="center"
       android:orientation="vertical"
       >
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:id="@+id/empty_img"
         style="@style/PlaceholderEmptyStyle.Image"
         android:src="@drawable/ic_placeholder_empty"
         />
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         style="@style/PlaceholderStyle.Text"
         android:text="@string/all_not_found_comment"
         />
-  </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+  </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 </layout>

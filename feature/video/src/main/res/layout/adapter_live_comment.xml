@@ -23,7 +23,7 @@
         android:layout_marginEnd="@dimen/video_dp_30"
         android:layout_height="wrap_content">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoSpanTextView
+        <com.hzlz.aviation.library.widget.widget.AviationSpanTextView
             android:id="@+id/content"
             android:textColor="@color/white"
             tools:text="本平台提倡绿色健康 直播 ，直播 内容和评论严谨出现违规、低俗色情、吸烟"

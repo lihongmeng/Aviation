@@ -10,7 +10,7 @@
 
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
         android:id="@+id/root_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
             app:corner_radius="@dimen/DIMEN_4DP"
             app:imageData="@{feedModel.imageUrls[0]}" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/title"
             style="@style/feed_text_style"
             android:layout_width="@dimen/DIMEN_192DP"
@@ -35,6 +35,6 @@
             android:text="@{feedModel.title}"
             android:textStyle="bold" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
 </layout>

@@ -16,9 +16,9 @@ import com.hzlz.aviation.feature.account.R;
 import com.hzlz.aviation.feature.account.model.annotation.PrivacyRange;
 import com.hzlz.aviation.library.util.ResourcesUtils;
 import com.hzlz.aviation.library.widget.dialog.AbstractDialogItemView;
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
-import com.hzlz.aviation.library.widget.widget.GVideoLinearLayout;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
+import com.hzlz.aviation.library.widget.widget.AviationLinearLayout;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -85,7 +85,7 @@ public final class PrivacyRangeSelectionDialogItemView extends AbstractDialogIte
   }
 
   private View generateView(@NonNull Context context) {
-    GVideoLinearLayout container = new GVideoLinearLayout(context);
+    AviationLinearLayout container = new AviationLinearLayout(context);
     container.setOrientation(LinearLayout.VERTICAL);
     container.setLayoutParams(new ViewGroup.LayoutParams(
         ViewGroup.LayoutParams.MATCH_PARENT,
@@ -94,7 +94,7 @@ public final class PrivacyRangeSelectionDialogItemView extends AbstractDialogIte
     // title
     ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(context, mTileStyle);
     LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(contextThemeWrapper, null);
-    GVideoTextView textViewTitle = new GVideoTextView(contextThemeWrapper);
+    AviationTextView textViewTitle = new AviationTextView(contextThemeWrapper);
     textViewTitle.setText(mTitle);
     container.addView(textViewTitle, params);
     // item
@@ -104,7 +104,7 @@ public final class PrivacyRangeSelectionDialogItemView extends AbstractDialogIte
       int itemStyle = getItemStyle(i, size);
       contextThemeWrapper = new ContextThemeWrapper(context, itemStyle);
       params = new LinearLayout.LayoutParams(contextThemeWrapper, null);
-      GVideoLinearLayout itemContainer = new GVideoLinearLayout(contextThemeWrapper);
+      AviationLinearLayout itemContainer = new AviationLinearLayout(contextThemeWrapper);
       itemContainer.setOrientation(LinearLayout.HORIZONTAL);
       itemContainer.setTag(R.integer.privacy_range_position_tag, i);
       itemContainer.setTag(
@@ -116,13 +116,13 @@ public final class PrivacyRangeSelectionDialogItemView extends AbstractDialogIte
       // text
       contextThemeWrapper = new ContextThemeWrapper(context, mItemTextStyle);
       params = new LinearLayout.LayoutParams(contextThemeWrapper, null);
-      GVideoTextView textViewRange = new GVideoTextView(contextThemeWrapper);
+      AviationTextView textViewRange = new AviationTextView(contextThemeWrapper);
       textViewRange.setText(mPrivacyItemList.get(i).mPrivacy);
       itemContainer.addView(textViewRange, params);
       // image check
       contextThemeWrapper = new ContextThemeWrapper(context, mItemCheckStyle);
       params = new LinearLayout.LayoutParams(contextThemeWrapper, null);
-      GVideoImageView imageViewCheck = new GVideoImageView(contextThemeWrapper);
+      AviationImageView imageViewCheck = new AviationImageView(contextThemeWrapper);
       imageViewCheck.setVisibility(
           mPrivacyItemList.get(i).mPrivacyRange == mCurrentValue ? View.VISIBLE : View.GONE
       );
@@ -135,7 +135,7 @@ public final class PrivacyRangeSelectionDialogItemView extends AbstractDialogIte
       if (i + 1 != size) {
         contextThemeWrapper = new ContextThemeWrapper(context, mDriverStyle);
         params = new LinearLayout.LayoutParams(contextThemeWrapper, null);
-        GVideoTextView driver = new GVideoTextView(contextThemeWrapper);
+        AviationTextView driver = new AviationTextView(contextThemeWrapper);
         container.addView(driver, params);
       }
     }

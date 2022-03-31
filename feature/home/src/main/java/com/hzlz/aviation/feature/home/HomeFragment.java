@@ -3,7 +3,6 @@ package com.hzlz.aviation.feature.home;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -30,8 +29,8 @@ import com.hzlz.aviation.library.ioc.PluginManager;
 import com.hzlz.aviation.library.util.ResourcesUtils;
 import com.hzlz.aviation.library.util.ScreenUtils;
 import com.hzlz.aviation.library.util.SizeUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -251,8 +250,8 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
     private void setTabState(TabLayout.Tab tab, boolean isSelected) {
         View view = tab.getCustomView();
         if (view != null) {
-            ((GVideoImageView)view.findViewById(R.id.tab_icon)).getDrawable().setTint(ResourcesUtils.getColor(isSelected ? R.color.color_e6e6e6 : R.color.color_e6e6e6_50));
-            ((GVideoTextView)view.findViewById(R.id.tab_text)).setTextColor(ResourcesUtils.getColor(isSelected ? R.color.color_e6e6e6 : R.color.color_e6e6e6_50));
+            ((AviationImageView)view.findViewById(R.id.tab_icon)).getDrawable().setTint(ResourcesUtils.getColor(isSelected ? R.color.color_e6e6e6 : R.color.color_e6e6e6_50));
+            ((AviationTextView)view.findViewById(R.id.tab_text)).setTextColor(ResourcesUtils.getColor(isSelected ? R.color.color_e6e6e6 : R.color.color_e6e6e6_50));
 
         }
     }
@@ -288,7 +287,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
         layoutParams.rightMargin = 0;
         layoutParams.leftMargin = 0;
         ((TextView) view.findViewById(R.id.tab_text)).setText(textId);
-        ((GVideoImageView) view.findViewById(R.id.tab_icon)).setImageResource(drawableId);
+        ((AviationImageView) view.findViewById(R.id.tab_icon)).setImageResource(drawableId);
         tabList.add(tab);
     }
 

@@ -34,7 +34,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/topic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                 app:layout_constraintTop_toBottomOf="@id/topic"
                 tools:visibility="visible" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+            <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
                 android:id="@+id/layout_comment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-            </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+            </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
             <View
                 android:id="@+id/bottom_divider"
@@ -99,7 +99,7 @@
                 app:layout_constraintTop_toBottomOf="@id/layout_comment"
                 app:layout_goneMarginTop="@dimen/DIMEN_9DP" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/toolbar_favorite_img"
                 style="@style/feed_comment_img"
                 android:onClick="@{(view)->toolBind.onFavoriteClick(view)}"
@@ -109,7 +109,7 @@
                 app:layout_constraintTop_toBottomOf="@id/bottom_divider"
                 tools:src="@drawable/media_toolbar_favorite_checked" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/toolbar_favorite_num_text"
                 style="@style/feed_comment_text"
                 android:onClick="@{(view)->toolBind.onFavoriteClick(view)}"
@@ -119,7 +119,7 @@
                 app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img"
                 tools:text="1" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/toolbar_chat_img"
                 style="@style/feed_comment_img"
                 android:layout_marginStart="@dimen/DIMEN_50DP"
@@ -130,7 +130,7 @@
                 app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img"
                 tools:src="@drawable/ic_common_comment" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/toolbar_comment_num_text"
                 style="@style/feed_comment_text"
                 android:onClick="@{(view)->toolBind.onCommentClick(view)}"
@@ -140,7 +140,7 @@
                 app:layout_constraintTop_toTopOf="@id/toolbar_chat_img"
                 tools:text="99" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/toolbar_more_img"
                 style="@style/feed_comment_img"
                 android:onClick="@{(view)->toolBind.onMoreClick(view)}"
@@ -154,14 +154,14 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:id="@+id/pgc_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/toolbar_create_date"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -181,7 +181,7 @@
                 app:barrierDirection="left"
                 app:constraint_referenced_ids="toolbar_sources_text, toolbar_attention_text, toolbar_create_date" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/toolbar_favorite_img_pgc"
                 android:layout_width="@dimen/media_tool_bar_icon_size"
                 android:layout_height="@dimen/media_tool_bar_icon_size"
@@ -192,7 +192,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/toolbar_share_img_pgc"
                 android:layout_width="@dimen/media_tool_bar_icon_size"
                 android:layout_height="@dimen/media_tool_bar_icon_size"
@@ -205,7 +205,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_goneMarginRight="@dimen/media_tool_bar_share_favorite_interval" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/toolbar_chat_img_pgc"
                 android:layout_width="@dimen/media_tool_bar_icon_size"
                 android:layout_height="@dimen/media_tool_bar_icon_size"
@@ -216,7 +216,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/toolbar_share_img_pgc"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/toolbar_comment_num_text_pgc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -231,7 +231,7 @@
                 app:layout_constraintLeft_toLeftOf="@+id/toolbar_chat_img_pgc"
                 app:layout_constraintTop_toTopOf="@+id/toolbar_chat_img_pgc" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

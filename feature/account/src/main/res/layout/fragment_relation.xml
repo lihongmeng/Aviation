@@ -7,7 +7,7 @@
         />
     <import type="android.view.View" />
   </data>
-  <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:background="@color/all_layout_background"
@@ -15,7 +15,7 @@
       android:id="@+id/root_layout"
       >
     <!--返回按钮-->
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:id="@+id/iv_back"
         style="@style/Toolbar.LeftBack"
         android:onClick="@{(v)->viewModel.back(v)}"
@@ -40,5 +40,5 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tab_layout"
         />
-  </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+  </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 </layout>

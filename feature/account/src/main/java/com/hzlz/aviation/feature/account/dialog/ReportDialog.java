@@ -19,7 +19,7 @@ import com.hzlz.aviation.kernel.base.utils.ToastUtils;
 import com.hzlz.aviation.kernel.network.observer.BaseResponseObserver;
 import com.hzlz.aviation.library.util.ScreenUtils;
 import com.hzlz.aviation.library.widget.dialog.GVideoCenterDialog;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 /**
  * 举报弹窗
@@ -64,7 +64,7 @@ public class ReportDialog extends GVideoCenterDialog implements View.OnClickList
     private void initView(Context context) {
         int size = dataRes.length;
         for (int i = 1; i < size; i++) {
-            GVideoTextView item = new GVideoTextView(context);
+            AviationTextView item = new AviationTextView(context);
             item.setText(dataRes[i]);
             item.setTextSize(TypedValue.COMPLEX_UNIT_SP, 13);
             item.setTextColor(ContextCompat.getColor(context, R.color.color_7f7f7f));
@@ -82,7 +82,7 @@ public class ReportDialog extends GVideoCenterDialog implements View.OnClickList
             mLayoutBinding.content.addView(driver, driverParams);
         }
 
-        GVideoTextView item = new GVideoTextView(context);
+        AviationTextView item = new AviationTextView(context);
         item.setText(dataRes[0]);
         item.setTextSize(TypedValue.COMPLEX_UNIT_SP, 13);
         item.setTextColor(ContextCompat.getColor(context, R.color.color_7f7f7f));

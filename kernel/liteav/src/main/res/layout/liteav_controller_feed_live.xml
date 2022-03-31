@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:tools="http://schemas.android.com/tools">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+    <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <!--标题-->
-        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:id="@+id/layout_top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
                     app:indicator_spacing="@dimen/DIMEN_2DP"
                     app:indicator_width="@dimen/DIMEN_2D5P" />
 
-                <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.AviationTextView
                     android:id="@+id/live_type_str"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -72,10 +72,10 @@
 
             </com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout>
 
-        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
         <!--重播-->
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/iv_replay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,5 +92,5 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationFrameLayout>
 </layout>

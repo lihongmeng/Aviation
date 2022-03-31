@@ -16,7 +16,7 @@ import com.google.gson.JsonObject;
 import com.hzlz.aviation.kernel.base.BaseFragment;
 import com.hzlz.aviation.kernel.base.model.anotation.MediaType;
 import com.hzlz.aviation.kernel.base.model.stat.StatFromModel;
-import com.hzlz.aviation.kernel.liteav.GVideoSoundView;
+import com.hzlz.aviation.kernel.liteav.AviationSoundView;
 import com.hzlz.aviation.kernel.media.MediaFragmentManager;
 import com.hzlz.aviation.kernel.media.R;
 import com.hzlz.aviation.kernel.media.databind.MediaToolBarDataBind;
@@ -40,7 +40,7 @@ public class MediaImageAndTxtTemplate extends MediaBaseTemplate {
 
     private MediaTplImageTxtBinding mBinding;
     protected MediaVideoDataBind mFeedVideoDataBind;
-    protected GVideoSoundView mPlayerView;
+    protected AviationSoundView mPlayerView;
 
     private long mPlayStart;
     private long mPlayDuration;

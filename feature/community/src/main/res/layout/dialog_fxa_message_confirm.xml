@@ -10,14 +10,14 @@
             type="com.hzlz.aviation.feature.community.model.FXAModel" />
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/transparent"
         android:paddingStart="@dimen/DIMEN_19DP"
         android:paddingEnd="@dimen/DIMEN_19DP">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/top_image"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_width="match_parent"
@@ -33,7 +33,7 @@
             app:corner_radius_bottom_right="@dimen/DIMEN_8DP"
             app:layout_constraintTop_toBottomOf="@id/top_image">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/nick_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -142,6 +142,6 @@
 
         </com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout>
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
 </layout>

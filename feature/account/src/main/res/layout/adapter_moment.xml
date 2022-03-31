@@ -22,13 +22,13 @@
       type="androidx.databinding.ObservableInt" />
   </data>
 
-  <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+  <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
     style="@style/AdapterMoment.Container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:onClick="@{(v)->adapter.onItemClick(v,position)}">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
       android:id="@+id/image_view_cover"
       style="@style/AdapterMoment.Cover"
       android:layout_width="0dp"
@@ -39,7 +39,7 @@
       app:layout_constraintTop_toTopOf="parent"
       app:roundedCorners="@{@dimen/r_r01}" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
       style="@style/AdapterMoment.Play"
       android:src="@drawable/ic_play"
       app:layout_constraintBottom_toBottomOf="@id/image_view_cover"
@@ -47,7 +47,7 @@
       app:layout_constraintRight_toRightOf="@id/image_view_cover"
       app:layout_constraintTop_toTopOf="@id/image_view_cover" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
       style="@style/AdapterMoment.Description"
       android:layout_width="0dp"
       android:text="@{media.title}"
@@ -55,7 +55,7 @@
       app:layout_constraintRight_toRightOf="@id/image_view_cover"
       app:layout_constraintTop_toTopOf="@id/image_view_cover" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
       android:id="@+id/image_view_avatar"
       style="@style/AdapterMoment.Avatar"
       android:onClick="@{(v)->adapter.onUserClick(v,position)}"
@@ -65,7 +65,7 @@
       app:layout_constraintLeft_toLeftOf="@id/image_view_cover"
       app:layout_constraintTop_toBottomOf="@id/image_view_cover" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
       android:id="@+id/text_view_owner_name"
       style="@style/AdapterMoment.OwnerName"
       android:layout_width="0dp"
@@ -78,7 +78,7 @@
       app:layout_constraintTop_toTopOf="@id/image_view_avatar"
       app:layout_constraintVertical_chainStyle="spread_inside" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
       android:id="@+id/text_view_owner_description"
       style="@style/AdapterMoment.OwnerDescription"
       android:layout_width="0dp"
@@ -89,7 +89,7 @@
       app:layout_constraintTop_toBottomOf="@id/text_view_owner_name"
       tools:ignore="HardcodedText" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
       android:id="@+id/image_view_comment"
       style="@style/AdapterMoment.Comment"
       android:src="@drawable/ic_comment"
@@ -104,7 +104,7 @@
       android:orientation="vertical"
       app:layout_constraintGuide_end="@dimen/margin_adapter_moment_comment_count_guideline" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
       style="@style/AdapterMoment.CommentCount"
       android:text="@{media.commentText}"
         android:onClick="@{(v)->adapter.onCommentClick(v,position)}"
@@ -112,7 +112,7 @@
       app:layout_constraintRight_toRightOf="@id/guide_line_comment_count"
       app:layout_constraintTop_toTopOf="@id/image_view_comment" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
       android:id="@+id/image_view_share"
       style="@style/AdapterMoment.Operation"
       android:onClick="@{(v)->adapter.share(v,position)}"
@@ -121,7 +121,7 @@
       app:layout_constraintRight_toLeftOf="@+id/image_view_more"
       app:layout_constraintTop_toTopOf="@id/image_view_avatar" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
       android:id="@+id/image_view_more"
       style="@style/AdapterMoment.More"
       android:onClick="@{(v)->adapter.more(v,position)}"
@@ -129,5 +129,5 @@
       app:layout_constraintBottom_toBottomOf="@id/image_view_avatar"
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintTop_toTopOf="@id/image_view_avatar" />
-  </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+  </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 </layout>

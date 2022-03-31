@@ -25,14 +25,14 @@
             app:layout_constraintEnd_toStartOf="@id/messageLayout"
             app:layout_constraintTop_toTopOf="parent">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:layout_width="@dimen/DIMEN_17DP"
                 android:layout_height="@dimen/DIMEN_17DP"
                 android:layout_marginLeft="@dimen/DIMEN_14DP"
                 android:scaleType="centerInside"
                 android:src="@drawable/icon_search_search_grey" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"

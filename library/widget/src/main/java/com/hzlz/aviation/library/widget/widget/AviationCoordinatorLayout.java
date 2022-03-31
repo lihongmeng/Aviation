@@ -11,17 +11,17 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
  *
  * @since 2020-02-17 15:13
  */
-public class GVideoCoordinatorLayout extends CoordinatorLayout {
+public class AviationCoordinatorLayout extends CoordinatorLayout {
   //<editor-fold desc="构造函数">
-  public GVideoCoordinatorLayout(@NonNull Context context) {
+  public AviationCoordinatorLayout(@NonNull Context context) {
     super(context);
   }
 
-  public GVideoCoordinatorLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
+  public AviationCoordinatorLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
     super(context, attrs);
   }
 
-  public GVideoCoordinatorLayout(
+  public AviationCoordinatorLayout(
       @NonNull Context context,
       @Nullable AttributeSet attrs,
       int defStyleAttr) {

@@ -10,7 +10,7 @@
         android:background="@color/color_FFFFFF"
         app:elevation="0dp">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+        <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
             android:id="@+id/top_layout"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_140DP"
@@ -21,7 +21,7 @@
             android:paddingRight="@dimen/DIMEN_19DP"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/topic_name"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/DIMEN_48DP"
@@ -41,7 +41,7 @@
                 android:visibility="gone"
                 tools:visibility="visible" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 

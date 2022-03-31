@@ -15,7 +15,7 @@
 
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:visibility="@{videoObservable==null?View.GONE:View.VISIBLE}"
         android:layout_width="match_parent"
         android:background="@color/white"
@@ -40,7 +40,7 @@
             app:layout_constraintEnd_toStartOf="@id/comment"
             />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/share"
             android:layout_width="@dimen/DIMEN_33DP"
             android:layout_height="@dimen/DIMEN_33DP"
@@ -52,7 +52,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/like"
             android:layout_width="@dimen/DIMEN_33DP"
             android:layout_height="@dimen/DIMEN_33DP"
@@ -64,7 +64,7 @@
             app:layout_constraintEnd_toStartOf="@id/share"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/comment"
             android:layout_width="@dimen/DIMEN_33DP"
             android:layout_height="@dimen/DIMEN_33DP"
@@ -75,7 +75,7 @@
             app:layout_constraintEnd_toStartOf="@id/comment_text"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/comment_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -87,6 +87,6 @@
             app:layout_constraintEnd_toStartOf="@id/like"
             app:layout_constraintTop_toTopOf="parent" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
 </layout>

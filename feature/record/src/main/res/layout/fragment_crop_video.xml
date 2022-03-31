@@ -7,7 +7,7 @@
         type="com.hzlz.aviation.feature.record.recorder.fragment.crop.CropVideoModel"
         />
   </data>
-  <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+  <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       >
@@ -18,5 +18,5 @@
         app:cropAspectRatioX="9"
         app:cropAspectRatioY="16"
       />
-  </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
+  </com.hzlz.aviation.library.widget.widget.AviationFrameLayout>
 </layout>

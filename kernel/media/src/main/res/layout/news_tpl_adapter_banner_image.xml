@@ -12,11 +12,11 @@
         <import type="android.view.View" />
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:scaleType="fitXY"
@@ -32,7 +32,7 @@
             android:background="@drawable/feed_live_bottom_back_cover"
             app:layout_constraintBottom_toBottomOf="parent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/DIMEN_10DP"
@@ -49,6 +49,6 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:text="大量事件大撒的金卡" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
 </layout>

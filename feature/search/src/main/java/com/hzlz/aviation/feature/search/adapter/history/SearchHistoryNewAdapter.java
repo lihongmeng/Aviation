@@ -9,7 +9,7 @@ import com.hzlz.aviation.feature.search.databinding.ItemViewHistoryBinding;
 import com.hzlz.aviation.feature.search.db.entity.SearchHistoryEntity;
 import com.hzlz.aviation.kernel.base.view.recyclerview.BaseRecyclerAdapter;
 import com.hzlz.aviation.kernel.base.view.recyclerview.BaseRecyclerViewHolder;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 /**
  * 搜索历史adapter
@@ -46,8 +46,8 @@ public class SearchHistoryNewAdapter extends BaseRecyclerAdapter<SearchHistoryEn
             ItemViewHistoryBinding binding = (ItemViewHistoryBinding) holder.getBinding();
             binding.textView.setText((mList.get(position).getSearchWord()));
             binding.textView.setOnClickListener(view -> {
-                if (view instanceof GVideoTextView && mSearchViewModel != null) {
-                    CharSequence sequence = ((GVideoTextView) view).getText();
+                if (view instanceof AviationTextView && mSearchViewModel != null) {
+                    CharSequence sequence = ((AviationTextView) view).getText();
                     if (sequence != null && !TextUtils.isEmpty(sequence.toString())) {
                         mSearchViewModel.onHistoryWordItemClick(sequence.toString());
                     }

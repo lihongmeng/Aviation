@@ -8,7 +8,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.hzlz.aviation.library.widget.widget.GVideoLinearLayout;
+import com.hzlz.aviation.library.widget.widget.AviationLinearLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -97,7 +97,7 @@ public abstract class AbstractDialogItemViewGroup extends AbstractDialogItemView
 
   //<editor-fold desc="内部方法">
   protected View getView(@Nullable ViewGroup parent, @NonNull Context context, int marginBottom) {
-    GVideoLinearLayout linearLayout = new GVideoLinearLayout(context);
+    AviationLinearLayout linearLayout = new AviationLinearLayout(context);
     linearLayout.setOrientation(LinearLayout.VERTICAL);
     // 添加子视图
     int size = mChildList.size();

@@ -9,12 +9,12 @@
 
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+    <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+        <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/fragment_modify_description_margin_left"
@@ -26,7 +26,7 @@
             android:orientation="vertical"
             android:padding="@dimen/fragment_modify_description_padding">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoEditText
+            <com.hzlz.aviation.library.widget.widget.AviationEditText
                 android:id="@+id/edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
                 android:textColor="@color/fragment_modify_description_description_text_color"
                 android:textSize="@dimen/fragment_modify_description_description_text_size" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/text_view_counter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,8 +45,8 @@
                 android:gravity="end"
                 android:textSize="@dimen/fragment_modify_description_counter_text_size" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
-    </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationFrameLayout>
 
 </layout>

@@ -11,7 +11,7 @@
         android:clickable="true"
         android:focusable="true">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/cancel"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_58DP"
@@ -37,7 +37,7 @@
             android:orientation="vertical"
             app:layout_constraintBottom_toTopOf="@id/cancel_divider" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_38DP"

@@ -6,7 +6,7 @@
         type="com.hzlz.aviation.feature.account.dialog.SimpleCancelDialogItemView"
         />
   </data>
-  <com.hzlz.aviation.library.widget.widget.GVideoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.AviationTextView xmlns:android="http://schemas.android.com/apk/res/android"
       android:id="@+id/text_view_cancel"
       android:layout_width="match_parent"
       android:layout_height="@dimen/simple_cancel_item_view_height"

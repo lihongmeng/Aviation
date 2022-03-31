@@ -18,7 +18,7 @@
             app:layout_constraintStart_toEndOf="@id/layout"
             app:layout_constraintTop_toBottomOf="@id/layout">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoBanner
+            <com.hzlz.aviation.library.widget.widget.AviationBanner
                 android:id="@+id/banner"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />

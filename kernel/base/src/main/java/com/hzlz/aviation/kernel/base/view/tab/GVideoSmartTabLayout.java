@@ -20,7 +20,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.hzlz.aviation.kernel.base.R;
 import com.hzlz.aviation.kernel.base.datamanager.ThemeDataManager;
 import com.hzlz.aviation.library.util.ResourcesUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 
 /**
@@ -191,7 +191,7 @@ public final class GVideoSmartTabLayout extends SmartTabLayout {
         if (mTabCount > 0 && viewPager != null && viewPager.getAdapter() != null) {
             for (int i = 0; i < mTabCount; i++) {
                 View tab = getTabAt(i);
-                if (tab instanceof TextView || tab instanceof GVideoTextView) {
+                if (tab instanceof TextView || tab instanceof AviationTextView) {
                     CharSequence title = viewPager.getAdapter().getPageTitle(i);
                     ((TextView) tab).setText(title);
                 }

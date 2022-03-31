@@ -10,8 +10,8 @@ import androidx.annotation.Nullable;
 
 import com.hzlz.aviation.kernel.base.R;
 import com.hzlz.aviation.kernel.base.model.circle.TopicDetail;
-import com.hzlz.aviation.library.widget.widget.GVideoLinearLayout;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationLinearLayout;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * 热门话题
  */
-public class HotTopicLayout extends GVideoLinearLayout {
+public class HotTopicLayout extends AviationLinearLayout {
 
     private Context context;
     private final List<TopicDetail> dataSource = new ArrayList<>();
@@ -71,7 +71,7 @@ public class HotTopicLayout extends GVideoLinearLayout {
             View contentView = layoutInflater.inflate(R.layout.item_circle_detail_hot_topic_content, this, false);
 
             // 话题名称
-            GVideoTextView topicName = contentView.findViewById(R.id.topic_name);
+            AviationTextView topicName = contentView.findViewById(R.id.topic_name);
             topicName.setText(topicDetail.content);
 
             if (size == 1) {

@@ -7,16 +7,16 @@ import android.widget.CompoundButton;
 /**
  * CompoundButton 基类
  */
-public final class GVideoCheckedText extends CompoundButton {
-  public GVideoCheckedText(Context context) {
+public final class AviationCheckedText extends CompoundButton {
+  public AviationCheckedText(Context context) {
     super(context);
   }
 
-  public GVideoCheckedText(Context context, AttributeSet attrs) {
+  public AviationCheckedText(Context context, AttributeSet attrs) {
     super(context, attrs);
   }
 
-  public GVideoCheckedText(Context context, AttributeSet attrs, int defStyleAttr) {
+  public AviationCheckedText(Context context, AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
   }
 }

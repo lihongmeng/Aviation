@@ -18,7 +18,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.hzlz.aviation.kernel.base.R;
 import com.hzlz.aviation.library.util.ResourcesUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 
 /**
@@ -60,7 +60,7 @@ public class GvideoMessageTab extends SmartTabLayout implements SmartTabLayout.T
         if (position < mTabCount){
             View tab = getTabAt(position);
             View view = tab.findViewById(R.id.tab_unread);
-            if (view instanceof GVideoTextView || view instanceof TextView){
+            if (view instanceof AviationTextView || view instanceof TextView){
                 if (unreadCount > 0) {
                     ((TextView) view).setText(unreadCount + "");
                     view.setVisibility(VISIBLE);
@@ -141,7 +141,7 @@ public class GvideoMessageTab extends SmartTabLayout implements SmartTabLayout.T
             View tab = getTabAt(index);
             boolean isCurrent = index == currentPosition;
             View view = tab.findViewById(R.id.tab_title);
-            if (view instanceof GVideoTextView || view instanceof TextView){
+            if (view instanceof AviationTextView || view instanceof TextView){
                 TextView textView = (TextView) view;
                 textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, isCurrent ? mSelectedTextSize : mDefaultTextSize);
                 textView.setTypeface(Typeface.defaultFromStyle(isCurrent ? Typeface.BOLD : Typeface.NORMAL));
@@ -154,7 +154,7 @@ public class GvideoMessageTab extends SmartTabLayout implements SmartTabLayout.T
     public View createTabView(ViewGroup container, int position, PagerAdapter adapter) {
         LayoutInflater inflater = LayoutInflater.from(container.getContext());
         View tab = inflater.inflate(R.layout.view_message_notification_tab_item, container, false);
-        GVideoTextView title = tab.findViewById(R.id.tab_title);
+        AviationTextView title = tab.findViewById(R.id.tab_title);
         title.setText(adapter.getPageTitle(position));
         return tab;
     }

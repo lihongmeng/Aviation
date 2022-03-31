@@ -10,18 +10,18 @@
     android:paddingLeft="@dimen/DIMEN_10DP"
     android:paddingRight="@dimen/DIMEN_10DP">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/icon_publish_circle" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:layout_width="1px"
         android:layout_height="@dimen/DIMEN_10DP"
         android:layout_margin="@dimen/DIMEN_4DP"
         android:background="@color/color_df2e51" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:id="@+id/circle_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

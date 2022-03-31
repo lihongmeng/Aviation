@@ -79,7 +79,7 @@
                         android:layout_height="wrap_content"
                         app:layout_scrollFlags="scroll">
 
-                        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                        <com.hzlz.aviation.library.widget.widget.AviationTextView
                             android:id="@+id/title"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                             app:layout_constraintRight_toRightOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+                        <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
                             android:id="@+id/circle_layout"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/DIMEN_64DP"
@@ -107,14 +107,14 @@
                             tools:visibility="gone"
                             app:layout_constraintTop_toBottomOf="@id/title">
 
-                            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                            <com.hzlz.aviation.library.widget.widget.AviationImageView
                                 android:id="@+id/circle_header"
                                 android:layout_width="@dimen/DIMEN_40DP"
                                 android:layout_height="@dimen/DIMEN_40DP"
                                 android:background="@drawable/shape_solid_f7f7f7_4dp_stroke_f2f2f2_1px"
                                 android:scaleType="centerInside" />
 
-                            <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+                            <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
                                 android:layout_width="@dimen/DIMEN_0DP"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -122,7 +122,7 @@
                                 android:gravity="center_vertical"
                                 android:orientation="vertical">
 
-                                <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                                <com.hzlz.aviation.library.widget.widget.AviationTextView
                                     android:id="@+id/circle_name"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -141,7 +141,7 @@
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     tools:text="123456789123456789123456789" />
 
-                                <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                                <com.hzlz.aviation.library.widget.widget.AviationTextView
                                     android:id="@+id/circle_introduction"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -155,7 +155,7 @@
                                     app:layout_constraintTop_toBottomOf="@id/middle"
                                     tools:text="123456789456123456789123456789456123456789123456789456123456789" />
 
-                            </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+                            </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
                             <com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout
                                 android:id="@+id/button_follow"
@@ -165,7 +165,7 @@
                                 app:corner_radius="@dimen/DIMEN_13DP"
                                 app:border_width_normal="@dimen/DIMEN_D5P">
 
-                                <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                                <com.hzlz.aviation.library.widget.widget.AviationTextView
                                     android:id="@+id/button_text"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -174,9 +174,9 @@
 
                             </com.hzlz.aviation.library.widget.widget.GVideoRLinearLayout>
 
-                        </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+                        </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
-                        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+                        <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
                             android:id="@+id/qa_layout"
                             android:layout_marginTop="@dimen/DIMEN_12DP"
                             android:layout_width="match_parent"

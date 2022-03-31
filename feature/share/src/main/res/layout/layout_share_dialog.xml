@@ -14,7 +14,7 @@
         android:background="@{binding.shareBackgroundColor}"
         android:orientation="vertical">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/share_title"
             android:layout_width="match_parent"
             android:layout_height="@dimen/share_title_height"
@@ -31,7 +31,7 @@
             android:layout_marginLeft="@dimen/share_dialog_margin_landscape"
             android:layout_marginRight="@dimen/share_dialog_margin_landscape" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/share_interval"
             android:layout_width="match_parent"
             android:layout_height="1px"
@@ -49,7 +49,7 @@
             android:layout_marginRight="@dimen/share_dialog_margin_landscape"
             android:layout_marginBottom="@dimen/more_margin_bottom" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/share_cancel"
             android:layout_width="match_parent"
             android:layout_height="@dimen/share_cancel_height"

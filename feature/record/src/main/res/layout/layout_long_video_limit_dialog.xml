@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-  <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+  <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
       style="@style/CenterDialogStyle.Dialog"
       >
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:id="@+id/ensure_dialog_title"
         style="@style/CenterDialogStyle.EnsureTitle"
         android:text="@string/video_limit_title"
@@ -14,7 +14,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/ensure_dialog_text"/>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:id="@+id/ensure_dialog_text"
         style="@style/CenterDialogStyle.EnsureText"
         android:text="@string/video_limit_text"
@@ -24,7 +24,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/ensure_dialog_cancel"/>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoButton
+    <com.hzlz.aviation.library.widget.widget.AviationButton
         android:id="@+id/confirm"
         android:background="@drawable/center_dialog_button"
         style="@style/CenterDialogStyle.ConfirmButton"
@@ -37,5 +37,5 @@
         app:layout_constraintTop_toBottomOf="@id/ensure_dialog_text"
         />
 
-  </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+  </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 </layout>

@@ -23,7 +23,7 @@
         android:background="@color/all_layout_background"
         android:fillViewport="true">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+        <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clickable="true"
@@ -31,16 +31,16 @@
             android:orientation="vertical">
 
             <!--头像和名称-->
-            <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+            <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
                 style="@style/FragmentDrawer.AvatarContainer"
                 android:orientation="vertical"
                 android:onClick="@{(v)->viewModel.navigateToProfile(v)}">
 
-                <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+                <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
-                    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                    <com.hzlz.aviation.library.widget.widget.AviationImageView
                         android:id="@+id/image_view_avatar"
                         android:layout_width="@dimen/DIMEN_92DP"
                         android:layout_height="@dimen/DIMEN_92DP"
@@ -49,7 +49,7 @@
                         app:imageData="@{user.avatarUrl}"
                         tools:src="@drawable/ic_launcher" />
 
-                    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                    <com.hzlz.aviation.library.widget.widget.AviationImageView
                         android:layout_width="@dimen/DIMEN_29DP"
                         android:layout_height="@dimen/DIMEN_29DP"
                         android:src="@drawable/icon_header_authentication"
@@ -57,9 +57,9 @@
                         app:layout_constraintEnd_toEndOf="@id/image_view_avatar"
                         app:layout_constraintBottom_toBottomOf="@id/image_view_avatar" />
 
-                </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+                </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
-                <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.AviationTextView
                     android:id="@+id/text_view_nick_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -69,53 +69,53 @@
                     android:layout_marginTop="@dimen/DIMEN_10DP"
                     android:text="@{user.hasLoggedIn ? user.nickname : @string/all_un_login}"
                     tools:text="张三" />
-            </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+            </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
-<!--            <com.hzlz.aviation.library.widget.widget.GVideoCellView-->
+<!--            <com.hzlz.aviation.library.widget.widget.AviationCellView-->
 <!--                style="@style/FragmentDrawer.NotificationCell"-->
 <!--                android:onClick="@{(v)->viewModel.navigateToMessageAndNotification(v)}"-->
 <!--                app:cvLeftIcon="@drawable/ic_message"-->
 <!--                app:cvLeftText="@string/fragment_profile_drawer_message_and_notification"-->
 <!--                app:cvShowLeftIconPoint="@{viewModel.hasUnreadMessageNotification}" />-->
 
-            <com.hzlz.aviation.library.widget.widget.GVideoCellView
+            <com.hzlz.aviation.library.widget.widget.AviationCellView
                 style="@style/FragmentDrawer.Cell"
                 android:onClick="@{(v)->viewModel.navigateToAccountAndSecurity(v)}"
                 app:cvLeftIcon="@drawable/ic_security"
                 app:cvLeftText="@string/fragment_profile_drawer_account_and_security" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoCellView
+            <com.hzlz.aviation.library.widget.widget.AviationCellView
                 style="@style/FragmentDrawer.Cell"
                 android:onClick="@{(v)->viewModel.navigateToGeneralSetting(v)}"
                 app:cvLeftIcon="@drawable/ic_setting"
                 app:cvLeftText="@string/fragment_profile_drawer_general_setting" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoCellView
+            <com.hzlz.aviation.library.widget.widget.AviationCellView
                 style="@style/FragmentDrawer.Cell"
                 android:onClick="@{(v)->viewModel.navigateToFeedbackAndHelp(v)}"
                 app:cvLeftIcon="@drawable/ic_feedback"
                 app:cvLeftText="@string/fragment_profile_drawer_feedback_and_help" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoCellView
+            <com.hzlz.aviation.library.widget.widget.AviationCellView
                 style="@style/FragmentDrawer.Cell"
                 android:onClick="@{(v)->viewModel.showAppQrCode(v)}"
                 app:cvLeftIcon="@drawable/invite_friend"
                 app:cvLeftText="@string/invite_friend" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoCellView
+            <com.hzlz.aviation.library.widget.widget.AviationCellView
                 style="@style/FragmentDrawer.Cell"
                 android:onClick="@{(v)->viewModel.navigateToAbout(v)}"
                 app:cvLeftIcon="@drawable/ic_about"
                 app:cvLeftText="@string/fragment_profile_drawer_about_gvideo" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoCellView
+            <com.hzlz.aviation.library.widget.widget.AviationCellView
                 style="@style/FragmentDrawer.Cell"
                 android:onClick="@{(v)->viewModel.mark(v)}"
                 app:cvLeftIcon="@drawable/ic_like"
                 app:cvLeftText="@string/mark_for_us"
                 android:visibility="@{viewModel.switchEnvironmentVisibility}" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoCellView
+            <com.hzlz.aviation.library.widget.widget.AviationCellView
                 style="@style/FragmentDrawer.Cell"
                 android:onClick="@{(v)->viewModel.navigateToSettleIn(v)}"
                 app:cvLeftIcon="@drawable/ic_settle_in"
@@ -123,7 +123,7 @@
                 app:cvShowBottomDriver="true"
                 android:visibility="@{viewModel.switchEnvironmentVisibility}" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoCellView
+            <com.hzlz.aviation.library.widget.widget.AviationCellView
                 android:id="@+id/cell_view_clear_cache"
                 style="@style/FragmentDrawer.Cell"
                 android:onClick="@{(v)->viewModel.clearCache(v)}"
@@ -135,14 +135,14 @@
                 app:cvRightText="@{viewModel.cacheSize}"
                 app:cvShowRightIcon="false" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoCellView
+            <com.hzlz.aviation.library.widget.widget.AviationCellView
                 style="@style/FragmentDrawer.Cell"
                 android:onClick="@{(v)->viewModel.switchEnvironment(v)}"
                 android:visibility="@{viewModel.switchEnvironmentVisibility}"
                 app:cvAddLeftIcon="false"
                 app:cvLeftText="@string/all_account_test_entry" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
     </androidx.core.widget.NestedScrollView>
 

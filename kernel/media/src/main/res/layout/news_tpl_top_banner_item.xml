@@ -11,12 +11,12 @@
         <import type="android.view.View" />
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:id="@+id/root_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoBanner
+        <com.hzlz.aviation.library.widget.widget.AviationBanner
             android:id="@+id/banner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -51,6 +51,6 @@
             app:layout_constraintStart_toEndOf="@id/image_left"
             app:layout_constraintTop_toTopOf="@id/image_left" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
 </layout>

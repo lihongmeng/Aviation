@@ -15,7 +15,7 @@
 
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:id="@+id/root"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -30,7 +30,7 @@
             app:srlEnableFooterFollowWhenNoMoreData="true"
             app:srlEnableLoadMoreWhenContentNotFull="false">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoCoordinatorLayout
+            <com.hzlz.aviation.library.widget.widget.AviationCoordinatorLayout
                 android:id="@+id/recycler_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -52,7 +52,7 @@
                     android:orientation="vertical">
 
                     <!--上划后顶部的占位图-->
-                    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                    <com.hzlz.aviation.library.widget.widget.AviationImageView
                         android:id="@+id/top_place_holder_bg"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -76,12 +76,12 @@
                     android:layout_below="@id/info_list"
                     app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
 
-            </com.hzlz.aviation.library.widget.widget.GVideoCoordinatorLayout>
+            </com.hzlz.aviation.library.widget.widget.AviationCoordinatorLayout>
 
         </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
 
         <!--返回按钮-->
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/back_button"
             android:layout_width="@dimen/DIMEN_26DP"
             android:layout_height="@dimen/DIMEN_36DP"
@@ -93,7 +93,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <!--滑动页面时吸顶的信息 - 圈子名称-->
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/top_circle_name"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/DIMEN_26DP"
@@ -114,7 +114,7 @@
             />
 
         <!--分享按钮-->
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/share"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/DIMEN_26DP"
@@ -175,12 +175,12 @@
             android:background="@color/color_000000_50"
             android:visibility="invisible" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
             android:id="@+id/empty_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
 </layout>
 

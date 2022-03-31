@@ -6,22 +6,22 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 import com.hzlz.aviation.library.widget.widget.WaveIndicatorView;
 import com.hzlz.aviation.feature.live.R;
 
 public class PlayingLiveHolder extends RecyclerView.ViewHolder {
 
     public ConstraintLayout root;
-    public GVideoImageView cover;
-    public GVideoTextView title;
+    public AviationImageView cover;
+    public AviationTextView title;
     public View liveTypeBackground;
     public WaveIndicatorView wave;
-    public GVideoTextView liveType;
+    public AviationTextView liveType;
     public View heraldBackground;
-    public GVideoImageView heraldIcon;
-    public GVideoTextView heraldTime;
+    public AviationImageView heraldIcon;
+    public AviationTextView heraldTime;
     public View heraldTimeRight;
     public View divider;
 

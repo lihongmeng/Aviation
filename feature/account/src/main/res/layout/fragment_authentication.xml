@@ -10,7 +10,7 @@
         type="com.hzlz.aviation.feature.account.ui.authentication.AuthenticationDataBinding"
         />
   </data>
-  <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.AviationFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:orientation="vertical"
@@ -21,22 +21,22 @@
         android:background="@color/c_bg01"
         android:fillViewport="true"
         >
-      <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+      <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:orientation="vertical"
           >
         <!--身份证号-->
-        <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+        <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
             style="@style/FragmentAuthenticationStyle.IdCardNumberContainer"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             >
-          <com.hzlz.aviation.library.widget.widget.GVideoTextView
+          <com.hzlz.aviation.library.widget.widget.AviationTextView
               style="@style/FragmentAuthenticationStyle.IdCardNumberLabel"
               android:text="@string/all_id_card_number"
               />
-          <com.hzlz.aviation.library.widget.widget.GVideoClearableEditText
+          <com.hzlz.aviation.library.widget.widget.AviationClearableEditText
               android:id="@+id/edit_text_id_card_number"
               style="@style/FragmentAuthenticationStyle.IdCardNumber"
               android:layout_width="match_parent"
@@ -44,25 +44,25 @@
               android:hint="@string/fragment_authentication_id_card_hint"
               android:text="@={binding.idCardNumber}"
               />
-        </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
-        <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+        </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
+        <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
             style="@style/FragmentAuthenticationStyle.UploadPictureContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
-          <com.hzlz.aviation.library.widget.widget.GVideoTextView
+          <com.hzlz.aviation.library.widget.widget.AviationTextView
               style="@style/FragmentAuthenticationStyle.UploadPictureTitle"
               android:text="@string/all_upload_picture"
               />
           <!--身份证姓名面照片-->
-          <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+          <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
               style="@style/FragmentAuthenticationStyle.PictureContainer"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:onClick="@{(v)->viewModel.selectIdCardFrontPicture(v)}"
               >
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/image_view_id_card_front_example"
                 style="@style/FragmentAuthenticationStyle.PictureExample"
                 android:src="@drawable/ic_id_card_front"
@@ -70,7 +70,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 />
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/image_view_id_card_front_plus"
                 style="@style/FragmentAuthenticationStyle.PicturePlus"
                 app:layout_constraintBottom_toTopOf="@+id/text_view_upload_id_card_front"
@@ -78,7 +78,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_chainStyle="packed"
                 />
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/text_view_upload_id_card_front"
                 style="@style/FragmentAuthenticationStyle.PictureTip"
                 android:text="@string/fragment_authentication_upload_id_card_front_picture"
@@ -87,7 +87,7 @@
                 app:layout_constraintRight_toRightOf="@id/image_view_id_card_front_plus"
                 app:layout_constraintTop_toBottomOf="@id/image_view_id_card_front_plus"
                 />
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/image_view_id_card_front"
                 style="@style/FragmentAuthenticationStyle.PictureReal"
                 android:visibility="@{binding.idCardFrontVisibility}"
@@ -97,22 +97,22 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 />
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 style="@style/FragmentAuthenticationStyle.PictureClear"
                 android:onClick="@{()->viewModel.clearIdCardFrontPicture()}"
                 android:visibility="@{binding.idCardFrontVisibility}"
                 app:layout_constraintRight_toRightOf="@id/image_view_id_card_front"
                 app:layout_constraintTop_toTopOf="@id/image_view_id_card_front"
                 />
-          </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+          </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
           <!--身份证国徽面照片-->
-          <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+          <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
               style="@style/FragmentAuthenticationStyle.PictureContainer"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:onClick="@{(v)->viewModel.selectIdCardBackPicture(v)}"
               >
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/image_view_id_card_back_example"
                 style="@style/FragmentAuthenticationStyle.PictureExample"
                 android:src="@drawable/ic_id_card_back"
@@ -120,7 +120,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 />
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/image_view_id_card_back_plus"
                 style="@style/FragmentAuthenticationStyle.PicturePlus"
                 app:layout_constraintBottom_toTopOf="@+id/text_view_upload_id_card_back"
@@ -128,7 +128,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_chainStyle="packed"
                 />
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/text_view_upload_id_card_back"
                 style="@style/FragmentAuthenticationStyle.PictureTip"
                 android:text="@string/fragment_authentication_upload_id_card_back_picture"
@@ -137,7 +137,7 @@
                 app:layout_constraintRight_toRightOf="@id/image_view_id_card_back_plus"
                 app:layout_constraintTop_toBottomOf="@id/image_view_id_card_back_plus"
                 />
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/image_view_id_card_back"
                 style="@style/FragmentAuthenticationStyle.PictureReal"
                 android:visibility="@{binding.idCardBackVisibility}"
@@ -147,22 +147,22 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 />
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 style="@style/FragmentAuthenticationStyle.PictureClear"
                 android:onClick="@{()->viewModel.clearIdCardBackPicture()}"
                 android:visibility="@{binding.idCardBackVisibility}"
                 app:layout_constraintRight_toRightOf="@id/image_view_id_card_back"
                 app:layout_constraintTop_toTopOf="@id/image_view_id_card_back"
                 />
-          </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+          </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
           <!--手持身份证照片-->
-          <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+          <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
               style="@style/FragmentAuthenticationStyle.PictureContainer"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:onClick="@{(v)->viewModel.selectIdCardSelfPicture(v)}"
               >
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/image_view_id_card_self_example"
                 style="@style/FragmentAuthenticationStyle.PictureExample"
                 android:src="@drawable/ic_id_card_self"
@@ -170,7 +170,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 />
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/image_view_id_card_self_plus"
                 style="@style/FragmentAuthenticationStyle.PicturePlus"
                 app:layout_constraintBottom_toTopOf="@+id/text_view_upload_id_card_self"
@@ -178,7 +178,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_chainStyle="packed"
                 />
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/text_view_upload_id_card_self"
                 style="@style/FragmentAuthenticationStyle.PictureTip"
                 android:text="@string/fragment_authentication_upload_id_card_self_picture"
@@ -187,7 +187,7 @@
                 app:layout_constraintRight_toRightOf="@id/image_view_id_card_self_plus"
                 app:layout_constraintTop_toBottomOf="@id/image_view_id_card_self_plus"
                 />
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/image_view_id_card_self"
                 style="@style/FragmentAuthenticationStyle.PictureReal"
                 android:visibility="@{binding.idCardSelfVisibility}"
@@ -197,23 +197,23 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 />
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 style="@style/FragmentAuthenticationStyle.PictureClear"
                 android:onClick="@{()->viewModel.clearIdCardSelfPicture()}"
                 android:visibility="@{binding.idCardSelfVisibility}"
                 app:layout_constraintRight_toRightOf="@id/image_view_id_card_self"
                 app:layout_constraintTop_toTopOf="@id/image_view_id_card_self"
                 />
-          </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+          </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
           <!--提交-->
-          <com.hzlz.aviation.library.widget.widget.GVideoButton
+          <com.hzlz.aviation.library.widget.widget.AviationButton
               style="@style/FragmentAuthenticationStyle.Submit"
               android:layout_width="match_parent"
               android:enabled="@{binding.enableSubmit}"
               android:onClick="@{(v)->viewModel.submitAuthentication(v)}"
               android:text="@string/fragment_authentication_submit"
               />
-        </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
         <!--注意事项-->
         <TextView
             style="@style/FragmentAuthenticationStyle.Attention"
@@ -221,7 +221,7 @@
             android:layout_height="wrap_content"
             android:text="@string/fragment_authentication_attention"
             />
-      </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+      </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
     </com.hzlz.aviation.library.widget.widget.GVideoScrollView>
-  </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
+  </com.hzlz.aviation.library.widget.widget.AviationFrameLayout>
 </layout>

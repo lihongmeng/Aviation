@@ -20,7 +20,7 @@
         android:layout_height="match_parent"
         android:background="@color/all_layout_background">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/image_view_back"
             style="@style/Toolbar.LeftBack"
             android:onClick="@{(v)->viewModel.back(v)}"
@@ -42,13 +42,13 @@
             android:orientation="vertical"
             app:layout_constraintGuide_end="@dimen/margin_all_account_large" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_view_title"
             style="@style/FragmentSmsCode.Title"
             app:layout_constraintLeft_toLeftOf="@id/guide_line_left"
             app:layout_constraintTop_toBottomOf="@id/image_view_back" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_view_sms_code_sent"
             style="@style/FragmentSmsCode.SmsCodeSent"
             android:text="@{binding.msmCodeSent}"
@@ -57,7 +57,7 @@
             app:layout_constraintLeft_toLeftOf="@id/guide_line_left"
             app:layout_constraintTop_toBottomOf="@id/text_view_title" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoEditText
+        <com.hzlz.aviation.library.widget.widget.AviationEditText
             android:id="@+id/edit_text_sms_code"
             style="@style/FragmentSmsCode.SmsCode"
             android:layout_width="0dp"
@@ -67,7 +67,7 @@
             app:layout_constraintRight_toLeftOf="@+id/text_obtain_sms_code"
             app:layout_constraintTop_toBottomOf="@id/text_view_sms_code_sent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_obtain_sms_code"
             style="@style/FragmentSmsCode.ObtainSmsCode"
             android:enabled="@{binding.enableSendSmsCode}"
@@ -86,7 +86,7 @@
             app:layout_constraintRight_toRightOf="@id/guide_line_right"
             app:layout_constraintTop_toBottomOf="@id/edit_text_sms_code" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoButton
+        <com.hzlz.aviation.library.widget.widget.AviationButton
             android:id="@+id/button_confirm"
             style="@style/FragmentSmsCode.Confirm"
             android:layout_width="0dp"

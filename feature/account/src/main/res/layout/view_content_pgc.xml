@@ -28,7 +28,7 @@
             style="@style/FragmentPgcStyle.DetailContainer"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:scaleType="centerCrop"
@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.AviationImageView
                     android:id="@+id/image_view_detail_avatar"
                     style="@style/FragmentPgcStyle.DetailAvatar_68dp_68dp"
                     app:circleCrop="@{true}"
@@ -65,7 +65,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:placeholder='@{@drawable/ic_default_avatar}' />
 
-                <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.AviationTextView
                     android:id="@+id/text_view_detail_name"
                     style="@style/FragmentPgcStyle.DetailName"
                     android:layout_width="0dp"
@@ -76,7 +76,7 @@
                     app:layout_constraintTop_toTopOf="@id/image_view_detail_avatar"
                     app:layout_constraintVertical_chainStyle="spread" />
 
-                <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.AviationTextView
                     android:id="@+id/text_view_detail_description"
                     style="@style/FragmentPgcStyle.DetailDescription"
                     android:layout_width="0dp"
@@ -86,7 +86,7 @@
                     app:layout_constraintRight_toRightOf="@id/text_view_detail_name"
                     app:layout_constraintTop_toBottomOf="@id/text_view_detail_name" />
 
-                <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.AviationTextView
                     android:id="@+id/text_view_detail_follow"
                     style="@style/FragmentPgcStyle.DetailFollow"
                     android:background="@{authorObservable.isFollow ? @drawable/fragment_pgc_detail_follow_followed_background  : @drawable/all_c_gradual01_button_background}"

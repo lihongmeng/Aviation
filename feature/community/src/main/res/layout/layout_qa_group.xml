@@ -16,7 +16,7 @@
         <import type="android.view.View" />
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:id="@+id/root_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -30,11 +30,11 @@
             app:cardCornerRadius="@dimen/DIMEN_8DP"
             app:cardElevation="@dimen/DIMEN_0DP">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+            <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.AviationTextView
                     android:id="@+id/more"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/DIMEN_36DP"
@@ -66,7 +66,7 @@
                     tools:visibility="visible" />
 
                 <!--    问答老师广场   -->
-                <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.AviationImageView
                     android:id="@+id/iv_qa"
                     android:layout_width="@dimen/DIMEN_66DP"
                     android:layout_height="@dimen/DIMEN_15DP"
@@ -76,7 +76,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/more" />
 
-                <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+                <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
                     android:id="@+id/layout_content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
                         android:maxHeight="@dimen/DIMEN_82DP"
                         android:nestedScrollingEnabled="false" />
 
-                    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                    <com.hzlz.aviation.library.widget.widget.AviationImageView
                         android:id="@+id/place_empty"
                         android:layout_width="@dimen/DIMEN_314DP"
                         android:layout_height="@dimen/DIMEN_82DP"
@@ -106,10 +106,10 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent" />
 
-                </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+                </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
                 <!--    问答老师banner   -->
-                <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.AviationImageView
                     android:id="@+id/iv_teacher_question"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/DIMEN_15DP"
@@ -119,7 +119,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/more" />
 
-                <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.AviationTextView
                     android:id="@+id/iv_teacher_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
                     app:layout_constraintStart_toEndOf="@id/iv_teacher_question"
                     app:layout_constraintTop_toTopOf="@id/iv_teacher_question" />
 
-                <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+                <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
                     android:id="@+id/layout_teacher_banner"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/DIMEN_117DP"
@@ -142,7 +142,7 @@
                     app:layout_constraintTop_toBottomOf="@id/more"
                     tools:visibility="visible">
 
-                    <com.hzlz.aviation.library.widget.widget.GVideoBanner
+                    <com.hzlz.aviation.library.widget.widget.AviationBanner
                         android:id="@+id/teacher_banner"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/DIMEN_117DP"
@@ -155,12 +155,12 @@
                         android:layout_height="@dimen/DIMEN_26DP"
                         android:background="@drawable/shape_banner_teacher_top_bg" />
 
-                </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+                </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
-            </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+            </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
         </androidx.cardview.widget.CardView>
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
 </layout>

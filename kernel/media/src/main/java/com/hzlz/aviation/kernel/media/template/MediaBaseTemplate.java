@@ -26,7 +26,7 @@ import com.hzlz.aviation.kernel.base.plugin.DetailPagePlugin;
 import com.hzlz.aviation.kernel.base.plugin.VideoPlugin;
 import com.hzlz.aviation.kernel.base.span.CenterAlignImageSpan;
 import com.hzlz.aviation.kernel.base.utils.SpannableStringUtils;
-import com.hzlz.aviation.kernel.liteav.GVideoSoundView;
+import com.hzlz.aviation.kernel.liteav.AviationSoundView;
 import com.hzlz.aviation.kernel.liteav.service.AudioLivePlayHelper;
 import com.hzlz.aviation.kernel.media.MediaConfig;
 import com.hzlz.aviation.kernel.media.MediaConstants;
@@ -45,7 +45,7 @@ import com.hzlz.aviation.kernel.runtime.GVideoRuntime;
 import com.hzlz.aviation.library.ioc.PluginManager;
 import com.hzlz.aviation.library.util.DateUtils;
 import com.hzlz.aviation.library.util.ResourcesUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 /**
  * Media 线性布局基础控件
@@ -316,7 +316,7 @@ public abstract class MediaBaseTemplate implements IMediaTemplate, IMediaPlayer 
         } else {
             bottomBinding.qualityComment.setVisibility(View.VISIBLE);
             bottomBinding.qualityComment.setPlayOnClickListener(v -> {
-                GVideoSoundView gVideoSoundView = bottomBinding.qualityComment.getGVideoSoundView();
+                AviationSoundView gVideoSoundView = bottomBinding.qualityComment.getGVideoSoundView();
                 if (gVideoSoundView == null) {
                     return;
                 }
@@ -327,7 +327,7 @@ public abstract class MediaBaseTemplate implements IMediaTemplate, IMediaPlayer 
         }
     }
 
-    protected void updateQuestionLayout(GVideoTextView content) {
+    protected void updateQuestionLayout(AviationTextView content) {
         QuestionModel questionModel = mMediaModel.getQuestionVO();
         if (questionModel != null) {
             if (!TextUtils.isEmpty(questionModel.content)) {

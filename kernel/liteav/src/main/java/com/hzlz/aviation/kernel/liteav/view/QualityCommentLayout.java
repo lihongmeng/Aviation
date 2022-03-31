@@ -21,7 +21,7 @@ import com.hzlz.aviation.kernel.base.databinding.LayoutQualityCommentBinding;
 import com.hzlz.aviation.kernel.base.model.QualityComment;
 import com.hzlz.aviation.kernel.base.model.video.AuthorModel;
 import com.hzlz.aviation.kernel.base.view.ImageRecyclerView;
-import com.hzlz.aviation.kernel.liteav.GVideoSoundView;
+import com.hzlz.aviation.kernel.liteav.AviationSoundView;
 import com.hzlz.aviation.kernel.liteav.R;
 
 import java.util.List;
@@ -91,10 +91,10 @@ public class QualityCommentLayout extends ConstraintLayout {
 
     }
 
-    public GVideoSoundView getGVideoSoundView() {
+    public AviationSoundView getGVideoSoundView() {
         View childView = binding.container.getChildAt(0);
-        if (childView instanceof GVideoSoundView) {
-            return (GVideoSoundView) childView;
+        if (childView instanceof AviationSoundView) {
+            return (AviationSoundView) childView;
         }
         return null;
     }
@@ -110,7 +110,7 @@ public class QualityCommentLayout extends ConstraintLayout {
     }
 
     public void addSound(String soundUrl, String soundContent, long length) {
-        GVideoSoundView gVideoSoundView = new GVideoSoundView(context);
+        AviationSoundView gVideoSoundView = new AviationSoundView(context);
         gVideoSoundView.isShowDelete(false);
         gVideoSoundView.isEnableTextChange(true);
         gVideoSoundView.setSoundText(soundContent);
@@ -161,8 +161,8 @@ public class QualityCommentLayout extends ConstraintLayout {
     protected void onVisibilityChanged(@NonNull View changedView, int visibility) {
         if (visibility != VISIBLE && binding != null) {
             View childView = binding.container.getChildAt(0);
-            if (childView instanceof GVideoSoundView) {
-                ((GVideoSoundView) childView).stop();
+            if (childView instanceof AviationSoundView) {
+                ((AviationSoundView) childView).stop();
             }
             return;
         }

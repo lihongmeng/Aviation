@@ -25,7 +25,7 @@ import com.hzlz.aviation.kernel.base.placeholder.PlaceholderType;
 import com.hzlz.aviation.kernel.event.GVideoEventBus;
 import com.hzlz.aviation.kernel.stat.stat.StatPid;
 import com.hzlz.aviation.library.util.SoftInputUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoEditText;
+import com.hzlz.aviation.library.widget.widget.AviationEditText;
 
 public class SearchTopicFragment extends BaseFragment<FragmentSearchTopicBinding> {
 
@@ -49,7 +49,7 @@ public class SearchTopicFragment extends BaseFragment<FragmentSearchTopicBinding
         }
         updatePlaceholderLayoutType(PlaceholderType.NONE);
 
-        GVideoEditText editText = mBinding.root.findViewById(R.id.edit);
+        AviationEditText editText = mBinding.root.findViewById(R.id.edit);
         editText.setOnEditorActionListener((v, actionId, event) -> {
             if (actionId == EditorInfo.IME_ACTION_SEARCH) {
                 return startSearch();
@@ -136,7 +136,7 @@ public class SearchTopicFragment extends BaseFragment<FragmentSearchTopicBinding
     }
 
     public boolean startSearch() {
-        GVideoEditText editText = mBinding.root.findViewById(R.id.edit);
+        AviationEditText editText = mBinding.root.findViewById(R.id.edit);
         Editable text = editText.getText();
         if (text == null) {
             return false;

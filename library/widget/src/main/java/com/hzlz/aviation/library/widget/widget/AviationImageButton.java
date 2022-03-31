@@ -11,18 +11,18 @@ import androidx.appcompat.widget.AppCompatImageButton;
  *
  * @since 2020-01-13 14:43
  */
-public class GVideoImageButton extends AppCompatImageButton {
+public class AviationImageButton extends AppCompatImageButton {
   //<editor-fold desc="构造函数">
 
-  public GVideoImageButton(Context context) {
+  public AviationImageButton(Context context) {
     super(context);
   }
 
-  public GVideoImageButton(Context context, AttributeSet attrs) {
+  public AviationImageButton(Context context, AttributeSet attrs) {
     super(context, attrs);
   }
 
-  public GVideoImageButton(Context context, AttributeSet attrs, int defStyleAttr) {
+  public AviationImageButton(Context context, AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
   }
   //</editor-fold>

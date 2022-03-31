@@ -48,7 +48,7 @@
             app:viewModel="@{viewModel}"
             layout="@layout/view_author_message" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/content"
             style="@style/TextStyle.DefaultSpacing.width_0DP"
             android:layout_marginTop="8dp"
@@ -65,7 +65,7 @@
             app:layout_constraintTop_toBottomOf="@id/author_layout"
             tools:text="氨基酸qq斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大氨基酸斯利康大" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:id="@+id/layout_sound_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -88,16 +88,16 @@
                 android:gravity="center_horizontal"
                 app:show_style="fall" />
 
-            <com.hzlz.aviation.kernel.liteav.GVideoSoundView
+            <com.hzlz.aviation.kernel.liteav.AviationSoundView
                 android:id="@+id/sound_view"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent=".9"
                 android:layout_height="wrap_content"
                 android:visibility="@{videoModel.haveAudio?View.VISIBLE:View.GONE}" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
             android:id="@+id/gfl_media_toolbar_layout_bottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
                 app:videoObservable="@{videoObservable}"
                 layout="@layout/media_toolbar_layout_bottom_no_data_bind" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationFrameLayout>
 
         <View
             android:id="@+id/circle_layout_top_divider"
@@ -132,7 +132,7 @@
             android:onClick="@{(v)-> viewModel.onEnterCircleClick(v)}"
             app:layout_constraintTop_toBottomOf="@id/circle_layout_top_divider">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/circle_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -148,7 +148,7 @@
                 android:textStyle="bold"
                 tools:text="123456789123456789123456789" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/introduction"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -162,7 +162,7 @@
                 android:layout_below="@id/circle_name"
                 tools:text="123456789456123456789123456789456123456789123456789456123456789" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/circle_name"
@@ -186,7 +186,7 @@
             android:layout_height="@dimen/DIMEN_45DP"
             app:layout_constraintTop_toBottomOf="@id/all_comment_top_divider">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"

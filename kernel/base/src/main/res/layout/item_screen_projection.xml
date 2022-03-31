@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/DIMEN_48DP">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="@dimen/DIMEN_48DP"

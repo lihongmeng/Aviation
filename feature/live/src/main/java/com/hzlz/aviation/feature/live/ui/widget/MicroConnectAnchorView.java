@@ -12,9 +12,9 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import com.bumptech.glide.Glide;
 import com.hzlz.aviation.feature.live.liveroom.roomutil.commondef.AnchorInfo;
 import com.hzlz.aviation.library.util.ResourcesUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
 import com.hzlz.aviation.library.widget.widget.GVideoRImageView;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 import com.hzlz.aviation.feature.live.R;
 
 public class MicroConnectAnchorView extends ConstraintLayout {
@@ -24,8 +24,8 @@ public class MicroConnectAnchorView extends ConstraintLayout {
     public boolean isAnchor;
 
     public GVideoRImageView header;
-    public GVideoTextView name;
-    public GVideoImageView microStatus;
+    public AviationTextView name;
+    public AviationImageView microStatus;
 
     public MicroConnectAnchorView(@NonNull Context context) {
         this(context, null);

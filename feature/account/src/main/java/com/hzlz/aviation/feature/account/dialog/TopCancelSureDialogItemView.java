@@ -14,8 +14,8 @@ import androidx.appcompat.view.ContextThemeWrapper;
 import com.hzlz.aviation.feature.account.R;
 import com.hzlz.aviation.library.util.ResourcesUtils;
 import com.hzlz.aviation.library.widget.dialog.AbstractDialogItemView;
-import com.hzlz.aviation.library.widget.widget.GVideoLinearLayout;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
+import com.hzlz.aviation.library.widget.widget.AviationLinearLayout;
 
 /**
  * 顶部有取消和确定的弹窗 item View
@@ -69,13 +69,13 @@ public final class TopCancelSureDialogItemView extends AbstractDialogItemView
   public View getView(@Nullable ViewGroup parent, @NonNull Context context) {
     // 生成 View
     ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(context, mContainerStyle);
-    GVideoLinearLayout container = new GVideoLinearLayout(contextThemeWrapper);
+    AviationLinearLayout container = new AviationLinearLayout(contextThemeWrapper);
     ViewGroup.LayoutParams containerParams = new ViewGroup.LayoutParams(contextThemeWrapper, null);
     container.setLayoutParams(containerParams);
     // cancel
     contextThemeWrapper = new ContextThemeWrapper(context, mCancelStyle);
     LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(contextThemeWrapper, null);
-    GVideoTextView textViewCancel = new GVideoTextView(contextThemeWrapper);
+    AviationTextView textViewCancel = new AviationTextView(contextThemeWrapper);
     textViewCancel.setOnClickListener(this);
     textViewCancel.setText(mCancel);
     container.addView(textViewCancel, params);
@@ -83,13 +83,13 @@ public final class TopCancelSureDialogItemView extends AbstractDialogItemView
     // title
     contextThemeWrapper = new ContextThemeWrapper(context, mTitleStyle);
     params = new LinearLayout.LayoutParams(contextThemeWrapper, null);
-    GVideoTextView textViewTitle = new GVideoTextView(contextThemeWrapper);
+    AviationTextView textViewTitle = new AviationTextView(contextThemeWrapper);
     textViewTitle.setText(mTile);
     container.addView(textViewTitle, params);
     // sure
     contextThemeWrapper = new ContextThemeWrapper(context, mSureStyle);
     params = new LinearLayout.LayoutParams(contextThemeWrapper, null);
-    GVideoTextView textViewSure = new GVideoTextView(contextThemeWrapper);
+    AviationTextView textViewSure = new AviationTextView(contextThemeWrapper);
     textViewSure.setOnClickListener(this);
     textViewSure.setText(mSure);
     container.addView(textViewSure, params);

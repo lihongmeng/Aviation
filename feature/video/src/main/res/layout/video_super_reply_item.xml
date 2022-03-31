@@ -24,7 +24,7 @@
         android:clickable="true"
         android:focusable="true">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/avatar"
             android:layout_width="@dimen/video_reply_avatar_width"
             android:layout_height="@dimen/video_reply_avatar_width"
@@ -38,7 +38,7 @@
             app:layout_constraintEnd_toStartOf="@id/avatar_guide" />
 
         <!--大V标识-->
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:layout_width="@dimen/DIMEN_13DP"
             android:layout_height="@dimen/DIMEN_13DP"
             android:layout_marginEnd="@dimen/DIMEN_4DP"
@@ -57,7 +57,7 @@
             app:layout_constraintGuide_begin="@dimen/video_reply_avatar_width"
             app:layout_constraintGuide_end="@dimen/video_reply_avatar_width" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintHorizontal_chainStyle="packed" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/reply_name_triangle"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/video_dp_17"
@@ -88,7 +88,7 @@
             app:layout_constraintTop_toTopOf="@id/name"
             app:layout_constraintBottom_toBottomOf="@id/name" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/reply_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintHorizontal_chainStyle="packed" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/gviv_layout_sound_view_delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -131,7 +131,7 @@
             app:layout_constraintStart_toEndOf="@id/avatar_guide"
             app:layout_constraintTop_toBottomOf="@id/name" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+        <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
             android:id="@+id/layout_sound_image"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -150,7 +150,7 @@
                 app:oriImageData="@{reply.oriImageList}"
                 app:imageSize="small" />
 
-            <com.hzlz.aviation.kernel.liteav.GVideoSoundView
+            <com.hzlz.aviation.kernel.liteav.AviationSoundView
                 android:id="@+id/sound_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -160,9 +160,9 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginBottom="@dimen/DIMEN_5DP" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -173,7 +173,7 @@
             app:layout_constraintStart_toStartOf="@id/name"
             app:layout_constraintTop_toBottomOf="@id/layout_sound_image" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/reply_action"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -189,7 +189,7 @@
             app:layout_constraintStart_toEndOf="@id/date"
             app:layout_constraintBottom_toBottomOf="@id/date" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/report_action"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

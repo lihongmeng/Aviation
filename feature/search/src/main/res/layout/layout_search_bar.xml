@@ -26,7 +26,7 @@
         android:focusableInTouchMode="true">
 
         <!--返回按钮-->
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/search_back"
             android:layout_width="@dimen/DIMEN_27DP"
             android:layout_height="match_parent"
@@ -36,7 +36,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoEditText
+        <com.hzlz.aviation.library.widget.widget.AviationEditText
             android:id="@+id/search_edit"
             android:layout_width="0dp"
             android:layout_height="@dimen/DIMEN_29DP"
@@ -59,7 +59,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toLeftOf="@id/search_cancel" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:layout_width="@dimen/DIMEN_18DP"
             android:layout_height="@dimen/DIMEN_17DP"
             android:src="@drawable/icon_search_search_grey"
@@ -69,7 +69,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="@id/search_edit" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/search_scan"
             android:layout_width="@dimen/search_edit_height"
             android:layout_height="@dimen/search_edit_height"
@@ -80,7 +80,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="@id/search_edit" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/search_cancel"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

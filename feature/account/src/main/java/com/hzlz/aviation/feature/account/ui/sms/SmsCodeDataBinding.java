@@ -9,7 +9,7 @@ import androidx.databinding.ObservableField;
 
 import com.hzlz.aviation.feature.account.R;
 import com.hzlz.aviation.library.util.ResourcesUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoButton;
+import com.hzlz.aviation.library.widget.widget.AviationButton;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -110,7 +110,7 @@ public final class SmsCodeDataBinding {
      *
      * @param confirmButton 确认按钮
      */
-    public void updateConfirmButtonChange(GVideoButton confirmButton) {
+    public void updateConfirmButtonChange(AviationButton confirmButton) {
         boolean enableConfirmValue = enableConfirm();
         enableConfirm.set(enableConfirmValue);
         confirmButton.setEnabled(enableConfirmValue);

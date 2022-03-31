@@ -100,7 +100,7 @@
 
                 </LinearLayout>
 
-                <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+                <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
                     android:id="@+id/empty_container"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

@@ -9,18 +9,18 @@ import com.youth.banner.Banner;
  * Banner 基类
  *
  */
-public class GVideoBanner extends Banner {
+public class AviationBanner extends Banner {
   //<editor-fold desc="构造函数">
 
-  public GVideoBanner(Context context) {
+  public AviationBanner(Context context) {
     super(context);
   }
 
-  public GVideoBanner(Context context, AttributeSet attrs) {
+  public AviationBanner(Context context, AttributeSet attrs) {
     super(context, attrs);
   }
 
-  public GVideoBanner(Context context, AttributeSet attrs, int defStyleAttr) {
+  public AviationBanner(Context context, AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
   }
   //</editor-fold>

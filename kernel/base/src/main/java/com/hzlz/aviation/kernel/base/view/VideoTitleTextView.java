@@ -4,9 +4,9 @@ import android.content.Context;
 import android.util.AttributeSet;
 
 import com.hzlz.aviation.kernel.base.databinding.LayoutVerticalVideoTitleBinding;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
-public class VideoTitleTextView extends GVideoTextView {
+public class VideoTitleTextView extends AviationTextView {
 
     private Context context;
     private LayoutVerticalVideoTitleBinding binding;

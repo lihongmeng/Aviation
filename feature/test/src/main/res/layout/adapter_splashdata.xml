@@ -16,12 +16,12 @@
       type="com.hzlz.aviation.feature.test.splashdata.SplashData" />
   </data>
 
-  <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:onClick="@{(v)->adapter.onItemClick(v,position)}">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
       android:id="@+id/text_view_name"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:id="@+id/image_view_name"
         android:layout_width="@dimen/DIMEN_100DP"
         android:layout_height="@dimen/DIMEN_100DP"
@@ -40,5 +40,5 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_view_name" />
-  </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+  </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 </layout>

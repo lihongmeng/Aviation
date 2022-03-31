@@ -16,7 +16,7 @@ import com.hzlz.aviation.kernel.base.adapter.ImageNineAdapter;
 import com.hzlz.aviation.kernel.base.decoration.GapItemDecoration;
 import com.hzlz.aviation.kernel.base.model.video.ImageModel;
 import com.hzlz.aviation.library.util.ResourcesUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoLinearLayout;
+import com.hzlz.aviation.library.widget.widget.AviationLinearLayout;
 import com.hzlz.aviation.library.widget.widget.GVideoRecyclerView;
 
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ import java.util.List;
  * date : 2021/4/6
  * desc : 9宫格图片recycler
  **/
-public class ImageRecyclerView extends GVideoLinearLayout {
+public class ImageRecyclerView extends AviationLinearLayout {
 
     private int gapDp;
     private int imageType;

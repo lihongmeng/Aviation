@@ -41,7 +41,7 @@
                 app:layout_constraintTop_toBottomOf="@id/tab_layout" />
 
             <!--占位布局-->
-            <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+            <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
                 android:id="@+id/empty_container"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/DIMEN_0DP"

@@ -36,7 +36,7 @@
     <attr name="oriImageData" />
     <attr name="imageList" />
     <attr name="updateListResource" />
-    <attr name="test" format="integer"/>
+    <attr name="test" format="integer" />
     <!--图片类型-->
     <attr name="asDrawable" format="boolean" />
     <attr name="asBitmap" format="boolean" />
@@ -68,6 +68,10 @@
         <attr name="force_pack" format="boolean" />
     </declare-styleable>
 
-
+    <declare-styleable name="CountLimitEditLayout">
+        <attr name="max_line" format="integer" />
+        <attr name="show_bottom_divider" format="boolean" />
+        <attr name="bottom_divider_color" format="reference" />
+    </declare-styleable>
 
 </resources>

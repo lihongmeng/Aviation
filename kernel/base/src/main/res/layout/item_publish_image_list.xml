@@ -28,7 +28,7 @@
             app:layout_constraintWidth_max="@dimen/DIMEN_171DP"
             app:layout_constraintWidth_min="@dimen/DIMEN_96DP" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/delete"
             android:layout_width="@dimen/DIMEN_18DP"
             android:layout_height="@dimen/DIMEN_18DP"
@@ -36,7 +36,7 @@
             app:layout_constraintRight_toRightOf="@id/image"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/replace"
             android:layout_width="@dimen/DIMEN_100DP"
             android:layout_height="@dimen/DIMEN_20DP"

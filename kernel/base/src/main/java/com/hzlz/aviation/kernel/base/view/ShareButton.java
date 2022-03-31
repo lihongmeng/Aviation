@@ -9,13 +9,13 @@ import android.widget.LinearLayout;
 import androidx.annotation.DrawableRes;
 
 import com.hzlz.aviation.kernel.base.R;
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
 public class ShareButton extends LinearLayout {
 
-    private GVideoTextView nameGtv;
-    private GVideoImageView icon;
+    private AviationTextView nameGtv;
+    private AviationImageView icon;
 
     private Integer iconDrawableId;
     private String name;

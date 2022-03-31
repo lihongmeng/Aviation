@@ -7,9 +7,9 @@ import android.view.animation.RotateAnimation;
 
 import androidx.annotation.Nullable;
 
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
 
-public class PublishButton extends GVideoImageView {
+public class PublishButton extends AviationImageView {
 
     // 点击按钮时是否需要执行旋转动画
     private boolean isNeedClickRotate;

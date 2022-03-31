@@ -33,7 +33,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <!--大V标识-->
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/header_authentication"
             android:layout_width="@dimen/DIMEN_15DP"
             android:layout_height="@dimen/DIMEN_15DP"
@@ -43,7 +43,7 @@
             app:layout_constraintRight_toRightOf="@id/header"
             tools:visibility="visible" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/name"
             android:layout_width="@dimen/DIMEN_0DP"
             android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
             app:layout_constraintBottom_toTopOf="@id/introduction"
             tools:text="都市现场都市现场都市现场都市现场都市现场都市现场都市现场都市现场" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/introduction"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
             app:layout_constraintVertical_chainStyle="packed"
             tools:text="都市现场都市现场都市现场都市现场都市现场都市现场都市现场都市现场" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/follow_cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -26,22 +26,22 @@ import com.hzlz.aviation.library.widget.R;
  *
  * @since 2020-01-20 12:00
  */
-public final class GVideoCellView extends GVideoConstraintLayout {
+public final class AviationCellView extends AviationConstraintLayout {
   //<editor-fold desc="属性">
   @Nullable
-  private GVideoImageView mImageViewLeftIcon;
+  private AviationImageView mImageViewLeftIcon;
   @Nullable
-  private GVideoTextView mTextViewLeftText;
+  private AviationTextView mTextViewLeftText;
   @Nullable
-  private GVideoTextView mTextViewRightTopText;
+  private AviationTextView mTextViewRightTopText;
   @Nullable
-  private GVideoTextView mTextViewRightBottomText;
+  private AviationTextView mTextViewRightBottomText;
   @Nullable
-  private GVideoTextView mTextViewRightText;
+  private AviationTextView mTextViewRightText;
   @Nullable
-  private GVideoImageView mImageViewRightIcon;
+  private AviationImageView mImageViewRightIcon;
   @Nullable
-  private GVideoImageView mImageViewLeftIconPoint;
+  private AviationImageView mImageViewLeftIconPoint;
 
   private int mDriverColor;
   private float mDriverHeight;
@@ -56,17 +56,17 @@ public final class GVideoCellView extends GVideoConstraintLayout {
   //</editor-fold>
 
   //<editor-fold desc="构造函数">
-  public GVideoCellView(@NonNull Context context) {
+  public AviationCellView(@NonNull Context context) {
     super(context);
     init(null, 0);
   }
 
-  public GVideoCellView(@NonNull Context context, @Nullable AttributeSet attrs) {
+  public AviationCellView(@NonNull Context context, @Nullable AttributeSet attrs) {
     super(context, attrs);
     init(attrs, 0);
   }
 
-  public GVideoCellView(
+  public AviationCellView(
       @NonNull Context context,
       @Nullable AttributeSet attrs,
       int defStyleAttr) {
@@ -91,7 +91,7 @@ public final class GVideoCellView extends GVideoConstraintLayout {
           getContext(),
           ta.getResourceId(R.styleable.GVideoCellView_cvLeftIconStyle, 0)
       );
-      mImageViewLeftIcon = new GVideoImageView(contextThemeWrapper);
+      mImageViewLeftIcon = new AviationImageView(contextThemeWrapper);
       mImageViewLeftIcon.setId(ViewCompat.generateViewId());
       mImageViewLeftIcon.setVisibility(
           ta.getBoolean(R.styleable.GVideoCellView_cvShowLeftIcon, true) ? VISIBLE : GONE
@@ -112,7 +112,7 @@ public final class GVideoCellView extends GVideoConstraintLayout {
           getContext(),
           ta.getResourceId(R.styleable.GVideoCellView_cvLeftIconPointStyle, 0)
       );
-      mImageViewLeftIconPoint = new GVideoImageView(contextThemeWrapper);
+      mImageViewLeftIconPoint = new AviationImageView(contextThemeWrapper);
       mImageViewLeftIconPoint.setId(ViewCompat.generateViewId());
       mImageViewLeftIconPoint.setVisibility(
           ta.getBoolean(R.styleable.GVideoCellView_cvShowLeftIconPoint, false) ? VISIBLE : GONE
@@ -129,7 +129,7 @@ public final class GVideoCellView extends GVideoConstraintLayout {
           getContext(),
           ta.getResourceId(R.styleable.GVideoCellView_cvLeftTextStyle, 0)
       );
-      mTextViewLeftText = new GVideoTextView(contextThemeWrapper);
+      mTextViewLeftText = new AviationTextView(contextThemeWrapper);
       mTextViewLeftText.setId(ViewCompat.generateViewId());
       mTextViewLeftText.setVisibility(
           ta.getBoolean(R.styleable.GVideoCellView_cvShowLeftText, true) ? VISIBLE : GONE
@@ -153,7 +153,7 @@ public final class GVideoCellView extends GVideoConstraintLayout {
           getContext(),
           ta.getResourceId(R.styleable.GVideoCellView_cvRightIconStyle, 0)
       );
-      mImageViewRightIcon = new GVideoImageView(contextThemeWrapper);
+      mImageViewRightIcon = new AviationImageView(contextThemeWrapper);
       mImageViewRightIcon.setId(ViewCompat.generateViewId());
       mImageViewRightIcon.setVisibility(
           ta.getBoolean(R.styleable.GVideoCellView_cvShowRightIcon, true) ? VISIBLE : GONE
@@ -174,7 +174,7 @@ public final class GVideoCellView extends GVideoConstraintLayout {
           getContext(),
           ta.getResourceId(R.styleable.GVideoCellView_cvRightTextStyle, 0)
       );
-      mTextViewRightText = new GVideoTextView(contextThemeWrapper);
+      mTextViewRightText = new AviationTextView(contextThemeWrapper);
       mTextViewRightText.setId(ViewCompat.generateViewId());
       mTextViewRightText.setGravity(Gravity.END | Gravity.CENTER_VERTICAL);
       mTextViewRightText.setVisibility(
@@ -207,7 +207,7 @@ public final class GVideoCellView extends GVideoConstraintLayout {
           getContext(),
           ta.getResourceId(R.styleable.GVideoCellView_cvRightTopTextStyle, 0)
       );
-      mTextViewRightTopText = new GVideoTextView(contextThemeWrapper);
+      mTextViewRightTopText = new AviationTextView(contextThemeWrapper);
       mTextViewRightTopText.setId(ViewCompat.generateViewId());
       mTextViewRightTopText.setGravity(Gravity.CENTER_VERTICAL | Gravity.END);
       mTextViewRightTopText.setVisibility(
@@ -240,7 +240,7 @@ public final class GVideoCellView extends GVideoConstraintLayout {
           getContext(),
           ta.getResourceId(R.styleable.GVideoCellView_cvRightBottomTextStyle, 0)
       );
-      mTextViewRightBottomText = new GVideoTextView(contextThemeWrapper);
+      mTextViewRightBottomText = new AviationTextView(contextThemeWrapper);
       mTextViewRightBottomText.setId(ViewCompat.generateViewId());
       mTextViewRightBottomText.setGravity(Gravity.CENTER_VERTICAL | Gravity.END);
       mTextViewRightBottomText.setVisibility(ta.getBoolean(

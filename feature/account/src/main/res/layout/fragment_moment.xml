@@ -8,7 +8,7 @@
         type="com.hzlz.aviation.feature.account.ui.moment.MomentViewModel"
         />
   </data>
-  <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+  <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
       android:id="@+id/fragment_container"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
@@ -23,7 +23,7 @@
         app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}"
         app:srlHeaderHeight="75dp">
 
-      <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+      <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
           android:id="@+id/recycler_container"
           android:layout_width="match_parent"
           android:layout_height="match_parent">
@@ -35,14 +35,14 @@
             android:layout_marginLeft="@dimen/DIMEN_12DP"
             android:layout_marginRight="@dimen/DIMEN_12DP"/>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
             android:id="@+id/empty_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:visibility="gone" />
-      </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
+      </com.hzlz.aviation.library.widget.widget.AviationFrameLayout>
 
     </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
 
-  </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
+  </com.hzlz.aviation.library.widget.widget.AviationFrameLayout>
 </layout>

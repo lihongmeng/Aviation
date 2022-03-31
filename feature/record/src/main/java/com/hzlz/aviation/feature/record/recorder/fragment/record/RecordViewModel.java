@@ -29,7 +29,7 @@ import com.hzlz.aviation.kernel.base.permission.PermissionManager;
 import com.hzlz.aviation.kernel.network.schedule.GVideoSchedulers;
 import com.hzlz.aviation.kernel.runtime.GVideoRuntime;
 import com.hzlz.aviation.library.util.AsyncUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 import com.hzlz.aviation.feature.record.R;
 
 import java.io.File;
@@ -227,7 +227,7 @@ public class RecordViewModel extends BaseViewModel {
      *
      * @param timeView 显示录制时间的View
      */
-    public void onFinishItemClick(GVideoTextView timeView) {
+    public void onFinishItemClick(AviationTextView timeView) {
         if (timeView == null) {
             return;
         }

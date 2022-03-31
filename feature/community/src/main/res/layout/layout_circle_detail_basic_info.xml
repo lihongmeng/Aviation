@@ -40,7 +40,7 @@
                 android:minHeight="@dimen/DIMEN_44DP">
 
                 <!--背景图-->
-                <com.hzlz.aviation.library.widget.widget.GVideoImageView
+                <com.hzlz.aviation.library.widget.widget.AviationImageView
                     android:id="@+id/background"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -67,7 +67,7 @@
                     tools:src="@drawable/ic_launcher" />
 
                 <!--圈子名称-->
-                <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.AviationTextView
                     android:id="@+id/name"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                     app:layout_constraintStart_toEndOf="@id/cover"
                     app:layout_constraintTop_toBottomOf="@id/name" />
 
-                <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.AviationTextView
                     android:id="@+id/fans_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                     app:layout_constraintTop_toTopOf="@id/circle_famous_list"
                     tools:text="11" />
 
-                <com.hzlz.aviation.library.widget.widget.GVideoTextView
+                <com.hzlz.aviation.library.widget.widget.AviationTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/DIMEN_4DP"
@@ -172,7 +172,7 @@
                     app:layout_constraintTop_toBottomOf="@id/introduction"
                     tools:visibility="visible"/>
 
-                <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+                <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
                     android:id="@+id/layout_join"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/DIMEN_23DP"
@@ -223,7 +223,7 @@
                         app:layout_constraintTop_toTopOf="@id/name"
                         tools:visibility="visible" />
 
-                </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+                </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
                 <include
                     layout="@layout/layout_live_item"
@@ -245,7 +245,7 @@
                 app:cardElevation="@dimen/DIMEN_0DP"
                 tools:visibility="gone">
 
-                <com.hzlz.aviation.library.widget.widget.GVideoBanner
+                <com.hzlz.aviation.library.widget.widget.AviationBanner
                     android:id="@+id/banner"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />

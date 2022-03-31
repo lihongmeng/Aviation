@@ -46,7 +46,7 @@
             tools:src="@drawable/ic_default_avatar" />
 
         <!--大V标识-->
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/header_authentication"
             android:layout_width="@dimen/DIMEN_12DP"
             android:layout_height="@dimen/DIMEN_12DP"
@@ -57,7 +57,7 @@
             app:layout_constraintLeft_toLeftOf="@id/toolbar_person_img"
             tools:visibility="visible" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:id="@+id/layout_name"
             android:orientation="vertical"
             android:layout_width="wrap_content"
@@ -69,7 +69,7 @@
             app:layout_constraintTop_toTopOf="@id/toolbar_person_img">
 
             <!--名称-->
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:lines="1"
@@ -84,7 +84,7 @@
                 tools:text="1231" />
 
             <!--名称-->
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/toolbar_name_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
                 tools:text="张三" />
 
             <!--认证信息或作者简介 -->
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/toolbar_sources_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -115,10 +115,10 @@
                 tools:text="作者简介"
                 tools:visibility="visible" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
         <!--关注与否-->
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/toolbar_attention_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -151,12 +151,12 @@
             app:layout_constraintTop_toTopOf="@id/toolbar_person_img"
             tools:visibility="visible">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:layout_width="@dimen/DIMEN_19DP"
                 android:layout_height="@dimen/DIMEN_11DP"
                 android:background="@drawable/icon_publish_circle" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:layout_width="1px"
                 android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/DIMEN_5DP"
@@ -165,7 +165,7 @@
                 android:layout_marginBottom="@dimen/DIMEN_5DP"
                 android:background="@color/color_df2e51" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/circle_name"
                 android:maxEms="4"
                 android:singleLine="true"
@@ -188,7 +188,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:visibility="gone">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -216,7 +216,7 @@
         </com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout>
 
         <!--创建时间-->
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/toolbar_create_date"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

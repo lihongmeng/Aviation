@@ -16,7 +16,7 @@
         android:padding="@dimen/DIMEN_1DP"
         app:corner_radius="@dimen/DIMEN_12DP">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/share_menu_icon"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

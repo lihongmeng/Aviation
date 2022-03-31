@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/music_layout"
         style="@style/feed_layout_margin_root">
@@ -22,5 +22,5 @@
             android:layout_marginTop="@dimen/DIMEN_10DP"
             style="@style/feed_layout_line" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 </layout>

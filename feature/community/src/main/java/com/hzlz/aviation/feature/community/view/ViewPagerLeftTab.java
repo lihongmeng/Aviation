@@ -13,12 +13,12 @@ import com.hzlz.aviation.feature.community.adapter.ViewPagerLeftTabAdapter;
 import com.hzlz.aviation.kernel.base.R;
 import com.hzlz.aviation.kernel.base.databinding.ViewPagerLeftTabBinding;
 import com.hzlz.aviation.kernel.base.model.circle.CircleTag;
-import com.hzlz.aviation.library.widget.widget.GVideoLinearLayout;
+import com.hzlz.aviation.library.widget.widget.AviationLinearLayout;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ViewPagerLeftTab extends GVideoLinearLayout {
+public class ViewPagerLeftTab extends AviationLinearLayout {
 
     /**
      * 数据源

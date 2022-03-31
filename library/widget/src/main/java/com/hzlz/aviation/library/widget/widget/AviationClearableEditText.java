@@ -27,7 +27,7 @@ import com.hzlz.aviation.library.widget.R;
  *
  * @since 2020-01-16 11:20
  */
-public class GVideoClearableEditText extends GVideoEditText implements TextWatcher {
+public class AviationClearableEditText extends AviationEditText implements TextWatcher {
   //<editor-fold desc="属性">
   @DrawableRes
   private int mDrawableClearResourceId;
@@ -38,17 +38,17 @@ public class GVideoClearableEditText extends GVideoEditText implements TextWatch
   //</editor-fold>
 
   //<editor-fold desc="构造函数">
-  public GVideoClearableEditText(@NonNull Context context) {
+  public AviationClearableEditText(@NonNull Context context) {
     super(context);
     init(null);
   }
 
-  public GVideoClearableEditText(@NonNull Context context, @Nullable AttributeSet attrs) {
+  public AviationClearableEditText(@NonNull Context context, @Nullable AttributeSet attrs) {
     super(context, attrs);
     init(attrs);
   }
 
-  public GVideoClearableEditText(
+  public AviationClearableEditText(
       @NonNull Context context,
       @Nullable AttributeSet attrs,
       int defStyleAttr) {

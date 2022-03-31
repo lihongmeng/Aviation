@@ -2,7 +2,7 @@ package com.hzlz.aviation.kernel.media.player;
 
 import com.hzlz.aviation.kernel.base.Constant;
 import com.hzlz.aviation.kernel.event.GVideoEventBus;
-import com.hzlz.aviation.kernel.liteav.GVideoSoundView;
+import com.hzlz.aviation.kernel.liteav.AviationSoundView;
 
 /**
  * @author huangwei
@@ -16,7 +16,7 @@ public class AudioPlayManager {
      */
     private volatile static AudioPlayManager sInstance = null;
 
-    private GVideoSoundView currentSoundView = null;
+    private AviationSoundView currentSoundView = null;
 
     /**
      * 构造函数
@@ -45,7 +45,7 @@ public class AudioPlayManager {
      *
      * @param soundView 播放器
      */
-    public void start(GVideoSoundView soundView) {
+    public void start(AviationSoundView soundView) {
         if (currentSoundView != null) {
             currentSoundView.stop();
             currentSoundView = null;

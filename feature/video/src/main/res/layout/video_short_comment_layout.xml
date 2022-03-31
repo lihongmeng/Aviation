@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
-  <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+  <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       >
@@ -25,5 +25,5 @@
             />
       </FrameLayout>
     </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
-  </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+  </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 </layout>

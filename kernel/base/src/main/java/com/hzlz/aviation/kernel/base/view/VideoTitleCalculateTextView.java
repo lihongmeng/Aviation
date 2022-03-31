@@ -8,9 +8,9 @@ import android.util.AttributeSet;
 import android.view.Display;
 
 import com.hzlz.aviation.kernel.base.R;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 
-public class VideoTitleCalculateTextView extends GVideoTextView {
+public class VideoTitleCalculateTextView extends AviationTextView {
 
     private Context context;
     private int laseSpaceCount;

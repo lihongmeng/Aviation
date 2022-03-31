@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/icon_join_micro_connect" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:id="@+id/name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@id/header"
         tools:text="静夜思" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:id="@+id/micro_status"
         android:visibility="gone"
         android:layout_width="@dimen/DIMEN_8DP"

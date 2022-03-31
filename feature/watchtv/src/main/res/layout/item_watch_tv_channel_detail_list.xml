@@ -18,7 +18,7 @@
             app:layout_constraintRight_toRightOf="@id/current"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/divider_current_bottom"
             android:layout_width="1px"
             android:layout_height="@dimen/DIMEN_17DP"
@@ -29,7 +29,7 @@
             app:layout_constraintLeft_toLeftOf="@id/current"
             app:layout_constraintRight_toRightOf="@id/current" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/current"
             android:layout_width="@dimen/DIMEN_14DP"
             android:layout_height="@dimen/DIMEN_14DP"
@@ -41,7 +41,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/divider_other_top"
             android:layout_width="1px"
             android:layout_height="@dimen/DIMEN_20DP"
@@ -52,7 +52,7 @@
             app:layout_constraintRight_toRightOf="@id/other"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/divider_other_bottom"
             android:layout_width="1px"
             android:layout_height="@dimen/DIMEN_20DP"
@@ -63,7 +63,7 @@
             app:layout_constraintLeft_toLeftOf="@id/other"
             app:layout_constraintRight_toRightOf="@id/other" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/other"
             android:layout_width="@dimen/DIMEN_6DP"
             android:layout_height="@dimen/DIMEN_6DP"
@@ -75,7 +75,7 @@
             app:layout_constraintRight_toRightOf="@id/current"
             app:layout_constraintLeft_toLeftOf="@id/current" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="12:00" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

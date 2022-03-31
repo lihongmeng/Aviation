@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/iv_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:layout_width="@dimen/DIMEN_38DP"
                 android:layout_height="@dimen/DIMEN_38DP"
                 android:src="@drawable/live_end" />
@@ -57,7 +57,7 @@
         </LinearLayout>
 
         <!--重播-->
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/iv_replay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/comment"
                 android:layout_width="@dimen/DIMEN_38DP"
                 android:layout_height="@dimen/DIMEN_38DP"
@@ -92,7 +92,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/share"
                 android:layout_width="@dimen/DIMEN_38DP"
                 android:layout_height="@dimen/DIMEN_38DP"
@@ -105,7 +105,7 @@
                 app:layout_constraintLeft_toRightOf="@id/comment"
                 />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:id="@+id/praise"
                 android:layout_width="@dimen/DIMEN_38DP"
                 android:layout_height="@dimen/DIMEN_38DP"

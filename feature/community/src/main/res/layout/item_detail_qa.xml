@@ -15,7 +15,7 @@
 
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/DIMEN_36DP"
         android:layout_marginBottom="@dimen/DIMEN_5DP"
@@ -23,7 +23,7 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
 
@@ -39,7 +39,7 @@
                 app:placeholder="@{@drawable/ic_default_avatar}"
                 tools:src="@drawable/ic_default_avatar" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoImageView
+            <com.hzlz.aviation.library.widget.widget.AviationImageView
                 android:layout_width="@dimen/DIMEN_14DP"
                 android:layout_height="@dimen/DIMEN_14DP"
                 android:src="@drawable/icon_header_authentication"
@@ -47,9 +47,9 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/answer_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="张三张三张三张三" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/DIMEN_5DP"
@@ -73,7 +73,7 @@
             android:textColor="@color/color_999999"
             android:textSize="@dimen/sp_13" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/request_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -84,6 +84,6 @@
             android:textSize="@dimen/sp_13"
             tools:text="柏燕谊柏燕谊柏柏燕谊" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
 </layout>

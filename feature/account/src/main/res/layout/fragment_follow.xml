@@ -9,10 +9,10 @@
         />
     <import type="android.view.View" />
   </data>
-  <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+  <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent">
-    <com.hzlz.aviation.library.widget.widget.GVideoClearableEditText
+    <com.hzlz.aviation.library.widget.widget.AviationClearableEditText
         android:id="@+id/edit_text_search"
         style="@style/FragmentFollowStyle.Search"
         android:hint="@string/all_search"
@@ -27,7 +27,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/text_view_cancel"
         />
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:id="@+id/text_view_cancel"
         style="@style/FragmentFollowStyle.Cancel"
         android:text="@string/cancel"
@@ -38,7 +38,7 @@
         app:layout_constraintRight_toRightOf="parent"
       />
     <!-- 支持联系人搜索？ android:layout_marginTop="@dimen/height_fragment_follow_cancel" -->
-    <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+    <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -65,7 +65,7 @@
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             />
       </com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout>
-    </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
-  </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationFrameLayout>
+  </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
 </layout>

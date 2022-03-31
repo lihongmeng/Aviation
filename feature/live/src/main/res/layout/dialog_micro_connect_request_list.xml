@@ -8,7 +8,7 @@
         android:background="@drawable/shape_solid_ffffff_corners_top_8dp"
         android:layout_gravity="bottom">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/title"
             android:layout_width="0dp"
             android:layout_height="@dimen/DIMEN_42DP"
@@ -21,7 +21,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/close"
             android:layout_width="@dimen/DIMEN_47DP"
             android:layout_height="@dimen/DIMEN_42DP"

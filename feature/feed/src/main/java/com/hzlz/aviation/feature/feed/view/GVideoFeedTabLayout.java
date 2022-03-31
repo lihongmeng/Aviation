@@ -14,7 +14,7 @@ import com.hzlz.aviation.kernel.base.view.HomeMessageLayout;
 import com.hzlz.aviation.kernel.base.view.tab.GVideoSmartTabLayout;
 import com.hzlz.aviation.library.ioc.PluginManager;
 import com.hzlz.aviation.library.util.ResourcesUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -39,7 +39,7 @@ public class GVideoFeedTabLayout extends LinearLayout implements View.OnClickLis
     }
 
     /** 搜索图布局 */
-    private GVideoImageView mSearchImg;
+    private AviationImageView mSearchImg;
     /** 侧边栏 */
     private HomeMessageLayout messageLayout;
     /** tab layout */

@@ -11,18 +11,18 @@ import androidx.appcompat.widget.AppCompatImageView;
  *
  * @since 2020-01-13 14:43
  */
-public class GVideoImageView extends AppCompatImageView {
+public class AviationImageView extends AppCompatImageView {
   //<editor-fold desc="构造函数">
 
-  public GVideoImageView(Context context) {
+  public AviationImageView(Context context) {
     super(context);
   }
 
-  public GVideoImageView(Context context, AttributeSet attrs) {
+  public AviationImageView(Context context, AttributeSet attrs) {
     super(context, attrs);
   }
 
-  public GVideoImageView(Context context, AttributeSet attrs, int defStyleAttr) {
+  public AviationImageView(Context context, AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
   }
   //</editor-fold>

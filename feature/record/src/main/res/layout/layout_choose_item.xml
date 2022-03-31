@@ -9,18 +9,18 @@
 
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+    <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
         android:id="@+id/item_container"
         android:layout_width="93dp"
         android:layout_height="93dp">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/item_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/choose_item_img"
             android:layout_width="@dimen/DIMEN_45DP"
             android:layout_height="@dimen/DIMEN_45DP"
@@ -31,7 +31,7 @@
             android:paddingBottom="@dimen/DIMEN_15DP"
             android:src="@drawable/ic_video_choose" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/choose_item_text"
             android:layout_width="@dimen/choose_num_img_size"
             android:layout_height="@dimen/choose_num_img_size"
@@ -44,7 +44,7 @@
             android:textColor="@color/t_color05"
             android:visibility="gone" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/item_video_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,5 +54,5 @@
             android:layout_marginRight="@dimen/choose_item_time_marin_right"
             android:layout_marginBottom="@dimen/choose_item_time_marin_bottom" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoFrameLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationFrameLayout>
 </layout>

@@ -6,25 +6,25 @@
         type="com.hzlz.aviation.kernel.base.placeholder.DefaultPlaceholderLayout"
         />
   </data>
-  <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.AviationLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:gravity="center"
       android:orientation="vertical"
       >
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:id="@+id/un_login_img"
         style="@style/PlaceholderUnLoginStyle.Image"
         android:src="@drawable/ic_placeholder_empty"
         />
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         style="@style/PlaceholderStyle.Text"
         android:text="@string/all_un_login_forbidden_to_getting_info"
         />
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         style="@style/PlaceholderStyle.Button"
         android:onClick="@{(v)->layout.login(v)}"
         android:text="@string/all_login"
         />
-  </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+  </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 </layout>

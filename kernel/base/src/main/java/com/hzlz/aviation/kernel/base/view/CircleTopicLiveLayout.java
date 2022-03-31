@@ -13,13 +13,13 @@ import com.hzlz.aviation.kernel.base.R;
 import com.hzlz.aviation.kernel.base.model.circle.Circle;
 import com.hzlz.aviation.kernel.base.model.circle.FindCircleContent;
 import com.hzlz.aviation.library.util.SizeUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoLinearLayout;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
+import com.hzlz.aviation.library.widget.widget.AviationLinearLayout;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CircleTopicLiveLayout extends GVideoLinearLayout {
+public class CircleTopicLiveLayout extends AviationLinearLayout {
 
     private Context context;
     private final List<FindCircleContent> dataSource = new ArrayList<>();
@@ -58,20 +58,20 @@ public class CircleTopicLiveLayout extends GVideoLinearLayout {
             if (findCircleContent == null) {
                 continue;
             }
-            GVideoTextView itemView;
+            AviationTextView itemView;
             switch (findCircleContent.type) {
                 case Constant.FindCircleContentType.LIVE:
-                    itemView = (GVideoTextView) LayoutInflater.from(context)
+                    itemView = (AviationTextView) LayoutInflater.from(context)
                             .inflate(R.layout.layout_find_circle_item_live, null);
                     itemView.setText(findCircleContent.getLiveSpannableString());
                     break;
                 case Constant.FindCircleContentType.TOPIC:
-                    itemView = (GVideoTextView) LayoutInflater.from(context)
+                    itemView = (AviationTextView) LayoutInflater.from(context)
                             .inflate(R.layout.layout_find_circle_item_topic, null);
                     itemView.setText(findCircleContent.getTopicSpannableString());
                     break;
                 default:
-                    itemView = (GVideoTextView) LayoutInflater.from(context)
+                    itemView = (AviationTextView) LayoutInflater.from(context)
                             .inflate(R.layout.layout_find_circle_item_topic, null);
                     itemView.setText(findCircleContent.getMomentSpannableString());
             }

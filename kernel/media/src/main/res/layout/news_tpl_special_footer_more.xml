@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
         android:id="@+id/ll_more"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -10,7 +10,7 @@
         android:paddingStart="@dimen/DIMEN_16DP"
         android:paddingEnd="@dimen/DIMEN_16DP">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="1"
@@ -19,12 +19,12 @@
             android:textColor="@color/color_000000_35"
             android:textSize="@dimen/sp_11" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:layout_width="@dimen/DIMEN_15DP"
             android:layout_height="@dimen/DIMEN_15DP"
             android:layout_marginTop="@dimen/DIMEN_6DP"
             android:src="@drawable/ic_right_arrow_with_bg" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
 </layout>

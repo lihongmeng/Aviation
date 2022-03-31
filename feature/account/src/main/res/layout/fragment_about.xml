@@ -8,13 +8,13 @@
             type="com.hzlz.aviation.feature.account.ui.about.AboutViewModel" />
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.hzlz.aviation.library.widget.widget.AviationLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/c_bg01"
         android:orientation="vertical">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+        <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
             style="@style/AboutStyle.TopContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,27 +24,27 @@
                 style="@style/AboutStyle.AppIcon"
                 android:src="@drawable/ic_launcher" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 style="@style/AboutStyle.Version"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@{viewModel.appVersion}" />
 
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 style="@style/AboutStyle.Copyright"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/gvideo_copyright" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoCellView
+        <com.hzlz.aviation.library.widget.widget.AviationCellView
             style="@style/AboutStyle.Cell"
             android:onClick="@{(v)->viewModel.showUserProtocol(v)}"
             app:cvLeftText="@string/user_protocol"
             app:cvShowBottomDriver="true" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoCellView
+        <com.hzlz.aviation.library.widget.widget.AviationCellView
             style="@style/AboutStyle.Cell"
             android:onClick="@{(v)->viewModel.showPrivacyPolicy(v)}"
             app:cvLeftText="@string/privacy_policy"
@@ -55,6 +55,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 
 </layout>

@@ -6,12 +6,12 @@
     android:gravity="center"
     android:background="@drawable/shape_corners_23dp_stroke_1dp_f2f2f2">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:id="@+id/icon"
         android:layout_width="@dimen/DIMEN_20DP"
         android:layout_height="@dimen/DIMEN_18DP"/>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:id="@+id/name"
         android:gravity="center"
         android:singleLine="true"

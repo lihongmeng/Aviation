@@ -6,7 +6,7 @@
             type="com.hzlz.aviation.feature.search.SearchViewModel"
             />
     </data>
-    <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout
+    <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -33,5 +33,5 @@
             android:layout_height="match_parent"
             android:visibility="gone" />
 
-    </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 </layout>

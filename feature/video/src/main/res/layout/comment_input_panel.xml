@@ -9,12 +9,12 @@
 
     </data>
 
-    <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+    <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/DIMEN_48DP"
         android:background="@color/white">
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/audio_comment"
             android:layout_width="@dimen/DIMEN_50DP"
             android:layout_height="match_parent"
@@ -44,7 +44,7 @@
             app:layout_constraintRight_toLeftOf="@id/image_comment"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/image_comment"
             android:layout_width="@dimen/DIMEN_50DP"
             android:layout_height="match_parent"
@@ -57,5 +57,5 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-    </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+    </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 </layout>

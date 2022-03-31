@@ -22,9 +22,9 @@ import com.hzlz.aviation.library.util.ResourcesUtils;
 import com.hzlz.aviation.library.util.ScreenUtils;
 import com.hzlz.aviation.library.util.SizeUtils;
 import com.hzlz.aviation.library.widget.dialog.GVideoCenterDialog;
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
 import com.hzlz.aviation.library.widget.widget.GVideoRImageView;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
 import com.hzlz.aviation.feature.share.R;
 import com.hzlz.aviation.feature.share.databinding.LayoutCreateBillBinding;
 
@@ -92,7 +92,7 @@ public class CreateBillDialog extends GVideoCenterDialog {
 
     private Bitmap createResultBitmap() {
         View picLayout = LayoutInflater.from(activity).inflate(R.layout.layout_create_bill_result, null);
-        ((GVideoImageView) picLayout.findViewById(R.id.bill_content)).setImageBitmap(ScreenUtils.takeScreenShot(activity));
+        ((AviationImageView) picLayout.findViewById(R.id.bill_content)).setImageBitmap(ScreenUtils.takeScreenShot(activity));
 
         GVideoRImageView header = picLayout.findViewById(R.id.header);
         Bitmap bitmap = PluginManager.get(AccountPlugin.class).getHeaderImage();
@@ -108,7 +108,7 @@ public class CreateBillDialog extends GVideoCenterDialog {
         );
 
         String userName = accountPlugin.getNickName();
-        GVideoTextView name = picLayout.findViewById(R.id.name);
+        AviationTextView name = picLayout.findViewById(R.id.name);
         name.setText((TextUtils.isEmpty(userName)) ? "" : userName);
 
         Bitmap result = BitmapUtils.getBitmap(

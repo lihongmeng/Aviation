@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.hzlz.aviation.kernel.base.R;
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
 import com.scwang.smartrefresh.layout.api.RefreshHeader;
 import com.scwang.smartrefresh.layout.api.RefreshKernel;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
@@ -24,7 +24,7 @@ import com.scwang.smartrefresh.layout.constant.SpinnerStyle;
 public class DefaultRefreshHeadView extends FrameLayout implements RefreshHeader {
 
   /** 持有的动画视图 */
-  private GVideoImageView mAnimView;
+  private AviationImageView mAnimView;
   /** 进度视图 */
   private RoundProgressView mProgressView;
   /** 动画drawable */
@@ -64,7 +64,7 @@ public class DefaultRefreshHeadView extends FrameLayout implements RefreshHeader
     LayoutParams layoutParams = new LayoutParams(size, size);
     layoutParams.gravity = Gravity.CENTER;
     addView(mProgressView, layoutParams);
-    mAnimView = new GVideoImageView(getContext());
+    mAnimView = new AviationImageView(getContext());
     mAnimView.setImageResource(R.drawable.universal_refresh_anim);
     mAnimDrawable = (AnimationDrawable) mAnimView.getDrawable();
     size = (int) (30 * getResources().getDisplayMetrics().density + 0.5f);

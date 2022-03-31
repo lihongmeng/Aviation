@@ -13,7 +13,7 @@
         android:paddingBottom="@dimen/DIMEN_9DP">
 
         <!--文本内容-->
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/text_content"
             android:layout_width="@dimen/DIMEN_0DP"
             android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
             tools:text="确实！胡剑云老师是过来人！确实！胡剑云老师是过来人！确实！胡剑云老师是过来人！确实！胡剑云老师是过来人！确实！胡剑云老师是过来人！确实！胡剑云老师是过来人！确实！胡剑云老师是过来人！确实！胡剑云老师是过来人！" />
 
         <!--容器-->
-        <com.hzlz.aviation.library.widget.widget.GVideoFrameLayout
+        <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
             android:id="@+id/container"
             android:layout_width="@dimen/DIMEN_0DP"
             android:layout_height="wrap_content"

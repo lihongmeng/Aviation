@@ -11,12 +11,12 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 import com.hzlz.aviation.kernel.base.GlideCornersTranForm;
 import com.hzlz.aviation.kernel.base.R;
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
 
 /**
  * media image视图
  */
-public class MediaImageView extends GVideoImageView {
+public class MediaImageView extends AviationImageView {
 
     /**
      * 构造函数

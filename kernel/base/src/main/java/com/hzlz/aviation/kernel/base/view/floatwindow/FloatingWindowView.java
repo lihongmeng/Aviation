@@ -10,10 +10,10 @@ import androidx.core.widget.ContentLoadingProgressBar;
 import com.hzlz.aviation.kernel.base.R;
 import com.hzlz.aviation.kernel.base.utils.AnimUtils;
 import com.hzlz.aviation.library.util.AsyncUtils;
-import com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout;
-import com.hzlz.aviation.library.widget.widget.GVideoImageView;
-import com.hzlz.aviation.library.widget.widget.GVideoLinearLayout;
-import com.hzlz.aviation.library.widget.widget.GVideoTextView;
+import com.hzlz.aviation.library.widget.widget.AviationImageView;
+import com.hzlz.aviation.library.widget.widget.AviationLinearLayout;
+import com.hzlz.aviation.library.widget.widget.AviationTextView;
+import com.hzlz.aviation.library.widget.widget.AviationConstraintLayout;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -23,10 +23,10 @@ import java.util.concurrent.atomic.AtomicBoolean;
  */
 public class FloatingWindowView extends FloatingMagnetView {
 
-    private final GVideoTextView content;
-    private final GVideoLinearLayout llContent;
-    private final GVideoConstraintLayout rootLayout;
-    private final GVideoImageView icon;
+    private final AviationTextView content;
+    private final AviationLinearLayout llContent;
+    private final AviationConstraintLayout rootLayout;
+    private final AviationImageView icon;
     private final ContentLoadingProgressBar progressBar;
 
     //布局停留显示时间

@@ -8,7 +8,7 @@
     android:focusable="true"
     android:focusableInTouchMode="true">
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:id="@+id/top_back"
         android:layout_width="@dimen/DIMEN_45DP"
         android:layout_height="@dimen/DIMEN_45DP"
@@ -17,7 +17,7 @@
         android:scaleType="centerInside"
         android:src="@drawable/ic_back_black" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoEditText
+    <com.hzlz.aviation.library.widget.widget.AviationEditText
         android:id="@+id/edit"
         android:layout_width="0dp"
         android:layout_height="@dimen/DIMEN_30DP"
@@ -38,7 +38,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toLeftOf="@id/search" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:layout_width="@dimen/DIMEN_24DP"
         android:layout_height="@dimen/DIMEN_24DP"
         android:src="@drawable/icon_search"
@@ -48,7 +48,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="@id/edit" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoImageView
+    <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:id="@+id/clear"
         android:layout_width="@dimen/DIMEN_20DP"
         android:layout_height="@dimen/DIMEN_20DP"
@@ -58,7 +58,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="@id/edit" />
 
-    <com.hzlz.aviation.library.widget.widget.GVideoTextView
+    <com.hzlz.aviation.library.widget.widget.AviationTextView
         android:id="@+id/search"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/DIMEN_45DP"

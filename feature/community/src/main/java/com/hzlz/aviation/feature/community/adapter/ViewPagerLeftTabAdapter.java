@@ -36,11 +36,11 @@ public class ViewPagerLeftTabAdapter extends BaseRecyclerAdapter<CircleTag, View
     @Override
     public void onBindVH(ViewPagerLeftTabHolder viewPagerLeftTabHolder, int position) {
         if (position == currentIndex) {
-            viewPagerLeftTabHolder.gVideoTextView.setTextColor(ContextCompat.getColor(mContext, R.color.color_333333));
+            viewPagerLeftTabHolder.aviationTextView.setTextColor(ContextCompat.getColor(mContext, R.color.color_333333));
         } else {
-            viewPagerLeftTabHolder.gVideoTextView.setTextColor(ContextCompat.getColor(mContext, R.color.color_999999));
+            viewPagerLeftTabHolder.aviationTextView.setTextColor(ContextCompat.getColor(mContext, R.color.color_999999));
         }
-        viewPagerLeftTabHolder.gVideoTextView.setText(mList.get(position).value);
+        viewPagerLeftTabHolder.aviationTextView.setText(mList.get(position).value);
     }
 
     public void refreshData(@NonNull List<CircleTag> data) {

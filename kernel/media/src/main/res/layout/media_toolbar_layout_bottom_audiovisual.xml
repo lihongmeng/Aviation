@@ -44,7 +44,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:placeholder='@{@drawable/ic_default_avatar}' />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/header_authentication"
             android:layout_width="@dimen/DIMEN_13DP"
             android:layout_height="@dimen/DIMEN_13DP"
@@ -55,7 +55,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             tools:visibility="visible" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout
+        <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:id="@+id/layout_name"
             android:orientation="vertical"
             android:layout_width="wrap_content"
@@ -67,7 +67,7 @@
             app:layout_constraintTop_toTopOf="@id/toolbar_person_img">
 
             <!--名称-->
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:lines="1"
@@ -82,7 +82,7 @@
                 tools:text="1231" />
 
             <!--名称-->
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/toolbar_name_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
                 tools:text="1231" />
 
             <!--认证信息或作者简介 -->
-            <com.hzlz.aviation.library.widget.widget.GVideoTextView
+            <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/toolbar_sources_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -113,9 +113,9 @@
                 tools:text="作者简介"
                 tools:visibility="visible" />
 
-        </com.hzlz.aviation.library.widget.widget.GVideoConstraintLayout>
+        </com.hzlz.aviation.library.widget.widget.AviationConstraintLayout>
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/toolbar_favorite_img"
             style="@style/feed_comment_img"
             android:onClick="@{(view)->toolBind.onFavoriteClick(view)}"
@@ -124,7 +124,7 @@
             app:layout_constraintEnd_toStartOf="@id/toolbar_favorite_num_text"
             tools:src="@drawable/media_toolbar_favorite_checked" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/toolbar_favorite_num_text"
             style="@style/feed_comment_text"
             android:text="@{videoObservable.favorText}"
@@ -136,7 +136,7 @@
             app:layout_constraintEnd_toStartOf="@id/toolbar_chat_img"
             tools:text="44" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/toolbar_chat_img"
             style="@style/feed_comment_img"
             android:onClick="@{(view)->toolBind.onCommentClick(view)}"
@@ -146,7 +146,7 @@
             app:layout_constraintTop_toTopOf="@id/toolbar_favorite_img"
             tools:src="@drawable/ic_common_comment" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoTextView
+        <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/toolbar_comment_num_text"
             style="@style/feed_comment_text"
             android:onClick="@{(view)->toolBind.onCommentClick(view)}"
@@ -156,7 +156,7 @@
             app:layout_constraintEnd_toStartOf="@id/toolbar_more_img"
             tools:text="12" />
 
-        <com.hzlz.aviation.library.widget.widget.GVideoImageView
+        <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/toolbar_more_img"
             android:layout_width="@dimen/DIMEN_50DP"
             android:layout_height="@dimen/DIMEN_36DP"

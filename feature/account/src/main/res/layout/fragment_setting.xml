@@ -6,30 +6,30 @@
         type="com.hzlz.aviation.feature.account.ui.setting.SettingViewModel"
         />
   </data>
-  <com.hzlz.aviation.library.widget.widget.GVideoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <com.hzlz.aviation.library.widget.widget.AviationLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:background="@color/c_bg01"
       android:orientation="vertical"
       >
-    <com.hzlz.aviation.library.widget.widget.GVideoCellView
+    <com.hzlz.aviation.library.widget.widget.AviationCellView
         style="@style/FragmentSettingStyle.FirstCell"
         android:onClick="@{(v)->viewModel.startNotificationSettingActivity(v)}"
         app:cvLeftText="@string/accept_push_notification"
         app:cvRightText="@{viewModel.acceptPushNotification}"
         />
-    <com.hzlz.aviation.library.widget.widget.GVideoCellView
+    <com.hzlz.aviation.library.widget.widget.AviationCellView
         style="@style/FragmentSettingStyle.Cell"
         android:onClick="@{()->viewModel.showAutoPlayDialog()}"
         app:cvLeftText="@string/whether_auto_play"
         app:cvRightText="@{viewModel.autoPlay}"
         />
-    <com.hzlz.aviation.library.widget.widget.GVideoCellView
+    <com.hzlz.aviation.library.widget.widget.AviationCellView
         style="@style/FragmentSettingStyle.Cell"
         android:onClick="@{()->viewModel.showAutoPlayNextContentDialog()}"
         app:cvLeftText="@string/whether_auto_play_next_content"
         app:cvRightText="@{viewModel.autoPlayNextContent}"
         app:cvShowBottomDriver="false"
         />
-  </com.hzlz.aviation.library.widget.widget.GVideoLinearLayout>
+  </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 </layout>
