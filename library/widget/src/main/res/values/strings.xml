@@ -1,6 +1,0 @@
-<resources>
-  <string name="app_name">widget</string>
-  <string name="dialog_cancel">取消</string>
-  <string name="dialog_ensure">确定</string>
-  <string name="dialog_back">返回</string>
-</resources>

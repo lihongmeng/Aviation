@@ -69,8 +69,13 @@
     </declare-styleable>
 
     <declare-styleable name="CountLimitEditLayout">
-        <attr name="max_line" format="integer" />
+        <!--文本输入框内容的最大显示行数-->
+        <attr name="edit_max_line" format="integer" />
+        <!--文本输入框内容最大字数限制-->
+        <attr name="edit_max_count" format="integer" />
+        <!--控件底部的分割线是否显示-->
         <attr name="show_bottom_divider" format="boolean" />
+        <!--控件底部的分割线颜色-->
         <attr name="bottom_divider_color" format="reference" />
     </declare-styleable>
 

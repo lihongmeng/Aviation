@@ -1,6 +1,0 @@
-<resources>
-  <string name="app_name">test</string>
-  <string name="test_title">测试入口</string>
-  <string name="switch_environment">切换环境</string>
-  <string name="splash_database">开屏广告数据</string>
-</resources>

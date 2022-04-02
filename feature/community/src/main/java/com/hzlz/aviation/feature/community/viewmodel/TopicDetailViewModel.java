@@ -94,10 +94,6 @@ public class TopicDetailViewModel extends MediaPageViewModel {
             updatePlaceholderLayoutType(PlaceholderType.NETWORK_NOT_AVAILABLE);
             mMediaModelList.clear();
             mAdapter.refreshData(mMediaModelList);
-        } else if (!UserManager.hasLoggedIn()) {
-            updatePlaceholderLayoutType(PlaceholderType.UN_LOGIN);
-            mMediaModelList.clear();
-            mAdapter.refreshData(mMediaModelList);
         } else {
             updatePlaceholderLayoutType(PlaceholderType.NONE);
             autoRefreshLiveData.setValue(true);

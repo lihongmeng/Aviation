@@ -156,7 +156,6 @@
             android:gravity="start"
             android:hint="@string/hint_question"
             android:maxLength="50"
-            android:text="@={viewModel.qaTitle}"
             android:textColor="@color/color_333333"
             android:textColorHint="@color/color_cccccc"
             android:textSize="@dimen/sp_19"
