@@ -41,7 +41,7 @@
     <item name="android:layout_height">@dimen/height_adapter_favorite_short_video_cover</item>
   </style>
 
-  <style name="AdapterFavorite.GroupName" parent="TextStyle.t_color01.t_font01.bold">
+  <style name="AdapterFavorite.GroupName" parent="TextStyle.color_212229.t_font01.bold">
     <item name="android:singleLine">true</item>
     <item name="android:ellipsize">end</item>
     <item name="android:textSize">@dimen/text_size_adapter_favorite_group_name</item>
@@ -49,7 +49,7 @@
     <item name="android:paddingBottom">0dp</item>
   </style>
 
-  <style name="AdapterFavorite.Count" parent="TextStyle.t_color04.t_font04">
+  <style name="AdapterFavorite.Count" parent="TextStyle.color_8a8c99.t_font04">
     <item name="android:singleLine">true</item>
     <item name="android:ellipsize">end</item>
     <item name="android:paddingTop">@dimen/padding_top_adapter_favorite_count</item>
@@ -119,7 +119,7 @@
     <item name="android:layout_marginTop">6dp</item>
   </style>
 
-  <style name="AdapterOneColumnStyle.Description" parent="TextStyle.t_color01.t_font03">
+  <style name="AdapterOneColumnStyle.Description" parent="TextStyle.color_212229.t_font03">
     <item name="android:layout_marginLeft">
       @dimen/margin_left_adapter_one_column_media_description
     </item>
@@ -133,7 +133,7 @@
     <item name="android:ellipsize">end</item>
   </style>
 
-  <style name="AdapterOneColumnStyle.OwnerName" parent="TextStyle.t_color03.t_font04">
+  <style name="AdapterOneColumnStyle.OwnerName" parent="TextStyle.color_a1a4b3.t_font04">
     <item name="android:singleLine">true</item>
     <item name="android:ellipsize">end</item>
   </style>
@@ -166,7 +166,7 @@
     <item name="android:layout_marginTop">6dp</item>
   </style>
 
-  <style name="AdapterTwoColumnStyle.Description" parent="TextStyle.t_color05.t_font02.bold">
+  <style name="AdapterTwoColumnStyle.Description" parent="TextStyle.color_ffffff.t_font02.bold">
     <item name="android:layout_marginLeft">
       @dimen/margin_left_adapter_two_column_media_description
     </item>
@@ -186,7 +186,7 @@
     <item name="android:layout_marginBottom">@dimen/margin_adapter_two_column_media_avatar</item>
   </style>
 
-  <style name="AdapterTwoColumnStyle.OwnerName" parent="TextStyle.t_color05.t_font04">
+  <style name="AdapterTwoColumnStyle.OwnerName" parent="TextStyle.color_ffffff.t_font04">
     <item name="android:singleLine">true</item>
     <item name="android:ellipsize">end</item>
     <item name="android:layout_marginLeft">@dimen/margin_adapter_two_column_media_owner_name</item>
@@ -222,13 +222,13 @@
 
   </style>
 
-  <style name="AdapterPgcStyle.Description" parent="TextStyle.t_color05.t_font01.bold">
+  <style name="AdapterPgcStyle.Description" parent="TextStyle.color_ffffff.t_font01.bold">
     <item name="android:layout_marginTop">@dimen/margin_top_adapter_pgc_description</item>
     <item name="android:layout_marginLeft">@dimen/margin_left_adapter_pgc_description</item>
     <item name="android:layout_marginRight">@dimen/margin_left_adapter_pgc_description</item>
   </style>
 
-  <style name="AdapterPgcStyle.CreatedAt" parent="TextStyle.t_color03.t_font04">
+  <style name="AdapterPgcStyle.CreatedAt" parent="TextStyle.color_a1a4b3.t_font04">
 
   </style>
 
@@ -244,7 +244,7 @@
     <item name="android:layout_marginRight">@dimen/margin_right_adapter_pgc_favorite</item>
   </style>
 
-  <style name="AdapterPgcStyle.CommentCount" parent="TextStyle.t_color01.t_font02">
+  <style name="AdapterPgcStyle.CommentCount" parent="TextStyle.color_212229.t_font02">
     <item name="android:textSize">@dimen/text_size_adapter_pgc_comment</item>
     <item name="android:paddingLeft">@dimen/padding_adapter_pgc_comment</item>
     <item name="android:paddingRight">@dimen/padding_adapter_pgc_comment</item>
@@ -290,19 +290,19 @@
 
   </style>
 
-  <style name="AdapterFollow.Name" parent="TextStyle.t_color01.t_font03">
+  <style name="AdapterFollow.Name" parent="TextStyle.color_212229.t_font03">
     <item name="android:singleLine">true</item>
     <item name="android:ellipsize">end</item>
-    <item name="android:layout_marginLeft">@dimen/margin_adapter_follow_name</item>
-    <item name="android:layout_marginRight">@dimen/margin_adapter_follow_name</item>
+    <item name="android:layout_marginLeft">@dimen/margin_color_333333</item>
+    <item name="android:layout_marginRight">@dimen/margin_color_333333</item>
   </style>
 
-  <style name="AdapterFollow.Description" parent="TextStyle.t_color03.t_font04">
+  <style name="AdapterFollow.Description" parent="TextStyle.color_a1a4b3.t_font04">
     <item name="android:singleLine">true</item>
     <item name="android:ellipsize">end</item>
   </style>
 
-  <style name="AdapterFollow.Follow" parent="TextStyle.t_color05.t_font03.bold">
+  <style name="AdapterFollow.Follow" parent="TextStyle.color_ffffff.t_font03.bold">
     <item name="android:layout_width">@dimen/width_adapter_follow_follow</item>
     <item name="android:layout_height">@dimen/height_adapter_follow_follow</item>
     <item name="android:gravity">center</item>
@@ -329,7 +329,7 @@
 
   </style>
 
-  <style name="AdapterMoment.Description" parent="TextStyle.t_color05.t_font01.bold">
+  <style name="AdapterMoment.Description" parent="TextStyle.color_ffffff.t_font01.bold">
     <item name="android:layout_marginTop">@dimen/margin_top_adapter_moment_description</item>
     <item name="android:layout_marginLeft">@dimen/margin_left_adapter_moment_description</item>
     <item name="android:layout_marginRight">@dimen/margin_left_adapter_moment_description</item>
@@ -339,14 +339,14 @@
     <item name="android:layout_marginTop">@dimen/margin_top_adapter_moment_avatar</item>
   </style>
 
-  <style name="AdapterMoment.OwnerName" parent="TextStyle.t_color01.t_font03.bold">
+  <style name="AdapterMoment.OwnerName" parent="TextStyle.color_212229.t_font03.bold">
     <item name="android:layout_marginLeft">@dimen/margin_left_adapter_moment_owner_name</item>
     <item name="android:layout_marginRight">@dimen/margin_left_adapter_moment_owner_name</item>
     <item name="android:singleLine">true</item>
     <item name="android:ellipsize">end</item>
   </style>
 
-  <style name="AdapterMoment.OwnerDescription" parent="TextStyle.t_color03.t_font04">
+  <style name="AdapterMoment.OwnerDescription" parent="TextStyle.color_a1a4b3.t_font04">
     <item name="android:singleLine">true</item>
     <item name="android:ellipsize">end</item>
   </style>
@@ -360,8 +360,8 @@
     <item name="android:layout_marginRight">@dimen/margin_right_adapter_moment_comment</item>
   </style>
 
-  <style name="AdapterMoment.CommentCount" parent="TextStyle.t_color01.t_font01.bold">
-    <item name="android:background">@color/all_layout_background</item>
+  <style name="AdapterMoment.CommentCount" parent="TextStyle.color_212229.t_font01.bold">
+    <item name="android:background">@color/color_ffffff</item>
     <item name="android:paddingLeft">@dimen/padding_adapter_moment_comment_count</item>
     <item name="android:paddingRight">@dimen/padding_adapter_moment_comment_count</item>
     <item name="android:textSize">@dimen/text_size_adapter_moment_comment_count</item>
@@ -402,14 +402,14 @@
     <item name="android:background">@drawable/adapter_message_notification_red_dot</item>
   </style>
 
-  <style name="AdapterMessageNotification.Title" parent="TextStyle.t_color01.t_font03">
+  <style name="AdapterMessageNotification.Title" parent="TextStyle.color_212229.t_font03">
     <item name="android:layout_marginLeft">@dimen/margin_adapter_message_notification_title</item>
     <item name="android:layout_marginRight">@dimen/margin_adapter_message_notification_title</item>
     <item name="android:singleLine">true</item>
     <item name="android:ellipsize">end</item>
   </style>
 
-  <style name="AdapterMessageNotification.Content" parent="TextStyle.t_color04.t_font01">
+  <style name="AdapterMessageNotification.Content" parent="TextStyle.color_8a8c99.t_font01">
     <item name="android:textSize">@dimen/text_size_adapter_message_notification_content</item>
     <item name="android:layout_marginTop">
       @dimen/margin_top_adapter_message_notification_content
@@ -418,7 +418,7 @@
     <item name="android:ellipsize">end</item>
   </style>
 
-  <style name="AdapterMessageNotification.Time" parent="TextStyle.t_color03.t_font04">
+  <style name="AdapterMessageNotification.Time" parent="TextStyle.color_a1a4b3.t_font04">
 
   </style>
 
@@ -440,7 +440,7 @@
     </item>
   </style>
 
-  <style name="AdapterMessageNotificationDetail.Title" parent="TextStyle.t_color01.t_font03.bold">
+  <style name="AdapterMessageNotificationDetail.Title" parent="TextStyle.color_212229.t_font03.bold">
     <item name="android:layout_marginLeft">
       @dimen/margin_left_adapter_message_notification_detail_title
     </item>
@@ -451,19 +451,19 @@
     <item name="android:ellipsize">end</item>
   </style>
 
-  <style name="AdapterMessageNotificationDetail.Content" parent="TextStyle.t_color02.t_font02">
+  <style name="AdapterMessageNotificationDetail.Content" parent="TextStyle.color_525566.t_font02">
     <item name="android:layout_marginTop">
       @dimen/margin_top_adapter_message_notification_detail_content
     </item>
   </style>
 
-  <style name="AdapterMessageNotificationDetail.Time" parent="TextStyle.t_color03.t_font04">
+  <style name="AdapterMessageNotificationDetail.Time" parent="TextStyle.color_a1a4b3.t_font04">
     <item name="android:layout_marginTop">
       @dimen/margin_top_adapter_message_notification_detail_time
     </item>
   </style>
 
-  <style name="AdapterMessageNotificationDetail.ButtonLink" parent="TextStyle.t_color06.t_font02.bold">
+  <style name="AdapterMessageNotificationDetail.ButtonLink" parent="TextStyle.color_fc284d.t_font02.bold">
     <item name="android:paddingLeft">
       @dimen/padding_horizontal_adapter_message_notification_detail_button_link
     </item>

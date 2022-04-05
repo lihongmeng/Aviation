@@ -27,7 +27,7 @@
         android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:background="@color/color_ffffff">
 
         <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:layout_width="match_parent"
@@ -105,7 +105,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/DIMEN_7DP"
                     android:text="@{DateUtils.getDefaultTime(videoModel.createDate)}"
-                    android:textColor="@color/c_A1A4B3"
+                    android:textColor="@color/color_a1a4b3"
                     android:textSize="@dimen/sp_10"
                     android:onClick="@{v-> viewModel.onAvatarClicked(v)}"
                     app:layout_constraintBottom_toBottomOf="@id/author_avatar"
@@ -153,7 +153,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/DIMEN_9DP"
                     android:text="@{DateUtils.getDefaultDateFormatYYMMddHHmm(videoModel.createDate)}"
-                    android:textColor="@color/c_A1A4B3"
+                    android:textColor="@color/color_a1a4b3"
                     android:textSize="@dimen/sp_12"
                     app:layout_constraintBottom_toBottomOf="@id/author_name1"
                     app:layout_constraintStart_toEndOf="@id/line1"
@@ -167,7 +167,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/DIMEN_7DP"
                 android:text="@string/read_web"
-                android:textColor="@color/c_A1A4B3"
+                android:textColor="@color/color_a1a4b3"
                 android:textSize="@dimen/sp_13"
                 android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="@id/layout_author"
@@ -226,7 +226,7 @@
                     android:id="@+id/line2"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/DIMEN_10DP"
-                    android:background="@color/c_f7f8fc" />
+                    android:background="@color/color_f7f8fc" />
 
                 <com.hzlz.aviation.library.widget.widget.AviationTextView
                     android:id="@+id/related_news"

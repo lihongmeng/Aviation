@@ -331,7 +331,7 @@ public class MediaToolBarDataBind {
      * @reutrn 分享文字颜色
      */
     public int getCommentTextColor() {
-        int res = mIsDarkMode ? R.color.color_FFFFFF : R.color.color_333333;
+        int res = mIsDarkMode ? R.color.color_ffffff : R.color.color_333333;
         return MediaRuntime.getAppContext().getResources().getColor(res);
     }
 
@@ -341,7 +341,7 @@ public class MediaToolBarDataBind {
      * @reutrn 分享文字背景色
      */
     public int getCommentTextBackColor() {
-        int res = mIsDarkMode ? R.color.home_background_color_dark : R.color.home_background_color;
+        int res = mIsDarkMode ? R.color.color_1b1c1f : R.color.color_ffffff;
         return MediaRuntime.getAppContext().getResources().getColor(res);
     }
 
@@ -351,7 +351,7 @@ public class MediaToolBarDataBind {
      * @reutrn 作者文字颜色
      */
     public int getAuthorNameColor() {
-        int res = mIsDarkMode ? R.color.t_color05 : R.color.color_4c4c4c;
+        int res = mIsDarkMode ? R.color.color_ffffff : R.color.color_4c4c4c;
         return MediaRuntime.getAppContext().getResources().getColor(res);
     }
 
@@ -608,9 +608,9 @@ public class MediaToolBarDataBind {
     public @ColorInt
     int getFollowedColor() {
         if (mIsDarkMode) {
-            return MediaRuntime.getAppContext().getResources().getColor(R.color.t_color04);
+            return MediaRuntime.getAppContext().getResources().getColor(R.color.color_8a8c99);
         }
-        return MediaRuntime.getAppContext().getResources().getColor(R.color.t_color03);
+        return MediaRuntime.getAppContext().getResources().getColor(R.color.color_a1a4b3);
     }
 
 }

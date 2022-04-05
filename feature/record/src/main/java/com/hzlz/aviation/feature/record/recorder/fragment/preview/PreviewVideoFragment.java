@@ -50,7 +50,7 @@ public class PreviewVideoFragment extends BaseFragment<FragmentPreviewBinding> {
 
   @Override
   public int statusBarColor() {
-    return ResourcesUtils.getColor(R.color.c_bg02);
+    return ResourcesUtils.getColor(R.color.color_000000);
   }
 
   @Override public boolean darkImmersive() {

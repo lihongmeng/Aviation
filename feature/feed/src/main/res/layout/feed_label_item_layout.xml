@@ -14,7 +14,7 @@
         android:id="@+id/label_text"
         android:layout_width="@dimen/feed_label_item_text_width"
         android:layout_height="@dimen/feed_label_item_text_height"
-        android:textColor="@color/feed_label_text_color"
+        android:textColor="@color/color_ffffff"
         android:textSize="@dimen/feed_tab_text_size"/>
 
 </LinearLayout>

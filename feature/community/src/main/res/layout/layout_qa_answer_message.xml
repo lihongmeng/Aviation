@@ -118,7 +118,7 @@
             android:layout_marginStart="@dimen/DIMEN_10DP"
             android:layout_marginTop="@dimen/DIMEN_7DP"
             android:layout_marginEnd="@dimen/DIMEN_10DP"
-            android:background="@color/c_line"
+            android:background="@color/color_f7f7f7"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/avatar" />

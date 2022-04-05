@@ -13,7 +13,7 @@
   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:background="@color/c_bg01"
+      android:background="@color/color_f7f8fc"
       android:orientation="vertical"
       >
     <com.hzlz.aviation.library.widget.widget.AviationClearableEditText
@@ -26,7 +26,7 @@
     <com.hzlz.aviation.library.widget.widget.AviationTextView
         style="@style/FragmentModifyNickname.Counter"
         android:text="@{binding.counter}"
-        android:textColor="@{binding.counterMax ? @color/t_color06 : @color/t_color03}"
+        android:textColor="@{binding.counterMax ? @color/color_fc284d : @color/color_a1a4b3}"
         />
   </LinearLayout>
 </layout>

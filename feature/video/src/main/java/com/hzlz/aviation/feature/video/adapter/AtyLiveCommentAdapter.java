@@ -38,14 +38,14 @@ public class AtyLiveCommentAdapter extends BaseDataBindingAdapter<LiveCommentMod
             boolean isPlacard = position==0&&TextUtils.isEmpty(commentLstBean.getName());
             binding.content.clear();
             binding.content
-                    .addText(commentLstBean.getShowName(), R.color.c_8BE6FE,null)
-                    .addText(commentLstBean.getMessage(), isPlacard?R.color.c_8BE6FE:R.color.white,null);
+                    .addText(commentLstBean.getShowName(), R.color.color_8be6fe,null)
+                    .addText(commentLstBean.getMessage(), isPlacard?R.color.color_8be6fe:R.color.color_ffffff,null);
 
             if (commentLstBean.getLinks()!=null) {
                 for (int i = 0; i < commentLstBean.getLinks().size(); i++) {
                     String text = commentLstBean.getLinks().get(i).getText();
                     String link = commentLstBean.getLinks().get(i).getLink();
-                    binding.content.addText(text, R.color.c_4189FF, new ClickableSpan() {
+                    binding.content.addText(text, R.color.color_4189ff, new ClickableSpan() {
                         @Override
                         public void onClick(@NonNull View view) {
                             PluginManager.get(WebViewPlugin.class).startWebViewActivity(

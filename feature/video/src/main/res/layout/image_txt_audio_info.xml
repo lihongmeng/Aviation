@@ -37,7 +37,7 @@
             android:id="@+id/line"
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="@color/c_bg03"
+            android:background="@color/color_f8f8f8"
             app:layout_constraintTop_toTopOf="parent" />
 
         <include
@@ -123,7 +123,7 @@
             android:id="@+id/circle_layout"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_68DP"
-            android:background="@color/color_FFFFFF"
+            android:background="@color/color_ffffff"
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:paddingStart="@dimen/DIMEN_19DP"

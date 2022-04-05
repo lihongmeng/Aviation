@@ -4,5 +4,5 @@
     android:shape="oval"
     android:useLevel="false" >
 
-  <solid android:color="@color/record_button_background"/>
+  <solid android:color="@color/color_ffffff_70"/>
 </shape>

@@ -84,7 +84,7 @@ public class  UploadFragment extends BaseFragment<FragmentUploadVideoBinding> {
         int length = text.length();
         mUploadViewModel.updateEditTextNum(length);
         mBinding.tvEditNum.setTextColor(ResourcesUtils.getColor(
-            length >= 30 ? R.color.t_color06 : R.color.t_color03));
+            length >= 30 ? R.color.color_fc284d : R.color.color_a1a4b3));
       }
     });
   }

@@ -111,7 +111,7 @@
             android:layout_marginTop="@dimen/DIMEN_14DP"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_D5P"
-            android:background="@color/c_line02" />
+            android:background="@color/color_ebebeb" />
 
     </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>
 

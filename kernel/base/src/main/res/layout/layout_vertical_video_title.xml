@@ -11,7 +11,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/sp_15"
-            android:textColor="@color/color_000000_100"
+            android:textColor="@color/color_000000_0"
             app:last_space_count="40"
             app:sub_line="3"
             app:layout_constraintLeft_toLeftOf="parent"

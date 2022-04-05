@@ -316,7 +316,7 @@ public abstract class MediaBaseVideoTemplate extends MediaBaseTemplate {
         mPlayerView.showCoverWithDefaultConner(mMediaModel.getCoverUrl());
 
         TagTextHelper.createTagTitle(mContext, getTitleTextView(), feedModel.getContentThanTitle(), feedModel.getTagType(),
-                mContext.getResources().getColor(R.color.media_big_img_title_color));
+                mContext.getResources().getColor(R.color.color_ffffff));
 //    if (topBinding !=null && !mMediaModel.showNewsItem) {
 //      topBinding.toolbarNameText.setText(getAuthorNameText(topBinding.toolbarAttentionText, feedModel));
 //    }

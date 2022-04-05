@@ -18,7 +18,7 @@
     <com.hzlz.aviation.library.widget.widget.GVideoScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/c_bg01"
+        android:background="@color/color_f7f8fc"
         android:fillViewport="true"
         >
       <com.hzlz.aviation.library.widget.widget.AviationLinearLayout

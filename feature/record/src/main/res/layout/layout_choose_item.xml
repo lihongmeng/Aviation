@@ -41,7 +41,7 @@
             android:background="@drawable/bg_choose_video"
             android:layout_gravity="right"
             android:gravity="center"
-            android:textColor="@color/t_color05"
+            android:textColor="@color/color_ffffff"
             android:visibility="gone" />
 
         <com.hzlz.aviation.library.widget.widget.AviationTextView
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/choose_item_time_text_size"
             android:layout_gravity="bottom|right"
-            android:textColor="@color/t_color05"
+            android:textColor="@color/color_ffffff"
             android:layout_marginRight="@dimen/choose_item_time_marin_right"
             android:layout_marginBottom="@dimen/choose_item_time_marin_bottom" />
 

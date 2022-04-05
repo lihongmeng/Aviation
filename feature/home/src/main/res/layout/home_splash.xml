@@ -16,7 +16,7 @@
             android:drawablePadding="10dp"
             android:gravity="center_vertical"
             android:text="@string/app_name"
-            android:textColor="@color/black"
+            android:textColor="@color/color_000000"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

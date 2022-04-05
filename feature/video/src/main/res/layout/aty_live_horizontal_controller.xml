@@ -44,7 +44,7 @@
                 android:src="@drawable/live_end" />
 
             <com.ruffian.library.widget.RTextView
-                android:textColor="@color/white"
+                android:textColor="@color/color_ffffff"
                 android:text="@string/live_tag_end"
                 android:layout_marginTop="@dimen/DIMEN_5DP"
                 android:textSize="@dimen/sp_15"

@@ -5,7 +5,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/DIMEN_48DP"
-        android:background="@color/white">
+        android:background="@color/color_ffffff">
 
         <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/audio_comment"
@@ -29,7 +29,7 @@
             android:paddingStart="@dimen/DIMEN_12DP"
             android:paddingEnd="@dimen/DIMEN_12DP"
             android:textColorHint="@color/color_a1a4b3"
-            app:background_normal="@color/c_bg01"
+            app:background_normal="@color/color_f7f8fc"
             app:corner_radius="@dimen/DIMEN_7DP"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toRightOf="@+id/audio_comment"

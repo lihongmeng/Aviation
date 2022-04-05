@@ -65,7 +65,7 @@
             android:layout_width="@dimen/feed_ad_width"
             android:layout_height="@dimen/feed_ad_height"
             android:background="@drawable/feed_ad_background_drawable"
-            android:textColor="@color/feed_ad_text_color"
+            android:textColor="@color/color_808080_50"
             android:textSize="@dimen/feed_ad_text_size"
             android:text="@string/feed_ad"
             app:layout_constraintBottom_toBottomOf="@id/one_img_source"

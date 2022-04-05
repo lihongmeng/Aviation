@@ -2,6 +2,6 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
   <size android:width="@dimen/width_all_account_edit_text_cursor" />
-  <solid android:color="@color/all_account_edit_text_cursor_color" />
+  <solid android:color="@color/color_4189ff" />
   <corners android:radius="@dimen/width_all_account_edit_text_cursor" />
 </shape>

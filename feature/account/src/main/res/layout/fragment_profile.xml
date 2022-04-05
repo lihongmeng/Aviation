@@ -16,7 +16,7 @@
   <com.hzlz.aviation.library.widget.widget.AviationLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:background="@color/all_layout_background"
+      android:background="@color/color_ffffff"
       android:orientation="vertical"
       >
     <com.hzlz.aviation.library.widget.widget.AviationLinearLayout style="@style/ProfileStyle.AvatarContainer">

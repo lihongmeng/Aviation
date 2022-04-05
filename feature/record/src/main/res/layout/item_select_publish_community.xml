@@ -50,7 +50,7 @@
             android:layout_marginEnd="@dimen/DIMEN_14DP"
             android:paddingTop="@dimen/DIMEN_4DP"
             android:paddingBottom="@dimen/DIMEN_4DP"
-            android:textColor="@color/color_fffff"
+            android:textColor="@color/color_ffffff"
             android:textSize="@dimen/sp_12"
             android:gravity="center"
             android:singleLine="true"

@@ -55,7 +55,7 @@
             android:paddingTop="@dimen/DIMEN_2DP"
             android:paddingBottom="@dimen/DIMEN_2DP"
             android:visibility="visible"
-            app:indicator_color="@color/white"
+            app:indicator_color="@color/color_ffffff"
             app:indicator_count="3"
             app:layout_constraintRight_toLeftOf="@id/live_type"
             app:indicator_spacing="@dimen/DIMEN_2DP"

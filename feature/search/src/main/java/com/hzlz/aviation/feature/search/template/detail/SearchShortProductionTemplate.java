@@ -76,7 +76,7 @@ public class SearchShortProductionTemplate  extends SearchBaseTemplate  {
 
     @Override
     protected int getTitleColor() {
-        return SearchRuntime.getAppContext().getResources().getColor(R.color.t_color05);
+        return SearchRuntime.getAppContext().getResources().getColor(R.color.color_ffffff);
     }
 
     @Override

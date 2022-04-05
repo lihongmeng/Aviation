@@ -27,7 +27,7 @@
             android:gravity="center_vertical"
             android:text="@string/search_history"
             android:layout_marginStart="@dimen/DIMEN_14DP"
-            android:textColor="@color/search_bar_cancel_text_color"
+            android:textColor="@color/color_000000"
             android:textSize="@dimen/t_font06"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

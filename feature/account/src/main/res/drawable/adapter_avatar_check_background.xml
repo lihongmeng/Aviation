@@ -3,6 +3,6 @@
     android:shape="rectangle">
   <stroke
       android:width="@dimen/width_adapter_avatar_check_stroke"
-      android:color="@color/t_color06" />
+      android:color="@color/color_fc284d" />
   <corners android:radius="@dimen/r_r01" />
 </shape>

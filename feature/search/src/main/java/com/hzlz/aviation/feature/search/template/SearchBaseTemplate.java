@@ -82,7 +82,7 @@ public abstract class SearchBaseTemplate extends MediaBaseTemplate implements IS
      * @return title颜色
      */
     protected int getTitleColor() {
-        return SearchRuntime.getAppContext().getResources().getColor(R.color.t_color01);
+        return SearchRuntime.getAppContext().getResources().getColor(R.color.color_212229);
     }
 
     @Override

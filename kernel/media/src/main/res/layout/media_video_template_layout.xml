@@ -40,7 +40,7 @@
             app:force_pack="true"
             app:showMaxLine="3"
             app:tipClickable="false"
-            app:tipColor="@color/c_4189FF" />
+            app:tipColor="@color/color_4189ff" />
 
         <include
             android:id="@+id/feed_layout_qa"
@@ -111,7 +111,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="2"
                         android:text="@{feedModel.title}"
-                        android:textColor="@color/white"
+                        android:textColor="@color/color_ffffff"
                         android:textSize="@dimen/sp_15"
                         android:translationZ="2px"
                         android:visibility="@{feedModel.showInsideVideoTitle()?View.VISIBLE:View.GONE}"
@@ -145,7 +145,7 @@
                             android:includeFontPadding="false"
                             android:singleLine="true"
                             android:text="@{feedModel.liveBroadcastStatusStr}"
-                            android:textColor="@color/white"
+                            android:textColor="@color/color_ffffff"
                             android:textSize="@dimen/sp_11"
                             tools:text="直播" />
 
@@ -183,7 +183,7 @@
                         android:layout_marginEnd="@dimen/DIMEN_3DP"
                         android:layout_marginBottom="@dimen/DIMEN_3DP"
                         android:visibility="@{feedModel.isLivingTag ? View.VISIBLE : View.GONE}"
-                        app:indicator_color="@color/white"
+                        app:indicator_color="@color/color_ffffff"
                         app:indicator_count="3"
                         app:indicator_spacing="@dimen/DIMEN_2DP"
                         app:indicator_width="@dimen/DIMEN_2D5P" />
@@ -193,7 +193,7 @@
                         android:layout_height="wrap_content"
                         android:outlineProvider="none"
                         android:text="@string/enter_live_room"
-                        android:textColor="@color/t_color05"
+                        android:textColor="@color/color_ffffff"
                         android:textSize="@dimen/t_font07" />
 
                 </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>

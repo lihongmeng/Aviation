@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/DIMEN_10DP"
-        android:background="@color/white"
+        android:background="@color/color_ffffff"
         android:paddingStart="@dimen/DIMEN_15DP"
         android:paddingEnd="@dimen/DIMEN_15DP">
 
@@ -162,7 +162,7 @@
             android:gravity="center"
             android:onClick="@{v->viewModel.onStartLiveClicked(v)}"
             android:text="@string/start_live"
-            android:textColor="@color/white"
+            android:textColor="@color/color_ffffff"
             android:textSize="@dimen/sp_16"
             app:corner_radius="@dimen/DIMEN_24DP"
             app:layout_constraintLeft_toRightOf="parent"

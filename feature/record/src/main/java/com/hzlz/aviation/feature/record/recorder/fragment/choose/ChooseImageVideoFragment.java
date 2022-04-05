@@ -195,7 +195,7 @@ public class ChooseImageVideoFragment extends BaseFragment<FragmentChooseImageVi
                         mBinding.selectNumTime.setVisibility(View.VISIBLE);
                         mBinding.selectNumTime.setText(String.format(mSelectTimeFormat, time));
                         mBinding.selectNumTime.setTextColor(ResourcesUtils.getColor(
-                                VideoChooseHelper.getInstance().checkSelectAvailable() ? R.color.t_color01 : R.color.t_color06));
+                                VideoChooseHelper.getInstance().checkSelectAvailable() ? R.color.color_212229 : R.color.color_fc284d));
                     } else {
                         mBinding.selectNumTime.setVisibility(View.GONE);
                     }

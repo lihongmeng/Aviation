@@ -16,7 +16,7 @@
             android:ellipsize="end"
             android:gravity="center_vertical"
             android:paddingLeft="@dimen/DIMEN_13DP"
-            android:background="@color/color_FFFFFF"
+            android:background="@color/color_ffffff"
             android:paddingRight="@dimen/DIMEN_20DP"
             android:singleLine="true"
             android:textColor="@color/color_333333"

@@ -18,7 +18,7 @@
     <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:visibility="@{videoObservable==null?View.GONE:View.VISIBLE}"
         android:layout_width="match_parent"
-        android:background="@color/white"
+        android:background="@color/color_ffffff"
         android:layout_height="@dimen/DIMEN_48DP"
         android:paddingStart="@dimen/DIMEN_12DP"
         android:paddingEnd="@dimen/DIMEN_12DP">
@@ -29,9 +29,9 @@
             android:gravity="center_vertical"
             android:paddingStart="@dimen/DIMEN_10DP"
             android:text="@string/input_content"
-            android:textColor="@color/c_A1A4B3"
+            android:textColor="@color/color_a1a4b3"
             android:layout_marginEnd="@dimen/DIMEN_10DP"
-            app:background_normal="@color/c_f7f8fc"
+            app:background_normal="@color/color_f7f8fc"
             app:corner_radius="@dimen/DIMEN_17DP"
             android:onClick="@{v-> viewModel.onclickShowCommentDialog(v)}"
             app:layout_constraintBottom_toBottomOf="parent"

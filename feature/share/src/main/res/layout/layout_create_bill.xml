@@ -5,7 +5,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/color_000000_100"
+        android:background="@color/color_000000_0"
         android:orientation="vertical">
 
         <com.hzlz.aviation.library.widget.widget.AviationImageView

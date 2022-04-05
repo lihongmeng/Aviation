@@ -127,7 +127,7 @@ public final class UgcFragment extends BaseFragment<FragmentUgcBinding> {
                 if (!author.isSelf()
                         && !author.isFollow()) {
                     rBaseHelper.setBackgroundColorNormal(ContextCompat.getColor(context, R.color.color_e4344e));
-                    rBaseHelper.setBorderColorNormal(ContextCompat.getColor(context, R.color.color_000000_100));
+                    rBaseHelper.setBorderColorNormal(ContextCompat.getColor(context, R.color.color_000000_0));
                 } else {
                     rBaseHelper.setBackgroundColorNormal(ContextCompat.getColor(context, R.color.color_ffffff_20));
                     rBaseHelper.setBorderColorNormal(ContextCompat.getColor(context, R.color.color_ffffff_40));
@@ -155,7 +155,7 @@ public final class UgcFragment extends BaseFragment<FragmentUgcBinding> {
                 return;
             }
             rBaseHelper.setBackgroundColorNormal(value?ContextCompat.getColor(context, R.color.color_ffffff_20):ContextCompat.getColor(context, R.color.color_e4344e));
-            rBaseHelper.setBorderColorNormal(value?ContextCompat.getColor(context, R.color.color_ffffff_40):ContextCompat.getColor(context, R.color.color_000000_100));
+            rBaseHelper.setBorderColorNormal(value?ContextCompat.getColor(context, R.color.color_ffffff_40):ContextCompat.getColor(context, R.color.color_000000_0));
         });
 
     }

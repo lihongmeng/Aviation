@@ -30,7 +30,7 @@
             android:background="@drawable/center_dialog_button"
             android:gravity="center"
             android:text="@string/all_ensure"
-            android:textColor="@color/center_dialog_confirm_button_color"
+            android:textColor="@color/color_007aff"
             android:textSize="@dimen/t_font01"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

@@ -3,7 +3,7 @@
     android:shape="rectangle">
   <stroke
       android:width="@dimen/width_fragment_authentication_picture_container_stroke"
-      android:color="@color/fragment_authentication_picture_container_accent"
+      android:color="@color/color_c0d5f7"
       android:dashWidth="@dimen/width_fragment_authentication_picture_container_dash"
       android:dashGap="@dimen/width_fragment_authentication_picture_container_dash_gap" />
   <corners android:radius="@dimen/r_r01" />

@@ -72,7 +72,7 @@ public class PgcContentFragment extends MediaPageFragment<FragmentPgcContentBind
     protected RecyclerView.ItemDecoration createItemDecoration() {
         return tagType >= 4 ? new RecyclerDividerItemDecoration(getContext(),
                 LinearLayoutManager.HORIZONTAL,
-                getResources().getDimensionPixelOffset(R.dimen.DIMEN_D5P), R.color.c_line02) : null;
+                getResources().getDimensionPixelOffset(R.dimen.DIMEN_D5P), R.color.color_ebebeb) : null;
     }
 
 

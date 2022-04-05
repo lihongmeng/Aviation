@@ -18,7 +18,7 @@
         app:ksrlv_onLoadMore="@{(v)->viewModel.onLoadMore(v)}"
         app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}"
         app:srlHeaderHeight="75dp"
-        android:background="@color/color_FFFFFF">
+        android:background="@color/color_ffffff">
         
         <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:layout_width="match_parent"
@@ -42,7 +42,7 @@
                 android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/color_FFFFFF"
+                android:background="@color/color_ffffff"
                 android:scrollbars="none"
                 app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
 

@@ -75,7 +75,7 @@ public class SelectCommunityAdapter extends BaseDataBindingAdapter<Circle> {
             binding.selectSelected.setBackgroundResource(R.drawable.shape_soild_e4344e_coners_200dp);
             binding.name.setText(ResourcesUtils.getString(R.string.do_not_publish_to_community));
             binding.selectSelected.setText(ResourcesUtils.getString(R.string.select));
-            binding.selectSelected.setTextColor(ContextCompat.getColor(context, R.color.color_fffff));
+            binding.selectSelected.setTextColor(ContextCompat.getColor(context, R.color.color_ffffff));
             return;
         }
 
@@ -130,7 +130,7 @@ public class SelectCommunityAdapter extends BaseDataBindingAdapter<Circle> {
                 isSelected ? ResourcesUtils.getString(R.string.already_selected) : ResourcesUtils.getString(R.string.select)
         );
         binding.selectSelected.setTextColor(
-                isSelected ? ContextCompat.getColor(context, R.color.color_cccccc) : ContextCompat.getColor(context, R.color.color_fffff)
+                isSelected ? ContextCompat.getColor(context, R.color.color_cccccc) : ContextCompat.getColor(context, R.color.color_ffffff)
         );
     }
 

@@ -8,7 +8,7 @@
         <item name="android:background">@drawable/bottom_sheet_item_dialog_first_item_background
         </item>
         <item name="android:textSize">@dimen/bottom_sheet_item_dialog_item_text_size</item>
-        <item name="android:textColor">@color/bottom_sheet_item_dialog_item_text_color</item>
+        <item name="android:textColor">@color/color_333333</item>
     </style>
 
     <style name="BottomSheetItemDialogMiddleItemStyle" parent="BottomSheetItemDialogFirstItemStyle">

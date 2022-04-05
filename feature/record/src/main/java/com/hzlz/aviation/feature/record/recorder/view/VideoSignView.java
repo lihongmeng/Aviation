@@ -23,7 +23,7 @@ public class VideoSignView extends View {
   private float mSignMaxWidth = mSignMaxSize - GVideoRuntime.getAppContext().getResources().getDimension(
       R.dimen.fragment_record_sign_paint_size) / 2;
   /** 画笔颜色：红色 */
-  private int colorRed = GVideoRuntime.getAppContext().getResources().getColor(R.color.t_color06);
+  private int colorRed = GVideoRuntime.getAppContext().getResources().getColor(R.color.color_fc284d);
   /** 动画Animator */
   private ValueAnimator mChangeAnimator;
   /** 当前绘制进度 */

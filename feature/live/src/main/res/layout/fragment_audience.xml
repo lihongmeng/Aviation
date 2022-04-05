@@ -48,7 +48,7 @@
 
             <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:text="@string/liteav_loading"
-                android:textColor="@color/white"
+                android:textColor="@color/color_ffffff"
                 android:textSize="@dimen/sp_14"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -127,7 +127,7 @@
                     android:paddingEnd="@dimen/DIMEN_7DP"
                     android:paddingBottom="@dimen/DIMEN_1DP"
                     android:text="@string/live"
-                    android:textColor="@color/white"
+                    android:textColor="@color/color_ffffff"
                     android:textSize="@dimen/sp_13"
                     app:background_normal="@color/color_fb294e"
                     app:corner_radius="@dimen/DIMEN_12DP"
@@ -143,7 +143,7 @@
                     android:layout_marginStart="@dimen/DIMEN_7DP"
                     android:paddingRight="@dimen/DIMEN_8DP"
                     tools:text="张三的直播····"
-                    android:textColor="@color/white"
+                    android:textColor="@color/color_ffffff"
                     android:textSize="@dimen/sp_16"
                     app:layout_constraintBaseline_toBaselineOf="@id/live_tag"
                     app:layout_constraintLeft_toRightOf="@id/live_tag" />

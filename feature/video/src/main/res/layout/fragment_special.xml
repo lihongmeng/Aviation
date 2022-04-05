@@ -21,7 +21,7 @@
             android:id="@+id/refreshLayout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="@color/white"
+            android:background="@color/color_ffffff"
             android:visibility="@{videoModel==null?View.GONE:View.VISIBLE,default=gone}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -57,7 +57,7 @@
 
                     <com.hzlz.aviation.library.widget.widget.AviationTextView
                         android:id="@+id/content"
-                        style="@style/TextStyle.t_color02.t_font02"
+                        style="@style/TextStyle.color_525566.t_font02"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/DIMEN_12DP"
@@ -82,13 +82,13 @@
                         android:id="@+id/line"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/DIMEN_10DP"
-                        android:background="@color/c_F4F4F4"
+                        android:background="@color/color_f4f4f4"
                         android:layout_marginTop="@dimen/DIMEN_14DP"
                         app:layout_constraintTop_toBottomOf="@id/special_channel" />
 
                     <com.hzlz.aviation.library.widget.widget.AviationTextView
                         android:id="@+id/special_channel_name"
-                        style="@style/TextStyle.t_color01.t_font03"
+                        style="@style/TextStyle.color_212229.t_font03"
                         android:layout_marginTop="@dimen/DIMEN_15DP"
                         android:layout_marginStart="@dimen/DIMEN_12DP"
                         android:layout_marginEnd="@dimen/DIMEN_12DP"

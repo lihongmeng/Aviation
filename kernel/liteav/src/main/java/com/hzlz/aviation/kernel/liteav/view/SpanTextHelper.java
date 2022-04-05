@@ -64,7 +64,7 @@ public class SpanTextHelper {
 
         // 前景色
         ForegroundColorSpan pendantTextSpan = new ForegroundColorSpan(context.getResources()
-                .getColor(R.color.t_color06));
+                .getColor(R.color.color_fc284d));
 
         spanText.setSpan(pendantTextSpan, 0, callWord.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 

@@ -26,7 +26,7 @@
 
         <View
             android:id="@+id/line"
-            android:background="@color/c_line02"
+            android:background="@color/color_ebebeb"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_D5P"
             android:layout_marginStart="@dimen/DIMEN_19DP"
@@ -43,7 +43,7 @@
             android:padding="@dimen/DIMEN_14DP"
             android:text="@string/alright"
             android:gravity="center"
-            android:textColor="@color/center_dialog_confirm_button_color"
+            android:textColor="@color/color_007aff"
             android:textSize="@dimen/sp_15"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"

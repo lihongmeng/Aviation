@@ -111,7 +111,7 @@ public class GVideoBottomSheetItemDialog extends GVideoBottomSheetDialog
     }
     if (mItemDriverColor == 0) {
       mItemDriverColor = getContext().getResources().getColor(
-          R.color.bottom_sheet_item_dialog_driver_color
+          R.color.color_cccccc
       );
     }
     mItemDriverHeight = builder.mItemDriverHeight;

@@ -46,7 +46,7 @@ public class FeedRecommendDataBind {
      * @return 对应的颜色res
      */
     public int getAuthorNameColor() {
-        int res = mIsDarkMode ? R.color.t_color05 : R.color.t_color01;
+        int res = mIsDarkMode ? R.color.color_ffffff : R.color.color_212229;
         return FeedRuntime.getAppContext().getResources().getColor(res);
     }
 
@@ -56,7 +56,7 @@ public class FeedRecommendDataBind {
      * @return 对应的颜色res
      */
     public int getAuthorSourceColor() {
-        int res = mIsDarkMode ? R.color.t_color04 : R.color.t_color03;
+        int res = mIsDarkMode ? R.color.color_8a8c99 : R.color.color_a1a4b3;
         return FeedRuntime.getAppContext().getResources().getColor(res);
     }
 }

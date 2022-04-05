@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/black">
+        android:background="@color/color_000000">
 
         <View
             android:id="@+id/player_container"
@@ -65,13 +65,13 @@
                     android:id="@+id/view_pager"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/white"
+                    android:background="@color/color_ffffff"
                     app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
                 <com.google.android.material.appbar.AppBarLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
+                    android:background="@color/color_ffffff"
                     app:elevation="0dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -88,7 +88,7 @@
                             android:padding="@dimen/DIMEN_12DP"
                             tools:text="123456123456123"
                             android:text="@{videoObservable.contentThanTitle}"
-                            android:textColor="@color/c_1d1f29"
+                            android:textColor="@color/color_1d1f29"
                             android:textSize="@dimen/video_sp_17"
                             app:layout_constraintLeft_toLeftOf="parent"
                             app:layout_constraintRight_toRightOf="parent"
@@ -98,7 +98,7 @@
                             android:id="@+id/circle_layout"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/DIMEN_64DP"
-                            android:background="@color/color_FFFFFF"
+                            android:background="@color/color_ffffff"
                             android:gravity="center_vertical"
                             android:orientation="horizontal"
                             android:paddingStart="@dimen/DIMEN_12DP"

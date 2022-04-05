@@ -9,7 +9,7 @@
         <View
             android:layout_marginBottom="@dimen/DIMEN_1D5P"
             app:layout_constraintBottom_toBottomOf="@id/search_result_tabs"
-            android:background="@color/c_line02"
+            android:background="@color/color_ebebeb"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_1DP"/>
 

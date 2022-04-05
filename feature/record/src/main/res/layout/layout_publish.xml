@@ -16,7 +16,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_fffff">
+        android:background="@color/color_ffffff">
 
         <!--返回按钮-->
         <com.hzlz.aviation.library.widget.widget.AviationImageView
@@ -52,7 +52,7 @@
             android:textSize="@dimen/sp_13"
             android:onClick="@{(view)->viewModel.onPublish()}"
             android:text="@string/publish"
-            android:textColor="@color/color_fffff"
+            android:textColor="@color/color_ffffff"
             app:layout_constraintBottom_toBottomOf="@id/back"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/back" />

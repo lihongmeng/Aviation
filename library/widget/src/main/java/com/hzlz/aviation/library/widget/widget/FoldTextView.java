@@ -60,9 +60,9 @@ public class FoldTextView extends LinearLayout {
             isCanClickable = typedArray.getBoolean(R.styleable.FoldTextView_tipClickable, true);
             forcePack = typedArray.getBoolean(R.styleable.FoldTextView_force_pack, false);
             contentSize = typedArray.getDimension(R.styleable.FoldTextView_contentTextSize, 20);
-            contentColor = typedArray.getColor(R.styleable.FoldTextView_contentTextColor, getResources().getColor(R.color.t_color01));
+            contentColor = typedArray.getColor(R.styleable.FoldTextView_contentTextColor, getResources().getColor(R.color.color_212229));
             contentSpacing = typedArray.getFloat(R.styleable.FoldTextView_contentSpacing, 1.2f);
-            tipColor = typedArray.getColor(R.styleable.FoldTextView_tipColor, getResources().getColor(R.color.t_color01));
+            tipColor = typedArray.getColor(R.styleable.FoldTextView_tipColor, getResources().getColor(R.color.color_212229));
         } finally {
             typedArray.recycle();
         }

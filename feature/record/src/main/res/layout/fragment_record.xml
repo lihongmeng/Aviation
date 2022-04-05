@@ -76,7 +76,7 @@
       app:layout_constraintLeft_toLeftOf="@+id/camera_change"
       app:layout_constraintRight_toRightOf="@+id/camera_change"
       android:layout_marginTop="@dimen/fragment_record_item_text_margin_top"
-      android:textColor="@color/t_color05"
+      android:textColor="@color/color_ffffff"
       android:textSize="@dimen/fragment_record_item_text_size"
       android:text="@string/camera_change_text"/>
 
@@ -89,7 +89,7 @@
         app:layout_constraintLeft_toLeftOf="@+id/upload_file"
         app:layout_constraintRight_toRightOf="@+id/upload_file"
         android:layout_marginTop="@dimen/fragment_record_item_text_margin_top"
-        android:textColor="@color/t_color05"
+        android:textColor="@color/color_ffffff"
         android:textSize="@dimen/fragment_record_item_text_size"
         android:text="@string/upload_file_text" />
 
@@ -102,7 +102,7 @@
         app:layout_constraintLeft_toLeftOf="@+id/finish_record_img"
         app:layout_constraintRight_toRightOf="@+id/finish_record_img"
         android:layout_marginTop="@dimen/fragment_record_finish_text_margin_top"
-        android:textColor="@color/t_color05"
+        android:textColor="@color/color_ffffff"
         android:textSize="@dimen/fragment_record_item_text_size"
         android:text="@string/record_finish_text"
         android:visibility="gone" />
@@ -172,7 +172,7 @@
         app:layout_constraintLeft_toRightOf="@id/record_delete_img"
         app:layout_constraintRight_toRightOf="@id/record_main_button"
         android:textSize="@dimen/fragment_record_delete_text_size"
-        android:textColor="@color/record_delete_text_color"
+        android:textColor="@color/color_ffffff_40"
         android:text="@string/delete_record_text"
         android:onClick="@{()->viewModel.onDeleteItemClick()}"
         android:visibility="gone"/>
@@ -186,7 +186,7 @@
         app:layout_constraintLeft_toLeftOf="@id/record_main_button"
         app:layout_constraintRight_toRightOf="@id/record_main_button"
         android:textSize="@dimen/fragment_record_init_text_size"
-        android:textColor="@color/t_color05"
+        android:textColor="@color/color_ffffff"
         android:text="@{@string/record_init_text(viewModel.recordMaxTimeObservable)}"/>
 
     <View
@@ -208,7 +208,7 @@
         app:layout_constraintLeft_toLeftOf="@+id/record_main_button"
         app:layout_constraintRight_toRightOf="@+id/record_main_button"
         android:layout_marginBottom="@dimen/fragment_record_time_margin_bottom"
-        android:textColor="@color/t_color05"
+        android:textColor="@color/color_ffffff"
         android:textSize="@dimen/fragment_record_time_text_size"
         android:text="@string/record_time_text_default"
         android:visibility="gone"/>

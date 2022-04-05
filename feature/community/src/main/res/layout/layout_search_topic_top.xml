@@ -4,7 +4,7 @@
     android:id="@+id/search_bar_layout"
     android:layout_width="match_parent"
     android:layout_height="@dimen/DIMEN_45DP"
-    android:background="@color/color_FFFFFF"
+    android:background="@color/color_ffffff"
     android:focusable="true"
     android:focusableInTouchMode="true">
 
@@ -25,8 +25,8 @@
         android:hint="@string/search_topic"
         android:paddingStart="@dimen/DIMEN_32DP"
         android:paddingEnd="@dimen/DIMEN_45DP"
-        android:textColor="@color/t_color01"
-        android:textColorHint="@color/t_color03"
+        android:textColor="@color/color_212229"
+        android:textColorHint="@color/color_a1a4b3"
         android:textSize="@dimen/t_font02"
         android:background="@drawable/shape_solid_f7f8fc_corners_45dp"
         android:textCursorDrawable="@drawable/shape_solid_f7f8fc_corners_45dp"

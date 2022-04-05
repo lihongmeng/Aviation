@@ -8,8 +8,8 @@
 
   <!--====================c_gradual01====================-->
   <style name="ButtonStyle.c_gradual01">
-    <item name="android:background">@drawable/all_c_gradual01_button_background</item>
-    <item name="android:textColor">@color/t_color05</item>
+    <item name="android:background">@drawable/all_color_e4344e_button_background</item>
+    <item name="android:textColor">@color/color_ffffff</item>
     <item name="android:gravity">center</item>
   </style>
 
@@ -129,64 +129,64 @@
     <item name="android:textStyle">bold</item>
   </style>
 
-  <!--====================c_bg01====================-->
-  <style name="ButtonStyle.c_bg01">
-    <item name="android:background">@drawable/all_c_bg01_button_background</item>
-    <item name="android:textColor">@color/t_color03</item>
+  <!--====================color_f7f8fc====================-->
+  <style name="ButtonStyle.color_f7f8fc">
+    <item name="android:background">@drawable/all_color_f7f8fc_button_background</item>
+    <item name="android:textColor">@color/color_a1a4b3</item>
     <item name="android:gravity">center</item>
   </style>
 
   <!--t_font01-->
-  <style name="ButtonStyle.c_bg01.t_font01">
+  <style name="ButtonStyle.color_f7f8fc.t_font01">
     <item name="android:textSize">@dimen/t_font01</item>
   </style>
 
-  <style name="ButtonStyle.c_bg01.t_font01.bold">
+  <style name="ButtonStyle.color_f7f8fc.t_font01.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font02-->
-  <style name="ButtonStyle.c_bg01.t_font02">
+  <style name="ButtonStyle.color_f7f8fc.t_font02">
     <item name="android:textSize">@dimen/t_font02</item>
   </style>
 
-  <style name="ButtonStyle.c_bg01.t_font02.bold">
+  <style name="ButtonStyle.color_f7f8fc.t_font02.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font03-->
-  <style name="ButtonStyle.c_bg01.t_font03">
+  <style name="ButtonStyle.color_f7f8fc.t_font03">
     <item name="android:textSize">@dimen/t_font03</item>
   </style>
 
-  <style name="ButtonStyle.c_bg01.t_font03.bold">
+  <style name="ButtonStyle.color_f7f8fc.t_font03.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font04-->
-  <style name="ButtonStyle.c_bg01.t_font04">
+  <style name="ButtonStyle.color_f7f8fc.t_font04">
     <item name="android:textSize">@dimen/t_font04</item>
   </style>
 
-  <style name="ButtonStyle.c_bg01.t_font04.bold">
+  <style name="ButtonStyle.color_f7f8fc.t_font04.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font05-->
-  <style name="ButtonStyle.c_bg01.t_font05">
+  <style name="ButtonStyle.color_f7f8fc.t_font05">
     <item name="android:textSize">@dimen/t_font05</item>
   </style>
 
-  <style name="ButtonStyle.c_bg01.t_font05.bold">
+  <style name="ButtonStyle.color_f7f8fc.t_font05.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font06-->
-  <style name="ButtonStyle.c_bg01.t_font06">
+  <style name="ButtonStyle.color_f7f8fc.t_font06">
     <item name="android:textSize">@dimen/t_font06</item>
   </style>
 
-  <style name="ButtonStyle.c_bg01.t_font06.bold">
+  <style name="ButtonStyle.color_f7f8fc.t_font06.bold">
     <item name="android:textStyle">bold</item>
   </style>
 </resources>

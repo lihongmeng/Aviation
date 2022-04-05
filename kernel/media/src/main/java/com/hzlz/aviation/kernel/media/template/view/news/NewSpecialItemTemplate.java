@@ -98,8 +98,8 @@ public class NewSpecialItemTemplate extends MediaBaseTemplate {
                 });
         if (mediaModelList != null && mediaModelList.size() > 1) {
             mBinding.banner.setIndicator(new CircleIndicator(mContext))
-                    .setIndicatorNormalColorRes(R.color.white)
-                    .setIndicatorSelectedColorRes(R.color.color_FC284D);
+                    .setIndicatorNormalColorRes(R.color.color_ffffff)
+                    .setIndicatorSelectedColorRes(R.color.color_fc284d);
         }
         ViewGroup viewGroup = getRootLayout();
         viewGroup.requestLayout();

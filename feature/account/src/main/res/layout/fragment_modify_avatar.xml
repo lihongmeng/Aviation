@@ -16,7 +16,7 @@
     <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/all_layout_background"
+        android:background="@color/color_ffffff"
         android:orientation="vertical">
 
         <View

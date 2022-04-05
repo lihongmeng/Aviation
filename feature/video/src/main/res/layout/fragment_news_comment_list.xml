@@ -15,7 +15,7 @@
             <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/white"
+                android:background="@color/color_ffffff"
                 android:fillViewport="true">
 
                 <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
@@ -26,7 +26,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/DIMEN_10DP"
-                        android:background="@color/c_f7f8fc" />
+                        android:background="@color/color_f7f8fc" />
 
                     <com.hzlz.aviation.library.widget.widget.GVideoRecyclerView
                         android:id="@+id/recycler"

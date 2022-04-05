@@ -16,7 +16,7 @@
             android:layout_height="@dimen/feed_pendant_title_height"
             android:layout_gravity="left|center"
             android:textSize="@dimen/t_font05"
-            android:textColor="@color/t_color05"
+            android:textColor="@color/color_ffffff"
             android:layout_marginLeft="@dimen/feed_pendant_title_margin_left"
             android:layout_marginRight="@dimen/feed_pendant_title_margin_right"/>
 

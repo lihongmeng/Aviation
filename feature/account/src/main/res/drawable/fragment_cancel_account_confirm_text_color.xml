@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-  <item android:color="@color/t_color01" android:state_enabled="true" />
-  <item android:color="@color/text_color_fragment_cancel_account_confirm_disable" android:state_enabled="false" />
+  <item android:color="@color/color_212229" android:state_enabled="true" />
+  <item android:color="@color/color_c1c2c7" android:state_enabled="false" />
 </selector>

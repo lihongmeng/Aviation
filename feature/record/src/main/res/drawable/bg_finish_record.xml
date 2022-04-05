@@ -3,8 +3,8 @@
     android:shape="oval" android:useLevel="false">
   <gradient
       android:angle="0"
-      android:endColor="@color/c_gradual01_end"
-      android:startColor="@color/c_gradual01_start" />
+      android:endColor="@color/color_ff6741"
+      android:startColor="@color/color_fc284d" />
   <size android:width="@dimen/fragment_record_finish_img_size"
       android:height="@dimen/fragment_record_finish_img_size" />
 </shape>

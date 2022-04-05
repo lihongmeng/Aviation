@@ -46,7 +46,7 @@
                 app:layout_constraintTop_toBottomOf="@id/title"
                 app:showMaxLine="3"
                 app:tipClickable="false"
-                app:tipColor="@color/c_4189FF" />
+                app:tipColor="@color/color_4189ff" />
 
             <com.hzlz.aviation.kernel.base.view.ImageRecyclerView
                 android:id="@+id/recycler_view"

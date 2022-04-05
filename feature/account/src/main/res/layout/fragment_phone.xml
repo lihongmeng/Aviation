@@ -19,7 +19,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/all_layout_background"
+        android:background="@color/color_ffffff"
         android:orientation="vertical">
 
         <View
@@ -104,8 +104,8 @@
         <com.hzlz.aviation.library.widget.widget.AviationButton
             android:id="@+id/button_next"
             style="@style/FragmentPhoneStyle.Next"
-            android:background="@{binding.enableNext?@drawable/all_c_gradual01_button_state_enable_background:@drawable/all_c_gradual01_button_state_disable_background}"
-            android:textColor="@{binding.enableNext?@color/t_color05:@color/t_color03}"
+            android:background="@{binding.enableNext?@drawable/shape_gradient_fc284d_ff6741_button_state_enable_background:@drawable/shape_solid_f7f8fc_button_state_disable_background}"
+            android:textColor="@{binding.enableNext?@color/color_ffffff:@color/color_a1a4b3}"
             android:onClick="@{(view)->viewModel.startLoginCodeFragment(view)}"
             android:text="@string/fragment_phone_next"
             app:layout_constraintLeft_toLeftOf="@id/guide_line_left"

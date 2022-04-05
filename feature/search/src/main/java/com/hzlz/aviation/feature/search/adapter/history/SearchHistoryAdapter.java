@@ -68,7 +68,7 @@ public class SearchHistoryAdapter extends RecyclerView.Adapter<SearchHistoryAdap
         AviationTextView textView = new AviationTextView(mContext);
         textView.setGravity(Gravity.CENTER_VERTICAL);
         textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, mContext.getResources().getDimension(R.dimen.t_font04));
-        textView.setTextColor(mContext.getResources().getColor(R.color.t_color01));
+        textView.setTextColor(mContext.getResources().getColor(R.color.color_212229));
         textView.setBackgroundResource(R.drawable.history_list_drawable);
         textView.setMaxLines(1);
         textView.setEllipsize(TextUtils.TruncateAt.END);

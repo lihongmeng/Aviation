@@ -72,7 +72,7 @@ public class VideoWholePeriodController extends GVideoControllerBase {
 
   @Override public void updateTitle(String title, int tag) {
     TagTextHelper.createTagTitle(getContext(), mBinding.tvTitle, title, tag,
-            getContext().getResources().getColor(R.color.big_img_title_color));
+            getContext().getResources().getColor(R.color.color_ffffff));
   }
 
   LayoutVideoWholePeriodControllerBinding getBinding() {

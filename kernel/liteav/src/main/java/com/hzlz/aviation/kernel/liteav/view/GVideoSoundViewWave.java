@@ -89,7 +89,7 @@ public class GVideoSoundViewWave extends View {
         paint.setStyle(Paint.Style.FILL);
 
         progressWaveColor = ContextCompat.getColor(context, R.color.color_e4344e);
-        defaultWaveColor = ContextCompat.getColor(context, R.color.color_FFFFFF);
+        defaultWaveColor = ContextCompat.getColor(context, R.color.color_ffffff);
     }
 
     @Override

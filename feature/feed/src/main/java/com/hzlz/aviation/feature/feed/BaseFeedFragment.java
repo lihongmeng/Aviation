@@ -77,7 +77,7 @@ public abstract class BaseFeedFragment extends BaseFragment<FragmentFeedBinding>
 
     @Override
     protected void initView() {
-        int color = isDarkMode() ? R.color.home_background_color_dark : R.color.home_background_color;
+        int color = isDarkMode() ? R.color.color_1b1c1f : R.color.color_ffffff;
         mBinding.fragmentLayout.setBackgroundColor(
                 FeedRuntime.getAppContext().getResources().getColor(color));
         FeedFragmentManager.getInstance().addFragmentRef(this);
@@ -271,7 +271,7 @@ public abstract class BaseFeedFragment extends BaseFragment<FragmentFeedBinding>
     protected void initTabLayout() {
         getTabLayout().setViewPager(mBinding.feedViewPager);
         if (mTabItemInfoList == null || mTabItemInfoList.size() <= 1) {
-            int color = isDarkMode() ? R.color.home_background_color_dark : R.color.home_background_color;
+            int color = isDarkMode() ? R.color.color_1b1c1f : R.color.color_ffffff;
             getTabLayout().setSelectedIndicatorColors(GVideoRuntime.getAppContext().getResources().getColor(color));
         }
     }

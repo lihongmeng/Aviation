@@ -3,8 +3,8 @@
     <item android:id="@android:id/background">
         <shape>
             <gradient
-                android:endColor="@color/liteav_audio_progress_second"
-                android:startColor="@color/liteav_audio_progress_second" />
+                android:endColor="@color/color_6b6666"
+                android:startColor="@color/color_6b6666" />
         </shape>
     </item>
 
@@ -12,8 +12,8 @@
         <clip>
             <shape>
                 <gradient
-                    android:endColor="@color/white"
-                    android:startColor="@color/white" />
+                    android:endColor="@color/color_ffffff"
+                    android:startColor="@color/color_ffffff" />
             </shape>
         </clip>
     </item>

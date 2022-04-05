@@ -106,7 +106,7 @@
             android:layout_height="1px"
             android:layout_marginTop="@dimen/DIMEN_13DP"
             android:layout_marginBottom="@dimen/DIMEN_13DP"
-            android:background="@color/c_line02"
+            android:background="@color/color_ebebeb"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/program_list" />
 

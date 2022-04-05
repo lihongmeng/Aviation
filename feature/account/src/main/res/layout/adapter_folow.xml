@@ -74,10 +74,10 @@
         <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/button_follow"
             style="@style/AdapterFollow.Follow"
-            android:background="@{ author.isFollow ? @drawable/all_c_bg01_button_background : @drawable/all_c_gradual01_button_background }"
+            android:background="@{ author.isFollow ? @drawable/all_color_f7f8fc_button_background : @drawable/all_color_e4344e_button_background }"
             android:onClick="@{(v)->adapter.follow(v,position)}"
             android:text="@{author.isFollow ? (author.followMe ? @string/all_follow_each_other : @string/all_followed) : @string/all_follow }"
-            android:textColor="@{author.isFollow? @color/t_color04 : @color/t_color05}"
+            android:textColor="@{author.isFollow? @color/color_8a8c99 : @color/color_ffffff}"
             android:visibility="@{author.self ? View.GONE : View.VISIBLE}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"

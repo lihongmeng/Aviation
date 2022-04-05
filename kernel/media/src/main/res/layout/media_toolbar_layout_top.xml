@@ -125,7 +125,7 @@
             android:layout_marginLeft="10dp"
             android:onClick="@{(view)->toolBind.onAttentionClick(view)}"
             android:text='@{authorObservable.isFollow?  @string/media_is_attention : @string/media_not_attention}'
-            android:textColor="@{authorObservable.isFollow? toolBind.FollowedColor : @color/t_color06}"
+            android:textColor="@{authorObservable.isFollow? toolBind.FollowedColor : @color/color_fc284d}"
             android:textSize="@dimen/t_font03"
             android:visibility="@{toolBind.showFollow ? View.VISIBLE : View.GONE}"
             app:layout_constraintLeft_toRightOf="@+id/layout_name"
@@ -173,7 +173,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@{toolBind.showCircleName}"
-                android:textColor="@color/color_93989C"
+                android:textColor="@color/color_93989c"
                 android:textSize="@dimen/sp_10"
                 tools:text="一二三四五六七八" />
 
@@ -222,7 +222,7 @@
             android:layout_height="wrap_content"
             android:singleLine="true"
             android:text="@{@string/media_create_date(videoObservable.createDate)}"
-            android:textColor="@color/t_color03"
+            android:textColor="@color/color_a1a4b3"
             android:textSize="@dimen/t_font04"
             android:visibility="@{toolBind.showDate ? View.VISIBLE : View.GONE}"
             app:layout_constraintBottom_toBottomOf="parent"

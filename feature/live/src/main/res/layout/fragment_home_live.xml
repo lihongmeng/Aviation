@@ -20,7 +20,7 @@
             android:id="@+id/view_pager_tab"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_45DP"
-            android:background="@color/color_FFFFFF"
+            android:background="@color/color_ffffff"
             app:content_gravity="center"
             app:layout_constraintTop_toTopOf="parent" />
 

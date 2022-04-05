@@ -23,7 +23,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/color_FFFFFF">
+            android:background="@color/color_ffffff">
 
             <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:layout_width="0dp"
@@ -74,7 +74,7 @@
                 android:background="@drawable/shape_soild_e4344e_coners_200dp"
                 android:gravity="center"
                 android:text="@string/one_key_follow_high_quality_author"
-                android:textColor="@color/color_FFFFFF"
+                android:textColor="@color/color_ffffff"
                 android:textSize="@dimen/sp_15"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"

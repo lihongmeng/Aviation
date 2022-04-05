@@ -54,7 +54,7 @@ public class SoundWaveView extends View {
   private static final int ANIM_DURATION = 800;
   /** 音频颜色 */
   private static final int COLOR_WAVE =
-      GVideoRuntime.getAppContext().getResources().getColor(R.color.feed_wave_color);
+      GVideoRuntime.getAppContext().getResources().getColor(R.color.color_ffffff);
 
   /** 保存每个柱形的长度、透明度和颜色的数组 */
   private float[] mWaveHeights;

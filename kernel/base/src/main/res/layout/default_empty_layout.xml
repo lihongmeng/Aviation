@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/DIMEN_12DP"
         android:text="临时占位"
-        android:textColor="@color/t_color06"
+        android:textColor="@color/color_fc284d"
         android:textSize="@dimen/t_font01" />
 
     <com.hzlz.aviation.library.widget.widget.AviationTextView
@@ -28,7 +28,7 @@
         android:layout_marginTop="@dimen/DIMEN_20DP"
         android:gravity="center"
         android:text="刷新--临时占位"
-        android:textColor="@color/t_color06"
+        android:textColor="@color/color_fc284d"
         android:textSize="@dimen/t_font01"  />
   </LinearLayout>
 </layout>

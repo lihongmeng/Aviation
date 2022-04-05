@@ -75,11 +75,11 @@ public class LabelTitleSpan extends ReplacementSpan {
                 R.dimen.label_height);
 
         mLabelBackStartColor = mContext.getResources().getColor(
-                R.color.c_gradual01_start);
+                R.color.color_fc284d);
         mLabelBackEndColor = mContext.getResources().getColor(
-                R.color.c_gradual01_end);
+                R.color.color_ff6741);
         mTextColor =  mContext.getResources().getColor(
-                R.color.t_color05);
+                R.color.color_ffffff);
 
         mBackCornerRadius = (int) mContext.getResources().getDimension(
                 R.dimen.label_radio_size);

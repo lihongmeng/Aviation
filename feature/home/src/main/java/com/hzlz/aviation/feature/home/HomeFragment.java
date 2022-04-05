@@ -297,7 +297,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
      * @param isDarkMode 是否为暗黑模式
      */
     private int getBackgroundColor(boolean isDarkMode) {
-        return getColor(isDarkMode ? R.color.home_background_color_dark : R.color.home_background_color);
+        return getColor(isDarkMode ? R.color.color_1b1c1f : R.color.color_ffffff);
 
     }
 

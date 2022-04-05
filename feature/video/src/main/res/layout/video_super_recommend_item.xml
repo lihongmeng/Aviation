@@ -107,7 +107,7 @@
             android:layout_marginLeft="@dimen/video_dp_10"
             android:layout_marginRight="@dimen/video_dp_10"
             android:background="@drawable/video_ad_bg_empty"
-            android:textColor="@color/video_ad_text_color"
+            android:textColor="@color/color_808080_50"
             android:textSize="@dimen/video_sp_10"
             android:text="@string/video_ad"
             android:visibility='@{recommend.isAd > 0 ? View.VISIBLE : View.GONE}'

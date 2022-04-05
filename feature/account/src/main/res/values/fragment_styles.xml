@@ -23,13 +23,13 @@
     <item name="android:layout_marginTop">@dimen/margin_top_fragment_pgc_avatar</item>
   </style>
 
-  <style name="FragmentPgcStyle.DetailName" parent="TextStyle.t_color05.t_font01.bold">
+  <style name="FragmentPgcStyle.DetailName" parent="TextStyle.color_ffffff.t_font01.bold">
     <item name="android:textSize">@dimen/text_size_fragment_pgc_detail_name</item>
     <item name="android:layout_marginLeft">@dimen/margin_left_fragment_pgc_detail_name</item>
     <item name="android:layout_marginRight">@dimen/margin_right_fragment_pgc_detail_name</item>
   </style>
 
-  <style name="FragmentPgcStyle.DetailDescription" parent="TextStyle.t_color05.t_font01">
+  <style name="FragmentPgcStyle.DetailDescription" parent="TextStyle.color_ffffff.t_font01">
     <item name="android:textSize">@dimen/text_size_fragment_pgc_detail_description</item>
   </style>
 
@@ -40,7 +40,7 @@
     <item name="android:textSize">@dimen/sp_13</item>
     <item name="singleLine">true</item>
     <item name="android:ellipsize">end</item>
-    <item name="android:textColor">@color/t_color05</item>
+    <item name="android:textColor">@color/color_ffffff</item>
     <item name="android:layout_marginRight">@dimen/margin_right_fragment_pgc_toolbar_follow</item>
   </style>
 
@@ -78,13 +78,13 @@
   <style name="FragmentUgcStyle.DetailContainer">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:background">@color/white</item>
+    <item name="android:background">@color/color_ffffff</item>
   </style>
 
   <style name="FragmentUgcStyle.DetailTabLayout" parent="TabLayoutDefaultStyle">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">@dimen/DIMEN_42DP</item>
-    <item name="android:background">@color/white</item>
+    <item name="android:background">@color/color_ffffff</item>
     <item name="stl_defaultTabTextColor">@drawable/fragment_ugc_tab_layout_default_text_color</item>
   </style>
 
@@ -93,28 +93,28 @@
 
   </style>
 
-  <style name="FragmentUgcStyle.DetailName" parent="TextStyle.t_color01.t_font01.bold">
+  <style name="FragmentUgcStyle.DetailName" parent="TextStyle.color_212229.t_font01.bold">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:singleLine">true</item>
     <item name="android:ellipsize">end</item>
     <item name="android:layout_marginTop">@dimen/DIMEN_6DP</item>
     <item name="android:textSize">@dimen/sp_19</item>
-    <item name="android:textColor">@color/white</item>
+    <item name="android:textColor">@color/color_ffffff</item>
   </style>
 
 
-  <style name="FragmentUgcStyle.DetailDescription" parent="TextStyle.t_color04.t_font01">
+  <style name="FragmentUgcStyle.DetailDescription" parent="TextStyle.color_8a8c99.t_font01">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:textSize">@dimen/sp_13</item>
     <item name="android:textColor">@color/color_ffffff_60</item>
   </style>
-  <style name="FragmentUgcStyle.DetailFollowCount" parent="TextStyle.t_color04.t_font01">
+  <style name="FragmentUgcStyle.DetailFollowCount" parent="TextStyle.color_8a8c99.t_font01">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:singleLine">true</item>
-    <item name="android:textColor">@color/black</item>
+    <item name="android:textColor">@color/color_000000</item>
     <item name="android:textSize">@dimen/text_size_fragment_ugc_detail_follow_count</item>
     <item name="android:layout_marginTop">@dimen/DIMEN_14DP</item>
     <item name="android:textStyle">bold</item>
@@ -123,7 +123,7 @@
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:singleLine">true</item>
-    <item name="android:textColor">@color/white</item>
+    <item name="android:textColor">@color/color_ffffff</item>
     <item name="android:textSize">@dimen/text_size_fragment_ugc_detail_fans_count</item>
   </style>
 
@@ -140,7 +140,7 @@
     <item name="android:gravity">center</item>
   </style>
 
-  <style name="FragmentUgcStyle.ToolBarFollow" parent="TextStyle.t_color05.t_font02">
+  <style name="FragmentUgcStyle.ToolBarFollow" parent="TextStyle.color_ffffff.t_font02">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">@dimen/height_fragment_pgc_toolbar_follow</item>
     <item name="android:gravity">center</item>
@@ -161,8 +161,8 @@
     <item name="android:paddingLeft">@dimen/padding_fragment_follow_search</item>
     <item name="android:paddingRight">@dimen/padding_fragment_follow_search</item>
   </style>
-  <style name="FragmentFollowStyle.Cancel" parent="TextStyle.t_color05.t_font03.bold">
-    <item name="android:textColor">@color/black</item>
+  <style name="FragmentFollowStyle.Cancel" parent="TextStyle.color_ffffff.t_font03.bold">
+    <item name="android:textColor">@color/color_000000</item>
     <item name="android:gravity">center</item>
     <item name="android:layout_height">@dimen/height_fragment_follow_cancel</item>
     <item name="android:paddingLeft">@dimen/padding_fragment_follow_cancel</item>
@@ -179,7 +179,7 @@
     <item name="android:paddingTop">@dimen/padding_fragment_about_top_container</item>
     <item name="android:paddingBottom">@dimen/padding_fragment_about_top_container</item>
     <item name="android:gravity">center_horizontal</item>
-    <item name="android:background">@color/all_layout_background</item>
+    <item name="android:background">@color/color_ffffff</item>
     <item name="android:layout_marginBottom">
       @dimen/margin_bottom_fragment_about_top_container
     </item>
@@ -191,11 +191,11 @@
     <item name="corner">@dimen/conner_fragment_about_app_icon</item>
   </style>
 
-  <style name="AboutStyle.Version" parent="TextStyle.t_color01.t_font02">
+  <style name="AboutStyle.Version" parent="TextStyle.color_212229.t_font02">
     <item name="android:layout_marginTop">@dimen/margin_top_fragment_about_version</item>
   </style>
 
-  <style name="AboutStyle.Copyright" parent="TextStyle.t_color01.t_font02">
+  <style name="AboutStyle.Copyright" parent="TextStyle.color_212229.t_font02">
     <item name="android:layout_marginTop">@dimen/margin_top_fragment_about_copyright</item>
   </style>
 
@@ -216,12 +216,12 @@
 
   </style>
 
-  <style name="FragmentPhoneStyle.Title" parent="TextStyle.t_color01.t_font02.bold">
+  <style name="FragmentPhoneStyle.Title" parent="TextStyle.color_212229.t_font02.bold">
     <item name="android:layout_marginTop">@dimen/margin_top_phone_title</item>
     <item name="android:textSize">@dimen/text_size_phone_title</item>
   </style>
 
-  <style name="FragmentPhoneStyle.CountryCode" parent="TextStyle.t_color01.t_font01">
+  <style name="FragmentPhoneStyle.CountryCode" parent="TextStyle.color_212229.t_font01">
 
   </style>
 
@@ -254,12 +254,12 @@
     <item name="android:gravity">center</item>
   </style>
 
-  <style name="FragmentPhoneStyle.LoginForAgreement" parent="TextStyle.t_color03.t_font04">
+  <style name="FragmentPhoneStyle.LoginForAgreement" parent="TextStyle.color_a1a4b3.t_font04">
     <item name="android:layout_marginTop">@dimen/margin_top_phone_login_for_agreement</item>
   </style>
 
-  <style name="FragmentPhoneStyle.UserContract" parent="TextStyle.t_color03.t_font04">
-    <item name="android:textColor">@color/color_phone_user_contract</item>
+  <style name="FragmentPhoneStyle.UserContract" parent="TextStyle.color_a1a4b3.t_font04">
+    <item name="android:textColor">@color/color_4189ff</item>
     <item name="android:layout_marginLeft">@dimen/margin_left_phone_user_contract</item>
     <item name="android:layout_marginRight">@dimen/margin_right_phone_user_contract</item>
   </style>
@@ -277,12 +277,12 @@
 
   </style>
 
-  <style name="FragmentSmsCode.Title" parent="TextStyle.t_color01.t_font01.bold">
+  <style name="FragmentSmsCode.Title" parent="TextStyle.color_212229.t_font01.bold">
     <item name="android:layout_marginTop">@dimen/margin_top_sms_code_title</item>
     <item name="android:textSize">@dimen/text_size_sms_code_title</item>
   </style>
 
-  <style name="FragmentSmsCode.SmsCodeSent" parent="TextStyle.t_color03.t_font04">
+  <style name="FragmentSmsCode.SmsCodeSent" parent="TextStyle.color_a1a4b3.t_font04">
     <item name="android:layout_marginTop">@dimen/margin_top_sms_code_sms_code_sent</item>
   </style>
 
@@ -344,7 +344,7 @@
     </item>
   </style>
 
-  <style name="FragmentAccountSecurityStyle.Logout" parent="TextStyle.t_color01.t_font03">
+  <style name="FragmentAccountSecurityStyle.Logout" parent="TextStyle.color_212229.t_font03">
     <item name="android:layout_height">@dimen/height_fragment_account_security_logout</item>
     <item name="android:gravity">center</item>
     <item name="android:background">@drawable/all_white_c_bg01_background</item>
@@ -362,7 +362,7 @@
     </item>
     <item name="android:orientation">horizontal</item>
     <item name="android:gravity">center_vertical</item>
-    <item name="android:background">@color/all_layout_background</item>
+    <item name="android:background">@color/color_ffffff</item>
     <item name="android:paddingLeft">
       @dimen/padding_fragment_authentication_default
     </item>
@@ -371,7 +371,7 @@
     </item>
   </style>
 
-  <style name="FragmentAuthenticationStyle.IdCardNumberLabel" parent="TextStyle.t_color01.t_font03.bold">
+  <style name="FragmentAuthenticationStyle.IdCardNumberLabel" parent="TextStyle.color_212229.t_font03.bold">
     <item name="android:layout_marginRight">
       @dimen/margin_fragment_authentication_default
     </item>
@@ -383,13 +383,13 @@
 
   <style name="FragmentAuthenticationStyle.UploadPictureContainer">
     <item name="android:padding">@dimen/padding_fragment_authentication_default</item>
-    <item name="android:background">@color/all_layout_background</item>
+    <item name="android:background">@color/color_ffffff</item>
     <item name="android:layout_marginTop">
       @dimen/margin_top_fragment_authentication_id_card_number_container
     </item>
   </style>
 
-  <style name="FragmentAuthenticationStyle.UploadPictureTitle" parent="TextStyle.t_color01.t_font01.bold">
+  <style name="FragmentAuthenticationStyle.UploadPictureTitle" parent="TextStyle.color_212229.t_font01.bold">
 
   </style>
 
@@ -417,8 +417,8 @@
     </item>
   </style>
 
-  <style name="FragmentAuthenticationStyle.PictureTip" parent="TextStyle.t_color01.t_font04">
-    <item name="android:textColor">@color/fragment_authentication_picture_container_accent</item>
+  <style name="FragmentAuthenticationStyle.PictureTip" parent="TextStyle.color_212229.t_font04">
+    <item name="android:textColor">@color/color_c0d5f7</item>
     <item name="android:layout_marginTop">
       @dimen/margin_top_fragment_authentication_picture_tip
     </item>
@@ -438,7 +438,7 @@
     <item name="android:layout_marginTop">@dimen/margin_fragment_authentication_default</item>
   </style>
 
-  <style name="FragmentAuthenticationStyle.Attention" parent="TextStyle.t_color04.t_font04">
+  <style name="FragmentAuthenticationStyle.Attention" parent="TextStyle.color_8a8c99.t_font04">
     <item name="android:padding">@dimen/padding_fragment_authentication_default</item>
     <item name="android:lineSpacingExtra">
       @dimen/space_extra_fragment_authentication_attention
@@ -460,7 +460,7 @@
     <item name="android:paddingRight">@dimen/padding_fragment_modify_nickname_nickname</item>
   </style>
 
-  <style name="FragmentModifyNickname.Counter" parent="TextStyle.t_color03.t_font04">
+  <style name="FragmentModifyNickname.Counter" parent="TextStyle.color_a1a4b3.t_font04">
     <item name="android:layout_marginTop">@dimen/margin_top_fragment_modify_nickname_counter</item>
     <item name="android:layout_marginRight">
       @dimen/margin_right_fragment_modify_nickname_counter
@@ -500,7 +500,7 @@
 
   </style>
 
-  <style name="FragmentModifyAvatarStyle.OptionalAvatar" parent="TextStyle.t_color01.t_font03.bold">
+  <style name="FragmentModifyAvatarStyle.OptionalAvatar" parent="TextStyle.color_212229.t_font03.bold">
     <item name="android:layout_marginLeft">@dimen/margin_fragment_modify_avatar_default</item>
     <item name="android:layout_marginTop">@dimen/margin_fragment_modify_avatar_default</item>
   </style>
@@ -537,20 +537,20 @@
     <item name="android:paddingRight">@dimen/padding_fragment_cancel_account_container</item>
   </style>
 
-  <style name="FragmentCancelAccount.ImportTipTitle" parent="TextStyle.t_color01.t_font03.bold">
+  <style name="FragmentCancelAccount.ImportTipTitle" parent="TextStyle.color_212229.t_font03.bold">
     <item name="android:layout_marginTop">@dimen/margin_fragment_cancel_account_default</item>
   </style>
 
-  <style name="FragmentCancelAccount.ImportTip" parent="TextStyle.t_color02.t_font02">
+  <style name="FragmentCancelAccount.ImportTip" parent="TextStyle.color_525566.t_font02">
     <item name="android:layout_marginTop">@dimen/margin_fragment_cancel_account_default</item>
     <item name="android:lineSpacingExtra">@dimen/spacing_extra_fragment_cancel_account</item>
   </style>
 
-  <style name="FragmentCancelAccount.RememberTitle" parent="TextStyle.t_color01.t_font03.bold">
+  <style name="FragmentCancelAccount.RememberTitle" parent="TextStyle.color_212229.t_font03.bold">
     <item name="android:layout_marginTop">@dimen/margin_fragment_cancel_account_default</item>
   </style>
 
-  <style name="FragmentCancelAccount.Remember" parent="TextStyle.t_color02.t_font02">
+  <style name="FragmentCancelAccount.Remember" parent="TextStyle.color_525566.t_font02">
     <item name="android:layout_marginTop">@dimen/margin_fragment_cancel_account_default</item>
     <item name="android:lineSpacingExtra">@dimen/spacing_extra_fragment_cancel_account</item>
   </style>
@@ -564,17 +564,17 @@
     <item name="android:layout_marginBottom">@dimen/margin_fragment_cancel_account_default</item>
   </style>
 
-  <style name="FragmentCancelAccount.AgreementTip" parent="TextStyle.t_color03.t_font04">
+  <style name="FragmentCancelAccount.AgreementTip" parent="TextStyle.color_a1a4b3.t_font04">
   </style>
 
-  <style name="FragmentCancelAccount.CancelContact" parent="TextStyle.t_color03.t_font04">
+  <style name="FragmentCancelAccount.CancelContact" parent="TextStyle.color_a1a4b3.t_font04">
     <item name="android:layout_marginLeft">
       @dimen/margin_left_fragment_cancel_account_agreement
     </item>
-    <item name="android:textColor">@color/text_color_fragment_cancel_account_cancel_contract</item>
+    <item name="android:textColor">@color/color_4189ff</item>
   </style>
 
-  <style name="FragmentCancelAccount.Confirm" parent="ButtonStyle.c_bg01.t_font01.bold">
+  <style name="FragmentCancelAccount.Confirm" parent="ButtonStyle.color_f7f8fc.t_font01.bold">
     <item name="android:layout_height">@dimen/height_fragment_cancel_account_button_operation</item>
     <item name="android:layout_width">@dimen/width_fragment_cancel_account_confirm</item>
     <item name="android:layout_marginRight">

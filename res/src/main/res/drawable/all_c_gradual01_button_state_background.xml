@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-  <item android:drawable="@drawable/all_c_gradual01_button_state_enable_background" android:state_enabled="true" />
-  <item android:drawable="@drawable/all_c_gradual01_button_state_disable_background" android:state_enabled="false" />
+  <item android:drawable="@drawable/shape_gradient_fc284d_ff6741_button_state_enable_background" android:state_enabled="true" />
+  <item android:drawable="@drawable/shape_solid_f7f8fc_button_state_disable_background" android:state_enabled="false" />
 </selector>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/root_layout"
-    android:background="@color/color_FFFFFF">
+    android:background="@color/color_ffffff">
 
     <com.hzlz.aviation.library.widget.widget.AviationImageView
         android:id="@+id/back_button"

@@ -37,7 +37,7 @@
         <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white">
+            android:background="@color/color_ffffff">
 
             <com.hzlz.aviation.kernel.base.view.GVideoSmartRefreshLayout
                 android:id="@+id/refreshLayout"

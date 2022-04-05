@@ -15,6 +15,6 @@
       android:onClick="@{()->view.cancel()}"
       android:orientation="vertical"
       android:text="@string/simple_cancel_item_view_cancel"
-      android:textColor="@color/simple_cancel_item_view_text_color"
+      android:textColor="@color/color_333333"
       />
 </layout>

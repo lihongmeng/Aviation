@@ -28,8 +28,8 @@ public class VideoRecordProgressView extends View {
   private float mProgressWidth = GVideoRuntime.getAppContext().getResources().getDimension(
       R.dimen.fragment_record_progress_radius);
   /** 画笔颜色：白/红 */
-  private int colorWhite = GVideoRuntime.getAppContext().getResources().getColor(R.color.t_color05);
-  private int colorRed = GVideoRuntime.getAppContext().getResources().getColor(R.color.t_color06);
+  private int colorWhite = GVideoRuntime.getAppContext().getResources().getColor(R.color.color_ffffff);
+  private int colorRed = GVideoRuntime.getAppContext().getResources().getColor(R.color.color_fc284d);
   /** 动画Animator：录制 */
   private ValueAnimator mRecordAnimator;
   /** 动画Animator：删除确认 */

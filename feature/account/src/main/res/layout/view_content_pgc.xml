@@ -89,7 +89,7 @@
                 <com.hzlz.aviation.library.widget.widget.AviationTextView
                     android:id="@+id/text_view_detail_follow"
                     style="@style/FragmentPgcStyle.DetailFollow"
-                    android:background="@{authorObservable.isFollow ? @drawable/fragment_pgc_detail_follow_followed_background  : @drawable/all_c_gradual01_button_background}"
+                    android:background="@{authorObservable.isFollow ? @drawable/fragment_pgc_detail_follow_followed_background  : @drawable/all_color_e4344e_button_background}"
                     android:onClick="@{(v)->viewModel.follow(v)}"
                     android:text="@{authorObservable.isFollow ? @string/all_followed : @string/all_follow}"
                     app:layout_constraintRight_toRightOf="parent"
@@ -106,7 +106,7 @@
             android:paddingTop="@dimen/DIMEN_3DP"
             android:paddingBottom="@dimen/DIMEN_3DP"
             android:paddingStart="@dimen/DIMEN_7DP"
-            app:background_normal="@color/white"
+            app:background_normal="@color/color_ffffff"
             app:corner_radius_top_left="@dimen/DIMEN_5DP"
             app:corner_radius_top_right="@dimen/DIMEN_5DP">
 

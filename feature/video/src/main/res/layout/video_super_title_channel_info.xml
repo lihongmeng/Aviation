@@ -33,7 +33,7 @@
             android:maxLines="2"
             android:padding="@dimen/video_dp_10"
             android:text="@{videoObservable.title}"
-            android:textColor="@color/c_1d1f29"
+            android:textColor="@color/color_1d1f29"
             android:textSize="@dimen/video_sp_17"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -90,7 +90,7 @@
             android:paddingLeft="@dimen/video_dp_10"
             android:paddingRight="@dimen/video_dp_10"
             android:text='@{authorObservable.isFollow ? @string/video_super_info_followed : @string/video_super_info_follow}'
-            android:textColor='@{authorObservable.isFollow ? @color/t_color03 : @color/t_color06}'
+            android:textColor='@{authorObservable.isFollow ? @color/color_a1a4b3 : @color/color_fc284d}'
             android:textSize="@dimen/video_sp_16"
             app:layout_constraintBottom_toBottomOf="@id/name"
             app:layout_constraintHorizontal_bias="0.0"
@@ -145,7 +145,7 @@
             android:layout_width="0dp"
             android:layout_height="@dimen/video_dp_1"
             android:layout_marginLeft="@dimen/video_dp_10"
-            android:background="@color/c_ebecf0"
+            android:background="@color/color_ebecf0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent" />

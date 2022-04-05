@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="search_bar_cancel_text_color">#000000</color>
-    <color name="search_bar_background_color">#F7F8FC</color>
-
-    <color name="search_tab_layout_default_color">#525566</color>
-    <color name="search_bar_cursor_color">#4189ff</color>
-</resources>

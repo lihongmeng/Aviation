@@ -16,7 +16,7 @@
         app:corner_radius="@dimen/video_dp_8"
         android:layout_width="wrap_content"
         tools:background_normal="@color/c_48485B"
-        app:background_normal="@color/c_403A3A4D"
+        app:background_normal="@color/color_3a3a4d_25"
         android:padding="@dimen/video_dp_10"
         android:layout_marginStart="@dimen/video_dp_10"
         android:layout_marginTop="@dimen/video_dp_10"
@@ -25,7 +25,7 @@
 
         <com.hzlz.aviation.library.widget.widget.AviationSpanTextView
             android:id="@+id/content"
-            android:textColor="@color/white"
+            android:textColor="@color/color_ffffff"
             tools:text="本平台提倡绿色健康 直播 ，直播 内容和评论严谨出现违规、低俗色情、吸烟"
             android:textSize="@dimen/video_sp_14"
             android:layout_width="wrap_content"

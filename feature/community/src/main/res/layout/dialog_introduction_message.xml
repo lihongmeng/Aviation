@@ -39,7 +39,7 @@
 
         <View
             android:id="@+id/line"
-            android:background="@color/c_line02"
+            android:background="@color/color_ebebeb"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_D5P"
             android:layout_marginStart="@dimen/DIMEN_19DP"

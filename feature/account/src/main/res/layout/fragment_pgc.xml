@@ -18,7 +18,7 @@
         android:id="@+id/recycler_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white">
+        android:background="@color/color_ffffff">
 
         <include
             android:id="@+id/app_bar_layout"
@@ -64,7 +64,7 @@
             android:id="@+id/toolbar"
             style="@style/FragmentPgcStyle.ToolBarContainer"
             android:layout_gravity="top"
-            android:background="@color/white"
+            android:background="@color/color_ffffff"
             app:layout_behavior="com.hzlz.aviation.kernel.base.behavior.VisibilityAlphaBehavior"
             app:vabReferenceViewId="@id/app_bar_layout">
 
@@ -83,10 +83,10 @@
             <com.hzlz.aviation.library.widget.widget.AviationTextView
                 android:id="@+id/text_view_toolbar_follow"
                 style="@style/FragmentPgcStyle.ToolBarFollow"
-                android:background="@{authorObservable.isFollow ? @drawable/all_c_bg01_button_background  : @drawable/all_c_gradual01_button_background}"
+                android:background="@{authorObservable.isFollow ? @drawable/all_color_f7f8fc_button_background  : @drawable/all_color_e4344e_button_background}"
                 android:onClick="@{(v)->viewModel.follow(v)}"
                 android:text="@{authorObservable.isFollow ? @string/all_followed : @string/all_follow}"
-                android:textColor="@{authorObservable.isFollow ? @color/t_color03 : @color/t_color05}"
+                android:textColor="@{authorObservable.isFollow ? @color/color_a1a4b3 : @color/color_ffffff}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

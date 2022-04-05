@@ -84,7 +84,7 @@ public class PendantView extends AviationFrameLayout implements View.OnClickList
     SpanTextHelper.createPendantTitle(getContext(),
         pendantText,
         pendant,
-        getContext().getResources().getColor(R.color.big_img_title_color));
+        getContext().getResources().getColor(R.color.color_ffffff));
 
 
     if (pendant.isAlwaysExist != PendantShowType.ALWAYS_SHOW) {

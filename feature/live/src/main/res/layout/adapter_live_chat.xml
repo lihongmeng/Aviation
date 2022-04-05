@@ -22,7 +22,7 @@
 
         <com.hzlz.aviation.library.widget.widget.AviationSpanTextView
             android:id="@+id/content"
-            android:textColor="@color/white"
+            android:textColor="@color/color_ffffff"
             tools:text="本平台提倡绿色健康 直播 ，直播 内容和评论严谨出现违规、低俗色情、吸烟"
             android:textSize="@dimen/sp_14"
             android:layout_width="wrap_content"

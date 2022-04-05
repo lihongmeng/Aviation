@@ -24,7 +24,7 @@
             android:id="@+id/tabLayout"
             android:layout_width="@dimen/DIMEN_0DP"
             android:layout_height="@dimen/DIMEN_40DP"
-            android:background="@color/color_FFFFFF"
+            android:background="@color/color_ffffff"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>

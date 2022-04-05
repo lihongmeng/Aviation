@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <!-- 首页tab title颜色 -->
-    <color name="home_tab_bar_title_select">#FC284D</color>
-    <color name="home_tab_bar_title_normal">#212229</color>
-</resources>

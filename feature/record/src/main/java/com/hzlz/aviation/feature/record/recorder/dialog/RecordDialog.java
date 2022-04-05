@@ -153,6 +153,6 @@ public class RecordDialog extends GVideoBottomSheetDialog {
         mLayoutBinding.liveImg.setImageResource(R.drawable.ic_dialog_live_disable);
         mLayoutBinding.liveImg.setColorFilter(filter);
         mLayoutBinding.liveImg.setImageAlpha(80);
-        mLayoutBinding.liveText.setTextColor(ResourcesUtils.getColor(R.color.t_color03));
+        mLayoutBinding.liveText.setTextColor(ResourcesUtils.getColor(R.color.color_a1a4b3));
     }
 }

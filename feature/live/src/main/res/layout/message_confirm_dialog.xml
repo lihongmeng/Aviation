@@ -5,7 +5,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         app:corner_radius="@dimen/DIMEN_13DP"
-        app:background_normal="@color/white"
+        app:background_normal="@color/color_ffffff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -13,7 +13,7 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
+            android:textColor="@color/color_000000"
             android:layout_marginTop="@dimen/DIMEN_18DP"
             android:textSize="@dimen/sp_16"
             android:text="结束直播"
@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textColor="@color/color_818C99"
+            android:textColor="@color/color_818c99"
             android:text="是否确认结束直播？"
             android:textSize="@dimen/sp_16"
             app:layout_constraintLeft_toLeftOf="parent"

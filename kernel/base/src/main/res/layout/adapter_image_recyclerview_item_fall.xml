@@ -29,7 +29,7 @@
             android:paddingEnd="@dimen/DIMEN_8DP"
             android:paddingBottom="@dimen/DIMEN_5DP"
             android:text="长图"
-            android:textColor="@color/color_FFFFFF"
+            android:textColor="@color/color_ffffff"
             android:textSize="@dimen/sp_11"
             android:visibility="gone"
             app:background_normal="@color/color_000000_50"

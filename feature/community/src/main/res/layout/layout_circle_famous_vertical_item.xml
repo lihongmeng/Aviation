@@ -22,7 +22,7 @@
             android:layout_height="@dimen/DIMEN_77DP"
             android:id="@+id/root"
             android:gravity="center_vertical"
-            android:background="@color/color_FFFFFF"
+            android:background="@color/color_ffffff"
             android:paddingLeft="@dimen/DIMEN_15DP"
             android:paddingRight="@dimen/DIMEN_15DP"
             android:orientation="horizontal">
@@ -75,7 +75,7 @@
                 android:paddingLeft="@dimen/DIMEN_5DP"
                 android:paddingRight="@dimen/DIMEN_5DP"
                 android:text="@string/admin"
-                android:textColor="@color/color_FFFFFF"
+                android:textColor="@color/color_ffffff"
                 android:textSize="12sp"
                 android:visibility="invisible"
                 tools:visibility="visible" />

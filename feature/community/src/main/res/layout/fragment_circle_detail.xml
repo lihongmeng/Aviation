@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:ksrlv_enableLoadMore="false"
-            android:background="@color/color_FFFFFF"
+            android:background="@color/color_ffffff"
             app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}"
             app:srlEnableFooterFollowWhenNoMoreData="true"
             app:srlEnableLoadMoreWhenContentNotFull="false">

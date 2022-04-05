@@ -7,7 +7,7 @@
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/DIMEN_126DP"
-        android:background="@color/color_FFFFFF"
+        android:background="@color/color_ffffff"
         app:elevation="0dp">
 
         <com.hzlz.aviation.library.widget.widget.AviationLinearLayout
@@ -28,7 +28,7 @@
                 android:ellipsize="end"
                 android:maxLines="2"
                 android:gravity="center_vertical"
-                android:textColor="@color/color_FFFFFF"
+                android:textColor="@color/color_ffffff"
                 android:textSize="17sp"
                 tools:text="# 话题详情内容话题详情内容话题详内话题详情情内容话题详情内容话题详情内容" />
 

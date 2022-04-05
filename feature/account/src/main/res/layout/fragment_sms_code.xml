@@ -18,7 +18,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/all_layout_background">
+        android:background="@color/color_ffffff">
 
         <com.hzlz.aviation.library.widget.widget.AviationImageView
             android:id="@+id/image_view_back"

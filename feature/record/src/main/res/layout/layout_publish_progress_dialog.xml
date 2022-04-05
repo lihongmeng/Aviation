@@ -7,7 +7,7 @@
         android:orientation="vertical"
         android:gravity="center"
         android:padding="@dimen/publish_progress_dialog_padding"
-        app:background_normal="@color/process_dialog_bg_color"
+        app:background_normal="@color/color_000000_70"
         app:corner_radius="@dimen/r_r01"
         >
         <com.hzlz.aviation.library.widget.widget.AviationTextView
@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textColor="@color/t_color05"
+            android:textColor="@color/color_ffffff"
             android:textSize="@dimen/t_font06"
             android:includeFontPadding="false"
             android:text="@string/publish_progress_default_text"
@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textColor="@color/t_color05"
+            android:textColor="@color/color_ffffff"
             android:includeFontPadding="false"
             android:textSize="@dimen/t_font06"
             android:text="@string/publish_wait_text"

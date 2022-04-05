@@ -7,14 +7,14 @@
         android:gravity="center_vertical"
         tools:ignore="UnusedAttribute">
         <shape>
-            <solid android:color="@color/c_D8D8D8" />
+            <solid android:color="@color/color_d8d8d8" />
         </shape>
     </item>
 
     <item android:id="@android:id/secondaryProgress">
         <clip>
             <shape>
-                <solid android:color="@color/c_D8D8D8" />
+                <solid android:color="@color/color_d8d8d8" />
             </shape>
         </clip>
     </item>
@@ -24,7 +24,7 @@
         android:gravity="center_vertical">
         <clip>
             <shape>
-                <solid android:color="@color/c_D8D8D8" />
+                <solid android:color="@color/color_d8d8d8" />
             </shape>
         </clip>
     </item>

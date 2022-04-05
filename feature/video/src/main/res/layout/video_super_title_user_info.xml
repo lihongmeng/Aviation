@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/DIMEN_10DP"
             app:bg_drawable="@drawable/shape_solid_000000_10_corners_200dp"
-            app:content_text_color="@color/c_1d1f29"
+            app:content_text_color="@color/color_1d1f29"
             app:layout_constraintTop_toTopOf="parent"
             app:setContentText="@{videoObservable.contentThanTitle}" />
 
@@ -108,7 +108,7 @@
             android:paddingLeft="@dimen/video_dp_10"
             android:paddingRight="@dimen/video_dp_10"
             android:text='@{authorObservable.isFollow ? @string/video_super_info_followed : @string/video_super_info_follow}'
-            android:textColor='@{authorObservable.isFollow ? @color/t_color03 : @color/t_color06}'
+            android:textColor='@{authorObservable.isFollow ? @color/color_a1a4b3 : @color/color_fc284d}'
             android:textSize="@dimen/video_sp_16"
             android:visibility="@{authorObservable.self?View.GONE:View.VISIBLE}"
             app:layout_constraintBottom_toBottomOf="@id/name"

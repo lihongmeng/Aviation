@@ -5,5 +5,5 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:gravity="center"
-    android:textColor="@color/video_tab_bar_color_normal"
+    android:textColor="@color/color_8d8f99"
     android:textSize="@dimen/feed_tab_text_normal"/>

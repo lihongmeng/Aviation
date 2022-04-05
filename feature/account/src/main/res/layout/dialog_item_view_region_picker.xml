@@ -8,7 +8,7 @@
         android:paddingTop="@dimen/DIMEN_10DP"
         app:corner_radius_top_left="@dimen/DIMEN_8DP"
         app:corner_radius_top_right="@dimen/DIMEN_8DP"
-        app:background_normal="@color/white">
+        app:background_normal="@color/color_ffffff">
 
         <TextView
             android:id="@+id/cancel"

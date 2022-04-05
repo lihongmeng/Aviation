@@ -5,7 +5,7 @@
     <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/fragment_record_dialog_height"
-        android:background="@color/home_background_color">
+        android:background="@color/color_ffffff">
 
         <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/record_title"
@@ -14,7 +14,7 @@
             android:layout_marginTop="@dimen/fragment_record_dialog_title_margin_top"
             android:gravity="center"
             android:text="@string/record_dialog_title"
-            android:textColor="@color/t_color01"
+            android:textColor="@color/color_212229"
             android:textSize="@dimen/fragment_record_dialog_title_text_size"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -28,7 +28,7 @@
             android:background="@drawable/center_dialog_button"
             android:gravity="center"
             android:text="@string/record_dialog_cancel"
-            android:textColor="@color/t_color03"
+            android:textColor="@color/color_a1a4b3"
             android:textSize="@dimen/fragment_record_dialog_cancel_text_size"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/record_dialog_moment"
-            android:textColor="@color/t_color01"
+            android:textColor="@color/color_212229"
             android:textSize="@dimen/fragment_record_dialog_item_text_size"
             app:layout_constraintLeft_toLeftOf="@id/record_img"
             app:layout_constraintRight_toRightOf="@id/record_img"
@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/record_dialog_live"
-            android:textColor="@color/t_color01"
+            android:textColor="@color/color_212229"
             android:textSize="@dimen/fragment_record_dialog_item_text_size"
             app:layout_constraintLeft_toLeftOf="@id/live_img"
             app:layout_constraintRight_toRightOf="@id/live_img"

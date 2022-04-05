@@ -8,7 +8,7 @@
         android:layout_height="@dimen/DIMEN_60DP"
         android:paddingLeft="@dimen/DIMEN_17DP"
         android:paddingRight="@dimen/DIMEN_17DP"
-        android:background="@color/color_FFFFFF">
+        android:background="@color/color_ffffff">
 
         <com.hzlz.aviation.library.widget.widget.GVideoRImageView
             android:id="@+id/cover"

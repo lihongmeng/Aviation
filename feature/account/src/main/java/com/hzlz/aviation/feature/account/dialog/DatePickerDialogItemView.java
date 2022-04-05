@@ -60,9 +60,9 @@ public final class DatePickerDialogItemView extends AbstractDialogItemView<Date>
     binding.datePicker.setItemTextSize(
         (int) ResourcesUtils.getDimens(R.dimen.date_picker_item_text_size)
     );
-    binding.datePicker.setItemTextColor(ResourcesUtils.getColor(R.color.date_picker_text_color));
+    binding.datePicker.setItemTextColor(ResourcesUtils.getColor(R.color.color_1d1f29));
     binding.datePicker.setSelectedItemTextColor(
-        ResourcesUtils.getColor(R.color.date_picker_selected_text_color)
+        ResourcesUtils.getColor(R.color.color_fc284d)
     );
     binding.datePicker.setItemSpace(
         (int) ResourcesUtils.getDimens(R.dimen.date_picker_item_space)

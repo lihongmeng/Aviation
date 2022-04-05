@@ -3,5 +3,5 @@
     <corners android:radius="@dimen/feed_ad_radio"/>
     <stroke
         android:width="1px"
-        android:color="@color/feed_ad_stroke"/>
+        android:color="@color/color_808080_35"/>
 </shape>

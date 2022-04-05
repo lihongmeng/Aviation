@@ -6,436 +6,436 @@
     <item name="android:layout_height">wrap_content</item>
   </style>
 
-  <!--==========t_color01==========-->
-  <style name="TextStyle.t_color01">
-    <item name="android:textColor">@color/t_color01</item>
+  <!--==========color_212229==========-->
+  <style name="TextStyle.color_212229">
+    <item name="android:textColor">@color/color_212229</item>
   </style>
 
-  <style name="TextStyle.state_t_color01">
+  <style name="TextStyle.state_color_212229">
     <item name="android:textColor">@drawable/state_t_color01</item>
   </style>
 
   <!--t_font01-->
-  <style name="TextStyle.t_color01.t_font01">
+  <style name="TextStyle.color_212229.t_font01">
     <item name="android:textSize">@dimen/t_font01</item>
   </style>
 
-  <style name="TextStyle.state_t_color01.t_font01">
+  <style name="TextStyle.state_color_212229.t_font01">
     <item name="android:textSize">@dimen/t_font01</item>
   </style>
 
-  <style name="TextStyle.t_color01.t_font01.bold">
+  <style name="TextStyle.color_212229.t_font01.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color01.t_font01.bold">
+  <style name="TextStyle.state_color_212229.t_font01.bold">
     <item name="android:textStyle">bold</item>
   </style>
   <!--t_font02-->
-  <style name="TextStyle.t_color01.t_font02">
+  <style name="TextStyle.color_212229.t_font02">
     <item name="android:textSize">@dimen/t_font02</item>
   </style>
 
-  <style name="TextStyle.state_t_color01.t_font02">
+  <style name="TextStyle.state_color_212229.t_font02">
     <item name="android:textSize">@dimen/t_font02</item>
   </style>
 
-  <style name="TextStyle.t_color01.t_font02.bold">
+  <style name="TextStyle.color_212229.t_font02.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color01.t_font02.bold">
+  <style name="TextStyle.state_color_212229.t_font02.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font03-->
-  <style name="TextStyle.t_color01.t_font03">
+  <style name="TextStyle.color_212229.t_font03">
     <item name="android:textSize">@dimen/t_font03</item>
   </style>
 
-  <style name="TextStyle.state_t_color01.t_font03">
+  <style name="TextStyle.state_color_212229.t_font03">
     <item name="android:textSize">@dimen/t_font03</item>
   </style>
 
-  <style name="TextStyle.t_color01.t_font03.bold">
+  <style name="TextStyle.color_212229.t_font03.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color01.t_font03.bold">
+  <style name="TextStyle.state_color_212229.t_font03.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font04-->
-  <style name="TextStyle.t_color01.t_font04">
+  <style name="TextStyle.color_212229.t_font04">
     <item name="android:textSize">@dimen/t_font04</item>
   </style>
 
-  <style name="TextStyle.state_t_color01.t_font04">
+  <style name="TextStyle.state_color_212229.t_font04">
     <item name="android:textSize">@dimen/t_font04</item>
   </style>
 
-  <style name="TextStyle.t_color01.t_font04.bold">
+  <style name="TextStyle.color_212229.t_font04.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color01.t_font04.bold">
+  <style name="TextStyle.state_color_212229.t_font04.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
 
-  <!--==========t_color02==========-->
-  <style name="TextStyle.t_color02">
-    <item name="android:textColor">@color/t_color02</item>
+  <!--==========color_525566==========-->
+  <style name="TextStyle.color_525566">
+    <item name="android:textColor">@color/color_525566</item>
   </style>
 
-  <style name="TextStyle.state_t_color02">
+  <style name="TextStyle.state_color_525566">
     <item name="android:textColor">@drawable/state_t_color02</item>
   </style>
 
   <!--t_font01-->
-  <style name="TextStyle.t_color02.t_font01">
+  <style name="TextStyle.color_525566.t_font01">
     <item name="android:textSize">@dimen/t_font01</item>
   </style>
 
-  <style name="TextStyle.state_t_color02.t_font01">
+  <style name="TextStyle.state_color_525566.t_font01">
     <item name="android:textSize">@dimen/t_font01</item>
   </style>
 
-  <style name="TextStyle.t_color02.t_font01.bold">
+  <style name="TextStyle.color_525566.t_font01.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color02.t_font01.bold">
+  <style name="TextStyle.state_color_525566.t_font01.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font02-->
-  <style name="TextStyle.t_color02.t_font02">
+  <style name="TextStyle.color_525566.t_font02">
     <item name="android:textSize">@dimen/t_font02</item>
   </style>
 
-  <style name="TextStyle.state_t_color02.t_font02">
+  <style name="TextStyle.state_color_525566.t_font02">
     <item name="android:textSize">@dimen/t_font02</item>
   </style>
 
-  <style name="TextStyle.t_color02.t_font02.bold">
+  <style name="TextStyle.color_525566.t_font02.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color02.t_font02.bold">
+  <style name="TextStyle.state_color_525566.t_font02.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font03-->
-  <style name="TextStyle.t_color02.t_font03">
+  <style name="TextStyle.color_525566.t_font03">
     <item name="android:textSize">@dimen/t_font03</item>
   </style>
 
-  <style name="TextStyle.state_t_color02.t_font03">
+  <style name="TextStyle.state_color_525566.t_font03">
     <item name="android:textSize">@dimen/t_font03</item>
   </style>
 
-  <style name="TextStyle.t_color02.t_font03.bold">
+  <style name="TextStyle.color_525566.t_font03.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color02.t_font03.bold">
+  <style name="TextStyle.state_color_525566.t_font03.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font04-->
-  <style name="TextStyle.t_color02.t_font04">
+  <style name="TextStyle.color_525566.t_font04">
     <item name="android:textSize">@dimen/t_font04</item>
   </style>
 
-  <style name="TextStyle.state_t_color02.t_font04">
+  <style name="TextStyle.state_color_525566.t_font04">
     <item name="android:textSize">@dimen/t_font04</item>
   </style>
 
-  <style name="TextStyle.t_color02.t_font04.bold">
+  <style name="TextStyle.color_525566.t_font04.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color02.t_font04.bold">
+  <style name="TextStyle.state_color_525566.t_font04.bold">
     <item name="android:textStyle">bold</item>
   </style>
-  <!--t_color02-->
+  <!--color_525566-->
 
-  <!--==========t_color03==========-->
-  <style name="TextStyle.t_color03">
-    <item name="android:textColor">@color/t_color03</item>
+  <!--==========color_a1a4b3==========-->
+  <style name="TextStyle.color_a1a4b3">
+    <item name="android:textColor">@color/color_a1a4b3</item>
   </style>
 
 
   <!--t_font01-->
-  <style name="TextStyle.t_color03.t_font01">
+  <style name="TextStyle.color_a1a4b3.t_font01">
     <item name="android:textSize">@dimen/t_font01</item>
   </style>
 
 
-  <style name="TextStyle.t_color03.t_font01.bold">
+  <style name="TextStyle.color_a1a4b3.t_font01.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
 
   <!--t_font02-->
-  <style name="TextStyle.t_color03.t_font02">
+  <style name="TextStyle.color_a1a4b3.t_font02">
     <item name="android:textSize">@dimen/t_font02</item>
   </style>
 
-  <style name="TextStyle.t_color03.t_font02.bold">
+  <style name="TextStyle.color_a1a4b3.t_font02.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font03-->
-  <style name="TextStyle.t_color03.t_font03">
+  <style name="TextStyle.color_a1a4b3.t_font03">
     <item name="android:textSize">@dimen/t_font03</item>
   </style>
 
 
-  <style name="TextStyle.t_color03.t_font03.bold">
+  <style name="TextStyle.color_a1a4b3.t_font03.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font04-->
-  <style name="TextStyle.t_color03.t_font04">
+  <style name="TextStyle.color_a1a4b3.t_font04">
     <item name="android:textSize">@dimen/t_font04</item>
   </style>
 
 
-  <style name="TextStyle.t_color03.t_font04.bold">
+  <style name="TextStyle.color_a1a4b3.t_font04.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
 
-  <!--==========t_color04==========-->
-  <style name="TextStyle.t_color04">
-    <item name="android:textColor">@color/t_color04</item>
+  <!--==========color_8a8c99==========-->
+  <style name="TextStyle.color_8a8c99">
+    <item name="android:textColor">@color/color_8a8c99</item>
   </style>
 
-  <style name="TextStyle.state_t_color04">
+  <style name="TextStyle.state_color_8a8c99">
     <item name="android:textColor">@drawable/state_t_color04</item>
   </style>
 
   <!--t_font01-->
-  <style name="TextStyle.t_color04.t_font01">
+  <style name="TextStyle.color_8a8c99.t_font01">
     <item name="android:textSize">@dimen/t_font01</item>
   </style>
 
-  <style name="TextStyle.state_t_color04.t_font01">
+  <style name="TextStyle.state_color_8a8c99.t_font01">
     <item name="android:textSize">@dimen/t_font01</item>
   </style>
 
-  <style name="TextStyle.t_color04.t_font01.bold">
+  <style name="TextStyle.color_8a8c99.t_font01.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color04.t_font01.bold">
+  <style name="TextStyle.state_color_8a8c99.t_font01.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font02-->
-  <style name="TextStyle.t_color04.t_font02">
+  <style name="TextStyle.color_8a8c99.t_font02">
     <item name="android:textSize">@dimen/t_font02</item>
   </style>
 
-  <style name="TextStyle.state_t_color04.t_font02">
+  <style name="TextStyle.state_color_8a8c99.t_font02">
     <item name="android:textSize">@dimen/t_font02</item>
   </style>
 
-  <style name="TextStyle.t_color04.t_font02.bold">
+  <style name="TextStyle.color_8a8c99.t_font02.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color04.t_font02.bold">
+  <style name="TextStyle.state_color_8a8c99.t_font02.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font03-->
-  <style name="TextStyle.t_color04.t_font03">
+  <style name="TextStyle.color_8a8c99.t_font03">
     <item name="android:textSize">@dimen/t_font03</item>
   </style>
 
-  <style name="TextStyle.state_t_color04.t_font03">
+  <style name="TextStyle.state_color_8a8c99.t_font03">
     <item name="android:textSize">@dimen/t_font03</item>
   </style>
 
-  <style name="TextStyle.t_color04.t_font03.bold">
+  <style name="TextStyle.color_8a8c99.t_font03.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color04.t_font03.bold">
+  <style name="TextStyle.state_color_8a8c99.t_font03.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font04-->
-  <style name="TextStyle.t_color04.t_font04">
+  <style name="TextStyle.color_8a8c99.t_font04">
     <item name="android:textSize">@dimen/t_font04</item>
   </style>
 
-  <style name="TextStyle.state_t_color04.t_font04">
+  <style name="TextStyle.state_color_8a8c99.t_font04">
     <item name="android:textSize">@dimen/t_font04</item>
   </style>
 
-  <style name="TextStyle.t_color04.t_font04.bold">
+  <style name="TextStyle.color_8a8c99.t_font04.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color04.t_font04.bold">
+  <style name="TextStyle.state_color_8a8c99.t_font04.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <!--==========t_color05==========-->
-  <style name="TextStyle.t_color05">
-    <item name="android:textColor">@color/t_color05</item>
+  <!--==========color_ffffff==========-->
+  <style name="TextStyle.color_ffffff">
+    <item name="android:textColor">@color/color_ffffff</item>
   </style>
 
-  <style name="TextStyle.state_t_color05">
+  <style name="TextStyle.state_color_ffffff">
     <item name="android:textColor">@drawable/state_t_color05</item>
   </style>
 
   <!--t_font01-->
-  <style name="TextStyle.t_color05.t_font01">
+  <style name="TextStyle.color_ffffff.t_font01">
     <item name="android:textSize">@dimen/t_font01</item>
   </style>
 
-  <style name="TextStyle.state_t_color05.t_font01">
+  <style name="TextStyle.state_color_ffffff.t_font01">
     <item name="android:textSize">@dimen/t_font01</item>
   </style>
 
-  <style name="TextStyle.t_color05.t_font01.bold">
+  <style name="TextStyle.color_ffffff.t_font01.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color05.t_font01.bold">
+  <style name="TextStyle.state_color_ffffff.t_font01.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font02-->
-  <style name="TextStyle.t_color05.t_font02">
+  <style name="TextStyle.color_ffffff.t_font02">
     <item name="android:textSize">@dimen/t_font02</item>
   </style>
 
-  <style name="TextStyle.state_t_color05.t_font02">
+  <style name="TextStyle.state_color_ffffff.t_font02">
     <item name="android:textSize">@dimen/t_font02</item>
   </style>
 
-  <style name="TextStyle.t_color05.t_font02.bold">
+  <style name="TextStyle.color_ffffff.t_font02.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color05.t_font02.bold">
+  <style name="TextStyle.state_color_ffffff.t_font02.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font03-->
-  <style name="TextStyle.t_color05.t_font03">
+  <style name="TextStyle.color_ffffff.t_font03">
     <item name="android:textSize">@dimen/t_font03</item>
   </style>
 
-  <style name="TextStyle.state_t_color05.t_font03">
+  <style name="TextStyle.state_color_ffffff.t_font03">
     <item name="android:textSize">@dimen/t_font03</item>
   </style>
 
-  <style name="TextStyle.t_color05.t_font03.bold">
+  <style name="TextStyle.color_ffffff.t_font03.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color05.t_font03.bold">
+  <style name="TextStyle.state_color_ffffff.t_font03.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font04-->
-  <style name="TextStyle.t_color05.t_font04">
+  <style name="TextStyle.color_ffffff.t_font04">
     <item name="android:textSize">@dimen/t_font04</item>
   </style>
 
-  <style name="TextStyle.state_t_color05.t_font04">
+  <style name="TextStyle.state_color_ffffff.t_font04">
     <item name="android:textSize">@dimen/t_font04</item>
   </style>
 
-  <style name="TextStyle.t_color05.t_font04.bold">
+  <style name="TextStyle.color_ffffff.t_font04.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color05.t_font04.bold">
+  <style name="TextStyle.state_color_ffffff.t_font04.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <!--==========t_color06==========-->
-  <style name="TextStyle.t_color06">
-    <item name="android:textColor">@color/t_color06</item>
+  <!--==========color_fc284d==========-->
+  <style name="TextStyle.color_fc284d">
+    <item name="android:textColor">@color/color_fc284d</item>
   </style>
 
-  <style name="TextStyle.state_t_color06">
+  <style name="TextStyle.state_color_fc284d">
     <item name="android:textColor">@drawable/state_t_color06</item>
   </style>
 
   <!--t_font01-->
-  <style name="TextStyle.t_color06.t_font01">
+  <style name="TextStyle.color_fc284d.t_font01">
     <item name="android:textSize">@dimen/t_font01</item>
   </style>
 
-  <style name="TextStyle.state_t_color06.t_font01">
+  <style name="TextStyle.state_color_fc284d.t_font01">
     <item name="android:textSize">@dimen/t_font01</item>
   </style>
 
-  <style name="TextStyle.t_color06.t_font01.bold">
+  <style name="TextStyle.color_fc284d.t_font01.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color06.t_font01.bold">
+  <style name="TextStyle.state_color_fc284d.t_font01.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font02-->
-  <style name="TextStyle.t_color06.t_font02">
+  <style name="TextStyle.color_fc284d.t_font02">
     <item name="android:textSize">@dimen/t_font02</item>
   </style>
 
-  <style name="TextStyle.state_t_color06.t_font02">
+  <style name="TextStyle.state_color_fc284d.t_font02">
     <item name="android:textSize">@dimen/t_font02</item>
   </style>
 
-  <style name="TextStyle.t_color06.t_font02.bold">
+  <style name="TextStyle.color_fc284d.t_font02.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color06.t_font02.bold">
+  <style name="TextStyle.state_color_fc284d.t_font02.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font03-->
-  <style name="TextStyle.t_color06.t_font03">
+  <style name="TextStyle.color_fc284d.t_font03">
     <item name="android:textSize">@dimen/t_font03</item>
   </style>
 
-  <style name="TextStyle.state_t_color06.t_font03">
+  <style name="TextStyle.state_color_fc284d.t_font03">
     <item name="android:textSize">@dimen/t_font03</item>
   </style>
 
-  <style name="TextStyle.t_color06.t_font03.bold">
+  <style name="TextStyle.color_fc284d.t_font03.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color06.t_font03.bold">
+  <style name="TextStyle.state_color_fc284d.t_font03.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
   <!--t_font04-->
-  <style name="TextStyle.t_color06.t_font04">
+  <style name="TextStyle.color_fc284d.t_font04">
     <item name="android:textSize">@dimen/t_font04</item>
   </style>
 
-  <style name="TextStyle.state_t_color06.t_font04">
+  <style name="TextStyle.state_color_fc284d.t_font04">
     <item name="android:textSize">@dimen/t_font04</item>
   </style>
 
-  <style name="TextStyle.t_color06.t_font04.bold">
+  <style name="TextStyle.color_fc284d.t_font04.bold">
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="TextStyle.state_t_color06.t_font04.bold">
+  <style name="TextStyle.state_color_fc284d.t_font04.bold">
     <item name="android:textStyle">bold</item>
   </style>
 

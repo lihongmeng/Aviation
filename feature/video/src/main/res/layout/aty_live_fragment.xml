@@ -32,7 +32,7 @@
             android:id="@+id/detail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/c_191D20">
+            android:background="@color/color_191d20">
 
             <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
                 android:id="@+id/layout_top"
@@ -62,7 +62,7 @@
                         android:paddingEnd="@dimen/video_dp_7"
                         android:paddingBottom="@dimen/DIMEN_1DP"
                         android:text="@{liveDetailModel.broadcastDTO.broadcastStatus}"
-                        android:textColor="@color/white"
+                        android:textColor="@color/color_ffffff"
                         android:textSize="@dimen/video_sp_13"
                         app:layout_constraintStart_toStartOf="parent"
                         app:background_normal="@color/color_fb294e"
@@ -75,7 +75,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/video_dp_7"
                         android:singleLine="true"
-                        android:textColor="@color/white"
+                        android:textColor="@color/color_ffffff"
                         android:textSize="@dimen/video_sp_16"
                         android:text="@{liveDetailModel.broadcastDTO.title}"
                         app:layout_constraintTop_toTopOf="@id/live_tag"
@@ -140,9 +140,9 @@
                     android:paddingStart="@dimen/video_dp_7"
                     android:paddingEnd="@dimen/video_dp_7"
                     android:text="@{viewModel.isFollow?@string/all_followed:@string/all_follow}"
-                    android:textColor="@color/c_501500"
+                    android:textColor="@color/color_501500"
                     android:textSize="@dimen/video_sp_10"
-                    app:background_normal="@color/c_ffc300"
+                    app:background_normal="@color/color_ffc300"
                     app:corner_radius="@dimen/video_dp_10"
                     app:layout_constraintBottom_toBottomOf="@+id/thumb"
                     app:layout_constraintLeft_toRightOf="@id/platform_name"

@@ -79,7 +79,7 @@
             android:onClick="@{(v)->adapter.onDeleteClick(v, comment)}"
             android:padding="@dimen/video_dp_10"
             android:text="@string/video_delete"
-            android:textColor="@color/c_8a8c99"
+            android:textColor="@color/color_8a8c99"
             android:textSize="@dimen/video_sp_14"
             android:visibility="@{adapter.isDeleteVisible(comment) ? View.VISIBLE : View.GONE}"
             app:layout_constraintEnd_toEndOf="parent"
@@ -99,7 +99,7 @@
             app:layout_constraintStart_toEndOf="@id/avatar_guide"
             app:layout_constraintTop_toBottomOf="@id/name"
             app:showMaxLine="3"
-            app:tipColor="@color/c_4189FF" />
+            app:tipColor="@color/color_4189ff" />
 
         <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:id="@+id/layout_sound_image"
@@ -153,7 +153,7 @@
             android:paddingEnd="@dimen/DIMEN_7DP"
             android:paddingBottom="@dimen/DIMEN_10DP"
             android:text="@string/video_reply"
-            android:textColor="@color/c_525566"
+            android:textColor="@color/color_525566"
             android:textSize="@dimen/video_sp_12"
             android:visibility="@{adapter.isReplyVisible(comment) ? View.VISIBLE : View.GONE}"
             app:layout_constraintBottom_toBottomOf="@id/date"
@@ -169,7 +169,7 @@
             android:paddingEnd="@dimen/DIMEN_10DP"
             android:paddingBottom="@dimen/DIMEN_10DP"
             android:text="@string/video_report"
-            android:textColor="@color/c_525566"
+            android:textColor="@color/color_525566"
             android:textSize="@dimen/video_sp_12"
             app:layout_constraintBottom_toBottomOf="@id/date"
             app:layout_constraintStart_toEndOf="@id/reply_action" />

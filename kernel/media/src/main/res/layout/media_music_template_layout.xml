@@ -112,7 +112,7 @@
                     android:textSize="@dimen/t_font01"
                     android:visibility="@{feedModel.showInPgc()?View.VISIBLE:View.GONE}"
                     android:maxLines="2"
-                    android:textColor="@color/t_color05" />
+                    android:textColor="@color/color_ffffff" />
 
                 <com.hzlz.aviation.kernel.base.view.MediaImageView
                     android:id="@+id/video_big_img"

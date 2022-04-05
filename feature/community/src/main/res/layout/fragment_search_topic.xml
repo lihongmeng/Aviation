@@ -26,7 +26,7 @@
             android:layout_height="match_parent"
             android:layout_below="@id/top_layout"
             android:layout_marginTop="@dimen/DIMEN_5DP"
-            android:background="@color/color_FFFFFF"
+            android:background="@color/color_ffffff"
             app:ksrlv_onLoadMore="@{(v)->viewModel.onLoadMore(v)}"
             app:ksrlv_onRefresh="@{(v)->viewModel.onRefresh(v)}"
             app:srlEnableFooterFollowWhenNoMoreData="true"
@@ -42,7 +42,7 @@
                 android:paddingLeft="@dimen/DIMEN_12DP"
                 android:paddingRight="@dimen/DIMEN_12DP"
                 android:scrollbars="none"
-                android:background="@color/color_FFFFFF"
+                android:background="@color/color_ffffff"
                 app:adapter="@{viewModel.adapter}"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 

@@ -83,7 +83,7 @@ public class GVideoFeedTabLayout extends LinearLayout implements View.OnClickLis
     public void changeType(@FeedTabBarType int type) {
         switch (type) {
             case TYPE_FEED_TAB_SEARCH_ICON: {
-                setBackgroundColor(getResources().getColor(R.color.home_background_color));
+                setBackgroundColor(getResources().getColor(R.color.color_ffffff));
                 break;
             }
             case TYPE_FEED_TAB_SEARCH_ICON_DARK: {
@@ -91,13 +91,13 @@ public class GVideoFeedTabLayout extends LinearLayout implements View.OnClickLis
                 if (mSearchImg != null) {
                     mSearchImg.setImageResource(R.drawable.feed_single_search_icon_dark);
                 }
-                setBackgroundColor(getResources().getColor(R.color.home_background_color_dark));
+                setBackgroundColor(getResources().getColor(R.color.color_1b1c1f));
                 mTabLayout.setDefaultTabTextColor(ResourcesUtils.getColorStateList(
                         R.drawable.tab_layout_dark_text_color
                 ));
             }
             case TYPE_FEED_TAB_NONE_SEARCH_ICON:
-                setBackgroundColor(getResources().getColor(R.color.home_background_color));
+                setBackgroundColor(getResources().getColor(R.color.color_ffffff));
                 if (mSearchImg != null) {
                     mSearchImg.setVisibility(GONE);
                 }

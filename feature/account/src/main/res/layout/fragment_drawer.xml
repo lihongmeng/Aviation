@@ -20,7 +20,7 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/all_layout_background"
+        android:background="@color/color_ffffff"
         android:fillViewport="true">
 
         <com.hzlz.aviation.library.widget.widget.AviationLinearLayout

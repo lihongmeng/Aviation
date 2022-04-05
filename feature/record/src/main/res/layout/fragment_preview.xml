@@ -12,7 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/c_bg02">
+        android:background="@color/color_000000">
 
         <com.hzlz.aviation.library.widget.widget.GVideoPhotoView
             android:id="@+id/image_view"
@@ -51,7 +51,7 @@
             android:textSize="@dimen/choose_item_time_text_size"
             android:background="@drawable/bg_choose_video"
             android:gravity="center"
-            android:textColor="@color/t_color05"
+            android:textColor="@color/color_ffffff"
             app:layout_constraintTop_toTopOf="@id/preview_back_cancel"
             app:layout_constraintBottom_toBottomOf="@id/preview_back_cancel"
             app:layout_constraintRight_toLeftOf="@id/preview_select_text"
@@ -64,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/preview_choose_text"
-            android:textColor="@color/t_color05"
+            android:textColor="@color/color_ffffff"
             android:layout_marginRight="@dimen/preview_choose_text_margin_right"
             app:layout_constraintTop_toTopOf="@id/preview_back_cancel"
             app:layout_constraintBottom_toBottomOf="@id/preview_back_cancel"

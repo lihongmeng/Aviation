@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:maxLines="2"
-                android:textColor="@android:color/white"
+                android:textColor="@color/color_ffffff"
                 android:textSize="@dimen/liteav_sp_17"
                 android:paddingRight="@dimen/liteav_dp_12"
                 app:layout_goneMarginLeft="@dimen/liteav_dp_12"

@@ -31,7 +31,7 @@
             android:singleLine="true"
             android:ellipsize="end"
             android:text="@{feedModel.title}"
-            android:textColor="@color/t_color01"
+            android:textColor="@color/color_212229"
             android:textSize="@dimen/sp_15" />
 
         <com.hzlz.aviation.library.widget.widget.GVideoRTextView
@@ -43,9 +43,9 @@
             android:lines="1"
             android:text="爆"
             android:visibility="gone"
-            android:textColor="@color/white"
+            android:textColor="@color/color_ffffff"
             android:textSize="@dimen/sp_10"
-            app:background_normal="@color/color_FC284D"
+            app:background_normal="@color/color_fc284d"
             app:corner_radius="@dimen/DIMEN_1DP" />
 
         <com.hzlz.aviation.library.widget.widget.AviationTextView
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:lines="1"
             android:text="@{DateUtils.friendlyTime(feedModel.getCreateDate())}"
-            android:textColor="@color/t_color04"
+            android:textColor="@color/color_8a8c99"
             android:textSize="@dimen/sp_10" />
 
 

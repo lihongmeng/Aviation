@@ -34,7 +34,7 @@
           android:maxLength="@integer/description_max_length"
           android:minHeight="@dimen/fragment_modify_description_description_height"
           android:text="@={bind.description}"
-          android:textColor="@color/fragment_modify_description_description_text_color"
+          android:textColor="@color/color_333333"
           android:textSize="@dimen/fragment_modify_description_description_text_size"
           />
       <com.hzlz.aviation.library.widget.widget.AviationTextView
@@ -44,7 +44,7 @@
           android:layout_marginTop="@dimen/fragment_modify_description_counter_margin_top"
           android:gravity="end"
           android:text="@{bind.counter}"
-          android:textColor="@{bind.counterMax ? @color/t_color06 : @color/fragment_modify_description_counter_text_color}"
+          android:textColor="@{bind.counterMax ? @color/color_fc284d : @color/color_999999}"
           android:textSize="@dimen/fragment_modify_description_counter_text_size"
           />
     </com.hzlz.aviation.library.widget.widget.AviationLinearLayout>

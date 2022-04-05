@@ -20,7 +20,7 @@
         android:id="@+id/root_layout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/DIMEN_71DP"
-        android:background="@color/color_FFFFFF">
+        android:background="@color/color_ffffff">
 
         <com.hzlz.aviation.library.widget.widget.GVideoRImageView
             android:id="@+id/header"

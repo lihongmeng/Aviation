@@ -74,7 +74,7 @@ public class AtyLiveFragment extends BaseFragment<AtyLiveFragmentBinding> {
         }
         isInitCommentFlag = true;
         Resources resources = getResources();
-        color = resources.getColor(R.color.c_403A3A4D);
+        color = resources.getColor(R.color.color_3a3a4d_25);
         dp2 = resources.getDimensionPixelOffset(R.dimen.DIMEN_2DP);
         dp3 = resources.getDimensionPixelOffset(R.dimen.DIMEN_3DP);
         dp4 = resources.getDimensionPixelOffset(R.dimen.DIMEN_4DP);
@@ -221,7 +221,7 @@ public class AtyLiveFragment extends BaseFragment<AtyLiveFragmentBinding> {
                     paddingBottom = dp20;
                 }
                 mBinding.recyclerComment.setPadding(0, getResources().getDimensionPixelOffset(R.dimen.DIMEN_80DP), 0, paddingBottom);
-                mBinding.detail.setBackgroundColor(ContextCompat.getColor(activity, R.color.transparent));
+                mBinding.detail.setBackgroundColor(ContextCompat.getColor(activity, R.color.color_000000_0));
                 titleLayoutHelper.setBackgroundColorNormal(color);
                 titleLayoutHelper.setCornerRadius(dp12);
                 mBinding.cTitleLayout.setPadding(dp5, dp4, dp5, dp4);
@@ -229,7 +229,7 @@ public class AtyLiveFragment extends BaseFragment<AtyLiveFragmentBinding> {
                 platformLayoutHelper.setBackgroundColorNormal(color);
                 platformLayoutHelper.setCornerRadius(dp10);
                 mBinding.cPlatformLayout.setPadding(dp3, dp2, dp3, dp2);
-                mBinding.platformName.setTextColor(ContextCompat.getColor(activity, R.color.white));
+                mBinding.platformName.setTextColor(ContextCompat.getColor(activity, R.color.color_ffffff));
             } else {
                 mBinding.detail.addView(gVideoView, mBinding.videoNormal.getLayoutParams());
             }

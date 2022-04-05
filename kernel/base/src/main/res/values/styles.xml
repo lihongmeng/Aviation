@@ -21,7 +21,7 @@
   <style name="Toolbar.Container">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">@dimen/height_toolbar</item>
-    <item name="android:background">@color/all_layout_background</item>
+    <item name="android:background">@color/color_ffffff</item>
   </style>
 
   <style name="Toolbar.LeftBack">
@@ -37,13 +37,13 @@
     <item name="android:background">?android:attr/selectableItemBackground</item>
   </style>
 
-  <style name="Toolbar.Title" parent="TextStyle.t_color01.t_font01.bold">
+  <style name="Toolbar.Title" parent="TextStyle.color_212229.t_font01.bold">
     <item name="android:textSize">@dimen/text_size_toolbar_title</item>
     <item name="android:singleLine">true</item>
     <item name="android:ellipsize">middle</item>
   </style>
 
-  <style name="Toolbar.RightOperation" parent="TextStyle.state_t_color06.t_font03">
+  <style name="Toolbar.RightOperation" parent="TextStyle.state_color_fc284d.t_font03">
     <item name="android:layout_marginRight">@dimen/margin_right_toolbar_right_operation</item>
     <item name="android:visibility">gone</item>
   </style>
@@ -59,13 +59,13 @@
     <item name="android:src">@drawable/adapter_message_notification_red_dot</item>
   </style>
 
-  <style name="CellLeftText" parent="TextStyle.t_color01.t_font03">
+  <style name="CellLeftText" parent="TextStyle.color_212229.t_font03">
 
   </style>
 
-  <style name="CellRightText" parent="TextStyle.t_color01.t_font02">
+  <style name="CellRightText" parent="TextStyle.color_212229.t_font02">
     <item name="android:layout_width">0dp</item>
-    <item name="android:textColor">@color/all_cell_right_text_color</item>
+    <item name="android:textColor">@color/color_737580</item>
     <item name="android:layout_marginRight">@dimen/margin_right_cell_right_text</item>
   </style>
 
@@ -75,7 +75,7 @@
 
   <style name="CellRightBottomText" parent="CellRightTopText">
     <item name="android:layout_marginRight">0dp</item>
-    <item name="android:textColor">@color/t_color03</item>
+    <item name="android:textColor">@color/color_a1a4b3</item>
   </style>
 
   <style name="CellRightIcon" parent="IconStyle.X_Small">
@@ -106,7 +106,7 @@
     <item name="cvRightIcon">@drawable/icon_right_arrow_48_48</item>
     <item name="cvRightIconStyle">@style/CellRightIcon</item>
     <!--diver-->
-    <item name="cvDriverColor">@color/c_line01</item>
+    <item name="cvDriverColor">@color/color_ebecf0</item>
     <item name="cvDriverHeight">@dimen/height_driver</item>
     <item name="cvBottomDriverMarginLeft">16dp</item>
   </style>
@@ -129,7 +129,7 @@
 
 
   <!--NoMoreData-->
-  <style name="NoMoreDataDefaultStyle" parent="TextStyle.t_color03.t_font04">
+  <style name="NoMoreDataDefaultStyle" parent="TextStyle.color_a1a4b3.t_font04">
     <item name="android:layout_width">match_parent</item>
     <item name="android:paddingTop">@dimen/padding_no_more_data</item>
     <item name="android:paddingBottom">@dimen/padding_no_more_data</item>
@@ -169,7 +169,7 @@
   <style name="CenterDialogStyle.StatusText">
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_width">wrap_content</item>
-    <item name="android:textColor">@color/t_color05</item>
+    <item name="android:textColor">@color/color_ffffff</item>
     <item name="android:textSize">@dimen/t_font06</item>
     <item name="android:textStyle">bold</item>
     <item name="android:gravity">center</item>
@@ -198,21 +198,21 @@
   </style>
 
   <style name="CenterDialogStyle.CancelButton" parent="CenterDialogStyle.Button">
-    <item name="android:textColor">@color/center_dialog_cancel_button_color</item>
+    <item name="android:textColor">@color/color_bebec0</item>
   </style>
 
   <style name="CenterDialogStyle.ConfirmButton" parent="CenterDialogStyle.Button">
-    <item name="android:textColor">@color/center_dialog_confirm_button_color</item>
+    <item name="android:textColor">@color/color_007aff</item>
   </style>
 
   <style name="CenterDialogStyle.SingleNoWidthButton" parent="CenterDialogStyle.NoWidthButton">
-    <item name="android:textColor">@color/center_dialog_confirm_button_color</item>
+    <item name="android:textColor">@color/color_007aff</item>
   </style>
 
   <style name="CenterDialogStyle.TitleButton">
     <item name="android:layout_height">@dimen/center_title_height</item>
     <item name="android:layout_width">@dimen/center_dialog_width</item>
-    <item name="android:textColor">@color/center_dialog_title_color</item>
+    <item name="android:textColor">@color/color_000000</item>
     <item name="android:textSize">@dimen/t_font01</item>
     <item name="android:gravity">center</item>
   </style>
@@ -220,7 +220,7 @@
   <style name="CenterDialogStyle.EnsureTitle">
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_width">@dimen/center_dialog_width</item>
-    <item name="android:textColor">@color/center_dialog_title_color</item>
+    <item name="android:textColor">@color/color_000000</item>
     <item name="android:textSize">@dimen/t_font01</item>
     <item name="android:layout_marginTop">@dimen/ensure_button_title_margin_top</item>
     <item name="android:layout_marginBottom">@dimen/ensure_button_title_margin_bottom</item>
@@ -233,7 +233,7 @@
   <style name="CenterDialogStyle.EnsureText">
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_width">@dimen/center_dialog_width</item>
-    <item name="android:textColor">@color/t_color04</item>
+    <item name="android:textColor">@color/color_8a8c99</item>
     <item name="android:textSize">@dimen/t_font07</item>
     <item name="android:layout_marginBottom">@dimen/ensure_button_text_margin_bottom</item>
     <item name="android:paddingLeft">@dimen/ensure_button_title_margin_landscape</item>
@@ -245,7 +245,7 @@
 
   </style>
 
-  <style name="DefaultNetworkDialogStyle.Tip" parent="TextStyle.t_color05.t_font03.bold">
+  <style name="DefaultNetworkDialogStyle.Tip" parent="TextStyle.color_ffffff.t_font03.bold">
     <item name="background">@drawable/default_network_dialog_background</item>
     <item name="android:paddingLeft">@dimen/padding_horizontal_default_network_dialog</item>
     <item name="android:paddingRight">@dimen/padding_horizontal_default_network_dialog</item>

@@ -24,7 +24,7 @@
     <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white">
+        android:background="@color/color_ffffff">
 
         <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
             android:id="@+id/ll_sign"
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/DIMEN_131DP"
                 android:text="爱的号码牌"
-                android:textColor="@color/white"
+                android:textColor="@color/color_ffffff"
                 android:textSize="@dimen/sp_15"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@id/bg_cover"
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/DIMEN_20DP"
                 android:text="@{model.member.code}"
-                android:textColor="@color/white"
+                android:textColor="@color/color_ffffff"
                 android:textSize="@dimen/DIMEN_100DP"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@id/bg_cover"
@@ -79,7 +79,7 @@
                 android:layout_marginBottom="@dimen/DIMEN_20DP"
                 android:gravity="center"
                 android:text="号"
-                android:textColor="@color/white"
+                android:textColor="@color/color_ffffff"
                 android:textSize="@dimen/sp_15"
                 app:background_normal="#20000000"
                 app:corner_radius="@dimen/DIMEN_20DP"
@@ -140,7 +140,7 @@
                 android:hint="输入心动嘉宾的号码"
                 android:inputType="number"
                 android:text="@={viewModel.inputNumber}"
-                android:textColor="@color/white"
+                android:textColor="@color/color_ffffff"
                 android:textColorHint="@color/color_ffffff_60"
                 android:textSize="@{viewModel.hasCanInput?@dimen/DIMEN_15DP:@dimen/DIMEN_77DP}"
                 android:minWidth="@dimen/DIMEN_80DP"
@@ -166,7 +166,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@{model.member.code}"
-                android:textColor="@color/white"
+                android:textColor="@color/color_ffffff"
                 android:textSize="@dimen/DIMEN_58DP"
                 android:layout_marginEnd="@dimen/DIMEN_72DP"
                 android:layout_marginTop="@dimen/DIMEN_155DP"
@@ -196,7 +196,7 @@
             android:onClick="@{v-> viewModel.btnClicked(v)}"
             android:gravity="center"
             android:text="@{viewModel.btnString}"
-            android:textColor="@color/white"
+            android:textColor="@color/color_ffffff"
             android:enabled="false"
             app:background_normal="@color/color_d8d8d8"
             android:textSize="@dimen/sp_15"

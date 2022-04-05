@@ -29,7 +29,7 @@
         android:id="@+id/app_bar_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="@color/color_ffffff"
         app:elevation="0dp">
 
         <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
@@ -207,10 +207,10 @@
                     android:gravity="center"
                     android:onClick="@{(v)->binding.onEditClick(v)}"
                     android:text="@string/edit"
-                    android:textColor="@color/white"
+                    android:textColor="@color/color_ffffff"
                     android:textSize="@dimen/sp_12"
                     android:visibility="gone"
-                    app:border_color_normal="@color/white"
+                    app:border_color_normal="@color/color_ffffff"
                     app:border_width_normal="@dimen/DIMEN_1DP"
                     app:corner_radius="@dimen/DIMEN_12DP"
                     app:layout_constraintBottom_toBottomOf="@id/image_view_detail_avatar"
@@ -396,7 +396,7 @@
         <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
+            android:background="@color/color_ffffff"
             app:layout_scrollFlags="snap">
 
             <View
@@ -410,7 +410,7 @@
                 android:id="@+id/tab_layout"
                 style="@style/FragmentUgcStyle.DetailTabLayout"
                 android:layout_marginStart="@dimen/DIMEN_10DP"
-                android:background="@color/transparent"
+                android:background="@color/color_000000_0"
                 app:stl_defaultTabTextHorizontalPadding="@dimen/DIMEN_10DP" />
 
         </com.hzlz.aviation.library.widget.widget.AviationFrameLayout>

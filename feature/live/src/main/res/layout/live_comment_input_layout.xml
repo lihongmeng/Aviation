@@ -4,7 +4,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="@color/white"
+        android:background="@color/color_ffffff"
         android:clickable="true"
         android:focusable="true"
         >
@@ -44,7 +44,7 @@
             android:id="@+id/shadow"
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="@color/c_shadow01"
+            android:background="@color/color_000000_2"
             android:layout_alignParentTop="true"
             />
     </RelativeLayout>

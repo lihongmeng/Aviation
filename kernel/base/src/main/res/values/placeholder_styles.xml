@@ -5,12 +5,12 @@
 
   </style>
 
-  <style name="PlaceholderStyle.Text" parent="TextStyle.t_color04.t_font03">
+  <style name="PlaceholderStyle.Text" parent="TextStyle.color_8a8c99.t_font03">
     <item name="android:layout_marginTop">@dimen/margin_placeholder_text</item>
     <item name="android:layout_marginBottom">@dimen/margin_placeholder_text</item>
   </style>
 
-  <style name="PlaceholderStyle.Button" parent="TextStyle.t_color06.t_font03.bold">
+  <style name="PlaceholderStyle.Button" parent="TextStyle.color_fc284d.t_font03.bold">
     <item name="android:paddingLeft">
       @dimen/padding_horizontal_placeholder_button
     </item>

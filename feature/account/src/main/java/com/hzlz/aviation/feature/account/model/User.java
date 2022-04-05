@@ -380,7 +380,7 @@ public final class User implements Cloneable {
           int end = ss.length();
           int start = end - hint.length();
           ss.setSpan(
-              new ForegroundColorSpan(ResourcesUtils.getColor(R.color.t_color06)),
+              new ForegroundColorSpan(ResourcesUtils.getColor(R.color.color_fc284d)),
               start,
               end,
               Spannable.SPAN_INCLUSIVE_EXCLUSIVE
@@ -418,7 +418,7 @@ public final class User implements Cloneable {
           mIdentityVerificationSpannable = new SpannableString(newIdentity.mAuditHint);
         }
         mIdentityVerificationSpannable.setSpan(
-            new ForegroundColorSpan(ResourcesUtils.getColor(R.color.t_color06)),
+            new ForegroundColorSpan(ResourcesUtils.getColor(R.color.color_fc284d)),
             0,
             mIdentityVerificationSpannable.length(),
             Spannable.SPAN_INCLUSIVE_EXCLUSIVE

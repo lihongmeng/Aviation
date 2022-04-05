@@ -37,7 +37,7 @@ public class LiveChatAdapter extends BaseDataBindingAdapter<TCChatEntity> {
             } else {
                 binding.content
                         .addText(senderName, R.color.color_8be6fe, null)
-                        .addText(chatEntity.getContent(), R.color.white, null);
+                        .addText(chatEntity.getContent(), R.color.color_ffffff, null);
             }
             binding.content.showText();
         }

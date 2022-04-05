@@ -165,7 +165,7 @@ public class FeedRecommendTemplate {
         FeedSlideChildLayoutBindingImpl binding = (FeedSlideChildLayoutBindingImpl) slideVH.getBinding();
 
         FeedSpanTextHelper.createTagTitle(mContext, binding.slideLabel, "", model.tagType,
-            mContext.getResources().getColor(R.color.feed_big_img_title_color));
+            mContext.getResources().getColor(R.color.color_ffffff));
 
         binding.slideChildImg.loadImageWithCorner(model.imageUrl, mConnerSize);
 
@@ -177,8 +177,8 @@ public class FeedRecommendTemplate {
                 model.isAd != FeedConstants.RECOMMEND_AD ? VISIBLE : GONE);
 
         if (mIsDarkMode) {
-          binding.slideTitleText.setTextColor(mContext.getResources().getColor(R.color.t_color05));
-          binding.slideSource.setTextColor(mContext.getResources().getColor(R.color.t_color04));
+          binding.slideTitleText.setTextColor(mContext.getResources().getColor(R.color.color_ffffff));
+          binding.slideSource.setTextColor(mContext.getResources().getColor(R.color.color_8a8c99));
         }
 
         slideVH.getBinding().getRoot().setOnClickListener(new View.OnClickListener() {
@@ -226,7 +226,7 @@ public class FeedRecommendTemplate {
         binding.slideTitleText.setText(model.title);
 
         if (mIsDarkMode) {
-          binding.slideTitleText.setTextColor(mContext.getResources().getColor(R.color.t_color05));
+          binding.slideTitleText.setTextColor(mContext.getResources().getColor(R.color.color_ffffff));
         }
 
         slideVH.getBinding().getRoot().setOnClickListener(v -> {

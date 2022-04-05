@@ -27,7 +27,7 @@
             <com.google.android.material.appbar.CollapsingToolbarLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="@color/color_ffffff"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 
                 <com.hzlz.aviation.library.widget.widget.AviationImageView
@@ -63,7 +63,7 @@
         <com.hzlz.aviation.library.widget.widget.AviationFrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white"
+            android:background="@color/color_ffffff"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
             <include

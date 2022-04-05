@@ -78,7 +78,7 @@ public class ReportDialog extends GVideoCenterDialog implements View.OnClickList
             View driver = new View(getContext());
             LinearLayout.LayoutParams driverParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                     context.getResources().getDimensionPixelSize(R.dimen.DIMEN_D5P));
-            driver.setBackgroundColor(ContextCompat.getColor(context, R.color.c_line02));
+            driver.setBackgroundColor(ContextCompat.getColor(context, R.color.color_ebebeb));
             mLayoutBinding.content.addView(driver, driverParams);
         }
 

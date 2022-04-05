@@ -45,7 +45,7 @@
                 android:id="@+id/layout_live_tag"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:background_normal="@color/live_tag_background"
+                app:background_normal="@color/color_fb294e"
                 app:corner_radius="@dimen/DIMEN_2DP"
                 android:layout_marginStart="@dimen/DIMEN_12DP"
                 style="@style/live_tag_layout" >
@@ -57,7 +57,7 @@
                     android:layout_gravity="bottom"
                     android:layout_marginEnd="@dimen/DIMEN_3DP"
                     android:layout_marginBottom="@dimen/DIMEN_3DP"
-                    app:indicator_color="@color/white"
+                    app:indicator_color="@color/color_ffffff"
                     app:indicator_count="3"
                     app:indicator_spacing="@dimen/DIMEN_2DP"
                     app:indicator_width="@dimen/DIMEN_2D5P" />
@@ -66,7 +66,7 @@
                     android:id="@+id/live_type_str"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
+                    android:textColor="@color/color_ffffff"
                     android:textSize="@dimen/sp_12"
                     tools:text="直播" />
 

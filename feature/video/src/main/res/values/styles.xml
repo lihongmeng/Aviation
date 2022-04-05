@@ -6,7 +6,7 @@
   </style>
 
   <style name="VideoTheme" parent="Theme.AppCompat.Light.NoActionBar">
-    <item name="android:colorPrimaryDark">@color/black</item>
+    <item name="android:colorPrimaryDark">@color/color_000000</item>
   </style>
 
   <style name="PhotoPreviewTheme" parent="Theme.AppCompat.NoActionBar">

@@ -25,7 +25,7 @@
         android:id="@+id/circle_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/color_93989C"
+        android:textColor="@color/color_93989c"
         android:textSize="@dimen/sp_11"
         tools:text="123456" />
 

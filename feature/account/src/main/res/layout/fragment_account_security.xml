@@ -15,7 +15,7 @@
     <com.hzlz.aviation.library.widget.widget.GVideoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/c_bg01"
+        android:background="@color/color_f7f8fc"
         android:orientation="vertical">
 
         <!--换绑手机号-->

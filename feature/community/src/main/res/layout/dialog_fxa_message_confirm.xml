@@ -13,7 +13,7 @@
     <com.hzlz.aviation.library.widget.widget.AviationConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/transparent"
+        android:background="@color/color_000000_0"
         android:paddingStart="@dimen/DIMEN_19DP"
         android:paddingEnd="@dimen/DIMEN_19DP">
 
@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/DIMEN_30DP"
-            app:background_normal="@color/white"
+            app:background_normal="@color/color_ffffff"
             app:corner_radius_bottom_left="@dimen/DIMEN_8DP"
             app:corner_radius_bottom_right="@dimen/DIMEN_8DP"
             app:layout_constraintTop_toBottomOf="@id/top_image">
@@ -111,7 +111,7 @@
                 android:layout_marginTop="@dimen/DIMEN_50DP"
                 android:gravity="center"
                 android:text="@string/i_know"
-                android:textColor="@color/white"
+                android:textColor="@color/color_ffffff"
                 app:background_normal="@color/color_e4344e"
                 app:corner_radius="@dimen/DIMEN_21DP"
                 app:layout_constraintEnd_toEndOf="parent"

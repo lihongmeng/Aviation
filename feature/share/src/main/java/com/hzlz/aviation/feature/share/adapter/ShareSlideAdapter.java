@@ -64,7 +64,7 @@ public class ShareSlideAdapter extends BaseRecyclerAdapter<ShareItemModel, BaseR
             binding.shareMenuText.setText(model.title);
             binding.shareMenuIcon.setImageDrawable(ContextCompat.getDrawable(mContext, model.drawableRes));
             if (mIsDarkMode) {
-                binding.shareMenuText.setTextColor(mContext.getResources().getColor(R.color.t_color05));
+                binding.shareMenuText.setTextColor(mContext.getResources().getColor(R.color.color_ffffff));
             }
         }else if (slideVH.getBinding() instanceof LayoutShareItemNoTextBinding){
             LayoutShareItemNoTextBinding binding = (LayoutShareItemNoTextBinding) slideVH.getBinding();

@@ -587,7 +587,7 @@ public class CircleDetailViewModel extends BaseViewModel {
         // 设置动画
         window.setAnimationStyle(R.style.newest_hottest_window_anim);
         // 设置背景颜色
-        window.setBackgroundDrawable(new ColorDrawable(ResourcesUtils.getColor(R.color.color_000000_100)));
+        window.setBackgroundDrawable(new ColorDrawable(ResourcesUtils.getColor(R.color.color_000000_0)));
         // 设置可以获取焦点
         window.setFocusable(true);
         // 设置可以触摸弹出框以外的区域

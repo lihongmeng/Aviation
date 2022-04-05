@@ -4,14 +4,14 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_000000_100"
+        android:background="@color/color_000000_0"
         android:orientation="vertical">
 
         <View
             android:id="@+id/short_video_comment_empty"
             android:layout_width="match_parent"
             android:layout_height="@dimen/DIMEN_240DP"
-            android:background="@color/color_000000_100"/>
+            android:background="@color/color_000000_0"/>
 
         <FrameLayout
             android:layout_width="match_parent"

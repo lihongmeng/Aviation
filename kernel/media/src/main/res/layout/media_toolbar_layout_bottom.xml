@@ -167,7 +167,7 @@
                 android:layout_height="wrap_content"
                 android:singleLine="true"
                 android:text="@{@string/media_create_date(videoObservable.createDate)}"
-                android:textColor="@color/t_color03"
+                android:textColor="@color/color_a1a4b3"
                 android:textSize="@dimen/t_font04"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"

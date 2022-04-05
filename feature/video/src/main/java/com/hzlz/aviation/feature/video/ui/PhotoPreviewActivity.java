@@ -61,7 +61,7 @@ public class PhotoPreviewActivity extends BaseActivity<ActivityPhotoViewBinding>
                     if (i != 0) {
                         layoutParams.leftMargin = getResources().getDimensionPixelOffset(R.dimen.DIMEN_5DP);
                     }
-                    textView.getHelper().setBackgroundColorNormal(getResources().getColor(R.color.t_color02));
+                    textView.getHelper().setBackgroundColorNormal(getResources().getColor(R.color.color_525566));
                     textView.getHelper().setCornerRadius(dp7);
                     textView.setLayoutParams(layoutParams);
                     mBinding.imageIndicator.addView(textView, i);
@@ -100,9 +100,9 @@ public class PhotoPreviewActivity extends BaseActivity<ActivityPhotoViewBinding>
     private void setSelectIndicator(int position) {
         for (int i = 0; i < mBinding.imageIndicator.getChildCount(); i++) {
             if (i == position) {
-                ((RTextView) mBinding.imageIndicator.getChildAt(i)).getHelper().setBackgroundColorNormal(getResources().getColor(R.color.c_brand));
+                ((RTextView) mBinding.imageIndicator.getChildAt(i)).getHelper().setBackgroundColorNormal(getResources().getColor(R.color.color_fc284d));
             } else {
-                ((RTextView) mBinding.imageIndicator.getChildAt(i)).getHelper().setBackgroundColorNormal(getResources().getColor(R.color.t_color02));
+                ((RTextView) mBinding.imageIndicator.getChildAt(i)).getHelper().setBackgroundColorNormal(getResources().getColor(R.color.color_525566));
             }
         }
 

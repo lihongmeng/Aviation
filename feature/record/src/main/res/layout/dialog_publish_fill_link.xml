@@ -61,7 +61,7 @@
             android:layout_height="@dimen/DIMEN_42DP"
             android:gravity="center_vertical"
             android:paddingStart="@dimen/DIMEN_14DP"
-            android:background="@color/color_000000_100"
+            android:background="@color/color_000000_0"
             android:hint="@string/add_link_hint"
             android:textSize="@dimen/sp_13"
             android:singleLine="true"

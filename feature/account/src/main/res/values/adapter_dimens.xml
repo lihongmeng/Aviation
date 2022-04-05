@@ -42,7 +42,7 @@
   <dimen name="padding_right_adapter_follow_container">12dp</dimen>
   <dimen name="padding_top_adapter_follow_container">10dp</dimen>
   <dimen name="padding_bottom_adapter_follow_container">10dp</dimen>
-  <dimen name="margin_adapter_follow_name">12dp</dimen>
+  <dimen name="margin_color_333333">12dp</dimen>
   <dimen name="width_adapter_follow_follow">75dp</dimen>
   <dimen name="height_adapter_follow_follow">30dp</dimen>
 

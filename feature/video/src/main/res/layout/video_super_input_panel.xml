@@ -12,7 +12,7 @@
   <androidx.constraintlayout.widget.ConstraintLayout
       android:layout_width="match_parent"
       android:layout_height="@dimen/video_comment_input_panel_height"
-      android:background="@color/white"
+      android:background="@color/color_ffffff"
       >
     <com.hzlz.aviation.library.widget.widget.AviationEditText
         android:id="@+id/comment_input"
@@ -70,8 +70,8 @@
         android:layout_marginTop="@dimen/video_dp_1_5"
         android:src="@drawable/video_comment"
         android:text='@{videoObservable.commentText}'
-        android:background="@color/white"
-        android:textColor="@color/c_292b33"
+        android:background="@color/color_ffffff"
+        android:textColor="@color/color_292b33"
         android:textSize="@dimen/video_dp_10"
         app:layout_constraintTop_toTopOf="@+id/comment_image"
         app:layout_constraintLeft_toLeftOf="@+id/comment_image"
@@ -81,7 +81,7 @@
         android:id="@+id/shadow"
         android:layout_width="0dp"
         android:layout_height="1px"
-        android:background="@color/c_shadow01"
+        android:background="@color/color_000000_2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

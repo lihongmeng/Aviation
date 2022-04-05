@@ -1,6 +1,0 @@
-<resources>
-    <color name="media_big_img_title_color">#FFFFFF</color>
-
-    <color name="mask_gradual01_start">#4c000000</color>
-    <color name="mask_gradual01_end">#00000000</color>
-</resources>

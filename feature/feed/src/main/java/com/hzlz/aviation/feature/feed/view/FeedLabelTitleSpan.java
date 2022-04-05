@@ -77,11 +77,11 @@ public class FeedLabelTitleSpan extends ReplacementSpan {
                 R.dimen.feed_label_height);
 
         mLabelBackStartColor = FeedRuntime.getAppContext().getResources().getColor(
-                R.color.feed_label_background_color_start);
+                R.color.color_fc284d);
         mLabelBackEndColor = FeedRuntime.getAppContext().getResources().getColor(
-                R.color.feed_label_background_color_end);
+                R.color.color_ff6741);
         mTextColor = FeedRuntime.getAppContext().getResources().getColor(
-                R.color.feed_label_text_color);
+                R.color.color_ffffff);
 
         mBackCornerRadius = (int) FeedRuntime.getAppContext().getResources().getDimension(
                 R.dimen.feed_label_radio_size);
