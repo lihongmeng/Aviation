@@ -1,13 +1,14 @@
 apply from: rootProject.file("library.gradle")
 
 dependencies {
-  api deps.appCompat
-  api deps.constraintLayout
-  api deps.recyclerView
-  api deps.coordinatorLayout
-  api deps.rWidgetHelper
-  api deps.photoView
-  api deps.tog_lib_res
-  api deps.banner
-  api 'androidx.viewpager2:viewpager2:1.1.0-alpha01'
+    api deps.appCompat
+    api deps.constraintLayout
+    api deps.recyclerView
+    api deps.coordinatorLayout
+    api deps.rWidgetHelper
+    api deps.photoView
+    api deps.tog_lib_res
+    api deps.banner
+    api 'androidx.viewpager2:viewpager2:1.1.0-alpha01'
+    implementation deps.tog_lib_utils
 }

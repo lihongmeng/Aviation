@@ -669,4 +669,7 @@
     <string name="moment_detail">动态详情</string>
     <string name="all_answer">全部回答</string>
     <string name="write_answer">写回答</string>
+    <string name="select_club">选择俱乐部</string>
+    <string name="please_input_title">这个帖子距离火就差个标题了~（选填）</string>
+    <string name="please_input_content">说说你的想法吧</string>
 </resources>

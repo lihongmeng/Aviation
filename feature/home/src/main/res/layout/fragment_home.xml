@@ -35,11 +35,11 @@
                 app:layout_constraintBottom_toTopOf="@id/shadow"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.hzlz.aviation.kernel.liteav.service.view.FloatAudioTipView
-                android:id="@+id/float_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/DIMEN_60DP"
+            <View
+                android:id="@+id/test"
+                android:layout_width="@dimen/DIMEN_60DP"
+                android:layout_height="@dimen/DIMEN_60DP"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

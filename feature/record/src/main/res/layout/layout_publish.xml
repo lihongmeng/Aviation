@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="RtlSymmetry">
 
     <data>
 
@@ -104,26 +105,27 @@
             app:layout_constraintStart_toEndOf="@id/video_icon"
             tools:visibility="visible" />
 
-        <!--社区icon-->
+        <!--俱乐部icon-->
         <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/select_community_icon"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/DIMEN_50DP"
-            android:text="选择俱乐部"
-            android:gravity="center_vertical"
-            android:textSize="@dimen/sp_13"
-            android:drawablePadding="@dimen/DIMEN_12DP"
-            android:textColor="@color/color_181818"
+            android:paddingStart="@dimen/DIMEN_14DP"
             android:drawableStart="@drawable/icon_publish_select_club"
-            android:layout_marginStart="@dimen/DIMEN_14DP"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/pic_icon" />
+            android:drawablePadding="@dimen/DIMEN_12DP"
+            android:gravity="center_vertical"
+            android:text="@string/select_club"
+            android:textColor="@color/color_181818"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintBottom_toTopOf="@id/pic_icon"
+            app:layout_constraintStart_toStartOf="parent" />
 
+        <!--俱乐部名称-->
         <com.hzlz.aviation.library.widget.widget.AviationTextView
             android:id="@+id/select_community_tip"
             android:layout_width="0dp"
             android:layout_height="@dimen/DIMEN_50DP"
-            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            android:paddingEnd="@dimen/DIMEN_14DP"
             android:drawableEnd="@drawable/icon_arrow_right_black"
             android:drawablePadding="@dimen/DIMEN_6DP"
             android:ellipsize="end"
@@ -144,29 +146,44 @@
             android:background="@color/color_f2f2f2"
             app:layout_constraintTop_toBottomOf="@id/select_community_icon" />
 
-        <!--文字输入框-->
+        <!--标题输入框-->
         <com.hzlz.aviation.library.widget.edittext.CountLimitEditLayout
-            android:id="@+id/qa_title"
+            android:id="@+id/title_edittext"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/DIMEN_14DP"
             android:layout_marginTop="@dimen/DIMEN_8DP"
             android:layout_marginEnd="@dimen/DIMEN_14DP"
             android:background="@null"
-            android:gravity="start"
-            android:hint="@string/hint_question"
-            android:maxLength="50"
-            android:textColor="@color/color_333333"
             android:textColorHint="@color/color_cccccc"
-            android:textSize="@dimen/sp_19"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@id/link_image_video_sound"
+            app:bottom_divider_color="@color/color_e8e5e5"
+            app:edit_max_count="30"
+            app:edittext_text_size="@dimen/sp_19"
+            app:edit_max_line="1"
+            app:edittext_hint="@string/please_input_title"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/top_divider"
-            app:layout_constraintVertical_bias="0.0"
-            app:layout_goneMarginTop="@dimen/DIMEN_25DP"
+            app:show_bottom_divider="true"
+            tools:text="1234567890123456789012345678901234567890123456789012345678901234567890" />
+
+        <!--内容输入框-->
+        <com.hzlz.aviation.library.widget.edittext.CountLimitEditLayout
+            android:id="@+id/content_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_14DP"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            android:layout_marginEnd="@dimen/DIMEN_14DP"
+            android:background="@null"
+            app:bottom_divider_color="@color/color_e8e5e5"
+            app:edit_max_count="500"
+            app:edittext_hint="@string/please_input_content"
+            app:edittext_text_size="@dimen/sp_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_edittext"
+            app:show_bottom_divider="true"
             tools:text="1234567890123456789012345678901234567890123456789012345678901234567890" />
 
         <androidx.core.widget.NestedScrollView

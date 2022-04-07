@@ -33,6 +33,7 @@
             android:layout_marginBottom="@dimen/DIMEN_3DP"
             android:textColor="@color/color_c7c7c7"
             android:textSize="@dimen/sp_11"
+            android:layout_marginTop="@dimen/DIMEN_3DP"
             app:layout_constraintTop_toBottomOf="@id/content"
             app:layout_constraintEnd_toEndOf="parent"
             tools:text="10/30" />

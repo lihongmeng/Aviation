@@ -19,6 +19,7 @@ import com.hzlz.aviation.kernel.base.immersive.ImmersiveUtils;
 import com.hzlz.aviation.kernel.base.plugin.AccountPlugin;
 import com.hzlz.aviation.kernel.base.plugin.CirclePlugin;
 import com.hzlz.aviation.kernel.base.plugin.HomePlugin;
+import com.hzlz.aviation.kernel.base.plugin.RecordPlugin;
 import com.hzlz.aviation.kernel.base.plugin.WatchTvPlugin;
 import com.hzlz.aviation.kernel.base.plugin.WebViewPlugin;
 import com.hzlz.aviation.kernel.base.utils.ToastUtils;
@@ -114,7 +115,13 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
                 .beginTransaction()
                 .replace(R.id.fragment_layout_right_drawer, drawerFragment)
                 .commit();
-        mBinding.floatView.setCollapseEventBus(this);
+
+        mBinding.test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PluginManager.get(RecordPlugin.class).startPublishFragmentUseActivity(getActivity(),null);
+            }
+        });
     }
 
     @Override
@@ -173,7 +180,6 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
         if (currentBaseFragment != null) {
             currentBaseFragment.onFragmentResume();
         }
-        mBinding.floatView.resumeRotate();
         GVideoEventBus.get(Constant.EVENT_MSG.HAS_BACK_HOME).post(null);
         GVideoEventBus.get(AccountPlugin.EVENT_UPDATE_UNREAD_MESSAGE_COUNT).post(null);
         ((BaseActivity) requireActivity()).registerBackPressHandler(mBackPressHandler);
